@@ -1,0 +1,74 @@
+{
+  "fundName": "Migdal Makefet Mashlima S&P 500",
+  "trackId": "13627",
+  "totalAssetsBN": 0.69,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.686,
+      "percentage": 99.41
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0039,
+      "percentage": 0.56
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0002,
+      "percentage": 0.03
+    },
+    {
+      "name": "Futures",
+      "value": 0.0,
+      "percentage": 0.0
+    }
+  ],
+  "breakdown": {
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.686,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "VANGUARD S&P 500 ETF", "value": 0.1197, "percentage": 17.46 },
+          { "name": "ISHARES CORE S&P 500", "value": 0.1189, "percentage": 17.33 },
+          { "name": "INVESCO S&P 500 UCITS ETF", "value": 0.1171, "percentage": 17.07 },
+          { "name": "SPDR S&P 500 ETF TRUST", "value": 0.1167, "percentage": 17.01 },
+          { "name": "AM S&P 500 II ETF ACC", "value": 0.1136, "percentage": 16.57 }
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0039,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "USDILS", "value": 0.0039, "percentage": 100.0 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0002,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0001, "percentage": 73.08 },
+          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0, "percentage": 26.92 }
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "S&P500 EMINI FUT Dec25", "value": 0.0, "percentage": 100.0 }
+        ]
+      }
+    ]
+  }
+}
