@@ -40,104 +40,69 @@
     }
   ],
   "breakdown": {
-    "Other Assets": [
-      {
-        "subclass": "General",
-        "value": -0.2608,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "בטחונות נגזרים  לס דולר מזרחי",
-            "value": 0.0242,
-            "percentage": -9.29
-          },
-          {
-            "name": "חייבים מהעברות פנסיה",
-            "value": 0.0172,
-            "percentage": -6.61
-          },
-          {
-            "name": "בטחונות נגזרים  לס דולר דיסקונט",
-            "value": 0.0062,
-            "percentage": -2.39
-          },
-          {
-            "name": "ביטחונות CSA לאומי במטבע 20001",
-            "value": 0.0008,
-            "percentage": -0.31
-          },
-          {
-            "name": "ריבית לקבל בטחונות לא סחיר דולר לאומי",
-            "value": -0.0002,
-            "percentage": 0.07
-          }
-        ]
-      }
-    ],
-    "Derivatives": [
-      {
-        "subclass": "General",
-        "value": 0.2039,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "SPTR INDEX",
-            "value": 0.5354,
-            "percentage": 262.63
-          },
-          {
-            "name": "USDILS",
-            "value": -0.3315,
-            "percentage": -162.63
-          }
-        ]
-      }
-    ],
-    "Non-Tradable Bonds": [
-      {
-        "subclass": "General",
-        "value": 6.3237,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "ערד סדרה 8892",
-            "value": 0.2399,
-            "percentage": 3.79
-          },
-          {
-            "name": "ערד סדרה 8889",
-            "value": 0.1958,
-            "percentage": 3.1
-          },
-          {
-            "name": "ערד סדרה 8894",
-            "value": 0.1664,
-            "percentage": 2.63
-          },
-          {
-            "name": "ערד סדרה 8882",
-            "value": 0.1348,
-            "percentage": 2.13
-          },
-          {
-            "name": "ערד סדרה 8880",
-            "value": 0.1312,
-            "percentage": 2.07
-          }
-        ]
-      }
-    ],
     "Futures": [
       {
         "subclass": "General",
         "value": 0.0003,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "MINI S&P FU 12/25",
-            "value": 0.0003,
-            "percentage": 100.0
-          }
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "MINI S&P FU 12/25",
+              "value": 0.0003,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": -0.2608,
+        "percentageOfClass": 100.0,
+        "itemCount": 7,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בטחונות נגזרים  לס דולר מזרחי",
+              "value": 0.0242,
+              "percentage": -9.29
+            },
+            {
+              "name": "חייבים מהעברות פנסיה",
+              "value": 0.0172,
+              "percentage": -6.61
+            },
+            {
+              "name": "בטחונות נגזרים  לס דולר דיסקונט",
+              "value": 0.0062,
+              "percentage": -2.39
+            },
+            {
+              "name": "ביטחונות CSA לאומי במטבע 20001",
+              "value": 0.0008,
+              "percentage": -0.31
+            },
+            {
+              "name": "ריבית לקבל בטחונות לא סחיר דולר לאומי",
+              "value": -0.0002,
+              "percentage": 0.07
+            },
+            {
+              "name": "ביטחונות CSA במטבע דולר(OTC) פועלים_x000D_",
+              "value": -0.075,
+              "percentage": 28.75
+            },
+            {
+              "name": "ביטחונות CSA במטבע 20001 (OTC) לאומי",
+              "value": -0.2341,
+              "percentage": 89.77
+            }
+          ]
         ]
       }
     ],
@@ -146,32 +111,746 @@
         "subclass": "ETFs",
         "value": 6.4615,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "תכלית סל S&P 500",
-            "value": 2.2661,
-            "percentage": 35.07
-          },
-          {
-            "name": "מור סל S&P 500",
-            "value": 1.3076,
-            "percentage": 20.24
-          },
-          {
-            "name": "מגדל סל SP500",
-            "value": 1.1608,
-            "percentage": 17.96
-          },
-          {
-            "name": "אי בי אי סל S&P 500",
-            "value": 1.0353,
-            "percentage": 16.02
-          },
-          {
-            "name": "קסם סל S&P 500",
-            "value": 0.6918,
-            "percentage": 10.71
-          }
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "תכלית סל S&P 500",
+              "value": 2.2661,
+              "percentage": 35.07
+            },
+            {
+              "name": "מור סל S&P 500",
+              "value": 1.3076,
+              "percentage": 20.24
+            },
+            {
+              "name": "מגדל סל SP500",
+              "value": 1.1608,
+              "percentage": 17.96
+            },
+            {
+              "name": "אי בי אי סל S&P 500",
+              "value": 1.0353,
+              "percentage": 16.02
+            },
+            {
+              "name": "קסם סל S&P 500",
+              "value": 0.6918,
+              "percentage": 10.71
+            }
+          ]
+        ]
+      }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 6.3237,
+        "percentageOfClass": 100.0,
+        "itemCount": 130,
+        "totalPages": 13,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד סדרה 8892",
+              "value": 0.2399,
+              "percentage": 3.79
+            },
+            {
+              "name": "ערד סדרה 8889",
+              "value": 0.1958,
+              "percentage": 3.1
+            },
+            {
+              "name": "ערד סדרה 8894",
+              "value": 0.1664,
+              "percentage": 2.63
+            },
+            {
+              "name": "ערד סדרה 8882",
+              "value": 0.1348,
+              "percentage": 2.13
+            },
+            {
+              "name": "ערד סדרה 8880",
+              "value": 0.1312,
+              "percentage": 2.07
+            },
+            {
+              "name": "ערד סדרה 8897",
+              "value": 0.1168,
+              "percentage": 1.85
+            },
+            {
+              "name": "ערד סדרה 8872",
+              "value": 0.1137,
+              "percentage": 1.8
+            },
+            {
+              "name": "ערד סדרה 8859",
+              "value": 0.112,
+              "percentage": 1.77
+            },
+            {
+              "name": "ערד סדרה 8903",
+              "value": 0.1109,
+              "percentage": 1.75
+            },
+            {
+              "name": "ערד סדרה 8874",
+              "value": 0.11,
+              "percentage": 1.74
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8901",
+              "value": 0.1074,
+              "percentage": 1.7
+            },
+            {
+              "name": "ערד סדרה 8905",
+              "value": 0.1067,
+              "percentage": 1.69
+            },
+            {
+              "name": "ערד סדרה 8898",
+              "value": 0.1059,
+              "percentage": 1.67
+            },
+            {
+              "name": "ערד סדרה 8865",
+              "value": 0.1054,
+              "percentage": 1.67
+            },
+            {
+              "name": "ערד סדרה 8877",
+              "value": 0.1053,
+              "percentage": 1.66
+            },
+            {
+              "name": "ערד סדרה 8879",
+              "value": 0.105,
+              "percentage": 1.66
+            },
+            {
+              "name": "ערד סדרה 8883",
+              "value": 0.1027,
+              "percentage": 1.62
+            },
+            {
+              "name": "ערד סדרה 8841",
+              "value": 0.0993,
+              "percentage": 1.57
+            },
+            {
+              "name": "ערד סדרה 8893",
+              "value": 0.0956,
+              "percentage": 1.51
+            },
+            {
+              "name": "ערד סדרה 8853",
+              "value": 0.0953,
+              "percentage": 1.51
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8904",
+              "value": 0.0946,
+              "percentage": 1.5
+            },
+            {
+              "name": "ערד סדרה 8896",
+              "value": 0.0943,
+              "percentage": 1.49
+            },
+            {
+              "name": "ערד סדרה 8837",
+              "value": 0.0846,
+              "percentage": 1.34
+            },
+            {
+              "name": "ערד סדרה 8866",
+              "value": 0.084,
+              "percentage": 1.33
+            },
+            {
+              "name": "ערד סדרה 8862",
+              "value": 0.0835,
+              "percentage": 1.32
+            },
+            {
+              "name": "ערד סדרה 8856",
+              "value": 0.0795,
+              "percentage": 1.26
+            },
+            {
+              "name": "ערד סדרה 8850",
+              "value": 0.0791,
+              "percentage": 1.25
+            },
+            {
+              "name": "ערד סדרה 8851",
+              "value": 0.0767,
+              "percentage": 1.21
+            },
+            {
+              "name": "ערד סדרה 8858",
+              "value": 0.0725,
+              "percentage": 1.15
+            },
+            {
+              "name": "ערד סדרה 8824",
+              "value": 0.0718,
+              "percentage": 1.14
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8838",
+              "value": 0.0708,
+              "percentage": 1.12
+            },
+            {
+              "name": "ערד סדרה 8793",
+              "value": 0.0698,
+              "percentage": 1.1
+            },
+            {
+              "name": "ערד סדרה 8848",
+              "value": 0.0695,
+              "percentage": 1.1
+            },
+            {
+              "name": "ערד סדרה 8871",
+              "value": 0.0694,
+              "percentage": 1.1
+            },
+            {
+              "name": "ערד סדרה 8846",
+              "value": 0.0673,
+              "percentage": 1.06
+            },
+            {
+              "name": "ערד סדרה 8888",
+              "value": 0.0667,
+              "percentage": 1.05
+            },
+            {
+              "name": "ערד סדרה 8847",
+              "value": 0.0666,
+              "percentage": 1.05
+            },
+            {
+              "name": "ערד סדרה 8855",
+              "value": 0.0626,
+              "percentage": 0.99
+            },
+            {
+              "name": "ערד סדרה 8832",
+              "value": 0.0607,
+              "percentage": 0.96
+            },
+            {
+              "name": "ערד סדרה 8895",
+              "value": 0.0599,
+              "percentage": 0.95
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8826",
+              "value": 0.0585,
+              "percentage": 0.93
+            },
+            {
+              "name": "ערד סדרה 8857",
+              "value": 0.056,
+              "percentage": 0.89
+            },
+            {
+              "name": "ערד סדרה 8867",
+              "value": 0.0542,
+              "percentage": 0.86
+            },
+            {
+              "name": "ערד סדרה 8854",
+              "value": 0.0536,
+              "percentage": 0.85
+            },
+            {
+              "name": "ערד סדרה 8825",
+              "value": 0.0534,
+              "percentage": 0.84
+            },
+            {
+              "name": "ערד סדרה 8807",
+              "value": 0.0524,
+              "percentage": 0.83
+            },
+            {
+              "name": "ערד סדרה 8881",
+              "value": 0.0521,
+              "percentage": 0.82
+            },
+            {
+              "name": "ערד סדרה 8900",
+              "value": 0.0515,
+              "percentage": 0.81
+            },
+            {
+              "name": "ערד סדרה 8891",
+              "value": 0.0509,
+              "percentage": 0.81
+            },
+            {
+              "name": "ערד סדרה 8803",
+              "value": 0.0498,
+              "percentage": 0.79
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8818",
+              "value": 0.0475,
+              "percentage": 0.75
+            },
+            {
+              "name": "ערד סדרה 8812",
+              "value": 0.0474,
+              "percentage": 0.75
+            },
+            {
+              "name": "ערד סדרה 8863",
+              "value": 0.0471,
+              "percentage": 0.75
+            },
+            {
+              "name": "ערד סדרה 8821",
+              "value": 0.0468,
+              "percentage": 0.74
+            },
+            {
+              "name": "ערד סדרה 8873",
+              "value": 0.0453,
+              "percentage": 0.72
+            },
+            {
+              "name": "ערד סדרה 8842",
+              "value": 0.0436,
+              "percentage": 0.69
+            },
+            {
+              "name": "ערד סדרה 8823",
+              "value": 0.0431,
+              "percentage": 0.68
+            },
+            {
+              "name": "ערד סדרה 8876",
+              "value": 0.0431,
+              "percentage": 0.68
+            },
+            {
+              "name": "ערד סדרה 8849",
+              "value": 0.043,
+              "percentage": 0.68
+            },
+            {
+              "name": "ערד סדרה 8902",
+              "value": 0.0426,
+              "percentage": 0.67
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8815",
+              "value": 0.0415,
+              "percentage": 0.66
+            },
+            {
+              "name": "ערד סדרה 8844",
+              "value": 0.0409,
+              "percentage": 0.65
+            },
+            {
+              "name": "ערד סדרה 8899",
+              "value": 0.0406,
+              "percentage": 0.64
+            },
+            {
+              "name": "ערד סדרה 8813",
+              "value": 0.0395,
+              "percentage": 0.62
+            },
+            {
+              "name": "ערד סדרה 8845",
+              "value": 0.0393,
+              "percentage": 0.62
+            },
+            {
+              "name": "ערד סדרה 8809",
+              "value": 0.0393,
+              "percentage": 0.62
+            },
+            {
+              "name": "ערד סדרה 8805",
+              "value": 0.0371,
+              "percentage": 0.59
+            },
+            {
+              "name": "ערד סדרה 8808",
+              "value": 0.0365,
+              "percentage": 0.58
+            },
+            {
+              "name": "ערד סדרה 8787",
+              "value": 0.0354,
+              "percentage": 0.56
+            },
+            {
+              "name": "ערד סדרה 8822",
+              "value": 0.0347,
+              "percentage": 0.55
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8843",
+              "value": 0.0331,
+              "percentage": 0.52
+            },
+            {
+              "name": "ערד סדרה 8819",
+              "value": 0.0329,
+              "percentage": 0.52
+            },
+            {
+              "name": "ערד סדרה 8799",
+              "value": 0.0322,
+              "percentage": 0.51
+            },
+            {
+              "name": "ערד סדרה 8833",
+              "value": 0.032,
+              "percentage": 0.51
+            },
+            {
+              "name": "ערד סדרה 8817",
+              "value": 0.0313,
+              "percentage": 0.49
+            },
+            {
+              "name": "ערד סדרה 8797",
+              "value": 0.0312,
+              "percentage": 0.49
+            },
+            {
+              "name": "ערד סדרה 8789",
+              "value": 0.0306,
+              "percentage": 0.48
+            },
+            {
+              "name": "ערד סדרה 8810",
+              "value": 0.0305,
+              "percentage": 0.48
+            },
+            {
+              "name": "ערד סדרה 8801",
+              "value": 0.0305,
+              "percentage": 0.48
+            },
+            {
+              "name": "ערד סדרה 8829",
+              "value": 0.0304,
+              "percentage": 0.48
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8796",
+              "value": 0.03,
+              "percentage": 0.47
+            },
+            {
+              "name": "ערד סדרה 8814",
+              "value": 0.0296,
+              "percentage": 0.47
+            },
+            {
+              "name": "ערד סדרה 8816",
+              "value": 0.0285,
+              "percentage": 0.45
+            },
+            {
+              "name": "ערד סדרה 8798",
+              "value": 0.0281,
+              "percentage": 0.44
+            },
+            {
+              "name": "ערד סדרה 8820",
+              "value": 0.0276,
+              "percentage": 0.44
+            },
+            {
+              "name": "ערד סדרה 8795",
+              "value": 0.027,
+              "percentage": 0.43
+            },
+            {
+              "name": "ערד סדרה 8784",
+              "value": 0.0258,
+              "percentage": 0.41
+            },
+            {
+              "name": "ערד סדרה 8794",
+              "value": 0.025,
+              "percentage": 0.4
+            },
+            {
+              "name": "ערד סדרה 8811",
+              "value": 0.025,
+              "percentage": 0.4
+            },
+            {
+              "name": "ערד סדרה 8800",
+              "value": 0.0249,
+              "percentage": 0.39
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8864",
+              "value": 0.0237,
+              "percentage": 0.37
+            },
+            {
+              "name": "ערד סדרה 8802",
+              "value": 0.0227,
+              "percentage": 0.36
+            },
+            {
+              "name": "ערד סדרה 8831",
+              "value": 0.0222,
+              "percentage": 0.35
+            },
+            {
+              "name": "ערד סדרה 8839",
+              "value": 0.0217,
+              "percentage": 0.34
+            },
+            {
+              "name": "ערד סדרה 8771",
+              "value": 0.0214,
+              "percentage": 0.34
+            },
+            {
+              "name": "ערד סדרה 8775",
+              "value": 0.0214,
+              "percentage": 0.34
+            },
+            {
+              "name": "ערד סדרה 8772",
+              "value": 0.0212,
+              "percentage": 0.34
+            },
+            {
+              "name": "ערד סדרה 8786",
+              "value": 0.019,
+              "percentage": 0.3
+            },
+            {
+              "name": "ערד סדרה 8788",
+              "value": 0.0187,
+              "percentage": 0.3
+            },
+            {
+              "name": "ערד סדרה 8790",
+              "value": 0.0185,
+              "percentage": 0.29
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8852",
+              "value": 0.018,
+              "percentage": 0.28
+            },
+            {
+              "name": "ערד סדרה 8774",
+              "value": 0.0175,
+              "percentage": 0.28
+            },
+            {
+              "name": "ערד סדרה 8861",
+              "value": 0.0171,
+              "percentage": 0.27
+            },
+            {
+              "name": "ערד סדרה 8781",
+              "value": 0.0166,
+              "percentage": 0.26
+            },
+            {
+              "name": "ערד סדרה 8827",
+              "value": 0.0162,
+              "percentage": 0.26
+            },
+            {
+              "name": "ערד סדרה 8834",
+              "value": 0.0151,
+              "percentage": 0.24
+            },
+            {
+              "name": "ערד סדרה 8777",
+              "value": 0.015,
+              "percentage": 0.24
+            },
+            {
+              "name": "ערד סדרה 8840",
+              "value": 0.0122,
+              "percentage": 0.19
+            },
+            {
+              "name": "ערד סדרה 8778",
+              "value": 0.0115,
+              "percentage": 0.18
+            },
+            {
+              "name": "ערד סדרה 8773",
+              "value": 0.0107,
+              "percentage": 0.17
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8860",
+              "value": 0.009,
+              "percentage": 0.14
+            },
+            {
+              "name": "ערד סדרה 8869",
+              "value": 0.0086,
+              "percentage": 0.14
+            },
+            {
+              "name": "ערד סדרה 8836",
+              "value": 0.008,
+              "percentage": 0.13
+            },
+            {
+              "name": "ערד סדרה 8806",
+              "value": 0.0065,
+              "percentage": 0.1
+            },
+            {
+              "name": "ערד סדרה 8780",
+              "value": 0.0056,
+              "percentage": 0.09
+            },
+            {
+              "name": "ערד סדרה 8776",
+              "value": 0.0046,
+              "percentage": 0.07
+            },
+            {
+              "name": "ערד סדרה 8828",
+              "value": 0.0045,
+              "percentage": 0.07
+            },
+            {
+              "name": "ערד סדרה 8878",
+              "value": 0.0037,
+              "percentage": 0.06
+            },
+            {
+              "name": "ערד סדרה 8792",
+              "value": 0.0026,
+              "percentage": 0.04
+            },
+            {
+              "name": "ערד סדרה 8779",
+              "value": 0.0022,
+              "percentage": 0.03
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8887",
+              "value": 0.0019,
+              "percentage": 0.03
+            },
+            {
+              "name": "ערד סדרה 8884",
+              "value": 0.0018,
+              "percentage": 0.03
+            },
+            {
+              "name": "ערד סדרה 8830",
+              "value": 0.0018,
+              "percentage": 0.03
+            },
+            {
+              "name": "ערד סדרה 8785",
+              "value": 0.0017,
+              "percentage": 0.03
+            },
+            {
+              "name": "ערד סדרה 8783",
+              "value": 0.0011,
+              "percentage": 0.02
+            },
+            {
+              "name": "ערד סדרה 8782",
+              "value": 0.0009,
+              "percentage": 0.01
+            },
+            {
+              "name": "ערד סדרה 8804",
+              "value": 0.0008,
+              "percentage": 0.01
+            },
+            {
+              "name": "ערד סדרה 8791",
+              "value": 0.0005,
+              "percentage": 0.01
+            },
+            {
+              "name": "ערד סדרה 8886",
+              "value": 0.0005,
+              "percentage": 0.01
+            },
+            {
+              "name": "ערד סדרה 8835",
+              "value": 0.0004,
+              "percentage": 0.01
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.2039,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SPTR INDEX",
+              "value": 0.5354,
+              "percentage": 262.63
+            },
+            {
+              "name": "USDILS",
+              "value": -0.3315,
+              "percentage": -162.63
+            }
+          ]
         ]
       }
     ],
@@ -180,32 +859,61 @@
         "subclass": "Government Bonds",
         "value": 3.0975,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "T 4 1/4 12/31/25",
-            "value": 0.6286,
-            "percentage": 20.29
-          },
-          {
-            "name": "מ.ק.מ. 1215",
-            "value": 0.5257,
-            "percentage": 16.97
-          },
-          {
-            "name": "מ.ק.מ. 1015",
-            "value": 0.4979,
-            "percentage": 16.07
-          },
-          {
-            "name": "מ.ק.מ. 116",
-            "value": 0.2676,
-            "percentage": 8.64
-          },
-          {
-            "name": "מ.ק.מ. 1115",
-            "value": 0.2629,
-            "percentage": 8.49
-          }
+        "itemCount": 10,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "T 4 1/4 12/31/25",
+              "value": 0.6286,
+              "percentage": 20.29
+            },
+            {
+              "name": "מ.ק.מ. 1215",
+              "value": 0.5257,
+              "percentage": 16.97
+            },
+            {
+              "name": "מ.ק.מ. 1015",
+              "value": 0.4979,
+              "percentage": 16.07
+            },
+            {
+              "name": "מ.ק.מ. 116",
+              "value": 0.2676,
+              "percentage": 8.64
+            },
+            {
+              "name": "מ.ק.מ. 1115",
+              "value": 0.2629,
+              "percentage": 8.49
+            },
+            {
+              "name": "מ.ק.מ. 616",
+              "value": 0.2568,
+              "percentage": 8.29
+            },
+            {
+              "name": "מ.ק.מ. 916",
+              "value": 0.2544,
+              "percentage": 8.21
+            },
+            {
+              "name": "מ.ק.מ. 516",
+              "value": 0.2061,
+              "percentage": 6.65
+            },
+            {
+              "name": "ממשל קצרה 02/26",
+              "value": 0.1748,
+              "percentage": 5.64
+            },
+            {
+              "name": "ממשל קצרה 05/26",
+              "value": 0.0228,
+              "percentage": 0.74
+            }
+          ]
         ]
       }
     ],
@@ -214,32 +922,36 @@
         "subclass": "Cash",
         "value": 12.9962,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "בנק הפועלים",
-            "value": 4.9517,
-            "percentage": 38.1
-          },
-          {
-            "name": "בנק מזרחי",
-            "value": 4.8818,
-            "percentage": 37.56
-          },
-          {
-            "name": "בנק לאומי",
-            "value": 2.551,
-            "percentage": 19.63
-          },
-          {
-            "name": "בנק דיסקונט",
-            "value": 0.6065,
-            "percentage": 4.67
-          },
-          {
-            "name": "בנק הבינלאומי",
-            "value": 0.0051,
-            "percentage": 0.04
-          }
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 4.9517,
+              "percentage": 38.1
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 4.8818,
+              "percentage": 37.56
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 2.551,
+              "percentage": 19.63
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.6065,
+              "percentage": 4.67
+            },
+            {
+              "name": "בנק הבינלאומי",
+              "value": 0.0051,
+              "percentage": 0.04
+            }
+          ]
         ]
       }
     ]
