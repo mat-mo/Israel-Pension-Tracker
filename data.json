@@ -51,6 +51,20 @@
               ]
             }
           ],
+          "Investment Funds": [
+            {
+              "subclass": "Funds",
+              "value": 14.61,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "JP Morgan IIF", "value": 0.53, "percentage": 3.60 },
+                { "name": "Ares Capital Europe V", "value": 0.21, "percentage": 1.47 },
+                { "name": "Brookfield Capital Partners V", "value": 0.20, "percentage": 1.38 },
+                { "name": "Aachen Fund", "value": 0.19, "percentage": 1.32 },
+                { "name": "Global Infrastructure Partners IV", "value": 0.18, "percentage": 1.25 }
+              ]
+            }
+          ],
           "Bonds": [
             {
               "subclass": "Government Bonds",
@@ -77,17 +91,17 @@
               ]
             }
           ],
-          "Investment Funds": [
+          "Real Estate": [
             {
-              "subclass": "Funds",
-              "value": 14.61,
+              "subclass": "Direct Real Estate",
+              "value": 7.22,
               "percentageOfClass": 100.0,
               "topHoldings": [
-                { "name": "JP Morgan IIF", "value": 0.53, "percentage": 3.60 },
-                { "name": "Ares Capital Europe V", "value": 0.21, "percentage": 1.47 },
-                { "name": "Brookfield Capital Partners V", "value": 0.20, "percentage": 1.38 },
-                { "name": "Aachen Fund", "value": 0.19, "percentage": 1.32 },
-                { "name": "Global Infrastructure Partners IV", "value": 0.18, "percentage": 1.25 }
+                { "name": "Beit Berkovich (TLV)", "value": 1.00, "percentage": 13.81 },
+                { "name": "Golden Mall (Rishon)", "value": 0.95, "percentage": 13.20 },
+                { "name": "Weizmann Center", "value": 0.64, "percentage": 8.89 },
+                { "name": "B.S.R. Center", "value": 0.58, "percentage": 8.04 },
+                { "name": "Life Plaza", "value": 0.52, "percentage": 7.18 }
               ]
             }
           ],
@@ -116,20 +130,6 @@
                 { "name": "Private Loan C", "value": 0.13, "percentage": 1.73 },
                 { "name": "Private Loan D", "value": 0.13, "percentage": 1.73 },
                 { "name": "Private Loan E", "value": 0.12, "percentage": 1.66 }
-              ]
-            }
-          ],
-          "Real Estate": [
-            {
-              "subclass": "Direct Real Estate",
-              "value": 7.22,
-              "percentageOfClass": 100.0,
-              "topHoldings": [
-                { "name": "Beit Berkovich (TLV)", "value": 1.00, "percentage": 13.81 },
-                { "name": "Golden Mall (Rishon)", "value": 0.95, "percentage": 13.20 },
-                { "name": "Weizmann Center", "value": 0.64, "percentage": 8.89 },
-                { "name": "B.S.R. Center", "value": 0.58, "percentage": 8.04 },
-                { "name": "Life Plaza", "value": 0.52, "percentage": 7.18 }
               ]
             }
           ],
@@ -276,13 +276,7 @@
           { "name": "Loans", "value": 3.01, "percentage": 8.45 },
           { "name": "Real Estate", "value": 1.54, "percentage": 4.32 },
           { "name": "Non-Tradable Stocks", "value": 1.32, "percentage": 3.70 },
-          { "name": "Derivatives", "value": 0.41, "percentage": 1.15 },
-          { "name": "Structured Products", "value": 0.31, "percentage": 0.87 },
-          { "name": "Non-Tradable Bonds", "value": 0.25, "percentage": 0.70 },
-          { "name": "Mutual Funds", "value": 0.19, "percentage": 0.54 },
-          { "name": "Futures", "value": 0.06, "percentage": 0.18 },
-          { "name": "Warrants", "value": 0.02, "percentage": 0.04 },
-          { "name": "Options", "value": 0.01, "percentage": 0.03 }
+          { "name": "Other Assets", "value": 1.26, "percentage": 3.51 }
         ],
         "breakdown": {
           "Stocks": [
