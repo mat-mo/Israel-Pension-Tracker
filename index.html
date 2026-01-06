@@ -9,219 +9,223 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Heebo', sans-serif; background-color: #f8fafc; }
-        #chart-container { width: 100%; height: 750px; }
+        .chart-box { height: 400px; width: 100%; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="p-4 md:p-8 text-gray-800">
 
-    <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+    <div class="max-w-7xl mx-auto space-y-6">
+        
+        <div class="flex flex-col md:flex-row justify-between items-center bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <div>
-                <h1 class="text-3xl font-bold text-gray-800 tracking-tight">Pension Holdings Tracker</h1>
-                <p class="text-gray-500 mt-1">Transparency dashboard for Israeli institutional assets</p>
+                <h1 class="text-2xl font-bold tracking-tight">Pension Holdings Tracker</h1>
+                <p class="text-gray-500 text-sm">Transparency dashboard for Israeli institutional assets</p>
             </div>
-            <div class="mt-4 md:mt-0">
-                <select id="trackSelector" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 shadow-sm">
-                    <option disabled selected>Loading...</option>
+            <div class="mt-4 md:mt-0 flex items-center gap-4">
+                <div class="text-right hidden md:block">
+                    <p class="text-xs text-gray-400 uppercase">Total Assets</p>
+                    <p id="totalAssetsDisplay" class="text-xl font-bold text-blue-600">-</p>
+                </div>
+                <select id="trackSelector" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 shadow-sm w-64">
+                    <option disabled selected>Loading tracks...</option>
                 </select>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
-            <div class="lg:col-span-8 bg-white p-1 rounded-xl shadow-sm border border-gray-100">
-                <div class="p-5 border-b border-gray-100 flex justify-between items-center">
-                    <h2 class="text-lg font-semibold text-gray-700">Allocation Breakdown</h2>
-                    <span class="text-xs font-medium px-2.5 py-0.5 rounded bg-blue-100 text-blue-800">Click to Zoom</span>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="mb-4">
+                    <h2 class="font-bold text-lg">1. Asset Allocation</h2>
+                    <p class="text-xs text-gray-400">Click a slice to view details</p>
                 </div>
-                <div id="chart-container"></div>
+                <div id="mainChart" class="chart-box"></div>
             </div>
 
-            <div class="lg:col-span-4 space-y-6">
-                
-                <div class="bg-blue-600 p-6 rounded-xl shadow-md text-white">
-                    <p class="text-blue-100 text-sm font-medium uppercase tracking-wider">Total Fund Assets</p>
-                    <h3 id="totalAssetsDisplay" class="text-4xl font-bold mt-2">-</h3>
-                    <p class="text-blue-200 text-sm mt-2 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-green-400"></span> Updated Q3 2025
-                    </p>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+                <div class="mb-4">
+                    <h2 id="subChartTitle" class="font-bold text-lg">2. Category Breakdown</h2>
+                    <p class="text-xs text-gray-400">Distribution within selected category</p>
                 </div>
-
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col h-[500px]">
-                    <div class="p-5 border-b border-gray-100 bg-gray-50">
-                        <h2 class="font-semibold text-gray-700">Largest Individual Holdings</h2>
-                    </div>
-                    <div class="overflow-y-auto flex-1">
-                        <table class="w-full text-sm text-left">
-                            <tbody id="topHoldingsBody" class="divide-y divide-gray-100">
-                                </tbody>
-                        </table>
-                    </div>
-                </div>
+                <div id="subChart" class="chart-box"></div>
             </div>
         </div>
-        
-        <footer class="mt-12 text-center text-gray-400 text-sm">
-            <p>Data source: Capital Market Authority / Institutional Reports</p>
-        </footer>
+
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="p-6 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
+                <h3 id="tableTitle" class="font-bold text-gray-700">Top Holdings</h3>
+                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full" id="tableBadge">Select a Category</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead class="text-xs text-gray-500 uppercase bg-gray-50 border-b">
+                        <tr>
+                            <th class="px-6 py-3">Asset Name</th>
+                            <th class="px-6 py-3">Sub-Category</th>
+                            <th class="px-6 py-3 text-right">Value (Billions)</th>
+                            <th class="px-6 py-3 text-right">% of Category</th>
+                        </tr>
+                    </thead>
+                    <tbody id="holdingsBody" class="divide-y divide-gray-100">
+                        <tr><td colspan="4" class="px-6 py-8 text-center text-gray-400">Click on the Pie Chart to see holdings</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 
     <script>
-        let chartInstance = null;
-        let allData = [];
+        let mainChart = null;
+        let subChart = null;
+        let currentTrackData = null;
 
-        // Fetch Data
+        // Load Data
         fetch('data.json')
-            .then(response => {
-                if (!response.ok) throw new Error("HTTP error " + response.status);
-                return response.json();
-            })
+            .then(res => res.json())
             .then(data => {
-                // FIXED: Handle both Single Object and Array formats
-                allData = Array.isArray(data) ? data : [data];
-                initApp();
+                // Handle if data is array or object
+                const tracks = Array.isArray(data) ? data : [data];
+                initDashboard(tracks);
             })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('chart-container').innerHTML = 
-                    `<div class="flex items-center justify-center h-full text-red-500">Error loading data.json<br>Check console (F12) for details.</div>`;
+            .catch(err => {
+                console.error(err);
+                alert("Error loading data.json. Check console.");
             });
 
-        function initApp() {
+        function initDashboard(tracks) {
             const selector = document.getElementById('trackSelector');
-            selector.innerHTML = ''; 
+            selector.innerHTML = '';
 
-            allData.forEach((track, index) => {
-                const option = document.createElement('option');
-                option.value = index;
-                option.text = track.name || `Track ${track.trackId}`;
-                selector.appendChild(option);
+            tracks.forEach((track, idx) => {
+                const opt = document.createElement('option');
+                opt.value = idx;
+                opt.text = track.fundName || track.name;
+                selector.appendChild(opt);
             });
 
-            selector.addEventListener('change', (e) => renderDashboard(allData[e.target.value]));
+            selector.addEventListener('change', (e) => loadTrack(tracks[e.target.value]));
             
-            // Render first track
-            if(allData.length > 0) renderDashboard(allData[0]);
+            // Initialize ECharts instances
+            mainChart = echarts.init(document.getElementById('mainChart'));
+            subChart = echarts.init(document.getElementById('subChart'));
+
+            // Handle Resize
+            window.addEventListener('resize', () => {
+                mainChart.resize();
+                subChart.resize();
+            });
+
+            // Load first track
+            loadTrack(tracks[0]);
         }
 
-        function renderDashboard(trackData) {
-            // Update KPIs
-            document.getElementById('totalAssetsDisplay').innerText = `₪${trackData.total_value.toLocaleString()}B`;
+        function loadTrack(data) {
+            currentTrackData = data;
             
-            // Render Chart
-            renderSunburst(trackData);
-            
-            // Render List
-            renderTopList(trackData);
+            // 1. Update KPI
+            document.getElementById('totalAssetsDisplay').innerText = `₪${data.totalAssetsBN.toLocaleString()}B`;
+
+            // 2. Render Main Donut Chart
+            const option = {
+                tooltip: { trigger: 'item', formatter: '{b}: {c}B ({d}%)' },
+                legend: { top: '5%', left: 'center', show: false },
+                series: [{
+                    name: 'Asset Class',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: { borderRadius: 5, borderColor: '#fff', borderWidth: 2 },
+                    label: { show: true, position: 'outside', formatter: '{b}' },
+                    emphasis: { label: { show: true, fontSize: 16, fontWeight: 'bold' } },
+                    data: data.assetClasses.map(item => ({
+                        value: item.value,
+                        name: item.name
+                    }))
+                }]
+            };
+            mainChart.setOption(option);
+
+            // 3. Add Click Event
+            mainChart.off('click'); // Remove old listeners
+            mainChart.on('click', function (params) {
+                updateSubChart(params.name);
+            });
+
+            // 4. Default: Select biggest category
+            if(data.assetClasses.length > 0) {
+                updateSubChart(data.assetClasses[0].name);
+            }
         }
 
-        function renderSunburst(data) {
-            const dom = document.getElementById('chart-container');
-            if (chartInstance) chartInstance.dispose();
-            chartInstance = echarts.init(dom);
+        function updateSubChart(categoryName) {
+            const breakdown = currentTrackData.breakdown[categoryName];
+            
+            // Update Titles
+            document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
+            document.getElementById('tableTitle').innerText = `Top Holdings: ${categoryName}`;
+            document.getElementById('tableBadge').innerText = categoryName;
+
+            if (!breakdown || breakdown.length === 0) {
+                subChart.clear();
+                document.getElementById('subChart').innerHTML = "<div class='flex items-center justify-center h-full text-gray-400'>No breakdown available</div>";
+                renderTable([]);
+                return;
+            }
+
+            // Prepare Bar Chart Data
+            const categories = breakdown.map(b => b.subclass);
+            const values = breakdown.map(b => b.value);
 
             const option = {
-                color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
-                tooltip: {
-                    trigger: 'item',
-                    formatter: (params) => {
-                        const val = params.value;
-                        // Calculate percentage relative to total fund
-                        const total = data.total_value;
-                        const pct = ((val / total) * 100).toFixed(2);
-                        
-                        // Path string
-                        const path = params.treePathInfo.map(x => x.name).slice(1).join(' > ');
-                        
-                        return `
-                            <div class="font-sans">
-                                <div class="text-xs text-gray-400 mb-1">${path}</div>
-                                <div class="font-bold text-base mb-1">${params.name}</div>
-                                <div class="flex justify-between gap-4 text-sm">
-                                    <span>Value:</span> <span class="font-mono">₪${val}B</span>
-                                </div>
-                                <div class="flex justify-between gap-4 text-sm font-semibold text-blue-500">
-                                    <span>Share:</span> <span>${pct}%</span>
-                                </div>
-                            </div>
-                        `;
-                    },
-                    backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                    borderColor: '#e5e7eb',
-                    borderWidth: 1,
-                    textStyle: { color: '#374151' },
-                    padding: 12
-                },
-                series: {
-                    type: 'sunburst',
-                    data: data.children,
-                    radius: ['15%', '90%'],
-                    sort: undefined, // Don't auto sort, respect your JSON order
-                    emphasis: { focus: 'ancestor' },
-                    itemStyle: {
-                        borderRadius: 4,
-                        borderWidth: 2,
-                        borderColor: '#fff'
-                    },
-                    levels: [
-                        {}, // Center (Invisible)
-                        {   // Level 1: Asset Class (Stocks, Bonds...)
-                            r0: '15%', r: '45%',
-                            label: { rotate: 'tangential', align: 'center', fontWeight: 'bold' },
-                            itemStyle: { borderWidth: 2 }
-                        },
-                        {   // Level 2: Sub-class (Direct, ETF, Gov...)
-                            r0: '45%', r: '70%',
-                            label: { align: 'center', padding: 3, rotate: 'tangential' }
-                        },
-                        {   // Level 3: Holdings (Leumi, Poalim...)
-                            r0: '70%', r: '92%',
-                            label: { position: 'outside', padding: 3, silent: false, color: '#6b7280' },
-                            itemStyle: { borderWidth: 1, opacity: 0.8 }
-                        }
-                    ]
-                }
+                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+                grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+                xAxis: { type: 'value', name: 'Billions' },
+                yAxis: { type: 'category', data: categories },
+                series: [{
+                    name: 'Value',
+                    type: 'bar',
+                    data: values,
+                    itemStyle: { color: '#3b82f6', borderRadius: [0, 4, 4, 0] },
+                    label: { show: true, position: 'right', formatter: '{@score}B' }
+                }]
             };
+            subChart.setOption(option);
 
-            chartInstance.setOption(option);
-            window.onresize = () => chartInstance.resize();
+            // Update Table
+            // Flatten all holdings from all subclasses in this category
+            let allHoldings = [];
+            breakdown.forEach(sub => {
+                sub.topHoldings.forEach(h => {
+                    allHoldings.push({
+                        ...h,
+                        subclass: sub.subclass
+                    });
+                });
+            });
+            
+            // Sort by value
+            allHoldings.sort((a, b) => b.value - a.value);
+            renderTable(allHoldings);
         }
 
-        function renderTopList(data) {
-            // Flatten the hierarchy to get all holdings
-            let flatList = [];
-            
-            function traverse(node, path) {
-                if (!node.children || node.children.length === 0) {
-                    if(!node.name.includes("Other")) {
-                        flatList.push({ ...node, category: path });
-                    }
-                } else {
-                    node.children.forEach(child => traverse(child, path ? child.name : child.name)); // Simplify path to just immediate parent or keep root
-                }
-            }
-            
-            // Start traversal from children of root
-            data.children.forEach(c => traverse(c, c.name));
-            
-            // Sort and Top 20
-            flatList.sort((a, b) => b.value - a.value);
-            const topList = flatList.slice(0, 20);
-
-            const tbody = document.getElementById('topHoldingsBody');
+        function renderTable(holdings) {
+            const tbody = document.getElementById('holdingsBody');
             tbody.innerHTML = '';
 
-            topList.forEach(item => {
+            if (holdings.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-4 text-center text-gray-400">No specific holdings data</td></tr>';
+                return;
+            }
+
+            holdings.forEach(h => {
                 const tr = document.createElement('tr');
-                tr.className = "hover:bg-gray-50 transition-colors";
+                tr.className = "bg-white border-b hover:bg-gray-50 transition-colors";
                 tr.innerHTML = `
-                    <td class="px-5 py-3">
-                        <div class="font-medium text-gray-900">${item.name}</div>
-                        <div class="text-xs text-blue-500 font-medium bg-blue-50 inline-block px-1.5 py-0.5 rounded mt-0.5">${item.category}</div>
-                    </td>
-                    <td class="px-5 py-3 text-right font-mono text-gray-600">
-                        ${item.percentage}%
-                    </td>
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">${h.name}</th>
+                    <td class="px-6 py-4 text-gray-500">${h.subclass}</td>
+                    <td class="px-6 py-4 text-right font-mono">₪${h.value.toFixed(4)}B</td>
+                    <td class="px-6 py-4 text-right text-blue-600 font-semibold">${h.percentage}%</td>
                 `;
                 tbody.appendChild(tr);
             });
