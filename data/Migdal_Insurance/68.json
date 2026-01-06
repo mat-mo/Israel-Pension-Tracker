@@ -5,13 +5,8 @@
   "assetClasses": [
     {
       "name": "Bonds",
-      "value": 0.3379,
-      "percentage": 81.64
-    },
-    {
-      "name": "Stocks",
-      "value": 0.0607,
-      "percentage": 14.66
+      "value": 0.3985,
+      "percentage": 96.31
     },
     {
       "name": "Cash & Equivalents",
@@ -58,45 +53,11 @@
         ]
       }
     ],
-    "Stocks": [
-      {
-        "subclass": "ETFs",
-        "value": 0.0607,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "תכלית סל תלגוב צמוד 2 5",
-            "value": 0.0333,
-            "percentage": 54.9
-          },
-          {
-            "name": "קסם ETF תל גוב צמודות 2 5",
-            "value": 0.0215,
-            "percentage": 35.51
-          },
-          {
-            "name": "תכלית סל תלגוב צמוד 0 2",
-            "value": 0.0039,
-            "percentage": 6.4
-          },
-          {
-            "name": "הראל סל תלבונד 60",
-            "value": 0.0004,
-            "percentage": 0.61
-          },
-          {
-            "name": "הראל סל תלבונד שקלי",
-            "value": 0.0003,
-            "percentage": 0.5
-          }
-        ]
-      }
-    ],
     "Bonds": [
       {
         "subclass": "Government Bonds",
         "value": 0.2745,
-        "percentageOfClass": 81.25,
+        "percentageOfClass": 68.88,
         "topHoldings": [
           {
             "name": "T 3.875 11/30/29",
@@ -128,7 +89,7 @@
       {
         "subclass": "Corporate Bonds",
         "value": 0.0633,
-        "percentageOfClass": 18.75,
+        "percentageOfClass": 15.89,
         "topHoldings": [
           {
             "name": "עזריאלי אגח ט",
@@ -154,6 +115,38 @@
             "name": "מקורות אגח 11",
             "value": 0.0013,
             "percentage": 2.12
+          }
+        ]
+      },
+      {
+        "subclass": "ETFs",
+        "value": 0.0607,
+        "percentageOfClass": 15.23,
+        "topHoldings": [
+          {
+            "name": "תכלית סל תלגוב צמוד 2 5",
+            "value": 0.0333,
+            "percentage": 54.9
+          },
+          {
+            "name": "קסם ETF תל גוב צמודות 2 5",
+            "value": 0.0215,
+            "percentage": 35.51
+          },
+          {
+            "name": "תכלית סל תלגוב צמוד 0 2",
+            "value": 0.0039,
+            "percentage": 6.4
+          },
+          {
+            "name": "הראל סל תלבונד 60",
+            "value": 0.0004,
+            "percentage": 0.61
+          },
+          {
+            "name": "הראל סל תלבונד שקלי",
+            "value": 0.0003,
+            "percentage": 0.5
           }
         ]
       }
