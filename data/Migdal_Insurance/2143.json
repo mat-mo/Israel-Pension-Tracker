@@ -1,0 +1,118 @@
+{
+  "fundName": "Migdal Makefet Ishit Short Term Shekel",
+  "trackId": "2143",
+  "totalAssetsBN": 0.24,
+  "assetClasses": [
+    {
+      "name": "Bonds",
+      "value": 0.1772,
+      "percentage": 73.1
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.052,
+      "percentage": 21.46
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0125,
+      "percentage": 5.16
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.0006,
+      "percentage": 0.26
+    },
+    {
+      "name": "Investment Funds",
+      "value": 0.0001,
+      "percentage": 0.02
+    }
+  ],
+  "breakdown": {
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.1226,
+        "percentageOfClass": 69.19,
+        "topHoldings": [
+          { "name": "מ.ק.מ. 516", "value": 0.0245, "percentage": 19.98 },
+          { "name": "מ.ק.מ. 916", "value": 0.0189, "percentage": 15.42 },
+          { "name": "מ.ק.מ. 816", "value": 0.0177, "percentage": 14.44 },
+          { "name": "ממשל שקלית 0226", "value": 0.0153, "percentage": 12.48 },
+          { "name": "ממשל משתנה 0526", "value": 0.0145, "percentage": 11.83 }
+        ]
+      },
+      {
+        "subclass": "Corporate Bonds",
+        "value": 0.0336,
+        "percentageOfClass": 18.96,
+        "topHoldings": [
+          { "name": "פועלים הנפקות אגח 42", "value": 0.0019, "percentage": 5.65 },
+          { "name": "הכשרת הישוב אגח 21", "value": 0.0018, "percentage": 5.36 },
+          { "name": "עזריאלי אגח ה", "value": 0.0016, "percentage": 4.76 },
+          { "name": "גב ים אגח ח", "value": 0.0013, "percentage": 3.87 },
+          { "name": "שלמה החזקות אגח כג", "value": 0.0012, "percentage": 3.57 }
+        ]
+      },
+      {
+        "subclass": "ETFs",
+        "value": 0.021,
+        "percentageOfClass": 11.85,
+        "topHoldings": [
+          { "name": "קסם ETF כשרה תלבונד שקלי", "value": 0.0069, "percentage": 32.86 },
+          { "name": "תכלית סל תלבונד שקלי", "value": 0.0053, "percentage": 25.24 },
+          { "name": "הראל סל תלבונד שקלי", "value": 0.0039, "percentage": 18.57 },
+          { "name": "איביאי סל תל בונד שקלי", "value": 0.003, "percentage": 14.29 },
+          { "name": "קסם ETF תלבונד שקלי", "value": 0.0019, "percentage": 9.05 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.052,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0253, "percentage": 48.65 },
+          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0232, "percentage": 44.62 },
+          { "name": "בנק הפועלים בע\"מ", "value": 0.0035, "percentage": 6.73 }
+        ]
+      }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0125,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "ערד 8892", "value": 0.0005, "percentage": 4.0 },
+          { "name": "ערד 8894", "value": 0.0003, "percentage": 2.4 },
+          { "name": "ערד 8889", "value": 0.0003, "percentage": 2.4 },
+          { "name": "ערד 8903", "value": 0.0003, "percentage": 2.4 },
+          { "name": "ערד 8897", "value": 0.0002, "percentage": 1.6 }
+        ]
+      }
+    ],
+    "Mutual Funds": [
+      {
+        "subclass": "General",
+        "value": 0.0006,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "מיטב (!) כספית", "value": 0.0006, "percentage": 100.0 }
+        ]
+      }
+    ],
+    "Investment Funds": [
+      {
+        "subclass": "Funds",
+        "value": 0.0001,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "Noked Long L.P", "value": 0.0, "percentage": 100.0 }
+        ]
+      }
+    ]
+  }
+}
