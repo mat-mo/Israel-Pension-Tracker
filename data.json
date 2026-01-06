@@ -91,6 +91,20 @@
               ]
             }
           ],
+          "Investment Funds": [
+            {
+              "subclass": "Funds",
+              "value": 14.6103,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "JP Morgan IIF", "value": 0.52618, "percentage": 3.60 },
+                { "name": "Ares Capital Europe V", "value": 0.21426, "percentage": 1.47 },
+                { "name": "Brookfield Capital Partners V", "value": 0.20123, "percentage": 1.38 },
+                { "name": "Aachen Fund", "value": 0.19344, "percentage": 1.32 },
+                { "name": "Global Infrastructure Partners IV", "value": 0.1823, "percentage": 1.25 }
+              ]
+            }
+          ],
           "Cash & Equivalents": [
             {
               "subclass": "Cash",
@@ -130,6 +144,121 @@
                 { "name": "Mammoth North LP", "value": 0.14075, "percentage": 4.55 },
                 { "name": "425 Lexington", "value": 0.13092, "percentage": 4.24 },
                 { "name": "Amal Holdings", "value": 0.12252, "percentage": 3.96 }
+              ]
+            }
+          ],
+          "Derivatives": [
+            {
+              "subclass": "General",
+              "value": 0.9597,
+              "percentageOfClass": 100.0,
+              "topHoldings": []
+            }
+          ],
+          "Structured Products": [
+            {
+              "subclass": "Non-Tradable",
+              "value": 0.743,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "CLN Manivim Bank Leumi", "value": 0.19799, "percentage": 26.65 },
+                { "name": "Poalim Bond 2", "value": 0.16767, "percentage": 22.57 },
+                { "name": "Leumi Bond 4", "value": 0.12507, "percentage": 16.83 },
+                { "name": "Leumi Bond 3", "value": 0.08391, "percentage": 11.29 },
+                { "name": "Poalim Bond 1", "value": 0.03807, "percentage": 5.12 }
+              ]
+            }
+          ],
+          "Non-Tradable Bonds": [
+            {
+              "subclass": "General",
+              "value": 0.605,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "Mekorot Bond 8", "value": 0.16847, "percentage": 27.84 },
+                { "name": "Mekorot Bond 6", "value": 0.09436, "percentage": 15.60 },
+                { "name": "Yahav Commitment D", "value": 0.04306, "percentage": 7.12 },
+                { "name": "Rafael Bond G", "value": 0.04000, "percentage": 6.61 },
+                { "name": "Matam Bond B", "value": 0.03460, "percentage": 5.72 }
+              ]
+            }
+          ],
+          "Mutual Funds": [
+            {
+              "subclass": "General",
+              "value": 0.4676,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "Moneda Latam Corp Debt", "value": 0.09491, "percentage": 20.30 },
+                { "name": "Lion III EUR", "value": 0.06168, "percentage": 13.19 },
+                { "name": "GS India Equity", "value": 0.05775, "percentage": 12.35 },
+                { "name": "Amundi Planet", "value": 0.05706, "percentage": 12.20 },
+                { "name": "Schroder Intl Glb Equity", "value": 0.05376, "percentage": 11.50 }
+              ]
+            }
+          ],
+          "Futures": [
+            {
+              "subclass": "General",
+              "value": 0.1637,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "S&P500 EMINI Dec25", "value": 0.1099, "percentage": 67.12 },
+                { "name": "US 10YR Ultra Dec25", "value": 0.0251, "percentage": 15.33 },
+                { "name": "S&P/TSX 60 Dec25", "value": 0.00812, "percentage": 4.96 },
+                { "name": "NASDAQ 100 E-mini Dec25", "value": 0.00739, "percentage": 4.51 },
+                { "name": "Nikkei 225 Dec25", "value": 0.00664, "percentage": 4.06 }
+              ]
+            }
+          ],
+          "Warrants": [
+            {
+              "subclass": "Non-Tradable",
+              "value": 0.0236,
+              "percentageOfClass": 63.35,
+              "topHoldings": [
+                { "name": "State Defense Track 43", "value": 0.01653, "percentage": 69.99 },
+                { "name": "Option Fu Gen", "value": 0.00319, "percentage": 13.52 },
+                { "name": "Electra Option", "value": 0.00182, "percentage": 7.69 },
+                { "name": "Ayalon Option", "value": 0.0008, "percentage": 3.37 },
+                { "name": "Dimri Option", "value": 0.00069, "percentage": 2.91 }
+              ]
+            },
+            {
+              "subclass": "Tradable",
+              "value": 0.0137,
+              "percentageOfClass": 36.65,
+              "topHoldings": [
+                { "name": "Afi Properties Wrt 3", "value": 0.00362, "percentage": 26.49 },
+                { "name": "Big Wrt 7", "value": 0.00339, "percentage": 24.78 },
+                { "name": "Alony Hetz Wrt 16", "value": 0.00248, "percentage": 18.11 },
+                { "name": "Manivim REIT Wrt 4", "value": 0.00148, "percentage": 10.81 },
+                { "name": "Navitas Pet Wrt 6", "value": 0.00082, "percentage": 6.01 }
+              ]
+            }
+          ],
+          "Options": [
+            {
+              "subclass": "Tradable",
+              "value": 0.027,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "bC 7340 NOV 25", "value": 0.02212, "percentage": 81.85 },
+                { "name": "TEVA US Dec25 C17", "value": 0.01469, "percentage": 54.34 },
+                { "name": "CIC 17000", "value": 0.0009, "percentage": 3.34 },
+                { "name": "NICE US Oct25 C175", "value": 0.00011, "percentage": 0.39 },
+                { "name": "TEVA US Dec25 P11", "value": 0.00008, "percentage": 0.28 }
+              ]
+            }
+          ],
+          "Other Assets": [
+            {
+              "subclass": "General",
+              "value": 0.5733,
+              "percentageOfClass": 100.0,
+              "topHoldings": [
+                { "name": "Debtors 121-120", "value": 0.58551, "percentage": 102.14 },
+                { "name": "Nadlan Double U Eilat", "value": 0.00327, "percentage": 0.57 }
               ]
             }
           ]
