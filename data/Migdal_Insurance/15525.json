@@ -1,0 +1,59 @@
+{
+  "fundName": "Migdal Makefet Ishit Passive Bonds",
+  "trackId": "15525",
+  "totalAssetsBN": 0.28,
+  "assetClasses": [
+    {
+      "name": "Bonds",
+      "value": 0.2736,
+      "percentage": 98.92
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0016,
+      "percentage": 0.58
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0014,
+      "percentage": 0.5
+    }
+  ],
+  "breakdown": {
+    "Bonds": [
+      {
+        "subclass": "ETFs",
+        "value": 0.2736,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "ISHARES USD CORP BND", "value": 0.0465, "percentage": 16.99 },
+          { "name": "ISHARES CORE EURO CORP BOND", "value": 0.0461, "percentage": 16.85 },
+          { "name": "ISHARES MARKIT IBOXX $ HIGH", "value": 0.0284, "percentage": 10.38 },
+          { "name": "SPDR US HY CO SC UCI", "value": 0.0284, "percentage": 10.38 },
+          { "name": "X USD HIGH YIELD BOND", "value": 0.0283, "percentage": 10.34 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0016,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0011, "percentage": 68.75 },
+          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0005, "percentage": 31.25 }
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0014,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "USDILS", "value": 0.0014, "percentage": 100.0 }
+        ]
+      }
+    ]
+  }
+}
