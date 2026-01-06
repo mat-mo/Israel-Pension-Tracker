@@ -7,58 +7,85 @@
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            bg: '#0f172a',
+                            card: '#1e293b',
+                            border: '#334155',
+                            text: '#e2e8f0',
+                            textMuted: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Heebo', sans-serif; background-color: #f8fafc; }
-        .chart-box { height: 500px; width: 100%; } /* Increased height slightly for labels */
+        body { font-family: 'Heebo', sans-serif; transition: background-color 0.3s, color 0.3s; }
+        .chart-box { height: 400px; width: 100%; }
     </style>
 </head>
-<body class="p-4 md:p-8 text-gray-800">
+<body class="p-4 md:p-8 bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
 
     <div class="max-w-7xl mx-auto space-y-6">
         
-        <div class="flex flex-col md:flex-row justify-between items-center bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <div>
-                <h1 class="text-2xl font-bold tracking-tight">Pension Holdings Tracker</h1>
-                <p class="text-gray-500 text-sm">Transparency dashboard for Israeli institutional assets</p>
+        <div class="flex flex-col md:flex-row justify-between items-center bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
+            <div class="mb-4 md:mb-0">
+                <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pension Holdings Tracker</h1>
+                <p class="text-gray-500 dark:text-dark-textMuted text-sm">Transparency dashboard for Israeli institutional assets</p>
             </div>
-            <div class="mt-4 md:mt-0 flex items-center gap-4">
+            
+            <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
                 <div class="text-right hidden md:block">
-                    <p class="text-xs text-gray-400 uppercase">Total Assets</p>
-                    <p id="totalAssetsDisplay" class="text-xl font-bold text-blue-600">-</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500 uppercase">Total Assets</p>
+                    <p id="totalAssetsDisplay" class="text-xl font-bold text-blue-600 dark:text-blue-400">-</p>
                 </div>
-                <select id="trackSelector" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 shadow-sm w-64">
-                    <option disabled selected>Loading tracks...</option>
-                </select>
+                
+                <div class="flex items-center gap-2 w-full md:w-auto">
+                    <select id="trackSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2.5 shadow-sm w-full md:w-64 focus:ring-blue-500 focus:border-blue-500">
+                        <option disabled selected>Loading tracks...</option>
+                    </select>
+
+                    <button id="themeToggle" class="p-2.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 transition-all">
+                        <svg id="sunIcon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+                        <svg id="moonIcon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    </button>
+                </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="mb-4 border-b border-gray-100 pb-2">
-                    <h2 class="font-bold text-lg">1. Asset Allocation</h2>
-                    <p class="text-xs text-gray-400">Click a slice to view details</p>
+            <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
+                <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
+                    <h2 class="font-bold text-lg text-gray-800 dark:text-white">1. Asset Allocation</h2>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Click a slice to view details</p>
                 </div>
                 <div id="mainChart" class="chart-box"></div>
             </div>
 
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col">
-                <div class="mb-4 border-b border-gray-100 pb-2">
-                    <h2 id="subChartTitle" class="font-bold text-lg">2. Category Breakdown</h2>
-                    <p class="text-xs text-gray-400">Distribution within selected category</p>
+            <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border flex flex-col transition-colors duration-300">
+                <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
+                    <h2 id="subChartTitle" class="font-bold text-lg text-gray-800 dark:text-white">2. Category Breakdown</h2>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Distribution within selected category</p>
                 </div>
                 <div id="subChart" class="chart-box"></div>
             </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            <div class="p-6 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
-                <h3 id="tableTitle" class="font-bold text-gray-700">Top Holdings</h3>
-                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full" id="tableBadge">Select a Category</span>
+        <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-100 dark:border-dark-border overflow-hidden transition-colors duration-300">
+            <div class="p-6 border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300">
+                <h3 id="tableTitle" class="font-bold text-gray-700 dark:text-gray-200">Top Holdings</h3>
+                <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full" id="tableBadge">Select a Category</span>
             </div>
             <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left">
-                    <thead class="text-xs text-gray-500 uppercase bg-gray-50 border-b">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-500 dark:text-gray-400 uppercase bg-gray-50 dark:bg-gray-800 border-b dark:border-gray-700">
                         <tr>
                             <th class="px-6 py-3">Asset Name</th>
                             <th class="px-6 py-3">Sub-Category</th>
@@ -66,12 +93,16 @@
                             <th class="px-6 py-3 text-right">% of Category</th>
                         </tr>
                     </thead>
-                    <tbody id="holdingsBody" class="divide-y divide-gray-100">
-                        <tr><td colspan="4" class="px-6 py-8 text-center text-gray-400">Click on the Pie Chart to see holdings</td></tr>
+                    <tbody id="holdingsBody" class="divide-y divide-gray-100 dark:divide-gray-700">
+                        <tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">Click on the Pie Chart to see holdings</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
+
+        <footer class="mt-8 text-center text-xs text-gray-400 dark:text-gray-600 pb-4">
+            <p>Source: Capital Market Authority. Amounts in Billions NIS.</p>
+        </footer>
 
     </div>
 
@@ -79,8 +110,62 @@
         let mainChart = null;
         let subChart = null;
         let currentTrackData = null;
+        let currentCategory = null;
 
-        // Load Data
+        // Theme Handling
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        // Check system preference or localStorage
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            moonIcon.classList.remove('hidden');
+            sunIcon.classList.add('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            // Toggle icons
+            sunIcon.classList.toggle('hidden');
+            moonIcon.classList.toggle('hidden');
+
+            // Toggle Class
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+
+            // Refresh Charts to pick up new label colors
+            if (currentTrackData) {
+                renderCharts(currentTrackData, false); // false = don't reset view
+                if(currentCategory) updateSubChart(currentCategory);
+            }
+        });
+
+        function getChartTextColor() {
+            return document.documentElement.classList.contains('dark') ? '#e2e8f0' : '#333';
+        }
+
+        function getTooltipBg() {
+            return document.documentElement.classList.contains('dark') ? 'rgba(30, 41, 59, 0.95)' : 'rgba(255, 255, 255, 0.95)';
+        }
+
+        function getTooltipBorder() {
+            return document.documentElement.classList.contains('dark') ? '#334155' : '#e5e7eb';
+        }
+
+        function getTooltipText() {
+            return document.documentElement.classList.contains('dark') ? '#f1f5f9' : '#374151';
+        }
+
+        // Data Loading
         fetch('data.json')
             .then(res => res.json())
             .then(data => {
@@ -89,22 +174,28 @@
             })
             .catch(err => {
                 console.error(err);
-                alert("Error loading data.json. Check console.");
+                alert("Error loading data.json");
             });
 
         function initDashboard(tracks) {
             const selector = document.getElementById('trackSelector');
             selector.innerHTML = '';
 
-            // Handle Institution -> Tracks hierarchy or flat list
+            // Helper to get name
+            const getTrackName = (t) => {
+                 if (t.institutionName && t.fundName) return `${t.institutionName} - ${t.fundName}`;
+                 return t.fundName || t.name || `Track ${t.trackId}`;
+            };
+            
+            // Flatten if nested
             let flatTracks = [];
-            if (tracks.length > 0 && tracks[0].institutionName) {
-                tracks.forEach(inst => {
-                    inst.tracks.forEach(t => {
-                        t.fullName = `${inst.institutionName} - ${t.fundName}`;
-                        flatTracks.push(t);
-                    });
-                });
+            if (tracks.length > 0 && tracks[0].tracks) {
+                 tracks.forEach(inst => {
+                     inst.tracks.forEach(t => {
+                         t.displayName = `${inst.institutionName} - ${t.fundName}`;
+                         flatTracks.push(t);
+                     });
+                 });
             } else {
                 flatTracks = tracks;
             }
@@ -112,13 +203,12 @@
             flatTracks.forEach((track, idx) => {
                 const opt = document.createElement('option');
                 opt.value = idx;
-                opt.text = track.fullName || track.fundName || track.name;
+                opt.text = track.displayName || track.fundName || track.name;
                 selector.appendChild(opt);
             });
 
             selector.addEventListener('change', (e) => loadTrack(flatTracks[e.target.value]));
             
-            // Initialize ECharts instances
             mainChart = echarts.init(document.getElementById('mainChart'));
             subChart = echarts.init(document.getElementById('subChart'));
 
@@ -134,65 +224,65 @@
             currentTrackData = data;
             const total = data.totalAssetsBN || data.total_value || 0;
             document.getElementById('totalAssetsDisplay').innerText = `₪${total.toLocaleString()}B`;
+            renderCharts(data, true);
+        }
 
-            // --- MAIN CHART CONFIG ---
+        function renderCharts(data, resetView) {
+            const textColor = getChartTextColor();
+            
             const option = {
                 color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
                 tooltip: { 
                     trigger: 'item', 
+                    backgroundColor: getTooltipBg(),
+                    borderColor: getTooltipBorder(),
+                    textStyle: { color: getTooltipText() },
                     formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.value}B<br/>Share: ${params.percent}%` 
                 },
-                legend: { top: '0%', left: 'center', show: false },
                 series: [{
                     name: 'Asset Class',
                     type: 'pie',
-                    radius: ['30%', '60%'], // Slightly smaller inner radius to fit labels
+                    radius: ['35%', '65%'],
                     avoidLabelOverlap: true,
-                    itemStyle: { borderRadius: 5, borderColor: '#fff', borderWidth: 2 },
-                    
-                    // --- LABEL CONFIGURATION (ALWAYS VISIBLE) ---
+                    itemStyle: { 
+                        borderRadius: 5, 
+                        borderColor: document.documentElement.classList.contains('dark') ? '#1e293b' : '#fff', 
+                        borderWidth: 2 
+                    },
                     label: { 
                         show: true, 
                         position: 'outside', 
-                        formatter: '{b}\n{c}B ({d}%)', // Name \n Value \n Percent
-                        color: '#333',
+                        formatter: '{b}\n{c}B', 
+                        color: textColor,
                         fontSize: 12,
                         fontWeight: 'bold'
                     },
-                    labelLine: {
-                        show: true,
-                        length: 15,
-                        length2: 10
-                    },
-                    
-                    emphasis: { label: { show: true, fontSize: 14, fontWeight: 'bold' } },
-                    data: data.assetClasses.map(item => ({
-                        value: item.value,
-                        name: item.name
-                    }))
+                    labelLine: { show: true, length: 15, length2: 10 },
+                    data: data.assetClasses.map(item => ({ value: item.value, name: item.name }))
                 }]
             };
-            mainChart.setOption(option, true);
-
+            mainChart.setOption(option);
+            
             mainChart.off('click'); 
             mainChart.on('click', function (params) {
                 updateSubChart(params.name);
             });
 
-            if(data.assetClasses.length > 0) {
+            if (resetView && data.assetClasses.length > 0) {
                 updateSubChart(data.assetClasses[0].name);
-            } else {
-                updateSubChart(null);
             }
         }
 
         function updateSubChart(categoryName) {
+            currentCategory = categoryName;
+            
             if(!categoryName || !currentTrackData.breakdown || !currentTrackData.breakdown[categoryName]) {
                 showNoDataSubChart(categoryName || "Selection");
                 return;
             }
 
             const breakdown = currentTrackData.breakdown[categoryName];
+            const textColor = getChartTextColor();
             
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
             document.getElementById('tableTitle').innerText = `Top Holdings: ${categoryName}`;
@@ -203,32 +293,30 @@
                 return;
             }
 
-            const pieData = breakdown.map(b => ({
-                value: b.value,
-                name: b.subclass
-            }));
+            const pieData = breakdown.map(b => ({ value: b.value, name: b.subclass }));
 
-            // --- SUB CHART CONFIG ---
             const option = {
                 color: ['#60a5fa', '#34d399', '#fbbf24', '#f87171', '#a78bfa'],
                 tooltip: { 
                     trigger: 'item', 
+                    backgroundColor: getTooltipBg(),
+                    borderColor: getTooltipBorder(),
+                    textStyle: { color: getTooltipText() },
                     formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.value}B<br/>Share: ${params.percent}%` 
                 },
                 series: [{
                     type: 'pie',
-                    radius: ['35%', '65%'],
-                    itemStyle: { borderRadius: 4, borderColor: '#fff', borderWidth: 2 },
-                    
-                    // --- LABEL CONFIGURATION (ALWAYS VISIBLE) ---
+                    radius: ['30%', '60%'],
+                    itemStyle: { 
+                        borderRadius: 4, 
+                        borderColor: document.documentElement.classList.contains('dark') ? '#1e293b' : '#fff', 
+                        borderWidth: 2 
+                    },
                     label: { 
                         show: true, 
-                        position: 'outside',
-                        formatter: '{b}\n{d}%', // Name \n Percent (Value implied by size)
-                        color: '#4b5563'
+                        formatter: '{b}\n{d}%', 
+                        color: textColor 
                     },
-                    labelLine: { show: true },
-                    
                     data: pieData
                 }]
             };
@@ -242,13 +330,13 @@
             subChart.setOption({
                 title: {
                     text: 'No breakdown available',
-                    subtext: 'for ' + name,
+                    subtext: name,
                     left: 'center',
                     top: 'center',
                     textStyle: { color: '#9ca3af' }
                 }
             });
-            document.getElementById('holdingsBody').innerHTML = '<tr><td colspan="4" class="px-6 py-4 text-center text-gray-400">No data available</td></tr>';
+            document.getElementById('holdingsBody').innerHTML = '<tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">No data available</td></tr>';
         }
 
         function updateTable(breakdown) {
@@ -265,7 +353,7 @@
             });
 
             if (allHoldings.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-4 text-center text-gray-400">No specific holdings data</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">No specific holdings data available</td></tr>';
                 return;
             }
 
@@ -273,12 +361,12 @@
 
             allHoldings.forEach(h => {
                 const tr = document.createElement('tr');
-                tr.className = "bg-white border-b hover:bg-gray-50 transition-colors";
+                tr.className = "bg-white dark:bg-dark-card border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors";
                 tr.innerHTML = `
-                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap">${h.name}</th>
-                    <td class="px-6 py-3 text-gray-500 text-xs uppercase tracking-wide">${h.subclass}</td>
-                    <td class="px-6 py-3 text-right font-mono text-sm">₪${h.value.toFixed(4)}B</td>
-                    <td class="px-6 py-3 text-right text-blue-600 font-bold text-sm">${h.percentage}%</td>
+                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap">${h.name}</th>
+                    <td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${h.subclass}</td>
+                    <td class="px-6 py-3 text-right font-mono text-sm text-gray-700 dark:text-gray-300">₪${h.value.toFixed(4)}B</td>
+                    <td class="px-6 py-3 text-right text-blue-600 dark:text-blue-400 font-bold text-sm">${h.percentage}%</td>
                 `;
                 tbody.appendChild(tr);
             });
