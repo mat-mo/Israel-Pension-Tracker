@@ -1,0 +1,75 @@
+{
+  "fundName": "Migdal Makefet Ishit Passive Stocks",
+  "trackId": "15524",
+  "totalAssetsBN": 0.28,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.2766,
+      "percentage": 98.7
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.002,
+      "percentage": 0.73
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0016,
+      "percentage": 0.56
+    },
+    {
+      "name": "Futures",
+      "value": 0.0,
+      "percentage": 0.01
+    }
+  ],
+  "breakdown": {
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.2766,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "VANGUARD S&P 500 ETF", "value": 0.032, "percentage": 11.56 },
+          { "name": "ISHARES CORE S&P 500", "value": 0.0315, "percentage": 11.39 },
+          { "name": "SPDR S&P 500 ETF TRUST", "value": 0.0311, "percentage": 11.23 },
+          { "name": "INVESCO S&P 500 UCITS ETF", "value": 0.031, "percentage": 11.19 },
+          { "name": "AM S&P 500 II ETF ACC", "value": 0.0304, "percentage": 10.98 }
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.002,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "USDILS", "value": 0.002, "percentage": 100.0 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0016,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0011, "percentage": 68.32 },
+          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0005, "percentage": 31.68 }
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "S&P500 EMINI FUT Dec25", "value": 0.0, "percentage": 89.26 },
+          { "name": "MSCI EmgMk Dec25", "value": 0.0, "percentage": 10.74 }
+        ]
+      }
+    ]
+  }
+}
