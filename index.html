@@ -21,40 +21,29 @@
                 <h1 class="text-2xl font-bold tracking-tight">Pension Holdings Tracker</h1>
                 <p class="text-gray-500 text-sm">Transparency dashboard for Israeli institutional assets</p>
             </div>
-            
-            <div class="mt-4 md:mt-0 flex flex-col sm:flex-row gap-4">
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Institution</label>
-                    <select id="institutionSelector" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 shadow-sm w-48">
-                        <option disabled selected>Loading...</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Fund Track</label>
-                    <select id="trackSelector" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 shadow-sm w-64" disabled>
-                        <option disabled selected>Select Institution First</option>
-                    </select>
-                </div>
-
-                <div class="text-right hidden md:block pl-4 border-l border-gray-200">
+            <div class="mt-4 md:mt-0 flex items-center gap-4">
+                <div class="text-right hidden md:block">
                     <p class="text-xs text-gray-400 uppercase">Total Assets</p>
                     <p id="totalAssetsDisplay" class="text-xl font-bold text-blue-600">-</p>
                 </div>
+                <select id="trackSelector" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 shadow-sm w-64">
+                    <option disabled selected>Loading tracks...</option>
+                </select>
             </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="mb-4">
+                <div class="mb-4 border-b border-gray-100 pb-2">
                     <h2 class="font-bold text-lg">1. Asset Allocation</h2>
-                    <p class="text-xs text-gray-400">Click a slice to view category details</p>
+                    <p class="text-xs text-gray-400">Click a slice to view details</p>
                 </div>
                 <div id="mainChart" class="chart-box"></div>
             </div>
 
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col">
-                <div class="mb-4">
+                <div class="mb-4 border-b border-gray-100 pb-2">
                     <h2 id="subChartTitle" class="font-bold text-lg">2. Category Breakdown</h2>
                     <p class="text-xs text-gray-400">Distribution within selected category</p>
                 </div>
@@ -87,177 +76,197 @@
     </div>
 
     <script>
-        let allData = [];
-        let currentInstitution = null;
-        let currentTrackData = null;
         let mainChart = null;
         let subChart = null;
+        let currentTrackData = null;
 
-        // Fetch Data
+        // Load Data
         fetch('data.json')
             .then(res => res.json())
             .then(data => {
-                allData = data;
-                initApp();
+                // Ensure data is an array
+                const tracks = Array.isArray(data) ? data : [data];
+                initDashboard(tracks);
             })
-            .catch(err => console.error("Error loading data:", err));
+            .catch(err => {
+                console.error(err);
+                alert("Error loading data.json. Check console.");
+            });
 
-        function initApp() {
-            const instSelector = document.getElementById('institutionSelector');
-            instSelector.innerHTML = '<option disabled selected>Select Institution</option>';
+        function initDashboard(tracks) {
+            const selector = document.getElementById('trackSelector');
+            selector.innerHTML = '';
 
-            allData.forEach((inst, index) => {
+            // Handle Institution -> Tracks hierarchy or flat list
+            let flatTracks = [];
+            
+            // Check if structure is Institution -> Tracks or just Tracks
+            if (tracks.length > 0 && tracks[0].institutionName) {
+                // Flatten the hierarchy for the simple selector
+                tracks.forEach(inst => {
+                    inst.tracks.forEach(t => {
+                        t.fullName = `${inst.institutionName} - ${t.fundName}`;
+                        flatTracks.push(t);
+                    });
+                });
+            } else {
+                flatTracks = tracks;
+            }
+
+            flatTracks.forEach((track, idx) => {
                 const opt = document.createElement('option');
-                opt.value = index;
-                opt.text = inst.institutionName;
-                instSelector.appendChild(opt);
+                opt.value = idx;
+                opt.text = track.fullName || track.fundName || track.name;
+                selector.appendChild(opt);
             });
 
-            instSelector.addEventListener('change', (e) => {
-                const selectedInst = allData[e.target.value];
-                populateTracks(selectedInst);
-            });
-
-            // Init Charts
+            selector.addEventListener('change', (e) => loadTrack(flatTracks[e.target.value]));
+            
+            // Initialize ECharts instances ONCE
             mainChart = echarts.init(document.getElementById('mainChart'));
             subChart = echarts.init(document.getElementById('subChart'));
-            
-            // Handle Resize
+
             window.addEventListener('resize', () => {
                 mainChart.resize();
                 subChart.resize();
             });
-            
-            // Auto-select first institution if available
-            if(allData.length > 0) {
-                instSelector.value = 0;
-                populateTracks(allData[0]);
-            }
-        }
 
-        function populateTracks(institution) {
-            currentInstitution = institution;
-            const trackSelector = document.getElementById('trackSelector');
-            trackSelector.innerHTML = '';
-            trackSelector.disabled = false;
-
-            institution.tracks.forEach((track, index) => {
-                const opt = document.createElement('option');
-                opt.value = index;
-                opt.text = track.fundName;
-                trackSelector.appendChild(opt);
-            });
-
-            trackSelector.removeEventListener('change', handleTrackChange);
-            trackSelector.addEventListener('change', handleTrackChange);
-
-            // Load first track
-            if (institution.tracks.length > 0) {
-                loadTrack(institution.tracks[0]);
-            }
-        }
-
-        function handleTrackChange(e) {
-            loadTrack(currentInstitution.tracks[e.target.value]);
+            if(flatTracks.length > 0) loadTrack(flatTracks[0]);
         }
 
         function loadTrack(data) {
             currentTrackData = data;
             
-            // Update KPI
-            document.getElementById('totalAssetsDisplay').innerText = `₪${data.totalAssetsBN.toLocaleString()}B`;
+            // 1. Update KPI (Handle both naming conventions)
+            const total = data.totalAssetsBN || data.total_value || 0;
+            document.getElementById('totalAssetsDisplay').innerText = `₪${total.toLocaleString()}B`;
 
-            // Render Main Donut
+            // 2. Render Main Donut
             const option = {
-                tooltip: { trigger: 'item', formatter: '{b}: {c}B ({d}%)' },
+                color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
+                tooltip: { 
+                    trigger: 'item', 
+                    formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.value}B<br/>Share: ${params.percent}%` 
+                },
                 series: [{
                     name: 'Asset Class',
                     type: 'pie',
                     radius: ['40%', '70%'],
+                    avoidLabelOverlap: true,
                     itemStyle: { borderRadius: 5, borderColor: '#fff', borderWidth: 2 },
-                    label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
+                    label: { show: true, position: 'outside', formatter: '{b}' },
                     data: data.assetClasses.map(item => ({
                         value: item.value,
                         name: item.name
                     }))
                 }]
             };
-            mainChart.setOption(option);
+            mainChart.setOption(option, true); // true = not merge
 
-            // Click Event
-            mainChart.off('click');
+            // 3. Setup Interaction
+            mainChart.off('click'); 
             mainChart.on('click', function (params) {
                 updateSubChart(params.name);
             });
 
-            // Default selection: Largest asset class
-            if (data.assetClasses.length > 0) {
+            // 4. Reset & Load Default Subchart
+            if(data.assetClasses.length > 0) {
                 updateSubChart(data.assetClasses[0].name);
+            } else {
+                updateSubChart(null);
             }
         }
 
         function updateSubChart(categoryName) {
+            // Safe check
+            if(!categoryName || !currentTrackData.breakdown || !currentTrackData.breakdown[categoryName]) {
+                showNoDataSubChart(categoryName || "Selection");
+                return;
+            }
+
             const breakdown = currentTrackData.breakdown[categoryName];
             
-            // Update UI Titles
+            // Titles
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
             document.getElementById('tableTitle').innerText = `Top Holdings: ${categoryName}`;
             document.getElementById('tableBadge').innerText = categoryName;
 
-            if (!breakdown || breakdown.length === 0) {
-                subChart.clear();
-                document.getElementById('subChart').innerHTML = "<div class='flex items-center justify-center h-full text-gray-400'>No breakdown available</div>";
-                renderTable([]);
+            if (breakdown.length === 0) {
+                showNoDataSubChart(categoryName);
                 return;
             }
 
-            // Render Bar Chart
-            const categories = breakdown.map(b => b.subclass);
-            const values = breakdown.map(b => b.value);
+            // Pie Data
+            const pieData = breakdown.map(b => ({
+                value: b.value,
+                name: b.subclass
+            }));
 
             const option = {
-                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
-                grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
-                xAxis: { type: 'value', name: 'Billions' },
-                yAxis: { type: 'category', data: categories },
+                color: ['#60a5fa', '#34d399', '#fbbf24', '#f87171', '#a78bfa'],
+                tooltip: { 
+                    trigger: 'item', 
+                    formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.value}B<br/>Share: ${params.percent}%` 
+                },
                 series: [{
-                    name: 'Value',
-                    type: 'bar',
-                    data: values,
-                    itemStyle: { color: '#3b82f6', borderRadius: [0, 4, 4, 0] },
-                    label: { show: true, position: 'right', formatter: '{@score}B' }
+                    type: 'pie',
+                    radius: ['35%', '65%'],
+                    itemStyle: { borderRadius: 4, borderColor: '#fff', borderWidth: 2 },
+                    label: { show: true, formatter: '{b}: {d}%', color: '#4b5563' },
+                    data: pieData
                 }]
             };
-            subChart.setOption(option);
+            
+            // IMPORTANT: use setOption(option, true) to clear previous data cleanly
+            subChart.setOption(option, true);
 
-            // Render Table
-            let allHoldings = [];
-            breakdown.forEach(sub => {
-                sub.topHoldings.forEach(h => {
-                    allHoldings.push({ ...h, subclass: sub.subclass });
-                });
-            });
-            allHoldings.sort((a, b) => b.value - a.value);
-            renderTable(allHoldings);
+            // Update Table
+            updateTable(breakdown);
         }
 
-        function renderTable(holdings) {
+        function showNoDataSubChart(name) {
+            subChart.clear(); // Clear canvas
+            subChart.setOption({
+                title: {
+                    text: 'No breakdown available',
+                    subtext: 'for ' + name,
+                    left: 'center',
+                    top: 'center',
+                    textStyle: { color: '#9ca3af' }
+                }
+            });
+            document.getElementById('holdingsBody').innerHTML = '<tr><td colspan="4" class="px-6 py-4 text-center text-gray-400">No data available</td></tr>';
+        }
+
+        function updateTable(breakdown) {
             const tbody = document.getElementById('holdingsBody');
             tbody.innerHTML = '';
+            
+            let allHoldings = [];
+            breakdown.forEach(sub => {
+                if(sub.topHoldings) {
+                    sub.topHoldings.forEach(h => {
+                        allHoldings.push({ ...h, subclass: sub.subclass });
+                    });
+                }
+            });
 
-            if (holdings.length === 0) {
+            if (allHoldings.length === 0) {
                 tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-4 text-center text-gray-400">No specific holdings data</td></tr>';
                 return;
             }
 
-            holdings.forEach(h => {
+            // Sort largest first
+            allHoldings.sort((a, b) => b.value - a.value);
+
+            allHoldings.forEach(h => {
                 const tr = document.createElement('tr');
                 tr.className = "bg-white border-b hover:bg-gray-50 transition-colors";
                 tr.innerHTML = `
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">${h.name}</th>
-                    <td class="px-6 py-4 text-gray-500">${h.subclass}</td>
-                    <td class="px-6 py-4 text-right font-mono">₪${h.value.toFixed(4)}B</td>
-                    <td class="px-6 py-4 text-right text-blue-600 font-semibold">${h.percentage}%</td>
+                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap">${h.name}</th>
+                    <td class="px-6 py-3 text-gray-500 text-xs uppercase tracking-wide">${h.subclass}</td>
+                    <td class="px-6 py-3 text-right font-mono text-sm">₪${h.value.toFixed(4)}B</td>
+                    <td class="px-6 py-3 text-right text-blue-600 font-bold text-sm">${h.percentage}%</td>
                 `;
                 tbody.appendChild(tr);
             });
