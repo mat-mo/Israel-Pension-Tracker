@@ -1,0 +1,150 @@
+{
+  "fundName": "Harel Pension Track 60+",
+  "trackId": "9829",
+  "totalAssetsBN": 6.06,
+  "assetClasses": [
+    {
+      "name": "Bonds",
+      "value": 2.2274,
+      "percentage": 36.78
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 1.2587,
+      "percentage": 20.78
+    },
+    {
+      "name": "Stocks",
+      "value": 1.1565,
+      "percentage": 19.1
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.6139,
+      "percentage": 10.14
+    },
+    {
+      "name": "Investment Funds",
+      "value": 0.3592,
+      "percentage": 5.93
+    },
+    {
+      "name": "Loans",
+      "value": 0.3012,
+      "percentage": 4.97
+    },
+    {
+      "name": "Non-Tradable Stocks",
+      "value": 0.052,
+      "percentage": 0.86
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.0337,
+      "percentage": 0.56
+    },
+    {
+      "name": "Structured Products",
+      "value": 0.0315,
+      "percentage": 0.52
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0163,
+      "percentage": 0.27
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0034,
+      "percentage": 0.06
+    },
+    {
+      "name": "Futures",
+      "value": 0.0028,
+      "percentage": 0.05
+    },
+    {
+      "name": "Real Estate",
+      "value": 0.0016,
+      "percentage": 0.03
+    },
+    {
+      "name": "Warrants",
+      "value": 0.0005,
+      "percentage": 0.01
+    },
+    {
+      "name": "Options",
+      "value": -0.0001,
+      "percentage": -0.0
+    }
+  ],
+  "breakdown": {
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 1.7779,
+        "percentageOfClass": 79.82,
+        "topHoldings": [
+          { "name": "מ.ק.מ. 616", "value": 0.222, "percentage": 12.49 },
+          { "name": "ממשל משתנה 1134", "value": 0.1306, "percentage": 7.35 },
+          { "name": "ממשל משתנה 1130", "value": 0.1287, "percentage": 7.24 },
+          { "name": "מ.ק.מ. 316", "value": 0.1134, "percentage": 6.38 },
+          { "name": "מ.ק.מ. 516", "value": 0.1098, "percentage": 6.18 }
+        ]
+      },
+      {
+        "subclass": "Corporate Bonds",
+        "value": 0.4431,
+        "percentageOfClass": 19.89,
+        "topHoldings": [
+          { "name": "ISR EL8.1%12/96", "value": 0.01, "percentage": 2.25 },
+          { "name": "עזריאלי ט", "value": 0.0072, "percentage": 1.63 },
+          { "name": "ארפורט סיטי ט", "value": 0.0069, "percentage": 1.55 },
+          { "name": "לאומי התח נד 405", "value": 0.0061, "percentage": 1.38 },
+          { "name": "מבנה אגח כה", "value": 0.0054, "percentage": 1.21 }
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "Direct Holdings",
+        "value": 0.6977,
+        "percentageOfClass": 60.33,
+        "topHoldings": [
+          { "name": "לאומי", "value": 0.0449, "percentage": 6.44 },
+          { "name": "פועלים", "value": 0.0433, "percentage": 6.2 },
+          { "name": "TEVA PHARMACEUTICAL-SP ADR", "value": 0.0282, "percentage": 4.04 },
+          { "name": "אלביט מערכות", "value": 0.0237, "percentage": 3.4 },
+          { "name": "דיסקונט", "value": 0.0218, "percentage": 3.13 }
+        ]
+      },
+      {
+        "subclass": "ETFs",
+        "value": 0.4588,
+        "percentageOfClass": 39.67,
+        "topHoldings": [
+          { "name": "AMUNDI MSCI EM MKT II", "value": 0.0293, "percentage": 6.4 },
+          { "name": "FINANCIAL SELECT SECTOR SPDR", "value": 0.0234, "percentage": 5.1 },
+          { "name": "X MSCI EMERGING MARKETS", "value": 0.0184, "percentage": 4.02 },
+          { "name": "AMUNDI MSCI EUROPE UCITS DR", "value": 0.0176, "percentage": 3.83 },
+          { "name": "TECHNOLOGY SELECT SECT SPDR", "value": 0.0171, "percentage": 3.72 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.6139,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי", "value": 0.3229, "percentage": 52.61 },
+          { "name": "בנק מזרחי", "value": 0.123, "percentage": 20.03 },
+          { "name": "בנק הפועלים", "value": 0.096, "percentage": 15.63 },
+          { "name": "בנק הבינלאומי", "value": 0.0457, "percentage": 7.44 },
+          { "name": "בנק דיסקונט", "value": 0.0234, "percentage": 3.82 }
+        ]
+      }
+    ]
+  }
+}
