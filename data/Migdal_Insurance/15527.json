@@ -1,0 +1,58 @@
+{
+  "fundName": "Migdal Makefet Mashlima Passive Bonds",
+  "trackId": "15527",
+  "totalAssetsBN": 0.06,
+  "assetClasses": [
+    {
+      "name": "Bonds",
+      "value": 0.0553,
+      "percentage": 98.75
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0006,
+      "percentage": 1.07
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "percentage": 0.18
+    }
+  ],
+  "breakdown": {
+    "Bonds": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0553,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "ISHARES USD CORP BND", "value": 0.0094, "percentage": 17.0 },
+          { "name": "ISHARES CORE EURO CORP BOND", "value": 0.0093, "percentage": 16.82 },
+          { "name": "ISHARES MARKIT IBOXX $ HIGH", "value": 0.0058, "percentage": 10.49 },
+          { "name": "SPDR US HY CO SC UCI", "value": 0.0057, "percentage": 10.31 },
+          { "name": "X USD HIGH YIELD BOND", "value": 0.0057, "percentage": 10.31 }
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0006,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "USDILS", "value": 0.0006, "percentage": 100.0 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0001, "percentage": 100.0 }
+        ]
+      }
+    ]
+  }
+}
