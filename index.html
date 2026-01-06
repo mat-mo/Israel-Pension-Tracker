@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Heebo', sans-serif; background-color: #f8fafc; }
-        .chart-box { height: 400px; width: 100%; }
+        .chart-box { height: 500px; width: 100%; } /* Increased height slightly for labels */
     </style>
 </head>
 <body class="p-4 md:p-8 text-gray-800">
@@ -84,7 +84,6 @@
         fetch('data.json')
             .then(res => res.json())
             .then(data => {
-                // Ensure data is an array
                 const tracks = Array.isArray(data) ? data : [data];
                 initDashboard(tracks);
             })
@@ -99,10 +98,7 @@
 
             // Handle Institution -> Tracks hierarchy or flat list
             let flatTracks = [];
-            
-            // Check if structure is Institution -> Tracks or just Tracks
             if (tracks.length > 0 && tracks[0].institutionName) {
-                // Flatten the hierarchy for the simple selector
                 tracks.forEach(inst => {
                     inst.tracks.forEach(t => {
                         t.fullName = `${inst.institutionName} - ${t.fundName}`;
@@ -122,7 +118,7 @@
 
             selector.addEventListener('change', (e) => loadTrack(flatTracks[e.target.value]));
             
-            // Initialize ECharts instances ONCE
+            // Initialize ECharts instances
             mainChart = echarts.init(document.getElementById('mainChart'));
             subChart = echarts.init(document.getElementById('subChart'));
 
@@ -136,40 +132,53 @@
 
         function loadTrack(data) {
             currentTrackData = data;
-            
-            // 1. Update KPI (Handle both naming conventions)
             const total = data.totalAssetsBN || data.total_value || 0;
             document.getElementById('totalAssetsDisplay').innerText = `₪${total.toLocaleString()}B`;
 
-            // 2. Render Main Donut
+            // --- MAIN CHART CONFIG ---
             const option = {
                 color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
                 tooltip: { 
                     trigger: 'item', 
                     formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.value}B<br/>Share: ${params.percent}%` 
                 },
+                legend: { top: '0%', left: 'center', show: false },
                 series: [{
                     name: 'Asset Class',
                     type: 'pie',
-                    radius: ['40%', '70%'],
+                    radius: ['30%', '60%'], // Slightly smaller inner radius to fit labels
                     avoidLabelOverlap: true,
                     itemStyle: { borderRadius: 5, borderColor: '#fff', borderWidth: 2 },
-                    label: { show: true, position: 'outside', formatter: '{b}' },
+                    
+                    // --- LABEL CONFIGURATION (ALWAYS VISIBLE) ---
+                    label: { 
+                        show: true, 
+                        position: 'outside', 
+                        formatter: '{b}\n{c}B ({d}%)', // Name \n Value \n Percent
+                        color: '#333',
+                        fontSize: 12,
+                        fontWeight: 'bold'
+                    },
+                    labelLine: {
+                        show: true,
+                        length: 15,
+                        length2: 10
+                    },
+                    
+                    emphasis: { label: { show: true, fontSize: 14, fontWeight: 'bold' } },
                     data: data.assetClasses.map(item => ({
                         value: item.value,
                         name: item.name
                     }))
                 }]
             };
-            mainChart.setOption(option, true); // true = not merge
+            mainChart.setOption(option, true);
 
-            // 3. Setup Interaction
             mainChart.off('click'); 
             mainChart.on('click', function (params) {
                 updateSubChart(params.name);
             });
 
-            // 4. Reset & Load Default Subchart
             if(data.assetClasses.length > 0) {
                 updateSubChart(data.assetClasses[0].name);
             } else {
@@ -178,7 +187,6 @@
         }
 
         function updateSubChart(categoryName) {
-            // Safe check
             if(!categoryName || !currentTrackData.breakdown || !currentTrackData.breakdown[categoryName]) {
                 showNoDataSubChart(categoryName || "Selection");
                 return;
@@ -186,7 +194,6 @@
 
             const breakdown = currentTrackData.breakdown[categoryName];
             
-            // Titles
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
             document.getElementById('tableTitle').innerText = `Top Holdings: ${categoryName}`;
             document.getElementById('tableBadge').innerText = categoryName;
@@ -196,12 +203,12 @@
                 return;
             }
 
-            // Pie Data
             const pieData = breakdown.map(b => ({
                 value: b.value,
                 name: b.subclass
             }));
 
+            // --- SUB CHART CONFIG ---
             const option = {
                 color: ['#60a5fa', '#34d399', '#fbbf24', '#f87171', '#a78bfa'],
                 tooltip: { 
@@ -212,20 +219,26 @@
                     type: 'pie',
                     radius: ['35%', '65%'],
                     itemStyle: { borderRadius: 4, borderColor: '#fff', borderWidth: 2 },
-                    label: { show: true, formatter: '{b}: {d}%', color: '#4b5563' },
+                    
+                    // --- LABEL CONFIGURATION (ALWAYS VISIBLE) ---
+                    label: { 
+                        show: true, 
+                        position: 'outside',
+                        formatter: '{b}\n{d}%', // Name \n Percent (Value implied by size)
+                        color: '#4b5563'
+                    },
+                    labelLine: { show: true },
+                    
                     data: pieData
                 }]
             };
             
-            // IMPORTANT: use setOption(option, true) to clear previous data cleanly
             subChart.setOption(option, true);
-
-            // Update Table
             updateTable(breakdown);
         }
 
         function showNoDataSubChart(name) {
-            subChart.clear(); // Clear canvas
+            subChart.clear();
             subChart.setOption({
                 title: {
                     text: 'No breakdown available',
@@ -256,7 +269,6 @@
                 return;
             }
 
-            // Sort largest first
             allHoldings.sort((a, b) => b.value - a.value);
 
             allHoldings.forEach(h => {
