@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israel Pension Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; }
+        #chart-container { width: 100%; height: 700px; }
+    </style>
+</head>
+<body class="p-6">
+
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-8 bg-white p-6 rounded-xl shadow-sm">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800">Pension Fund Holdings</h1>
+                <p class="text-gray-500 mt-1">Quarterly visualization of Israeli institutional assets</p>
+            </div>
+            
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Select Track</label>
+                <select id="trackSelector" class="block w-64 p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                    <option value="" disabled selected>Loading tracks...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm">
+                <h2 id="chartTitle" class="text-xl font-semibold mb-4 text-gray-700">Asset Allocation</h2>
+                <div id="chart-container"></div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm h-fit">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Top Holdings</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-500">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-4 py-3">Asset</th>
+                                <th scope="col" class="px-4 py-3 text-right">% of Fund</th>
+                            </tr>
+                        </thead>
+                        <tbody id="topHoldingsBody">
+                            </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-sm text-blue-800 font-medium">Total Assets</p>
+                    <p id="totalAssetsDisplay" class="text-2xl font-bold text-blue-900 mt-1">-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let chartInstance = null;
+        let allData = [];
+
+        // 1. Fetch Data
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                allData = data;
+                initApp();
+            })
+            .catch(error => console.error('Error loading data:', error));
+
+        function initApp() {
+            const selector = document.getElementById('trackSelector');
+            selector.innerHTML = ''; // Clear loading message
+
+            // Populate Dropdown
+            allData.forEach((track, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.text = track.name;
+                selector.appendChild(option);
+            });
+
+            // Listen for changes
+            selector.addEventListener('change', (e) => {
+                renderDashboard(allData[e.target.value]);
+            });
+
+            // Initial Render (First track)
+            renderDashboard(allData[0]);
+        }
+
+        function renderDashboard(trackData) {
+            // Update Text
+            document.getElementById('totalAssetsDisplay').innerText = trackData.total_value.toLocaleString() + " Billion NIS";
+            
+            // Render Sunburst
+            renderChart(trackData);
+            
+            // Render Top Table (Flatten the hierarchy to find top items)
+            renderTopTable(trackData);
+        }
+
+        function renderChart(data) {
+            const dom = document.getElementById('chart-container');
+            if (!chartInstance) {
+                chartInstance = echarts.init(dom);
+                window.addEventListener('resize', () => chartInstance.resize());
+            }
+
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function (params) {
+                        return `<b>${params.name}</b><br/>
+                                Value: ${params.value}B NIS<br/>
+                                Share: ${params.data.percentage}%`;
+                    }
+                },
+                series: {
+                    type: 'sunburst',
+                    data: data.children,
+                    radius: [0, '95%'],
+                    sort: undefined,
+                    emphasis: {
+                        focus: 'ancestor'
+                    },
+                    levels: [
+                        {},
+                        {
+                            r0: '15%',
+                            r: '40%',
+                            itemStyle: {
+                                borderWidth: 2
+                            },
+                            label: {
+                                rotate: 'tangential'
+                            }
+                        },
+                        {
+                            r0: '40%',
+                            r: '75%',
+                            label: {
+                                align: 'right'
+                            }
+                        },
+                        {
+                            r0: '75%',
+                            r: '80%',
+                            label: {
+                                position: 'outside',
+                                padding: 3,
+                                silent: false
+                            },
+                            itemStyle: {
+                                borderWidth: 3
+                            }
+                        }
+                    ]
+                }
+            };
+
+            chartInstance.setOption(option);
+        }
+
+        function renderTopTable(data) {
+            const tbody = document.getElementById('topHoldingsBody');
+            tbody.innerHTML = '';
+
+            // We need to find the actual holdings (leaves of the tree)
+            // This is a simple traversal to get top items across all classes
+            let allHoldings = [];
+            
+            data.children.forEach(category => {
+                if(category.children) {
+                    category.children.forEach(sub => {
+                        // Check if this is a leaf or has children
+                        if (sub.children) {
+                             sub.children.forEach(item => {
+                                 // Add parent name for context
+                                 allHoldings.push({...item, category: category.name});
+                             });
+                        } else {
+                             allHoldings.push({...sub, category: category.name});
+                        }
+                    });
+                }
+            });
+
+            // Filter out "Other" categories to show real assets
+            const cleanHoldings = allHoldings.filter(h => !h.name.startsWith('Other'));
+            
+            // Sort by Value desc
+            cleanHoldings.sort((a, b) => b.value - a.value);
+
+            // Take top 10
+            cleanHoldings.slice(0, 10).forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = "bg-white border-b hover:bg-gray-50";
+                tr.innerHTML = `
+                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">
+                        ${item.name}
+                        <div class="text-xs text-gray-400 font-normal">${item.category}</div>
+                    </th>
+                    <td class="px-4 py-3 text-right">
+                        ${item.percentage}%
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>
