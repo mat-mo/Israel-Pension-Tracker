@@ -1,5 +1,5 @@
 {
-  "fundName": "Migdal Makefet Mashlima 60+",
+  "fundName": "Track 14930",
   "trackId": "14930",
   "totalAssetsBN": 0.28,
   "assetClasses": [
@@ -25,17 +25,36 @@
     }
   ],
   "breakdown": {
-    "Derivatives": [
+    "Stocks": [
       {
-        "subclass": "General",
-        "value": -0.0051,
+        "subclass": "ETFs",
+        "value": 0.1294,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "USDILS",
-            "value": -0.0051,
-            "percentage": 100.0
-          }
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "CONSUMER DISCRETIONARY SELT",
+              "value": 0.041,
+              "percentage": 31.68
+            },
+            {
+              "name": "קסם SP Tech ETF",
+              "value": 0.0373,
+              "percentage": 28.82
+            },
+            {
+              "name": "הראל סל SP Tech",
+              "value": 0.0261,
+              "percentage": 20.17
+            },
+            {
+              "name": "COMM SERV SELECT SECTOR SPDR",
+              "value": 0.0249,
+              "percentage": 19.24
+            }
+          ]
         ]
       }
     ],
@@ -44,46 +63,39 @@
         "subclass": "General",
         "value": 0.0031,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "XAK Technology    Dec25",
-            "value": 0.0027,
-            "percentage": 89.06
-          },
-          {
-            "name": "S&P EMINI Com Ser Dec25",
-            "value": 0.0003,
-            "percentage": 10.94
-          }
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "XAK Technology    Dec25",
+              "value": 0.0027,
+              "percentage": 87.83
+            },
+            {
+              "name": "S&P EMINI Com Ser Dec25",
+              "value": 0.0003,
+              "percentage": 9.76
+            }
+          ]
         ]
       }
     ],
-    "Stocks": [
+    "Derivatives": [
       {
-        "subclass": "ETFs",
-        "value": 0.1294,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "CONSUMER DISCRETIONARY SELT",
-            "value": 0.041,
-            "percentage": 31.71
-          },
-          {
-            "name": "קסם SP Tech ETF",
-            "value": 0.0373,
-            "percentage": 28.86
-          },
-          {
-            "name": "הראל סל SP Tech",
-            "value": 0.0261,
-            "percentage": 20.16
-          },
-          {
-            "name": "COMM SERV SELECT SECTOR SPDR",
-            "value": 0.0249,
-            "percentage": 19.27
-          }
+        "subclass": "General",
+        "value": -0.0051,
+        "percentageOfClass": 0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDILS",
+              "value": -0.0051,
+              "percentage": 0
+            }
+          ]
         ]
       }
     ],
@@ -92,22 +104,26 @@
         "subclass": "Cash",
         "value": 0.1533,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "בנק לאומי לישראל בע\"מ",
-            "value": 0.1065,
-            "percentage": 69.45
-          },
-          {
-            "name": "בנק הפועלים בע\"מ",
-            "value": 0.0468,
-            "percentage": 30.55
-          },
-          {
-            "name": "JPMORGAN CHASE BANK",
-            "value": 0.0,
-            "percentage": 0.0
-          }
+        "itemCount": 3,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.1065,
+              "percentage": 69.45
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0468,
+              "percentage": 30.52
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
         ]
       }
     ]

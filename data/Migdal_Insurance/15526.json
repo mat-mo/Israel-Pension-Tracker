@@ -1,73 +1,1594 @@
 {
-  "fundName": "Migdal Makefet Mashlima Passive Stocks",
+  "fundName": "Track 15526",
   "trackId": "15526",
-  "totalAssetsBN": 0.06,
+  "totalAssetsBN": 0.02,
   "assetClasses": [
     {
       "name": "Stocks",
-      "value": 0.0573,
-      "percentage": 98.71
-    },
-    {
-      "name": "Derivatives",
-      "value": 0.0007,
-      "percentage": 1.25
+      "value": 0.0194,
+      "percentage": 92.19
     },
     {
       "name": "Cash & Equivalents",
-      "value": 0.0,
-      "percentage": 0.03
+      "value": 0.0013,
+      "percentage": 6.05
     },
     {
-      "name": "Futures",
+      "name": "Derivatives",
+      "value": 0.0002,
+      "percentage": 1.05
+    },
+    {
+      "name": "Investment Funds",
+      "value": 0.0001,
+      "percentage": 0.37
+    },
+    {
+      "name": "Options",
       "value": 0.0,
-      "percentage": 0.01
+      "percentage": 0.15
+    },
+    {
+      "name": "Warrants",
+      "value": 0.0,
+      "percentage": 0.1
+    },
+    {
+      "name": "Bonds",
+      "value": 0.0,
+      "percentage": 0.09
     }
   ],
   "breakdown": {
     "Stocks": [
       {
+        "subclass": "Direct Holdings",
+        "value": 0.0172,
+        "percentageOfClass": 88.7,
+        "itemCount": 219,
+        "totalPages": 22,
+        "holdingsPages": [
+          [
+            {
+              "name": "לאומי",
+              "value": 0.0011,
+              "percentage": 6.39
+            },
+            {
+              "name": "פועלים",
+              "value": 0.001,
+              "percentage": 5.81
+            },
+            {
+              "name": "אלביט מערכות",
+              "value": 0.0006,
+              "percentage": 3.49
+            },
+            {
+              "name": "מזרחי טפחות",
+              "value": 0.0006,
+              "percentage": 3.49
+            },
+            {
+              "name": "Teva Pharmaceutical Industries",
+              "value": 0.0006,
+              "percentage": 3.49
+            },
+            {
+              "name": "איי.סי.אל",
+              "value": 0.0004,
+              "percentage": 2.32
+            },
+            {
+              "name": "Nova Ltd",
+              "value": 0.0004,
+              "percentage": 2.32
+            },
+            {
+              "name": "דיסקונט א",
+              "value": 0.0004,
+              "percentage": 2.32
+            },
+            {
+              "name": "ביג",
+              "value": 0.0004,
+              "percentage": 2.32
+            },
+            {
+              "name": "בזק",
+              "value": 0.0003,
+              "percentage": 1.74
+            }
+          ],
+          [
+            {
+              "name": "הפניקס",
+              "value": 0.0003,
+              "percentage": 1.74
+            },
+            {
+              "name": "מבנה",
+              "value": 0.0003,
+              "percentage": 1.74
+            },
+            {
+              "name": "טבע",
+              "value": 0.0003,
+              "percentage": 1.74
+            },
+            {
+              "name": "טאואר",
+              "value": 0.0003,
+              "percentage": 1.74
+            },
+            {
+              "name": "מליסרון",
+              "value": 0.0003,
+              "percentage": 1.74
+            },
+            {
+              "name": "עזריאלי קבוצה",
+              "value": 0.0003,
+              "percentage": 1.74
+            },
+            {
+              "name": "נאוויטס פטר יהש",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "הראל השקעות",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "אלקטרה",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "או פי סי אנרגיה",
+              "value": 0.0002,
+              "percentage": 1.16
+            }
+          ],
+          [
+            {
+              "name": "מנורה מב החז",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "Nice Ltd",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "אנלייט אנרגיה",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "Tower Semiconductor Ltd",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "ניו מד אנרג יהש",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "מגה אור",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "שיכון ובינוי",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "נובה",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "ישראמקו יהש",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "פז אנרגיה",
+              "value": 0.0002,
+              "percentage": 1.16
+            }
+          ],
+          [
+            {
+              "name": "שטראוס",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "אלוני חץ",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "אנרג'יקס",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "וואן טכנולוגיות",
+              "value": 0.0002,
+              "percentage": 1.16
+            },
+            {
+              "name": "פתאל החזקות",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אמות",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "ריט 1",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "כלל עסקי ביטוח",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "שופרסל",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "חילן",
+              "value": 0.0001,
+              "percentage": 0.58
+            }
+          ],
+          [
+            {
+              "name": "מטריקס",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "פרטנר",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "נקסט ויז'ן",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "Camtek Ltd/Israel",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אורמת טכנו",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "דמרי",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "סלקום",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "רבוע נדלן",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "ישראל קנדה",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "שפיר הנדסה",
+              "value": 0.0001,
+              "percentage": 0.58
+            }
+          ],
+          [
+            {
+              "name": "דלק קבוצה",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אפריקה מגורים",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "בית שמש",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "פוקס",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "נופר אנרג'י",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "תורפז",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "מקס סטוק",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "עמרם",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "Aroundtown SA",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "מניבים ריט",
+              "value": 0.0001,
+              "percentage": 0.58
+            }
+          ],
+          [
+            {
+              "name": "נייס",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "יוחננוף",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "ישרס אחזקות",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "מספנות ישראל",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אנרג'יאן",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "דנאל",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אזורים",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אל על",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "קמטק",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "בינלאומי",
+              "value": 0.0001,
+              "percentage": 0.58
+            }
+          ],
+          [
+            {
+              "name": "לוינשטין הנדסה",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אלקטרה צריכה",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אלקטרה נדלן",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "סאמיט",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "חברה לישראל",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "דניה סיבוס",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "Energean PLC",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "אאורה",
+              "value": 0.0001,
+              "percentage": 0.58
+            },
+            {
+              "name": "קרסו נדלן",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "גילת",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ארפורט סיטי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רימון",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ג'נריישן קפיטל",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אקונרג'י",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "תדיראן גרופ",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "דוראל אנרגיה",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Enlight Renewable Energy Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רציו יהש",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "טופ גאם",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ישרוטל",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "הבורסה לניע בתא",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אינרום",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מלם תים אחזקות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אקויטל",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פולירם",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מגדלי תיכון",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "שוב אנרגיה",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "סקופ",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ג'י סיטי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פלרם",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "מימון ישיר",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ריטיילורס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ORMAT TECHNOLOGIES INC",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "נאייקס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ריט אזורים ליוי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "PPHE HOTEL GROUP LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "SIMILARWEB LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אקרו",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "עשות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ארד",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "Mobileye Global Inc",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "דלתא גליל",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "נובולוג",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פלסאון תעשיות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "GLOBAL E ONLINE LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "יוניברסל מוטורס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אמפא",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "איידיאיי ביטוח",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אשטרום קבוצה",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "GRAND CITY PROPERTIES",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "טרמינל איקס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "הולמס פלייס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מכפל טכנולוגיות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "דלתא מותגים",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "סופווייב",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פורמולה מערכות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Stratasys Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "איביאי בית השק",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ארית תעשיות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Palo Alto Networks Inc",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "אפקון החזקות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קבוצת אקרשטיין",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קרור",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רמי לוי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קיסטון אינפרא",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קרדן נדלן",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "בזן",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אר פי אופטיקל",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פרשקובסקי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ג'י וואן",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ארגו פרופרטיז",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Wix.com Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "CELLEBRITE DI LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ישראכרט",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Oddity Tech Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "VARONIS SYSTEMS",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "בזא",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "איילון",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Elbit Systems Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מניף",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "זנלכל",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "UroGen Pharma Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "משק אנרגיה",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "MONDAY.COM LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אדגר",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "INNOVIZ TECHNOLOGIES LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Taboola.com Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "SENTINELONE INC  CLASS A",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Perion Network Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "דוניץ",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "NAYAX LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "GILAT SATELLITE NETWORKS LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אוריין",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מנדלסוןתשת",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "JFrog Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "איסתא",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ורידיס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "הכשרת הישוב",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "בי קומיונקיישנס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלקטרה פאוור",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "אמיליה פיתוח",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "בכורי שדה",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "תומר אנרגיה",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אבגול",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "TAT TECHNOLOGIES LTD",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "גולן תעשיות",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלקו",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רם און",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "טראלייט",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קליל",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "נכסים ובנין",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רימוני",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "תאת טכנו",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "CEVA INC",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אוברסיז",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פריון נטוורק",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "לודן",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קמהדע",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מיטרוניקס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רבל",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "מהדרין",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "גניגר",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אמנת",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אייקון גרופ",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Sol Gel Technologies Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "SAPIENS INTERNATIONAL CORP",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלומיי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלספק",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "לודן טק",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "רייזור",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "פלסאנמור",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלרון",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פינרג'י",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "סאפיינס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Arbe Robotics Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "המשביר 365",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Airship AI Holdings Inc",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "הום ביוגז",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "טי.ג'י.איי",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "או.אר.טי",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ג'נסל",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מאסיבית",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אקוואריוס מנוע",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "סיפיה וויז'ן",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "א.א.א.מ.א ש",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Brenmiller Energy Ltd",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "הייקון מערכות ש",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קרדן אן.וי ש",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "פלאזה סנטר  ס",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "ETFs",
-        "value": 0.0573,
+        "value": 0.0022,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "VANGUARD S&P 500 ETF", "value": 0.0065, "percentage": 11.39 },
-          { "name": "ISHARES CORE S&P 500", "value": 0.0065, "percentage": 11.26 },
-          { "name": "SPDR S&P 500 ETF TRUST", "value": 0.0064, "percentage": 11.16 },
-          { "name": "INVESCO S&P 500 UCITS ETF", "value": 0.0064, "percentage": 11.13 },
-          { "name": "AM S&P 500 II ETF ACC", "value": 0.0063, "percentage": 10.96 }
+        "itemCount": 10,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "איביאי סל אינדקס בנקים יש",
+              "value": 0.0012,
+              "percentage": 54.71
+            },
+            {
+              "name": "י.ל סל תא בנקים",
+              "value": 0.0003,
+              "percentage": 13.68
+            },
+            {
+              "name": "איביאי סל תא ביטוח",
+              "value": 0.0002,
+              "percentage": 9.12
+            },
+            {
+              "name": "מור סל תא 90",
+              "value": 0.0001,
+              "percentage": 4.56
+            },
+            {
+              "name": "הראל סל תא 125",
+              "value": 0.0001,
+              "percentage": 4.56
+            },
+            {
+              "name": "קסם ETF תא 125",
+              "value": 0.0001,
+              "percentage": 4.56
+            },
+            {
+              "name": "תכלית סל תא 125",
+              "value": 0.0001,
+              "percentage": 4.56
+            },
+            {
+              "name": "מור סל אי.בנקים מש",
+              "value": 0.0001,
+              "percentage": 4.56
+            },
+            {
+              "name": "הראל סל תא 90 ובנקים",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "איביאי סל מידקפ&בנקים ביש",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Warrants": [
+      {
+        "subclass": "Non-Tradable",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 7,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "אלקטרה אופציה לס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "איילון אופ ל.ס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "דמרי אופציה לס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "קרסו אופ לס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "דוניץ אפ לא סחיר",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ישראל קנדה אופ ל.ס",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אקרו אופציה לס",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      },
+      {
+        "subclass": "Tradable",
+        "value": 0.0,
+        "percentageOfClass": 77.81,
+        "itemCount": 9,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "אפי נכס אופ 3",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ביג אפ 7",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלוני חץ אפ 16",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "מניבים ריט אפ 4",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "נאוויטס פט אפ 6",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "AISPW",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אמות אפ 12",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ווישור אפ 1",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "אלומיי אפ 2",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
         ]
       }
     ],
     "Derivatives": [
       {
         "subclass": "General",
-        "value": 0.0007,
+        "value": 0.0002,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "USDILS", "value": 0.0007, "percentage": 100.0 }
+        "itemCount": 12,
+        "totalPages": 2,
+        "holdingsPages": [
+          [
+            {
+              "name": "PHOE IT",
+              "value": 0.0001,
+              "percentage": 45.21
+            },
+            {
+              "name": "USDILS",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "POLI IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "LUMI IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "CLIS IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "BEZQ IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "TASE IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "CEL IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "HARL IT",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "SKBN IT",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "IDIN IT",
+              "value": -0.0,
+              "percentage": -0.0
+            },
+            {
+              "name": "ISCD IT",
+              "value": -0.0,
+              "percentage": -0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Options": [
+      {
+        "subclass": "Tradable",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 10,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "bC 7340 NOV 25",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "TEVA US 12/19/25 C17",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "CIC 17000",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "NICE US 10/17/25 C175",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "TEVA US 12/19/25 P11",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "NICE US 10/17/25 C200",
+              "value": -0.0,
+              "percentage": -0.0
+            },
+            {
+              "name": "CIP 17000",
+              "value": -0.0,
+              "percentage": -0.0
+            },
+            {
+              "name": "TEVA US 12/19/25 P16",
+              "value": -0.0,
+              "percentage": -0.0
+            },
+            {
+              "name": "TEVA US 12/19/25 C24",
+              "value": -0.0,
+              "percentage": -0.0
+            },
+            {
+              "name": "bP 7340 NOV 25",
+              "value": -0.0,
+              "percentage": -0.0
+            }
+          ]
         ]
       }
     ],
     "Cash & Equivalents": [
       {
         "subclass": "Cash",
-        "value": 0.0,
+        "value": 0.0013,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0, "percentage": 99.28 },
-          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0, "percentage": 0.72 }
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0008,
+              "percentage": 62.82
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0005,
+              "percentage": 39.26
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": -0.0,
+              "percentage": -0.0
+            }
+          ]
         ]
       }
     ],
-    "Futures": [
+    "Investment Funds": [
       {
-        "subclass": "General",
+        "subclass": "Funds",
+        "value": 0.0001,
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "Noked Long L.P",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "Sphera Tech Fund",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "AGILITY EQUITY LIMITED PARTNERSHIP",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ION TECH FEEDER FUND",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "LUCID ALTERNATIVE u 7/23",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "LUCID ALTERNATIVE U 8/23",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Corporate Bonds",
         "value": 0.0,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "S&P500 EMINI FUT Dec25", "value": 0.0, "percentage": 88.59 },
-          { "name": "MSCI EmgMk Dec25", "value": 0.0, "percentage": 11.41 }
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SEDG 2.25 07/01/29",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
         ]
       }
     ]

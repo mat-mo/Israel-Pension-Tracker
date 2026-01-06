@@ -1,72 +1,167 @@
 {
-  "fundName": "Migdal Makefet Mashlima S&P 500",
+  "fundName": "Track 13627",
   "trackId": "13627",
-  "totalAssetsBN": 0.69,
+  "totalAssetsBN": 1.92,
   "assetClasses": [
     {
       "name": "Stocks",
-      "value": 0.686,
-      "percentage": 99.41
-    },
-    {
-      "name": "Derivatives",
-      "value": 0.0039,
-      "percentage": 0.56
+      "value": 1.0776,
+      "percentage": 56.03
     },
     {
       "name": "Cash & Equivalents",
-      "value": 0.0002,
-      "percentage": 0.03
+      "value": 0.8527,
+      "percentage": 44.34
     },
     {
       "name": "Futures",
-      "value": 0.0,
-      "percentage": 0.0
+      "value": 0.0114,
+      "percentage": 0.59
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.0082,
+      "percentage": 0.43
+    },
+    {
+      "name": "Derivatives",
+      "value": -0.0267,
+      "percentage": -1.39
     }
   ],
   "breakdown": {
     "Stocks": [
       {
         "subclass": "ETFs",
-        "value": 0.686,
+        "value": 1.0776,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "VANGUARD S&P 500 ETF", "value": 0.1197, "percentage": 17.46 },
-          { "name": "ISHARES CORE S&P 500", "value": 0.1189, "percentage": 17.33 },
-          { "name": "INVESCO S&P 500 UCITS ETF", "value": 0.1171, "percentage": 17.07 },
-          { "name": "SPDR S&P 500 ETF TRUST", "value": 0.1167, "percentage": 17.01 },
-          { "name": "AM S&P 500 II ETF ACC", "value": 0.1136, "percentage": 16.57 }
+        "itemCount": 7,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SOURCE S&P 500 UCITS ETF",
+              "value": 0.3486,
+              "percentage": 32.35
+            },
+            {
+              "name": "ISHARES S&P500 SWAP UCITS",
+              "value": 0.337,
+              "percentage": 31.27
+            },
+            {
+              "name": "X S@P 500 SWAP 1D",
+              "value": 0.1872,
+              "percentage": 17.37
+            },
+            {
+              "name": "AM S&P 500 II ETF ACC",
+              "value": 0.1153,
+              "percentage": 10.7
+            },
+            {
+              "name": "LYXOR ETF S&P 500",
+              "value": 0.0428,
+              "percentage": 3.97
+            },
+            {
+              "name": "איביאי סל SP 500",
+              "value": 0.0397,
+              "percentage": 3.68
+            },
+            {
+              "name": "י.ל סל S&P 500",
+              "value": 0.007,
+              "percentage": 0.65
+            }
+          ]
         ]
       }
     ],
-    "Derivatives": [
+    "Mutual Funds": [
       {
         "subclass": "General",
-        "value": 0.0039,
+        "value": 0.0082,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "USDILS", "value": 0.0039, "percentage": 100.0 }
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0002,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0001, "percentage": 73.08 },
-          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0, "percentage": 26.92 }
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "קסם SP500 KTF",
+              "value": 0.0082,
+              "percentage": 99.8
+            }
+          ]
         ]
       }
     ],
     "Futures": [
       {
         "subclass": "General",
-        "value": 0.0,
+        "value": 0.0114,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "S&P500 EMINI FUT Dec25", "value": 0.0, "percentage": 100.0 }
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "S&P500 EMINI FUT Dec25",
+              "value": 0.0114,
+              "percentage": 99.82
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": -0.0267,
+        "percentageOfClass": 0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDILS",
+              "value": -0.0267,
+              "percentage": 0
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.8527,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.5412,
+              "percentage": 63.47
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.3066,
+              "percentage": 35.95
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0049,
+              "percentage": 0.57
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0001,
+              "percentage": 0.01
+            }
+          ]
         ]
       }
     ]

@@ -1,57 +1,769 @@
 {
-  "fundName": "Migdal Makefet Ishit Passive Bonds",
+  "fundName": "Track 15525",
   "trackId": "15525",
-  "totalAssetsBN": 0.28,
+  "totalAssetsBN": 0.01,
   "assetClasses": [
     {
       "name": "Bonds",
-      "value": 0.2736,
-      "percentage": 98.92
+      "value": 0.0086,
+      "percentage": 64.64
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0026,
+      "percentage": 19.37
+    },
+    {
+      "name": "Stocks",
+      "value": 0.0018,
+      "percentage": 13.24
     },
     {
       "name": "Cash & Equivalents",
-      "value": 0.0016,
-      "percentage": 0.58
+      "value": 0.0004,
+      "percentage": 2.91
     },
     {
       "name": "Derivatives",
-      "value": 0.0014,
-      "percentage": 0.5
+      "value": -0.0,
+      "percentage": -0.17
     }
   ],
   "breakdown": {
     "Bonds": [
       {
         "subclass": "ETFs",
-        "value": 0.2736,
+        "value": 0.0086,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "ISHARES USD CORP BND", "value": 0.0465, "percentage": 16.99 },
-          { "name": "ISHARES CORE EURO CORP BOND", "value": 0.0461, "percentage": 16.85 },
-          { "name": "ISHARES MARKIT IBOXX $ HIGH", "value": 0.0284, "percentage": 10.38 },
-          { "name": "SPDR US HY CO SC UCI", "value": 0.0284, "percentage": 10.38 },
-          { "name": "X USD HIGH YIELD BOND", "value": 0.0283, "percentage": 10.34 }
+        "itemCount": 8,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "VANG USDCPBD USDD",
+              "value": 0.0022,
+              "percentage": 25.73
+            },
+            {
+              "name": "DBX II EUR LIQUID CORP",
+              "value": 0.0018,
+              "percentage": 21.05
+            },
+            {
+              "name": "ISHARES MARKIT IBOXX $ HIGH",
+              "value": 0.0016,
+              "percentage": 18.71
+            },
+            {
+              "name": "X USD HIGH YIELD BOND",
+              "value": 0.0008,
+              "percentage": 9.35
+            },
+            {
+              "name": "ISHARES CORE EURO CORP BOND",
+              "value": 0.0008,
+              "percentage": 9.35
+            },
+            {
+              "name": "AMUNDI ETF EUR HY LIQ BD IBX",
+              "value": 0.0006,
+              "percentage": 7.02
+            },
+            {
+              "name": "AT1 LN EQUITY",
+              "value": 0.0006,
+              "percentage": 7.02
+            },
+            {
+              "name": "ISHARES USD CORP BND",
+              "value": 0.0002,
+              "percentage": 2.34
+            }
+          ]
         ]
       }
     ],
-    "Cash & Equivalents": [
+    "Stocks": [
       {
-        "subclass": "Cash",
-        "value": 0.0016,
+        "subclass": "ETFs",
+        "value": 0.0018,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0011, "percentage": 68.75 },
-          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0005, "percentage": 31.25 }
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SPD BB UCS UE UH",
+              "value": 0.0012,
+              "percentage": 68.51
+            },
+            {
+              "name": "SPDR US HY CO SC UCI",
+              "value": 0.0005,
+              "percentage": 28.55
+            }
+          ]
+        ]
+      }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0026,
+        "percentageOfClass": 100.0,
+        "itemCount": 117,
+        "totalPages": 12,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד 8892",
+              "value": 0.0001,
+              "percentage": 3.9
+            },
+            {
+              "name": "ערד 8894",
+              "value": 0.0001,
+              "percentage": 3.9
+            },
+            {
+              "name": "ערד 8889",
+              "value": 0.0001,
+              "percentage": 3.9
+            },
+            {
+              "name": "ערד 8903",
+              "value": 0.0001,
+              "percentage": 3.9
+            },
+            {
+              "name": "ערד 8897",
+              "value": 0.0001,
+              "percentage": 3.9
+            },
+            {
+              "name": "ערד 8880",
+              "value": 0.0001,
+              "percentage": 3.9
+            },
+            {
+              "name": "ערד 8905",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8824",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8841",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8901",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8874",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8865",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8898",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8866",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8872",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8858",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8859",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8846",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8862",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8879",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8893",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8883",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8807",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8896",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8850",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8821",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8838",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8882",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8853",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8812",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8877",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8837",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8857",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8825",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8851",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8856",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8826",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8815",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8855",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8871",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8803",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8848",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8832",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8787 4.8% 2027",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8895",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8808",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8881",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8809",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8847",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8863",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8818",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8833",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8784  4.8%  2026",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8823",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8801",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8772 4.8% 2025",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8845",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8839",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8799",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8849",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8873",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8819",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8813",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8816",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8869",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8904",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8844",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8900",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8810 2029 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8774 2026 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8797",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8864",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 2025 סדרה 8771",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8798",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8790 2027 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8788 4.8% 2027",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8796",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8867",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8842",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8795",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8854",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8876",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8800",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8805",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8802",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8778 2026 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8899",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8817",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8794",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8852",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8829",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8843",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8786_1/2027",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8834",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8827",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8820",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8776 2026 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8860",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8789 2027 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8793",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8811",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8781 2026 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8814",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8773 4.8% 2025",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8775 2026 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8840",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8888",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד סדרה 8777 2026 4.8%",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8908",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8822",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ],
+          [
+            {
+              "name": "ערד 8792",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8806",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד8911",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8884",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8878",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8875",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ערד 8868",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
         ]
       }
     ],
     "Derivatives": [
       {
         "subclass": "General",
-        "value": 0.0014,
+        "value": -0.0,
+        "percentageOfClass": 0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDILS",
+              "value": -0.0,
+              "percentage": 0
+            },
+            {
+              "name": "EURUSD",
+              "value": -0.0,
+              "percentage": 0
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0004,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "USDILS", "value": 0.0014, "percentage": 100.0 }
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0004,
+              "percentage": 103.96
+            }
+          ]
         ]
       }
     ]

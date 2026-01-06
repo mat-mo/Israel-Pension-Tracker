@@ -1,46 +1,126 @@
 {
-  "fundName": "Migdal Makefet Mashlima Passive Bonds",
+  "fundName": "Track 15527",
   "trackId": "15527",
-  "totalAssetsBN": 0.06,
+  "totalAssetsBN": 0.0,
   "assetClasses": [
     {
       "name": "Bonds",
-      "value": 0.0553,
-      "percentage": 98.75
+      "value": 0.0007,
+      "percentage": 78.56
     },
     {
-      "name": "Derivatives",
-      "value": 0.0006,
-      "percentage": 1.07
+      "name": "Stocks",
+      "value": 0.0002,
+      "percentage": 16.57
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0001,
-      "percentage": 0.18
+      "percentage": 5.71
+    },
+    {
+      "name": "Derivatives",
+      "value": -0.0,
+      "percentage": -0.84
     }
   ],
   "breakdown": {
     "Bonds": [
       {
         "subclass": "ETFs",
-        "value": 0.0553,
+        "value": 0.0007,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "ISHARES USD CORP BND", "value": 0.0094, "percentage": 17.0 },
-          { "name": "ISHARES CORE EURO CORP BOND", "value": 0.0093, "percentage": 16.82 },
-          { "name": "ISHARES MARKIT IBOXX $ HIGH", "value": 0.0058, "percentage": 10.49 },
-          { "name": "SPDR US HY CO SC UCI", "value": 0.0057, "percentage": 10.31 },
-          { "name": "X USD HIGH YIELD BOND", "value": 0.0057, "percentage": 10.31 }
+        "itemCount": 8,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "VANG USDCPBD USDD",
+              "value": 0.0002,
+              "percentage": 28.02
+            },
+            {
+              "name": "DBX II EUR LIQUID CORP",
+              "value": 0.0002,
+              "percentage": 28.02
+            },
+            {
+              "name": "ISHARES MARKIT IBOXX $ HIGH",
+              "value": 0.0001,
+              "percentage": 14.01
+            },
+            {
+              "name": "X USD HIGH YIELD BOND",
+              "value": 0.0001,
+              "percentage": 14.01
+            },
+            {
+              "name": "ISHARES CORE EURO CORP BOND",
+              "value": 0.0001,
+              "percentage": 14.01
+            },
+            {
+              "name": "AT1 LN EQUITY",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "AMUNDI ETF EUR HY LIQ BD IBX",
+              "value": 0.0,
+              "percentage": 0.0
+            },
+            {
+              "name": "ISHARES USD CORP BND",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0002,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SPD BB UCS UE UH",
+              "value": 0.0001,
+              "percentage": 66.41
+            },
+            {
+              "name": "SPDR US HY CO SC UCI",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
         ]
       }
     ],
     "Derivatives": [
       {
         "subclass": "General",
-        "value": 0.0006,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "USDILS", "value": 0.0006, "percentage": 100.0 }
+        "value": -0.0,
+        "percentageOfClass": 0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "EURUSD",
+              "value": -0.0,
+              "percentage": 0
+            },
+            {
+              "name": "USDILS",
+              "value": -0.0,
+              "percentage": 0
+            }
+          ]
         ]
       }
     ],
@@ -49,8 +129,16 @@
         "subclass": "Cash",
         "value": 0.0001,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0001, "percentage": 100.0 }
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0001,
+              "percentage": 192.71
+            }
+          ]
         ]
       }
     ]

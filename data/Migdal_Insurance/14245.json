@@ -1,5 +1,5 @@
 {
-  "fundName": "Migdal Makefet Mashlima 50-60",
+  "fundName": "Track 14245",
   "trackId": "14245",
   "totalAssetsBN": 0.02,
   "assetClasses": [
@@ -25,71 +25,46 @@
     }
   ],
   "breakdown": {
-    "Derivatives": [
-      {
-        "subclass": "General",
-        "value": -0.0001,
-        "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "USDJPY",
-            "value": 0.0,
-            "percentage": -8.12
-          },
-          {
-            "name": "GBPUSD",
-            "value": 0.0,
-            "percentage": -4.43
-          },
-          {
-            "name": "AUDUSD",
-            "value": 0.0,
-            "percentage": -0.01
-          },
-          {
-            "name": "EURUSD",
-            "value": -0.0,
-            "percentage": 37.85
-          },
-          {
-            "name": "USDILS",
-            "value": -0.0001,
-            "percentage": 74.71
-          }
-        ]
-      }
-    ],
     "Bonds": [
       {
         "subclass": "ETFs",
         "value": 0.0088,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "VANG USDCPBD USDD",
-            "value": 0.0026,
-            "percentage": 29.37
-          },
-          {
-            "name": "ISHARES USD TREASURY 3 7",
-            "value": 0.0023,
-            "percentage": 25.97
-          },
-          {
-            "name": "ISHARES GLOBAL CORP",
-            "value": 0.0014,
-            "percentage": 16.29
-          },
-          {
-            "name": "X USD HIGH YIELD BOND",
-            "value": 0.0012,
-            "percentage": 13.97
-          },
-          {
-            "name": "ISHARES MARKIT IBOXX $ HIGH",
-            "value": 0.001,
-            "percentage": 11.05
-          }
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "VANG USDCPBD USDD",
+              "value": 0.0026,
+              "percentage": 29.56
+            },
+            {
+              "name": "ISHARES USD TREASURY 3 7",
+              "value": 0.0023,
+              "percentage": 26.15
+            },
+            {
+              "name": "ISHARES GLOBAL CORP",
+              "value": 0.0014,
+              "percentage": 15.92
+            },
+            {
+              "name": "X USD HIGH YIELD BOND",
+              "value": 0.0012,
+              "percentage": 13.64
+            },
+            {
+              "name": "ISHARES MARKIT IBOXX $ HIGH",
+              "value": 0.001,
+              "percentage": 11.37
+            },
+            {
+              "name": "ISHARES USD CORP BND",
+              "value": 0.0003,
+              "percentage": 3.41
+            }
+          ]
         ]
       }
     ],
@@ -98,32 +73,99 @@
         "subclass": "ETFs",
         "value": 0.012,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "SOURCE S&P 500 UCITS ETF",
-            "value": 0.0025,
-            "percentage": 20.81
-          },
-          {
-            "name": "X S@P 500 SWAP 1D",
-            "value": 0.002,
-            "percentage": 16.77
-          },
-          {
-            "name": "LYXOR ETF S&P 500",
-            "value": 0.0014,
-            "percentage": 11.78
-          },
-          {
-            "name": "AMUNDI MSCI EM MKT 2",
-            "value": 0.0012,
-            "percentage": 10.09
-          },
-          {
-            "name": "INVESCO US TREASURY DIST",
-            "value": 0.0012,
-            "percentage": 9.83
-          }
+        "itemCount": 10,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SOURCE S&P 500 UCITS ETF",
+              "value": 0.0025,
+              "percentage": 20.84
+            },
+            {
+              "name": "X S@P 500 SWAP 1D",
+              "value": 0.002,
+              "percentage": 16.67
+            },
+            {
+              "name": "LYXOR ETF S&P 500",
+              "value": 0.0014,
+              "percentage": 11.67
+            },
+            {
+              "name": "AMUNDI MSCI EM MKT 2",
+              "value": 0.0012,
+              "percentage": 10.0
+            },
+            {
+              "name": "INVESCO US TREASURY DIST",
+              "value": 0.0012,
+              "percentage": 10.0
+            },
+            {
+              "name": "AM S&P 500 II ETF ACC",
+              "value": 0.001,
+              "percentage": 8.34
+            },
+            {
+              "name": "INVESCO NASDAQ 100 SWAP ACC",
+              "value": 0.0009,
+              "percentage": 7.5
+            },
+            {
+              "name": "LYXOR CORE EURSTX 600 DR",
+              "value": 0.0008,
+              "percentage": 6.67
+            },
+            {
+              "name": "DBX STX EUROPE 600",
+              "value": 0.0005,
+              "percentage": 4.17
+            },
+            {
+              "name": "DAIWA ETF TOPIX",
+              "value": 0.0005,
+              "percentage": 4.17
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": -0.0001,
+        "percentageOfClass": 0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDJPY",
+              "value": 0.0,
+              "percentage": 0
+            },
+            {
+              "name": "GBPUSD",
+              "value": 0.0,
+              "percentage": 0
+            },
+            {
+              "name": "AUDUSD",
+              "value": 0.0,
+              "percentage": 0
+            },
+            {
+              "name": "EURUSD",
+              "value": -0.0,
+              "percentage": 0
+            },
+            {
+              "name": "USDILS",
+              "value": -0.0001,
+              "percentage": 0
+            }
+          ]
         ]
       }
     ],
@@ -132,17 +174,21 @@
         "subclass": "Cash",
         "value": 0.001,
         "percentageOfClass": 100.0,
-        "topHoldings": [
-          {
-            "name": "בנק לאומי לישראל בע\"מ",
-            "value": 0.001,
-            "percentage": 100.0
-          },
-          {
-            "name": "בנק הפועלים בע\"מ",
-            "value": 0.0,
-            "percentage": 0.0
-          }
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.001,
+              "percentage": 102.28
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
         ]
       }
     ]
