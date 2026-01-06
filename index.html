@@ -22,9 +22,11 @@
     <style>
         body { font-family: 'Heebo', sans-serif; transition: background-color 0.3s, color 0.3s; }
         .chart-box { height: 400px; width: 100%; }
-        /* Loading Overlay */
         #loading { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.8); z-index: 50; justify-content: center; align-items: center; }
         .dark #loading { background: rgba(15, 23, 42, 0.8); }
+        
+        /* Table Row Transition */
+        tbody tr { transition: background-color 0.2s; }
     </style>
 </head>
 <body class="p-4 md:p-8 bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
@@ -65,7 +67,7 @@
             <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
                 <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
                     <h2 class="font-bold text-lg text-gray-800 dark:text-white">1. Asset Allocation</h2>
-                    <p class="text-xs text-gray-400 dark:text-gray-500">Click a slice to view details</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Click a slice to view sub-categories</p>
                 </div>
                 <div id="mainChart" class="chart-box"></div>
             </div>
@@ -73,7 +75,7 @@
             <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border flex flex-col transition-colors duration-300">
                 <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
                     <h2 id="subChartTitle" class="font-bold text-lg text-gray-800 dark:text-white">2. Category Breakdown</h2>
-                    <p class="text-xs text-gray-400 dark:text-gray-500">Distribution within selected category</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Click a slice to filter the list below</p>
                 </div>
                 <div id="subChart" class="chart-box"></div>
             </div>
@@ -81,23 +83,34 @@
 
         <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-100 dark:border-dark-border overflow-hidden transition-colors duration-300">
             <div class="p-6 border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300">
-                <h3 id="tableTitle" class="font-bold text-gray-700 dark:text-gray-200">Top Holdings</h3>
+                <h3 id="tableTitle" class="font-bold text-gray-700 dark:text-gray-200">Holdings</h3>
                 <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full" id="tableBadge">Select a Category</span>
             </div>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto min-h-[300px]">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-500 dark:text-gray-400 uppercase bg-gray-50 dark:bg-gray-800 border-b dark:border-gray-700">
                         <tr>
-                            <th class="px-6 py-3">Asset Name</th>
-                            <th class="px-6 py-3">Sub-Category</th>
-                            <th class="px-6 py-3 text-right">Value (Billions)</th>
-                            <th class="px-6 py-3 text-right">% of Category</th>
+                            <th class="px-6 py-3 w-1/2">Asset Name</th>
+                            <th class="px-6 py-3 w-1/4">Sub-Category</th>
+                            <th class="px-6 py-3 text-right w-1/8">Value (BN)</th>
+                            <th class="px-6 py-3 text-right w-1/8">% of Cat</th>
                         </tr>
                     </thead>
                     <tbody id="holdingsBody" class="divide-y divide-gray-100 dark:divide-gray-700">
-                        <tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">Click on the Pie Chart to see holdings</td></tr>
+                        <tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">Select an asset class to view holdings</td></tr>
                     </tbody>
                 </table>
+            </div>
+            <div id="paginationControls" class="px-6 py-4 border-t border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300 hidden">
+                <span class="text-xs text-gray-500 dark:text-gray-400 font-medium" id="pageInfo">Page 1 of 1</span>
+                <div class="flex gap-2">
+                    <button onclick="changePage(-1)" id="btnPrev" class="px-3 py-1.5 text-xs font-medium rounded-md bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm">
+                        Previous
+                    </button>
+                    <button onclick="changePage(1)" id="btnNext" class="px-3 py-1.5 text-xs font-medium rounded-md bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm">
+                        Next
+                    </button>
+                </div>
             </div>
         </div>
         
@@ -112,6 +125,10 @@
         let currentManifest = [];
         let currentInst = null;
         let currentTrackData = null;
+        
+        // Pagination State
+        let currentSubclassData = null;
+        let currentPage = 0;
 
         // --- Theme Init ---
         const themeToggleBtn = document.getElementById('themeToggle');
@@ -298,9 +315,7 @@
             const colors = getChartColors();
             
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
-            document.getElementById('tableTitle').innerText = `Top Holdings: ${categoryName}`;
-            document.getElementById('tableBadge').innerText = categoryName;
-
+            
             if (!breakdown || breakdown.length === 0) {
                 subChart.clear();
                 subChart.setOption({
@@ -312,7 +327,7 @@
                         textStyle: { color: '#9ca3af' }
                     }
                 });
-                renderTable([]);
+                renderTable([]); // Clear table
                 return;
             }
 
@@ -328,6 +343,7 @@
                     formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.value}B<br/>Share: ${params.percent}%` 
                 },
                 series: [{
+                    name: 'Subclass',
                     type: 'pie',
                     radius: ['30%', '60%'],
                     itemStyle: { 
@@ -346,40 +362,98 @@
             
             subChart.setOption(option, true);
             
-            // Flatten table data
-            let allHoldings = [];
-            breakdown.forEach(sub => {
-                if(sub.topHoldings) {
-                    sub.topHoldings.forEach(h => {
-                        allHoldings.push({ ...h, subclass: sub.subclass });
-                    });
+            // Add click listener to Sub-Chart to filter table
+            subChart.off('click');
+            subChart.on('click', function(params) {
+                // Find the subclass data object
+                const selectedSubclass = breakdown.find(b => b.subclass === params.name);
+                if (selectedSubclass) {
+                    loadSubclassTable(selectedSubclass);
                 }
             });
-            renderTable(allHoldings);
+
+            // Default: Load the largest subclass (usually index 0)
+            if (breakdown.length > 0) {
+                loadSubclassTable(breakdown[0]);
+            }
         }
 
-        function renderTable(holdings) {
+        // --- Table & Pagination Logic ---
+
+        function loadSubclassTable(subclassData) {
+            currentSubclassData = subclassData;
+            currentPage = 0; // Reset to first page
+            
+            document.getElementById('tableTitle').innerText = `Holdings: ${subclassData.subclass}`;
+            document.getElementById('tableBadge').innerText = `${subclassData.itemCount || (subclassData.topHoldings ? subclassData.topHoldings.length : 0)} Items`;
+            
+            renderTable();
+        }
+
+        function changePage(delta) {
+            if (!currentSubclassData || !currentSubclassData.holdingsPages) return;
+            
+            const newPage = currentPage + delta;
+            if (newPage >= 0 && newPage < currentSubclassData.totalPages) {
+                currentPage = newPage;
+                renderTable();
+            }
+        }
+
+        function renderTable() {
             const tbody = document.getElementById('holdingsBody');
+            const paginationControls = document.getElementById('paginationControls');
             tbody.innerHTML = '';
 
-            if (holdings.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">No data available</td></tr>';
+            if (!currentSubclassData) return;
+
+            let holdingsToShow = [];
+            let isPaginated = false;
+
+            // Check if data is paginated or flat (legacy support)
+            if (currentSubclassData.holdingsPages && Array.isArray(currentSubclassData.holdingsPages)) {
+                isPaginated = true;
+                holdingsToShow = currentSubclassData.holdingsPages[currentPage];
+            } else if (currentSubclassData.topHoldings) {
+                holdingsToShow = currentSubclassData.topHoldings;
+            }
+
+            if (!holdingsToShow || holdingsToShow.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">No holdings available</td></tr>';
+                paginationControls.classList.add('hidden');
                 return;
             }
 
-            holdings.sort((a, b) => b.value - a.value);
-
-            holdings.forEach(h => {
+            // Render Rows
+            holdingsToShow.forEach(h => {
                 const tr = document.createElement('tr');
                 tr.className = "bg-white dark:bg-dark-card border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors";
                 tr.innerHTML = `
-                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap">${h.name}</th>
-                    <td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${h.subclass}</td>
+                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap truncate max-w-xs" title="${h.name}">${h.name}</th>
+                    <td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${currentSubclassData.subclass}</td>
                     <td class="px-6 py-3 text-right font-mono text-sm text-gray-700 dark:text-gray-300">₪${h.value.toFixed(4)}B</td>
                     <td class="px-6 py-3 text-right text-blue-600 dark:text-blue-400 font-bold text-sm">${h.percentage}%</td>
                 `;
                 tbody.appendChild(tr);
             });
+
+            // Update Pagination UI
+            if (isPaginated && currentSubclassData.totalPages > 1) {
+                paginationControls.classList.remove('hidden');
+                document.getElementById('pageInfo').innerText = `Page ${currentPage + 1} of ${currentSubclassData.totalPages}`;
+                
+                const btnPrev = document.getElementById('btnPrev');
+                const btnNext = document.getElementById('btnNext');
+                
+                btnPrev.disabled = currentPage === 0;
+                btnNext.disabled = currentPage === currentSubclassData.totalPages - 1;
+                
+                // Style updates for disabled state
+                btnPrev.classList.toggle('opacity-50', currentPage === 0);
+                btnNext.classList.toggle('opacity-50', currentPage === currentSubclassData.totalPages - 1);
+            } else {
+                paginationControls.classList.add('hidden');
+            }
         }
     </script>
 </body>
