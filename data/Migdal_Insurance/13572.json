@@ -1,0 +1,75 @@
+{
+  "fundName": "Migdal Makefet Ishit S&P 500",
+  "trackId": "13572",
+  "totalAssetsBN": 6.81,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 6.6975,
+      "percentage": 98.3
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0934,
+      "percentage": 1.37
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0211,
+      "percentage": 0.31
+    },
+    {
+      "name": "Futures",
+      "value": 0.0016,
+      "percentage": 0.02
+    }
+  ],
+  "breakdown": {
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 6.6975,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "VANGUARD S&P 500 ETF", "value": 1.139, "percentage": 17.01 },
+          { "name": "ISHARES CORE S&P 500", "value": 1.1352, "percentage": 16.95 },
+          { "name": "SPDR S&P 500 ETF TRUST", "value": 1.1218, "percentage": 16.75 },
+          { "name": "INVESCO S&P 500 UCITS ETF", "value": 1.1207, "percentage": 16.73 },
+          { "name": "AM S&P 500 II ETF ACC", "value": 1.0963, "percentage": 16.37 }
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0934,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "USDILS", "value": 0.0934, "percentage": 100.0 }
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0211,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "בנק לאומי לישראל בע\"מ", "value": 0.0123, "percentage": 58.11 },
+          { "name": "בנק דיסקונט לישראל בע\"מ", "value": 0.0088, "percentage": 41.74 },
+          { "name": "בנק הפועלים בע\"מ", "value": 0.0001, "percentage": 0.24 }
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0016,
+        "percentageOfClass": 100.0,
+        "topHoldings": [
+          { "name": "S&P500 EMINI FUT Dec25", "value": 0.0016, "percentage": 100.0 }
+        ]
+      }
+    ]
+  }
+}
