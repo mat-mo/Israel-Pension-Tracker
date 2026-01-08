@@ -1,0 +1,159 @@
+{
+  "fundName": "אינפיניטי מקיפה הלכה",
+  "trackId": "14042",
+  "totalAssetsBN": 0.04,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.0269,
+      "percentage": 64.96
+    },
+    {
+      "name": "Bonds",
+      "value": 0.0085,
+      "percentage": 20.64
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.006,
+      "percentage": 14.42
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0,
+      "percentage": 0.02
+    },
+    {
+      "name": "Futures",
+      "value": -0.0,
+      "percentage": -0.03
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.006,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.006,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0269,
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "אי.בי.אי סל MSCI AC",
+              "value": 0.0056,
+              "percentage": 21.02
+            },
+            {
+              "name": "MTF סל (4D) MSCI AC",
+              "value": 0.0056,
+              "percentage": 20.77
+            },
+            {
+              "name": "הראל סל (MSCI AC WOR",
+              "value": 0.0052,
+              "percentage": 19.53
+            },
+            {
+              "name": "תכלית סל (D4) MSCI A",
+              "value": 0.0052,
+              "percentage": 19.41
+            },
+            {
+              "name": "קסם MSCI AC WORLD (D",
+              "value": 0.0052,
+              "percentage": 19.28
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.0085,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "T 14/5/26",
+              "value": 0.0085,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד 8912",
+              "value": 0.0,
+              "percentage": 83.5
+            },
+            {
+              "name": "ערד 8911",
+              "value": 0.0,
+              "percentage": 7.69
+            },
+            {
+              "name": "ערד 8910",
+              "value": 0.0,
+              "percentage": 5.41
+            },
+            {
+              "name": "ערד 8909",
+              "value": 0.0,
+              "percentage": 3.4
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": -0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "EUREX Clearing Aktiengesellschaft",
+              "value": -0.0,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

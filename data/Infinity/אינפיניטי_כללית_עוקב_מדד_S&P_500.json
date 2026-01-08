@@ -1,0 +1,146 @@
+{
+  "fundName": "אינפיניטי כללית עוקב מדד S&P 500",
+  "trackId": "14058",
+  "totalAssetsBN": 0.0,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.0022,
+      "percentage": 73.09
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0006,
+      "percentage": 18.69
+    },
+    {
+      "name": "Bonds",
+      "value": 0.0002,
+      "percentage": 7.98
+    },
+    {
+      "name": "Futures",
+      "value": 0.0,
+      "percentage": 0.23
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0006,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0006,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0022,
+        "percentageOfClass": 100.0,
+        "itemCount": 10,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "Invesco S&P 500 UCITS",
+              "value": 0.0003,
+              "percentage": 13.43
+            },
+            {
+              "name": "SPY US",
+              "value": 0.0003,
+              "percentage": 13.04
+            },
+            {
+              "name": "Lyxor ETF S&P 500",
+              "value": 0.0003,
+              "percentage": 12.47
+            },
+            {
+              "name": "קסם SP500 ETF",
+              "value": 0.0002,
+              "percentage": 11.12
+            },
+            {
+              "name": "MTF סל‏ SP500",
+              "value": 0.0002,
+              "percentage": 10.35
+            },
+            {
+              "name": "Vanguard S&P 500",
+              "value": 0.0002,
+              "percentage": 10.18
+            },
+            {
+              "name": "מור סל (4D) S&P500",
+              "value": 0.0002,
+              "percentage": 10.07
+            },
+            {
+              "name": "אי.בי.אי סל(4D)  SP",
+              "value": 0.0002,
+              "percentage": 8.64
+            },
+            {
+              "name": "הראל סל SP500",
+              "value": 0.0001,
+              "percentage": 6.75
+            },
+            {
+              "name": "תכלית סל ‏‏SP500",
+              "value": 0.0001,
+              "percentage": 3.96
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.0002,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "T 14/5/26",
+              "value": 0.0002,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "F- 12/25 MICRO",
+              "value": 0.0,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

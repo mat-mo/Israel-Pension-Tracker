@@ -1,0 +1,179 @@
+{
+  "fundName": "אינפיניטי מקיפה עוקב מדד S&P 500",
+  "trackId": "14054",
+  "totalAssetsBN": 0.05,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.0374,
+      "percentage": 77.01
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0087,
+      "percentage": 17.82
+    },
+    {
+      "name": "Bonds",
+      "value": 0.0024,
+      "percentage": 4.86
+    },
+    {
+      "name": "Futures",
+      "value": 0.0001,
+      "percentage": 0.17
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0001,
+      "percentage": 0.15
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0087,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0087,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0374,
+        "percentageOfClass": 100.0,
+        "itemCount": 9,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "קסם SP500 ETF",
+              "value": 0.0063,
+              "percentage": 16.77
+            },
+            {
+              "name": "מור סל (4D) S&P500",
+              "value": 0.005,
+              "percentage": 13.33
+            },
+            {
+              "name": "תכלית סל ‏‏SP500",
+              "value": 0.0049,
+              "percentage": 13.14
+            },
+            {
+              "name": "אי.בי.אי סל(4D)  SP",
+              "value": 0.0048,
+              "percentage": 12.72
+            },
+            {
+              "name": "הראל סל SP500",
+              "value": 0.0046,
+              "percentage": 12.41
+            },
+            {
+              "name": "MTF סל‏ SP500",
+              "value": 0.0046,
+              "percentage": 12.4
+            },
+            {
+              "name": "SPY US",
+              "value": 0.0034,
+              "percentage": 9.01
+            },
+            {
+              "name": "Invesco S&P 500 UCITS",
+              "value": 0.0025,
+              "percentage": 6.58
+            },
+            {
+              "name": "Lyxor ETF S&P 500",
+              "value": 0.0014,
+              "percentage": 3.64
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.0024,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "T 14/5/26",
+              "value": 0.0024,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0001,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד 8912",
+              "value": 0.0,
+              "percentage": 62.33
+            },
+            {
+              "name": "ערד 8910",
+              "value": 0.0,
+              "percentage": 21.48
+            },
+            {
+              "name": "ערד 8911",
+              "value": 0.0,
+              "percentage": 10.24
+            },
+            {
+              "name": "ערד 8909",
+              "value": 0.0,
+              "percentage": 5.94
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0001,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "F- 12/25 MICRO",
+              "value": 0.0001,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
