@@ -2,25 +2,30 @@
   "fundName": "כלל פנסיה משלימה כספי(שקלי)",
   "trackId": "13214",
   "totalAssetsBN": 0.01,
+  "formattedTotalAssets": "12.44M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0109,
+      "formattedValue": "10.88M",
       "percentage": 87.46
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0012,
+      "formattedValue": "1.23M",
       "percentage": 9.87
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0003,
+      "formattedValue": "345.20K",
       "percentage": 2.78
     },
     {
       "name": "Other Assets",
       "value": -0.0,
+      "formattedValue": "-13.40K",
       "percentage": -0.11
     }
   ],
@@ -29,6 +34,7 @@
       {
         "subclass": "Cash",
         "value": 0.0003,
+        "formattedValue": "345.20K",
         "percentageOfClass": 100.0,
         "itemCount": 4,
         "totalPages": 1,
@@ -37,21 +43,25 @@
             {
               "name": "בנק לאומי לישראל בע\"מ",
               "value": 0.0003,
+              "formattedValue": "344.94K",
               "percentage": 99.92
             },
             {
               "name": "בנק מזרחי טפחות בע\"מ",
               "value": 0.0,
+              "formattedValue": "0.16K",
               "percentage": 0.05
             },
             {
               "name": "בנק הפועלים בע\"מ",
               "value": 0.0,
+              "formattedValue": "0.10K",
               "percentage": 0.03
             },
             {
               "name": "בנק דיסקונט לישראל בע\"מ",
               "value": 0.0,
+              "formattedValue": "0.00K",
               "percentage": 0.0
             }
           ]
@@ -62,6 +72,7 @@
       {
         "subclass": "Commercial Paper",
         "value": 0.0012,
+        "formattedValue": "1.23M",
         "percentageOfClass": 100.0,
         "itemCount": 3,
         "totalPages": 1,
@@ -70,16 +81,19 @@
             {
               "name": "נע\"מ אזורים בנין",
               "value": 0.0004,
+              "formattedValue": "438.61K",
               "percentage": 35.73
             },
             {
               "name": "נע\"מ רוטשטיין",
               "value": 0.0004,
+              "formattedValue": "430.75K",
               "percentage": 35.09
             },
             {
               "name": "נע\"מ מנרב",
               "value": 0.0004,
+              "formattedValue": "358.11K",
               "percentage": 29.17
             }
           ]
@@ -90,6 +104,7 @@
       {
         "subclass": "General",
         "value": -0.0,
+        "formattedValue": "-13.40K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -98,6 +113,7 @@
             {
               "name": "חייבים זכאים תפעולי",
               "value": -0.0,
+              "formattedValue": "-13.40K",
               "percentage": 100.0
             }
           ]
@@ -108,6 +124,7 @@
       {
         "subclass": "Corporate Bonds",
         "value": 0.0092,
+        "formattedValue": "9.24M",
         "percentageOfClass": 84.91,
         "itemCount": 24,
         "totalPages": 3,
@@ -116,51 +133,61 @@
             {
               "name": "איביאי פקדונות אגח ב",
               "value": 0.0012,
+              "formattedValue": "1.17M",
               "percentage": 12.61
             },
             {
               "name": "פאי פלוס פיקדון אגח א",
               "value": 0.0011,
+              "formattedValue": "1.11M",
               "percentage": 12.07
             },
             {
               "name": "ספיר פקדון אגח ד",
               "value": 0.0011,
+              "formattedValue": "1.08M",
               "percentage": 11.7
             },
             {
               "name": "אביעד פקדון אגח ג",
               "value": 0.001,
+              "formattedValue": "1.02M",
               "percentage": 11.01
             },
             {
               "name": "הראל ריבית פקדונות אגח ג",
               "value": 0.0009,
+              "formattedValue": "931.50K",
               "percentage": 10.08
             },
             {
               "name": "דניאל פקדונות אגח ב",
               "value": 0.0009,
+              "formattedValue": "929.80K",
               "percentage": 10.07
             },
             {
               "name": "גלעד פקדון אגח ג",
               "value": 0.0007,
+              "formattedValue": "740.91K",
               "percentage": 8.02
             },
             {
               "name": "מרב פקדון אגח א",
               "value": 0.0004,
+              "formattedValue": "363.94K",
               "percentage": 3.94
             },
             {
               "name": "בזק אגח 10",
               "value": 0.0003,
+              "formattedValue": "305.55K",
               "percentage": 3.31
             },
             {
               "name": "איי די איי התחייבות ה",
               "value": 0.0003,
+              "formattedValue": "258.81K",
               "percentage": 2.8
             }
           ],
@@ -168,51 +195,61 @@
             {
               "name": "מזרחי טפחות הנפקות 49",
               "value": 0.0002,
+              "formattedValue": "213.81K",
               "percentage": 2.31
             },
             {
               "name": "לאומי אגח 179",
               "value": 0.0002,
+              "formattedValue": "182.95K",
               "percentage": 1.98
             },
             {
               "name": "הראל ריביות אגח ה",
               "value": 0.0002,
+              "formattedValue": "178.73K",
               "percentage": 1.93
             },
             {
               "name": "מזרחי טפחות כתבי התחייבות נדחים 53",
               "value": 0.0001,
+              "formattedValue": "134.07K",
               "percentage": 1.45
             },
             {
               "name": "בינלאומי כתבי התחייבות נדחים כה",
               "value": 0.0001,
+              "formattedValue": "126.42K",
               "percentage": 1.37
             },
             {
               "name": "פועלים התחייבות נדחה י",
               "value": 0.0001,
+              "formattedValue": "109.95K",
               "percentage": 1.19
             },
             {
               "name": "איילון אגח ה",
               "value": 0.0001,
+              "formattedValue": "98.77K",
               "percentage": 1.07
             },
             {
               "name": "דיסקונט מנפיקים כתבי התחייבות נדחים ז",
               "value": 0.0001,
+              "formattedValue": "92.78K",
               "percentage": 1.0
             },
             {
               "name": "מליסרון אגח יד",
               "value": 0.0001,
+              "formattedValue": "71.48K",
               "percentage": 0.77
             },
             {
               "name": "דיסקונט מנפיקים התחייבות ו",
               "value": 0.0,
+              "formattedValue": "42.25K",
               "percentage": 0.46
             }
           ],
@@ -220,21 +257,25 @@
             {
               "name": "הראל הנפקות אגח ט",
               "value": 0.0,
+              "formattedValue": "33.70K",
               "percentage": 0.36
             },
             {
               "name": "מגדל הון אגח ו",
               "value": 0.0,
+              "formattedValue": "21.66K",
               "percentage": 0.23
             },
             {
               "name": "מנורה הון התח ו",
               "value": 0.0,
+              "formattedValue": "14.88K",
               "percentage": 0.16
             },
             {
               "name": "פניקס הון אגח ט",
               "value": 0.0,
+              "formattedValue": "8.10K",
               "percentage": 0.09
             }
           ]
@@ -243,6 +284,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0016,
+        "formattedValue": "1.64M",
         "percentageOfClass": 15.09,
         "itemCount": 1,
         "totalPages": 1,
@@ -251,6 +293,7 @@
             {
               "name": "ממשמ 0526",
               "value": 0.0016,
+              "formattedValue": "1.64M",
               "percentage": 100.0
             }
           ]

@@ -2,30 +2,36 @@
   "fundName": "מיטב פנסיה כללית עוקב מדד S&P500",
   "trackId": "13285",
   "totalAssetsBN": 0.7,
+  "formattedTotalAssets": "699.76M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.4382,
+      "formattedValue": "438.23M",
       "percentage": 62.63
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.1844,
+      "formattedValue": "184.42M",
       "percentage": 26.35
     },
     {
       "name": "Stocks",
       "value": 0.0901,
+      "formattedValue": "90.08M",
       "percentage": 12.87
     },
     {
       "name": "Futures",
       "value": 0.0,
+      "formattedValue": "18.28K",
       "percentage": 0.0
     },
     {
       "name": "Derivatives",
       "value": -0.013,
+      "formattedValue": "-12.99M",
       "percentage": -1.86
     }
   ],
@@ -34,6 +40,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0901,
+        "formattedValue": "90.08M",
         "percentageOfClass": 100.0,
         "itemCount": 3,
         "totalPages": 1,
@@ -42,16 +49,19 @@
             {
               "name": "הראל סל 4D ‏S&P 500",
               "value": 0.062,
+              "formattedValue": "61.98M",
               "percentage": 68.8
             },
             {
               "name": "מור סל 4Dי S&P 500",
               "value": 0.0198,
+              "formattedValue": "19.77M",
               "percentage": 21.95
             },
             {
               "name": "קסם S&P 500 4D ETF",
               "value": 0.0083,
+              "formattedValue": "8.33M",
               "percentage": 9.25
             }
           ]
@@ -62,6 +72,7 @@
       {
         "subclass": "Cash",
         "value": 0.1844,
+        "formattedValue": "184.42M",
         "percentageOfClass": 100.0,
         "itemCount": 3,
         "totalPages": 1,
@@ -70,16 +81,19 @@
             {
               "name": "מזרחי",
               "value": 0.1234,
+              "formattedValue": "123.42M",
               "percentage": 66.92
             },
             {
               "name": "פועלים",
               "value": 0.0322,
+              "formattedValue": "32.19M",
               "percentage": 17.45
             },
             {
               "name": "דיסקונט",
               "value": 0.0288,
+              "formattedValue": "28.81M",
               "percentage": 15.62
             }
           ]
@@ -90,6 +104,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.4382,
+        "formattedValue": "438.23M",
         "percentageOfClass": 100.0,
         "itemCount": 16,
         "totalPages": 2,
@@ -98,51 +113,61 @@
             {
               "name": "מ.ק.מ.     1115",
               "value": 0.081,
+              "formattedValue": "81.03M",
               "percentage": 18.49
             },
             {
               "name": "מ.ק.מ. 316",
               "value": 0.0646,
+              "formattedValue": "64.65M",
               "percentage": 14.75
             },
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0459,
+              "formattedValue": "45.86M",
               "percentage": 10.46
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.0371,
+              "formattedValue": "37.07M",
               "percentage": 8.46
             },
             {
               "name": "מ.ק.מ.     1015",
               "value": 0.0289,
+              "formattedValue": "28.93M",
               "percentage": 6.6
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.0285,
+              "formattedValue": "28.46M",
               "percentage": 6.49
             },
             {
               "name": "מ.ק.מ. 416",
               "value": 0.0284,
+              "formattedValue": "28.39M",
               "percentage": 6.48
             },
             {
               "name": "מ.ק.מ. 1016",
               "value": 0.0254,
+              "formattedValue": "25.43M",
               "percentage": 5.8
             },
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0224,
+              "formattedValue": "22.41M",
               "percentage": 5.11
             },
             {
               "name": "מ.ק.מ 216",
               "value": 0.0213,
+              "formattedValue": "21.28M",
               "percentage": 4.86
             }
           ],
@@ -150,31 +175,37 @@
             {
               "name": "מ.ק.מ. 816",
               "value": 0.0139,
+              "formattedValue": "13.91M",
               "percentage": 3.17
             },
             {
               "name": "מ.ק.מ. 916",
               "value": 0.0131,
+              "formattedValue": "13.12M",
               "percentage": 2.99
             },
             {
               "name": "ממשל קצרה 11/25",
               "value": 0.0125,
+              "formattedValue": "12.52M",
               "percentage": 2.86
             },
             {
               "name": "ממשל קצרה 05/26",
               "value": 0.0098,
+              "formattedValue": "9.81M",
               "percentage": 2.24
             },
             {
               "name": "ממשל קצרה 02/26",
               "value": 0.0054,
+              "formattedValue": "5.36M",
               "percentage": 1.22
             },
             {
               "name": "ממשל משתנה 0526",
               "value": 0.0,
+              "formattedValue": "0.31K",
               "percentage": 0.0
             }
           ]
@@ -185,6 +216,7 @@
       {
         "subclass": "General",
         "value": 0.0,
+        "formattedValue": "18.28K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -193,6 +225,7 @@
             {
               "name": "F12/25 MINI S",
               "value": 0.0,
+              "formattedValue": "18.28K",
               "percentage": 100.0
             }
           ]
@@ -203,6 +236,7 @@
       {
         "subclass": "General",
         "value": -0.013,
+        "formattedValue": "-12.99M",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -211,11 +245,13 @@
             {
               "name": "SPTR",
               "value": 0.02,
+              "formattedValue": "20.03M",
               "percentage": -154.15
             },
             {
               "name": "Unfunded Forward",
               "value": -0.033,
+              "formattedValue": "-33.02M",
               "percentage": 254.15
             }
           ]

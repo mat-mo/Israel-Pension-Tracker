@@ -245,7 +245,7 @@
                 })
                 .then(data => {
                     currentTrackData = data;
-                    document.getElementById('totalAssetsDisplay').innerText = `₪${data.formattedTotalAssets}`;
+                    document.getElementById('totalAssetsDisplay').innerText = `₪${data.totalAssetsBN.toLocaleString()}B`;
                     renderCharts(data, true);
                     loading.style.display = 'none';
                 })

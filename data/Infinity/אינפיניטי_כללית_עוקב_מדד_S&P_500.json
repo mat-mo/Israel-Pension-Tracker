@@ -2,25 +2,30 @@
   "fundName": "אינפיניטי כללית עוקב מדד S&P 500",
   "trackId": "14058",
   "totalAssetsBN": 0.0,
+  "formattedTotalAssets": "2.99M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0022,
+      "formattedValue": "2.19M",
       "percentage": 73.09
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0006,
+      "formattedValue": "559.90K",
       "percentage": 18.69
     },
     {
       "name": "Bonds",
       "value": 0.0002,
+      "formattedValue": "239.12K",
       "percentage": 7.98
     },
     {
       "name": "Futures",
       "value": 0.0,
+      "formattedValue": "6.86K",
       "percentage": 0.23
     }
   ],
@@ -29,6 +34,7 @@
       {
         "subclass": "Cash",
         "value": 0.0006,
+        "formattedValue": "559.90K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -37,6 +43,7 @@
             {
               "name": "מזרחי",
               "value": 0.0006,
+              "formattedValue": "559.90K",
               "percentage": 100.0
             }
           ]
@@ -47,6 +54,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0022,
+        "formattedValue": "2.19M",
         "percentageOfClass": 100.0,
         "itemCount": 10,
         "totalPages": 1,
@@ -55,51 +63,61 @@
             {
               "name": "Invesco S&P 500 UCITS",
               "value": 0.0003,
+              "formattedValue": "293.99K",
               "percentage": 13.43
             },
             {
               "name": "SPY US",
               "value": 0.0003,
+              "formattedValue": "285.36K",
               "percentage": 13.04
             },
             {
               "name": "Lyxor ETF S&P 500",
               "value": 0.0003,
+              "formattedValue": "273.03K",
               "percentage": 12.47
             },
             {
               "name": "קסם SP500 ETF",
               "value": 0.0002,
+              "formattedValue": "243.33K",
               "percentage": 11.12
             },
             {
               "name": "MTF סל‏ SP500",
               "value": 0.0002,
+              "formattedValue": "226.60K",
               "percentage": 10.35
             },
             {
               "name": "Vanguard S&P 500",
               "value": 0.0002,
+              "formattedValue": "222.94K",
               "percentage": 10.18
             },
             {
               "name": "מור סל (4D) S&P500",
               "value": 0.0002,
+              "formattedValue": "220.34K",
               "percentage": 10.07
             },
             {
               "name": "אי.בי.אי סל(4D)  SP",
               "value": 0.0002,
+              "formattedValue": "189.05K",
               "percentage": 8.64
             },
             {
               "name": "הראל סל SP500",
               "value": 0.0001,
+              "formattedValue": "147.73K",
               "percentage": 6.75
             },
             {
               "name": "תכלית סל ‏‏SP500",
               "value": 0.0001,
+              "formattedValue": "86.73K",
               "percentage": 3.96
             }
           ]
@@ -110,6 +128,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0002,
+        "formattedValue": "239.12K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -118,6 +137,7 @@
             {
               "name": "T 14/5/26",
               "value": 0.0002,
+              "formattedValue": "239.12K",
               "percentage": 100.0
             }
           ]
@@ -128,6 +148,7 @@
       {
         "subclass": "General",
         "value": 0.0,
+        "formattedValue": "6.86K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -136,6 +157,7 @@
             {
               "name": "F- 12/25 MICRO",
               "value": 0.0,
+              "formattedValue": "6.86K",
               "percentage": 100.0
             }
           ]

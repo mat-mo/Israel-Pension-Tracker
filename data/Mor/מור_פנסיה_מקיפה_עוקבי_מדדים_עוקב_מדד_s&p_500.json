@@ -2,35 +2,42 @@
   "fundName": "מור פנסיה מקיפה עוקבי מדדים עוקב מדד s&p 500",
   "trackId": "15266",
   "totalAssetsBN": 0.37,
+  "formattedTotalAssets": "374.51M",
   "assetClasses": [
     {
       "name": "Cash & Equivalents",
       "value": 0.14,
+      "formattedValue": "140.01M",
       "percentage": 37.39
     },
     {
       "name": "Bonds",
       "value": 0.1294,
+      "formattedValue": "129.43M",
       "percentage": 34.56
     },
     {
       "name": "Stocks",
       "value": 0.1017,
+      "formattedValue": "101.66M",
       "percentage": 27.14
     },
     {
       "name": "Other Assets",
       "value": 0.0081,
+      "formattedValue": "8.07M",
       "percentage": 2.15
     },
     {
       "name": "Futures",
       "value": 0.0023,
+      "formattedValue": "2.30M",
       "percentage": 0.61
     },
     {
       "name": "Derivatives",
       "value": -0.007,
+      "formattedValue": "-6.95M",
       "percentage": -1.86
     }
   ],
@@ -39,6 +46,7 @@
       {
         "subclass": "General",
         "value": 0.0081,
+        "formattedValue": "8.07M",
         "percentageOfClass": 100.0,
         "itemCount": 5,
         "totalPages": 1,
@@ -47,26 +55,31 @@
             {
               "name": "10-25 מ.ת",
               "value": 0.0073,
+              "formattedValue": "7.35M",
               "percentage": 91.12
             },
             {
               "name": "TEMP_INTEREST$",
               "value": 0.0005,
+              "formattedValue": "495.77K",
               "percentage": 6.15
             },
             {
               "name": "חוז עמלות",
               "value": 0.0002,
+              "formattedValue": "215.69K",
               "percentage": 2.67
             },
             {
               "name": "ריבית עוש לקבל",
               "value": 0.0001,
+              "formattedValue": "101.11K",
               "percentage": 1.25
             },
             {
               "name": "מס הכנסה עמיתים",
               "value": -0.0001,
+              "formattedValue": "-96.36K",
               "percentage": -1.19
             }
           ]
@@ -77,6 +90,7 @@
       {
         "subclass": "Cash",
         "value": 0.14,
+        "formattedValue": "140.01M",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -85,11 +99,13 @@
             {
               "name": "בנק הבינלאומי הראשון בע\"מ",
               "value": 0.14,
+              "formattedValue": "139.99M",
               "percentage": 99.98
             },
             {
               "name": "בנק המזרחי המאוחד בע\"מ",
               "value": 0.0,
+              "formattedValue": "24.09K",
               "percentage": 0.02
             }
           ]
@@ -100,6 +116,7 @@
       {
         "subclass": "General",
         "value": 0.0023,
+        "formattedValue": "2.30M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -108,6 +125,7 @@
             {
               "name": "S&P500 EMINI FUT 12/25",
               "value": 0.0023,
+              "formattedValue": "2.30M",
               "percentage": 100.0
             }
           ]
@@ -118,6 +136,7 @@
       {
         "subclass": "ETFs",
         "value": 0.1017,
+        "formattedValue": "101.66M",
         "percentageOfClass": 100.0,
         "itemCount": 5,
         "totalPages": 1,
@@ -126,26 +145,31 @@
             {
               "name": "SP500.הרל",
               "value": 0.0302,
+              "formattedValue": "30.17M",
               "percentage": 29.68
             },
             {
               "name": "SP500.קסם",
               "value": 0.0198,
+              "formattedValue": "19.82M",
               "percentage": 19.5
             },
             {
               "name": "SP500.תכ",
               "value": 0.0191,
+              "formattedValue": "19.07M",
               "percentage": 18.76
             },
             {
               "name": "SP500.IBI",
               "value": 0.0175,
+              "formattedValue": "17.51M",
               "percentage": 17.22
             },
             {
               "name": "SP500.MTF",
               "value": 0.0151,
+              "formattedValue": "15.08M",
               "percentage": 14.84
             }
           ]
@@ -156,6 +180,7 @@
       {
         "subclass": "General",
         "value": -0.007,
+        "formattedValue": "-6.95M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -164,6 +189,7 @@
             {
               "name": "USDILS",
               "value": -0.007,
+              "formattedValue": "-6.95M",
               "percentage": 100.0
             }
           ]
@@ -174,6 +200,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.1294,
+        "formattedValue": "129.43M",
         "percentageOfClass": 100.0,
         "itemCount": 8,
         "totalPages": 1,
@@ -182,41 +209,49 @@
             {
               "name": "מ.ק.מ. 816",
               "value": 0.0536,
+              "formattedValue": "53.64M",
               "percentage": 41.44
             },
             {
               "name": "מ.ק.מ. 1016",
               "value": 0.0208,
+              "formattedValue": "20.81M",
               "percentage": 16.08
             },
             {
               "name": "מ.ק.מ. 316",
               "value": 0.0193,
+              "formattedValue": "19.27M",
               "percentage": 14.89
             },
             {
               "name": "מ.ק.מ 216",
               "value": 0.0102,
+              "formattedValue": "10.16M",
               "percentage": 7.85
             },
             {
               "name": "מ.ק.מ. 916",
               "value": 0.01,
+              "formattedValue": "10.01M",
               "percentage": 7.73
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.0091,
+              "formattedValue": "9.12M",
               "percentage": 7.04
             },
             {
               "name": "מ.ק.מ. 1115",
               "value": 0.0054,
+              "formattedValue": "5.43M",
               "percentage": 4.19
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.001,
+              "formattedValue": "1.01M",
               "percentage": 0.78
             }
           ]

@@ -2,35 +2,42 @@
   "fundName": "אלטשולר שחם פנסיה כללית עוקב מדד S&P 500",
   "trackId": "14854",
   "totalAssetsBN": 0.11,
+  "formattedTotalAssets": "106.80M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.072,
+      "formattedValue": "72.00M",
       "percentage": 67.42
     },
     {
       "name": "Bonds",
       "value": 0.0348,
+      "formattedValue": "34.77M",
       "percentage": 32.56
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0008,
+      "formattedValue": "781.38K",
       "percentage": 0.73
     },
     {
       "name": "Futures",
       "value": 0.0004,
+      "formattedValue": "397.63K",
       "percentage": 0.37
     },
     {
       "name": "Other Assets",
       "value": -0.0005,
+      "formattedValue": "-536.72K",
       "percentage": -0.5
     },
     {
       "name": "Derivatives",
       "value": -0.0006,
+      "formattedValue": "-613.74K",
       "percentage": -0.57
     }
   ],
@@ -39,6 +46,7 @@
       {
         "subclass": "Cash",
         "value": 0.0008,
+        "formattedValue": "781.38K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -47,6 +55,7 @@
             {
               "name": "לאומי",
               "value": 0.0008,
+              "formattedValue": "781.38K",
               "percentage": 100.0
             }
           ]
@@ -57,6 +66,7 @@
       {
         "subclass": "General",
         "value": -0.0005,
+        "formattedValue": "-536.72K",
         "percentageOfClass": 100.0,
         "itemCount": 3,
         "totalPages": 1,
@@ -65,16 +75,19 @@
             {
               "name": "חייבים זכאים דמי ניהול צבירה",
               "value": -0.0,
+              "formattedValue": "-10.78K",
               "percentage": 2.01
             },
             {
               "name": "חייבים זכאים דמי ניהול הפקדה",
               "value": -0.0,
+              "formattedValue": "-20.24K",
               "percentage": 3.77
             },
             {
               "name": "יתרות חייבים/זכאים",
               "value": -0.0005,
+              "formattedValue": "-505.70K",
               "percentage": 94.22
             }
           ]
@@ -85,6 +98,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0348,
+        "formattedValue": "34.77M",
         "percentageOfClass": 100.0,
         "itemCount": 12,
         "totalPages": 2,
@@ -93,51 +107,61 @@
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0077,
+              "formattedValue": "7.65M",
               "percentage": 22.01
             },
             {
               "name": "מ.ק.מ. 1015",
               "value": 0.0047,
+              "formattedValue": "4.75M",
               "percentage": 13.65
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.0047,
+              "formattedValue": "4.73M",
               "percentage": 13.61
             },
             {
               "name": "מ.ק.מ. 316",
               "value": 0.004,
+              "formattedValue": "4.02M",
               "percentage": 11.55
             },
             {
               "name": "מ.ק.מ 216",
               "value": 0.0036,
+              "formattedValue": "3.59M",
               "percentage": 10.32
             },
             {
               "name": "מ.ק.מ. 1016",
               "value": 0.0032,
+              "formattedValue": "3.19M",
               "percentage": 9.19
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.003,
+              "formattedValue": "2.98M",
               "percentage": 8.56
             },
             {
               "name": "מ.ק.מ. 916",
               "value": 0.0013,
+              "formattedValue": "1.29M",
               "percentage": 3.7
             },
             {
               "name": "מ.ק.מ. 416",
               "value": 0.0012,
+              "formattedValue": "1.21M",
               "percentage": 3.47
             },
             {
               "name": "מ.ק.מ. 1115",
               "value": 0.0007,
+              "formattedValue": "714.28K",
               "percentage": 2.05
             }
           ],
@@ -145,11 +169,13 @@
             {
               "name": "מ.ק.מ. 726",
               "value": 0.0004,
+              "formattedValue": "375.26K",
               "percentage": 1.08
             },
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0003,
+              "formattedValue": "276.59K",
               "percentage": 0.8
             }
           ]
@@ -160,6 +186,7 @@
       {
         "subclass": "General",
         "value": -0.0006,
+        "formattedValue": "-613.74K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -168,6 +195,7 @@
             {
               "name": "USDILS",
               "value": -0.0006,
+              "formattedValue": "-613.74K",
               "percentage": 100.0
             }
           ]
@@ -178,6 +206,7 @@
       {
         "subclass": "ETFs",
         "value": 0.072,
+        "formattedValue": "72.00M",
         "percentageOfClass": 100.0,
         "itemCount": 8,
         "totalPages": 1,
@@ -186,41 +215,49 @@
             {
               "name": "Amundi S&P 500 II UCITS ETF",
               "value": 0.0155,
+              "formattedValue": "15.54M",
               "percentage": 21.59
             },
             {
               "name": "iShares S&P 500 Swap UCITS ETF",
               "value": 0.0155,
+              "formattedValue": "15.53M",
               "percentage": 21.57
             },
             {
               "name": "Invesco S&P 500 UCITS ETF",
               "value": 0.0155,
+              "formattedValue": "15.53M",
               "percentage": 21.57
             },
             {
               "name": "מור סל י S&P 500",
               "value": 0.0137,
+              "formattedValue": "13.68M",
               "percentage": 19.0
             },
             {
               "name": "MTF סל (S&P 500 (4D",
               "value": 0.0044,
+              "formattedValue": "4.37M",
               "percentage": 6.06
             },
             {
               "name": "קסם S&P 500 ETF",
               "value": 0.0025,
+              "formattedValue": "2.46M",
               "percentage": 3.41
             },
             {
               "name": "ילין לפידות סל י S&P 500",
               "value": 0.0024,
+              "formattedValue": "2.45M",
               "percentage": 3.4
             },
             {
               "name": "אי.בי.אי. סל י S&P 500",
               "value": 0.0024,
+              "formattedValue": "2.45M",
               "percentage": 3.4
             }
           ]
@@ -231,6 +268,7 @@
       {
         "subclass": "General",
         "value": 0.0004,
+        "formattedValue": "397.63K",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -239,11 +277,13 @@
             {
               "name": "SP500 MIC EMIN FUTDec25",
               "value": 0.0003,
+              "formattedValue": "280.68K",
               "percentage": 70.59
             },
             {
               "name": "S&P500 EMINI FUT DEC25",
               "value": 0.0001,
+              "formattedValue": "116.95K",
               "percentage": 29.41
             }
           ]

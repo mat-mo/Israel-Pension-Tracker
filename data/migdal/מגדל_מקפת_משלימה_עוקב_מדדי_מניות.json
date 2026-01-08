@@ -2,25 +2,30 @@
   "fundName": "מגדל מקפת משלימה עוקב מדדי מניות",
   "trackId": "14930",
   "totalAssetsBN": 0.28,
+  "formattedTotalAssets": "280.71M",
   "assetClasses": [
     {
       "name": "Cash & Equivalents",
       "value": 0.1533,
+      "formattedValue": "153.34M",
       "percentage": 54.63
     },
     {
       "name": "Stocks",
       "value": 0.1294,
+      "formattedValue": "129.43M",
       "percentage": 46.11
     },
     {
       "name": "Futures",
       "value": 0.0031,
+      "formattedValue": "3.07M",
       "percentage": 1.1
     },
     {
       "name": "Derivatives",
       "value": -0.0051,
+      "formattedValue": "-5.14M",
       "percentage": -1.83
     }
   ],
@@ -29,6 +34,7 @@
       {
         "subclass": "Cash",
         "value": 0.1533,
+        "formattedValue": "153.34M",
         "percentageOfClass": 100.0,
         "itemCount": 3,
         "totalPages": 1,
@@ -37,16 +43,19 @@
             {
               "name": "בנק לאומי לישראל בע\"מ",
               "value": 0.1065,
+              "formattedValue": "106.50M",
               "percentage": 69.45
             },
             {
               "name": "בנק הפועלים בע\"מ",
               "value": 0.0468,
+              "formattedValue": "46.84M",
               "percentage": 30.55
             },
             {
               "name": "JPMORGAN CHASE BANK",
               "value": 0.0,
+              "formattedValue": "0.13K",
               "percentage": 0.0
             }
           ]
@@ -57,6 +66,7 @@
       {
         "subclass": "General",
         "value": -0.0051,
+        "formattedValue": "-5.14M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -65,6 +75,7 @@
             {
               "name": "USDILS",
               "value": -0.0051,
+              "formattedValue": "-5.14M",
               "percentage": 100.0
             }
           ]
@@ -75,6 +86,7 @@
       {
         "subclass": "ETFs",
         "value": 0.1294,
+        "formattedValue": "129.43M",
         "percentageOfClass": 100.0,
         "itemCount": 4,
         "totalPages": 1,
@@ -83,21 +95,25 @@
             {
               "name": "CONSUMER DISCRETIONARY SELT",
               "value": 0.041,
+              "formattedValue": "41.04M",
               "percentage": 31.71
             },
             {
               "name": "קסם SP Tech ETF",
               "value": 0.0373,
+              "formattedValue": "37.35M",
               "percentage": 28.86
             },
             {
               "name": "הראל סל SP Tech",
               "value": 0.0261,
+              "formattedValue": "26.10M",
               "percentage": 20.16
             },
             {
               "name": "COMM SERV SELECT SECTOR SPDR",
               "value": 0.0249,
+              "formattedValue": "24.94M",
               "percentage": 19.27
             }
           ]
@@ -108,6 +124,7 @@
       {
         "subclass": "General",
         "value": 0.0031,
+        "formattedValue": "3.07M",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -116,11 +133,13 @@
             {
               "name": "XAK Technology    Dec25",
               "value": 0.0027,
+              "formattedValue": "2.74M",
               "percentage": 89.06
             },
             {
               "name": "S&P EMINI Com Ser Dec25",
               "value": 0.0003,
+              "formattedValue": "336.40K",
               "percentage": 10.94
             }
           ]

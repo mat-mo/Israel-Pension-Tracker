@@ -2,20 +2,24 @@
   "fundName": "הפניקס פנסיה משלימה עוקב מדדי אג\"ח",
   "trackId": "15222",
   "totalAssetsBN": 0.0,
+  "formattedTotalAssets": "1.46M",
   "assetClasses": [
     {
       "name": "Cash & Equivalents",
       "value": 0.0012,
+      "formattedValue": "1.17M",
       "percentage": 80.05
     },
     {
       "name": "Bonds",
       "value": 0.0003,
+      "formattedValue": "281.96K",
       "percentage": 19.27
     },
     {
       "name": "Derivatives",
       "value": 0.0,
+      "formattedValue": "9.92K",
       "percentage": 0.68
     }
   ],
@@ -24,6 +28,7 @@
       {
         "subclass": "Cash",
         "value": 0.0012,
+        "formattedValue": "1.17M",
         "percentageOfClass": 100.0,
         "itemCount": 3,
         "totalPages": 1,
@@ -32,16 +37,19 @@
             {
               "name": "בנק הפועלים",
               "value": 0.0005,
+              "formattedValue": "542.78K",
               "percentage": 46.33
             },
             {
               "name": "בנק לאומי",
               "value": 0.0005,
+              "formattedValue": "495.54K",
               "percentage": 42.3
             },
             {
               "name": "בנק מזרחי",
               "value": 0.0001,
+              "formattedValue": "133.13K",
               "percentage": 11.36
             }
           ]
@@ -52,6 +60,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0003,
+        "formattedValue": "281.96K",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -60,11 +69,13 @@
             {
               "name": "iShares iBoxx $ Investment Gra",
               "value": 0.0002,
+              "formattedValue": "168.68K",
               "percentage": 59.82
             },
             {
               "name": "SPDR Bloomberg Emerging Market",
               "value": 0.0001,
+              "formattedValue": "113.28K",
               "percentage": 40.18
             }
           ]
@@ -75,6 +86,7 @@
       {
         "subclass": "General",
         "value": 0.0,
+        "formattedValue": "9.92K",
         "percentageOfClass": 100.0,
         "itemCount": 5,
         "totalPages": 1,
@@ -83,26 +95,31 @@
             {
               "name": "IBOXHY INDEX",
               "value": 0.0,
+              "formattedValue": "32.81K",
               "percentage": 330.76
             },
             {
               "name": "JCMDCOMP INDEX",
               "value": -0.0,
+              "formattedValue": "-0.30K",
               "percentage": -3.04
             },
             {
               "name": "IBXXC1D1 INDEX",
               "value": -0.0,
+              "formattedValue": "-0.95K",
               "percentage": -9.57
             },
             {
               "name": "IBOXIG INDEX",
               "value": -0.0,
+              "formattedValue": "-1.18K",
               "percentage": -11.88
             },
             {
               "name": "USDILS",
               "value": -0.0,
+              "formattedValue": "-20.46K",
               "percentage": -206.27
             }
           ]

@@ -2,35 +2,42 @@
   "fundName": "הראל פנסיה כללית עוקב מדד s&p",
   "trackId": "13424",
   "totalAssetsBN": 2.58,
+  "formattedTotalAssets": "2.58B",
   "assetClasses": [
     {
       "name": "Cash & Equivalents",
       "value": 1.4898,
+      "formattedValue": "1.49B",
       "percentage": 57.78
     },
     {
       "name": "Stocks",
       "value": 0.7393,
+      "formattedValue": "739.34M",
       "percentage": 28.67
     },
     {
       "name": "Bonds",
       "value": 0.3544,
+      "formattedValue": "354.43M",
       "percentage": 13.75
     },
     {
       "name": "Derivatives",
       "value": 0.0233,
+      "formattedValue": "23.33M",
       "percentage": 0.9
     },
     {
       "name": "Futures",
       "value": 0.0,
+      "formattedValue": "34.70K",
       "percentage": 0.0
     },
     {
       "name": "Other Assets",
       "value": -0.0285,
+      "formattedValue": "-28.54M",
       "percentage": -1.11
     }
   ],
@@ -39,6 +46,7 @@
       {
         "subclass": "General",
         "value": 0.0,
+        "formattedValue": "34.70K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -47,6 +55,7 @@
             {
               "name": "MINI S&P FU 12/25",
               "value": 0.0,
+              "formattedValue": "34.70K",
               "percentage": 100.0
             }
           ]
@@ -57,6 +66,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.3544,
+        "formattedValue": "354.43M",
         "percentageOfClass": 100.0,
         "itemCount": 10,
         "totalPages": 1,
@@ -65,51 +75,61 @@
             {
               "name": "T 4 1/4 12/31/25",
               "value": 0.0719,
+              "formattedValue": "71.93M",
               "percentage": 20.29
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.0601,
+              "formattedValue": "60.15M",
               "percentage": 16.97
             },
             {
               "name": "מ.ק.מ. 1015",
               "value": 0.057,
+              "formattedValue": "56.97M",
               "percentage": 16.07
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.0306,
+              "formattedValue": "30.62M",
               "percentage": 8.64
             },
             {
               "name": "מ.ק.מ. 1115",
               "value": 0.0301,
+              "formattedValue": "30.08M",
               "percentage": 8.49
             },
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0294,
+              "formattedValue": "29.38M",
               "percentage": 8.29
             },
             {
               "name": "מ.ק.מ. 916",
               "value": 0.0291,
+              "formattedValue": "29.11M",
               "percentage": 8.21
             },
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0236,
+              "formattedValue": "23.58M",
               "percentage": 6.65
             },
             {
               "name": "ממשל קצרה 02/26",
               "value": 0.02,
+              "formattedValue": "20.00M",
               "percentage": 5.64
             },
             {
               "name": "ממשל קצרה 05/26",
               "value": 0.0026,
+              "formattedValue": "2.61M",
               "percentage": 0.74
             }
           ]
@@ -120,6 +140,7 @@
       {
         "subclass": "General",
         "value": -0.0285,
+        "formattedValue": "-28.54M",
         "percentageOfClass": 100.0,
         "itemCount": 7,
         "totalPages": 1,
@@ -128,36 +149,43 @@
             {
               "name": "חייבים מהעברות פנסיה",
               "value": 0.0033,
+              "formattedValue": "3.27M",
               "percentage": -11.46
             },
             {
               "name": "בטחונות נגזרים  לס דולר מזרחי",
               "value": 0.0028,
+              "formattedValue": "2.77M",
               "percentage": -9.72
             },
             {
               "name": "בטחונות נגזרים  לס דולר דיסקונט",
               "value": 0.0007,
+              "formattedValue": "712.75K",
               "percentage": -2.5
             },
             {
               "name": "ביטחונות CSA לאומי במטבע 20001",
               "value": 0.0001,
+              "formattedValue": "91.81K",
               "percentage": -0.32
             },
             {
               "name": "ריבית לקבל בטחונות לא סחיר דולר לאומי",
               "value": -0.0,
+              "formattedValue": "-21.21K",
               "percentage": 0.07
             },
             {
               "name": "ביטחונות CSA במטבע דולר(OTC) פועלים_x000D_",
               "value": -0.0086,
+              "formattedValue": "-8.58M",
               "percentage": 30.06
             },
             {
               "name": "ביטחונות CSA במטבע 20001 (OTC) לאומי",
               "value": -0.0268,
+              "formattedValue": "-26.78M",
               "percentage": 93.86
             }
           ]
@@ -168,6 +196,7 @@
       {
         "subclass": "ETFs",
         "value": 0.7393,
+        "formattedValue": "739.34M",
         "percentageOfClass": 100.0,
         "itemCount": 5,
         "totalPages": 1,
@@ -176,26 +205,31 @@
             {
               "name": "תכלית סל S&P 500",
               "value": 0.2593,
+              "formattedValue": "259.29M",
               "percentage": 35.07
             },
             {
               "name": "מור סל S&P 500",
               "value": 0.1496,
+              "formattedValue": "149.62M",
               "percentage": 20.24
             },
             {
               "name": "מגדל סל SP500",
               "value": 0.1328,
+              "formattedValue": "132.82M",
               "percentage": 17.96
             },
             {
               "name": "אי בי אי סל S&P 500",
               "value": 0.1185,
+              "formattedValue": "118.46M",
               "percentage": 16.02
             },
             {
               "name": "קסם סל S&P 500",
               "value": 0.0792,
+              "formattedValue": "79.16M",
               "percentage": 10.71
             }
           ]
@@ -206,6 +240,7 @@
       {
         "subclass": "General",
         "value": 0.0233,
+        "formattedValue": "23.33M",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -214,11 +249,13 @@
             {
               "name": "SPTR INDEX",
               "value": 0.0613,
+              "formattedValue": "61.26M",
               "percentage": 262.63
             },
             {
               "name": "USDILS",
               "value": -0.0379,
+              "formattedValue": "-37.93M",
               "percentage": -162.63
             }
           ]
@@ -229,6 +266,7 @@
       {
         "subclass": "Cash",
         "value": 1.4898,
+        "formattedValue": "1.49B",
         "percentageOfClass": 100.0,
         "itemCount": 5,
         "totalPages": 1,
@@ -237,26 +275,31 @@
             {
               "name": "בנק הפועלים",
               "value": 0.5666,
+              "formattedValue": "566.58M",
               "percentage": 38.03
             },
             {
               "name": "בנק מזרחי",
               "value": 0.5586,
+              "formattedValue": "558.59M",
               "percentage": 37.49
             },
             {
               "name": "בנק לאומי",
               "value": 0.2946,
+              "formattedValue": "294.63M",
               "percentage": 19.78
             },
             {
               "name": "בנק דיסקונט",
               "value": 0.0694,
+              "formattedValue": "69.40M",
               "percentage": 4.66
             },
             {
               "name": "בנק הבינלאומי",
               "value": 0.0006,
+              "formattedValue": "587.93K",
               "percentage": 0.04
             }
           ]

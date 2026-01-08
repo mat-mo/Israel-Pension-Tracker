@@ -2,30 +2,36 @@
   "fundName": "מיטב פנסיה כללית קיימות",
   "trackId": "14269",
   "totalAssetsBN": 0.01,
+  "formattedTotalAssets": "11.66M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0098,
+      "formattedValue": "9.81M",
       "percentage": 84.14
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0013,
+      "formattedValue": "1.30M",
       "percentage": 11.17
     },
     {
       "name": "Stocks",
       "value": 0.0003,
+      "formattedValue": "342.10K",
       "percentage": 2.93
     },
     {
       "name": "Futures",
       "value": 0.0002,
+      "formattedValue": "189.48K",
       "percentage": 1.63
     },
     {
       "name": "Derivatives",
       "value": 0.0,
+      "formattedValue": "15.56K",
       "percentage": 0.13
     }
   ],
@@ -34,6 +40,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0003,
+        "formattedValue": "342.10K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -42,6 +49,7 @@
             {
               "name": "MTF סל 4Dי S&P 500 Scored & Screened",
               "value": 0.0003,
+              "formattedValue": "342.10K",
               "percentage": 100.0
             }
           ]
@@ -52,6 +60,7 @@
       {
         "subclass": "Cash",
         "value": 0.0013,
+        "formattedValue": "1.30M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -60,6 +69,7 @@
             {
               "name": "מזרחי",
               "value": 0.0013,
+              "formattedValue": "1.30M",
               "percentage": 100.0
             }
           ]
@@ -70,6 +80,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0098,
+        "formattedValue": "9.81M",
         "percentageOfClass": 100.0,
         "itemCount": 15,
         "totalPages": 2,
@@ -78,51 +89,61 @@
             {
               "name": "מ.ק.מ 216",
               "value": 0.0013,
+              "formattedValue": "1.26M",
               "percentage": 12.86
             },
             {
               "name": "מ.ק.מ. 316",
               "value": 0.0011,
+              "formattedValue": "1.06M",
               "percentage": 10.84
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.001,
+              "formattedValue": "1.04M",
               "percentage": 10.63
             },
             {
               "name": "מ.ק.מ. 816",
               "value": 0.001,
+              "formattedValue": "977.89K",
               "percentage": 9.97
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.0009,
+              "formattedValue": "897.73K",
               "percentage": 9.15
             },
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0008,
+              "formattedValue": "842.98K",
               "percentage": 8.59
             },
             {
               "name": "מ.ק.מ. 416",
               "value": 0.0007,
+              "formattedValue": "701.69K",
               "percentage": 7.15
             },
             {
               "name": "מ.ק.מ. 916",
               "value": 0.0006,
+              "formattedValue": "586.76K",
               "percentage": 5.98
             },
             {
               "name": "מ.ק.מ.     1015",
               "value": 0.0005,
+              "formattedValue": "509.90K",
               "percentage": 5.2
             },
             {
               "name": "מ.ק.מ. 1016",
               "value": 0.0005,
+              "formattedValue": "489.61K",
               "percentage": 4.99
             }
           ],
@@ -130,26 +151,31 @@
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0005,
+              "formattedValue": "471.85K",
               "percentage": 4.81
             },
             {
               "name": "מ.ק.מ.     1115",
               "value": 0.0004,
+              "formattedValue": "402.67K",
               "percentage": 4.1
             },
             {
               "name": "מ.ק.מ. 726",
               "value": 0.0004,
+              "formattedValue": "393.09K",
               "percentage": 4.01
             },
             {
               "name": "ממשל קצרה 11/25",
               "value": 0.0001,
+              "formattedValue": "106.72K",
               "percentage": 1.09
             },
             {
               "name": "ממשל קצרה 02/26",
               "value": 0.0001,
+              "formattedValue": "61.63K",
               "percentage": 0.63
             }
           ]
@@ -160,6 +186,7 @@
       {
         "subclass": "General",
         "value": 0.0002,
+        "formattedValue": "189.48K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -168,6 +195,7 @@
             {
               "name": "F-12/2025 E MIN",
               "value": 0.0002,
+              "formattedValue": "189.48K",
               "percentage": 100.0
             }
           ]
@@ -178,6 +206,7 @@
       {
         "subclass": "General",
         "value": 0.0,
+        "formattedValue": "15.56K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -186,6 +215,7 @@
             {
               "name": "Unfunded Forward",
               "value": 0.0,
+              "formattedValue": "15.56K",
               "percentage": 100.0
             }
           ]

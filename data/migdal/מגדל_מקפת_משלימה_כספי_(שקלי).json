@@ -2,15 +2,18 @@
   "fundName": "מגדל מקפת משלימה כספי (שקלי)",
   "trackId": "2147",
   "totalAssetsBN": 0.01,
+  "formattedTotalAssets": "13.18M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0128,
+      "formattedValue": "12.78M",
       "percentage": 96.93
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0004,
+      "formattedValue": "405.28K",
       "percentage": 3.07
     }
   ],
@@ -19,6 +22,7 @@
       {
         "subclass": "Cash",
         "value": 0.0004,
+        "formattedValue": "405.28K",
         "percentageOfClass": 100.0,
         "itemCount": 5,
         "totalPages": 1,
@@ -27,26 +31,31 @@
             {
               "name": "בנק לאומי לישראל בע\"מ",
               "value": 0.0003,
+              "formattedValue": "263.87K",
               "percentage": 65.11
             },
             {
               "name": "בנק דיסקונט לישראל בע\"מ",
               "value": 0.0001,
+              "formattedValue": "129.58K",
               "percentage": 31.97
             },
             {
               "name": "בנק הפועלים בע\"מ",
               "value": 0.0,
+              "formattedValue": "8.53K",
               "percentage": 2.11
             },
             {
               "name": "בנק מזרחי טפחות בע\"מ",
               "value": 0.0,
+              "formattedValue": "2.43K",
               "percentage": 0.6
             },
             {
               "name": "יובנק",
               "value": 0.0,
+              "formattedValue": "0.87K",
               "percentage": 0.21
             }
           ]
@@ -57,6 +66,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0094,
+        "formattedValue": "9.39M",
         "percentageOfClass": 73.5,
         "itemCount": 16,
         "totalPages": 2,
@@ -65,51 +75,61 @@
             {
               "name": "ממשל משתנה 1130",
               "value": 0.0024,
+              "formattedValue": "2.37M",
               "percentage": 25.23
             },
             {
               "name": "מ.ק.מ. 816",
               "value": 0.0014,
+              "formattedValue": "1.42M",
               "percentage": 15.13
             },
             {
               "name": "מ.ק.מ. 916",
               "value": 0.0013,
+              "formattedValue": "1.27M",
               "percentage": 13.52
             },
             {
               "name": "ממשל שקלית 0927",
               "value": 0.0011,
+              "formattedValue": "1.11M",
               "percentage": 11.84
             },
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0007,
+              "formattedValue": "691.25K",
               "percentage": 7.36
             },
             {
               "name": "מ.ק.מ. 416",
               "value": 0.0005,
+              "formattedValue": "451.01K",
               "percentage": 4.8
             },
             {
               "name": "מ.ק.מ. 1115",
               "value": 0.0004,
+              "formattedValue": "449.65K",
               "percentage": 4.79
             },
             {
               "name": "מ.ק.מ 216",
               "value": 0.0003,
+              "formattedValue": "307.61K",
               "percentage": 3.28
             },
             {
               "name": "מ.ק.מ. 316",
               "value": 0.0003,
+              "formattedValue": "287.16K",
               "percentage": 3.06
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.0003,
+              "formattedValue": "276.86K",
               "percentage": 2.95
             }
           ],
@@ -117,31 +137,37 @@
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0003,
+              "formattedValue": "253.64K",
               "percentage": 2.7
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.0002,
+              "formattedValue": "205.72K",
               "percentage": 2.19
             },
             {
               "name": "ממשל משתנה 0526",
               "value": 0.0001,
+              "formattedValue": "126.43K",
               "percentage": 1.35
             },
             {
               "name": "מ.ק.מ. 1015",
               "value": 0.0001,
+              "formattedValue": "79.61K",
               "percentage": 0.85
             },
             {
               "name": "ממשל שקלית 0327",
               "value": 0.0,
+              "formattedValue": "47.81K",
               "percentage": 0.51
             },
             {
               "name": "מ.ק.מ. 726",
               "value": 0.0,
+              "formattedValue": "42.91K",
               "percentage": 0.46
             }
           ]
@@ -150,6 +176,7 @@
       {
         "subclass": "Corporate Bonds",
         "value": 0.0022,
+        "formattedValue": "2.18M",
         "percentageOfClass": 17.03,
         "itemCount": 37,
         "totalPages": 4,
@@ -158,51 +185,61 @@
             {
               "name": "מבנה אגח יט",
               "value": 0.0002,
+              "formattedValue": "221.85K",
               "percentage": 10.2
             },
             {
               "name": "אזורים אגח 14",
               "value": 0.0002,
+              "formattedValue": "156.68K",
               "percentage": 7.2
             },
             {
               "name": "פועלים הת נדח י",
               "value": 0.0001,
+              "formattedValue": "136.64K",
               "percentage": 6.28
             },
             {
               "name": "ארפורט אגח י",
               "value": 0.0001,
+              "formattedValue": "135.61K",
               "percentage": 6.23
             },
             {
               "name": "פניקס הון אגח ט",
               "value": 0.0001,
+              "formattedValue": "118.80K",
               "percentage": 5.46
             },
             {
               "name": "נכסים בנ אגח יא",
               "value": 0.0001,
+              "formattedValue": "107.96K",
               "percentage": 4.96
             },
             {
               "name": "מגה אור אגח ו",
               "value": 0.0001,
+              "formattedValue": "92.56K",
               "percentage": 4.25
             },
             {
               "name": "הראל הנפק אגח ט",
               "value": 0.0001,
+              "formattedValue": "88.74K",
               "percentage": 4.08
             },
             {
               "name": "פרטנר אגח ז",
               "value": 0.0001,
+              "formattedValue": "86.06K",
               "percentage": 3.96
             },
             {
               "name": "יוניברסל אגח ד",
               "value": 0.0001,
+              "formattedValue": "84.02K",
               "percentage": 3.86
             }
           ],
@@ -210,51 +247,61 @@
             {
               "name": "גירון אגח ו",
               "value": 0.0001,
+              "formattedValue": "83.58K",
               "percentage": 3.84
             },
             {
               "name": "אפי נכסים אגח ח",
               "value": 0.0001,
+              "formattedValue": "74.84K",
               "percentage": 3.44
             },
             {
               "name": "קרסו מוט' אגח ד",
               "value": 0.0001,
+              "formattedValue": "67.81K",
               "percentage": 3.12
             },
             {
               "name": "אלדן תחבו אגח ו",
               "value": 0.0001,
+              "formattedValue": "67.18K",
               "percentage": 3.09
             },
             {
               "name": "אשטרום קב אגח ג",
               "value": 0.0001,
+              "formattedValue": "66.03K",
               "percentage": 3.03
             },
             {
               "name": "קרסו מוט' אגח ג",
               "value": 0.0001,
+              "formattedValue": "61.78K",
               "percentage": 2.84
             },
             {
               "name": "סלקום אגח יב",
               "value": 0.0001,
+              "formattedValue": "51.18K",
               "percentage": 2.35
             },
             {
               "name": "ארפורט אגח ה",
               "value": 0.0,
+              "formattedValue": "44.09K",
               "percentage": 2.03
             },
             {
               "name": "בזק אגח 10",
               "value": 0.0,
+              "formattedValue": "40.34K",
               "percentage": 1.85
             },
             {
               "name": "פתאל אירו אגח ג",
               "value": 0.0,
+              "formattedValue": "38.85K",
               "percentage": 1.79
             }
           ],
@@ -262,51 +309,61 @@
             {
               "name": "אלבר אגח כ",
               "value": 0.0,
+              "formattedValue": "36.97K",
               "percentage": 1.7
             },
             {
               "name": "שלמה החז אגח יז",
               "value": 0.0,
+              "formattedValue": "36.08K",
               "percentage": 1.66
             },
             {
               "name": "ריט 1 אגח ה",
               "value": 0.0,
+              "formattedValue": "35.68K",
               "percentage": 1.64
             },
             {
               "name": "אלבר אגח יח",
               "value": 0.0,
+              "formattedValue": "35.37K",
               "percentage": 1.63
             },
             {
               "name": "דור אלון אגח ז",
               "value": 0.0,
+              "formattedValue": "35.33K",
               "percentage": 1.62
             },
             {
               "name": "חשמל אגח 29",
               "value": 0.0,
+              "formattedValue": "32.05K",
               "percentage": 1.47
             },
             {
               "name": "פתאל אירו אגח ד",
               "value": 0.0,
+              "formattedValue": "25.22K",
               "percentage": 1.16
             },
             {
               "name": "אנלייט אנר אגחו",
               "value": 0.0,
+              "formattedValue": "19.57K",
               "percentage": 0.9
             },
             {
               "name": "סלקום אגח יא",
               "value": 0.0,
+              "formattedValue": "18.83K",
               "percentage": 0.87
             },
             {
               "name": "מימון ישיר אגחג",
               "value": 0.0,
+              "formattedValue": "15.04K",
               "percentage": 0.69
             }
           ],
@@ -314,36 +371,43 @@
             {
               "name": "מבנה אגח כג",
               "value": 0.0,
+              "formattedValue": "14.39K",
               "percentage": 0.66
             },
             {
               "name": "עזריאלי אגח ה",
               "value": 0.0,
+              "formattedValue": "13.93K",
               "percentage": 0.64
             },
             {
               "name": "גמא אגח ד",
               "value": 0.0,
+              "formattedValue": "13.72K",
               "percentage": 0.63
             },
             {
               "name": "מליסרון אגח יד",
               "value": 0.0,
+              "formattedValue": "13.64K",
               "percentage": 0.63
             },
             {
               "name": "גב ים אגח ו",
               "value": 0.0,
+              "formattedValue": "5.13K",
               "percentage": 0.24
             },
             {
               "name": "ישרס אגח יד",
               "value": 0.0,
+              "formattedValue": "0.13K",
               "percentage": 0.01
             },
             {
               "name": "בינל הנפק התחכה",
               "value": 0.0,
+              "formattedValue": "0.04K",
               "percentage": 0.0
             }
           ]
@@ -352,6 +416,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0012,
+        "formattedValue": "1.21M",
         "percentageOfClass": 9.47,
         "itemCount": 2,
         "totalPages": 1,
@@ -360,11 +425,13 @@
             {
               "name": "קסם ETF תלבונד צ 1 3",
               "value": 0.0009,
+              "formattedValue": "882.58K",
               "percentage": 72.9
             },
             {
               "name": "קסם ETF תלבונד ש 1 3",
               "value": 0.0003,
+              "formattedValue": "328.02K",
               "percentage": 27.1
             }
           ]

@@ -2,25 +2,30 @@
   "fundName": "מור פנסיה מקיפה - כספי (שקלי)",
   "trackId": "13914",
   "totalAssetsBN": 0.01,
+  "formattedTotalAssets": "10.76M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0098,
+      "formattedValue": "9.77M",
       "percentage": 90.84
     },
     {
       "name": "Other Assets",
       "value": 0.0008,
+      "formattedValue": "778.13K",
       "percentage": 7.23
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0001,
+      "formattedValue": "149.01K",
       "percentage": 1.39
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0001,
+      "formattedValue": "57.92K",
       "percentage": 0.54
     }
   ],
@@ -29,6 +34,7 @@
       {
         "subclass": "General",
         "value": 0.0008,
+        "formattedValue": "778.13K",
         "percentageOfClass": 100.0,
         "itemCount": 4,
         "totalPages": 1,
@@ -37,21 +43,25 @@
             {
               "name": "10-25 מ.ת",
               "value": 0.0007,
+              "formattedValue": "735.26K",
               "percentage": 94.49
             },
             {
               "name": "חוז שונות",
               "value": 0.0,
+              "formattedValue": "40.81K",
               "percentage": 5.24
             },
             {
               "name": "ריבית עוש לקבל",
               "value": 0.0,
+              "formattedValue": "2.06K",
               "percentage": 0.26
             },
             {
               "name": "הפרשי רטרו",
               "value": -0.0,
+              "formattedValue": "-0.00K",
               "percentage": -0.0
             }
           ]
@@ -62,6 +72,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0098,
+        "formattedValue": "9.77M",
         "percentageOfClass": 99.97,
         "itemCount": 8,
         "totalPages": 1,
@@ -70,41 +81,49 @@
             {
               "name": "מ.ק.מ. 316",
               "value": 0.0022,
+              "formattedValue": "2.21M",
               "percentage": 22.64
             },
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0019,
+              "formattedValue": "1.85M",
               "percentage": 18.96
             },
             {
               "name": "מ.ק.מ 216",
               "value": 0.0017,
+              "formattedValue": "1.70M",
               "percentage": 17.36
             },
             {
               "name": "ממשל משתנה 0526",
               "value": 0.0016,
+              "formattedValue": "1.65M",
               "percentage": 16.86
             },
             {
               "name": "ממשל משתנה 1130",
               "value": 0.0012,
+              "formattedValue": "1.15M",
               "percentage": 11.77
             },
             {
               "name": "מ.ק.מ. 416",
               "value": 0.0005,
+              "formattedValue": "549.36K",
               "percentage": 5.62
             },
             {
               "name": "מ.ק.מ. 116",
               "value": 0.0005,
+              "formattedValue": "452.73K",
               "percentage": 4.63
             },
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0002,
+              "formattedValue": "210.56K",
               "percentage": 2.16
             }
           ]
@@ -113,6 +132,7 @@
       {
         "subclass": "Corporate Bonds",
         "value": 0.0,
+        "formattedValue": "2.86K",
         "percentageOfClass": 0.03,
         "itemCount": 1,
         "totalPages": 1,
@@ -121,6 +141,7 @@
             {
               "name": "להב אגח ב",
               "value": 0.0,
+              "formattedValue": "2.86K",
               "percentage": 100.0
             }
           ]
@@ -131,6 +152,7 @@
       {
         "subclass": "General",
         "value": 0.0001,
+        "formattedValue": "149.01K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -139,6 +161,7 @@
             {
               "name": "ערד סדרה 8911",
               "value": 0.0001,
+              "formattedValue": "149.01K",
               "percentage": 100.0
             }
           ]
@@ -149,6 +172,7 @@
       {
         "subclass": "Cash",
         "value": 0.0001,
+        "formattedValue": "57.92K",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -157,11 +181,13 @@
             {
               "name": "בנק הבינלאומי הראשון בע\"מ",
               "value": 0.0001,
+              "formattedValue": "57.91K",
               "percentage": 99.98
             },
             {
               "name": "בנק המזרחי המאוחד בע\"מ",
               "value": 0.0,
+              "formattedValue": "0.01K",
               "percentage": 0.02
             }
           ]

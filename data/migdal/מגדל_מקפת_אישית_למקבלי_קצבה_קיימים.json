@@ -2,80 +2,96 @@
   "fundName": "מגדל מקפת אישית למקבלי קצבה קיימים",
   "trackId": "2207",
   "totalAssetsBN": 2.37,
+  "formattedTotalAssets": "2.37B",
   "assetClasses": [
     {
       "name": "Non-Tradable Bonds",
       "value": 1.2042,
+      "formattedValue": "1.20B",
       "percentage": 50.89
     },
     {
       "name": "Bonds",
       "value": 0.9115,
+      "formattedValue": "911.53M",
       "percentage": 38.52
     },
     {
       "name": "Loans",
       "value": 0.068,
+      "formattedValue": "68.03M",
       "percentage": 2.88
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0656,
+      "formattedValue": "65.60M",
       "percentage": 2.77
     },
     {
       "name": "Investment Funds",
       "value": 0.0364,
+      "formattedValue": "36.42M",
       "percentage": 1.54
     },
     {
       "name": "Stocks",
       "value": 0.034,
+      "formattedValue": "34.03M",
       "percentage": 1.44
     },
     {
       "name": "Real Estate",
       "value": 0.0235,
+      "formattedValue": "23.49M",
       "percentage": 0.99
     },
     {
       "name": "Structured Products",
       "value": 0.0102,
+      "formattedValue": "10.16M",
       "percentage": 0.43
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.0101,
+      "formattedValue": "10.13M",
       "percentage": 0.43
     },
     {
       "name": "Derivatives",
       "value": 0.0022,
+      "formattedValue": "2.19M",
       "percentage": 0.09
     },
     {
       "name": "Mutual Funds",
       "value": 0.0004,
+      "formattedValue": "416.34K",
       "percentage": 0.02
     },
     {
       "name": "Futures",
       "value": 0.0002,
+      "formattedValue": "242.98K",
       "percentage": 0.01
     },
     {
       "name": "Warrants",
       "value": 0.0,
+      "formattedValue": "13.94K",
       "percentage": 0.0
     },
     {
       "name": "Other Assets",
       "value": -0.0001,
+      "formattedValue": "-95.26K",
       "percentage": -0.0
     },
     {
       "name": "Options",
       "value": 0.0,
+      "formattedValue": "21.45K",
       "percentage": 0.0
     }
   ],
@@ -84,6 +100,7 @@
       {
         "subclass": "General",
         "value": 0.0004,
+        "formattedValue": "416.34K",
         "percentageOfClass": 100.0,
         "itemCount": 6,
         "totalPages": 1,
@@ -92,31 +109,37 @@
             {
               "name": "GS INDIA EQ IUSDA",
               "value": 0.0001,
+              "formattedValue": "101.82K",
               "percentage": 24.46
             },
             {
               "name": "SCHRODER INTL GLB EQTY  IZUA",
               "value": 0.0001,
+              "formattedValue": "94.79K",
               "percentage": 22.77
             },
             {
               "name": "CTLX JAPAN EQS LJ JPY",
               "value": 0.0001,
+              "formattedValue": "56.66K",
               "percentage": 13.61
             },
             {
               "name": "LAZARD JAPANESE STRATEGIC EQUITY FUND",
               "value": 0.0001,
+              "formattedValue": "55.94K",
               "percentage": 13.43
             },
             {
               "name": "KOTAK INDIA MIDCAP",
               "value": 0.0001,
+              "formattedValue": "55.30K",
               "percentage": 13.28
             },
             {
               "name": "AWI ASH WO INDIA OPP FD DUSD",
               "value": 0.0001,
+              "formattedValue": "51.85K",
               "percentage": 12.45
             }
           ]
@@ -127,6 +150,7 @@
       {
         "subclass": "Cash",
         "value": 0.0656,
+        "formattedValue": "65.60M",
         "percentageOfClass": 100.0,
         "itemCount": 9,
         "totalPages": 1,
@@ -135,46 +159,55 @@
             {
               "name": "בנק לאומי לישראל בע\"מ",
               "value": 0.0376,
+              "formattedValue": "37.59M",
               "percentage": 57.3
             },
             {
               "name": "בנק דיסקונט לישראל בע\"מ",
               "value": 0.0164,
+              "formattedValue": "16.39M",
               "percentage": 24.99
             },
             {
               "name": "בנק הפועלים בע\"מ",
               "value": 0.0084,
+              "formattedValue": "8.40M",
               "percentage": 12.81
             },
             {
               "name": "JPMORGAN CHASE BANK",
               "value": 0.0024,
+              "formattedValue": "2.43M",
               "percentage": 3.7
             },
             {
               "name": "בנק מזרחי טפחות בע\"מ",
               "value": 0.0008,
+              "formattedValue": "805.43K",
               "percentage": 1.23
             },
             {
               "name": "בנק ירושלים בע\"מ",
               "value": 0.0,
+              "formattedValue": "33.22K",
               "percentage": 0.05
             },
             {
               "name": "יובנק",
               "value": 0.0,
+              "formattedValue": "3.68K",
               "percentage": 0.01
             },
             {
               "name": "CITIBANK",
               "value": -0.0,
+              "formattedValue": "-4.99K",
               "percentage": -0.01
             },
             {
               "name": "GOLDMAN SACHS",
               "value": -0.0001,
+              "formattedValue": "-52.67K",
               "percentage": -0.08
             }
           ]
@@ -185,6 +218,7 @@
       {
         "subclass": "Non-Tradable",
         "value": 0.0102,
+        "formattedValue": "10.16M",
         "percentageOfClass": 100.0,
         "itemCount": 14,
         "totalPages": 2,
@@ -193,51 +227,61 @@
             {
               "name": "CLN מניבים  בנק לאומי   סדרה 7",
               "value": 0.0028,
+              "formattedValue": "2.79M",
               "percentage": 27.42
             },
             {
               "name": "פועלים אגח  2רמ",
               "value": 0.0024,
+              "formattedValue": "2.36M",
               "percentage": 23.22
             },
             {
               "name": "לאומי אגח 4  רצף מוסדיים",
               "value": 0.0018,
+              "formattedValue": "1.76M",
               "percentage": 17.32
             },
             {
               "name": "לאומי אגח 3 רמ",
               "value": 0.0012,
+              "formattedValue": "1.18M",
               "percentage": 11.62
             },
             {
               "name": "פועלים אגח 1 רמ",
               "value": 0.0005,
+              "formattedValue": "535.65K",
               "percentage": 5.27
             },
             {
               "name": "לאומי אגח 2 רצף מוסדיים",
               "value": 0.0005,
+              "formattedValue": "501.99K",
               "percentage": 4.94
             },
             {
               "name": "הראלבט אגח ב רמ",
               "value": 0.0004,
+              "formattedValue": "397.58K",
               "percentage": 3.91
             },
             {
               "name": "מימון ישיר אג\"ח 16  רצף מוסדיים",
               "value": 0.0002,
+              "formattedValue": "218.94K",
               "percentage": 2.15
             },
             {
               "name": "ממון מש2 אג א מ",
               "value": 0.0002,
+              "formattedValue": "197.11K",
               "percentage": 1.94
             },
             {
               "name": "ממון מש2 אג ב מ",
               "value": 0.0001,
+              "formattedValue": "103.10K",
               "percentage": 1.01
             }
           ],
@@ -245,21 +289,25 @@
             {
               "name": "לאומי אגח א  רצף מוסדיים",
               "value": 0.0001,
+              "formattedValue": "74.04K",
               "percentage": 0.73
             },
             {
               "name": "ממון משהנ אג1רמ",
               "value": 0.0,
+              "formattedValue": "44.39K",
               "percentage": 0.44
             },
             {
               "name": "EUROPEAN CREDIT 2022 ONE SARL ICG SDP 5A",
               "value": 0.0,
+              "formattedValue": "1.59K",
               "percentage": 0.02
             },
             {
               "name": "לאומי למשכנתאות שה",
               "value": 0.0,
+              "formattedValue": "0.45K",
               "percentage": 0.0
             }
           ]
@@ -270,6 +318,7 @@
       {
         "subclass": "General",
         "value": 0.0022,
+        "formattedValue": "2.19M",
         "percentageOfClass": 100.0,
         "itemCount": 20,
         "totalPages": 2,
@@ -278,51 +327,61 @@
             {
               "name": "USDILS",
               "value": 0.0019,
+              "formattedValue": "1.86M",
               "percentage": 85.09
             },
             {
               "name": "SPTR",
               "value": 0.0001,
+              "formattedValue": "120.80K",
               "percentage": 5.52
             },
             {
               "name": "GBPUSD",
               "value": 0.0001,
+              "formattedValue": "69.69K",
               "percentage": 3.18
             },
             {
               "name": "PHOE IT",
               "value": 0.0001,
+              "formattedValue": "58.01K",
               "percentage": 2.65
             },
             {
               "name": "TPXDDVD Index",
               "value": 0.0,
+              "formattedValue": "43.68K",
               "percentage": 1.99
             },
             {
               "name": "POLI IT",
               "value": 0.0,
+              "formattedValue": "27.89K",
               "percentage": 1.27
             },
             {
               "name": "LUMI IT",
               "value": 0.0,
+              "formattedValue": "21.07K",
               "percentage": 0.96
             },
             {
               "name": "NDEUCHF",
               "value": 0.0,
+              "formattedValue": "11.27K",
               "percentage": 0.51
             },
             {
               "name": "CLIS IT",
               "value": 0.0,
+              "formattedValue": "8.58K",
               "percentage": 0.39
             },
             {
               "name": "BEZQ IT",
               "value": 0.0,
+              "formattedValue": "3.10K",
               "percentage": 0.14
             }
           ],
@@ -330,51 +389,61 @@
             {
               "name": "TASE IT",
               "value": 0.0,
+              "formattedValue": "1.81K",
               "percentage": 0.08
             },
             {
               "name": "CEL IT",
               "value": 0.0,
+              "formattedValue": "0.85K",
               "percentage": 0.04
             },
             {
               "name": "HARL IT",
               "value": 0.0,
+              "formattedValue": "0.60K",
               "percentage": 0.03
             },
             {
               "name": "SKBN IT",
               "value": 0.0,
+              "formattedValue": "0.03K",
               "percentage": 0.0
             },
             {
               "name": "IDIN IT",
               "value": -0.0,
+              "formattedValue": "-0.08K",
               "percentage": -0.0
             },
             {
               "name": "BNPHAP01",
               "value": -0.0,
+              "formattedValue": "-0.25K",
               "percentage": -0.01
             },
             {
               "name": "AUDUSD",
               "value": -0.0,
+              "formattedValue": "-0.93K",
               "percentage": -0.04
             },
             {
               "name": "ISCD IT",
               "value": -0.0,
+              "formattedValue": "-5.61K",
               "percentage": -0.26
             },
             {
               "name": "USDJPY",
               "value": -0.0,
+              "formattedValue": "-6.73K",
               "percentage": -0.31
             },
             {
               "name": "EURUSD",
               "value": -0.0,
+              "formattedValue": "-27.20K",
               "percentage": -1.24
             }
           ]
@@ -385,6 +454,7 @@
       {
         "subclass": "Direct Holdings",
         "value": 0.0101,
+        "formattedValue": "10.13M",
         "percentageOfClass": 100.0,
         "itemCount": 33,
         "totalPages": 4,
@@ -393,51 +463,61 @@
             {
               "name": "Citymark Building",
               "value": 0.0026,
+              "formattedValue": "2.64M",
               "percentage": 26.06
             },
             {
               "name": "מניה לא סחירה BIG USA",
               "value": 0.0019,
+              "formattedValue": "1.95M",
               "percentage": 19.23
             },
             {
               "name": "MM Texas",
               "value": 0.0013,
+              "formattedValue": "1.26M",
               "percentage": 12.39
             },
             {
               "name": "Project Hush",
               "value": 0.001,
+              "formattedValue": "994.26K",
               "percentage": 9.81
             },
             {
               "name": "120 Wall Street",
               "value": 0.0008,
+              "formattedValue": "795.87K",
               "percentage": 7.86
             },
             {
               "name": "Michelson Program",
               "value": 0.0004,
+              "formattedValue": "364.15K",
               "percentage": 3.59
             },
             {
               "name": "KSP",
               "value": 0.0003,
+              "formattedValue": "342.75K",
               "percentage": 3.38
             },
             {
               "name": "Fenwick",
               "value": 0.0003,
+              "formattedValue": "263.58K",
               "percentage": 2.6
             },
             {
               "name": "Terraces",
               "value": 0.0002,
+              "formattedValue": "205.61K",
               "percentage": 2.03
             },
             {
               "name": "OPC Power Ventures LP",
               "value": 0.0002,
+              "formattedValue": "196.70K",
               "percentage": 1.94
             }
           ],
@@ -445,51 +525,61 @@
             {
               "name": "עמל הולדינגס א.ד בע\"מ",
               "value": 0.0002,
+              "formattedValue": "187.97K",
               "percentage": 1.86
             },
             {
               "name": "RCE",
               "value": 0.0001,
+              "formattedValue": "145.03K",
               "percentage": 1.43
             },
             {
               "name": "שותפות הפורטפוליו הבטחוני",
               "value": 0.0001,
+              "formattedValue": "142.26K",
               "percentage": 1.4
             },
             {
               "name": "גלעם",
               "value": 0.0001,
+              "formattedValue": "115.22K",
               "percentage": 1.14
             },
             {
               "name": "אי.די.אף אנרגיות מתחדשות ישראל",
               "value": 0.0001,
+              "formattedValue": "96.54K",
               "percentage": 0.95
             },
             {
               "name": "NORDIC POWER 2",
               "value": 0.0001,
+              "formattedValue": "87.47K",
               "percentage": 0.86
             },
             {
               "name": "GES אקוויטי",
               "value": 0.0001,
+              "formattedValue": "80.07K",
               "percentage": 0.79
             },
             {
               "name": "Cato Networks",
               "value": 0.0001,
+              "formattedValue": "72.64K",
               "percentage": 0.72
             },
             {
               "name": "GES הלוואת בעלים",
               "value": 0.0001,
+              "formattedValue": "54.44K",
               "percentage": 0.54
             },
             {
               "name": "TIPA CORP LTD",
               "value": 0.0,
+              "formattedValue": "26.39K",
               "percentage": 0.26
             }
           ],
@@ -497,51 +587,61 @@
             {
               "name": "NORDIC POWER 4",
               "value": 0.0,
+              "formattedValue": "23.24K",
               "percentage": 0.23
             },
             {
               "name": "NORDIC POWER 3",
               "value": 0.0,
+              "formattedValue": "21.41K",
               "percentage": 0.21
             },
             {
               "name": "white oak 2",
               "value": 0.0,
+              "formattedValue": "21.21K",
               "percentage": 0.21
             },
             {
               "name": "פרויקט תענך   אקוויטי",
               "value": 0.0,
+              "formattedValue": "19.19K",
               "percentage": 0.19
             },
             {
               "name": "פרויקט תענך   הלוואת בעלים",
               "value": 0.0,
+              "formattedValue": "14.11K",
               "percentage": 0.14
             },
             {
               "name": "אגכימדס שותפות מוגבלת",
               "value": 0.0,
+              "formattedValue": "3.69K",
               "percentage": 0.04
             },
             {
               "name": "ניאומנה בע\"מ",
               "value": 0.0,
+              "formattedValue": "3.12K",
               "percentage": 0.03
             },
             {
               "name": "נטע ג'נומיקס בע\"מ",
               "value": 0.0,
+              "formattedValue": "2.94K",
               "percentage": 0.03
             },
             {
               "name": "White Oak",
               "value": 0.0,
+              "formattedValue": "2.87K",
               "percentage": 0.03
             },
             {
               "name": "רגב ביוטכנולוגיה בע\"מ",
               "value": 0.0,
+              "formattedValue": "2.76K",
               "percentage": 0.03
             }
           ],
@@ -549,16 +649,19 @@
             {
               "name": "ססטיינד טראפיז בע\"מ",
               "value": 0.0,
+              "formattedValue": "1.84K",
               "percentage": 0.02
             },
             {
               "name": "OHA Private Credit Advisors",
               "value": 0.0,
+              "formattedValue": "0.24K",
               "percentage": 0.0
             },
             {
               "name": "Sacramento 353",
               "value": 0.0,
+              "formattedValue": "0.00K",
               "percentage": 0.0
             }
           ]
@@ -569,6 +672,7 @@
       {
         "subclass": "General",
         "value": 1.2042,
+        "formattedValue": "1.20B",
         "percentageOfClass": 100.0,
         "itemCount": 136,
         "totalPages": 14,
@@ -577,51 +681,61 @@
             {
               "name": "ערד 8892",
               "value": 0.0516,
+              "formattedValue": "51.57M",
               "percentage": 4.28
             },
             {
               "name": "ערד 8894",
               "value": 0.0284,
+              "formattedValue": "28.43M",
               "percentage": 2.36
             },
             {
               "name": "ערד 8889",
               "value": 0.0279,
+              "formattedValue": "27.91M",
               "percentage": 2.32
             },
             {
               "name": "ערד 8903",
               "value": 0.0271,
+              "formattedValue": "27.11M",
               "percentage": 2.25
             },
             {
               "name": "ערד 8897",
               "value": 0.0239,
+              "formattedValue": "23.92M",
               "percentage": 1.99
             },
             {
               "name": "ערד 8880",
               "value": 0.0234,
+              "formattedValue": "23.39M",
               "percentage": 1.94
             },
             {
               "name": "ערד 8905",
               "value": 0.0222,
+              "formattedValue": "22.25M",
               "percentage": 1.85
             },
             {
               "name": "ערד 8824",
               "value": 0.022,
+              "formattedValue": "22.00M",
               "percentage": 1.83
             },
             {
               "name": "ערד 8841",
               "value": 0.0217,
+              "formattedValue": "21.71M",
               "percentage": 1.8
             },
             {
               "name": "ערד 8901",
               "value": 0.0213,
+              "formattedValue": "21.28M",
               "percentage": 1.77
             }
           ],
@@ -629,51 +743,61 @@
             {
               "name": "ערד 8874",
               "value": 0.0201,
+              "formattedValue": "20.09M",
               "percentage": 1.67
             },
             {
               "name": "ערד 8865",
               "value": 0.02,
+              "formattedValue": "19.97M",
               "percentage": 1.66
             },
             {
               "name": "ערד 8898",
               "value": 0.0192,
+              "formattedValue": "19.18M",
               "percentage": 1.59
             },
             {
               "name": "ערד 8866",
               "value": 0.0185,
+              "formattedValue": "18.50M",
               "percentage": 1.54
             },
             {
               "name": "ערד 8872",
               "value": 0.0184,
+              "formattedValue": "18.43M",
               "percentage": 1.53
             },
             {
               "name": "ערד 8858",
               "value": 0.0181,
+              "formattedValue": "18.12M",
               "percentage": 1.5
             },
             {
               "name": "ערד 8859",
               "value": 0.0173,
+              "formattedValue": "17.35M",
               "percentage": 1.44
             },
             {
               "name": "ערד 8846",
               "value": 0.0171,
+              "formattedValue": "17.13M",
               "percentage": 1.42
             },
             {
               "name": "ערד 8862",
               "value": 0.0168,
+              "formattedValue": "16.78M",
               "percentage": 1.39
             },
             {
               "name": "ערד 8879",
               "value": 0.0161,
+              "formattedValue": "16.11M",
               "percentage": 1.34
             }
           ],
@@ -681,51 +805,61 @@
             {
               "name": "ערד 8893",
               "value": 0.0156,
+              "formattedValue": "15.56M",
               "percentage": 1.29
             },
             {
               "name": "ערד 8883",
               "value": 0.0151,
+              "formattedValue": "15.05M",
               "percentage": 1.25
             },
             {
               "name": "ערד 8807",
               "value": 0.015,
+              "formattedValue": "15.04M",
               "percentage": 1.25
             },
             {
               "name": "ערד 8896",
               "value": 0.015,
+              "formattedValue": "15.01M",
               "percentage": 1.25
             },
             {
               "name": "ערד 8850",
               "value": 0.015,
+              "formattedValue": "14.99M",
               "percentage": 1.24
             },
             {
               "name": "ערד 8821",
               "value": 0.0149,
+              "formattedValue": "14.95M",
               "percentage": 1.24
             },
             {
               "name": "ערד 8838",
               "value": 0.0147,
+              "formattedValue": "14.68M",
               "percentage": 1.22
             },
             {
               "name": "ערד 8882",
               "value": 0.0141,
+              "formattedValue": "14.09M",
               "percentage": 1.17
             },
             {
               "name": "ערד 8853",
               "value": 0.0139,
+              "formattedValue": "13.94M",
               "percentage": 1.16
             },
             {
               "name": "ערד 8812",
               "value": 0.0139,
+              "formattedValue": "13.89M",
               "percentage": 1.15
             }
           ],
@@ -733,51 +867,61 @@
             {
               "name": "ערד 8877",
               "value": 0.0139,
+              "formattedValue": "13.88M",
               "percentage": 1.15
             },
             {
               "name": "ערד 8837",
               "value": 0.0134,
+              "formattedValue": "13.37M",
               "percentage": 1.11
             },
             {
               "name": "ערד 8857",
               "value": 0.0133,
+              "formattedValue": "13.25M",
               "percentage": 1.1
             },
             {
               "name": "ערד 8825",
               "value": 0.0132,
+              "formattedValue": "13.22M",
               "percentage": 1.1
             },
             {
               "name": "ערד 8851",
               "value": 0.0131,
+              "formattedValue": "13.12M",
               "percentage": 1.09
             },
             {
               "name": "ערד 8856",
               "value": 0.013,
+              "formattedValue": "13.00M",
               "percentage": 1.08
             },
             {
               "name": "ערד 8826",
               "value": 0.0128,
+              "formattedValue": "12.78M",
               "percentage": 1.06
             },
             {
               "name": "ערד 8815",
               "value": 0.012,
+              "formattedValue": "12.01M",
               "percentage": 1.0
             },
             {
               "name": "ערד 8855",
               "value": 0.0119,
+              "formattedValue": "11.91M",
               "percentage": 0.99
             },
             {
               "name": "ערד 8871",
               "value": 0.0118,
+              "formattedValue": "11.75M",
               "percentage": 0.98
             }
           ],
@@ -785,51 +929,61 @@
             {
               "name": "ערד 8803",
               "value": 0.0117,
+              "formattedValue": "11.66M",
               "percentage": 0.97
             },
             {
               "name": "ערד 8848",
               "value": 0.0116,
+              "formattedValue": "11.59M",
               "percentage": 0.96
             },
             {
               "name": "ערד 8832",
               "value": 0.0115,
+              "formattedValue": "11.48M",
               "percentage": 0.95
             },
             {
               "name": "ערד סדרה 8787 4.8% 2027",
               "value": 0.0114,
+              "formattedValue": "11.36M",
               "percentage": 0.94
             },
             {
               "name": "ערד 8895",
               "value": 0.0108,
+              "formattedValue": "10.78M",
               "percentage": 0.89
             },
             {
               "name": "ערד 8808",
               "value": 0.0107,
+              "formattedValue": "10.65M",
               "percentage": 0.88
             },
             {
               "name": "ערד 8881",
               "value": 0.0104,
+              "formattedValue": "10.42M",
               "percentage": 0.87
             },
             {
               "name": "ערד 8809",
               "value": 0.0103,
+              "formattedValue": "10.29M",
               "percentage": 0.85
             },
             {
               "name": "ערד 8847",
               "value": 0.0093,
+              "formattedValue": "9.35M",
               "percentage": 0.78
             },
             {
               "name": "ערד 8863",
               "value": 0.0093,
+              "formattedValue": "9.30M",
               "percentage": 0.77
             }
           ],
@@ -837,51 +991,61 @@
             {
               "name": "ערד 8818",
               "value": 0.0093,
+              "formattedValue": "9.27M",
               "percentage": 0.77
             },
             {
               "name": "ערד 8833",
               "value": 0.0091,
+              "formattedValue": "9.14M",
               "percentage": 0.76
             },
             {
               "name": "ערד סדרה 8784  4.8%  2026",
               "value": 0.0091,
+              "formattedValue": "9.08M",
               "percentage": 0.75
             },
             {
               "name": "ערד 8823",
               "value": 0.0088,
+              "formattedValue": "8.81M",
               "percentage": 0.73
             },
             {
               "name": "ערד 8801",
               "value": 0.0087,
+              "formattedValue": "8.69M",
               "percentage": 0.72
             },
             {
               "name": "ערד סדרה 8772 4.8% 2025",
               "value": 0.0085,
+              "formattedValue": "8.54M",
               "percentage": 0.71
             },
             {
               "name": "ערד 8845",
               "value": 0.0084,
+              "formattedValue": "8.44M",
               "percentage": 0.7
             },
             {
               "name": "ערד 8839",
               "value": 0.0083,
+              "formattedValue": "8.31M",
               "percentage": 0.69
             },
             {
               "name": "ערד 8799",
               "value": 0.0082,
+              "formattedValue": "8.18M",
               "percentage": 0.68
             },
             {
               "name": "ערד 8849",
               "value": 0.0082,
+              "formattedValue": "8.17M",
               "percentage": 0.68
             }
           ],
@@ -889,51 +1053,61 @@
             {
               "name": "ערד 8873",
               "value": 0.0081,
+              "formattedValue": "8.14M",
               "percentage": 0.68
             },
             {
               "name": "ערד 8819",
               "value": 0.0081,
+              "formattedValue": "8.06M",
               "percentage": 0.67
             },
             {
               "name": "ערד 8813",
               "value": 0.008,
+              "formattedValue": "8.04M",
               "percentage": 0.67
             },
             {
               "name": "ערד 8816",
               "value": 0.0078,
+              "formattedValue": "7.80M",
               "percentage": 0.65
             },
             {
               "name": "ערד 8869",
               "value": 0.0078,
+              "formattedValue": "7.76M",
               "percentage": 0.64
             },
             {
               "name": "ערד 8904",
               "value": 0.0078,
+              "formattedValue": "7.75M",
               "percentage": 0.64
             },
             {
               "name": "ערד 8844",
               "value": 0.0076,
+              "formattedValue": "7.58M",
               "percentage": 0.63
             },
             {
               "name": "ערד 8900",
               "value": 0.0073,
+              "formattedValue": "7.30M",
               "percentage": 0.61
             },
             {
               "name": "ערד סדרה 8810 2029 4.8%",
               "value": 0.0072,
+              "formattedValue": "7.24M",
               "percentage": 0.6
             },
             {
               "name": "ערד סדרה 8774 2026 4.8%",
               "value": 0.0072,
+              "formattedValue": "7.24M",
               "percentage": 0.6
             }
           ],
@@ -941,51 +1115,61 @@
             {
               "name": "ערד 8797",
               "value": 0.0071,
+              "formattedValue": "7.11M",
               "percentage": 0.59
             },
             {
               "name": "ערד 8864",
               "value": 0.0071,
+              "formattedValue": "7.09M",
               "percentage": 0.59
             },
             {
               "name": "ערד 2025 סדרה 8771",
               "value": 0.0071,
+              "formattedValue": "7.05M",
               "percentage": 0.59
             },
             {
               "name": "ערד 8798",
               "value": 0.007,
+              "formattedValue": "6.99M",
               "percentage": 0.58
             },
             {
               "name": "ערד 8790 2027 4.8%",
               "value": 0.0069,
+              "formattedValue": "6.95M",
               "percentage": 0.58
             },
             {
               "name": "ערד סדרה 8788 4.8% 2027",
               "value": 0.0069,
+              "formattedValue": "6.91M",
               "percentage": 0.57
             },
             {
               "name": "ערד 8796",
               "value": 0.0068,
+              "formattedValue": "6.81M",
               "percentage": 0.57
             },
             {
               "name": "ערד 8867",
               "value": 0.0068,
+              "formattedValue": "6.76M",
               "percentage": 0.56
             },
             {
               "name": "ערד 8842",
               "value": 0.0066,
+              "formattedValue": "6.61M",
               "percentage": 0.55
             },
             {
               "name": "ערד 8795",
               "value": 0.0065,
+              "formattedValue": "6.48M",
               "percentage": 0.54
             }
           ],
@@ -993,51 +1177,61 @@
             {
               "name": "ערד 8854",
               "value": 0.0063,
+              "formattedValue": "6.26M",
               "percentage": 0.52
             },
             {
               "name": "ערד 8876",
               "value": 0.0062,
+              "formattedValue": "6.15M",
               "percentage": 0.51
             },
             {
               "name": "ערד 8800",
               "value": 0.0061,
+              "formattedValue": "6.14M",
               "percentage": 0.51
             },
             {
               "name": "ערד 8805",
               "value": 0.0061,
+              "formattedValue": "6.07M",
               "percentage": 0.5
             },
             {
               "name": "ערד 8802",
               "value": 0.0059,
+              "formattedValue": "5.93M",
               "percentage": 0.49
             },
             {
               "name": "ערד סדרה 8778 2026 4.8%",
               "value": 0.0059,
+              "formattedValue": "5.86M",
               "percentage": 0.49
             },
             {
               "name": "ערד 8899",
               "value": 0.0058,
+              "formattedValue": "5.79M",
               "percentage": 0.48
             },
             {
               "name": "ערד 8817",
               "value": 0.0057,
+              "formattedValue": "5.71M",
               "percentage": 0.47
             },
             {
               "name": "ערד 8794",
               "value": 0.0057,
+              "formattedValue": "5.71M",
               "percentage": 0.47
             },
             {
               "name": "ערד 8852",
               "value": 0.0057,
+              "formattedValue": "5.66M",
               "percentage": 0.47
             }
           ],
@@ -1045,51 +1239,61 @@
             {
               "name": "ערד 8829",
               "value": 0.0052,
+              "formattedValue": "5.22M",
               "percentage": 0.43
             },
             {
               "name": "ערד 8843",
               "value": 0.0051,
+              "formattedValue": "5.09M",
               "percentage": 0.42
             },
             {
               "name": "ערד 8786_1/2027",
               "value": 0.005,
+              "formattedValue": "4.96M",
               "percentage": 0.41
             },
             {
               "name": "ערד 8834",
               "value": 0.0049,
+              "formattedValue": "4.89M",
               "percentage": 0.41
             },
             {
               "name": "ערד 8827",
               "value": 0.0048,
+              "formattedValue": "4.77M",
               "percentage": 0.4
             },
             {
               "name": "ערד 8820",
               "value": 0.0044,
+              "formattedValue": "4.43M",
               "percentage": 0.37
             },
             {
               "name": "ערד סדרה 8776 2026 4.8%",
               "value": 0.0044,
+              "formattedValue": "4.38M",
               "percentage": 0.36
             },
             {
               "name": "ערד 8860",
               "value": 0.0041,
+              "formattedValue": "4.09M",
               "percentage": 0.34
             },
             {
               "name": "ערד סדרה 8789 2027 4.8%",
               "value": 0.0039,
+              "formattedValue": "3.86M",
               "percentage": 0.32
             },
             {
               "name": "ערד 8793",
               "value": 0.0033,
+              "formattedValue": "3.28M",
               "percentage": 0.27
             }
           ],
@@ -1097,51 +1301,61 @@
             {
               "name": "ערד 8811",
               "value": 0.0032,
+              "formattedValue": "3.19M",
               "percentage": 0.27
             },
             {
               "name": "ערד סדרה 8781 2026 4.8%",
               "value": 0.0032,
+              "formattedValue": "3.16M",
               "percentage": 0.26
             },
             {
               "name": "ערד 8814",
               "value": 0.003,
+              "formattedValue": "3.01M",
               "percentage": 0.25
             },
             {
               "name": "ערד סדרה 8773 4.8% 2025",
               "value": 0.0029,
+              "formattedValue": "2.89M",
               "percentage": 0.24
             },
             {
               "name": "ערד סדרה 8775 2026 4.8%",
               "value": 0.0028,
+              "formattedValue": "2.84M",
               "percentage": 0.24
             },
             {
               "name": "ערד 8840",
               "value": 0.0025,
+              "formattedValue": "2.55M",
               "percentage": 0.21
             },
             {
               "name": "מקורות אגח 8 רמ",
               "value": 0.0024,
+              "formattedValue": "2.37M",
               "percentage": 0.2
             },
             {
               "name": "ערד 8888",
               "value": 0.0021,
+              "formattedValue": "2.12M",
               "percentage": 0.18
             },
             {
               "name": "ערד סדרה 8777 2026 4.8%",
               "value": 0.0016,
+              "formattedValue": "1.58M",
               "percentage": 0.13
             },
             {
               "name": "ערד 8908",
               "value": 0.0016,
+              "formattedValue": "1.55M",
               "percentage": 0.13
             }
           ],
@@ -1149,51 +1363,61 @@
             {
               "name": "מקורות אג סדרה 6 ל.ס 4.9%",
               "value": 0.0013,
+              "formattedValue": "1.33M",
               "percentage": 0.11
             },
             {
               "name": "ערד 8822",
               "value": 0.0013,
+              "formattedValue": "1.28M",
               "percentage": 0.11
             },
             {
               "name": "ערד 8792",
               "value": 0.001,
+              "formattedValue": "1.02M",
               "percentage": 0.08
             },
             {
               "name": "ערד 8806",
               "value": 0.0007,
+              "formattedValue": "656.42K",
               "percentage": 0.05
             },
             {
               "name": "יהב כתב התחייבות סדרה ד (לס)  לא ברצף",
               "value": 0.0006,
+              "formattedValue": "605.86K",
               "percentage": 0.05
             },
             {
               "name": "רפאל אגח ג רצף מוסדי",
               "value": 0.0006,
+              "formattedValue": "562.85K",
               "percentage": 0.05
             },
             {
               "name": "מת\"ם אגח ב רמ",
               "value": 0.0005,
+              "formattedValue": "486.88K",
               "percentage": 0.04
             },
             {
               "name": "אגד אגח 1 רצף מוסדיים",
               "value": 0.0004,
+              "formattedValue": "389.88K",
               "percentage": 0.03
             },
             {
               "name": "מתמ אגח א'  רמ",
               "value": 0.0004,
+              "formattedValue": "370.81K",
               "percentage": 0.03
             },
             {
               "name": "אורמת אגח 4 רמ",
               "value": 0.0003,
+              "formattedValue": "282.65K",
               "percentage": 0.02
             }
           ],
@@ -1201,51 +1425,61 @@
             {
               "name": "קרן שמש אגח א  רמ",
               "value": 0.0003,
+              "formattedValue": "266.59K",
               "percentage": 0.02
             },
             {
               "name": "ישראכרט אגחג רמ",
               "value": 0.0002,
+              "formattedValue": "248.41K",
               "percentage": 0.02
             },
             {
               "name": "גב יםנגב אגב רמ",
               "value": 0.0002,
+              "formattedValue": "247.20K",
               "percentage": 0.02
             },
             {
               "name": "מקס פיננסים אגח ד  רצף מוסדים",
               "value": 0.0002,
+              "formattedValue": "223.00K",
               "percentage": 0.02
             },
             {
               "name": "מימוןמשכ אגא רמ",
               "value": 0.0002,
+              "formattedValue": "200.61K",
               "percentage": 0.02
             },
             {
               "name": "רפאל אגח ה רצף מוסדי",
               "value": 0.0002,
+              "formattedValue": "178.76K",
               "percentage": 0.01
             },
             {
               "name": "רפאל אגח ד רצף מוסדי",
               "value": 0.0002,
+              "formattedValue": "171.96K",
               "percentage": 0.01
             },
             {
               "name": "נתיבי גז  סדרה א ל.ס 5.6%",
               "value": 0.0001,
+              "formattedValue": "114.03K",
               "percentage": 0.01
             },
             {
               "name": "ערד8911",
               "value": 0.0,
+              "formattedValue": "20.76K",
               "percentage": 0.0
             },
             {
               "name": "CRSLNX 4.555 06/51",
               "value": 0.0,
+              "formattedValue": "9.95K",
               "percentage": 0.0
             }
           ],
@@ -1253,31 +1487,37 @@
             {
               "name": "TRANSED PARTNERS 3.951 09/50 12/37",
               "value": 0.0,
+              "formattedValue": "9.19K",
               "percentage": 0.0
             },
             {
               "name": "ערד 8884",
               "value": 0.0,
+              "formattedValue": "7.64K",
               "percentage": 0.0
             },
             {
               "name": "ערד 8878",
               "value": 0.0,
+              "formattedValue": "6.00K",
               "percentage": 0.0
             },
             {
               "name": "ערד 8875",
               "value": 0.0,
+              "formattedValue": "5.03K",
               "percentage": 0.0
             },
             {
               "name": "ערד 8868",
               "value": 0.0,
+              "formattedValue": "4.56K",
               "percentage": 0.0
             },
             {
               "name": "נתיבים אגח א",
               "value": 0.0,
+              "formattedValue": "0.26K",
               "percentage": 0.0
             }
           ]
@@ -1288,6 +1528,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0185,
+        "formattedValue": "18.47M",
         "percentageOfClass": 54.28,
         "itemCount": 52,
         "totalPages": 6,
@@ -1296,51 +1537,61 @@
             {
               "name": "קסם ETF תא 90",
               "value": 0.0024,
+              "formattedValue": "2.43M",
               "percentage": 13.15
             },
             {
               "name": "LYXOR CORE EURSTX 600 DR",
               "value": 0.0017,
+              "formattedValue": "1.72M",
               "percentage": 9.3
             },
             {
               "name": "הראל סל תא 90",
               "value": 0.0014,
+              "formattedValue": "1.42M",
               "percentage": 7.69
             },
             {
               "name": "ISHARES CORE MSCI EURPOE",
               "value": 0.0009,
+              "formattedValue": "948.53K",
               "percentage": 5.13
             },
             {
               "name": "AMUNDI INDEX MSCI EM UCITS",
               "value": 0.0009,
+              "formattedValue": "916.58K",
               "percentage": 4.96
             },
             {
               "name": "תכלית סל תא 90",
               "value": 0.0009,
+              "formattedValue": "880.57K",
               "percentage": 4.77
             },
             {
               "name": "AM S&P 500 II ETF ACC",
               "value": 0.0008,
+              "formattedValue": "808.56K",
               "percentage": 4.38
             },
             {
               "name": "איביאי סל אינדקס בנקים יש",
               "value": 0.0008,
+              "formattedValue": "769.48K",
               "percentage": 4.17
             },
             {
               "name": "INDUSTRIAL SELECT SECT SPDR",
               "value": 0.0007,
+              "formattedValue": "704.71K",
               "percentage": 3.82
             },
             {
               "name": "TECHNOLOGY SELECT SECT SPDR",
               "value": 0.0007,
+              "formattedValue": "683.03K",
               "percentage": 3.7
             }
           ],
@@ -1348,51 +1599,61 @@
             {
               "name": "AMUNDI MSCI EM MKT 2",
               "value": 0.0006,
+              "formattedValue": "591.78K",
               "percentage": 3.2
             },
             {
               "name": "ISHARES S&P NA TECH SOFT IF",
               "value": 0.0004,
+              "formattedValue": "397.55K",
               "percentage": 2.15
             },
             {
               "name": "INVESCO KBW BANK ETF",
               "value": 0.0004,
+              "formattedValue": "367.11K",
               "percentage": 1.99
             },
             {
               "name": "SOURCE EURO STOXX 50 UCITS E",
               "value": 0.0003,
+              "formattedValue": "337.64K",
               "percentage": 1.83
             },
             {
               "name": "ISHARES S&P500 SWAP UCITS",
               "value": 0.0003,
+              "formattedValue": "335.47K",
               "percentage": 1.82
             },
             {
               "name": "HSBC EURO STOXX 50 UCITS",
               "value": 0.0003,
+              "formattedValue": "327.07K",
               "percentage": 1.77
             },
             {
               "name": "ISHARES DJ EURO STOXX 50",
               "value": 0.0003,
+              "formattedValue": "322.05K",
               "percentage": 1.74
             },
             {
               "name": "SPDR MSCI Europe Health CareSM UCITS",
               "value": 0.0003,
+              "formattedValue": "317.97K",
               "percentage": 1.72
             },
             {
               "name": "LYXOR STOXX EUROPE 600 BKS UCITS",
               "value": 0.0003,
+              "formattedValue": "274.02K",
               "percentage": 1.48
             },
             {
               "name": "COMM SERV SELECT SECTOR SPDR",
               "value": 0.0003,
+              "formattedValue": "273.83K",
               "percentage": 1.48
             }
           ],
@@ -1400,51 +1661,61 @@
             {
               "name": "SOURCE S&P 500 UCITS ETF",
               "value": 0.0002,
+              "formattedValue": "247.23K",
               "percentage": 1.34
             },
             {
               "name": "FINANCIAL SELECT SECTOR SPDR",
               "value": 0.0002,
+              "formattedValue": "245.50K",
               "percentage": 1.33
             },
             {
               "name": "SPDR EMERGING MARKETS",
               "value": 0.0002,
+              "formattedValue": "200.33K",
               "percentage": 1.08
             },
             {
               "name": "KRANESHARES CSI CHINA INTERNET",
               "value": 0.0002,
+              "formattedValue": "192.22K",
               "percentage": 1.04
             },
             {
               "name": "UTILITIES SELECT SECTOR SPDR",
               "value": 0.0002,
+              "formattedValue": "191.99K",
               "percentage": 1.04
             },
             {
               "name": "י.ל סל תא בנקים",
               "value": 0.0002,
+              "formattedValue": "178.07K",
               "percentage": 0.96
             },
             {
               "name": "CONSUMER DISCRETIONARY SELT",
               "value": 0.0002,
+              "formattedValue": "161.89K",
               "percentage": 0.88
             },
             {
               "name": "INVESCO US FINANCIALS S&P",
               "value": 0.0002,
+              "formattedValue": "160.75K",
               "percentage": 0.87
             },
             {
               "name": "SPDR S&P US ENERGY SELECT",
               "value": 0.0002,
+              "formattedValue": "154.94K",
               "percentage": 0.84
             },
             {
               "name": "ISHARES S&P HEALTH CARE",
               "value": 0.0001,
+              "formattedValue": "146.95K",
               "percentage": 0.8
             }
           ],
@@ -1452,51 +1723,61 @@
             {
               "name": "NOMURA ETF",
               "value": 0.0001,
+              "formattedValue": "121.66K",
               "percentage": 0.66
             },
             {
               "name": "HEALTH CARE SELECT SECTOR",
               "value": 0.0001,
+              "formattedValue": "118.14K",
               "percentage": 0.64
             },
             {
               "name": "WISDOMTREE INDIA EARNINGS",
               "value": 0.0001,
+              "formattedValue": "116.04K",
               "percentage": 0.63
             },
             {
               "name": "איביאי סל תא ביטוח",
               "value": 0.0001,
+              "formattedValue": "111.95K",
               "percentage": 0.61
             },
             {
               "name": "CONSUMER STAPLES SPDR",
               "value": 0.0001,
+              "formattedValue": "111.46K",
               "percentage": 0.6
             },
             {
               "name": "INVESCO MSCI EMERGING MKTS",
               "value": 0.0001,
+              "formattedValue": "111.24K",
               "percentage": 0.6
             },
             {
               "name": "VANECK SEMICONDUCTOR ETF",
               "value": 0.0001,
+              "formattedValue": "96.65K",
               "percentage": 0.52
             },
             {
               "name": "MATERIALS SELECT SECTOR SPDR",
               "value": 0.0001,
+              "formattedValue": "93.41K",
               "percentage": 0.51
             },
             {
               "name": "VANGUARD AUST SHARES IDX ETF",
               "value": 0.0001,
+              "formattedValue": "93.33K",
               "percentage": 0.51
             },
             {
               "name": "מור סל תא 90",
               "value": 0.0001,
+              "formattedValue": "89.67K",
               "percentage": 0.49
             }
           ],
@@ -1504,51 +1785,61 @@
             {
               "name": "הראל סל תא 125",
               "value": 0.0001,
+              "formattedValue": "76.37K",
               "percentage": 0.41
             },
             {
               "name": "ENERGY SELECT SECTOR SPDR",
               "value": 0.0001,
+              "formattedValue": "73.81K",
               "percentage": 0.4
             },
             {
               "name": "GLOBAL X JAPAN GLOBAL LEADER",
               "value": 0.0001,
+              "formattedValue": "72.28K",
               "percentage": 0.39
             },
             {
               "name": "ISHARES DJ CONSRU",
               "value": 0.0001,
+              "formattedValue": "72.25K",
               "percentage": 0.39
             },
             {
               "name": "קסם ETF תא 125",
               "value": 0.0001,
+              "formattedValue": "71.20K",
               "percentage": 0.39
             },
             {
               "name": "תכלית סל תא 125",
               "value": 0.0001,
+              "formattedValue": "69.67K",
               "percentage": 0.38
             },
             {
               "name": "מור סל אי.בנקים מש",
               "value": 0.0001,
+              "formattedValue": "65.93K",
               "percentage": 0.36
             },
             {
               "name": "REAL ESTATE SECT SPDR",
               "value": 0.0001,
+              "formattedValue": "61.53K",
               "percentage": 0.33
             },
             {
               "name": "SPDR EUROPE ENERGY",
               "value": 0.0001,
+              "formattedValue": "58.48K",
               "percentage": 0.32
             },
             {
               "name": "FRANKLIN FTSE INDIA ETF",
               "value": 0.0001,
+              "formattedValue": "54.27K",
               "percentage": 0.29
             }
           ],
@@ -1556,11 +1847,13 @@
             {
               "name": "הראל סל תא 90 ובנקים",
               "value": 0.0,
+              "formattedValue": "17.82K",
               "percentage": 0.1
             },
             {
               "name": "איביאי סל מידקפ&בנקים ביש",
               "value": 0.0,
+              "formattedValue": "10.70K",
               "percentage": 0.06
             }
           ]
@@ -1569,6 +1862,7 @@
       {
         "subclass": "Direct Holdings",
         "value": 0.0156,
+        "formattedValue": "15.56M",
         "percentageOfClass": 45.72,
         "itemCount": 251,
         "totalPages": 26,
@@ -1577,51 +1871,61 @@
             {
               "name": "לאומי",
               "value": 0.0008,
+              "formattedValue": "758.37K",
               "percentage": 4.87
             },
             {
               "name": "פועלים",
               "value": 0.0007,
+              "formattedValue": "671.16K",
               "percentage": 4.31
             },
             {
               "name": "META PLATFORMS",
               "value": 0.0004,
+              "formattedValue": "440.25K",
               "percentage": 2.83
             },
             {
               "name": "TAIWAN SEMICONDUCTOR",
               "value": 0.0004,
+              "formattedValue": "428.30K",
               "percentage": 2.75
             },
             {
               "name": "אלביט מערכות",
               "value": 0.0004,
+              "formattedValue": "407.32K",
               "percentage": 2.62
             },
             {
               "name": "NVIDIA CORP",
               "value": 0.0004,
+              "formattedValue": "405.52K",
               "percentage": 2.61
             },
             {
               "name": "מזרחי טפחות",
               "value": 0.0004,
+              "formattedValue": "395.84K",
               "percentage": 2.54
             },
             {
               "name": "AMAZON.COM INC",
               "value": 0.0004,
+              "formattedValue": "395.71K",
               "percentage": 2.54
             },
             {
               "name": "Teva Pharmaceutical Industries",
               "value": 0.0004,
+              "formattedValue": "393.44K",
               "percentage": 2.53
             },
             {
               "name": "ALPHABET INC CL C",
               "value": 0.0003,
+              "formattedValue": "305.65K",
               "percentage": 1.96
             }
           ],
@@ -1629,51 +1933,61 @@
             {
               "name": "Apple Inc",
               "value": 0.0003,
+              "formattedValue": "296.04K",
               "percentage": 1.9
             },
             {
               "name": "איי.סי.אל",
               "value": 0.0003,
+              "formattedValue": "295.66K",
               "percentage": 1.9
             },
             {
               "name": "Nova Ltd",
               "value": 0.0003,
+              "formattedValue": "266.69K",
               "percentage": 1.71
             },
             {
               "name": "דיסקונט א",
               "value": 0.0003,
+              "formattedValue": "260.88K",
               "percentage": 1.68
             },
             {
               "name": "ביג",
               "value": 0.0003,
+              "formattedValue": "255.36K",
               "percentage": 1.64
             },
             {
               "name": "בזק",
               "value": 0.0002,
+              "formattedValue": "206.85K",
               "percentage": 1.33
             },
             {
               "name": "הפניקס",
               "value": 0.0002,
+              "formattedValue": "200.94K",
               "percentage": 1.29
             },
             {
               "name": "מבנה",
               "value": 0.0002,
+              "formattedValue": "191.66K",
               "percentage": 1.23
             },
             {
               "name": "טבע",
               "value": 0.0002,
+              "formattedValue": "184.86K",
               "percentage": 1.19
             },
             {
               "name": "טאואר",
               "value": 0.0002,
+              "formattedValue": "184.23K",
               "percentage": 1.18
             }
           ],
@@ -1681,51 +1995,61 @@
             {
               "name": "ELI LILLY & CO",
               "value": 0.0002,
+              "formattedValue": "173.69K",
               "percentage": 1.12
             },
             {
               "name": "ORACLE CORP",
               "value": 0.0002,
+              "formattedValue": "172.66K",
               "percentage": 1.11
             },
             {
               "name": "מליסרון",
               "value": 0.0002,
+              "formattedValue": "172.22K",
               "percentage": 1.11
             },
             {
               "name": "עזריאלי קבוצה",
               "value": 0.0002,
+              "formattedValue": "166.75K",
               "percentage": 1.07
             },
             {
               "name": "נאוויטס פטר יהש",
               "value": 0.0002,
+              "formattedValue": "165.68K",
               "percentage": 1.06
             },
             {
               "name": "BROADCOM LTD",
               "value": 0.0002,
+              "formattedValue": "156.93K",
               "percentage": 1.01
             },
             {
               "name": "הראל השקעות",
               "value": 0.0002,
+              "formattedValue": "156.84K",
               "percentage": 1.01
             },
             {
               "name": "אלקטרה",
               "value": 0.0001,
+              "formattedValue": "149.54K",
               "percentage": 0.96
             },
             {
               "name": "או פי סי אנרגיה",
               "value": 0.0001,
+              "formattedValue": "149.27K",
               "percentage": 0.96
             },
             {
               "name": "מנורה מב החז",
               "value": 0.0001,
+              "formattedValue": "144.58K",
               "percentage": 0.93
             }
           ],
@@ -1733,51 +2057,61 @@
             {
               "name": "Nice Ltd",
               "value": 0.0001,
+              "formattedValue": "141.18K",
               "percentage": 0.91
             },
             {
               "name": "אנלייט אנרגיה",
               "value": 0.0001,
+              "formattedValue": "138.03K",
               "percentage": 0.89
             },
             {
               "name": "Tower Semiconductor Ltd",
               "value": 0.0001,
+              "formattedValue": "128.70K",
               "percentage": 0.83
             },
             {
               "name": "ניו מד אנרג יהש",
               "value": 0.0001,
+              "formattedValue": "121.33K",
               "percentage": 0.78
             },
             {
               "name": "מגה אור",
               "value": 0.0001,
+              "formattedValue": "120.61K",
               "percentage": 0.78
             },
             {
               "name": "MICROSOFT CORP",
               "value": 0.0001,
+              "formattedValue": "118.75K",
               "percentage": 0.76
             },
             {
               "name": "שיכון ובינוי",
               "value": 0.0001,
+              "formattedValue": "114.05K",
               "percentage": 0.73
             },
             {
               "name": "נובה",
               "value": 0.0001,
+              "formattedValue": "111.13K",
               "percentage": 0.71
             },
             {
               "name": "ישראמקו יהש",
               "value": 0.0001,
+              "formattedValue": "110.37K",
               "percentage": 0.71
             },
             {
               "name": "פז אנרגיה",
               "value": 0.0001,
+              "formattedValue": "109.36K",
               "percentage": 0.7
             }
           ],
@@ -1785,51 +2119,61 @@
             {
               "name": "שטראוס",
               "value": 0.0001,
+              "formattedValue": "107.52K",
               "percentage": 0.69
             },
             {
               "name": "אלוני חץ",
               "value": 0.0001,
+              "formattedValue": "104.38K",
               "percentage": 0.67
             },
             {
               "name": "אנרג'יקס",
               "value": 0.0001,
+              "formattedValue": "103.55K",
               "percentage": 0.67
             },
             {
               "name": "וואן טכנולוגיות",
               "value": 0.0001,
+              "formattedValue": "102.95K",
               "percentage": 0.66
             },
             {
               "name": "CONSTELLATION ENERGY",
               "value": 0.0001,
+              "formattedValue": "99.96K",
               "percentage": 0.64
             },
             {
               "name": "פתאל החזקות",
               "value": 0.0001,
+              "formattedValue": "99.30K",
               "percentage": 0.64
             },
             {
               "name": "JPMorgan Chase & Co",
               "value": 0.0001,
+              "formattedValue": "95.82K",
               "percentage": 0.62
             },
             {
               "name": "אמות",
               "value": 0.0001,
+              "formattedValue": "95.40K",
               "percentage": 0.61
             },
             {
               "name": "TESLA INC",
               "value": 0.0001,
+              "formattedValue": "92.14K",
               "percentage": 0.59
             },
             {
               "name": "ריט 1",
               "value": 0.0001,
+              "formattedValue": "91.90K",
               "percentage": 0.59
             }
           ],
@@ -1837,51 +2181,61 @@
             {
               "name": "כלל עסקי ביטוח",
               "value": 0.0001,
+              "formattedValue": "88.92K",
               "percentage": 0.57
             },
             {
               "name": "שופרסל",
               "value": 0.0001,
+              "formattedValue": "88.61K",
               "percentage": 0.57
             },
             {
               "name": "חילן",
               "value": 0.0001,
+              "formattedValue": "84.35K",
               "percentage": 0.54
             },
             {
               "name": "מטריקס",
               "value": 0.0001,
+              "formattedValue": "83.95K",
               "percentage": 0.54
             },
             {
               "name": "פרטנר",
               "value": 0.0001,
+              "formattedValue": "79.06K",
               "percentage": 0.51
             },
             {
               "name": "נקסט ויז'ן",
               "value": 0.0001,
+              "formattedValue": "77.39K",
               "percentage": 0.5
             },
             {
               "name": "ABBVIE INC",
               "value": 0.0001,
+              "formattedValue": "75.51K",
               "percentage": 0.49
             },
             {
               "name": "Camtek Ltd/Israel",
               "value": 0.0001,
+              "formattedValue": "73.95K",
               "percentage": 0.48
             },
             {
               "name": "אורמת טכנו",
               "value": 0.0001,
+              "formattedValue": "71.79K",
               "percentage": 0.46
             },
             {
               "name": "דמרי",
               "value": 0.0001,
+              "formattedValue": "70.84K",
               "percentage": 0.46
             }
           ],
@@ -1889,51 +2243,61 @@
             {
               "name": "APPLIED MATERIALS INC",
               "value": 0.0001,
+              "formattedValue": "67.66K",
               "percentage": 0.43
             },
             {
               "name": "סלקום",
               "value": 0.0001,
+              "formattedValue": "67.24K",
               "percentage": 0.43
             },
             {
               "name": "Jefferies Financial Group Inc",
               "value": 0.0001,
+              "formattedValue": "66.35K",
               "percentage": 0.43
             },
             {
               "name": "רבוע נדלן",
               "value": 0.0001,
+              "formattedValue": "65.31K",
               "percentage": 0.42
             },
             {
               "name": "HERMES INTERNATIONAL",
               "value": 0.0001,
+              "formattedValue": "65.26K",
               "percentage": 0.42
             },
             {
               "name": "ישראל קנדה",
               "value": 0.0001,
+              "formattedValue": "64.37K",
               "percentage": 0.41
             },
             {
               "name": "שפיר הנדסה",
               "value": 0.0001,
+              "formattedValue": "63.86K",
               "percentage": 0.41
             },
             {
               "name": "ALIBABA GROUP HOLDING_SP ADR",
               "value": 0.0001,
+              "formattedValue": "63.61K",
               "percentage": 0.41
             },
             {
               "name": "דלק קבוצה",
               "value": 0.0001,
+              "formattedValue": "63.34K",
               "percentage": 0.41
             },
             {
               "name": "ADIDAS AG",
               "value": 0.0001,
+              "formattedValue": "60.29K",
               "percentage": 0.39
             }
           ],
@@ -1941,51 +2305,61 @@
             {
               "name": "אפריקה מגורים",
               "value": 0.0001,
+              "formattedValue": "56.63K",
               "percentage": 0.36
             },
             {
               "name": "בית שמש",
               "value": 0.0001,
+              "formattedValue": "55.92K",
               "percentage": 0.36
             },
             {
               "name": "פוקס",
               "value": 0.0001,
+              "formattedValue": "55.76K",
               "percentage": 0.36
             },
             {
               "name": "נופר אנרג'י",
               "value": 0.0001,
+              "formattedValue": "55.50K",
               "percentage": 0.36
             },
             {
               "name": "תורפז",
               "value": 0.0001,
+              "formattedValue": "55.39K",
               "percentage": 0.36
             },
             {
               "name": "מקס סטוק",
               "value": 0.0001,
+              "formattedValue": "54.44K",
               "percentage": 0.35
             },
             {
               "name": "ASTRAZENECA PLC",
               "value": 0.0001,
+              "formattedValue": "52.90K",
               "percentage": 0.34
             },
             {
               "name": "מחלבות גד",
               "value": 0.0001,
+              "formattedValue": "51.27K",
               "percentage": 0.33
             },
             {
               "name": "עמרם",
               "value": 0.0001,
+              "formattedValue": "50.06K",
               "percentage": 0.32
             },
             {
               "name": "Aroundtown SA",
               "value": 0.0,
+              "formattedValue": "49.44K",
               "percentage": 0.32
             }
           ],
@@ -1993,51 +2367,61 @@
             {
               "name": "BANK OF AMERICA CORP",
               "value": 0.0,
+              "formattedValue": "47.87K",
               "percentage": 0.31
             },
             {
               "name": "מניבים ריט",
               "value": 0.0,
+              "formattedValue": "47.59K",
               "percentage": 0.31
             },
             {
               "name": "נייס",
               "value": 0.0,
+              "formattedValue": "46.62K",
               "percentage": 0.3
             },
             {
               "name": "יוחננוף",
               "value": 0.0,
+              "formattedValue": "46.07K",
               "percentage": 0.3
             },
             {
               "name": "ישרס אחזקות",
               "value": 0.0,
+              "formattedValue": "45.51K",
               "percentage": 0.29
             },
             {
               "name": "מספנות ישראל",
               "value": 0.0,
+              "formattedValue": "45.24K",
               "percentage": 0.29
             },
             {
               "name": "אנרג'יאן",
               "value": 0.0,
+              "formattedValue": "45.24K",
               "percentage": 0.29
             },
             {
               "name": "Equinix Inc",
               "value": 0.0,
+              "formattedValue": "43.30K",
               "percentage": 0.28
             },
             {
               "name": "דנאל",
               "value": 0.0,
+              "formattedValue": "42.69K",
               "percentage": 0.27
             },
             {
               "name": "אזורים",
               "value": 0.0,
+              "formattedValue": "42.51K",
               "percentage": 0.27
             }
           ],
@@ -2045,51 +2429,61 @@
             {
               "name": "Visa Inc",
               "value": 0.0,
+              "formattedValue": "41.22K",
               "percentage": 0.26
             },
             {
               "name": "אל על",
               "value": 0.0,
+              "formattedValue": "41.15K",
               "percentage": 0.26
             },
             {
               "name": "קמטק",
               "value": 0.0,
+              "formattedValue": "40.78K",
               "percentage": 0.26
             },
             {
               "name": "בינלאומי",
               "value": 0.0,
+              "formattedValue": "40.39K",
               "percentage": 0.26
             },
             {
               "name": "Mastercard Inc",
               "value": 0.0,
+              "formattedValue": "39.76K",
               "percentage": 0.26
             },
             {
               "name": "CAMECO CORP",
               "value": 0.0,
+              "formattedValue": "39.44K",
               "percentage": 0.25
             },
             {
               "name": "לוינשטין הנדסה",
               "value": 0.0,
+              "formattedValue": "38.73K",
               "percentage": 0.25
             },
             {
               "name": "אלקטרה צריכה",
               "value": 0.0,
+              "formattedValue": "38.22K",
               "percentage": 0.25
             },
             {
               "name": "אלקטרה נדלן",
               "value": 0.0,
+              "formattedValue": "38.20K",
               "percentage": 0.25
             },
             {
               "name": "סאמיט",
               "value": 0.0,
+              "formattedValue": "37.50K",
               "percentage": 0.24
             }
           ],
@@ -2097,51 +2491,61 @@
             {
               "name": "VERTEX PHARM",
               "value": 0.0,
+              "formattedValue": "37.33K",
               "percentage": 0.24
             },
             {
               "name": "חברה לישראל",
               "value": 0.0,
+              "formattedValue": "36.87K",
               "percentage": 0.24
             },
             {
               "name": "ON HOLDING AG CLASS A",
               "value": 0.0,
+              "formattedValue": "36.64K",
               "percentage": 0.24
             },
             {
               "name": "GILEAD SCIENCES INC",
               "value": 0.0,
+              "formattedValue": "36.54K",
               "percentage": 0.23
             },
             {
               "name": "MORGAN STANLEY",
               "value": 0.0,
+              "formattedValue": "36.17K",
               "percentage": 0.23
             },
             {
               "name": "דניה סיבוס",
               "value": 0.0,
+              "formattedValue": "35.98K",
               "percentage": 0.23
             },
             {
               "name": "Energean PLC",
               "value": 0.0,
+              "formattedValue": "35.95K",
               "percentage": 0.23
             },
             {
               "name": "אאורה",
               "value": 0.0,
+              "formattedValue": "35.87K",
               "percentage": 0.23
             },
             {
               "name": "קרסו נדלן",
               "value": 0.0,
+              "formattedValue": "33.11K",
               "percentage": 0.21
             },
             {
               "name": "גילת",
               "value": 0.0,
+              "formattedValue": "33.09K",
               "percentage": 0.21
             }
           ],
@@ -2149,51 +2553,61 @@
             {
               "name": "ארפורט סיטי",
               "value": 0.0,
+              "formattedValue": "32.68K",
               "percentage": 0.21
             },
             {
               "name": "רימון",
               "value": 0.0,
+              "formattedValue": "32.59K",
               "percentage": 0.21
             },
             {
               "name": "ג'נריישן קפיטל",
               "value": 0.0,
+              "formattedValue": "32.56K",
               "percentage": 0.21
             },
             {
               "name": "אקונרג'י",
               "value": 0.0,
+              "formattedValue": "31.93K",
               "percentage": 0.21
             },
             {
               "name": "תדיראן גרופ",
               "value": 0.0,
+              "formattedValue": "30.53K",
               "percentage": 0.2
             },
             {
               "name": "דוראל אנרגיה",
               "value": 0.0,
+              "formattedValue": "30.42K",
               "percentage": 0.2
             },
             {
               "name": "Enlight Renewable Energy Ltd",
               "value": 0.0,
+              "formattedValue": "30.38K",
               "percentage": 0.2
             },
             {
               "name": "רציו יהש",
               "value": 0.0,
+              "formattedValue": "29.40K",
               "percentage": 0.19
             },
             {
               "name": "טופ גאם",
               "value": 0.0,
+              "formattedValue": "29.37K",
               "percentage": 0.19
             },
             {
               "name": "ADOBE INC",
               "value": 0.0,
+              "formattedValue": "27.80K",
               "percentage": 0.18
             }
           ],
@@ -2201,51 +2615,61 @@
             {
               "name": "ישרוטל",
               "value": 0.0,
+              "formattedValue": "27.12K",
               "percentage": 0.17
             },
             {
               "name": "הבורסה לניע בתא",
               "value": 0.0,
+              "formattedValue": "26.97K",
               "percentage": 0.17
             },
             {
               "name": "אינרום",
               "value": 0.0,
+              "formattedValue": "26.76K",
               "percentage": 0.17
             },
             {
               "name": "מלם תים אחזקות",
               "value": 0.0,
+              "formattedValue": "25.42K",
               "percentage": 0.16
             },
             {
               "name": "אקויטל",
               "value": 0.0,
+              "formattedValue": "24.60K",
               "percentage": 0.16
             },
             {
               "name": "פולירם",
               "value": 0.0,
+              "formattedValue": "24.36K",
               "percentage": 0.16
             },
             {
               "name": "מגדלי תיכון",
               "value": 0.0,
+              "formattedValue": "23.19K",
               "percentage": 0.15
             },
             {
               "name": "שוב אנרגיה",
               "value": 0.0,
+              "formattedValue": "22.95K",
               "percentage": 0.15
             },
             {
               "name": "סקופ",
               "value": 0.0,
+              "formattedValue": "21.91K",
               "percentage": 0.14
             },
             {
               "name": "ג'י סיטי",
               "value": 0.0,
+              "formattedValue": "21.37K",
               "percentage": 0.14
             }
           ],
@@ -2253,51 +2677,61 @@
             {
               "name": "CROCS INC",
               "value": 0.0,
+              "formattedValue": "21.24K",
               "percentage": 0.14
             },
             {
               "name": "פלרם",
               "value": 0.0,
+              "formattedValue": "21.07K",
               "percentage": 0.14
             },
             {
               "name": "מימון ישיר",
               "value": 0.0,
+              "formattedValue": "20.34K",
               "percentage": 0.13
             },
             {
               "name": "ריטיילורס",
               "value": 0.0,
+              "formattedValue": "20.27K",
               "percentage": 0.13
             },
             {
               "name": "ORMAT TECHNOLOGIES INC",
               "value": 0.0,
+              "formattedValue": "19.94K",
               "percentage": 0.13
             },
             {
               "name": "נאייקס",
               "value": 0.0,
+              "formattedValue": "18.72K",
               "percentage": 0.12
             },
             {
               "name": "ריט אזורים ליוי",
               "value": 0.0,
+              "formattedValue": "18.35K",
               "percentage": 0.12
             },
             {
               "name": "PPHE HOTEL GROUP LTD",
               "value": 0.0,
+              "formattedValue": "17.44K",
               "percentage": 0.11
             },
             {
               "name": "SIMILARWEB LTD",
               "value": 0.0,
+              "formattedValue": "17.27K",
               "percentage": 0.11
             },
             {
               "name": "אקרו",
               "value": 0.0,
+              "formattedValue": "17.26K",
               "percentage": 0.11
             }
           ],
@@ -2305,51 +2739,61 @@
             {
               "name": "עשות",
               "value": 0.0,
+              "formattedValue": "17.13K",
               "percentage": 0.11
             },
             {
               "name": "ארד",
               "value": 0.0,
+              "formattedValue": "17.13K",
               "percentage": 0.11
             },
             {
               "name": "Mobileye Global Inc",
               "value": 0.0,
+              "formattedValue": "16.87K",
               "percentage": 0.11
             },
             {
               "name": "דלתא גליל",
               "value": 0.0,
+              "formattedValue": "16.73K",
               "percentage": 0.11
             },
             {
               "name": "נובולוג",
               "value": 0.0,
+              "formattedValue": "16.66K",
               "percentage": 0.11
             },
             {
               "name": "פלסאון תעשיות",
               "value": 0.0,
+              "formattedValue": "16.63K",
               "percentage": 0.11
             },
             {
               "name": "GLOBAL E ONLINE LTD",
               "value": 0.0,
+              "formattedValue": "16.57K",
               "percentage": 0.11
             },
             {
               "name": "יוניברסל מוטורס",
               "value": 0.0,
+              "formattedValue": "16.56K",
               "percentage": 0.11
             },
             {
               "name": "אמפא",
               "value": 0.0,
+              "formattedValue": "16.36K",
               "percentage": 0.11
             },
             {
               "name": "איידיאיי ביטוח",
               "value": 0.0,
+              "formattedValue": "16.35K",
               "percentage": 0.11
             }
           ],
@@ -2357,51 +2801,61 @@
             {
               "name": "אשטרום קבוצה",
               "value": 0.0,
+              "formattedValue": "16.25K",
               "percentage": 0.1
             },
             {
               "name": "GRAND CITY PROPERTIES",
               "value": 0.0,
+              "formattedValue": "15.69K",
               "percentage": 0.1
             },
             {
               "name": "טרמינל איקס",
               "value": 0.0,
+              "formattedValue": "15.55K",
               "percentage": 0.1
             },
             {
               "name": "הולמס פלייס",
               "value": 0.0,
+              "formattedValue": "15.37K",
               "percentage": 0.1
             },
             {
               "name": "מכפל טכנולוגיות",
               "value": 0.0,
+              "formattedValue": "14.98K",
               "percentage": 0.1
             },
             {
               "name": "דלתא מותגים",
               "value": 0.0,
+              "formattedValue": "14.88K",
               "percentage": 0.1
             },
             {
               "name": "סופווייב",
               "value": 0.0,
+              "formattedValue": "14.84K",
               "percentage": 0.1
             },
             {
               "name": "פורמולה מערכות",
               "value": 0.0,
+              "formattedValue": "14.75K",
               "percentage": 0.09
             },
             {
               "name": "Stratasys Ltd",
               "value": 0.0,
+              "formattedValue": "14.27K",
               "percentage": 0.09
             },
             {
               "name": "איביאי בית השק",
               "value": 0.0,
+              "formattedValue": "14.24K",
               "percentage": 0.09
             }
           ],
@@ -2409,51 +2863,61 @@
             {
               "name": "ארית תעשיות",
               "value": 0.0,
+              "formattedValue": "14.08K",
               "percentage": 0.09
             },
             {
               "name": "Palo Alto Networks Inc",
               "value": 0.0,
+              "formattedValue": "13.39K",
               "percentage": 0.09
             },
             {
               "name": "אפקון החזקות",
               "value": 0.0,
+              "formattedValue": "13.35K",
               "percentage": 0.09
             },
             {
               "name": "קבוצת אקרשטיין",
               "value": 0.0,
+              "formattedValue": "13.27K",
               "percentage": 0.09
             },
             {
               "name": "קרור",
               "value": 0.0,
+              "formattedValue": "13.11K",
               "percentage": 0.08
             },
             {
               "name": "רמי לוי",
               "value": 0.0,
+              "formattedValue": "13.10K",
               "percentage": 0.08
             },
             {
               "name": "קיסטון אינפרא",
               "value": 0.0,
+              "formattedValue": "13.02K",
               "percentage": 0.08
             },
             {
               "name": "קרדן נדלן",
               "value": 0.0,
+              "formattedValue": "12.77K",
               "percentage": 0.08
             },
             {
               "name": "בזן",
               "value": 0.0,
+              "formattedValue": "12.44K",
               "percentage": 0.08
             },
             {
               "name": "אר פי אופטיקל",
               "value": 0.0,
+              "formattedValue": "12.09K",
               "percentage": 0.08
             }
           ],
@@ -2461,51 +2925,61 @@
             {
               "name": "פרשקובסקי",
               "value": 0.0,
+              "formattedValue": "12.08K",
               "percentage": 0.08
             },
             {
               "name": "ג'י וואן",
               "value": 0.0,
+              "formattedValue": "11.99K",
               "percentage": 0.08
             },
             {
               "name": "ארגו פרופרטיז",
               "value": 0.0,
+              "formattedValue": "11.98K",
               "percentage": 0.08
             },
             {
               "name": "Wix.com Ltd",
               "value": 0.0,
+              "formattedValue": "11.74K",
               "percentage": 0.08
             },
             {
               "name": "CELLEBRITE DI LTD",
               "value": 0.0,
+              "formattedValue": "11.63K",
               "percentage": 0.07
             },
             {
               "name": "ישראכרט",
               "value": 0.0,
+              "formattedValue": "11.48K",
               "percentage": 0.07
             },
             {
               "name": "Oddity Tech Ltd",
               "value": 0.0,
+              "formattedValue": "10.46K",
               "percentage": 0.07
             },
             {
               "name": "VARONIS SYSTEMS",
               "value": 0.0,
+              "formattedValue": "10.31K",
               "percentage": 0.07
             },
             {
               "name": "בזא",
               "value": 0.0,
+              "formattedValue": "9.95K",
               "percentage": 0.06
             },
             {
               "name": "איילון",
               "value": 0.0,
+              "formattedValue": "9.86K",
               "percentage": 0.06
             }
           ],
@@ -2513,51 +2987,61 @@
             {
               "name": "Elbit Systems Ltd",
               "value": 0.0,
+              "formattedValue": "9.78K",
               "percentage": 0.06
             },
             {
               "name": "מניף",
               "value": 0.0,
+              "formattedValue": "9.67K",
               "percentage": 0.06
             },
             {
               "name": "זנלכל",
               "value": 0.0,
+              "formattedValue": "9.29K",
               "percentage": 0.06
             },
             {
               "name": "UroGen Pharma Ltd",
               "value": 0.0,
+              "formattedValue": "9.19K",
               "percentage": 0.06
             },
             {
               "name": "משק אנרגיה",
               "value": 0.0,
+              "formattedValue": "9.17K",
               "percentage": 0.06
             },
             {
               "name": "MONDAY.COM LTD",
               "value": 0.0,
+              "formattedValue": "9.15K",
               "percentage": 0.06
             },
             {
               "name": "אדגר",
               "value": 0.0,
+              "formattedValue": "8.91K",
               "percentage": 0.06
             },
             {
               "name": "INNOVIZ TECHNOLOGIES LTD",
               "value": 0.0,
+              "formattedValue": "8.91K",
               "percentage": 0.06
             },
             {
               "name": "Taboola.com Ltd",
               "value": 0.0,
+              "formattedValue": "8.87K",
               "percentage": 0.06
             },
             {
               "name": "SENTINELONE INC  CLASS A",
               "value": 0.0,
+              "formattedValue": "8.77K",
               "percentage": 0.06
             }
           ],
@@ -2565,51 +3049,61 @@
             {
               "name": "Perion Network Ltd",
               "value": 0.0,
+              "formattedValue": "8.68K",
               "percentage": 0.06
             },
             {
               "name": "דוניץ",
               "value": 0.0,
+              "formattedValue": "8.64K",
               "percentage": 0.06
             },
             {
               "name": "NAYAX LTD",
               "value": 0.0,
+              "formattedValue": "8.54K",
               "percentage": 0.05
             },
             {
               "name": "GILAT SATELLITE NETWORKS LTD",
               "value": 0.0,
+              "formattedValue": "8.49K",
               "percentage": 0.05
             },
             {
               "name": "אוריין",
               "value": 0.0,
+              "formattedValue": "8.30K",
               "percentage": 0.05
             },
             {
               "name": "מנדלסוןתשת",
               "value": 0.0,
+              "formattedValue": "7.77K",
               "percentage": 0.05
             },
             {
               "name": "JFrog Ltd",
               "value": 0.0,
+              "formattedValue": "7.75K",
               "percentage": 0.05
             },
             {
               "name": "איסתא",
               "value": 0.0,
+              "formattedValue": "7.59K",
               "percentage": 0.05
             },
             {
               "name": "ורידיס",
               "value": 0.0,
+              "formattedValue": "7.47K",
               "percentage": 0.05
             },
             {
               "name": "הכשרת הישוב",
               "value": 0.0,
+              "formattedValue": "7.20K",
               "percentage": 0.05
             }
           ],
@@ -2617,51 +3111,61 @@
             {
               "name": "בי קומיונקיישנס",
               "value": 0.0,
+              "formattedValue": "7.12K",
               "percentage": 0.05
             },
             {
               "name": "אלקטרה פאוור",
               "value": 0.0,
+              "formattedValue": "6.75K",
               "percentage": 0.04
             },
             {
               "name": "אמיליה פיתוח",
               "value": 0.0,
+              "formattedValue": "6.59K",
               "percentage": 0.04
             },
             {
               "name": "בכורי שדה",
               "value": 0.0,
+              "formattedValue": "6.28K",
               "percentage": 0.04
             },
             {
               "name": "תומר אנרגיה",
               "value": 0.0,
+              "formattedValue": "6.22K",
               "percentage": 0.04
             },
             {
               "name": "אבגול",
               "value": 0.0,
+              "formattedValue": "6.21K",
               "percentage": 0.04
             },
             {
               "name": "TAT TECHNOLOGIES LTD",
               "value": 0.0,
+              "formattedValue": "5.30K",
               "percentage": 0.03
             },
             {
               "name": "גולן תעשיות",
               "value": 0.0,
+              "formattedValue": "5.19K",
               "percentage": 0.03
             },
             {
               "name": "אלקו",
               "value": 0.0,
+              "formattedValue": "4.98K",
               "percentage": 0.03
             },
             {
               "name": "רם און",
               "value": 0.0,
+              "formattedValue": "4.93K",
               "percentage": 0.03
             }
           ],
@@ -2669,51 +3173,61 @@
             {
               "name": "טראלייט",
               "value": 0.0,
+              "formattedValue": "4.91K",
               "percentage": 0.03
             },
             {
               "name": "קליל",
               "value": 0.0,
+              "formattedValue": "4.70K",
               "percentage": 0.03
             },
             {
               "name": "נכסים ובנין",
               "value": 0.0,
+              "formattedValue": "4.53K",
               "percentage": 0.03
             },
             {
               "name": "רימוני",
               "value": 0.0,
+              "formattedValue": "4.52K",
               "percentage": 0.03
             },
             {
               "name": "תאת טכנו",
               "value": 0.0,
+              "formattedValue": "4.39K",
               "percentage": 0.03
             },
             {
               "name": "CEVA INC",
               "value": 0.0,
+              "formattedValue": "4.35K",
               "percentage": 0.03
             },
             {
               "name": "אוברסיז",
               "value": 0.0,
+              "formattedValue": "3.50K",
               "percentage": 0.02
             },
             {
               "name": "פריון נטוורק",
               "value": 0.0,
+              "formattedValue": "3.17K",
               "percentage": 0.02
             },
             {
               "name": "לודן",
               "value": 0.0,
+              "formattedValue": "3.00K",
               "percentage": 0.02
             },
             {
               "name": "קמהדע",
               "value": 0.0,
+              "formattedValue": "2.76K",
               "percentage": 0.02
             }
           ],
@@ -2721,51 +3235,61 @@
             {
               "name": "מיטרוניקס",
               "value": 0.0,
+              "formattedValue": "2.75K",
               "percentage": 0.02
             },
             {
               "name": "רבל",
               "value": 0.0,
+              "formattedValue": "2.74K",
               "percentage": 0.02
             },
             {
               "name": "מהדרין",
               "value": 0.0,
+              "formattedValue": "2.67K",
               "percentage": 0.02
             },
             {
               "name": "גניגר",
               "value": 0.0,
+              "formattedValue": "2.51K",
               "percentage": 0.02
             },
             {
               "name": "אמנת",
               "value": 0.0,
+              "formattedValue": "2.38K",
               "percentage": 0.02
             },
             {
               "name": "אייקון גרופ",
               "value": 0.0,
+              "formattedValue": "2.21K",
               "percentage": 0.01
             },
             {
               "name": "Sol Gel Technologies Ltd",
               "value": 0.0,
+              "formattedValue": "2.14K",
               "percentage": 0.01
             },
             {
               "name": "SAPIENS INTERNATIONAL CORP",
               "value": 0.0,
+              "formattedValue": "2.13K",
               "percentage": 0.01
             },
             {
               "name": "אלומיי",
               "value": 0.0,
+              "formattedValue": "2.11K",
               "percentage": 0.01
             },
             {
               "name": "אלספק",
               "value": 0.0,
+              "formattedValue": "1.83K",
               "percentage": 0.01
             }
           ],
@@ -2773,51 +3297,61 @@
             {
               "name": "לודן טק",
               "value": 0.0,
+              "formattedValue": "1.45K",
               "percentage": 0.01
             },
             {
               "name": "רייזור",
               "value": 0.0,
+              "formattedValue": "1.41K",
               "percentage": 0.01
             },
             {
               "name": "פלסאנמור",
               "value": 0.0,
+              "formattedValue": "1.38K",
               "percentage": 0.01
             },
             {
               "name": "אלרון",
               "value": 0.0,
+              "formattedValue": "1.38K",
               "percentage": 0.01
             },
             {
               "name": "פינרג'י",
               "value": 0.0,
+              "formattedValue": "1.37K",
               "percentage": 0.01
             },
             {
               "name": "סאפיינס",
               "value": 0.0,
+              "formattedValue": "1.29K",
               "percentage": 0.01
             },
             {
               "name": "Arbe Robotics Ltd",
               "value": 0.0,
+              "formattedValue": "1.18K",
               "percentage": 0.01
             },
             {
               "name": "המשביר 365",
               "value": 0.0,
+              "formattedValue": "1.02K",
               "percentage": 0.01
             },
             {
               "name": "Airship AI Holdings Inc",
               "value": 0.0,
+              "formattedValue": "0.93K",
               "percentage": 0.01
             },
             {
               "name": "הום ביוגז",
               "value": 0.0,
+              "formattedValue": "0.62K",
               "percentage": 0.0
             }
           ],
@@ -2825,51 +3359,61 @@
             {
               "name": "טי.ג'י.איי",
               "value": 0.0,
+              "formattedValue": "0.51K",
               "percentage": 0.0
             },
             {
               "name": "או.אר.טי",
               "value": 0.0,
+              "formattedValue": "0.50K",
               "percentage": 0.0
             },
             {
               "name": "ג'נסל",
               "value": 0.0,
+              "formattedValue": "0.39K",
               "percentage": 0.0
             },
             {
               "name": "מאסיבית",
               "value": 0.0,
+              "formattedValue": "0.26K",
               "percentage": 0.0
             },
             {
               "name": "אקוואריוס מנוע",
               "value": 0.0,
+              "formattedValue": "0.18K",
               "percentage": 0.0
             },
             {
               "name": "סיפיה וויז'ן",
               "value": 0.0,
+              "formattedValue": "0.17K",
               "percentage": 0.0
             },
             {
               "name": "א.א.א.מ.א ש",
               "value": 0.0,
+              "formattedValue": "0.03K",
               "percentage": 0.0
             },
             {
               "name": "Brenmiller Energy Ltd",
               "value": 0.0,
+              "formattedValue": "0.02K",
               "percentage": 0.0
             },
             {
               "name": "הייקון מערכות ש",
               "value": 0.0,
+              "formattedValue": "0.01K",
               "percentage": 0.0
             },
             {
               "name": "קרדן אן.וי ש",
               "value": 0.0,
+              "formattedValue": "0.01K",
               "percentage": 0.0
             }
           ],
@@ -2877,6 +3421,7 @@
             {
               "name": "פלאזה סנטר  ס",
               "value": 0.0,
+              "formattedValue": "0.01K",
               "percentage": 0.0
             }
           ]
@@ -2887,6 +3432,7 @@
       {
         "subclass": "Non-Tradable",
         "value": 0.0,
+        "formattedValue": "3.09K",
         "percentageOfClass": 22.18,
         "itemCount": 7,
         "totalPages": 1,
@@ -2895,36 +3441,43 @@
             {
               "name": "אלקטרה אופציה לס",
               "value": 0.0,
+              "formattedValue": "1.44K",
               "percentage": 46.6
             },
             {
               "name": "איילון אופ ל.ס",
               "value": 0.0,
+              "formattedValue": "0.63K",
               "percentage": 20.41
             },
             {
               "name": "דמרי אופציה לס",
               "value": 0.0,
+              "formattedValue": "0.55K",
               "percentage": 17.66
             },
             {
               "name": "קרסו אופ לס",
               "value": 0.0,
+              "formattedValue": "0.18K",
               "percentage": 5.69
             },
             {
               "name": "דוניץ אפ לא סחיר",
               "value": 0.0,
+              "formattedValue": "0.13K",
               "percentage": 4.17
             },
             {
               "name": "ישראל קנדה אופ ל.ס",
               "value": 0.0,
+              "formattedValue": "0.12K",
               "percentage": 3.95
             },
             {
               "name": "אקרו אופציה לס",
               "value": 0.0,
+              "formattedValue": "0.05K",
               "percentage": 1.52
             }
           ]
@@ -2933,6 +3486,7 @@
       {
         "subclass": "Tradable",
         "value": 0.0,
+        "formattedValue": "10.85K",
         "percentageOfClass": 77.82,
         "itemCount": 9,
         "totalPages": 1,
@@ -2941,46 +3495,55 @@
             {
               "name": "אפי נכס אופ 3",
               "value": 0.0,
+              "formattedValue": "2.87K",
               "percentage": 26.49
             },
             {
               "name": "ביג אפ 7",
               "value": 0.0,
+              "formattedValue": "2.69K",
               "percentage": 24.78
             },
             {
               "name": "אלוני חץ אפ 16",
               "value": 0.0,
+              "formattedValue": "1.97K",
               "percentage": 18.11
             },
             {
               "name": "מניבים ריט אפ 4",
               "value": 0.0,
+              "formattedValue": "1.17K",
               "percentage": 10.8
             },
             {
               "name": "נאוויטס פט אפ 6",
               "value": 0.0,
+              "formattedValue": "0.65K",
               "percentage": 6.0
             },
             {
               "name": "AISPW",
               "value": 0.0,
+              "formattedValue": "0.57K",
               "percentage": 5.27
             },
             {
               "name": "אמות אפ 12",
               "value": 0.0,
+              "formattedValue": "0.46K",
               "percentage": 4.19
             },
             {
               "name": "ווישור אפ 1",
               "value": 0.0,
+              "formattedValue": "0.38K",
               "percentage": 3.46
             },
             {
               "name": "אלומיי אפ 2",
               "value": 0.0,
+              "formattedValue": "0.10K",
               "percentage": 0.88
             }
           ]
@@ -2991,6 +3554,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.7051,
+        "formattedValue": "705.13M",
         "percentageOfClass": 77.36,
         "itemCount": 12,
         "totalPages": 2,
@@ -2999,51 +3563,61 @@
             {
               "name": "ממשל צמודה 0545",
               "value": 0.3132,
+              "formattedValue": "313.19M",
               "percentage": 44.42
             },
             {
               "name": "ממשל צמודה 0841",
               "value": 0.1515,
+              "formattedValue": "151.48M",
               "percentage": 21.48
             },
             {
               "name": "ממשל צמודה 1151",
               "value": 0.1401,
+              "formattedValue": "140.07M",
               "percentage": 19.86
             },
             {
               "name": "ממשל צמודה 1131",
               "value": 0.0367,
+              "formattedValue": "36.71M",
               "percentage": 5.21
             },
             {
               "name": "ממשל צמודה 0536",
               "value": 0.0163,
+              "formattedValue": "16.32M",
               "percentage": 2.32
             },
             {
               "name": "ממשל צמודה 1028",
               "value": 0.0161,
+              "formattedValue": "16.14M",
               "percentage": 2.29
             },
             {
               "name": "ממשל צמודה 1033",
               "value": 0.0132,
+              "formattedValue": "13.25M",
               "percentage": 1.88
             },
             {
               "name": "ממשל צמודה 0529",
               "value": 0.0111,
+              "formattedValue": "11.08M",
               "percentage": 1.57
             },
             {
               "name": "ממשל צמודה 0527",
               "value": 0.0037,
+              "formattedValue": "3.71M",
               "percentage": 0.53
             },
             {
               "name": "ממשל צמודה 0726",
               "value": 0.0027,
+              "formattedValue": "2.73M",
               "percentage": 0.39
             }
           ],
@@ -3051,11 +3625,13 @@
             {
               "name": "ממשל צמודה 0431",
               "value": 0.0003,
+              "formattedValue": "263.46K",
               "percentage": 0.04
             },
             {
               "name": "ממשל צמודה 1025",
               "value": 0.0002,
+              "formattedValue": "177.93K",
               "percentage": 0.03
             }
           ]
@@ -3064,6 +3640,7 @@
       {
         "subclass": "Corporate Bonds",
         "value": 0.201,
+        "formattedValue": "200.97M",
         "percentageOfClass": 22.05,
         "itemCount": 221,
         "totalPages": 23,
@@ -3072,51 +3649,61 @@
             {
               "name": "עזריאלי אגח ט",
               "value": 0.0057,
+              "formattedValue": "5.69M",
               "percentage": 2.83
             },
             {
               "name": "עזריאלי אגח ח",
               "value": 0.0056,
+              "formattedValue": "5.64M",
               "percentage": 2.81
             },
             {
               "name": "מבנה אגח כה",
               "value": 0.005,
+              "formattedValue": "5.02M",
               "percentage": 2.5
             },
             {
               "name": "עזריאלי אגח ו",
               "value": 0.0047,
+              "formattedValue": "4.75M",
               "percentage": 2.36
             },
             {
               "name": "מקורות אגח 11",
               "value": 0.0037,
+              "formattedValue": "3.75M",
               "percentage": 1.86
             },
             {
               "name": "פועלים הת נדח י",
               "value": 0.0034,
+              "formattedValue": "3.37M",
               "percentage": 1.68
             },
             {
               "name": "דיסקונט מנ נד י",
               "value": 0.0033,
+              "formattedValue": "3.32M",
               "percentage": 1.65
             },
             {
               "name": "מז טפ הנפ הת 71",
               "value": 0.0032,
+              "formattedValue": "3.21M",
               "percentage": 1.6
             },
             {
               "name": "דיסקנט מנ נד יא",
               "value": 0.0031,
+              "formattedValue": "3.14M",
               "percentage": 1.56
             },
             {
               "name": "מז טפ הנפ הת 69",
               "value": 0.0029,
+              "formattedValue": "2.89M",
               "percentage": 1.44
             }
           ],
@@ -3124,51 +3711,61 @@
             {
               "name": "לאומי התח נד406",
               "value": 0.0028,
+              "formattedValue": "2.79M",
               "percentage": 1.39
             },
             {
               "name": "רבוע נדלן אגח ט",
               "value": 0.0028,
+              "formattedValue": "2.78M",
               "percentage": 1.38
             },
             {
               "name": "חשמל אגח 31",
               "value": 0.0026,
+              "formattedValue": "2.61M",
               "percentage": 1.3
             },
             {
               "name": "מליסרון אגח יז",
               "value": 0.0026,
+              "formattedValue": "2.60M",
               "percentage": 1.3
             },
             {
               "name": "חשמל אגח 35",
               "value": 0.0025,
+              "formattedValue": "2.52M",
               "percentage": 1.26
             },
             {
               "name": "פועלים הת נד יג",
               "value": 0.0025,
+              "formattedValue": "2.46M",
               "percentage": 1.22
             },
             {
               "name": "בינל הנפ התח כו",
               "value": 0.0024,
+              "formattedValue": "2.44M",
               "percentage": 1.21
             },
             {
               "name": "עזריאלי אגח ז",
               "value": 0.0024,
+              "formattedValue": "2.43M",
               "percentage": 1.21
             },
             {
               "name": "דיסקונט מנ נד ט",
               "value": 0.0024,
+              "formattedValue": "2.35M",
               "percentage": 1.17
             },
             {
               "name": "ארפורט אגח ט",
               "value": 0.0023,
+              "formattedValue": "2.31M",
               "percentage": 1.15
             }
           ],
@@ -3176,51 +3773,61 @@
             {
               "name": "מימון ישיר אגחה",
               "value": 0.0023,
+              "formattedValue": "2.29M",
               "percentage": 1.14
             },
             {
               "name": "מליסרון אגח כא",
               "value": 0.0022,
+              "formattedValue": "2.17M",
               "percentage": 1.08
             },
             {
               "name": "עזריאלי אגח ד",
               "value": 0.0021,
+              "formattedValue": "2.11M",
               "percentage": 1.05
             },
             {
               "name": "מליסרון אגח טז",
               "value": 0.0021,
+              "formattedValue": "2.09M",
               "percentage": 1.04
             },
             {
               "name": "פועלים אגח 102",
               "value": 0.002,
+              "formattedValue": "2.04M",
               "percentage": 1.02
             },
             {
               "name": "גב ים אגח י",
               "value": 0.002,
+              "formattedValue": "2.03M",
               "percentage": 1.01
             },
             {
               "name": "בינל הנפ התח כז",
               "value": 0.002,
+              "formattedValue": "2.03M",
               "percentage": 1.01
             },
             {
               "name": "אמות אגח ח",
               "value": 0.002,
+              "formattedValue": "2.01M",
               "percentage": 1.0
             },
             {
               "name": "פועלים הת נד יב",
               "value": 0.0019,
+              "formattedValue": "1.92M",
               "percentage": 0.96
             },
             {
               "name": "מגה אור אגח ט",
               "value": 0.0019,
+              "formattedValue": "1.87M",
               "percentage": 0.93
             }
           ],
@@ -3228,51 +3835,61 @@
             {
               "name": "פועלים הת נד טו",
               "value": 0.0019,
+              "formattedValue": "1.86M",
               "percentage": 0.92
             },
             {
               "name": "ריט 1 אגח ז",
               "value": 0.0018,
+              "formattedValue": "1.80M",
               "percentage": 0.9
             },
             {
               "name": "חשמל אגח 33",
               "value": 0.0018,
+              "formattedValue": "1.79M",
               "percentage": 0.89
             },
             {
               "name": "דיסקונט מנ נד ח",
               "value": 0.0017,
+              "formattedValue": "1.71M",
               "percentage": 0.85
             },
             {
               "name": "מז טפ הנפ הת 65",
               "value": 0.0017,
+              "formattedValue": "1.71M",
               "percentage": 0.85
             },
             {
               "name": "רבוע נדלן אגח ו",
               "value": 0.0017,
+              "formattedValue": "1.69M",
               "percentage": 0.84
             },
             {
               "name": "אמפא אגח א",
               "value": 0.0016,
+              "formattedValue": "1.64M",
               "percentage": 0.81
             },
             {
               "name": "פועלים התח נד ז",
               "value": 0.0016,
+              "formattedValue": "1.63M",
               "percentage": 0.81
             },
             {
               "name": "ביג אגח כ",
               "value": 0.0016,
+              "formattedValue": "1.62M",
               "percentage": 0.81
             },
             {
               "name": "עזריאלי אגח ה",
               "value": 0.0016,
+              "formattedValue": "1.61M",
               "percentage": 0.8
             }
           ],
@@ -3280,51 +3897,61 @@
             {
               "name": "ביג אגח יח",
               "value": 0.0016,
+              "formattedValue": "1.56M",
               "percentage": 0.78
             },
             {
               "name": "חשמל אגח 34",
               "value": 0.0015,
+              "formattedValue": "1.54M",
               "percentage": 0.77
             },
             {
               "name": "אמות אגח ו",
               "value": 0.0015,
+              "formattedValue": "1.53M",
               "percentage": 0.76
             },
             {
               "name": "לאומי התח נד405",
               "value": 0.0015,
+              "formattedValue": "1.51M",
               "percentage": 0.75
             },
             {
               "name": "רבוע נדלן אגח ח",
               "value": 0.0014,
+              "formattedValue": "1.44M",
               "percentage": 0.72
             },
             {
               "name": "ביג אגח כד",
               "value": 0.0014,
+              "formattedValue": "1.44M",
               "percentage": 0.72
             },
             {
               "name": "גב ים אגח ח",
               "value": 0.0014,
+              "formattedValue": "1.41M",
               "percentage": 0.7
             },
             {
               "name": "מליסרון אגח כ",
               "value": 0.0014,
+              "formattedValue": "1.40M",
               "percentage": 0.7
             },
             {
               "name": "דיסקונט מנ נד ו",
               "value": 0.0014,
+              "formattedValue": "1.40M",
               "percentage": 0.7
             },
             {
               "name": "ריט 1 אגח ה",
               "value": 0.0014,
+              "formattedValue": "1.39M",
               "percentage": 0.69
             }
           ],
@@ -3332,51 +3959,61 @@
             {
               "name": "אפי נכסים אגחיד",
               "value": 0.0014,
+              "formattedValue": "1.36M",
               "percentage": 0.68
             },
             {
               "name": "אשטרום קב אגח ד",
               "value": 0.0014,
+              "formattedValue": "1.36M",
               "percentage": 0.67
             },
             {
               "name": "פניקס הון אגחטז",
               "value": 0.0013,
+              "formattedValue": "1.32M",
               "percentage": 0.66
             },
             {
               "name": "אמות אגח ט",
               "value": 0.0013,
+              "formattedValue": "1.31M",
               "percentage": 0.65
             },
             {
               "name": "מז טפ הנפ הת 53",
               "value": 0.0013,
+              "formattedValue": "1.29M",
               "percentage": 0.64
             },
             {
               "name": "מימון ישיר אגחו",
               "value": 0.0013,
+              "formattedValue": "1.29M",
               "percentage": 0.64
             },
             {
               "name": "אלבר אגח יט",
               "value": 0.0013,
+              "formattedValue": "1.29M",
               "percentage": 0.64
             },
             {
               "name": "דיסקונט מנ נד ז",
               "value": 0.0012,
+              "formattedValue": "1.22M",
               "percentage": 0.61
             },
             {
               "name": "ארפורט אגח ה",
               "value": 0.0012,
+              "formattedValue": "1.19M",
               "percentage": 0.59
             },
             {
               "name": "אפי נכסים אגח ח",
               "value": 0.0012,
+              "formattedValue": "1.19M",
               "percentage": 0.59
             }
           ],
@@ -3384,51 +4021,61 @@
             {
               "name": "סלע נדלן אגח ד",
               "value": 0.0012,
+              "formattedValue": "1.18M",
               "percentage": 0.59
             },
             {
               "name": "חשמל אגח 37",
               "value": 0.0012,
+              "formattedValue": "1.17M",
               "percentage": 0.58
             },
             {
               "name": "פועלים התח נד ה",
               "value": 0.0012,
+              "formattedValue": "1.17M",
               "percentage": 0.58
             },
             {
               "name": "ג'י סיטי אגח יג",
               "value": 0.0011,
+              "formattedValue": "1.12M",
               "percentage": 0.56
             },
             {
               "name": "אפי נכסים אגחטז",
               "value": 0.0011,
+              "formattedValue": "1.11M",
               "percentage": 0.55
             },
             {
               "name": "דור אלון אגח ח",
               "value": 0.0011,
+              "formattedValue": "1.09M",
               "percentage": 0.54
             },
             {
               "name": "ישרס אגח יט",
               "value": 0.001,
+              "formattedValue": "1.03M",
               "percentage": 0.51
             },
             {
               "name": "פועלים הת נד יא",
               "value": 0.001,
+              "formattedValue": "1.02M",
               "percentage": 0.51
             },
             {
               "name": "מגוריט אגח ב",
               "value": 0.001,
+              "formattedValue": "1.01M",
               "percentage": 0.5
             },
             {
               "name": "מניבים ריט אגחג",
               "value": 0.001,
+              "formattedValue": "964.24K",
               "percentage": 0.48
             }
           ],
@@ -3436,51 +4083,61 @@
             {
               "name": "כלל הון אגח יא",
               "value": 0.001,
+              "formattedValue": "959.98K",
               "percentage": 0.48
             },
             {
               "name": "ריט 1 אגח ו",
               "value": 0.0009,
+              "formattedValue": "943.37K",
               "percentage": 0.47
             },
             {
               "name": "ג'י סיטי אגח כ",
               "value": 0.0009,
+              "formattedValue": "919.15K",
               "percentage": 0.46
             },
             {
               "name": "ארפורט אגח יב",
               "value": 0.0009,
+              "formattedValue": "918.34K",
               "percentage": 0.46
             },
             {
               "name": "אלבר אגח כ",
               "value": 0.0009,
+              "formattedValue": "866.38K",
               "percentage": 0.43
             },
             {
               "name": "ביג אגח יא",
               "value": 0.0008,
+              "formattedValue": "828.62K",
               "percentage": 0.41
             },
             {
               "name": "חשמל אגח 27",
               "value": 0.0008,
+              "formattedValue": "814.38K",
               "percentage": 0.41
             },
             {
               "name": "אלדן תחבו אגח ח",
               "value": 0.0008,
+              "formattedValue": "812.73K",
               "percentage": 0.4
             },
             {
               "name": "מכלול אגח ב",
               "value": 0.0008,
+              "formattedValue": "808.32K",
               "percentage": 0.4
             },
             {
               "name": "פועלים התח נד ו",
               "value": 0.0008,
+              "formattedValue": "807.74K",
               "percentage": 0.4
             }
           ],
@@ -3488,51 +4145,61 @@
             {
               "name": "ישרס אגח טז",
               "value": 0.0008,
+              "formattedValue": "800.25K",
               "percentage": 0.4
             },
             {
               "name": "מניבים ריט אגחב",
               "value": 0.0008,
+              "formattedValue": "794.19K",
               "percentage": 0.4
             },
             {
               "name": "כלל הון אגח יד",
               "value": 0.0008,
+              "formattedValue": "766.93K",
               "percentage": 0.38
             },
             {
               "name": "רבוע נדלן אגח י",
               "value": 0.0008,
+              "formattedValue": "758.14K",
               "percentage": 0.38
             },
             {
               "name": "מליסרון אגח יט",
               "value": 0.0007,
+              "formattedValue": "743.83K",
               "percentage": 0.37
             },
             {
               "name": "מגוריט אגח ד",
               "value": 0.0007,
+              "formattedValue": "733.92K",
               "percentage": 0.37
             },
             {
               "name": "פז אנרגיה אגח ז",
               "value": 0.0007,
+              "formattedValue": "722.13K",
               "percentage": 0.36
             },
             {
               "name": "מבנה אגח כד",
               "value": 0.0007,
+              "formattedValue": "721.10K",
               "percentage": 0.36
             },
             {
               "name": "דמרי אגח י",
               "value": 0.0007,
+              "formattedValue": "713.89K",
               "percentage": 0.36
             },
             {
               "name": "מליסרון אגח יח",
               "value": 0.0007,
+              "formattedValue": "707.65K",
               "percentage": 0.35
             }
           ],
@@ -3540,51 +4207,61 @@
             {
               "name": "מגה אור אגח יא",
               "value": 0.0007,
+              "formattedValue": "702.23K",
               "percentage": 0.35
             },
             {
               "name": "פניקס הון אגחיז",
               "value": 0.0007,
+              "formattedValue": "701.33K",
               "percentage": 0.35
             },
             {
               "name": "מבנה אגח כו",
               "value": 0.0007,
+              "formattedValue": "696.94K",
               "percentage": 0.35
             },
             {
               "name": "פתאל החז אגח ד",
               "value": 0.0007,
+              "formattedValue": "695.39K",
               "percentage": 0.35
             },
             {
               "name": "סלע נדלן אגח ג",
               "value": 0.0007,
+              "formattedValue": "683.11K",
               "percentage": 0.34
             },
             {
               "name": "מנורה הון התח י",
               "value": 0.0007,
+              "formattedValue": "674.75K",
               "percentage": 0.34
             },
             {
               "name": "הראל הנפ אגח יח",
               "value": 0.0007,
+              "formattedValue": "667.93K",
               "percentage": 0.33
             },
             {
               "name": "גב ים אגח יא",
               "value": 0.0007,
+              "formattedValue": "667.66K",
               "percentage": 0.33
             },
             {
               "name": "ארי נדלן אגח א",
               "value": 0.0007,
+              "formattedValue": "665.14K",
               "percentage": 0.33
             },
             {
               "name": "גב ים אגח ו",
               "value": 0.0007,
+              "formattedValue": "659.71K",
               "percentage": 0.33
             }
           ],
@@ -3592,51 +4269,61 @@
             {
               "name": "כלל הון אגח יב",
               "value": 0.0007,
+              "formattedValue": "656.28K",
               "percentage": 0.33
             },
             {
               "name": "סלקום אגח יב",
               "value": 0.0007,
+              "formattedValue": "654.80K",
               "percentage": 0.33
             },
             {
               "name": "סלקום אגח יג",
               "value": 0.0006,
+              "formattedValue": "644.14K",
               "percentage": 0.32
             },
             {
               "name": "שוב אנרגיה אגחא",
               "value": 0.0006,
+              "formattedValue": "643.19K",
               "percentage": 0.32
             },
             {
               "name": "עמרם אברהם אגחג",
               "value": 0.0006,
+              "formattedValue": "642.77K",
               "percentage": 0.32
             },
             {
               "name": "מליסרון אגח יד",
               "value": 0.0006,
+              "formattedValue": "626.97K",
               "percentage": 0.31
             },
             {
               "name": "אקרו אגח א",
               "value": 0.0006,
+              "formattedValue": "626.92K",
               "percentage": 0.31
             },
             {
               "name": "מניבים ריט אגחד",
               "value": 0.0006,
+              "formattedValue": "623.62K",
               "percentage": 0.31
             },
             {
               "name": "ישרס אגח יח",
               "value": 0.0006,
+              "formattedValue": "617.10K",
               "percentage": 0.31
             },
             {
               "name": "ישרס אגח טו",
               "value": 0.0006,
+              "formattedValue": "612.35K",
               "percentage": 0.3
             }
           ],
@@ -3644,51 +4331,61 @@
             {
               "name": "אלבר אגח כב",
               "value": 0.0006,
+              "formattedValue": "604.81K",
               "percentage": 0.3
             },
             {
               "name": "אפי נכסים אגחטו",
               "value": 0.0006,
+              "formattedValue": "581.14K",
               "percentage": 0.29
             },
             {
               "name": "ביג אגח ט",
               "value": 0.0006,
+              "formattedValue": "577.74K",
               "percentage": 0.29
             },
             {
               "name": "פז אנרגיה אגח ח",
               "value": 0.0006,
+              "formattedValue": "577.44K",
               "percentage": 0.29
             },
             {
               "name": "אלבר אגח כא",
               "value": 0.0006,
+              "formattedValue": "558.52K",
               "percentage": 0.28
             },
             {
               "name": "פתאל החז אגח ג",
               "value": 0.0005,
+              "formattedValue": "528.55K",
               "percentage": 0.26
             },
             {
               "name": "קרסו מוט' אגח ו",
               "value": 0.0005,
+              "formattedValue": "520.54K",
               "percentage": 0.26
             },
             {
               "name": "מגה אור אגח ח",
               "value": 0.0005,
+              "formattedValue": "510.32K",
               "percentage": 0.25
             },
             {
               "name": "שטראוס אגח ו",
               "value": 0.0005,
+              "formattedValue": "509.80K",
               "percentage": 0.25
             },
             {
               "name": "אפי נכסים אגחיג",
               "value": 0.0005,
+              "formattedValue": "504.63K",
               "percentage": 0.25
             }
           ],
@@ -3696,51 +4393,61 @@
             {
               "name": "גב ים אגח ט",
               "value": 0.0005,
+              "formattedValue": "492.73K",
               "percentage": 0.25
             },
             {
               "name": "מגה אור אגח יב",
               "value": 0.0005,
+              "formattedValue": "477.36K",
               "percentage": 0.24
             },
             {
               "name": "קרדן נדלן אגח ה",
               "value": 0.0005,
+              "formattedValue": "472.78K",
               "percentage": 0.24
             },
             {
               "name": "יוניברסל אגח ג",
               "value": 0.0005,
+              "formattedValue": "472.13K",
               "percentage": 0.23
             },
             {
               "name": "אבו פמילי אגח א",
               "value": 0.0005,
+              "formattedValue": "468.60K",
               "percentage": 0.23
             },
             {
               "name": "אלדן תחבו אגח ט",
               "value": 0.0005,
+              "formattedValue": "468.08K",
               "percentage": 0.23
             },
             {
               "name": "גירון אגח ו",
               "value": 0.0005,
+              "formattedValue": "463.97K",
               "percentage": 0.23
             },
             {
               "name": "ישראל קנדה אגחח",
               "value": 0.0005,
+              "formattedValue": "462.57K",
               "percentage": 0.23
             },
             {
               "name": "אלדן תחבו אגח ז",
               "value": 0.0005,
+              "formattedValue": "460.64K",
               "percentage": 0.23
             },
             {
               "name": "קרסו מוט' אגח ד",
               "value": 0.0005,
+              "formattedValue": "452.98K",
               "percentage": 0.23
             }
           ],
@@ -3748,51 +4455,61 @@
             {
               "name": "מגוריט אגח ג",
               "value": 0.0005,
+              "formattedValue": "452.79K",
               "percentage": 0.23
             },
             {
               "name": "הראל הנפ אגח יד",
               "value": 0.0005,
+              "formattedValue": "451.38K",
               "percentage": 0.22
             },
             {
               "name": "ביג אגח יב",
               "value": 0.0004,
+              "formattedValue": "444.78K",
               "percentage": 0.22
             },
             {
               "name": "נכסים בנ אגח יא",
               "value": 0.0004,
+              "formattedValue": "423.59K",
               "percentage": 0.21
             },
             {
               "name": "הכשרת ישוב אג23",
               "value": 0.0004,
+              "formattedValue": "417.08K",
               "percentage": 0.21
             },
             {
               "name": "וילאר אגח י",
               "value": 0.0004,
+              "formattedValue": "407.36K",
               "percentage": 0.2
             },
             {
               "name": "בינל הנפק התחכה",
               "value": 0.0004,
+              "formattedValue": "404.84K",
               "percentage": 0.2
             },
             {
               "name": "קרדן נדלן אגח ו",
               "value": 0.0004,
+              "formattedValue": "397.14K",
               "percentage": 0.2
             },
             {
               "name": "הראל הנפק נד כא",
               "value": 0.0004,
+              "formattedValue": "395.81K",
               "percentage": 0.2
             },
             {
               "name": "אנרג'יקס אג ב",
               "value": 0.0004,
+              "formattedValue": "394.72K",
               "percentage": 0.2
             }
           ],
@@ -3800,51 +4517,61 @@
             {
               "name": "מגוריט אגח ו",
               "value": 0.0004,
+              "formattedValue": "391.12K",
               "percentage": 0.19
             },
             {
               "name": "מנורה הון התח ז",
               "value": 0.0004,
+              "formattedValue": "390.03K",
               "percentage": 0.19
             },
             {
               "name": "שלמה החז אגח יט",
               "value": 0.0004,
+              "formattedValue": "389.39K",
               "percentage": 0.19
             },
             {
               "name": "פועלים אגח 204",
               "value": 0.0004,
+              "formattedValue": "379.70K",
               "percentage": 0.19
             },
             {
               "name": "או פי סי אגח ב",
               "value": 0.0004,
+              "formattedValue": "376.96K",
               "percentage": 0.19
             },
             {
               "name": "שפיר הנדס אגח ג",
               "value": 0.0004,
+              "formattedValue": "376.03K",
               "percentage": 0.19
             },
             {
               "name": "ביג אגח ח",
               "value": 0.0004,
+              "formattedValue": "372.93K",
               "percentage": 0.19
             },
             {
               "name": "גמא אגח ד",
               "value": 0.0004,
+              "formattedValue": "364.13K",
               "percentage": 0.18
             },
             {
               "name": "שלמה החז אגח כ",
               "value": 0.0004,
+              "formattedValue": "361.87K",
               "percentage": 0.18
             },
             {
               "name": "דמרי אגח יא",
               "value": 0.0004,
+              "formattedValue": "359.14K",
               "percentage": 0.18
             }
           ],
@@ -3852,51 +4579,61 @@
             {
               "name": "הראל הנפ אגח טו",
               "value": 0.0003,
+              "formattedValue": "348.59K",
               "percentage": 0.17
             },
             {
               "name": "גירון אגח ח",
               "value": 0.0003,
+              "formattedValue": "344.90K",
               "percentage": 0.17
             },
             {
               "name": "פתאל אירו אגח ד",
               "value": 0.0003,
+              "formattedValue": "343.20K",
               "percentage": 0.17
             },
             {
               "name": "הראל הנפק אגח ט",
               "value": 0.0003,
+              "formattedValue": "335.14K",
               "percentage": 0.17
             },
             {
               "name": "ריט 1 אגח ח",
               "value": 0.0003,
+              "formattedValue": "329.35K",
               "percentage": 0.16
             },
             {
               "name": "בסר הנדסה אגח א",
               "value": 0.0003,
+              "formattedValue": "322.14K",
               "percentage": 0.16
             },
             {
               "name": "אזורים אגח 13",
               "value": 0.0003,
+              "formattedValue": "319.77K",
               "percentage": 0.16
             },
             {
               "name": "מגה אור אגח ז",
               "value": 0.0003,
+              "formattedValue": "302.56K",
               "percentage": 0.15
             },
             {
               "name": "גירון אגח ז",
               "value": 0.0003,
+              "formattedValue": "300.86K",
               "percentage": 0.15
             },
             {
               "name": "לאומי אגח 185",
               "value": 0.0003,
+              "formattedValue": "283.60K",
               "percentage": 0.14
             }
           ],
@@ -3904,51 +4641,61 @@
             {
               "name": "ווישור אגח א",
               "value": 0.0003,
+              "formattedValue": "281.90K",
               "percentage": 0.14
             },
             {
               "name": "גמא אגח ג",
               "value": 0.0003,
+              "formattedValue": "276.96K",
               "percentage": 0.14
             },
             {
               "name": "אלוני חץ אגח יז",
               "value": 0.0003,
+              "formattedValue": "271.49K",
               "percentage": 0.14
             },
             {
               "name": "מגדלי תיכוןאגחז",
               "value": 0.0003,
+              "formattedValue": "260.25K",
               "percentage": 0.13
             },
             {
               "name": "כלל ביטוח אגח א",
               "value": 0.0003,
+              "formattedValue": "259.82K",
               "percentage": 0.13
             },
             {
               "name": "מגה אור אגח ו",
               "value": 0.0003,
+              "formattedValue": "257.81K",
               "percentage": 0.13
             },
             {
               "name": "אזורים אגח 14",
               "value": 0.0003,
+              "formattedValue": "252.81K",
               "percentage": 0.13
             },
             {
               "name": "מגוריט אגח ה",
               "value": 0.0003,
+              "formattedValue": "252.52K",
               "percentage": 0.13
             },
             {
               "name": "אשטרום קב אגח ה",
               "value": 0.0002,
+              "formattedValue": "246.53K",
               "percentage": 0.12
             },
             {
               "name": "נופר אנרג אגח א",
               "value": 0.0002,
+              "formattedValue": "236.19K",
               "percentage": 0.12
             }
           ],
@@ -3956,51 +4703,61 @@
             {
               "name": "אשטרום קב אגח ג",
               "value": 0.0002,
+              "formattedValue": "234.74K",
               "percentage": 0.12
             },
             {
               "name": "ריט אזורים אגחא",
               "value": 0.0002,
+              "formattedValue": "231.23K",
               "percentage": 0.12
             },
             {
               "name": "לאומי אגח 188",
               "value": 0.0002,
+              "formattedValue": "227.50K",
               "percentage": 0.11
             },
             {
               "name": "פתאל אירו אגח ג",
               "value": 0.0002,
+              "formattedValue": "219.79K",
               "percentage": 0.11
             },
             {
               "name": "חשמל אגח 29",
               "value": 0.0002,
+              "formattedValue": "219.73K",
               "percentage": 0.11
             },
             {
               "name": "אמות אגח ד",
               "value": 0.0002,
+              "formattedValue": "216.43K",
               "percentage": 0.11
             },
             {
               "name": "הכשרת ישוב אג24",
               "value": 0.0002,
+              "formattedValue": "206.71K",
               "percentage": 0.1
             },
             {
               "name": "מימון ישיר אגחג",
               "value": 0.0002,
+              "formattedValue": "192.64K",
               "percentage": 0.1
             },
             {
               "name": "נכסים ובנ אגח י",
               "value": 0.0002,
+              "formattedValue": "187.39K",
               "percentage": 0.09
             },
             {
               "name": "בינל הנפק אגחיג",
               "value": 0.0002,
+              "formattedValue": "181.30K",
               "percentage": 0.09
             }
           ],
@@ -4008,51 +4765,61 @@
             {
               "name": "קרסו מוט' אגח ג",
               "value": 0.0002,
+              "formattedValue": "169.11K",
               "percentage": 0.08
             },
             {
               "name": "בזק אגח 14",
               "value": 0.0002,
+              "formattedValue": "167.74K",
               "percentage": 0.08
             },
             {
               "name": "חשמל אגח 36",
               "value": 0.0002,
+              "formattedValue": "167.12K",
               "percentage": 0.08
             },
             {
               "name": "הפניקס אגח 5",
               "value": 0.0002,
+              "formattedValue": "163.30K",
               "percentage": 0.08
             },
             {
               "name": "מבנה אגח כ",
               "value": 0.0002,
+              "formattedValue": "161.81K",
               "percentage": 0.08
             },
             {
               "name": "שפיר הנדס אגח ד",
               "value": 0.0002,
+              "formattedValue": "160.38K",
               "percentage": 0.08
             },
             {
               "name": "מבנה אגח כג",
               "value": 0.0001,
+              "formattedValue": "145.24K",
               "percentage": 0.07
             },
             {
               "name": "שלמה החז אגח יח",
               "value": 0.0001,
+              "formattedValue": "136.27K",
               "percentage": 0.07
             },
             {
               "name": "גב ים אגח יב",
               "value": 0.0001,
+              "formattedValue": "135.66K",
               "percentage": 0.07
             },
             {
               "name": "אלדן תחבו אגח ו",
               "value": 0.0001,
+              "formattedValue": "130.30K",
               "percentage": 0.06
             }
           ],
@@ -4060,51 +4827,61 @@
             {
               "name": "אמות אגח ז",
               "value": 0.0001,
+              "formattedValue": "127.80K",
               "percentage": 0.06
             },
             {
               "name": "מז טפ הנ אגח 63",
               "value": 0.0001,
+              "formattedValue": "124.95K",
               "percentage": 0.06
             },
             {
               "name": "ריט אזורים אג ב",
               "value": 0.0001,
+              "formattedValue": "124.50K",
               "percentage": 0.06
             },
             {
               "name": "ארפורט אגח יא",
               "value": 0.0001,
+              "formattedValue": "124.48K",
               "percentage": 0.06
             },
             {
               "name": "מגה אור אגח י",
               "value": 0.0001,
+              "formattedValue": "123.62K",
               "percentage": 0.06
             },
             {
               "name": "דמרי אגח ט",
               "value": 0.0001,
+              "formattedValue": "111.77K",
               "percentage": 0.06
             },
             {
               "name": "פניקס הון אגחיא",
               "value": 0.0001,
+              "formattedValue": "106.11K",
               "percentage": 0.05
             },
             {
               "name": "בזק אגח 12",
               "value": 0.0001,
+              "formattedValue": "105.09K",
               "percentage": 0.05
             },
             {
               "name": "מבנה אגח יט",
               "value": 0.0001,
+              "formattedValue": "104.58K",
               "percentage": 0.05
             },
             {
               "name": "הפניקס אגח 6",
               "value": 0.0001,
+              "formattedValue": "98.86K",
               "percentage": 0.05
             }
           ],
@@ -4112,51 +4889,61 @@
             {
               "name": "אמות אגח י",
               "value": 0.0001,
+              "formattedValue": "94.06K",
               "percentage": 0.05
             },
             {
               "name": "ג'י סיטי אגח יד",
               "value": 0.0001,
+              "formattedValue": "89.99K",
               "percentage": 0.04
             },
             {
               "name": "שופרסל אגח ו",
               "value": 0.0001,
+              "formattedValue": "83.72K",
               "percentage": 0.04
             },
             {
               "name": "אלבר אגח יז",
               "value": 0.0001,
+              "formattedValue": "82.17K",
               "percentage": 0.04
             },
             {
               "name": "סלקום אגח יא",
               "value": 0.0001,
+              "formattedValue": "81.46K",
               "percentage": 0.04
             },
             {
               "name": "אלביט מע' אגח ג",
               "value": 0.0001,
+              "formattedValue": "75.69K",
               "percentage": 0.04
             },
             {
               "name": "קרסו מוט' אגח א",
               "value": 0.0001,
+              "formattedValue": "69.41K",
               "percentage": 0.03
             },
             {
               "name": "ביג אגח כב",
               "value": 0.0001,
+              "formattedValue": "67.07K",
               "percentage": 0.03
             },
             {
               "name": "או.פי.סי אגח ד",
               "value": 0.0001,
+              "formattedValue": "54.07K",
               "percentage": 0.03
             },
             {
               "name": "וילאר אגח יא",
               "value": 0.0,
+              "formattedValue": "40.99K",
               "percentage": 0.02
             }
           ],
@@ -4164,51 +4951,61 @@
             {
               "name": "מבנה אגח יז",
               "value": 0.0,
+              "formattedValue": "37.84K",
               "percentage": 0.02
             },
             {
               "name": "אלומיי אגח ו",
               "value": 0.0,
+              "formattedValue": "31.26K",
               "percentage": 0.02
             },
             {
               "name": "אקונרג'י אגח ב",
               "value": 0.0,
+              "formattedValue": "28.69K",
               "percentage": 0.01
             },
             {
               "name": "מימון ישיר אגחד",
               "value": 0.0,
+              "formattedValue": "24.62K",
               "percentage": 0.01
             },
             {
               "name": "פרטנר אגח ז",
               "value": 0.0,
+              "formattedValue": "23.94K",
               "percentage": 0.01
             },
             {
               "name": "אלבר אגח יח",
               "value": 0.0,
+              "formattedValue": "15.19K",
               "percentage": 0.01
             },
             {
               "name": "SEDG 2.25 07/01/29",
               "value": 0.0,
+              "formattedValue": "11.96K",
               "percentage": 0.01
             },
             {
               "name": "מנורה הון התח ה",
               "value": 0.0,
+              "formattedValue": "10.63K",
               "percentage": 0.01
             },
             {
               "name": "מז טפ הנ אגח 67",
               "value": 0.0,
+              "formattedValue": "5.89K",
               "percentage": 0.0
             },
             {
               "name": "ביג אגח טו",
               "value": 0.0,
+              "formattedValue": "0.65K",
               "percentage": 0.0
             }
           ],
@@ -4216,6 +5013,7 @@
             {
               "name": "אלון רבוע אגח ט",
               "value": 0.0,
+              "formattedValue": "0.00K",
               "percentage": 0.0
             }
           ]
@@ -4224,6 +5022,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0054,
+        "formattedValue": "5.43M",
         "percentageOfClass": 0.6,
         "itemCount": 8,
         "totalPages": 1,
@@ -4232,41 +5031,49 @@
             {
               "name": "הראל סל תלבונד 60",
               "value": 0.001,
+              "formattedValue": "1.04M",
               "percentage": 19.13
             },
             {
               "name": "הראל סל תלבונד שקלי",
               "value": 0.0008,
+              "formattedValue": "845.84K",
               "percentage": 15.59
             },
             {
               "name": "תכלית סל תלבונד שקלי",
               "value": 0.0008,
+              "formattedValue": "842.88K",
               "percentage": 15.53
             },
             {
               "name": "קסם ETF תלבונד שקלי",
               "value": 0.0007,
+              "formattedValue": "711.59K",
               "percentage": 13.11
             },
             {
               "name": "תכלית סל תלבונד 60",
               "value": 0.0006,
+              "formattedValue": "629.63K",
               "percentage": 11.6
             },
             {
               "name": "איביאי סל תלבונד 60",
               "value": 0.0006,
+              "formattedValue": "572.04K",
               "percentage": 10.54
             },
             {
               "name": "מור סל תל בונד 60",
               "value": 0.0006,
+              "formattedValue": "565.31K",
               "percentage": 10.42
             },
             {
               "name": "קסם ETF תלבונד 20",
               "value": 0.0002,
+              "formattedValue": "221.84K",
               "percentage": 4.09
             }
           ]
@@ -4277,6 +5084,7 @@
       {
         "subclass": "Direct Real Estate",
         "value": 0.0235,
+        "formattedValue": "23.49M",
         "percentageOfClass": 100.0,
         "itemCount": 11,
         "totalPages": 2,
@@ -4285,51 +5093,61 @@
             {
               "name": "נדלן פסגות ירושלים",
               "value": 0.0056,
+              "formattedValue": "5.55M",
               "percentage": 23.63
             },
             {
               "name": "נדלן מקרקעין להשכרה - הייטק פארק -רעננה",
               "value": 0.0037,
+              "formattedValue": "3.67M",
               "percentage": 15.63
             },
             {
               "name": "נדלן מקרקעין להשכרה - מגדל צ'מפיון",
               "value": 0.0032,
+              "formattedValue": "3.17M",
               "percentage": 13.51
             },
             {
               "name": "נדלן טרמינל פארק אור יהודה",
               "value": 0.0022,
+              "formattedValue": "2.16M",
               "percentage": 9.19
             },
             {
               "name": "נדלן בית קודאק פת-עלות",
               "value": 0.0016,
+              "formattedValue": "1.63M",
               "percentage": 6.92
             },
             {
               "name": "נדלן מקרקעין להשכרה - מגדלי הסיבים",
               "value": 0.0016,
+              "formattedValue": "1.57M",
               "percentage": 6.7
             },
             {
               "name": "נדלן טרמינל  פארק אור יהודה בניין B",
               "value": 0.0013,
+              "formattedValue": "1.30M",
               "percentage": 5.52
             },
             {
               "name": "נדלן מגדלי הסיבים פתח תקווה",
               "value": 0.0012,
+              "formattedValue": "1.20M",
               "percentage": 5.09
             },
             {
               "name": "נדלן מקרקעין להשכרה - הייטק פארק -רעננה מזרח",
               "value": 0.0011,
+              "formattedValue": "1.14M",
               "percentage": 4.86
             },
             {
               "name": "נדלן מקרקעין להשכרה - סופר פארם בת ים",
               "value": 0.0011,
+              "formattedValue": "1.11M",
               "percentage": 4.74
             }
           ],
@@ -4337,6 +5155,7 @@
             {
               "name": "נדלן מקרקעין להשכרה - נאות התיכון יפו",
               "value": 0.001,
+              "formattedValue": "990.00K",
               "percentage": 4.21
             }
           ]
@@ -4347,6 +5166,7 @@
       {
         "subclass": "Funds",
         "value": 0.0364,
+        "formattedValue": "36.42M",
         "percentageOfClass": 100.0,
         "itemCount": 224,
         "totalPages": 23,
@@ -4355,51 +5175,61 @@
             {
               "name": "Horsley Bridge XII Ventures",
               "value": 0.0062,
+              "formattedValue": "6.17M",
               "percentage": 16.95
             },
             {
               "name": "Strategic Investors Fund VIII LP",
               "value": 0.0056,
+              "formattedValue": "5.56M",
               "percentage": 15.27
             },
             {
               "name": "Waterton Residential P V XIII",
               "value": 0.0034,
+              "formattedValue": "3.42M",
               "percentage": 9.38
             },
             {
               "name": "Warburg Pincus China LP",
               "value": 0.0022,
+              "formattedValue": "2.23M",
               "percentage": 6.13
             },
             {
               "name": "Orbimed Israel Partners II LP",
               "value": 0.0012,
+              "formattedValue": "1.16M",
               "percentage": 3.2
             },
             {
               "name": "Apollo Natural Resources Partners II LP",
               "value": 0.001,
+              "formattedValue": "1.03M",
               "percentage": 2.84
             },
             {
               "name": "Waterton Residential Property XIII Edge",
               "value": 0.001,
+              "formattedValue": "1.00M",
               "percentage": 2.75
             },
             {
               "name": "Brookfield Capital Partners V",
               "value": 0.0009,
+              "formattedValue": "933.10K",
               "percentage": 2.56
             },
             {
               "name": "חשבון ריט WATERTON EDGE",
               "value": 0.0008,
+              "formattedValue": "828.11K",
               "percentage": 2.27
             },
             {
               "name": "Thoma Bravo Fund XIII",
               "value": 0.0006,
+              "formattedValue": "589.54K",
               "percentage": 1.62
             }
           ],
@@ -4407,51 +5237,61 @@
             {
               "name": "Francisco Partners VI",
               "value": 0.0006,
+              "formattedValue": "578.30K",
               "percentage": 1.59
             },
             {
               "name": "Insight Partners XI",
               "value": 0.0005,
+              "formattedValue": "537.06K",
               "percentage": 1.47
             },
             {
               "name": "Clayton Dubilier & Rice XI L.P",
               "value": 0.0005,
+              "formattedValue": "468.70K",
               "percentage": 1.29
             },
             {
               "name": "Global Infrastructure Partners IV C L.P",
               "value": 0.0004,
+              "formattedValue": "366.12K",
               "percentage": 1.01
             },
             {
               "name": "GIP GEMINI FUND CAYMAN FEEDER II LP",
               "value": 0.0003,
+              "formattedValue": "343.62K",
               "percentage": 0.94
             },
             {
               "name": "Thoma Bravo Fund XIV A",
               "value": 0.0003,
+              "formattedValue": "342.65K",
               "percentage": 0.94
             },
             {
               "name": "Apollo Overseas Partners IX L.P",
               "value": 0.0003,
+              "formattedValue": "336.00K",
               "percentage": 0.92
             },
             {
               "name": "Brookfield Capital Partners Fund VI",
               "value": 0.0003,
+              "formattedValue": "335.64K",
               "percentage": 0.92
             },
             {
               "name": "Clarios Co Investment",
               "value": 0.0003,
+              "formattedValue": "314.33K",
               "percentage": 0.86
             },
             {
               "name": "Court Square IV",
               "value": 0.0003,
+              "formattedValue": "311.46K",
               "percentage": 0.86
             }
           ],
@@ -4459,51 +5299,61 @@
             {
               "name": "Pantheon Global Secondary Fund VI",
               "value": 0.0003,
+              "formattedValue": "310.65K",
               "percentage": 0.85
             },
             {
               "name": "Pantheon Global Co Invest IV",
               "value": 0.0003,
+              "formattedValue": "296.18K",
               "percentage": 0.81
             },
             {
               "name": "Rhone Offshore Partners V LP",
               "value": 0.0003,
+              "formattedValue": "288.76K",
               "percentage": 0.79
             },
             {
               "name": "Copenhagen Infrastructure Partners IV F2",
               "value": 0.0003,
+              "formattedValue": "265.58K",
               "percentage": 0.73
             },
             {
               "name": "Pantheon Global Secondary VII",
               "value": 0.0002,
+              "formattedValue": "248.37K",
               "percentage": 0.68
             },
             {
               "name": "IFM GLOBAL INFRASTRUCTURE C",
               "value": 0.0002,
+              "formattedValue": "226.09K",
               "percentage": 0.62
             },
             {
               "name": "KKR CAVALRY CO INVEST BLOCKER PARENT",
               "value": 0.0002,
+              "formattedValue": "205.86K",
               "percentage": 0.57
             },
             {
               "name": "Copenhagen Infrastructure III F2",
               "value": 0.0002,
+              "formattedValue": "203.05K",
               "percentage": 0.56
             },
             {
               "name": "Accelmed Partners II",
               "value": 0.0002,
+              "formattedValue": "202.46K",
               "percentage": 0.56
             },
             {
               "name": "FF6 Cell L.P",
               "value": 0.0002,
+              "formattedValue": "187.05K",
               "percentage": 0.51
             }
           ],
@@ -4511,51 +5361,61 @@
             {
               "name": "JP Morgan IIF",
               "value": 0.0002,
+              "formattedValue": "184.51K",
               "percentage": 0.51
             },
             {
               "name": "Idea Bond LP",
               "value": 0.0002,
+              "formattedValue": "183.18K",
               "percentage": 0.5
             },
             {
               "name": "BCP V DEXKO CO INVEST LP",
               "value": 0.0002,
+              "formattedValue": "178.27K",
               "percentage": 0.49
             },
             {
               "name": "CDR XII",
               "value": 0.0002,
+              "formattedValue": "172.82K",
               "percentage": 0.47
             },
             {
               "name": "MA Movilim Renewable Energies L.P",
               "value": 0.0002,
+              "formattedValue": "168.20K",
               "percentage": 0.46
             },
             {
               "name": "DB Sunshine Holdings",
               "value": 0.0002,
+              "formattedValue": "162.77K",
               "percentage": 0.45
             },
             {
               "name": "KKR THOR CO INVEST LP",
               "value": 0.0002,
+              "formattedValue": "159.54K",
               "percentage": 0.44
             },
             {
               "name": "Meridiam Infrastructure Europe III SLP",
               "value": 0.0001,
+              "formattedValue": "148.81K",
               "percentage": 0.41
             },
             {
               "name": "Francisco Partners VII",
               "value": 0.0001,
+              "formattedValue": "134.78K",
               "percentage": 0.37
             },
             {
               "name": "HarbourVest Partners Co-Investment Fund IV L.P.",
               "value": 0.0001,
+              "formattedValue": "133.64K",
               "percentage": 0.37
             }
           ],
@@ -4563,51 +5423,61 @@
             {
               "name": "Thoma Bravo Fund XII A  L P",
               "value": 0.0001,
+              "formattedValue": "133.13K",
               "percentage": 0.37
             },
             {
               "name": "EIP Renewables invest SCS",
               "value": 0.0001,
+              "formattedValue": "129.60K",
               "percentage": 0.36
             },
             {
               "name": "Fitzgerald Fund US LP",
               "value": 0.0001,
+              "formattedValue": "126.39K",
               "percentage": 0.35
             },
             {
               "name": "Fortissimo Capital Fund V L.P.",
               "value": 0.0001,
+              "formattedValue": "121.00K",
               "percentage": 0.33
             },
             {
               "name": "Noy 4 Infrastructure and energy",
               "value": 0.0001,
+              "formattedValue": "120.80K",
               "percentage": 0.33
             },
             {
               "name": "Astorg VIII",
               "value": 0.0001,
+              "formattedValue": "120.38K",
               "percentage": 0.33
             },
             {
               "name": "Insight Venture Partners X, L.P.",
               "value": 0.0001,
+              "formattedValue": "119.09K",
               "percentage": 0.33
             },
             {
               "name": "Concorde Co Invest L.P.",
               "value": 0.0001,
+              "formattedValue": "117.99K",
               "percentage": 0.32
             },
             {
               "name": "TENE GROWTH CAPITAL IV",
               "value": 0.0001,
+              "formattedValue": "116.85K",
               "percentage": 0.32
             },
             {
               "name": "FIMI ISRAEL OPPORTUNITY 6",
               "value": 0.0001,
+              "formattedValue": "115.03K",
               "percentage": 0.32
             }
           ],
@@ -4615,51 +5485,61 @@
             {
               "name": "Dover Street IX L.P.",
               "value": 0.0001,
+              "formattedValue": "112.97K",
               "percentage": 0.31
             },
             {
               "name": "Boom Co invest B LP",
               "value": 0.0001,
+              "formattedValue": "110.12K",
               "percentage": 0.3
             },
             {
               "name": "Harburvest   Dover Street XI",
               "value": 0.0001,
+              "formattedValue": "106.30K",
               "percentage": 0.29
             },
             {
               "name": "Kelso Investment Associates X, L.P.",
               "value": 0.0001,
+              "formattedValue": "104.39K",
               "percentage": 0.29
             },
             {
               "name": "BVP Forge Institutional A L.P",
               "value": 0.0001,
+              "formattedValue": "96.14K",
               "percentage": 0.26
             },
             {
               "name": "Thor Investment Trust 1",
               "value": 0.0001,
+              "formattedValue": "95.89K",
               "percentage": 0.26
             },
             {
               "name": "Proofpoint Co Invest Fund L.P",
               "value": 0.0001,
+              "formattedValue": "91.64K",
               "percentage": 0.25
             },
             {
               "name": "Greenfield Partners II L.P",
               "value": 0.0001,
+              "formattedValue": "91.37K",
               "percentage": 0.25
             },
             {
               "name": "Zeev Opportunity Fund I",
               "value": 0.0001,
+              "formattedValue": "82.21K",
               "percentage": 0.23
             },
             {
               "name": "CVC Capital Partners IX (A) L.P",
               "value": 0.0001,
+              "formattedValue": "82.12K",
               "percentage": 0.23
             }
           ],
@@ -4667,51 +5547,61 @@
             {
               "name": "DIF VII",
               "value": 0.0001,
+              "formattedValue": "80.72K",
               "percentage": 0.22
             },
             {
               "name": "Kedma Capital III",
               "value": 0.0001,
+              "formattedValue": "80.22K",
               "percentage": 0.22
             },
             {
               "name": "FIMI Israel Opportunity VII",
               "value": 0.0001,
+              "formattedValue": "79.01K",
               "percentage": 0.22
             },
             {
               "name": "GIP IV Gutenberg Co Invest SCsp",
               "value": 0.0001,
+              "formattedValue": "78.54K",
               "percentage": 0.22
             },
             {
               "name": "Bessemer Venture Partners XII L.P",
               "value": 0.0001,
+              "formattedValue": "75.66K",
               "percentage": 0.21
             },
             {
               "name": "ICONIQ Strategic Partners VII Co Invest",
               "value": 0.0001,
+              "formattedValue": "73.36K",
               "percentage": 0.2
             },
             {
               "name": "Manor Evergreen Investments Fund L.P",
               "value": 0.0001,
+              "formattedValue": "72.03K",
               "percentage": 0.2
             },
             {
               "name": "MIP VI Electing Partners 1 L.P",
               "value": 0.0001,
+              "formattedValue": "71.35K",
               "percentage": 0.2
             },
             {
               "name": "H.I.G. Advantage Buyout Fund, L.P.",
               "value": 0.0001,
+              "formattedValue": "70.26K",
               "percentage": 0.19
             },
             {
               "name": "BCP V Brand Co Invest LP",
               "value": 0.0001,
+              "formattedValue": "68.74K",
               "percentage": 0.19
             }
           ],
@@ -4719,51 +5609,61 @@
             {
               "name": "Mirasol Co Invest Fund L.P",
               "value": 0.0001,
+              "formattedValue": "67.36K",
               "percentage": 0.18
             },
             {
               "name": "GIP Polaris Feeder Fund L.P",
               "value": 0.0001,
+              "formattedValue": "65.29K",
               "percentage": 0.18
             },
             {
               "name": "GIP OAK CO INVEST L.P",
               "value": 0.0001,
+              "formattedValue": "62.77K",
               "percentage": 0.17
             },
             {
               "name": "Investindustrial VII L.P.",
               "value": 0.0001,
+              "formattedValue": "62.01K",
               "percentage": 0.17
             },
             {
               "name": "Thoma Bravo Discover Fund II, L.P.",
               "value": 0.0001,
+              "formattedValue": "61.55K",
               "percentage": 0.17
             },
             {
               "name": "Arkin Bio Ventures II L.P",
               "value": 0.0001,
+              "formattedValue": "60.46K",
               "percentage": 0.17
             },
             {
               "name": "Court Sqaure Riviera Co Invest",
               "value": 0.0001,
+              "formattedValue": "58.40K",
               "percentage": 0.16
             },
             {
               "name": "S.H. SKY 3 L.P",
               "value": 0.0001,
+              "formattedValue": "58.00K",
               "percentage": 0.16
             },
             {
               "name": "Project Stream Co Invest Fund L.P",
               "value": 0.0001,
+              "formattedValue": "57.02K",
               "percentage": 0.16
             },
             {
               "name": "Fortissimo Partners VI",
               "value": 0.0001,
+              "formattedValue": "56.44K",
               "percentage": 0.15
             }
           ],
@@ -4771,51 +5671,61 @@
             {
               "name": "Spark Growth Fund V L.P",
               "value": 0.0001,
+              "formattedValue": "56.38K",
               "percentage": 0.15
             },
             {
               "name": "Harburvest Secondary Overflow Fund V",
               "value": 0.0001,
+              "formattedValue": "52.34K",
               "percentage": 0.14
             },
             {
               "name": "Group 11 Fund V",
               "value": 0.0001,
+              "formattedValue": "52.11K",
               "percentage": 0.14
             },
             {
               "name": "S.H. SKY 4 L.P",
               "value": 0.0001,
+              "formattedValue": "50.67K",
               "percentage": 0.14
             },
             {
               "name": "Minute Media Inc.",
               "value": 0.0001,
+              "formattedValue": "50.47K",
               "percentage": 0.14
             },
             {
               "name": "Greenfield Partners Fund III LP",
               "value": 0.0,
+              "formattedValue": "49.22K",
               "percentage": 0.14
             },
             {
               "name": "Ember Co Invest SCSp",
               "value": 0.0,
+              "formattedValue": "48.89K",
               "percentage": 0.13
             },
             {
               "name": "LS Power V",
               "value": 0.0,
+              "formattedValue": "48.56K",
               "percentage": 0.13
             },
             {
               "name": "Arkin Bio Capital L.P",
               "value": 0.0,
+              "formattedValue": "43.38K",
               "percentage": 0.12
             },
             {
               "name": "DIF VII CO INVEST PROJECT 1 C.V",
               "value": 0.0,
+              "formattedValue": "42.97K",
               "percentage": 0.12
             }
           ],
@@ -4823,51 +5733,61 @@
             {
               "name": "Paragon Fund III Feeder Limited",
               "value": 0.0,
+              "formattedValue": "42.63K",
               "percentage": 0.12
             },
             {
               "name": "Silverfort",
               "value": 0.0,
+              "formattedValue": "41.94K",
               "percentage": 0.12
             },
             {
               "name": "CSC TS HOLDINGS L.P",
               "value": 0.0,
+              "formattedValue": "40.29K",
               "percentage": 0.11
             },
             {
               "name": "Pantheon Global Co Investment VI",
               "value": 0.0,
+              "formattedValue": "39.95K",
               "percentage": 0.11
             },
             {
               "name": "Green Lantern VI LP",
               "value": 0.0,
+              "formattedValue": "39.77K",
               "percentage": 0.11
             },
             {
               "name": "Green Lantern GL II LP",
               "value": 0.0,
+              "formattedValue": "39.20K",
               "percentage": 0.11
             },
             {
               "name": "Group 11 Fund IV",
               "value": 0.0,
+              "formattedValue": "39.08K",
               "percentage": 0.11
             },
             {
               "name": "Sun Capital Partners VII, L.P.",
               "value": 0.0,
+              "formattedValue": "36.31K",
               "percentage": 0.1
             },
             {
               "name": "Accelmed Partners LP",
               "value": 0.0,
+              "formattedValue": "35.98K",
               "percentage": 0.1
             },
             {
               "name": "Noy Negev Energy LP",
               "value": 0.0,
+              "formattedValue": "32.56K",
               "percentage": 0.09
             }
           ],
@@ -4875,51 +5795,61 @@
             {
               "name": "Pamlico Capital IV, L.P.",
               "value": 0.0,
+              "formattedValue": "32.49K",
               "percentage": 0.09
             },
             {
               "name": "Kedma Capital Partners IV LP",
               "value": 0.0,
+              "formattedValue": "31.07K",
               "percentage": 0.09
             },
             {
               "name": "Accelmed Medical Partners LP",
               "value": 0.0,
+              "formattedValue": "30.38K",
               "percentage": 0.08
             },
             {
               "name": "AT-BAY, Inc.",
               "value": 0.0,
+              "formattedValue": "26.98K",
               "percentage": 0.07
             },
             {
               "name": "Israel Secondary fund III L.P",
               "value": 0.0,
+              "formattedValue": "26.69K",
               "percentage": 0.07
             },
             {
               "name": "F2 Capital Partners 3 LP",
               "value": 0.0,
+              "formattedValue": "26.49K",
               "percentage": 0.07
             },
             {
               "name": "MIE III Co Investment Fund II S.L.P",
               "value": 0.0,
+              "formattedValue": "26.36K",
               "percentage": 0.07
             },
             {
               "name": "טנא להשקעה בקיונרג'י שותפות מוגבלת",
               "value": 0.0,
+              "formattedValue": "26.36K",
               "percentage": 0.07
             },
             {
               "name": "AE Industrial Partners Fund II, LP",
               "value": 0.0,
+              "formattedValue": "26.17K",
               "percentage": 0.07
             },
             {
               "name": "Windjammer Senior Equity Fund V, L.P.",
               "value": 0.0,
+              "formattedValue": "24.88K",
               "percentage": 0.07
             }
           ],
@@ -4927,51 +5857,61 @@
             {
               "name": "GTCR Fund XII/A&B LP",
               "value": 0.0,
+              "formattedValue": "24.72K",
               "percentage": 0.07
             },
             {
               "name": "Green Lantern VI S.P.V1 LP",
               "value": 0.0,
+              "formattedValue": "24.38K",
               "percentage": 0.07
             },
             {
               "name": "Exodigo",
               "value": 0.0,
+              "formattedValue": "24.32K",
               "percentage": 0.07
             },
             {
               "name": "טנא להשקעה בגדות שותפות מוגבלת",
               "value": 0.0,
+              "formattedValue": "23.39K",
               "percentage": 0.06
             },
             {
               "name": "Lytx, Inc.",
               "value": 0.0,
+              "formattedValue": "21.51K",
               "percentage": 0.06
             },
             {
               "name": "WestView Capital Partners IV, L.P.",
               "value": 0.0,
+              "formattedValue": "21.15K",
               "percentage": 0.06
             },
             {
               "name": "Global Infrastrcture Partners V C",
               "value": 0.0,
+              "formattedValue": "21.00K",
               "percentage": 0.06
             },
             {
               "name": "Cynet Security LTD (ISR)",
               "value": 0.0,
+              "formattedValue": "19.44K",
               "percentage": 0.05
             },
             {
               "name": "IK Small Cap Fund II No.1 SCSp",
               "value": 0.0,
+              "formattedValue": "18.88K",
               "percentage": 0.05
             },
             {
               "name": "F2 Select I LP",
               "value": 0.0,
+              "formattedValue": "17.71K",
               "percentage": 0.05
             }
           ],
@@ -4979,51 +5919,61 @@
             {
               "name": "AP IX Connect Holdings L.P",
               "value": 0.0,
+              "formattedValue": "17.70K",
               "percentage": 0.05
             },
             {
               "name": "Spark Capital VIII L.P",
               "value": 0.0,
+              "formattedValue": "17.59K",
               "percentage": 0.05
             },
             {
               "name": "Preston Hollow Capital, LLC",
               "value": 0.0,
+              "formattedValue": "17.56K",
               "percentage": 0.05
             },
             {
               "name": "Noy 5 Infrastructure and energy",
               "value": 0.0,
+              "formattedValue": "17.00K",
               "percentage": 0.05
             },
             {
               "name": "Augury Inc.",
               "value": 0.0,
+              "formattedValue": "16.75K",
               "percentage": 0.05
             },
             {
               "name": "ISF III Overflow Fund L.P",
               "value": 0.0,
+              "formattedValue": "16.50K",
               "percentage": 0.05
             },
             {
               "name": "Ares Capital Europe V",
               "value": 0.0,
+              "formattedValue": "16.23K",
               "percentage": 0.04
             },
             {
               "name": "Noked Long L.P",
               "value": 0.0,
+              "formattedValue": "16.03K",
               "percentage": 0.04
             },
             {
               "name": "JoyTunes Ltd.",
               "value": 0.0,
+              "formattedValue": "15.15K",
               "percentage": 0.04
             },
             {
               "name": "Lightricks Ltd.",
               "value": 0.0,
+              "formattedValue": "14.84K",
               "percentage": 0.04
             }
           ],
@@ -5031,51 +5981,61 @@
             {
               "name": "Elatec GmbH",
               "value": 0.0,
+              "formattedValue": "14.37K",
               "percentage": 0.04
             },
             {
               "name": "Snappy APP, Inc.",
               "value": 0.0,
+              "formattedValue": "12.58K",
               "percentage": 0.03
             },
             {
               "name": "Mobilesson Ltd.",
               "value": 0.0,
+              "formattedValue": "12.58K",
               "percentage": 0.03
             },
             {
               "name": "Senior Loan Fund II (EUR) SLP",
               "value": 0.0,
+              "formattedValue": "12.46K",
               "percentage": 0.03
             },
             {
               "name": "Eleos Health Inc",
               "value": 0.0,
+              "formattedValue": "12.02K",
               "percentage": 0.03
             },
             {
               "name": "ICG Real Estate Debt VI",
               "value": 0.0,
+              "formattedValue": "11.30K",
               "percentage": 0.03
             },
             {
               "name": "U.S. Anesthesia Partners Holdings, Inc.",
               "value": 0.0,
+              "formattedValue": "10.98K",
               "percentage": 0.03
             },
             {
               "name": "Kartesia Credit Opportunities V",
               "value": 0.0,
+              "formattedValue": "10.81K",
               "percentage": 0.03
             },
             {
               "name": "Project Gridiron",
               "value": 0.0,
+              "formattedValue": "10.81K",
               "percentage": 0.03
             },
             {
               "name": "floLIVE",
               "value": 0.0,
+              "formattedValue": "10.80K",
               "percentage": 0.03
             }
           ],
@@ -5083,51 +6043,61 @@
             {
               "name": "Monarch MCP VI",
               "value": 0.0,
+              "formattedValue": "10.77K",
               "percentage": 0.03
             },
             {
               "name": "Sphera Tech Fund",
               "value": 0.0,
+              "formattedValue": "9.80K",
               "percentage": 0.03
             },
             {
               "name": "Oak Hill Advisors   OCREDIT",
               "value": 0.0,
+              "formattedValue": "9.80K",
               "percentage": 0.03
             },
             {
               "name": "Tikehau Direct Lending V",
               "value": 0.0,
+              "formattedValue": "9.62K",
               "percentage": 0.03
             },
             {
               "name": "Incline Equity Partners IV, L.P.",
               "value": 0.0,
+              "formattedValue": "9.58K",
               "percentage": 0.03
             },
             {
               "name": "DIRECT LENDING FUND IV (EUR) SLP",
               "value": 0.0,
+              "formattedValue": "9.32K",
               "percentage": 0.03
             },
             {
               "name": "Cheyne Real Estate Credit Holdings VII",
               "value": 0.0,
+              "formattedValue": "9.32K",
               "percentage": 0.03
             },
             {
               "name": "Monarch Capital Partners V",
               "value": 0.0,
+              "formattedValue": "9.32K",
               "percentage": 0.03
             },
             {
               "name": "Stage One Venture Capital Fund IV",
               "value": 0.0,
+              "formattedValue": "9.22K",
               "percentage": 0.03
             },
             {
               "name": "AGILITY EQUITY LIMITED PARTNERSHIP",
               "value": 0.0,
+              "formattedValue": "8.89K",
               "percentage": 0.02
             }
           ],
@@ -5135,51 +6105,61 @@
             {
               "name": "Project Saxa",
               "value": 0.0,
+              "formattedValue": "8.86K",
               "percentage": 0.02
             },
             {
               "name": "ION TECH FEEDER FUND",
               "value": 0.0,
+              "formattedValue": "8.79K",
               "percentage": 0.02
             },
             {
               "name": "Dawson Portfolio Finance 5 LP",
               "value": 0.0,
+              "formattedValue": "8.28K",
               "percentage": 0.02
             },
             {
               "name": "Ares Private Capital Solutions II",
               "value": 0.0,
+              "formattedValue": "8.15K",
               "percentage": 0.02
             },
             {
               "name": "ICG Senior Debt Partners IV",
               "value": 0.0,
+              "formattedValue": "7.97K",
               "percentage": 0.02
             },
             {
               "name": "Crescent Direct Lending III",
               "value": 0.0,
+              "formattedValue": "7.61K",
               "percentage": 0.02
             },
             {
               "name": "ARES EUROPEAN CREDIT INVESTMENTS VIII",
               "value": 0.0,
+              "formattedValue": "7.51K",
               "percentage": 0.02
             },
             {
               "name": "Dawson Portfolio Finance (Offshore) 4 LP",
               "value": 0.0,
+              "formattedValue": "7.28K",
               "percentage": 0.02
             },
             {
               "name": "Project Draco",
               "value": 0.0,
+              "formattedValue": "7.00K",
               "percentage": 0.02
             },
             {
               "name": "ICG Senior Debt Partners Fund 5 A SCSp",
               "value": 0.0,
+              "formattedValue": "6.99K",
               "percentage": 0.02
             }
           ],
@@ -5187,51 +6167,61 @@
             {
               "name": "AUDAX PRIVATE CREDIT FUND LLC",
               "value": 0.0,
+              "formattedValue": "6.14K",
               "percentage": 0.02
             },
             {
               "name": "Migdal Tikehau Direct Lending",
               "value": 0.0,
+              "formattedValue": "5.96K",
               "percentage": 0.02
             },
             {
               "name": "Dawson GP Finance (Offshore) 1",
               "value": 0.0,
+              "formattedValue": "5.82K",
               "percentage": 0.02
             },
             {
               "name": "Israel Cleantech Ventures II Israel LP",
               "value": 0.0,
+              "formattedValue": "5.81K",
               "percentage": 0.02
             },
             {
               "name": "Walton Street Real Estate Debt Fund II",
               "value": 0.0,
+              "formattedValue": "5.21K",
               "percentage": 0.01
             },
             {
               "name": "Cheyne Real Estate Credit Holdings VIII",
               "value": 0.0,
+              "formattedValue": "5.12K",
               "percentage": 0.01
             },
             {
               "name": "GIP Capital Solutions II SCSp L.P",
               "value": 0.0,
+              "formattedValue": "5.11K",
               "percentage": 0.01
             },
             {
               "name": "Klirmark Opportunity Fund IV",
               "value": 0.0,
+              "formattedValue": "5.10K",
               "percentage": 0.01
             },
             {
               "name": "Vintage FOF VIII Access L.P",
               "value": 0.0,
+              "formattedValue": "4.83K",
               "percentage": 0.01
             },
             {
               "name": "GIP Spectrum Fund (Parallel) L.P",
               "value": 0.0,
+              "formattedValue": "4.78K",
               "percentage": 0.01
             }
           ],
@@ -5239,51 +6229,61 @@
             {
               "name": "Vintage Growth Fund IV L.P",
               "value": 0.0,
+              "formattedValue": "4.51K",
               "percentage": 0.01
             },
             {
               "name": "AUDAX DLS CO INVESTMENT FUND 3 L.P",
               "value": 0.0,
+              "formattedValue": "4.41K",
               "percentage": 0.01
             },
             {
               "name": "LUCID ALTERNATIVE u 7/23",
               "value": 0.0,
+              "formattedValue": "4.33K",
               "percentage": 0.01
             },
             {
               "name": "Audax Direct Lending Solutions Fund II",
               "value": 0.0,
+              "formattedValue": "4.31K",
               "percentage": 0.01
             },
             {
               "name": "CRUISE.CO",
               "value": 0.0,
+              "formattedValue": "4.26K",
               "percentage": 0.01
             },
             {
               "name": "BENNU PHARMA",
               "value": 0.0,
+              "formattedValue": "4.21K",
               "percentage": 0.01
             },
             {
               "name": "Cheyne Co Invest 2023 1 SP Class B",
               "value": 0.0,
+              "formattedValue": "4.07K",
               "percentage": 0.01
             },
             {
               "name": "Kartesia Senior Opportunities II RAIF",
               "value": 0.0,
+              "formattedValue": "3.96K",
               "percentage": 0.01
             },
             {
               "name": "ICG Longbow V",
               "value": 0.0,
+              "formattedValue": "3.70K",
               "percentage": 0.01
             },
             {
               "name": "Audax Direct Lending Solutions",
               "value": 0.0,
+              "formattedValue": "3.70K",
               "percentage": 0.01
             }
           ],
@@ -5291,51 +6291,61 @@
             {
               "name": "Kartesia Senior Opportunities I",
               "value": 0.0,
+              "formattedValue": "3.65K",
               "percentage": 0.01
             },
             {
               "name": "LUCID ALTERNATIVE U 8/23",
               "value": 0.0,
+              "formattedValue": "3.60K",
               "percentage": 0.01
             },
             {
               "name": "DLF IV Co invest Vehicle",
               "value": 0.0,
+              "formattedValue": "3.43K",
               "percentage": 0.01
             },
             {
               "name": "S.H. SKY II L.P.s",
               "value": 0.0,
+              "formattedValue": "3.39K",
               "percentage": 0.01
             },
             {
               "name": "Permira Credit Solutions IV",
               "value": 0.0,
+              "formattedValue": "3.32K",
               "percentage": 0.01
             },
             {
               "name": "KASS Unlevered II S.a r.l",
               "value": 0.0,
+              "formattedValue": "3.28K",
               "percentage": 0.01
             },
             {
               "name": "Ares Capital Europe IV",
               "value": 0.0,
+              "formattedValue": "3.16K",
               "percentage": 0.01
             },
             {
               "name": "Ares Capital Europe VI",
               "value": 0.0,
+              "formattedValue": "3.05K",
               "percentage": 0.01
             },
             {
               "name": "Dawson Portfolio Finance 6 LP",
               "value": 0.0,
+              "formattedValue": "2.90K",
               "percentage": 0.01
             },
             {
               "name": "Greenfield Partners Silverfort Co Invest",
               "value": 0.0,
+              "formattedValue": "2.88K",
               "percentage": 0.01
             }
           ],
@@ -5343,51 +6353,61 @@
             {
               "name": "KASS Unlevered   Compartment E",
               "value": 0.0,
+              "formattedValue": "2.70K",
               "percentage": 0.01
             },
             {
               "name": "Greenfield Partners FloLIVE Co invest",
               "value": 0.0,
+              "formattedValue": "2.63K",
               "percentage": 0.01
             },
             {
               "name": "Crescent Mezzanine VII",
               "value": 0.0,
+              "formattedValue": "2.53K",
               "percentage": 0.01
             },
             {
               "name": "Tikehau Direct Lending IV",
               "value": 0.0,
+              "formattedValue": "2.45K",
               "percentage": 0.01
             },
             {
               "name": "Kartesia Credit Opportunities VI SCS",
               "value": 0.0,
+              "formattedValue": "2.16K",
               "percentage": 0.01
             },
             {
               "name": "HPS Asset Value Lux Fund III SCSp",
               "value": 0.0,
+              "formattedValue": "2.14K",
               "percentage": 0.01
             },
             {
               "name": "Tikehau Speacial Opportunities III",
               "value": 0.0,
+              "formattedValue": "1.98K",
               "percentage": 0.01
             },
             {
               "name": "Ambition HOLDINGS OFFSHORE LP",
               "value": 0.0,
+              "formattedValue": "1.95K",
               "percentage": 0.01
             },
             {
               "name": "ICG Senior Debt Partners III",
               "value": 0.0,
+              "formattedValue": "1.90K",
               "percentage": 0.01
             },
             {
               "name": "GIP IV Seaway Energy",
               "value": 0.0,
+              "formattedValue": "1.85K",
               "percentage": 0.01
             }
           ],
@@ -5395,51 +6415,61 @@
             {
               "name": "Sima Holdings (Offshore) LP",
               "value": 0.0,
+              "formattedValue": "1.83K",
               "percentage": 0.01
             },
             {
               "name": "Bluebay Senior Loan Fund I",
               "value": 0.0,
+              "formattedValue": "1.79K",
               "percentage": 0.0
             },
             {
               "name": "Kartesia Credit Opportunities IV",
               "value": 0.0,
+              "formattedValue": "1.67K",
               "percentage": 0.0
             },
             {
               "name": "Klirmark III",
               "value": 0.0,
+              "formattedValue": "1.57K",
               "percentage": 0.0
             },
             {
               "name": "Ares Private Credit Solutions",
               "value": 0.0,
+              "formattedValue": "1.49K",
               "percentage": 0.0
             },
             {
               "name": "Tikehau Direct Lending VI",
               "value": 0.0,
+              "formattedValue": "1.49K",
               "percentage": 0.0
             },
             {
               "name": "KASS Unlevered S.a r.l",
               "value": 0.0,
+              "formattedValue": "1.46K",
               "percentage": 0.0
             },
             {
               "name": "Stage One Annex Fund L.P",
               "value": 0.0,
+              "formattedValue": "1.36K",
               "percentage": 0.0
             },
             {
               "name": "Blue Owl Co Invest Fund 2024",
               "value": 0.0,
+              "formattedValue": "1.36K",
               "percentage": 0.0
             },
             {
               "name": "Tikadomia SCSp",
               "value": 0.0,
+              "formattedValue": "1.35K",
               "percentage": 0.0
             }
           ],
@@ -5447,51 +6477,61 @@
             {
               "name": "Crescent Direct Lending II",
               "value": 0.0,
+              "formattedValue": "1.33K",
               "percentage": 0.0
             },
             {
               "name": "GIP Capital Solutions II Luxemburg",
               "value": 0.0,
+              "formattedValue": "1.22K",
               "percentage": 0.0
             },
             {
               "name": "Pine Holdings (offshore) I LP",
               "value": 0.0,
+              "formattedValue": "1.18K",
               "percentage": 0.0
             },
             {
               "name": "QUMRA OPPORTUNITY FUND I",
               "value": 0.0,
+              "formattedValue": "1.09K",
               "percentage": 0.0
             },
             {
               "name": "CRECH V",
               "value": 0.0,
+              "formattedValue": "1.00K",
               "percentage": 0.0
             },
             {
               "name": "PORCUPINE HOLDINGS (OFFSHORE) LP",
               "value": 0.0,
+              "formattedValue": "0.98K",
               "percentage": 0.0
             },
             {
               "name": "Cheyne Co Invest 2023 1 SP Class A",
               "value": 0.0,
+              "formattedValue": "0.88K",
               "percentage": 0.0
             },
             {
               "name": "R Software Inc.",
               "value": 0.0,
+              "formattedValue": "0.63K",
               "percentage": 0.0
             },
             {
               "name": "LS Power V Blocker",
               "value": 0.0,
+              "formattedValue": "0.59K",
               "percentage": 0.0
             },
             {
               "name": "Cedar Holdings Offshore",
               "value": 0.0,
+              "formattedValue": "0.46K",
               "percentage": 0.0
             }
           ],
@@ -5499,21 +6539,25 @@
             {
               "name": "Permira Credit Solutions III",
               "value": 0.0,
+              "formattedValue": "0.27K",
               "percentage": 0.0
             },
             {
               "name": "Qumra MS LP Minute Media",
               "value": 0.0,
+              "formattedValue": "0.13K",
               "percentage": 0.0
             },
             {
               "name": "Migdal HarbourVest 2016 Fund",
               "value": -0.0,
+              "formattedValue": "-24.90K",
               "percentage": -0.07
             },
             {
               "name": "Migdal HarbourVest Tranche B",
               "value": -0.0,
+              "formattedValue": "-42.97K",
               "percentage": -0.12
             }
           ]
@@ -5524,6 +6568,7 @@
       {
         "subclass": "General",
         "value": -0.0001,
+        "formattedValue": "-95.26K",
         "percentageOfClass": 100.0,
         "itemCount": 10,
         "totalPages": 1,
@@ -5532,51 +6577,61 @@
             {
               "name": "זכאים הלוואות חול בגין עמלת Upfront USD",
               "value": 0.0,
+              "formattedValue": "0.04K",
               "percentage": -0.04
             },
             {
               "name": "זכאים הלוואות חול בגין עמלת Upfront AUD",
               "value": -0.0,
+              "formattedValue": "-0.00K",
               "percentage": 0.0
             },
             {
               "name": "זכאים הלוואות חול בגין עמלת Upfront NOK",
               "value": -0.0,
+              "formattedValue": "-0.02K",
               "percentage": 0.02
             },
             {
               "name": "זכאים הלוואות חול בגין עמלת Upfront GBP",
               "value": -0.0,
+              "formattedValue": "-0.06K",
               "percentage": 0.06
             },
             {
               "name": "זכאים הלוואות חול בגין עמלת Upfront EUR",
               "value": -0.0,
+              "formattedValue": "-0.08K",
               "percentage": 0.08
             },
             {
               "name": "הפרשה משתנה60 מנגנון חירום ייצוגית",
               "value": -0.0,
+              "formattedValue": "-1.33K",
               "percentage": 1.39
             },
             {
               "name": "זכאים RCE",
               "value": -0.0,
+              "formattedValue": "-5.08K",
               "percentage": 5.33
             },
             {
               "name": "זכאים רווח נדחה   עמל",
               "value": -0.0,
+              "formattedValue": "-8.58K",
               "percentage": 9.01
             },
             {
               "name": "זכאים הלוואות בארץ בגין עמלת up front",
               "value": -0.0,
+              "formattedValue": "-26.33K",
               "percentage": 27.64
             },
             {
               "name": "נייר לצורך שערוך מסגרות",
               "value": -0.0001,
+              "formattedValue": "-53.83K",
               "percentage": 56.51
             }
           ]
@@ -5587,6 +6642,7 @@
       {
         "subclass": "Tradable",
         "value": 0.0,
+        "formattedValue": "21.45K",
         "percentageOfClass": 100.0,
         "itemCount": 10,
         "totalPages": 1,
@@ -5595,51 +6651,61 @@
             {
               "name": "bC 7340 NOV 25",
               "value": 0.0,
+              "formattedValue": "17.56K",
               "percentage": 81.85
             },
             {
               "name": "TEVA US 12/19/25 C17",
               "value": 0.0,
+              "formattedValue": "11.66K",
               "percentage": 54.34
             },
             {
               "name": "CIC 17000",
               "value": 0.0,
+              "formattedValue": "0.72K",
               "percentage": 3.35
             },
             {
               "name": "NICE US 10/17/25 C175",
               "value": 0.0,
+              "formattedValue": "0.08K",
               "percentage": 0.39
             },
             {
               "name": "TEVA US 12/19/25 P11",
               "value": 0.0,
+              "formattedValue": "0.06K",
               "percentage": 0.28
             },
             {
               "name": "NICE US 10/17/25 C200",
               "value": -0.0,
+              "formattedValue": "-0.01K",
               "percentage": -0.06
             },
             {
               "name": "CIP 17000",
               "value": -0.0,
+              "formattedValue": "-0.69K",
               "percentage": -3.24
             },
             {
               "name": "TEVA US 12/19/25 P16",
               "value": -0.0,
+              "formattedValue": "-0.81K",
               "percentage": -3.76
             },
             {
               "name": "TEVA US 12/19/25 C24",
               "value": -0.0,
+              "formattedValue": "-1.41K",
               "percentage": -6.55
             },
             {
               "name": "bP 7340 NOV 25",
               "value": -0.0,
+              "formattedValue": "-5.71K",
               "percentage": -26.6
             }
           ]
@@ -5650,6 +6716,7 @@
       {
         "subclass": "General",
         "value": 0.0002,
+        "formattedValue": "242.98K",
         "percentageOfClass": 100.0,
         "itemCount": 7,
         "totalPages": 1,
@@ -5658,36 +6725,43 @@
             {
               "name": "S&P500 EMINI FUT Dec25",
               "value": 0.0002,
+              "formattedValue": "193.78K",
               "percentage": 79.75
             },
             {
               "name": "S&P/TSX 60 IX FUT Dec25",
               "value": 0.0,
+              "formattedValue": "14.32K",
               "percentage": 5.9
             },
             {
               "name": "NASDAQ 100 E MINI Dec25",
               "value": 0.0,
+              "formattedValue": "13.03K",
               "percentage": 5.36
             },
             {
               "name": "NIKKEI 225  (OSE) Dec25",
               "value": 0.0,
+              "formattedValue": "11.71K",
               "percentage": 4.82
             },
             {
               "name": "MSCI EmgMk Dec25",
               "value": 0.0,
+              "formattedValue": "5.97K",
               "percentage": 2.46
             },
             {
               "name": "TOPIX INDX FUTR   Dec25",
               "value": 0.0,
+              "formattedValue": "2.42K",
               "percentage": 0.99
             },
             {
               "name": "STOXX EUROPE 600 Dec25",
               "value": 0.0,
+              "formattedValue": "1.75K",
               "percentage": 0.72
             }
           ]
@@ -5698,6 +6772,7 @@
       {
         "subclass": "Direct Loans",
         "value": 0.068,
+        "formattedValue": "68.03M",
         "percentageOfClass": 100.0,
         "itemCount": 2,
         "totalPages": 1,
@@ -5706,11 +6781,13 @@
             {
               "name": "תאגיד",
               "value": 0.0545,
+              "formattedValue": "54.54M",
               "percentage": 80.16
             },
             {
               "name": "יחיד שאינו עמית/מבוטח",
               "value": 0.0135,
+              "formattedValue": "13.50M",
               "percentage": 19.84
             }
           ]

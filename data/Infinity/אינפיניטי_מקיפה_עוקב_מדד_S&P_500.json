@@ -2,30 +2,36 @@
   "fundName": "אינפיניטי מקיפה עוקב מדד S&P 500",
   "trackId": "14054",
   "totalAssetsBN": 0.05,
+  "formattedTotalAssets": "48.57M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0374,
+      "formattedValue": "37.41M",
       "percentage": 77.01
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0087,
+      "formattedValue": "8.65M",
       "percentage": 17.82
     },
     {
       "name": "Bonds",
       "value": 0.0024,
+      "formattedValue": "2.36M",
       "percentage": 4.86
     },
     {
       "name": "Futures",
       "value": 0.0001,
+      "formattedValue": "80.31K",
       "percentage": 0.17
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0001,
+      "formattedValue": "71.00K",
       "percentage": 0.15
     }
   ],
@@ -34,6 +40,7 @@
       {
         "subclass": "Cash",
         "value": 0.0087,
+        "formattedValue": "8.65M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -42,6 +49,7 @@
             {
               "name": "מזרחי",
               "value": 0.0087,
+              "formattedValue": "8.65M",
               "percentage": 100.0
             }
           ]
@@ -52,6 +60,7 @@
       {
         "subclass": "ETFs",
         "value": 0.0374,
+        "formattedValue": "37.41M",
         "percentageOfClass": 100.0,
         "itemCount": 9,
         "totalPages": 1,
@@ -60,46 +69,55 @@
             {
               "name": "קסם SP500 ETF",
               "value": 0.0063,
+              "formattedValue": "6.27M",
               "percentage": 16.77
             },
             {
               "name": "מור סל (4D) S&P500",
               "value": 0.005,
+              "formattedValue": "4.99M",
               "percentage": 13.33
             },
             {
               "name": "תכלית סל ‏‏SP500",
               "value": 0.0049,
+              "formattedValue": "4.92M",
               "percentage": 13.14
             },
             {
               "name": "אי.בי.אי סל(4D)  SP",
               "value": 0.0048,
+              "formattedValue": "4.76M",
               "percentage": 12.72
             },
             {
               "name": "הראל סל SP500",
               "value": 0.0046,
+              "formattedValue": "4.64M",
               "percentage": 12.41
             },
             {
               "name": "MTF סל‏ SP500",
               "value": 0.0046,
+              "formattedValue": "4.64M",
               "percentage": 12.4
             },
             {
               "name": "SPY US",
               "value": 0.0034,
+              "formattedValue": "3.37M",
               "percentage": 9.01
             },
             {
               "name": "Invesco S&P 500 UCITS",
               "value": 0.0025,
+              "formattedValue": "2.46M",
               "percentage": 6.58
             },
             {
               "name": "Lyxor ETF S&P 500",
               "value": 0.0014,
+              "formattedValue": "1.36M",
               "percentage": 3.64
             }
           ]
@@ -110,6 +128,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0024,
+        "formattedValue": "2.36M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -118,6 +137,7 @@
             {
               "name": "T 14/5/26",
               "value": 0.0024,
+              "formattedValue": "2.36M",
               "percentage": 100.0
             }
           ]
@@ -128,6 +148,7 @@
       {
         "subclass": "General",
         "value": 0.0001,
+        "formattedValue": "71.00K",
         "percentageOfClass": 100.0,
         "itemCount": 4,
         "totalPages": 1,
@@ -136,21 +157,25 @@
             {
               "name": "ערד 8912",
               "value": 0.0,
+              "formattedValue": "44.26K",
               "percentage": 62.33
             },
             {
               "name": "ערד 8910",
               "value": 0.0,
+              "formattedValue": "15.25K",
               "percentage": 21.48
             },
             {
               "name": "ערד 8911",
               "value": 0.0,
+              "formattedValue": "7.27K",
               "percentage": 10.24
             },
             {
               "name": "ערד 8909",
               "value": 0.0,
+              "formattedValue": "4.22K",
               "percentage": 5.94
             }
           ]
@@ -161,6 +186,7 @@
       {
         "subclass": "General",
         "value": 0.0001,
+        "formattedValue": "80.31K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -169,6 +195,7 @@
             {
               "name": "F- 12/25 MICRO",
               "value": 0.0001,
+              "formattedValue": "80.31K",
               "percentage": 100.0
             }
           ]

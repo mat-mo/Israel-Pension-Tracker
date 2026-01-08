@@ -2,15 +2,18 @@
   "fundName": "הפניקס פנסיה כללית - מסלול מקבלי קצבה קיימים",
   "trackId": "2202",
   "totalAssetsBN": 0.03,
+  "formattedTotalAssets": "34.70M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0343,
+      "formattedValue": "34.27M",
       "percentage": 98.75
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.0004,
+      "formattedValue": "432.55K",
       "percentage": 1.25
     }
   ],
@@ -19,6 +22,7 @@
       {
         "subclass": "Cash",
         "value": 0.0004,
+        "formattedValue": "432.55K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -27,6 +31,7 @@
             {
               "name": "בנק הפועלים",
               "value": 0.0004,
+              "formattedValue": "432.55K",
               "percentage": 100.0
             }
           ]
@@ -37,6 +42,7 @@
       {
         "subclass": "Government Bonds",
         "value": 0.0343,
+        "formattedValue": "34.27M",
         "percentageOfClass": 100.0,
         "itemCount": 6,
         "totalPages": 1,
@@ -45,31 +51,37 @@
             {
               "name": "ממשלתי צמוד 841",
               "value": 0.0109,
+              "formattedValue": "10.90M",
               "percentage": 31.79
             },
             {
               "name": "ממשלתי צמוד 0529",
               "value": 0.0087,
+              "formattedValue": "8.74M",
               "percentage": 25.49
             },
             {
               "name": "ממשל צמודה 1028",
               "value": 0.0061,
+              "formattedValue": "6.15M",
               "percentage": 17.94
             },
             {
               "name": "ממשלתי צמוד 0545",
               "value": 0.0031,
+              "formattedValue": "3.06M",
               "percentage": 8.93
             },
             {
               "name": "גליל  0536",
               "value": 0.003,
+              "formattedValue": "2.97M",
               "percentage": 8.68
             },
             {
               "name": "ממשל צמודה 1033",
               "value": 0.0025,
+              "formattedValue": "2.46M",
               "percentage": 7.17
             }
           ]

@@ -2,30 +2,36 @@
   "fundName": "מגדל מקפת משלימה עוקב מדד S&P500",
   "trackId": "13627",
   "totalAssetsBN": 1.92,
+  "formattedTotalAssets": "1.92B",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 1.0776,
+      "formattedValue": "1.08B",
       "percentage": 56.03
     },
     {
       "name": "Cash & Equivalents",
       "value": 0.8527,
+      "formattedValue": "852.75M",
       "percentage": 44.34
     },
     {
       "name": "Futures",
       "value": 0.0114,
+      "formattedValue": "11.42M",
       "percentage": 0.59
     },
     {
       "name": "Mutual Funds",
       "value": 0.0082,
+      "formattedValue": "8.22M",
       "percentage": 0.43
     },
     {
       "name": "Derivatives",
       "value": -0.0267,
+      "formattedValue": "-26.75M",
       "percentage": -1.39
     }
   ],
@@ -34,6 +40,7 @@
       {
         "subclass": "General",
         "value": 0.0082,
+        "formattedValue": "8.22M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -42,6 +49,7 @@
             {
               "name": "קסם SP500 KTF",
               "value": 0.0082,
+              "formattedValue": "8.22M",
               "percentage": 100.0
             }
           ]
@@ -52,6 +60,7 @@
       {
         "subclass": "Cash",
         "value": 0.8527,
+        "formattedValue": "852.75M",
         "percentageOfClass": 100.0,
         "itemCount": 4,
         "totalPages": 1,
@@ -60,21 +69,25 @@
             {
               "name": "בנק לאומי לישראל בע\"מ",
               "value": 0.5412,
+              "formattedValue": "541.17M",
               "percentage": 63.46
             },
             {
               "name": "בנק דיסקונט לישראל בע\"מ",
               "value": 0.3066,
+              "formattedValue": "306.58M",
               "percentage": 35.95
             },
             {
               "name": "בנק הפועלים בע\"מ",
               "value": 0.0049,
+              "formattedValue": "4.94M",
               "percentage": 0.58
             },
             {
               "name": "JPMORGAN CHASE BANK",
               "value": 0.0001,
+              "formattedValue": "57.27K",
               "percentage": 0.01
             }
           ]
@@ -85,6 +98,7 @@
       {
         "subclass": "General",
         "value": -0.0267,
+        "formattedValue": "-26.75M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -93,6 +107,7 @@
             {
               "name": "USDILS",
               "value": -0.0267,
+              "formattedValue": "-26.75M",
               "percentage": 100.0
             }
           ]
@@ -103,6 +118,7 @@
       {
         "subclass": "ETFs",
         "value": 1.0776,
+        "formattedValue": "1.08B",
         "percentageOfClass": 100.0,
         "itemCount": 7,
         "totalPages": 1,
@@ -111,36 +127,43 @@
             {
               "name": "SOURCE S&P 500 UCITS ETF",
               "value": 0.3486,
+              "formattedValue": "348.57M",
               "percentage": 32.35
             },
             {
               "name": "ISHARES S&P500 SWAP UCITS",
               "value": 0.337,
+              "formattedValue": "336.99M",
               "percentage": 31.27
             },
             {
               "name": "X S@P 500 SWAP 1D",
               "value": 0.1872,
+              "formattedValue": "187.20M",
               "percentage": 17.37
             },
             {
               "name": "AM S&P 500 II ETF ACC",
               "value": 0.1153,
+              "formattedValue": "115.27M",
               "percentage": 10.7
             },
             {
               "name": "LYXOR ETF S&P 500",
               "value": 0.0428,
+              "formattedValue": "42.84M",
               "percentage": 3.98
             },
             {
               "name": "איביאי סל SP 500",
               "value": 0.0397,
+              "formattedValue": "39.73M",
               "percentage": 3.69
             },
             {
               "name": "י.ל סל S&P 500",
               "value": 0.007,
+              "formattedValue": "7.00M",
               "percentage": 0.65
             }
           ]
@@ -151,6 +174,7 @@
       {
         "subclass": "General",
         "value": 0.0114,
+        "formattedValue": "11.42M",
         "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
@@ -159,6 +183,7 @@
             {
               "name": "S&P500 EMINI FUT Dec25",
               "value": 0.0114,
+              "formattedValue": "11.42M",
               "percentage": 100.0
             }
           ]
