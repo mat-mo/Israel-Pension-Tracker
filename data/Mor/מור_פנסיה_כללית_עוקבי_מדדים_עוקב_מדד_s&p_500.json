@@ -1,0 +1,230 @@
+{
+  "fundName": "מור פנסיה כללית עוקבי מדדים עוקב מדד s&p 500",
+  "trackId": "15273",
+  "totalAssetsBN": 0.04,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.0157,
+      "percentage": 38.15
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0107,
+      "percentage": 25.85
+    },
+    {
+      "name": "Bonds",
+      "value": 0.0083,
+      "percentage": 20.17
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.0064,
+      "percentage": 15.53
+    },
+    {
+      "name": "Futures",
+      "value": 0.0002,
+      "percentage": 0.4
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0001,
+      "percentage": 0.24
+    },
+    {
+      "name": "Derivatives",
+      "value": -0.0001,
+      "percentage": -0.34
+    }
+  ],
+  "breakdown": {
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": 0.0001,
+        "percentageOfClass": 100.0,
+        "itemCount": 3,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "TEMP_INTEREST$",
+              "value": 0.0001,
+              "percentage": 54.49
+            },
+            {
+              "name": "חוז עמלות",
+              "value": 0.0,
+              "percentage": 33.26
+            },
+            {
+              "name": "ריבית עוש לקבל",
+              "value": 0.0,
+              "percentage": 12.25
+            }
+          ]
+        ]
+      }
+    ],
+    "Mutual Funds": [
+      {
+        "subclass": "General",
+        "value": 0.0064,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "S&P 500 הראל",
+              "value": 0.0064,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0107,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0107,
+              "percentage": 100.02
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": -0.0,
+              "percentage": -0.02
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0002,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "S&P500 EMINI FUT 12/25",
+              "value": 0.0002,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0157,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SP500.הרל",
+              "value": 0.0043,
+              "percentage": 27.41
+            },
+            {
+              "name": "SP500.תכ",
+              "value": 0.0042,
+              "percentage": 26.46
+            },
+            {
+              "name": "SP500.קסם",
+              "value": 0.0038,
+              "percentage": 23.88
+            },
+            {
+              "name": "SP500.MTF",
+              "value": 0.0035,
+              "percentage": 22.25
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": -0.0001,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDILS",
+              "value": -0.0001,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.0083,
+        "percentageOfClass": 100.0,
+        "itemCount": 7,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מ.ק.מ. 816",
+              "value": 0.0029,
+              "percentage": 35.47
+            },
+            {
+              "name": "מ.ק.מ. 416",
+              "value": 0.0013,
+              "percentage": 15.1
+            },
+            {
+              "name": "מ.ק.מ. 316",
+              "value": 0.0012,
+              "percentage": 14.48
+            },
+            {
+              "name": "מ.ק.מ. 1016",
+              "value": 0.0011,
+              "percentage": 13.37
+            },
+            {
+              "name": "מ.ק.מ. 1115",
+              "value": 0.0009,
+              "percentage": 10.93
+            },
+            {
+              "name": "מ.ק.מ. 516",
+              "value": 0.0006,
+              "percentage": 7.07
+            },
+            {
+              "name": "מ.ק.מ. 116",
+              "value": 0.0003,
+              "percentage": 3.57
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
