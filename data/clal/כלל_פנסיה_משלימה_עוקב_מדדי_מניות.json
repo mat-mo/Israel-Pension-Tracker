@@ -1,0 +1,164 @@
+{
+  "fundName": "כלל פנסיה משלימה עוקב מדדי מניות",
+  "trackId": "15091",
+  "totalAssetsBN": 0.07,
+  "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0427,
+      "percentage": 57.15
+    },
+    {
+      "name": "Stocks",
+      "value": 0.0304,
+      "percentage": 40.6
+    },
+    {
+      "name": "Futures",
+      "value": 0.0017,
+      "percentage": 2.33
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0003,
+      "percentage": 0.36
+    },
+    {
+      "name": "Other Assets",
+      "value": -0.0003,
+      "percentage": -0.43
+    }
+  ],
+  "breakdown": {
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0003,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "EURUSD",
+              "value": 0.0004,
+              "percentage": 138.02
+            },
+            {
+              "name": "USDILS",
+              "value": -0.0001,
+              "percentage": -38.02
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0017,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ULZ5 Index",
+              "value": 0.0012,
+              "percentage": 71.44
+            },
+            {
+              "name": "NQZ5 Index",
+              "value": 0.0005,
+              "percentage": 28.56
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0427,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0261,
+              "percentage": 61.07
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0073,
+              "percentage": 17.17
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0069,
+              "percentage": 16.24
+            },
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0024,
+              "percentage": 5.52
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": -0.0003,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "חייבים זכאים תפעולי",
+              "value": -0.0003,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0304,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "INVESCO NASDAQ-100 SWAP ACC",
+              "value": 0.0107,
+              "percentage": 35.34
+            },
+            {
+              "name": "X MSCI WORLD MOMENTUM 1C",
+              "value": 0.0076,
+              "percentage": 24.97
+            },
+            {
+              "name": "ISHR EDGE MSCI WRLD MOMENTUM",
+              "value": 0.0069,
+              "percentage": 22.77
+            },
+            {
+              "name": "AMUNDI EURSTX600 TECHNLG",
+              "value": 0.0051,
+              "percentage": 16.91
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
