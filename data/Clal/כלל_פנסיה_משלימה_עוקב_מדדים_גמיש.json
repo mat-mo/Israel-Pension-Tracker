@@ -1,0 +1,182 @@
+{
+  "fundName": "כלל פנסיה משלימה עוקב מדדים גמיש",
+  "trackId": "14238",
+  "totalAssetsBN": 0.04,
+  "assetClasses": [
+    {
+      "name": "Bonds",
+      "value": 0.0174,
+      "percentage": 47.57
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0135,
+      "percentage": 36.95
+    },
+    {
+      "name": "Stocks",
+      "value": 0.0052,
+      "percentage": 14.14
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0003,
+      "percentage": 0.94
+    },
+    {
+      "name": "Futures",
+      "value": 0.0002,
+      "percentage": 0.49
+    },
+    {
+      "name": "Derivatives",
+      "value": -0.0,
+      "percentage": -0.09
+    }
+  ],
+  "breakdown": {
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": -0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDILS",
+              "value": -0.0,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0002,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ESZ5 Index",
+              "value": 0.0002,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0135,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0072,
+              "percentage": 53.34
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0033,
+              "percentage": 24.62
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0026,
+              "percentage": 19.16
+            },
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0004,
+              "percentage": 2.88
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": 0.0003,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "חייבים זכאים תפעולי",
+              "value": 0.0003,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0052,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ISHARES MSCI ACWI EX US ETF",
+              "value": 0.003,
+              "percentage": 58.79
+            },
+            {
+              "name": "SPDR MSCI ACWI EX-US",
+              "value": 0.0021,
+              "percentage": 41.21
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0174,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "INVESCO US TREASURY DIST",
+              "value": 0.0048,
+              "percentage": 27.37
+            },
+            {
+              "name": "SPDR BB U.S CORP SCRD UE-UUH",
+              "value": 0.0046,
+              "percentage": 26.63
+            },
+            {
+              "name": "X USD CORPORATE BOND 1D",
+              "value": 0.0043,
+              "percentage": 24.85
+            },
+            {
+              "name": "ISHARES USD HY CORP USD DIST",
+              "value": 0.0037,
+              "percentage": 21.15
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

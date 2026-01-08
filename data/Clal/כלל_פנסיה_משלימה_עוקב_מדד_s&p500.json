@@ -1,0 +1,226 @@
+{
+  "fundName": "כלל פנסיה משלימה עוקב מדד s&p500",
+  "trackId": "14795",
+  "totalAssetsBN": 0.88,
+  "assetClasses": [
+    {
+      "name": "Stocks",
+      "value": 0.601,
+      "percentage": 68.24
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.2732,
+      "percentage": 31.02
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0027,
+      "percentage": 0.31
+    },
+    {
+      "name": "Futures",
+      "value": 0.0021,
+      "percentage": 0.24
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0018,
+      "percentage": 0.2
+    }
+  ],
+  "breakdown": {
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0027,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SPTR Index",
+              "value": 0.0028,
+              "percentage": 102.37
+            },
+            {
+              "name": "USDILS",
+              "value": -0.0001,
+              "percentage": -2.37
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0021,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "12/2025 JPM ESZ5 Index משתנה",
+              "value": 0.2283,
+              "percentage": 10935.98
+            },
+            {
+              "name": "12/2025 JPM ESZ5 Index התחייבות",
+              "value": -0.2262,
+              "percentage": -10835.98
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.2732,
+        "percentageOfClass": 100.0,
+        "itemCount": 7,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.1512,
+              "percentage": 55.34
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0711,
+              "percentage": 26.04
+            },
+            {
+              "name": "Bny Mellon",
+              "value": 0.0235,
+              "percentage": 8.61
+            },
+            {
+              "name": "JPM",
+              "value": 0.0224,
+              "percentage": 8.18
+            },
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0049,
+              "percentage": 1.78
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0001,
+              "percentage": 0.05
+            },
+            {
+              "name": "סיטיבנק",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": 0.0018,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "חייבים זכאים תפעולי",
+              "value": 0.0018,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.601,
+        "percentageOfClass": 100.0,
+        "itemCount": 13,
+        "totalPages": 2,
+        "holdingsPages": [
+          [
+            {
+              "name": "INVESCO S&P 500 ACC",
+              "value": 0.1223,
+              "percentage": 20.35
+            },
+            {
+              "name": "ISHARES S&P500 SWAP UCITS",
+              "value": 0.0777,
+              "percentage": 12.93
+            },
+            {
+              "name": "X S&P 500 SWAP 1D",
+              "value": 0.0702,
+              "percentage": 11.68
+            },
+            {
+              "name": "SPDR S&P 500 ETF TRUST",
+              "value": 0.0599,
+              "percentage": 9.96
+            },
+            {
+              "name": "VANGUARD S&P 500 ETF",
+              "value": 0.0559,
+              "percentage": 9.29
+            },
+            {
+              "name": "AM CORE S&P 500 SWAP ETF ACC",
+              "value": 0.0412,
+              "percentage": 6.86
+            },
+            {
+              "name": "קסם 4Da) (PR) S&P 500)",
+              "value": 0.0346,
+              "percentage": 5.75
+            },
+            {
+              "name": "S&P 500 סל MTF מגדל",
+              "value": 0.0336,
+              "percentage": 5.59
+            },
+            {
+              "name": "AM CR SP 500 SP ETF USD DIST",
+              "value": 0.0232,
+              "percentage": 3.86
+            },
+            {
+              "name": "תכלית סל (4D) ‏‏S&P 500",
+              "value": 0.0224,
+              "percentage": 3.73
+            }
+          ],
+          [
+            {
+              "name": "הראל סל (4D) ‏S&P 500",
+              "value": 0.021,
+              "percentage": 3.5
+            },
+            {
+              "name": "מור סל S&P 500",
+              "value": 0.021,
+              "percentage": 3.5
+            },
+            {
+              "name": "פסגות S&P 500 (4D) ETF",
+              "value": 0.0181,
+              "percentage": 3.01
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "fundName": "מגדל מקפת משלימה עוקב מדדי מניות",
+  "trackId": "14930",
+  "totalAssetsBN": 0.28,
+  "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.1533,
+      "percentage": 54.63
+    },
+    {
+      "name": "Stocks",
+      "value": 0.1294,
+      "percentage": 46.11
+    },
+    {
+      "name": "Futures",
+      "value": 0.0031,
+      "percentage": 1.1
+    },
+    {
+      "name": "Derivatives",
+      "value": -0.0051,
+      "percentage": -1.83
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.1533,
+        "percentageOfClass": 100.0,
+        "itemCount": 3,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.1065,
+              "percentage": 69.45
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0468,
+              "percentage": 30.55
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": -0.0051,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "USDILS",
+              "value": -0.0051,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.1294,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "CONSUMER DISCRETIONARY SELT",
+              "value": 0.041,
+              "percentage": 31.71
+            },
+            {
+              "name": "קסם SP Tech ETF",
+              "value": 0.0373,
+              "percentage": 28.86
+            },
+            {
+              "name": "הראל סל SP Tech",
+              "value": 0.0261,
+              "percentage": 20.16
+            },
+            {
+              "name": "COMM SERV SELECT SECTOR SPDR",
+              "value": 0.0249,
+              "percentage": 19.27
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0031,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "XAK Technology    Dec25",
+              "value": 0.0027,
+              "percentage": 89.06
+            },
+            {
+              "name": "S&P EMINI Com Ser Dec25",
+              "value": 0.0003,
+              "percentage": 10.94
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
