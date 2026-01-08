@@ -2511,5 +2511,119 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.5367,
+      "formattedValue": "536.74M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.3667,
+          "formattedValue": "366.69M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.1113,
+          "formattedValue": "111.30M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.041,
+          "formattedValue": "40.98M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0175,
+          "formattedValue": "17.53M"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0003,
+          "formattedValue": "341.67K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0878,
+      "formattedValue": "87.79M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0878,
+          "formattedValue": "87.79M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "0.26K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0225,
+      "formattedValue": "22.54M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0218,
+          "formattedValue": "21.76M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0006,
+          "formattedValue": "563.33K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "297.18K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "0.11K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0014,
+      "formattedValue": "1.42M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0014,
+          "formattedValue": "1.42M"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0013,
+      "formattedValue": "1.26M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0013,
+          "formattedValue": "1.26M"
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "value": 0.0006,
+      "formattedValue": "615.05K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0006,
+          "formattedValue": "615.05K"
+        }
+      ]
+    }
+  ]
 }

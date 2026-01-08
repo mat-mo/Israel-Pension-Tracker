@@ -1571,5 +1571,97 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "USA",
+      "value": 0.0111,
+      "formattedValue": "11.12M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0085,
+          "formattedValue": "8.45M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0026,
+          "formattedValue": "2.65M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "23.82K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.009,
+      "formattedValue": "9.04M",
+      "children": [
+        {
+          "name": "Mutual Funds",
+          "value": 0.0038,
+          "formattedValue": "3.76M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0034,
+          "formattedValue": "3.40M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0019,
+          "formattedValue": "1.87M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "13.13K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0027,
+      "formattedValue": "2.69M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.002,
+          "formattedValue": "1.99M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0008,
+          "formattedValue": "836.87K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0006,
+      "formattedValue": "618.01K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0006,
+          "formattedValue": "618.01K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0006,
+      "formattedValue": "597.83K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0006,
+          "formattedValue": "597.83K"
+        }
+      ]
+    }
+  ]
 }

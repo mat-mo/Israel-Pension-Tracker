@@ -1542,5 +1542,119 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 1.215,
+      "formattedValue": "1.22B",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.5191,
+          "formattedValue": "519.10M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.5174,
+          "formattedValue": "517.43M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.1668,
+          "formattedValue": "166.80M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0117,
+          "formattedValue": "11.70M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.6233,
+      "formattedValue": "623.30M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.4563,
+          "formattedValue": "456.32M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.148,
+          "formattedValue": "148.01M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0188,
+          "formattedValue": "18.85M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0001,
+          "formattedValue": "124.60K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.4398,
+      "formattedValue": "439.84M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.2986,
+          "formattedValue": "298.58M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.1385,
+          "formattedValue": "138.53M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0027,
+          "formattedValue": "2.73M"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0311,
+      "formattedValue": "31.07M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0311,
+          "formattedValue": "31.07M"
+        }
+      ]
+    },
+    {
+      "name": "Canada",
+      "value": 0.0116,
+      "formattedValue": "11.57M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0116,
+          "formattedValue": "11.57M"
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "value": 0.0017,
+      "formattedValue": "1.70M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0017,
+          "formattedValue": "1.70M"
+        }
+      ]
+    }
+  ]
 }

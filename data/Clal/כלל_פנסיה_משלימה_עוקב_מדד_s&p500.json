@@ -283,5 +283,58 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "USA",
+      "value": 0.6059,
+      "formattedValue": "605.90M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.601,
+          "formattedValue": "601.05M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0028,
+          "formattedValue": "2.76M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0021,
+          "formattedValue": "2.09M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.229,
+      "formattedValue": "229.01M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.2273,
+          "formattedValue": "227.32M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0018,
+          "formattedValue": "1.75M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0459,
+      "formattedValue": "45.89M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0459,
+          "formattedValue": "45.89M"
+        }
+      ]
+    }
+  ]
 }

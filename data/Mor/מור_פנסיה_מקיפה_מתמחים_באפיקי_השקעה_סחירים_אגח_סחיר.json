@@ -2328,5 +2328,80 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.013,
+      "formattedValue": "13.02M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0111,
+          "formattedValue": "11.13M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0008,
+          "formattedValue": "797.56K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0006,
+          "formattedValue": "574.02K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0005,
+          "formattedValue": "499.11K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "20.29K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0003,
+      "formattedValue": "266.15K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "265.87K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "0.28K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0,
+      "formattedValue": "7.18K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "7.18K"
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "value": 0.0,
+      "formattedValue": "6.96K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "6.96K"
+        }
+      ]
+    }
+  ]
 }

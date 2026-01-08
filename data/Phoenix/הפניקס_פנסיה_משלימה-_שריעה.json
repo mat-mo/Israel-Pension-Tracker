@@ -1805,5 +1805,70 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "USA",
+      "value": 0.4056,
+      "formattedValue": "405.65M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.4054,
+          "formattedValue": "405.42M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0001,
+          "formattedValue": "147.21K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0001,
+          "formattedValue": "78.63K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0445,
+      "formattedValue": "44.48M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0445,
+          "formattedValue": "44.48M"
+        }
+      ]
+    },
+    {
+      "name": "Ireland",
+      "value": 0.0008,
+      "formattedValue": "839.71K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0008,
+          "formattedValue": "839.71K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0007,
+      "formattedValue": "675.13K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0007,
+          "formattedValue": "675.05K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.08K"
+        }
+      ]
+    }
+  ]
 }

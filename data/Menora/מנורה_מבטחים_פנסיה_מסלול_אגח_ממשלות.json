@@ -1468,5 +1468,93 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.5301,
+      "formattedValue": "530.07M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.438,
+          "formattedValue": "437.97M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0689,
+          "formattedValue": "68.86M"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0087,
+          "formattedValue": "8.65M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0064,
+          "formattedValue": "6.38M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0055,
+          "formattedValue": "5.45M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0027,
+          "formattedValue": "2.72M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "33.52K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.1875,
+      "formattedValue": "187.49M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.1751,
+          "formattedValue": "175.06M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0096,
+          "formattedValue": "9.56M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0029,
+          "formattedValue": "2.87M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0169,
+      "formattedValue": "16.92M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0169,
+          "formattedValue": "16.89M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0,
+          "formattedValue": "5.83K"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0,
+          "formattedValue": "21.94K"
+        }
+      ]
+    }
+  ]
 }

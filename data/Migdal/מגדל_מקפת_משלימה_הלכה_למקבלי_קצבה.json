@@ -624,5 +624,104 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0016,
+      "formattedValue": "1.56M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0013,
+          "formattedValue": "1.31M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "206.85K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "35.37K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "14.99K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0003,
+      "formattedValue": "317.58K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "199.66K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0001,
+          "formattedValue": "117.93K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0001,
+      "formattedValue": "80.59K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "65.75K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "14.83K"
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "value": 0.0,
+      "formattedValue": "0.73K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "0.73K"
+        }
+      ]
+    },
+    {
+      "name": "Canada",
+      "value": 0.0,
+      "formattedValue": "4.67K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "4.67K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0,
+      "formattedValue": "12.51K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "12.51K"
+        }
+      ]
+    }
+  ]
 }

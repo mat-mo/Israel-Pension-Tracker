@@ -283,5 +283,46 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.5896,
+      "formattedValue": "589.63M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.4382,
+          "formattedValue": "438.23M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.1844,
+          "formattedValue": "184.42M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.1101,
+      "formattedValue": "110.13M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0901,
+          "formattedValue": "90.08M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.02,
+          "formattedValue": "20.03M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "18.28K"
+        }
+      ]
+    }
+  ]
 }

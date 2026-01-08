@@ -2850,5 +2850,87 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0343,
+      "formattedValue": "34.35M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0303,
+          "formattedValue": "30.32M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0031,
+          "formattedValue": "3.12M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0005,
+          "formattedValue": "501.39K"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0004,
+          "formattedValue": "393.57K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "11.36K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0099,
+      "formattedValue": "9.88M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0099,
+          "formattedValue": "9.88M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0019,
+      "formattedValue": "1.87M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0019,
+          "formattedValue": "1.87M"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0002,
+      "formattedValue": "164.90K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0002,
+          "formattedValue": "164.90K"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 0.0,
+      "formattedValue": "7.46K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "7.46K"
+        }
+      ]
+    }
+  ]
 }

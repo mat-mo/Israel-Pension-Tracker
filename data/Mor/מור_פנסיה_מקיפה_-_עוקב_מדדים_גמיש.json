@@ -340,5 +340,90 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "USA",
+      "value": 0.0106,
+      "formattedValue": "10.64M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0071,
+          "formattedValue": "7.07M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.003,
+          "formattedValue": "3.04M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0005,
+          "formattedValue": "485.74K"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0001,
+          "formattedValue": "50.33K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0075,
+      "formattedValue": "7.54M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.004,
+          "formattedValue": "3.96M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0022,
+          "formattedValue": "2.20M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0012,
+          "formattedValue": "1.23M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0002,
+          "formattedValue": "233.02K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0001,
+          "formattedValue": "94.81K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0,
+      "formattedValue": "16.02K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "16.02K"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 0.0,
+      "formattedValue": "3.55K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "3.55K"
+        }
+      ]
+    }
+  ]
 }

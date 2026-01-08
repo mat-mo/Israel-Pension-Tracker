@@ -647,5 +647,36 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.2098,
+      "formattedValue": "209.82M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.2065,
+          "formattedValue": "206.45M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0034,
+          "formattedValue": "3.37M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.1618,
+      "formattedValue": "161.81M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.1618,
+          "formattedValue": "161.81M"
+        }
+      ]
+    }
+  ]
 }

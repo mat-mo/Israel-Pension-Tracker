@@ -204,5 +204,53 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "USA",
+      "value": 1.0972,
+      "formattedValue": "1.10B",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.0776,
+          "formattedValue": "1.08B"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0114,
+          "formattedValue": "11.42M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0082,
+          "formattedValue": "8.22M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.8259,
+      "formattedValue": "825.94M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.8527,
+          "formattedValue": "852.69M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0001,
+      "formattedValue": "57.27K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "57.27K"
+        }
+      ]
+    }
+  ]
 }

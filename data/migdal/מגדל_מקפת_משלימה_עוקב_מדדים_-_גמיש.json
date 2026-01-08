@@ -247,5 +247,65 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "USA",
+      "value": 0.0163,
+      "formattedValue": "16.32M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.009,
+          "formattedValue": "8.95M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0074,
+          "formattedValue": "7.36M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.004,
+      "formattedValue": "4.00M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0026,
+          "formattedValue": "2.57M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0014,
+          "formattedValue": "1.43M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0009,
+      "formattedValue": "859.79K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.001,
+          "formattedValue": "977.73K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0005,
+      "formattedValue": "476.39K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0005,
+          "formattedValue": "476.39K"
+        }
+      ]
+    }
+  ]
 }

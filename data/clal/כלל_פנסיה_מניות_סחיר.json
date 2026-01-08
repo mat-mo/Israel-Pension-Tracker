@@ -2867,5 +2867,119 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.1611,
+      "formattedValue": "161.09M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.1449,
+          "formattedValue": "144.87M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0107,
+          "formattedValue": "10.67M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0029,
+          "formattedValue": "2.93M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0014,
+          "formattedValue": "1.40M"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0006,
+          "formattedValue": "637.17K"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0005,
+          "formattedValue": "518.64K"
+        },
+        {
+          "name": "Options",
+          "value": 0.0,
+          "formattedValue": "49.69K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0399,
+      "formattedValue": "39.89M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0399,
+          "formattedValue": "39.89M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0042,
+      "formattedValue": "4.24M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0042,
+          "formattedValue": "4.24M"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "0.15K"
+        }
+      ]
+    },
+    {
+      "name": "Netherlands",
+      "value": 0.0005,
+      "formattedValue": "460.35K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0005,
+          "formattedValue": "460.35K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0002,
+      "formattedValue": "220.49K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "220.49K"
+        }
+      ]
+    },
+    {
+      "name": "Canada",
+      "value": 0.0001,
+      "formattedValue": "75.12K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "72.08K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "3.05K"
+        }
+      ]
+    }
+  ]
 }

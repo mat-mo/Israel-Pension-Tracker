@@ -645,5 +645,104 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0244,
+      "formattedValue": "24.37M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0153,
+          "formattedValue": "15.30M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0079,
+          "formattedValue": "7.95M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0007,
+          "formattedValue": "677.35K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0004,
+          "formattedValue": "448.75K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0103,
+      "formattedValue": "10.32M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0077,
+          "formattedValue": "7.72M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0026,
+          "formattedValue": "2.61M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0028,
+      "formattedValue": "2.84M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0024,
+          "formattedValue": "2.45M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0004,
+          "formattedValue": "391.03K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0005,
+      "formattedValue": "450.77K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0005,
+          "formattedValue": "450.77K"
+        }
+      ]
+    },
+    {
+      "name": "Canada",
+      "value": 0.0002,
+      "formattedValue": "177.81K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "177.81K"
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "value": 0.0,
+      "formattedValue": "23.99K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "23.99K"
+        }
+      ]
+    }
+  ]
 }

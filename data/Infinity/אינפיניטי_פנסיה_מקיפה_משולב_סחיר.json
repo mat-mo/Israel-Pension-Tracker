@@ -834,5 +834,36 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0298,
+      "formattedValue": "29.84M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0285,
+          "formattedValue": "28.45M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0014,
+          "formattedValue": "1.39M"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0,
+      "formattedValue": "48.86K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "48.86K"
+        }
+      ]
+    }
+  ]
 }

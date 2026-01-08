@@ -321,5 +321,116 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0056,
+      "formattedValue": "5.59M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0057,
+          "formattedValue": "5.67M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0028,
+      "formattedValue": "2.81M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0025,
+          "formattedValue": "2.49M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "160.16K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0002,
+          "formattedValue": "155.51K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0007,
+      "formattedValue": "656.02K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0007,
+          "formattedValue": "656.02K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0005,
+      "formattedValue": "506.33K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0005,
+          "formattedValue": "506.33K"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 0.0004,
+      "formattedValue": "410.22K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "286.74K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "101.99K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "21.49K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0002,
+      "formattedValue": "189.12K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "188.86K"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "0.26K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0,
+      "formattedValue": "0.06K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "0.06K"
+        }
+      ]
+    }
+  ]
 }

@@ -462,5 +462,121 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0561,
+      "formattedValue": "56.11M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0569,
+          "formattedValue": "56.89M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0239,
+      "formattedValue": "23.87M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.015,
+          "formattedValue": "14.99M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0089,
+          "formattedValue": "8.88M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0087,
+      "formattedValue": "8.68M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0049,
+          "formattedValue": "4.93M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0022,
+          "formattedValue": "2.17M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0016,
+          "formattedValue": "1.59M"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0068,
+      "formattedValue": "6.83M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0068,
+          "formattedValue": "6.83M"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 0.0037,
+      "formattedValue": "3.74M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0021,
+          "formattedValue": "2.08M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0014,
+          "formattedValue": "1.38M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0003,
+          "formattedValue": "277.66K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0026,
+      "formattedValue": "2.55M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0026,
+          "formattedValue": "2.55M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "2.93K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0,
+      "formattedValue": "0.65K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "0.65K"
+        }
+      ]
+    }
+  ]
 }

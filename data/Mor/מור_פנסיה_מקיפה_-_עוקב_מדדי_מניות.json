@@ -418,5 +418,114 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.2122,
+      "formattedValue": "212.19M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0976,
+          "formattedValue": "97.65M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0891,
+          "formattedValue": "89.09M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0263,
+          "formattedValue": "26.31M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0024,
+          "formattedValue": "2.37M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.002,
+          "formattedValue": "2.03M"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0941,
+      "formattedValue": "94.06M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0387,
+          "formattedValue": "38.66M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0344,
+          "formattedValue": "34.45M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0193,
+          "formattedValue": "19.26M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0017,
+          "formattedValue": "1.69M"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 0.0006,
+      "formattedValue": "621.62K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0006,
+          "formattedValue": "621.62K"
+        }
+      ]
+    },
+    {
+      "name": "Japan",
+      "value": 0.0005,
+      "formattedValue": "481.64K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0005,
+          "formattedValue": "481.64K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0003,
+      "formattedValue": "252.57K",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0003,
+          "formattedValue": "252.57K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0001,
+      "formattedValue": "67.41K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0001,
+          "formattedValue": "67.41K"
+        }
+      ]
+    }
+  ]
 }

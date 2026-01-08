@@ -1896,5 +1896,75 @@
         ]
       }
     ]
-  }
+  },
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 0.0023,
+      "formattedValue": "2.28M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0021,
+          "formattedValue": "2.07M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "180.24K"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0,
+          "formattedValue": "28.16K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.93K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "0.72K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 0.0001,
+      "formattedValue": "144.74K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0001,
+          "formattedValue": "144.74K"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 0.0,
+      "formattedValue": "0.44K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "0.44K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 0.0,
+      "formattedValue": "10.93K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "10.93K"
+        }
+      ]
+    }
+  ]
 }

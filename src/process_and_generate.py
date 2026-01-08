@@ -43,7 +43,7 @@ COUNTRY_MAPPING = {
     # Israel
     "ישראל": "🇮🇱", "Israel": "🇮🇱", "IL": "🇮🇱",
     
-    # USA (With and Without Quotes)
+    # USA
     "ארה\"ב": "🇺🇸", "ארהב": "🇺🇸", "ארצות הברית": "🇺🇸", 
     "United States": "🇺🇸", "USA": "🇺🇸", "US": "🇺🇸", "U.S.A": "🇺🇸",
     
@@ -79,6 +79,18 @@ COUNTRY_MAPPING = {
     "ברזיל": "🇧🇷", "Brazil": "🇧🇷",
     "מקסיקו": "🇲🇽", "Mexico": "🇲🇽",
     "איי קיימן": "🇰🇾", "Cayman Islands": "🇰🇾", "Cayman": "🇰🇾",
+}
+
+# Helper to get display name for Chart from Emoji
+EMOJI_TO_NAME = {
+    "🇮🇱": "Israel", "🇺🇸": "USA", "🇬🇧": "UK", "🇮🇪": "Ireland",
+    "🇱🇺": "Luxembourg", "🇫🇷": "France", "🇩🇪": "Germany", "🇳🇱": "Netherlands",
+    "🇨🇭": "Switzerland", "🇯🇵": "Japan", "🇨🇳": "China", "🇮🇳": "India",
+    "🇨🇦": "Canada", "🇦🇺": "Australia", "🇰🇷": "South Korea", "🇹🇼": "Taiwan",
+    "🇸🇬": "Singapore", "🇭🇰": "Hong Kong", "🇪🇸": "Spain", "🇮🇹": "Italy",
+    "🇸🇪": "Sweden", "🇳🇴": "Norway", "🇩🇰": "Denmark", "🇧🇪": "Belgium",
+    "🇵🇱": "Poland", "🇦🇹": "Austria", "🇧🇷": "Brazil", "🇲🇽": "Mexico",
+    "🇰🇾": "Cayman Is."
 }
 
 # Static Asset Mappings
@@ -269,7 +281,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 if abs(val_bn) < 1e-9: continue
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
-                emoji = get_country_emoji(row)  # <--- Logic Fix Applied Here
+                emoji = get_country_emoji(row) 
 
                 cls, sub = default_cls, default_sub
                 if is_etf_file and class_col:
@@ -289,6 +301,69 @@ def process_institution_data(target_dir, inst_key, config, master_map):
         except Exception: pass 
 
     return all_tracks_data
+
+def calculate_geo_sunburst(data_store):
+    """
+    Groups data by Country (Emoji) -> Asset Class.
+    Returns the 'children' array structure for ECharts Sunburst.
+    """
+    country_groups = {} # { "🇮🇱": { "Stocks": 100, "Bonds": 50 }, ... }
+    
+    # Flatten structure: Iterate over all Asset Classes and Subclasses
+    for cls_name, subclasses in data_store.items():
+        for sub_items in subclasses.values():
+            for item in sub_items:
+                # 1. Determine Country Key
+                emoji = item.get("emoji", "")
+                
+                # If no emoji found, mark as "Global / Other"
+                country_key = emoji if emoji else "Other"
+                
+                # 2. Init Country Group
+                if country_key not in country_groups:
+                    country_groups[country_key] = {}
+                
+                # 3. Init Asset Class Group within Country
+                if cls_name not in country_groups[country_key]:
+                    country_groups[country_key][cls_name] = 0.0
+                
+                # 4. Add Value
+                country_groups[country_key][cls_name] += item["value"]
+
+    # Convert to List format for ECharts
+    sunburst_data = []
+    
+    for country_key, assets_dict in country_groups.items():
+        country_total = sum(assets_dict.values())
+        if country_total == 0: continue
+        
+        # Get readable name from map, or use emoji/text as is
+        display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
+        
+        # Create Asset Children nodes
+        asset_children = []
+        for cls_name, val in assets_dict.items():
+            if val > 0:
+                asset_children.append({
+                    "name": cls_name,
+                    "value": round(val, 4),
+                    "formattedValue": format_currency(val)
+                })
+        
+        # Sort assets by size
+        asset_children.sort(key=lambda x: x["value"], reverse=True)
+        
+        sunburst_data.append({
+            "name": display_name,
+            "value": round(country_total, 4),
+            "formattedValue": format_currency(country_total),
+            "children": asset_children
+        })
+
+    # Sort Countries by size
+    sunburst_data.sort(key=lambda x: x["value"], reverse=True)
+    
+    return sunburst_data
 
 def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     track_map = config['institutions'][inst_key]['tracks']
@@ -358,6 +433,11 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             breakdown[c_name] = c_breakdown
             
         asset_classes.sort(key=lambda x: x['percentage'], reverse=True)
+        
+        # --- NEW: Generate Geo Sunburst Data ---
+        geo_sunburst_data = calculate_geo_sunburst(data_store)
+        # ---------------------------------------
+
         safe_filename = get_safe_filename(t_name)
         
         final_obj = {
@@ -366,7 +446,8 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             "totalAssetsBN": round(total_assets, 2), 
             "formattedTotalAssets": format_currency(total_assets),
             "assetClasses": asset_classes, 
-            "breakdown": breakdown
+            "breakdown": breakdown,
+            "geoSunburst": geo_sunburst_data  # <--- Added to JSON
         }
         
         with open(target_dir / safe_filename, 'w', encoding='utf-8') as f:

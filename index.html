@@ -81,6 +81,14 @@
             </div>
         </div>
 
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
+            <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
+                <h2 class="font-bold text-lg text-gray-800 dark:text-white">3. Geographic Allocation</h2>
+                <p class="text-xs text-gray-400 dark:text-gray-500">Breakdown by Country & Asset Class (Click center to zoom out)</p>
+            </div>
+            <div id="geoSunburstChart" class="h-[600px] w-full"></div> 
+        </div>
+
         <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-100 dark:border-dark-border overflow-hidden transition-colors duration-300">
             <div class="p-6 border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300">
                 <h3 id="tableTitle" class="font-bold text-gray-700 dark:text-gray-200">Holdings</h3>
@@ -122,6 +130,8 @@
     <script>
         let mainChart = null;
         let subChart = null;
+        let geoSunburstChart = null; // NEW Variable
+        
         let currentManifest = [];
         let currentInst = null;
         let currentTrackData = null;
@@ -265,6 +275,7 @@
 
             const colors = getChartColors();
             
+            // --- MAIN PIE ---
             const option = {
                 color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
                 tooltip: { 
@@ -273,7 +284,10 @@
                     backgroundColor: colors.tooltipBg,
                     borderColor: colors.tooltipBorder,
                     textStyle: { color: colors.tooltipText },
-                    formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%` 
+                    formatter: (params) => {
+                         if (!params.data) return '';
+                         return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`;
+                    }
                 },
                 series: [{
                     name: 'Asset Class',
@@ -289,6 +303,7 @@
                         show: true, 
                         position: 'outside', 
                         formatter: function(params) {
+                           if (!params.data) return '';
                            const val = params.data.formattedValue || params.value + 'B';
                            return `${params.name}\n${val}`;
                         }, 
@@ -309,11 +324,85 @@
             if (resetView && data.assetClasses.length > 0) {
                 updateSubChart(data.assetClasses[0].name);
             }
+
+            // --- RENDER NEW SUNBURST ---
+            renderGeoSunburst(data);
             
+            // Resize logic
             window.addEventListener('resize', () => {
                 mainChart.resize();
                 subChart.resize();
+                if(geoSunburstChart) geoSunburstChart.resize();
             });
+        }
+
+        // --- NEW: Geo Sunburst Function ---
+        function renderGeoSunburst(data) {
+            if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
+            
+            // Clear if no data
+            if (!data.geoSunburst || data.geoSunburst.length === 0) { 
+                geoSunburstChart.clear();
+                geoSunburstChart.setOption({
+                    title: {
+                        text: 'No Geographic Data Available',
+                        left: 'center', top: 'center',
+                        textStyle: { color: '#9ca3af' }
+                    }
+                });
+                return; 
+            }
+
+            const isMobile = window.innerWidth < 768;
+            const colors = getChartColors(); 
+
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: colors.tooltipBg,
+                    borderColor: colors.tooltipBorder,
+                    textStyle: { color: colors.tooltipText },
+                    formatter: (params) => {
+                        if (!params.data) return '';
+                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
+                        let val = params.data.formattedValue || params.value;
+                        return `<b>${path}</b><br/>Value: ${val}<br/>Share: ${params.percent}%`;
+                    }
+                },
+                series: {
+                    type: 'sunburst',
+                    data: data.geoSunburst,
+                    radius: ['15%', '80%'],
+                    sort: null, // Keep Python sort order
+                    emphasis: { focus: 'ancestor' },
+                    itemStyle: {
+                        borderRadius: 4,
+                        borderWidth: 2,
+                        borderColor: colors.borderColor 
+                    },
+                    label: {
+                        rotate: 'radial', 
+                        color: colors.text,
+                        fontWeight: 'bold',
+                        minAngle: 5 
+                    },
+                    levels: [
+                        {}, 
+                        {
+                            // Countries
+                            r0: '15%', r: '45%',
+                            label: { rotate: 'tangential', align: 'center' },
+                            itemStyle: { borderWidth: 2 }
+                        },
+                        {
+                            // Assets
+                            r0: '45%', r: '75%',
+                            label: { align: 'right', padding: 3 }
+                        }
+                    ]
+                }
+            };
+            geoSunburstChart.setOption(option);
         }
 
         function updateSubChart(categoryName) {
@@ -348,7 +437,10 @@
                     backgroundColor: colors.tooltipBg,
                     borderColor: colors.tooltipBorder,
                     textStyle: { color: colors.tooltipText },
-                    formatter: (params) => `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%` 
+                    formatter: (params) => {
+                        if (!params.data) return '';
+                        return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`;
+                    } 
                 },
                 series: [{
                     name: 'Subclass',
@@ -370,17 +462,14 @@
             
             subChart.setOption(option, true);
             
-            // Add click listener to Sub-Chart to filter table
             subChart.off('click');
             subChart.on('click', function(params) {
-                // Find the subclass data object
                 const selectedSubclass = breakdown.find(b => b.subclass === params.name);
                 if (selectedSubclass) {
                     loadSubclassTable(selectedSubclass);
                 }
             });
 
-            // Default: Load the largest subclass (usually index 0)
             if (breakdown.length > 0) {
                 loadSubclassTable(breakdown[0]);
             }
@@ -418,7 +507,6 @@
             let holdingsToShow = [];
             let isPaginated = false;
 
-            // Check if data is paginated or flat (legacy support)
             if (currentSubclassData.holdingsPages && Array.isArray(currentSubclassData.holdingsPages)) {
                 isPaginated = true;
                 holdingsToShow = currentSubclassData.holdingsPages[currentPage];
@@ -447,7 +535,6 @@
                 tbody.appendChild(tr);
             });
 
-            // Update Pagination UI
             if (isPaginated && currentSubclassData.totalPages > 1) {
                 paginationControls.classList.remove('hidden');
                 document.getElementById('pageInfo').innerText = `Page ${currentPage + 1} of ${currentSubclassData.totalPages}`;
@@ -458,7 +545,6 @@
                 btnPrev.disabled = currentPage === 0;
                 btnNext.disabled = currentPage === currentSubclassData.totalPages - 1;
                 
-                // Style updates for disabled state
                 btnPrev.classList.toggle('opacity-50', currentPage === 0);
                 btnNext.classList.toggle('opacity-50', currentPage === currentSubclassData.totalPages - 1);
             } else {
