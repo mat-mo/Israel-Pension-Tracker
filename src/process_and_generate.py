@@ -89,6 +89,28 @@ def load_master_track_list():
 # 3. HELPER FUNCTIONS
 # ==========================================
 
+def format_currency(value_bn):
+    """
+    Formats a value (in Billions) to a readable string with B/M/K units.
+    value_bn: Float representing Billions.
+    """
+    if value_bn == 0:
+        return "0"
+        
+    abs_val = abs(value_bn)
+    
+    if abs_val >= 1.0:
+        # Billions
+        return f"{value_bn:,.2f}B"
+    elif abs_val >= 0.001:
+        # Millions (0.001 BN = 1 Million)
+        val_m = value_bn * 1_000
+        return f"{val_m:,.2f}M"
+    else:
+        # Thousands (0.000001 BN = 1 Thousand)
+        val_k = value_bn * 1_000_000
+        return f"{val_k:,.2f}K"
+
 def get_category(filename):
     if "לא סחיר" in filename:
         if "מניות" in filename: return ("Non-Tradable Stocks", "Direct Holdings")
@@ -129,7 +151,7 @@ def get_safe_filename(name):
     return f"{clean}.json"
 
 # ==========================================
-# 4. CORE PIPELINE (UPDATED FOR MENORA)
+# 4. CORE PIPELINE (UPDATED FOR MENORA + FORMATTING)
 # ==========================================
 
 def detect_header_row(xls, sheet_name):
@@ -287,7 +309,14 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         for c_name, subs in data_store.items():
             c_total = sum(sum(i['value'] for i in s_list) for s_list in subs.values())
             c_pct = (c_total / total_assets) * 100
-            asset_classes.append({"name": c_name, "value": round(c_total, 4), "percentage": round(c_pct, 2)})
+            
+            # Added formattedValue
+            asset_classes.append({
+                "name": c_name, 
+                "value": round(c_total, 4), 
+                "formattedValue": format_currency(c_total),
+                "percentage": round(c_pct, 2)
+            })
             
             c_breakdown = []
             for s_name, items in subs.items():
@@ -301,15 +330,25 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 all_holdings = []
                 for h in sorted_h:
                     h_pct = (h['value'] / s_total * 100) if s_total else 0
-                    all_holdings.append({"name": h['name'], "value": round(h['value'], 4), "percentage": round(h_pct, 2)})
+                    all_holdings.append({
+                        "name": h['name'], 
+                        "value": round(h['value'], 4), 
+                        "formattedValue": format_currency(h['value']),
+                        "percentage": round(h_pct, 2)
+                    })
                 
                 total_items = len(all_holdings)
                 total_pages = math.ceil(total_items / ITEMS_PER_PAGE)
                 paginated = [all_holdings[i:i + ITEMS_PER_PAGE] for i in range(0, total_items, ITEMS_PER_PAGE)]
                 
                 c_breakdown.append({
-                    "subclass": s_name, "value": round(s_total, 4), "percentageOfClass": round(s_pct_class, 2),
-                    "itemCount": total_items, "totalPages": total_pages, "holdingsPages": paginated
+                    "subclass": s_name, 
+                    "value": round(s_total, 4), 
+                    "formattedValue": format_currency(s_total),
+                    "percentageOfClass": round(s_pct_class, 2),
+                    "itemCount": total_items, 
+                    "totalPages": total_pages, 
+                    "holdingsPages": paginated
                 })
             c_breakdown.sort(key=lambda x: x['value'], reverse=True)
             breakdown[c_name] = c_breakdown
@@ -317,7 +356,14 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         asset_classes.sort(key=lambda x: x['percentage'], reverse=True)
         safe_filename = get_safe_filename(t_name)
         
-        final_obj = {"fundName": t_name, "trackId": t_id, "totalAssetsBN": round(total_assets, 2), "assetClasses": asset_classes, "breakdown": breakdown}
+        final_obj = {
+            "fundName": t_name, 
+            "trackId": t_id, 
+            "totalAssetsBN": round(total_assets, 2), 
+            "formattedTotalAssets": format_currency(total_assets),
+            "assetClasses": asset_classes, 
+            "breakdown": breakdown
+        }
         
         with open(target_dir / safe_filename, 'w', encoding='utf-8') as f:
             json.dump(final_obj, f, indent=2, ensure_ascii=False)
