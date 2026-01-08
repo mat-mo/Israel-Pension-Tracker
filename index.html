@@ -325,7 +325,6 @@
                 updateSubChart(data.assetClasses[0].name);
             }
 
-            // --- RENDER NEW SUNBURST ---
             renderGeoSunburst(data);
             
             // Resize logic
@@ -336,74 +335,86 @@
             });
         }
 
-        // --- NEW: Geo Sunburst Function ---
         function renderGeoSunburst(data) {
-            if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
-            
-            // Clear if no data
-            if (!data.geoSunburst || data.geoSunburst.length === 0) { 
-                geoSunburstChart.clear();
-                geoSunburstChart.setOption({
-                    title: {
-                        text: 'No Geographic Data Available',
-                        left: 'center', top: 'center',
-                        textStyle: { color: '#9ca3af' }
-                    }
-                });
-                return; 
+    if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
+    
+    // Safety check
+    if (!data.geoSunburst || data.geoSunburst.length === 0) { 
+        geoSunburstChart.clear();
+        geoSunburstChart.setOption({
+            title: {
+                text: 'No Geographic Data Available',
+                left: 'center', top: 'center',
+                textStyle: { color: '#9ca3af' }
             }
+        });
+        return; 
+    }
 
-            const isMobile = window.innerWidth < 768;
-            const colors = getChartColors(); 
+    // 1. Calculate Total Value manually for the percentage share
+    const totalPortfolioValue = data.geoSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
 
-            const option = {
-                tooltip: {
-                    trigger: 'item',
-                    backgroundColor: colors.tooltipBg,
-                    borderColor: colors.tooltipBorder,
-                    textStyle: { color: colors.tooltipText },
-                    formatter: (params) => {
-                        if (!params.data) return '';
-                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
-                        let val = params.data.formattedValue || params.value;
-                        return `<b>${path}</b><br/>Value: ${val}<br/>Share: ${params.percent}%`;
-                    }
-                },
-                series: {
-                    type: 'sunburst',
-                    data: data.geoSunburst,
-                    radius: ['15%', '80%'],
-                    sort: null, // Keep Python sort order
-                    emphasis: { focus: 'ancestor' },
-                    itemStyle: {
-                        borderRadius: 4,
-                        borderWidth: 2,
-                        borderColor: colors.borderColor 
-                    },
-                    label: {
-                        rotate: 'radial', 
-                        color: colors.text,
-                        fontWeight: 'bold',
-                        minAngle: 5 
-                    },
-                    levels: [
-                        {}, 
-                        {
-                            // Countries
-                            r0: '15%', r: '45%',
-                            label: { rotate: 'tangential', align: 'center' },
-                            itemStyle: { borderWidth: 2 }
-                        },
-                        {
-                            // Assets
-                            r0: '45%', r: '75%',
-                            label: { align: 'right', padding: 3 }
-                        }
-                    ]
+    const isMobile = window.innerWidth < 768;
+    const colors = getChartColors(); 
+
+    const option = {
+        tooltip: {
+            trigger: 'item',
+            backgroundColor: colors.tooltipBg,
+            borderColor: colors.tooltipBorder,
+            textStyle: { color: colors.tooltipText },
+            formatter: (params) => {
+                if (!params.data) return '';
+
+                // Build Path (e.g., Israel > Stocks)
+                let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
+                
+                // Get Formatted Value
+                let val = params.data.formattedValue || params.value;
+                
+                // Fix: Manually calculate share if params.percent is undefined
+                let share = params.percent;
+                if (share === undefined && totalPortfolioValue > 0) {
+                    // Calculate percentage relative to total portfolio
+                    share = ((params.value / totalPortfolioValue) * 100).toFixed(2);
                 }
+
+                return `<b>${path}</b><br/>Value: ${val}<br/>Share: ${share}%`;
+            }
+        },
+        series: {
+            type: 'sunburst',
+            data: data.geoSunburst,
+            radius: ['15%', '80%'],
+            sort: null, 
+            emphasis: { focus: 'ancestor' },
+            itemStyle: {
+                borderRadius: 4,
+                borderWidth: 2,
+                borderColor: colors.borderColor 
+            },
+            label: {
+                rotate: 'radial', 
+                color: colors.text,
+                fontWeight: 'bold',
+                minAngle: 5 
+            },
+            levels: [
+                {}, 
+                {
+                    r0: '15%', r: '45%',
+                    label: { rotate: 'tangential', align: 'center' },
+                    itemStyle: { borderWidth: 2 }
+                },
+                {
+                    r0: '45%', r: '75%',
+                    label: { align: 'right', padding: 3 }
+                }
+              ]
+             }
             };
             geoSunburstChart.setOption(option);
-        }
+        }  
 
         function updateSubChart(categoryName) {
             const isMobile = window.innerWidth < 768;
