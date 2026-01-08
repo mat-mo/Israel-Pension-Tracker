@@ -1,0 +1,80 @@
+{
+  "fundName": "הפניקס פנסיה כללית - מסלול מקבלי קצבה קיימים",
+  "trackId": "2202",
+  "totalAssetsBN": 0.03,
+  "assetClasses": [
+    {
+      "name": "Bonds",
+      "value": 0.0343,
+      "percentage": 98.75
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0004,
+      "percentage": 1.25
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0004,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0004,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.0343,
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ממשלתי צמוד 841",
+              "value": 0.0109,
+              "percentage": 31.79
+            },
+            {
+              "name": "ממשלתי צמוד 0529",
+              "value": 0.0087,
+              "percentage": 25.49
+            },
+            {
+              "name": "ממשל צמודה 1028",
+              "value": 0.0061,
+              "percentage": 17.94
+            },
+            {
+              "name": "ממשלתי צמוד 0545",
+              "value": 0.0031,
+              "percentage": 8.93
+            },
+            {
+              "name": "גליל  0536",
+              "value": 0.003,
+              "percentage": 8.68
+            },
+            {
+              "name": "ממשל צמודה 1033",
+              "value": 0.0025,
+              "percentage": 7.17
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

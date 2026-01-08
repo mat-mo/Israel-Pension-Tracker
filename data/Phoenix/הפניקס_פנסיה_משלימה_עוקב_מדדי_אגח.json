@@ -1,0 +1,113 @@
+{
+  "fundName": "הפניקס פנסיה משלימה עוקב מדדי אג\"ח",
+  "trackId": "15222",
+  "totalAssetsBN": 0.0,
+  "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0012,
+      "percentage": 80.05
+    },
+    {
+      "name": "Bonds",
+      "value": 0.0003,
+      "percentage": 19.27
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0,
+      "percentage": 0.68
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0012,
+        "percentageOfClass": 100.0,
+        "itemCount": 3,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0005,
+              "percentage": 46.33
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.0005,
+              "percentage": 42.3
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0001,
+              "percentage": 11.36
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "ETFs",
+        "value": 0.0003,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "iShares iBoxx $ Investment Gra",
+              "value": 0.0002,
+              "percentage": 59.82
+            },
+            {
+              "name": "SPDR Bloomberg Emerging Market",
+              "value": 0.0001,
+              "percentage": 40.18
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0,
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "IBOXHY INDEX",
+              "value": 0.0,
+              "percentage": 330.76
+            },
+            {
+              "name": "JCMDCOMP INDEX",
+              "value": -0.0,
+              "percentage": -3.04
+            },
+            {
+              "name": "IBXXC1D1 INDEX",
+              "value": -0.0,
+              "percentage": -9.57
+            },
+            {
+              "name": "IBOXIG INDEX",
+              "value": -0.0,
+              "percentage": -11.88
+            },
+            {
+              "name": "USDILS",
+              "value": -0.0,
+              "percentage": -206.27
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

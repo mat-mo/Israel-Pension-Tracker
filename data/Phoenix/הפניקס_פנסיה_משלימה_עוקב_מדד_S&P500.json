@@ -1,0 +1,209 @@
+{
+  "fundName": "הפניקס פנסיה משלימה עוקב מדד S&P500",
+  "trackId": "13465",
+  "totalAssetsBN": 2.33,
+  "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 1.6132,
+      "percentage": 69.18
+    },
+    {
+      "name": "Stocks",
+      "value": 0.4825,
+      "percentage": 20.69
+    },
+    {
+      "name": "Bonds",
+      "value": 0.1721,
+      "percentage": 7.38
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.0642,
+      "percentage": 2.76
+    },
+    {
+      "name": "Futures",
+      "value": -0.0003,
+      "percentage": -0.01
+    }
+  ],
+  "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 1.6132,
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.6678,
+              "percentage": 41.4
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.5527,
+              "percentage": 34.26
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.359,
+              "percentage": 22.25
+            },
+            {
+              "name": "בנק U בנק",
+              "value": 0.0308,
+              "percentage": 1.91
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0022,
+              "percentage": 0.14
+            },
+            {
+              "name": "CITI",
+              "value": 0.0006,
+              "percentage": 0.04
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.4825,
+        "percentageOfClass": 100.0,
+        "itemCount": 9,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "Invesco S&P 500 UCITS ETF",
+              "value": 0.1815,
+              "percentage": 37.63
+            },
+            {
+              "name": "Amundi S&P 500 II UCITS ETF",
+              "value": 0.1394,
+              "percentage": 28.9
+            },
+            {
+              "name": "הראל סל SP500",
+              "value": 0.0664,
+              "percentage": 13.75
+            },
+            {
+              "name": "תכלית סל ‏‏SP500",
+              "value": 0.0314,
+              "percentage": 6.52
+            },
+            {
+              "name": "MTF סל‏ SP500",
+              "value": 0.0217,
+              "percentage": 4.5
+            },
+            {
+              "name": "Amundi Core S&P 500 Swap",
+              "value": 0.0192,
+              "percentage": 3.98
+            },
+            {
+              "name": "מור סל S&P 500",
+              "value": 0.0175,
+              "percentage": 3.63
+            },
+            {
+              "name": "י.ל*סל P&S 005",
+              "value": 0.0053,
+              "percentage": 1.09
+            },
+            {
+              "name": "קסם SP500 ETF",
+              "value": 0.0,
+              "percentage": 0.0
+            }
+          ]
+        ]
+      }
+    ],
+    "Bonds": [
+      {
+        "subclass": "Government Bonds",
+        "value": 0.1721,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "B 0 30/10/25",
+              "value": 0.0866,
+              "percentage": 50.33
+            },
+            {
+              "name": "B 0 09/03/26",
+              "value": 0.0468,
+              "percentage": 27.2
+            },
+            {
+              "name": "B 0 10/02/25",
+              "value": 0.0376,
+              "percentage": 21.86
+            },
+            {
+              "name": "B 0 08/06/26",
+              "value": 0.001,
+              "percentage": 0.61
+            }
+          ]
+        ]
+      }
+    ],
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": 0.0642,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SPTR INDEX",
+              "value": 0.1012,
+              "percentage": 157.47
+            },
+            {
+              "name": "USDILS",
+              "value": -0.0369,
+              "percentage": -57.47
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": -0.0003,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "MINI S&P500 INDEX",
+              "value": -0.0003,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
