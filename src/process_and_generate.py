@@ -19,7 +19,7 @@ BASE_PATH = Path("/Users/matanya/git-repos/Israel-Pension-Tracker")
 INPUT_DIRECTORY = BASE_PATH / "institution_reports"
 OUTPUT_BASE_DIRECTORY = BASE_PATH / "data"
 CONFIG_FILE = BASE_PATH / "config.json"
-MASTER_TRACK_FILE = BASE_PATH / "master_track_list.json" # <--- Updated to .json
+MASTER_TRACK_FILE = BASE_PATH / "master_track_list.json"
 ITEMS_PER_PAGE = 10
 
 # Columns to search for Track Name (Backup if not in Master List)
@@ -117,6 +117,7 @@ def get_column_value(row, possible_columns):
 def clean_value(val):
     if pd.isna(val) or str(val).strip() in ['nan', 'ריק במקור', 'תא ללא תוכן, המשך בתא הבא']: return 0.0
     try:
+        # Handle cases where value might be string with commas
         return float(str(val).replace(',', ''))
     except:
         return 0.0
@@ -128,20 +129,50 @@ def get_safe_filename(name):
     return f"{clean}.json"
 
 # ==========================================
-# 4. CORE PIPELINE
+# 4. CORE PIPELINE (UPDATED FOR MENORA)
 # ==========================================
+
+def detect_header_row(xls, sheet_name):
+    """
+    Intelligently finds the header row index by looking for 'מספר מסלול'.
+    Returns the 0-based index of the header row.
+    """
+    try:
+        # Read the first 20 rows without a header to inspect them
+        df_preview = pd.read_excel(xls, sheet_name=sheet_name, header=None, nrows=20)
+        
+        for idx, row in df_preview.iterrows():
+            # Convert row to string to search for keywords
+            row_str = " ".join([str(x) for x in row.values])
+            
+            # "מספר מסלול" is the absolute anchor for all pension files
+            if "מספר מסלול" in row_str:
+                return idx
+                
+        return 0 # Default to 0 if not found
+    except Exception as e:
+        return 0
 
 def split_excel_to_csvs(file_path, target_dir):
     try:
         xls = pd.ExcelFile(file_path)
         log(f"Splitting {file_path.name} ({len(xls.sheet_names)} sheets)...")
+        
         for sheet_name in xls.sheet_names:
             try:
-                df = pd.read_excel(xls, sheet_name=sheet_name)
+                # 1. Detect dynamic header row (Fix for Menora/Phoenix differences)
+                header_idx = detect_header_row(xls, sheet_name)
+                
+                # 2. Read with correct header
+                df = pd.read_excel(xls, sheet_name=sheet_name, header=header_idx)
+                
+                # 3. Save to CSV
                 csv_filename = f"{file_path.stem} - {sheet_name}.csv"
                 save_path = target_dir / csv_filename
                 df.to_csv(save_path, index=False, encoding='utf-8-sig')
+                
             except Exception as e:
+                log(f"[Warning] Skipped sheet {sheet_name}: {e}")
                 pass 
         return True
     except Exception as e:
@@ -178,9 +209,20 @@ def process_institution_data(target_dir, inst_key, config, master_map):
             df = pd.read_csv(f)
             df.columns = [c.strip() for c in df.columns]
             
-            if 'מספר מסלול' not in df.columns: continue
-            val_col = next((c for c in df.columns if "שווי הוגן" in c and "באלפי" in c), None)
+            # Validation: Ensure we found the header
+            if 'מספר מסלול' not in df.columns: 
+                # This usually means the file is empty or structure is unrecognizable
+                continue
+                
+            # Flexible Value Column Detection (Fix for "שווי הוגן (באלפי ש""ח)")
+            val_col = next((c for c in df.columns if "שווי" in c and "הוגן" in c and "באלפי" in c), None)
+            
+            # Fallback for standard naming
+            if not val_col:
+                val_col = next((c for c in df.columns if "שווי" in c and "שוק" in c), None)
+            
             if not val_col: continue
+            
             class_col = "סיווג הקרן" if "סיווג הקרן" in df.columns else None
 
             for _, row in df.iterrows():
@@ -224,6 +266,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 all_tracks_data[track_id][cls][sub].append({"name": name, "value": val_bn})
                 
         except Exception as e:
+            # log(f"Error processing row in {f.name}: {e}")
             pass 
 
     return all_tracks_data

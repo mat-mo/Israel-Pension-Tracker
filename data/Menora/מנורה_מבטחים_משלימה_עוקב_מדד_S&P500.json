@@ -1,0 +1,189 @@
+{
+  "fundName": "מנורה מבטחים משלימה עוקב מדד S&P500",
+  "trackId": "13875",
+  "totalAssetsBN": 1.24,
+  "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.7503,
+      "percentage": 60.31
+    },
+    {
+      "name": "Stocks",
+      "value": 0.4336,
+      "percentage": 34.85
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.0623,
+      "percentage": 5.01
+    },
+    {
+      "name": "Futures",
+      "value": 0.0109,
+      "percentage": 0.88
+    },
+    {
+      "name": "Derivatives",
+      "value": -0.0131,
+      "percentage": -1.05
+    }
+  ],
+  "breakdown": {
+    "Derivatives": [
+      {
+        "subclass": "General",
+        "value": -0.0131,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "SPTR",
+              "value": 0.0059,
+              "percentage": -45.2
+            },
+            {
+              "name": "USDILS",
+              "value": -0.019,
+              "percentage": 145.2
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.7503,
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.3369,
+              "percentage": 44.9
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.2718,
+              "percentage": 36.23
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.1126,
+              "percentage": 15.01
+            },
+            {
+              "name": "בנק הפועלים בע''מ",
+              "value": 0.0289,
+              "percentage": 3.86
+            }
+          ]
+        ]
+      }
+    ],
+    "Stocks": [
+      {
+        "subclass": "ETFs",
+        "value": 0.4336,
+        "percentageOfClass": 100.0,
+        "itemCount": 9,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "MTF סל‏ SP500",
+              "value": 0.0688,
+              "percentage": 15.87
+            },
+            {
+              "name": "הראל סל SP500",
+              "value": 0.0506,
+              "percentage": 11.67
+            },
+            {
+              "name": "תכלית סל ‏‏SP500",
+              "value": 0.0488,
+              "percentage": 11.25
+            },
+            {
+              "name": "איביאי סל SP 500",
+              "value": 0.0487,
+              "percentage": 11.23
+            },
+            {
+              "name": "I500 NA iShares S&P 500 Swap UCITS ETF",
+              "value": 0.0443,
+              "percentage": 10.21
+            },
+            {
+              "name": "SP5C LN Amundi S&P 500 II UCITS ETF",
+              "value": 0.0433,
+              "percentage": 9.99
+            },
+            {
+              "name": "SPXS LN SOURCE S&P 500 UCITS ETF",
+              "value": 0.0433,
+              "percentage": 9.99
+            },
+            {
+              "name": "קסם SP500 ETF",
+              "value": 0.0431,
+              "percentage": 9.94
+            },
+            {
+              "name": "מור סל S&P500",
+              "value": 0.0427,
+              "percentage": 9.84
+            }
+          ]
+        ]
+      }
+    ],
+    "Mutual Funds": [
+      {
+        "subclass": "General",
+        "value": 0.0623,
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "קסם S&P 500 KTF",
+              "value": 0.0397,
+              "percentage": 63.67
+            },
+            {
+              "name": "הראל מחקה SP500 (4D)",
+              "value": 0.0227,
+              "percentage": 36.33
+            }
+          ]
+        ]
+      }
+    ],
+    "Futures": [
+      {
+        "subclass": "General",
+        "value": 0.0109,
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ESZ5 DEC25 S&P 500 משתנה",
+              "value": 0.0109,
+              "percentage": 100.0
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
