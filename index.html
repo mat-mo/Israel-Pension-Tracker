@@ -217,7 +217,7 @@
             inst.tracks.forEach((track, index) => {
                 const opt = document.createElement('option');
                 opt.value = index;
-                opt.text = track.name;
+                opt.text = `${track.name} (${track.id})`;
                 trackSelector.appendChild(opt);
             });
 
