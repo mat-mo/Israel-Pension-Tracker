@@ -22,7 +22,7 @@ CONFIG_FILE = BASE_PATH / "config.json"
 MASTER_TRACK_FILE = BASE_PATH / "master_track_list.json"
 ITEMS_PER_PAGE = 10
 
-# Columns to search for Track Name (Backup if not in Master List)
+# Columns to search for Track Name
 TRACK_NAME_COLUMNS = ["שם מסלול", "שם המסלול", "שם קופה", "שם הקופה", "שם מסלול השקעה"]
 
 # Asset Name Columns
@@ -31,6 +31,44 @@ NAME_COLUMNS = [
     "שם קרן השקעה", "שם הנכס", "שם הנכס האחר", "שם שותף כללי קרן השקעות",
     "טיקר", "מאפיין עיקרי"
 ]
+
+# Country Columns (New Feature)
+COUNTRY_COLUMNS = [
+    "מדינה לפי חשיפה כלכלית", "מדינת הרישום", "מדינת התאגדות",
+    "מדינת מיקום נדל\"ן", "מקום המסחר", "מדינה"
+]
+
+# Emoji Map
+COUNTRY_MAPPING = {
+    "ישראל": "🇮🇱", "Israel": "🇮🇱",
+    "ארה\"ב": "🇺🇸", "ארצות הברית": "🇺🇸", "United States": "🇺🇸", "USA": "🇺🇸", "US": "🇺🇸",
+    "אירלנד": "🇮🇪", "Ireland": "🇮🇪",
+    "בריטניה": "🇬🇧", "אנגליה": "🇬🇧", "United Kingdom": "🇬🇧", "UK": "🇬🇧", "Great Britain": "🇬🇧",
+    "לוקסמבורג": "🇱🇺", "Luxembourg": "🇱🇺",
+    "איי קיימן": "🇰🇾", "Cayman Islands": "🇰🇾", "Cayman": "🇰🇾",
+    "צרפת": "🇫🇷", "France": "🇫🇷",
+    "גרמניה": "🇩🇪", "Germany": "🇩🇪",
+    "יפן": "🇯🇵", "Japan": "🇯🇵",
+    "הולנד": "🇳🇱", "Netherlands": "🇳🇱",
+    "שוויץ": "🇨🇭", "Switzerland": "🇨🇭",
+    "קנדה": "🇨🇦", "Canada": "🇨🇦",
+    "אוסטרליה": "🇦🇺", "Australia": "🇦🇺",
+    "סין": "🇨🇳", "China": "🇨🇳",
+    "הודו": "🇮🇳", "India": "🇮🇳",
+    "דרום קוריאה": "🇰🇷", "South Korea": "🇰🇷",
+    "טאיוואן": "🇹🇼", "Taiwan": "🇹🇼",
+    "ברזיל": "🇧🇷", "Brazil": "🇧🇷",
+    "ספרד": "🇪🇸", "Spain": "🇪🇸",
+    "איטליה": "🇮🇹", "Italy": "🇮🇹",
+    "שבדיה": "🇸🇪", "Sweden": "🇸🇪",
+    "הונג קונג": "🇭🇰", "Hong Kong": "🇭🇰",
+    "סינגפור": "🇸🇬", "Singapore": "🇸🇬",
+    "מקסיקו": "🇲🇽", "Mexico": "🇲🇽",
+    "נורבגיה": "🇳🇴", "Norway": "🇳🇴",
+    "דנמרק": "🇩🇰", "Denmark": "🇩🇰",
+    "פולין": "🇵🇱", "Poland": "🇵🇱",
+    "בלגיה": "🇧🇪", "Belgium": "🇧🇪",
+}
 
 # Static Asset Mappings
 FILE_MAPPING = {
@@ -59,57 +97,29 @@ FILE_MAPPING = {
 }
 
 # ==========================================
-# 2. DATA LOADING
+# 2. HELPER FUNCTIONS
 # ==========================================
 
 def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
 
 def load_master_track_list():
-    """Reads the external JSON mapping file."""
     if not MASTER_TRACK_FILE.exists():
-        log(f"[!!!] CRITICAL ERROR: Master Track List not found at {MASTER_TRACK_FILE}")
         return None
-    
     try:
         with open(MASTER_TRACK_FILE, 'r', encoding='utf-8') as f:
             track_map = json.load(f)
-            
-        # Ensure all IDs are strings
-        cleaned_map = {str(k).strip(): str(v).strip() for k, v in track_map.items()}
-        
-        log(f"Loaded {len(cleaned_map)} tracks from Master List (JSON).")
-        return cleaned_map
-
+        return {str(k).strip(): str(v).strip() for k, v in track_map.items()}
     except Exception as e:
         log(f"[!!!] CRITICAL ERROR: Could not read JSON file: {e}")
         return None
 
-# ==========================================
-# 3. HELPER FUNCTIONS
-# ==========================================
-
 def format_currency(value_bn):
-    """
-    Formats a value (in Billions) to a readable string with B/M/K units.
-    value_bn: Float representing Billions.
-    """
-    if value_bn == 0:
-        return "0"
-        
+    if value_bn == 0: return "0"
     abs_val = abs(value_bn)
-    
-    if abs_val >= 1.0:
-        # Billions
-        return f"{value_bn:,.2f}B"
-    elif abs_val >= 0.001:
-        # Millions (0.001 BN = 1 Million)
-        val_m = value_bn * 1_000
-        return f"{val_m:,.2f}M"
-    else:
-        # Thousands (0.000001 BN = 1 Thousand)
-        val_k = value_bn * 1_000_000
-        return f"{val_k:,.2f}K"
+    if abs_val >= 1.0: return f"{value_bn:,.2f}B"
+    elif abs_val >= 0.001: return f"{(value_bn * 1_000):,.2f}M"
+    else: return f"{(value_bn * 1_000_000):,.2f}K"
 
 def get_category(filename):
     if "לא סחיר" in filename:
@@ -136,10 +146,27 @@ def get_column_value(row, possible_columns):
                 return str(val).strip()
     return None
 
+def get_country_emoji(row):
+    # 1. Check specific country columns
+    val = get_column_value(row, COUNTRY_COLUMNS)
+    if val:
+        clean = str(val).replace('"', '').replace("'", "").strip()
+        # Direct match or partial match
+        if clean in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean]
+        # Check if country name is inside the string (e.g. "United States of America")
+        for k, v in COUNTRY_MAPPING.items():
+            if k in clean: return v
+
+    # 2. Fallback: Check General Israel/Abroad column
+    val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל"])
+    if val_general and "ישראל" in str(val_general):
+         return "🇮🇱"
+    
+    return ""
+
 def clean_value(val):
     if pd.isna(val) or str(val).strip() in ['nan', 'ריק במקור', 'תא ללא תוכן, המשך בתא הבא']: return 0.0
     try:
-        # Handle cases where value might be string with commas
         return float(str(val).replace(',', ''))
     except:
         return 0.0
@@ -150,99 +177,61 @@ def get_safe_filename(name):
     clean = clean.replace(" ", "_")
     return f"{clean}.json"
 
-# ==========================================
-# 4. CORE PIPELINE (UPDATED FOR MENORA + FORMATTING)
-# ==========================================
-
 def detect_header_row(xls, sheet_name):
-    """
-    Intelligently finds the header row index by looking for 'מספר מסלול'.
-    Returns the 0-based index of the header row.
-    """
     try:
-        # Read the first 20 rows without a header to inspect them
         df_preview = pd.read_excel(xls, sheet_name=sheet_name, header=None, nrows=20)
-        
         for idx, row in df_preview.iterrows():
-            # Convert row to string to search for keywords
             row_str = " ".join([str(x) for x in row.values])
-            
-            # "מספר מסלול" is the absolute anchor for all pension files
             if "מספר מסלול" in row_str:
                 return idx
-                
-        return 0 # Default to 0 if not found
-    except Exception as e:
+        return 0
+    except:
         return 0
 
 def split_excel_to_csvs(file_path, target_dir):
     try:
         xls = pd.ExcelFile(file_path)
-        log(f"Splitting {file_path.name} ({len(xls.sheet_names)} sheets)...")
-        
+        log(f"Splitting {file_path.name}...")
         for sheet_name in xls.sheet_names:
             try:
-                # 1. Detect dynamic header row (Fix for Menora/Phoenix differences)
                 header_idx = detect_header_row(xls, sheet_name)
-                
-                # 2. Read with correct header
                 df = pd.read_excel(xls, sheet_name=sheet_name, header=header_idx)
-                
-                # 3. Save to CSV
                 csv_filename = f"{file_path.stem} - {sheet_name}.csv"
-                save_path = target_dir / csv_filename
-                df.to_csv(save_path, index=False, encoding='utf-8-sig')
-                
+                df.to_csv(target_dir / csv_filename, index=False, encoding='utf-8-sig')
             except Exception as e:
-                log(f"[Warning] Skipped sheet {sheet_name}: {e}")
                 pass 
         return True
     except Exception as e:
         log(f"[!!] Error reading Excel: {e}")
         return False
 
+# ==========================================
+# 3. CORE LOGIC
+# ==========================================
+
 def process_institution_data(target_dir, inst_key, config, master_map):
-    """
-    Scans CSVs, builds data, and FORCE UPDATES the config for this institution.
-    """
     all_tracks_data = {} 
     
-    # Initialize Institution in Config (Overwrite if exists)
     if inst_key not in config['institutions']:
-        config['institutions'][inst_key] = {
-            "name": inst_key.replace("_", " "), 
-            "tracks": {}
-        }
+        config['institutions'][inst_key] = { "name": inst_key.replace("_", " "), "tracks": {} }
     
     inst_tracks_config = config['institutions'][inst_key]["tracks"]
-    
     csv_files = list(target_dir.glob("*.csv"))
-    if not csv_files: return {}
 
     log(f"Scanning {len(csv_files)} CSVs...")
 
     for f in csv_files:
         if any(x in f.name for x in ["מיפוי סעיפים", "File Name Info", "סכום נכסים", "עמוד פתיחה"]): continue
-        
         default_cls, default_sub = get_category(f.name)
         is_etf_file = "קרנות סל" in f.name
         
         try:
             df = pd.read_csv(f)
             df.columns = [c.strip() for c in df.columns]
-            
-            # Validation: Ensure we found the header
-            if 'מספר מסלול' not in df.columns: 
-                # This usually means the file is empty or structure is unrecognizable
-                continue
+            if 'מספר מסלול' not in df.columns: continue
                 
-            # Flexible Value Column Detection (Fix for "שווי הוגן (באלפי ש""ח)")
             val_col = next((c for c in df.columns if "שווי" in c and "הוגן" in c and "באלפי" in c), None)
-            
-            # Fallback for standard naming
-            if not val_col:
-                val_col = next((c for c in df.columns if "שווי" in c and "שוק" in c), None)
-            
+            if not val_col: val_col = next((c for c in df.columns if "שווי" in c and "שוק" in c), None)
             if not val_col: continue
             
             class_col = "סיווג הקרן" if "סיווג הקרן" in df.columns else None
@@ -252,31 +241,21 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                     raw_id = row['מספר מסלול']
                     if pd.isna(raw_id) or str(raw_id).strip() in ['nan', 'ריק במקור']: continue
                     track_id = str(int(float(raw_id)))
-                except:
-                    continue
+                except: continue
                 
-                # --- FORCE NAMING LOGIC ---
-                # 1. Priority: Master JSON
-                if track_id in master_map:
-                    inst_tracks_config[track_id] = master_map[track_id]
-                
-                # 2. Priority: CSV Header (only if not in Master)
+                if track_id in master_map: inst_tracks_config[track_id] = master_map[track_id]
                 elif track_id not in inst_tracks_config:
                     found_name = get_column_value(row, TRACK_NAME_COLUMNS)
-                    if found_name:
-                        inst_tracks_config[track_id] = found_name
-                    else:
-                        inst_tracks_config[track_id] = f"Unknown Track {track_id}"
-                # --------------------------
+                    inst_tracks_config[track_id] = found_name if found_name else f"Unknown Track {track_id}"
                 
-                # Extract Data
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
                 if abs(val_bn) < 1e-9: continue
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
+                emoji = get_country_emoji(row)  # <--- NEW: Get Emoji
+
                 cls, sub = default_cls, default_sub
-                
                 if is_etf_file and class_col:
                     c_val = str(row[class_col])
                     if "אג\"ח" in c_val or "אג”ח" in c_val: cls, sub = "Bonds", "ETFs"
@@ -285,11 +264,14 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 if cls not in all_tracks_data[track_id]: all_tracks_data[track_id][cls] = {}
                 if sub not in all_tracks_data[track_id][cls]: all_tracks_data[track_id][cls][sub] = []
                 
-                all_tracks_data[track_id][cls][sub].append({"name": name, "value": val_bn})
+                # Store Emoji in data structure
+                all_tracks_data[track_id][cls][sub].append({
+                    "name": name, 
+                    "value": val_bn,
+                    "emoji": emoji 
+                })
                 
-        except Exception as e:
-            # log(f"Error processing row in {f.name}: {e}")
-            pass 
+        except Exception: pass 
 
     return all_tracks_data
 
@@ -299,7 +281,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
 
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
-        
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
 
@@ -310,7 +291,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             c_total = sum(sum(i['value'] for i in s_list) for s_list in subs.values())
             c_pct = (c_total / total_assets) * 100
             
-            # Added formattedValue
             asset_classes.append({
                 "name": c_name, 
                 "value": round(c_total, 4), 
@@ -323,9 +303,19 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 s_total = sum(i['value'] for i in items)
                 s_pct_class = (s_total / c_total * 100) if c_total else 0
                 
+                # Group by Name but PRESERVE Emoji
                 grouped = {}
-                for i in items: grouped[i['name']] = grouped.get(i['name'], 0) + i['value']
-                sorted_h = sorted([{"name":k,"value":v} for k,v in grouped.items()], key=lambda x:x['value'], reverse=True)
+                name_to_emoji = {}
+                
+                for i in items: 
+                    grouped[i['name']] = grouped.get(i['name'], 0) + i['value']
+                    # Keep the emoji if it exists (overwrite is fine if consistent)
+                    if i['emoji']: name_to_emoji[i['name']] = i['emoji']
+
+                sorted_h = sorted([
+                    {"name": k, "value": v, "emoji": name_to_emoji.get(k, "")} 
+                    for k,v in grouped.items()
+                ], key=lambda x:x['value'], reverse=True)
                 
                 all_holdings = []
                 for h in sorted_h:
@@ -334,7 +324,8 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                         "name": h['name'], 
                         "value": round(h['value'], 4), 
                         "formattedValue": format_currency(h['value']),
-                        "percentage": round(h_pct, 2)
+                        "percentage": round(h_pct, 2),
+                        "countryEmoji": h['emoji'] # <--- Pass to JSON
                     })
                 
                 total_items = len(all_holdings)
@@ -370,30 +361,14 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             
         manifest_entries.append({"id": t_id, "name": t_name, "file": safe_filename})
     
-    log(f"Generated {len(manifest_entries)} track JSONs for {inst_key}.")
     return sorted(manifest_entries, key=lambda x: x['name'])
 
-# ==========================================
-# 5. MAIN
-# ==========================================
-
 def main():
-    # 1. Load Master Map First
     log("Loading Master Track List...")
-    master_map = load_master_track_list()
-    
-    if not master_map:
-        log("\n[!!!] ABORTING: Master Track List failed to load.")
-        sys.exit(1)
-
-    # 2. Initialize fresh config
-    log("Initializing fresh config...")
+    master_map = load_master_track_list() or {}
     config = {"institutions": {}} 
     
-    if not INPUT_DIRECTORY.exists():
-        print(f"Error: Input dir missing: {INPUT_DIRECTORY}")
-        return
-
+    if not INPUT_DIRECTORY.exists(): return
     excel_files = list(INPUT_DIRECTORY.glob("*.xlsx"))
     global_manifest = []
 
@@ -405,34 +380,18 @@ def main():
         target_dir = OUTPUT_BASE_DIRECTORY / inst_key
         target_dir.mkdir(parents=True, exist_ok=True)
         
-        # A. Split Excel
         if split_excel_to_csvs(excel_path, target_dir):
-            
-            # B. Process Data & Update Config (Force)
             all_data = process_institution_data(target_dir, inst_key, config, master_map)
-            
-            # C. Generate JSONs
             tracks_list = generate_jsons(target_dir, all_data, inst_key, config)
-            
-            # D. Add to Manifest
             inst_name = config['institutions'][inst_key].get("name", inst_key)
-            global_manifest.append({
-                "id": inst_key,
-                "name": inst_name,
-                "directory": inst_key,
-                "tracks": tracks_list
-            })
+            global_manifest.append({"id": inst_key, "name": inst_name, "directory": inst_key, "tracks": tracks_list})
 
-    # 3. Force Write Config
     with open(CONFIG_FILE, 'w', encoding='utf-8') as f:
         json.dump(config, f, indent=2, ensure_ascii=False)
-    log("Force-updated config.json")
-
-    # 4. Force Write Manifest
     with open(OUTPUT_BASE_DIRECTORY / "manifest.json", 'w', encoding='utf-8') as f:
         json.dump(global_manifest, f, indent=2, ensure_ascii=False)
     
-    log(f"--- Pipeline Complete. All files regenerated. ---")
+    log(f"--- Pipeline Complete. ---")
 
 if __name__ == "__main__":
     main()

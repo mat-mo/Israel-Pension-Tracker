@@ -437,7 +437,9 @@
                 const tr = document.createElement('tr');
                 tr.className = "bg-white dark:bg-dark-card border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors";
                 tr.innerHTML = `
-                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-normal break-words max-w-[200px] md:max-w-none" title="${h.name}">${h.name}</th>
+                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-normal break-words max-w-[200px] md:max-w-none" title="${h.name}"> 
+                        ${h.countryEmoji ? h.countryEmoji + ' ' : ''}${h.name} 
+                    </th>
                     <td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${currentSubclassData.subclass}</td>
                     <td class="px-6 py-3 text-right font-mono text-sm text-gray-700 dark:text-gray-300">₪${h.formattedValue}</td>
                     <td class="px-6 py-3 text-right text-blue-600 dark:text-blue-400 font-bold text-sm">${h.percentage}%</td>
