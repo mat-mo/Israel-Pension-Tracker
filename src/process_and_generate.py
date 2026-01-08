@@ -32,42 +32,53 @@ NAME_COLUMNS = [
     "טיקר", "מאפיין עיקרי"
 ]
 
-# Country Columns (New Feature)
+# Country Columns (Expanded)
 COUNTRY_COLUMNS = [
     "מדינה לפי חשיפה כלכלית", "מדינת הרישום", "מדינת התאגדות",
-    "מדינת מיקום נדל\"ן", "מקום המסחר", "מדינה"
+    "מדינת מיקום נדל\"ן", "מקום המסחר", "מדינה", "ארץ", "Country"
 ]
 
-# Emoji Map
+# Emoji Map - NOW INCLUDES "CLEAN" HEBREW (Without Quotes)
 COUNTRY_MAPPING = {
-    "ישראל": "🇮🇱", "Israel": "🇮🇱",
-    "ארה\"ב": "🇺🇸", "ארצות הברית": "🇺🇸", "United States": "🇺🇸", "USA": "🇺🇸", "US": "🇺🇸",
+    # Israel
+    "ישראל": "🇮🇱", "Israel": "🇮🇱", "IL": "🇮🇱",
+    
+    # USA (With and Without Quotes)
+    "ארה\"ב": "🇺🇸", "ארהב": "🇺🇸", "ארצות הברית": "🇺🇸", 
+    "United States": "🇺🇸", "USA": "🇺🇸", "US": "🇺🇸", "U.S.A": "🇺🇸",
+    
+    # Europe
     "אירלנד": "🇮🇪", "Ireland": "🇮🇪",
-    "בריטניה": "🇬🇧", "אנגליה": "🇬🇧", "United Kingdom": "🇬🇧", "UK": "🇬🇧", "Great Britain": "🇬🇧",
+    "בריטניה": "🇬🇧", "אנגליה": "🇬🇧", "United Kingdom": "🇬🇧", "UK": "🇬🇧", "Great Britain": "🇬🇧", "G. Britain": "🇬🇧",
     "לוקסמבורג": "🇱🇺", "Luxembourg": "🇱🇺",
-    "איי קיימן": "🇰🇾", "Cayman Islands": "🇰🇾", "Cayman": "🇰🇾",
     "צרפת": "🇫🇷", "France": "🇫🇷",
     "גרמניה": "🇩🇪", "Germany": "🇩🇪",
-    "יפן": "🇯🇵", "Japan": "🇯🇵",
     "הולנד": "🇳🇱", "Netherlands": "🇳🇱",
-    "שוויץ": "🇨🇭", "Switzerland": "🇨🇭",
-    "קנדה": "🇨🇦", "Canada": "🇨🇦",
-    "אוסטרליה": "🇦🇺", "Australia": "🇦🇺",
-    "סין": "🇨🇳", "China": "🇨🇳",
-    "הודו": "🇮🇳", "India": "🇮🇳",
-    "דרום קוריאה": "🇰🇷", "South Korea": "🇰🇷",
-    "טאיוואן": "🇹🇼", "Taiwan": "🇹🇼",
-    "ברזיל": "🇧🇷", "Brazil": "🇧🇷",
+    "שוויץ": "🇨🇭", "Switzerland": "🇨🇭", "Swiss": "🇨🇭",
     "ספרד": "🇪🇸", "Spain": "🇪🇸",
     "איטליה": "🇮🇹", "Italy": "🇮🇹",
-    "שבדיה": "🇸🇪", "Sweden": "🇸🇪",
-    "הונג קונג": "🇭🇰", "Hong Kong": "🇭🇰",
-    "סינגפור": "🇸🇬", "Singapore": "🇸🇬",
-    "מקסיקו": "🇲🇽", "Mexico": "🇲🇽",
+    "שבדיה": "🇸🇪", "Sweden": "🇸🇪", "שוודיה": "🇸🇪",
     "נורבגיה": "🇳🇴", "Norway": "🇳🇴",
     "דנמרק": "🇩🇰", "Denmark": "🇩🇰",
     "פולין": "🇵🇱", "Poland": "🇵🇱",
     "בלגיה": "🇧🇪", "Belgium": "🇧🇪",
+    "אוסטריה": "🇦🇹", "Austria": "🇦🇹",
+
+    # Asia / Pacific
+    "יפן": "🇯🇵", "Japan": "🇯🇵",
+    "סין": "🇨🇳", "China": "🇨🇳",
+    "הודו": "🇮🇳", "India": "🇮🇳",
+    "דרום קוריאה": "🇰🇷", "South Korea": "🇰🇷", "קוריאה": "🇰🇷",
+    "טאיוואן": "🇹🇼", "Taiwan": "🇹🇼", "טייוואן": "🇹🇼",
+    "הונג קונג": "🇭🇰", "Hong Kong": "🇭🇰",
+    "סינגפור": "🇸🇬", "Singapore": "🇸🇬",
+    "אוסטרליה": "🇦🇺", "Australia": "🇦🇺",
+
+    # Americas / Other
+    "קנדה": "🇨🇦", "Canada": "🇨🇦",
+    "ברזיל": "🇧🇷", "Brazil": "🇧🇷",
+    "מקסיקו": "🇲🇽", "Mexico": "🇲🇽",
+    "איי קיימן": "🇰🇾", "Cayman Islands": "🇰🇾", "Cayman": "🇰🇾",
 }
 
 # Static Asset Mappings
@@ -150,15 +161,20 @@ def get_country_emoji(row):
     # 1. Check specific country columns
     val = get_column_value(row, COUNTRY_COLUMNS)
     if val:
-        clean = str(val).replace('"', '').replace("'", "").strip()
-        # Direct match or partial match
-        if clean in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean]
-        # Check if country name is inside the string (e.g. "United States of America")
+        # A. Try exact match (preserved quotes)
+        clean_raw = str(val).strip()
+        if clean_raw in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean_raw]
+
+        # B. Try cleaned match (remove quotes)
+        clean_no_quotes = clean_raw.replace('"', '').replace("'", "")
+        if clean_no_quotes in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean_no_quotes]
+
+        # C. Fuzzy match (e.g., "United States of America" contains "United States")
         for k, v in COUNTRY_MAPPING.items():
-            if k in clean: return v
+            if k in clean_raw: return v
 
     # 2. Fallback: Check General Israel/Abroad column
-    val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל"])
+    val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל", "Israel/Abroad"])
     if val_general and "ישראל" in str(val_general):
          return "🇮🇱"
     
@@ -253,7 +269,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 if abs(val_bn) < 1e-9: continue
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
-                emoji = get_country_emoji(row)  # <--- NEW: Get Emoji
+                emoji = get_country_emoji(row)  # <--- Logic Fix Applied Here
 
                 cls, sub = default_cls, default_sub
                 if is_etf_file and class_col:
@@ -264,7 +280,6 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 if cls not in all_tracks_data[track_id]: all_tracks_data[track_id][cls] = {}
                 if sub not in all_tracks_data[track_id][cls]: all_tracks_data[track_id][cls][sub] = []
                 
-                # Store Emoji in data structure
                 all_tracks_data[track_id][cls][sub].append({
                     "name": name, 
                     "value": val_bn,
@@ -303,13 +318,11 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 s_total = sum(i['value'] for i in items)
                 s_pct_class = (s_total / c_total * 100) if c_total else 0
                 
-                # Group by Name but PRESERVE Emoji
                 grouped = {}
                 name_to_emoji = {}
                 
                 for i in items: 
                     grouped[i['name']] = grouped.get(i['name'], 0) + i['value']
-                    # Keep the emoji if it exists (overwrite is fine if consistent)
                     if i['emoji']: name_to_emoji[i['name']] = i['emoji']
 
                 sorted_h = sorted([
@@ -325,7 +338,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                         "value": round(h['value'], 4), 
                         "formattedValue": format_currency(h['value']),
                         "percentage": round(h_pct, 2),
-                        "countryEmoji": h['emoji'] # <--- Pass to JSON
+                        "countryEmoji": h['emoji']
                     })
                 
                 total_items = len(all_holdings)
