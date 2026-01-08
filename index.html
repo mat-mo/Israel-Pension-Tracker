@@ -258,6 +258,8 @@
 
         // --- Chart Rendering ---
         function renderCharts(data, resetView) {
+            // 1. Detect Mobile
+            const isMobile = window.innerWidth < 768;
             if (!mainChart) mainChart = echarts.init(document.getElementById('mainChart'));
             if (!subChart) subChart = echarts.init(document.getElementById('subChart'));
 
@@ -266,6 +268,7 @@
             const option = {
                 color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
                 tooltip: { 
+                    confine: true,
                     trigger: 'item', 
                     backgroundColor: colors.tooltipBg,
                     borderColor: colors.tooltipBorder,
@@ -275,7 +278,7 @@
                 series: [{
                     name: 'Asset Class',
                     type: 'pie',
-                    radius: ['35%', '65%'],
+                    radius: isMobile ? ['25%', '50%'] : ['35%', '65%'],
                     avoidLabelOverlap: true,
                     itemStyle: { 
                         borderRadius: 5, 
@@ -348,7 +351,7 @@
                 series: [{
                     name: 'Subclass',
                     type: 'pie',
-                    radius: ['30%', '60%'],
+                    radius: isMobile ? ['25%', '50%'] : ['35%', '65%'],
                     itemStyle: { 
                         borderRadius: 4, 
                         borderColor: colors.borderColor, 
@@ -432,7 +435,7 @@
                 const tr = document.createElement('tr');
                 tr.className = "bg-white dark:bg-dark-card border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors";
                 tr.innerHTML = `
-                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap truncate max-w-xs" title="${h.name}">${h.name}</th>
+                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-normal break-words max-w-[200px] md:max-w-none" title="${h.name}">${h.name}</th>
                     <td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${currentSubclassData.subclass}</td>
                     <td class="px-6 py-3 text-right font-mono text-sm text-gray-700 dark:text-gray-300">₪${h.formattedValue}</td>
                     <td class="px-6 py-3 text-right text-blue-600 dark:text-blue-400 font-bold text-sm">${h.percentage}%</td>
