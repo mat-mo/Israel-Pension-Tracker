@@ -317,6 +317,8 @@
         }
 
         function updateSubChart(categoryName) {
+            const isMobile = window.innerWidth < 768;
+
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
             
