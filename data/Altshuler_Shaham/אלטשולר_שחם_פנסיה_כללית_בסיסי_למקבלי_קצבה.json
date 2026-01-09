@@ -2064,8 +2064,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0983,
-      "formattedValue": "98.25M",
+      "value": 0.0993,
+      "formattedValue": "99.31M",
       "children": [
         {
           "name": "Bonds",
@@ -2086,23 +2086,13 @@
           "name": "Non-Tradable Bonds",
           "value": 0.0003,
           "formattedValue": "257.20K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0001,
-          "formattedValue": "86.94K"
-        },
-        {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "8.63K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0082,
-      "formattedValue": "8.25M",
+      "value": 0.0085,
+      "formattedValue": "8.52M",
       "children": [
         {
           "name": "Stocks",
@@ -2118,11 +2108,6 @@
           "name": "Derivatives",
           "value": 0.0003,
           "formattedValue": "335.27K"
-        },
-        {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "2.43K"
         }
       ]
     },
@@ -2155,23 +2140,13 @@
           "name": "Mutual Funds",
           "value": 0.0002,
           "formattedValue": "190.90K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0,
-          "formattedValue": "0.33K"
-        },
-        {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "3.79K"
         }
       ]
     },
     {
       "name": "UK",
       "value": 0.001,
-      "formattedValue": "1.03M",
+      "formattedValue": "1.01M",
       "children": [
         {
           "name": "Bonds",
@@ -2187,11 +2162,18 @@
           "name": "Stocks",
           "value": 0.0002,
           "formattedValue": "218.58K"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Mexico",
+      "value": 0.0007,
+      "formattedValue": "729.35K",
+      "children": [
         {
-          "name": "Derivatives",
-          "value": 0.0,
-          "formattedValue": "25.87K"
+          "name": "Bonds",
+          "value": 0.0007,
+          "formattedValue": "729.35K"
         }
       ]
     },
@@ -2204,18 +2186,6 @@
           "name": "Stocks",
           "value": 0.0007,
           "formattedValue": "663.20K"
-        }
-      ]
-    },
-    {
-      "name": "Mexico",
-      "value": 0.0006,
-      "formattedValue": "560.69K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0007,
-          "formattedValue": "729.35K"
         }
       ]
     },
@@ -2287,17 +2257,12 @@
     {
       "name": "Canada",
       "value": 0.0001,
-      "formattedValue": "139.69K",
+      "formattedValue": "139.65K",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0001,
           "formattedValue": "139.65K"
-        },
-        {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "0.04K"
         }
       ]
     },
@@ -2310,42 +2275,6 @@
           "name": "Stocks",
           "value": 0.0001,
           "formattedValue": "108.03K"
-        }
-      ]
-    },
-    {
-      "name": "Switzerland",
-      "value": 0.0001,
-      "formattedValue": "62.85K",
-      "children": [
-        {
-          "name": "Mutual Funds",
-          "value": 0.0001,
-          "formattedValue": "62.85K"
-        }
-      ]
-    },
-    {
-      "name": "Norway",
-      "value": 0.0,
-      "formattedValue": "20.16K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0,
-          "formattedValue": "23.39K"
-        }
-      ]
-    },
-    {
-      "name": "Australia",
-      "value": 0.0,
-      "formattedValue": "0.24K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0,
-          "formattedValue": "0.24K"
         }
       ]
     }

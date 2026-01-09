@@ -307,56 +307,59 @@ def calculate_geo_sunburst(data_store):
     Groups data by Country (Emoji) -> Asset Class.
     Returns the 'children' array structure for ECharts Sunburst.
     """
-    country_groups = {} # { "🇮🇱": { "Stocks": 100, "Bonds": 50 }, ... }
+    country_groups = {} 
     
-    # Flatten structure: Iterate over all Asset Classes and Subclasses
+    # 1. Aggregate Data
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
             for item in sub_items:
-                # 1. Determine Country Key
+                # Determine Country Key
                 emoji = item.get("emoji", "")
-                
-                # If no emoji found, mark as "Global / Other"
                 country_key = emoji if emoji else "Other"
                 
-                # 2. Init Country Group
+                # Init Country Group
                 if country_key not in country_groups:
                     country_groups[country_key] = {}
                 
-                # 3. Init Asset Class Group within Country
+                # Init Asset Class Group within Country
                 if cls_name not in country_groups[country_key]:
                     country_groups[country_key][cls_name] = 0.0
                 
-                # 4. Add Value
+                # Add Value
                 country_groups[country_key][cls_name] += item["value"]
 
-    # Convert to List format for ECharts
+    # 2. Format for ECharts
     sunburst_data = []
     
     for country_key, assets_dict in country_groups.items():
-        country_total = sum(assets_dict.values())
-        if country_total == 0: continue
-        
-        # Get readable name from map, or use emoji/text as is
-        display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
-        
-        # Create Asset Children nodes
+        # Build Children List FIRST
         asset_children = []
+        children_sum_value = 0.0  # <--- Calculate sum of VALID children only
+
         for cls_name, val in assets_dict.items():
-            if val > 0:
+            if val > 0.0001:  # Filter out 0 or negative values (and tiny residuals)
                 asset_children.append({
                     "name": cls_name,
                     "value": round(val, 4),
                     "formattedValue": format_currency(val)
                 })
+                children_sum_value += val
+
+        if not asset_children:
+            continue
         
         # Sort assets by size
         asset_children.sort(key=lambda x: x["value"], reverse=True)
         
+        # Get readable name
+        display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
+        
+        # <--- FIX: Use 'children_sum_value' for the Parent Value, NOT the raw sum.
+        # This guarantees Parent == Sum(Children) and eliminates gaps/overflows.
         sunburst_data.append({
             "name": display_name,
-            "value": round(country_total, 4),
-            "formattedValue": format_currency(country_total),
+            "value": round(children_sum_value, 4), 
+            "formattedValue": format_currency(children_sum_value),
             "children": asset_children
         })
 
