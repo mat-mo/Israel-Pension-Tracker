@@ -334,10 +334,10 @@ def calculate_geo_sunburst(data_store):
     for country_key, assets_dict in country_groups.items():
         # Build Children List FIRST
         asset_children = []
-        children_sum_value = 0.0  # <--- Calculate sum of VALID children only
+        children_sum_value = 0.0  # <--- accumulator for visible children
 
         for cls_name, val in assets_dict.items():
-            if val > 0.0001:  # Filter out 0 or negative values (and tiny residuals)
+            if val > 0.0001:  # Filter out 0 or negative values
                 asset_children.append({
                     "name": cls_name,
                     "value": round(val, 4),
@@ -354,8 +354,8 @@ def calculate_geo_sunburst(data_store):
         # Get readable name
         display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
         
-        # <--- FIX: Use 'children_sum_value' for the Parent Value, NOT the raw sum.
-        # This guarantees Parent == Sum(Children) and eliminates gaps/overflows.
+        # <--- KEY FIX: Use 'children_sum_value' for Parent, NOT the raw sum.
+        # This guarantees Parent == Sum(Children) and eliminates gaps.
         sunburst_data.append({
             "name": display_name,
             "value": round(children_sum_value, 4), 
