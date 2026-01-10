@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Israel Pension Tracker</title>
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
-
-    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-    
-    <script>
-        const originalWarn = console.warn;
-        console.warn = (...args) => {
-            if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
-            originalWarn.apply(console, args);
-        };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+n.tailwindcss.com"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
@@ -34,7 +16,25 @@
     <style>
         body { font-family: 'Heebo', sans-serif; transition: background-color 0.3s, color 0.3s; }
         .chart-box { height: 400px; width: 100%; }
-        #loading { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.8); z-index: 50; justify-content: center; align-items: center; }
+        #loading { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.8); z-index: 50; ju<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israel Pension Tracker</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    
+    <script>
+        const originalWarn = console.warn;
+        console.warn = (...args) => {
+            if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+            originalWarn.apply(console, args);
+        };
+    </script>
+    <script src="https://cdstify-content: center; align-items: center; }
         .dark #loading { background: rgba(15, 23, 42, 0.8); }
         tbody tr { transition: background-color 0.2s; }
     </style>
@@ -168,7 +168,7 @@
         let subChart = null;
         let geoSunburstChart = null;
         let currencySunburstChart = null;
-        let sectorSunburstChart = null; // NEW Variable
+        let sectorSunburstChart = null;
         
         let currentManifest = [];
         let currentInst = null;
@@ -365,14 +365,14 @@
 
             renderGeoSunburst(data);
             renderCurrencySunburst(data);
-            renderSectorSunburst(data); // <--- Call New Function
+            renderSectorSunburst(data);
             
             window.addEventListener('resize', () => {
                 mainChart.resize();
                 subChart.resize();
                 if(geoSunburstChart) geoSunburstChart.resize();
                 if(currencySunburstChart) currencySunburstChart.resize();
-                if(sectorSunburstChart) sectorSunburstChart.resize(); // <--- Resize New Chart
+                if(sectorSunburstChart) sectorSunburstChart.resize();
             });
         }
 
@@ -470,7 +470,6 @@
             currencySunburstChart.setOption(option);
         }
 
-        // --- NEW: Sector Sunburst Renderer ---
         function renderSectorSunburst(data) {
             if (!sectorSunburstChart) sectorSunburstChart = echarts.init(document.getElementById('sectorSunburstChart'));
             
@@ -510,9 +509,7 @@
                     label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
                      levels: [
                         {}, 
-                        // Asset Class Level (Inner)
                         { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
-                        // Sector Level (Outer)
                         { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
                     ]
                 }
@@ -524,14 +521,16 @@
             const isMobile = window.innerWidth < 768;
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
+            
+            // --- CORRECT LOGIC HERE ---
+            // Calculate total dynamically to be safe
             let totalPortfolioValue = currentTrackData.totalAssetsBN;
-
             if (!totalPortfolioValue || totalPortfolioValue === 0) {
-                if (currentTrackData.assetClasses && Array.isArray(currentTrackData.assetClasses)) {
+                if (currentTrackData.assetClasses) {
                     totalPortfolioValue = currentTrackData.assetClasses.reduce((sum, item) => sum + (item.value || 0), 0);
                 }
             }
-            
+
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
             
             if (!breakdown || breakdown.length === 0) {
@@ -552,31 +551,24 @@
                     textStyle: { color: colors.tooltipText },
                     formatter: (params) => {
                         if (!params.data) return '';
+                        
+                        const localShare = params.percent;
+                        let globalShareDisplay = '-';
 
-                        // 1. Local Share (% of Category) - ECharts calculates this automatically
-                const localShare = params.percent;
-                let globalShareDisplay = '-';
+                        if (totalPortfolioValue && totalPortfolioValue !== 0) {
+                            const rawGlobalShare = (params.value / totalPortfolioValue) * 100;
+                            if (Math.abs(rawGlobalShare) > 0 && Math.abs(rawGlobalShare) < 0.01) {
+                                globalShareDisplay = '< 0.01';
+                            } else {
+                                globalShareDisplay = rawGlobalShare.toFixed(2);
+                            }
+                        }
 
-                // 2. Global Share (% of Total Portfolio) - Calculated manually
-        
-        // Ensure we have a valid total to divide by
-        if (totalPortfolioValue && totalPortfolioValue !== 0) {
-            const rawGlobalShare = (params.value / totalPortfolioValue) * 100;
-            const absShare = Math.abs(rawGlobalShare);
-
-            if (absShare > 0 && absShare < 0.01) {
-                // If it's tiny but exists, show "< 0.01" instead of "0.00"
-                globalShareDisplay = '< 0.01';
-            } else {
-                // Otherwise, standard rounding
-                globalShareDisplay = rawGlobalShare.toFixed(2);
-            }
-        }}
                         return `<b>${params.name}</b><br/>
-                    Value: ${params.data.formattedValue}<br/>
-                    <hr style="border-color: ${colors.borderColor}; margin: 5px 0;">
-                    Share of ${categoryName}: <b>${localShare}%</b><br/>
-                    Share of Portfolio: <b>${globalShare}%</b>`;
+                                Value: ${params.data.formattedValue}<br/>
+                                <hr style="border-color: ${colors.borderColor}; margin: 5px 0; opacity: 0.3;">
+                                Share of ${categoryName}: <b>${localShare}%</b><br/>
+                                Share of Portfolio: <b>${globalShareDisplay}%</b>`;
                     } 
                 },
                 series: [{
