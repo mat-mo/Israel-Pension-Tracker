@@ -291,25 +291,30 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.0034,
+      "value": 0.003376,
       "formattedValue": "3.38M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0034,
+          "value": 0.003376,
           "formattedValue": "3.38M"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0009,
-      "formattedValue": "886.45K",
+      "value": 0.00091,
+      "formattedValue": "909.62K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0009,
+          "value": 0.000886,
           "formattedValue": "886.45K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 2.3e-05,
+          "formattedValue": "23.17K"
         }
       ]
     }
@@ -317,18 +322,23 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0043,
-      "formattedValue": "4.26M",
+      "value": 0.004286,
+      "formattedValue": "4.29M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0034,
+          "value": 0.003376,
           "formattedValue": "3.38M"
         },
         {
           "name": "Bonds",
-          "value": 0.0009,
+          "value": 0.000886,
           "formattedValue": "886.45K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 2.3e-05,
+          "formattedValue": "23.17K"
         }
       ]
     }

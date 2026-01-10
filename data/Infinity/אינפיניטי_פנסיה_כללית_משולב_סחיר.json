@@ -666,13 +666,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0012,
-      "formattedValue": "1.22M",
+      "value": 0.001289,
+      "formattedValue": "1.29M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0012,
+          "value": 0.001222,
           "formattedValue": "1.22M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 6.8e-05,
+          "formattedValue": "67.64K"
         }
       ]
     }
@@ -680,13 +685,42 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0012,
-      "formattedValue": "1.21M",
+      "value": 0.001281,
+      "formattedValue": "1.28M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0012,
+          "value": 0.001214,
           "formattedValue": "1.21M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 6.7e-05,
+          "formattedValue": "67.21K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 8e-06,
+      "formattedValue": "7.57K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 8e-06,
+          "formattedValue": "7.57K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0,
+      "formattedValue": "0.43K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.43K"
         }
       ]
     }

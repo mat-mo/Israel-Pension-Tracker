@@ -96,7 +96,7 @@
         "value": 0.003,
         "formattedValue": "3.02M",
         "percentageOfClass": 100.0,
-        "itemCount": 5,
+        "itemCount": 6,
         "totalPages": 1,
         "holdingsPages": [
           [
@@ -133,6 +133,13 @@
               "value": 0.0001,
               "formattedValue": "130.82K",
               "percentage": 4.33,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אמפל מניה ל.ס",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -2903,8 +2910,8 @@
         "value": 0.0018,
         "formattedValue": "1.83M",
         "percentageOfClass": 100.0,
-        "itemCount": 50,
-        "totalPages": 5,
+        "itemCount": 53,
+        "totalPages": 6,
         "holdingsPages": [
           [
             {
@@ -3262,6 +3269,29 @@
               "name": "חוז מס במקור עמיתים בלבד עד 2019",
               "value": 0.0,
               "formattedValue": "0.02K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "LEH 6.9 49 29.06.2049",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "LEHMANזמני 6.5% 19/07/2017",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "הלוואה למגורים לציבור בנק לאומי לישראל בעמ",
+              "value": 0.0,
+              "formattedValue": "0.00K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             }
@@ -5828,17 +5858,17 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.2632,
-      "formattedValue": "263.24M",
+      "value": 0.263306,
+      "formattedValue": "263.31M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.1325,
+          "value": 0.132526,
           "formattedValue": "132.53M"
         },
         {
           "name": "Loans",
-          "value": 0.0515,
+          "value": 0.051496,
           "formattedValue": "51.50M"
         },
         {
@@ -5848,296 +5878,383 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0227,
+          "value": 0.022727,
           "formattedValue": "22.73M"
         },
         {
           "name": "Structured Products",
-          "value": 0.0101,
+          "value": 0.010098,
           "formattedValue": "10.10M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0029,
+          "value": 0.002913,
           "formattedValue": "2.91M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0028,
+          "value": 0.002804,
           "formattedValue": "2.80M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0017,
+          "value": 0.001678,
           "formattedValue": "1.68M"
         },
         {
           "name": "Non-Tradable Stocks",
-          "value": 0.0015,
+          "value": 0.001542,
           "formattedValue": "1.54M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0012,
+          "value": 0.001154,
           "formattedValue": "1.15M"
+        },
+        {
+          "name": "Warrants",
+          "value": 2.9e-05,
+          "formattedValue": "29.10K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 2.7e-05,
+          "formattedValue": "26.65K"
+        },
+        {
+          "name": "Options",
+          "value": 1.3e-05,
+          "formattedValue": "13.19K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.045,
-      "formattedValue": "44.99M",
+      "value": 0.045008,
+      "formattedValue": "45.01M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0221,
+          "value": 0.022058,
           "formattedValue": "22.06M"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0112,
+          "value": 0.011236,
           "formattedValue": "11.24M"
         },
         {
           "name": "Bonds",
-          "value": 0.0086,
+          "value": 0.008622,
           "formattedValue": "8.62M"
         },
         {
           "name": "Non-Tradable Stocks",
-          "value": 0.0015,
+          "value": 0.001477,
           "formattedValue": "1.48M"
         },
         {
           "name": "Futures",
-          "value": 0.0008,
+          "value": 0.000751,
           "formattedValue": "751.47K"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0007,
+          "value": 0.000696,
           "formattedValue": "695.53K"
         },
         {
           "name": "Derivatives",
-          "value": 0.0001,
+          "value": 0.000146,
           "formattedValue": "146.03K"
+        },
+        {
+          "name": "Options",
+          "value": 1.5e-05,
+          "formattedValue": "15.09K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 5e-06,
+          "formattedValue": "5.19K"
+        },
+        {
+          "name": "Warrants",
+          "value": 2e-06,
+          "formattedValue": "2.23K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.25K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0092,
-      "formattedValue": "9.20M",
+      "value": 0.009213,
+      "formattedValue": "9.21M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.008,
+          "value": 0.007999,
           "formattedValue": "8.00M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0009,
+          "value": 0.000931,
           "formattedValue": "930.95K"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0002,
+          "value": 0.000159,
           "formattedValue": "159.17K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0001,
+          "value": 0.000115,
           "formattedValue": "115.44K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 7e-06,
+          "formattedValue": "7.10K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 2e-06,
+          "formattedValue": "1.86K"
         }
       ]
     },
     {
       "name": "Eurozone",
-      "value": 0.0058,
-      "formattedValue": "5.84M",
+      "value": 0.005927,
+      "formattedValue": "5.93M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0035,
+          "value": 0.003503,
           "formattedValue": "3.50M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0023,
+          "value": 0.00234,
           "formattedValue": "2.34M"
+        },
+        {
+          "name": "Futures",
+          "value": 8.4e-05,
+          "formattedValue": "83.69K"
         }
       ]
     },
     {
       "name": "UK",
-      "value": 0.004,
+      "value": 0.003981,
       "formattedValue": "3.98M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0026,
+          "value": 0.002591,
           "formattedValue": "2.59M"
         },
         {
           "name": "Stocks",
-          "value": 0.0011,
+          "value": 0.001054,
           "formattedValue": "1.05M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0003,
+          "value": 0.000336,
           "formattedValue": "335.60K"
         }
       ]
     },
     {
       "name": "France",
-      "value": 0.0034,
+      "value": 0.003386,
       "formattedValue": "3.39M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0031,
+          "value": 0.00306,
           "formattedValue": "3.06M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0003,
+          "value": 0.000326,
           "formattedValue": "325.67K"
         }
       ]
     },
     {
       "name": "Japan",
-      "value": 0.0023,
-      "formattedValue": "2.31M",
+      "value": 0.002326,
+      "formattedValue": "2.33M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0021,
+          "value": 0.002051,
           "formattedValue": "2.05M"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0003,
+          "value": 0.000256,
           "formattedValue": "256.47K"
+        },
+        {
+          "name": "Futures",
+          "value": 1.8e-05,
+          "formattedValue": "18.46K"
         }
       ]
     },
     {
       "name": "Germany",
-      "value": 0.0016,
-      "formattedValue": "1.58M",
+      "value": 0.001643,
+      "formattedValue": "1.64M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0016,
+          "value": 0.001575,
           "formattedValue": "1.58M"
+        },
+        {
+          "name": "Stocks",
+          "value": 6.8e-05,
+          "formattedValue": "68.19K"
         }
       ]
     },
     {
       "name": "Canada",
-      "value": 0.0013,
+      "value": 0.001257,
       "formattedValue": "1.26M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0008,
+          "value": 0.000837,
           "formattedValue": "837.14K"
         },
         {
           "name": "Bonds",
-          "value": 0.0004,
+          "value": 0.00042,
           "formattedValue": "419.93K"
         }
       ]
     },
     {
       "name": "Switzerland",
-      "value": 0.0011,
+      "value": 0.001089,
       "formattedValue": "1.09M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0009,
+          "value": 0.000858,
           "formattedValue": "858.44K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0002,
+          "value": 0.00023,
           "formattedValue": "230.47K"
         }
       ]
     },
     {
       "name": "Australia",
-      "value": 0.001,
+      "value": 0.000987,
       "formattedValue": "987.44K",
       "children": [
         {
-          "name": "Bonds",
-          "value": 0.0005,
-          "formattedValue": "480.23K"
+          "name": "Stocks",
+          "value": 0.000507,
+          "formattedValue": "507.21K"
         },
         {
-          "name": "Stocks",
-          "value": 0.0005,
-          "formattedValue": "507.21K"
+          "name": "Bonds",
+          "value": 0.00048,
+          "formattedValue": "480.23K"
         }
       ]
     },
     {
       "name": "Netherlands",
-      "value": 0.0006,
-      "formattedValue": "581.40K",
+      "value": 0.000663,
+      "formattedValue": "662.73K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0006,
+          "value": 0.000581,
           "formattedValue": "581.40K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 7.1e-05,
+          "formattedValue": "70.55K"
+        },
+        {
+          "name": "Stocks",
+          "value": 1.1e-05,
+          "formattedValue": "10.77K"
         }
       ]
     },
     {
       "name": "India",
-      "value": 0.0006,
+      "value": 0.000612,
       "formattedValue": "611.92K",
       "children": [
         {
           "name": "Mutual Funds",
-          "value": 0.0004,
+          "value": 0.000442,
           "formattedValue": "442.35K"
         },
         {
           "name": "Stocks",
-          "value": 0.0002,
+          "value": 0.00017,
           "formattedValue": "169.57K"
         }
       ]
     },
     {
       "name": "China",
-      "value": 0.0004,
-      "formattedValue": "383.95K",
+      "value": 0.000413,
+      "formattedValue": "413.08K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0004,
+          "value": 0.000384,
           "formattedValue": "383.95K"
+        },
+        {
+          "name": "Bonds",
+          "value": 2.9e-05,
+          "formattedValue": "29.13K"
         }
       ]
     },
     {
       "name": "Spain",
-      "value": 0.0003,
+      "value": 0.00027,
       "formattedValue": "270.36K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0003,
+          "value": 0.00027,
           "formattedValue": "270.36K"
+        }
+      ]
+    },
+    {
+      "name": "Hong Kong",
+      "value": 1.4e-05,
+      "formattedValue": "14.22K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.4e-05,
+          "formattedValue": "14.22K"
         }
       ]
     }
@@ -6145,70 +6262,80 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.245,
-      "formattedValue": "245.04M",
+      "value": 0.245078,
+      "formattedValue": "245.08M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.1304,
+          "value": 0.130397,
           "formattedValue": "130.40M"
         },
         {
           "name": "Loans",
-          "value": 0.0466,
+          "value": 0.046633,
           "formattedValue": "46.63M"
         },
         {
           "name": "Stocks",
-          "value": 0.0367,
+          "value": 0.036708,
           "formattedValue": "36.71M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0162,
+          "value": 0.016234,
           "formattedValue": "16.23M"
         },
         {
           "name": "Structured Products",
-          "value": 0.0101,
+          "value": 0.010098,
           "formattedValue": "10.10M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0017,
+          "value": 0.001656,
           "formattedValue": "1.66M"
         },
         {
           "name": "Non-Tradable Stocks",
-          "value": 0.0015,
+          "value": 0.001542,
           "formattedValue": "1.54M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0011,
+          "value": 0.001056,
           "formattedValue": "1.06M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0003,
+          "value": 0.000269,
           "formattedValue": "268.99K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0003,
+          "value": 0.000257,
           "formattedValue": "257.13K"
         },
         {
           "name": "Derivatives",
-          "value": 0.0002,
+          "value": 0.000185,
           "formattedValue": "185.31K"
+        },
+        {
+          "name": "Warrants",
+          "value": 2.9e-05,
+          "formattedValue": "29.10K"
+        },
+        {
+          "name": "Options",
+          "value": 1.3e-05,
+          "formattedValue": "13.19K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0725,
-      "formattedValue": "72.54M",
+      "value": 0.072581,
+      "formattedValue": "72.58M",
       "children": [
         {
           "name": "Stocks",
@@ -6217,144 +6344,184 @@
         },
         {
           "name": "Bonds",
-          "value": 0.0136,
+          "value": 0.013575,
           "formattedValue": "13.58M"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0117,
+          "value": 0.011678,
           "formattedValue": "11.68M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0048,
+          "value": 0.004797,
           "formattedValue": "4.80M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0029,
+          "value": 0.002938,
           "formattedValue": "2.94M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0025,
+          "value": 0.002515,
           "formattedValue": "2.51M"
         },
         {
           "name": "Loans",
-          "value": 0.0022,
+          "value": 0.002202,
           "formattedValue": "2.20M"
         },
         {
           "name": "Non-Tradable Stocks",
-          "value": 0.0015,
+          "value": 0.001477,
           "formattedValue": "1.48M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.001,
+          "value": 0.000985,
           "formattedValue": "984.82K"
         },
         {
           "name": "Futures",
-          "value": 0.0008,
+          "value": 0.00077,
           "formattedValue": "769.93K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 2.7e-05,
+          "formattedValue": "26.84K"
+        },
+        {
+          "name": "Options",
+          "value": 1.5e-05,
+          "formattedValue": "15.09K"
+        },
+        {
+          "name": "Warrants",
+          "value": 2e-06,
+          "formattedValue": "2.23K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 0.0161,
-      "formattedValue": "16.05M",
+      "value": 0.016179,
+      "formattedValue": "16.18M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0057,
+          "value": 0.005667,
           "formattedValue": "5.67M"
         },
         {
           "name": "Stocks",
-          "value": 0.0036,
+          "value": 0.003582,
           "formattedValue": "3.58M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0031,
+          "value": 0.003079,
           "formattedValue": "3.08M"
         },
         {
           "name": "Loans",
-          "value": 0.0021,
+          "value": 0.002101,
           "formattedValue": "2.10M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0007,
+          "value": 0.000732,
           "formattedValue": "732.23K"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0006,
+          "value": 0.000555,
           "formattedValue": "555.39K"
         },
         {
           "name": "Derivatives",
-          "value": 0.0002,
+          "value": 0.000221,
           "formattedValue": "220.90K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0001,
+          "value": 0.000115,
           "formattedValue": "115.44K"
+        },
+        {
+          "name": "Futures",
+          "value": 8.4e-05,
+          "formattedValue": "83.69K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 4.1e-05,
+          "formattedValue": "41.43K"
         }
       ]
     },
     {
       "name": "GBP",
-      "value": 0.0033,
-      "formattedValue": "3.34M",
+      "value": 0.003379,
+      "formattedValue": "3.38M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0012,
+          "value": 0.001241,
           "formattedValue": "1.24M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.001,
+          "value": 0.00095,
           "formattedValue": "950.27K"
         },
         {
+          "name": "Bonds",
+          "value": 0.00059,
+          "formattedValue": "590.31K"
+        },
+        {
           "name": "Loans",
-          "value": 0.0006,
+          "value": 0.00056,
           "formattedValue": "559.95K"
         },
         {
-          "name": "Bonds",
-          "value": 0.0006,
-          "formattedValue": "590.31K"
+          "name": "Derivatives",
+          "value": 3.6e-05,
+          "formattedValue": "35.56K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 2e-06,
+          "formattedValue": "1.97K"
         }
       ]
     },
     {
       "name": "JPY",
-      "value": 0.0029,
-      "formattedValue": "2.87M",
+      "value": 0.002879,
+      "formattedValue": "2.88M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0018,
+          "value": 0.001825,
           "formattedValue": "1.82M"
         },
         {
           "name": "Bonds",
-          "value": 0.0008,
+          "value": 0.000785,
           "formattedValue": "784.59K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0003,
+          "value": 0.000256,
           "formattedValue": "256.47K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.3e-05,
+          "formattedValue": "13.12K"
         }
       ]
     }

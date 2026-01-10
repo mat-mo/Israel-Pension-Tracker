@@ -523,30 +523,47 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0004,
-      "formattedValue": "372.97K",
+      "value": 0.000379,
+      "formattedValue": "379.20K",
       "children": [
         {
+          "name": "Stocks",
+          "value": 0.000212,
+          "formattedValue": "212.50K"
+        },
+        {
           "name": "Cash & Equivalents",
-          "value": 0.0002,
+          "value": 0.00016,
           "formattedValue": "160.48K"
         },
         {
-          "name": "Stocks",
-          "value": 0.0002,
-          "formattedValue": "212.50K"
+          "name": "Bonds",
+          "value": 6e-06,
+          "formattedValue": "6.23K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0001,
+      "value": 0.000135,
       "formattedValue": "134.82K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0001,
+          "value": 0.000135,
           "formattedValue": "134.82K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 1.4e-05,
+      "formattedValue": "14.38K",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 1.4e-05,
+          "formattedValue": "14.38K"
         }
       ]
     }
@@ -554,30 +571,45 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0004,
-      "formattedValue": "370.59K",
+      "value": 0.000391,
+      "formattedValue": "391.20K",
       "children": [
         {
+          "name": "Stocks",
+          "value": 0.000212,
+          "formattedValue": "212.50K"
+        },
+        {
           "name": "Cash & Equivalents",
-          "value": 0.0002,
+          "value": 0.000158,
           "formattedValue": "158.09K"
         },
         {
-          "name": "Stocks",
-          "value": 0.0002,
-          "formattedValue": "212.50K"
+          "name": "Other Assets",
+          "value": 1.4e-05,
+          "formattedValue": "14.38K"
+        },
+        {
+          "name": "Bonds",
+          "value": 6e-06,
+          "formattedValue": "6.23K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0001,
-      "formattedValue": "134.82K",
+      "value": 0.000137,
+      "formattedValue": "137.21K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0001,
+          "value": 0.000135,
           "formattedValue": "134.82K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 2e-06,
+          "formattedValue": "2.38K"
         }
       ]
     }

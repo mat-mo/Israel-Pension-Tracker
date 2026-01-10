@@ -181,29 +181,34 @@
   "geoSunburst": [
     {
       "name": "USA",
-      "value": 0.0024,
-      "formattedValue": "2.43M",
+      "value": 0.002435,
+      "formattedValue": "2.44M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0022,
+          "value": 0.002189,
           "formattedValue": "2.19M"
         },
         {
           "name": "Bonds",
-          "value": 0.0002,
+          "value": 0.000239,
           "formattedValue": "239.12K"
+        },
+        {
+          "name": "Futures",
+          "value": 7e-06,
+          "formattedValue": "6.86K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0006,
+      "value": 0.00056,
       "formattedValue": "559.90K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0006,
+          "value": 0.00056,
           "formattedValue": "559.90K"
         }
       ]
@@ -212,23 +217,40 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.0029,
-      "formattedValue": "2.94M",
+      "value": 0.002949,
+      "formattedValue": "2.95M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0022,
+          "value": 0.002189,
           "formattedValue": "2.19M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0005,
+          "value": 0.000514,
           "formattedValue": "514.23K"
         },
         {
           "name": "Bonds",
-          "value": 0.0002,
+          "value": 0.000239,
           "formattedValue": "239.12K"
+        },
+        {
+          "name": "Futures",
+          "value": 7e-06,
+          "formattedValue": "6.86K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 4.6e-05,
+      "formattedValue": "45.67K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 4.6e-05,
+          "formattedValue": "45.67K"
         }
       ]
     }

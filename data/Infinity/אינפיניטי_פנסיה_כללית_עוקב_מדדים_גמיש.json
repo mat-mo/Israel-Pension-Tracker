@@ -255,6 +255,86 @@
       }
     ]
   },
-  "geoSunburst": [],
-  "currencySunburst": []
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 4.7e-05,
+      "formattedValue": "46.74K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 3.5e-05,
+          "formattedValue": "34.65K"
+        },
+        {
+          "name": "Bonds",
+          "value": 4e-06,
+          "formattedValue": "4.47K"
+        },
+        {
+          "name": "Stocks",
+          "value": 4e-06,
+          "formattedValue": "4.50K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 3e-06,
+          "formattedValue": "3.12K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 2e-06,
+      "formattedValue": "1.98K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 2e-06,
+          "formattedValue": "1.98K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 4.7e-05,
+      "formattedValue": "46.74K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 3.5e-05,
+          "formattedValue": "34.65K"
+        },
+        {
+          "name": "Bonds",
+          "value": 4e-06,
+          "formattedValue": "4.47K"
+        },
+        {
+          "name": "Stocks",
+          "value": 4e-06,
+          "formattedValue": "4.50K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 3e-06,
+          "formattedValue": "3.12K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 2e-06,
+      "formattedValue": "1.98K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 2e-06,
+          "formattedValue": "1.98K"
+        }
+      ]
+    }
+  ]
 }

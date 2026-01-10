@@ -65,7 +65,7 @@
         "value": 0.0,
         "formattedValue": "5.32K",
         "percentageOfClass": 100.0,
-        "itemCount": 1,
+        "itemCount": 2,
         "totalPages": 1,
         "holdingsPages": [
           [
@@ -73,7 +73,14 @@
               "name": "בנק הבינלאומי הראשון בע\"מ",
               "value": 0.0,
               "formattedValue": "5.32K",
-              "percentage": 100.0,
+              "percentage": 99.99,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.01,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -140,13 +147,23 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0003,
-      "formattedValue": "252.51K",
+      "value": 0.000262,
+      "formattedValue": "261.57K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0003,
+          "value": 0.000253,
           "formattedValue": "252.51K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 5e-06,
+          "formattedValue": "5.32K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 4e-06,
+          "formattedValue": "3.74K"
         }
       ]
     }
@@ -154,13 +171,35 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0003,
-      "formattedValue": "252.51K",
+      "value": 0.000262,
+      "formattedValue": "261.57K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0003,
+          "value": 0.000253,
           "formattedValue": "252.51K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 5e-06,
+          "formattedValue": "5.32K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 4e-06,
+          "formattedValue": "3.74K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     }

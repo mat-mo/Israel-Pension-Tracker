@@ -61,6 +61,42 @@
       }
     ]
   },
-  "geoSunburst": [],
-  "currencySunburst": []
+  "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 1.5e-05,
+      "formattedValue": "15.48K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.5e-05,
+          "formattedValue": "15.46K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.02K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 1.5e-05,
+      "formattedValue": "15.48K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.5e-05,
+          "formattedValue": "15.46K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.02K"
+        }
+      ]
+    }
+  ]
 }

@@ -36,7 +36,7 @@
         "value": 0.0505,
         "formattedValue": "50.45M",
         "percentageOfClass": 100.0,
-        "itemCount": 25,
+        "itemCount": 26,
         "totalPages": 3,
         "holdingsPages": [
           [
@@ -218,6 +218,13 @@
               "formattedValue": "1.80K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "רשות שדות התעופה אגח ב רצף מוסדי",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -337,35 +344,40 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.0499,
+      "value": 0.049877,
       "formattedValue": "49.88M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0499,
+          "value": 0.049877,
           "formattedValue": "49.88M"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0024,
-      "formattedValue": "2.35M",
+      "value": 0.00241,
+      "formattedValue": "2.41M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0012,
+          "value": 0.001212,
           "formattedValue": "1.21M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0006,
+          "value": 0.000577,
           "formattedValue": "577.43K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0006,
+          "value": 0.000564,
           "formattedValue": "564.05K"
+        },
+        {
+          "name": "Loans",
+          "value": 5.6e-05,
+          "formattedValue": "56.44K"
         }
       ]
     }
@@ -373,23 +385,28 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0522,
-      "formattedValue": "52.23M",
+      "value": 0.052287,
+      "formattedValue": "52.29M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0505,
+          "value": 0.050455,
           "formattedValue": "50.45M"
         },
         {
           "name": "Bonds",
-          "value": 0.0012,
+          "value": 0.001212,
           "formattedValue": "1.21M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0006,
+          "value": 0.000564,
           "formattedValue": "564.05K"
+        },
+        {
+          "name": "Loans",
+          "value": 5.6e-05,
+          "formattedValue": "56.44K"
         }
       ]
     }

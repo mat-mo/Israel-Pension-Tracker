@@ -36,7 +36,7 @@
         "value": -0.0,
         "formattedValue": "-16.06K",
         "percentageOfClass": 100.0,
-        "itemCount": 3,
+        "itemCount": 4,
         "totalPages": 1,
         "holdingsPages": [
           [
@@ -60,6 +60,13 @@
               "formattedValue": "0.00K",
               "percentage": -0.02,
               "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ריבית לקבל עוש לאומי",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -235,37 +242,57 @@
   "geoSunburst": [
     {
       "name": "USA",
-      "value": 0.0008,
+      "value": 0.00084,
       "formattedValue": "840.16K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0008,
+          "value": 0.00084,
           "formattedValue": "840.16K"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.0002,
-      "formattedValue": "220.56K",
-      "children": [
+        },
         {
-          "name": "Stocks",
-          "value": 0.0002,
-          "formattedValue": "220.56K"
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0001,
-      "formattedValue": "112.58K",
+      "value": 0.000244,
+      "formattedValue": "243.78K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0001,
+          "value": 0.000113,
           "formattedValue": "112.58K"
+        },
+        {
+          "name": "Stocks",
+          "value": 7.4e-05,
+          "formattedValue": "73.57K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3.5e-05,
+          "formattedValue": "34.90K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 2.3e-05,
+          "formattedValue": "22.73K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.000221,
+      "formattedValue": "220.56K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000221,
+          "formattedValue": "220.56K"
         }
       ]
     }
@@ -273,25 +300,74 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.0011,
-      "formattedValue": "1.06M",
+      "value": 0.001123,
+      "formattedValue": "1.12M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0011,
+          "value": 0.001061,
           "formattedValue": "1.06M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3.5e-05,
+          "formattedValue": "34.90K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1.9e-05,
+          "formattedValue": "19.40K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 8e-06,
+          "formattedValue": "7.99K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.0001,
-      "formattedValue": "104.59K",
+      "value": 0.000181,
+      "formattedValue": "181.50K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0001,
+          "value": 0.000105,
           "formattedValue": "104.59K"
+        },
+        {
+          "name": "Stocks",
+          "value": 7.4e-05,
+          "formattedValue": "73.57K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 3e-06,
+          "formattedValue": "3.34K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     }

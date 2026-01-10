@@ -36,7 +36,7 @@
         "value": 0.0002,
         "formattedValue": "210.11K",
         "percentageOfClass": 100.0,
-        "itemCount": 1,
+        "itemCount": 2,
         "totalPages": 1,
         "holdingsPages": [
           [
@@ -45,6 +45,13 @@
               "value": 0.0002,
               "formattedValue": "210.11K",
               "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ריבית לקבל עוש לאומי",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -251,39 +258,39 @@
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0106,
+          "value": 0.010558,
           "formattedValue": "10.56M"
         },
         {
           "name": "Stocks",
-          "value": 0.0105,
+          "value": 0.010536,
           "formattedValue": "10.54M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0004,
+          "value": 0.000397,
           "formattedValue": "396.73K"
         },
         {
           "name": "Other Assets",
-          "value": 0.0002,
+          "value": 0.00021,
           "formattedValue": "210.11K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0052,
+      "value": 0.005238,
       "formattedValue": "5.24M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0042,
+          "value": 0.004157,
           "formattedValue": "4.16M"
         },
         {
           "name": "Bonds",
-          "value": 0.0011,
+          "value": 0.001081,
           "formattedValue": "1.08M"
         }
       ]
@@ -292,45 +299,50 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0217,
+      "value": 0.021659,
       "formattedValue": "21.66M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0106,
+          "value": 0.010558,
           "formattedValue": "10.56M"
         },
         {
           "name": "Stocks",
-          "value": 0.0105,
+          "value": 0.010536,
           "formattedValue": "10.54M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0004,
+          "value": 0.000355,
           "formattedValue": "355.36K"
         },
         {
           "name": "Other Assets",
-          "value": 0.0002,
+          "value": 0.00021,
           "formattedValue": "210.11K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0052,
-      "formattedValue": "5.24M",
+      "value": 0.00528,
+      "formattedValue": "5.28M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0042,
+          "value": 0.004157,
           "formattedValue": "4.16M"
         },
         {
           "name": "Bonds",
-          "value": 0.0011,
+          "value": 0.001081,
           "formattedValue": "1.08M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 4.1e-05,
+          "formattedValue": "41.37K"
         }
       ]
     }

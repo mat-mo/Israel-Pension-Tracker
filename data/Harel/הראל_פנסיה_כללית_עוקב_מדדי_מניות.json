@@ -42,71 +42,101 @@
         "value": 0.0,
         "formattedValue": "0.02K",
         "percentageOfClass": 100.0,
-        "itemCount": 9,
-        "totalPages": 1,
+        "itemCount": 13,
+        "totalPages": 2,
         "holdingsPages": [
           [
             {
               "name": "מ.ק.מ. 616",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 22.1,
+              "percentage": 20.38,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ממשל משתנה 1134",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 12.38,
+              "percentage": 11.41,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ממשל משתנה 1130",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 12.31,
+              "percentage": 11.35,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 316",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 11.32,
+              "percentage": 10.43,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 516",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 10.92,
+              "percentage": 10.07,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 726",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 8.6,
+              "percentage": 7.93,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 1215",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 8.14,
+              "percentage": 7.5,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 1115",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 7.41,
+              "percentage": 6.83,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 216",
               "value": 0.0,
               "formattedValue": "0.00K",
-              "percentage": 6.82,
+              "percentage": 6.28,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ממשל משתנה 0526",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 4.21,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "מ.ק.מ. 1015",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 1.95,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ממשל קצרה 11/25",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 1.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ממשל קצרה 02/26",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.49,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -217,7 +247,7 @@
         "value": 0.0054,
         "formattedValue": "5.44M",
         "percentageOfClass": 100.0,
-        "itemCount": 4,
+        "itemCount": 5,
         "totalPages": 1,
         "holdingsPages": [
           [
@@ -231,7 +261,7 @@
             {
               "name": "בנק הבינלאומי",
               "value": 0.0,
-              "formattedValue": "0.00K",
+              "formattedValue": "0.01K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             },
@@ -248,6 +278,13 @@
               "formattedValue": "0.00K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -257,30 +294,40 @@
   "geoSunburst": [
     {
       "name": "USA",
-      "value": 0.1929,
+      "value": 0.192932,
       "formattedValue": "192.93M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.1929,
+          "value": 0.192932,
           "formattedValue": "192.93M"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0062,
+      "value": 0.006158,
       "formattedValue": "6.16M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0054,
+          "value": 0.005442,
           "formattedValue": "5.44M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0007,
+          "value": 0.000715,
           "formattedValue": "714.53K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "1.13K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "0.02K"
         }
       ]
     }
@@ -288,35 +335,45 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.1967,
+      "value": 0.196748,
       "formattedValue": "196.75M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.1929,
+          "value": 0.192932,
           "formattedValue": "192.93M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0038,
+          "value": 0.003815,
           "formattedValue": "3.81M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "1.13K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.0023,
+      "value": 0.002342,
       "formattedValue": "2.34M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0016,
+          "value": 0.001627,
           "formattedValue": "1.63M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0007,
+          "value": 0.000715,
           "formattedValue": "714.53K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0,
+          "formattedValue": "0.02K"
         }
       ]
     }

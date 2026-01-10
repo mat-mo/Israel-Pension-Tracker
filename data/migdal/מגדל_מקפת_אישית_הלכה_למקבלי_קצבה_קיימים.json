@@ -1209,30 +1209,50 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.0003,
-      "formattedValue": "340.13K",
+      "value": 0.000347,
+      "formattedValue": "346.99K",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0002,
+          "value": 0.000206,
           "formattedValue": "206.33K"
         },
         {
           "name": "Other Assets",
-          "value": 0.0001,
+          "value": 0.000134,
           "formattedValue": "133.80K"
+        },
+        {
+          "name": "Stocks",
+          "value": 7e-06,
+          "formattedValue": "6.86K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0002,
-      "formattedValue": "158.76K",
+      "value": 0.000195,
+      "formattedValue": "194.63K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0002,
+          "value": 0.000159,
           "formattedValue": "158.76K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 3.2e-05,
+          "formattedValue": "32.07K"
+        },
+        {
+          "name": "Stocks",
+          "value": 3e-06,
+          "formattedValue": "2.95K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "0.85K"
         }
       ]
     }
@@ -1240,23 +1260,79 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0005,
-      "formattedValue": "498.89K",
+      "value": 0.000527,
+      "formattedValue": "527.19K",
       "children": [
         {
-          "name": "Bonds",
-          "value": 0.0002,
-          "formattedValue": "158.76K"
-        },
-        {
           "name": "Non-Tradable Bonds",
-          "value": 0.0002,
+          "value": 0.000206,
           "formattedValue": "206.33K"
         },
         {
+          "name": "Bonds",
+          "value": 0.000159,
+          "formattedValue": "158.76K"
+        },
+        {
           "name": "Other Assets",
-          "value": 0.0001,
+          "value": 0.000134,
           "formattedValue": "133.80K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 2.5e-05,
+          "formattedValue": "25.34K"
+        },
+        {
+          "name": "Stocks",
+          "value": 3e-06,
+          "formattedValue": "2.95K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 1.4e-05,
+      "formattedValue": "14.36K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 7e-06,
+          "formattedValue": "6.66K"
+        },
+        {
+          "name": "Stocks",
+          "value": 7e-06,
+          "formattedValue": "6.86K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "0.85K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0,
+      "formattedValue": "0.07K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.07K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0,
+      "formattedValue": "0.01K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.01K"
         }
       ]
     }

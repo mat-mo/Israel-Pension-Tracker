@@ -288,49 +288,76 @@
   "geoSunburst": [
     {
       "name": "USA",
-      "value": 0.0028,
-      "formattedValue": "2.83M",
+      "value": 0.002836,
+      "formattedValue": "2.84M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0028,
+          "value": 0.002832,
           "formattedValue": "2.83M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 4e-06,
+          "formattedValue": "4.44K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0016,
-      "formattedValue": "1.61M",
+      "value": 0.001639,
+      "formattedValue": "1.64M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0016,
+          "value": 0.001608,
           "formattedValue": "1.61M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 3e-05,
+          "formattedValue": "29.70K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "1.11K"
         }
       ]
     },
     {
       "name": "Eurozone",
-      "value": 0.0003,
+      "value": 0.000259,
       "formattedValue": "259.25K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0003,
+          "value": 0.000259,
           "formattedValue": "259.25K"
         }
       ]
     },
     {
       "name": "Japan",
-      "value": 0.0001,
+      "value": 0.000124,
       "formattedValue": "124.03K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0001,
+          "value": 0.000124,
           "formattedValue": "124.03K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 9.8e-05,
+      "formattedValue": "98.32K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 9.8e-05,
+          "formattedValue": "98.32K"
         }
       ]
     }
@@ -338,54 +365,79 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.0031,
-      "formattedValue": "3.08M",
+      "value": 0.003086,
+      "formattedValue": "3.09M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0029,
+          "value": 0.00293,
           "formattedValue": "2.93M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0002,
+          "value": 0.000152,
           "formattedValue": "151.53K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 4e-06,
+          "formattedValue": "4.46K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.0014,
-      "formattedValue": "1.36M",
+      "value": 0.001393,
+      "formattedValue": "1.39M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0014,
+          "value": 0.001364,
           "formattedValue": "1.36M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 3e-05,
+          "formattedValue": "29.70K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 0.0003,
-      "formattedValue": "259.25K",
+      "value": 0.000301,
+      "formattedValue": "301.17K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0003,
+          "value": 0.000259,
           "formattedValue": "259.25K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 4.1e-05,
+          "formattedValue": "40.82K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "1.10K"
         }
       ]
     },
     {
       "name": "JPY",
-      "value": 0.0001,
-      "formattedValue": "124.03K",
+      "value": 0.000176,
+      "formattedValue": "176.11K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0001,
+          "value": 0.000124,
           "formattedValue": "124.03K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 5.2e-05,
+          "formattedValue": "52.08K"
         }
       ]
     }

@@ -95,7 +95,7 @@
         "value": 0.1351,
         "formattedValue": "135.14M",
         "percentageOfClass": 90.17,
-        "itemCount": 179,
+        "itemCount": 180,
         "totalPages": 18,
         "holdingsPages": [
           [
@@ -1385,6 +1385,13 @@
               "formattedValue": "0.00K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CF INDUSTRIES HOLDINGS INC",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
             }
           ]
         ]
@@ -2890,96 +2897,118 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.1638,
+      "value": 0.163821,
       "formattedValue": "163.82M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.1449,
+          "value": 0.144872,
           "formattedValue": "144.87M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0131,
+          "value": 0.013098,
           "formattedValue": "13.10M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0029,
+          "value": 0.002933,
           "formattedValue": "2.93M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0014,
+          "value": 0.00141,
           "formattedValue": "1.41M"
         },
         {
           "name": "Warrants",
-          "value": 0.0006,
+          "value": 0.000637,
           "formattedValue": "637.17K"
         },
         {
           "name": "Structured Products",
-          "value": 0.0005,
+          "value": 0.000519,
           "formattedValue": "518.64K"
         },
         {
           "name": "Options",
-          "value": 0.0004,
+          "value": 0.000351,
           "formattedValue": "350.63K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0585,
+      "value": 0.058516,
       "formattedValue": "58.52M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0399,
+          "value": 0.039892,
           "formattedValue": "39.89M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0186,
+          "value": 0.018624,
           "formattedValue": "18.62M"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0042,
+      "value": 0.004243,
       "formattedValue": "4.24M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0042,
+          "value": 0.004243,
           "formattedValue": "4.24M"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "0.15K"
         }
       ]
     },
     {
       "name": "Netherlands",
-      "value": 0.0005,
+      "value": 0.00046,
       "formattedValue": "460.35K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0005,
+          "value": 0.00046,
           "formattedValue": "460.35K"
         }
       ]
     },
     {
       "name": "Germany",
-      "value": 0.0002,
+      "value": 0.00022,
       "formattedValue": "220.49K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0002,
+          "value": 0.00022,
           "formattedValue": "220.49K"
+        }
+      ]
+    },
+    {
+      "name": "Canada",
+      "value": 7.5e-05,
+      "formattedValue": "75.12K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 7.2e-05,
+          "formattedValue": "72.08K"
+        },
+        {
+          "name": "Warrants",
+          "value": 3e-06,
+          "formattedValue": "3.05K"
         }
       ]
     }
@@ -2987,106 +3016,136 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.2058,
+      "value": 0.205819,
       "formattedValue": "205.82M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.1305,
+          "value": 0.130496,
           "formattedValue": "130.50M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0399,
+          "value": 0.039892,
           "formattedValue": "39.89M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0215,
+          "value": 0.021534,
           "formattedValue": "21.53M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0111,
+          "value": 0.011065,
           "formattedValue": "11.07M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0014,
+          "value": 0.001375,
           "formattedValue": "1.38M"
         },
         {
           "name": "Warrants",
-          "value": 0.0006,
+          "value": 0.000586,
           "formattedValue": "586.33K"
         },
         {
           "name": "Structured Products",
-          "value": 0.0005,
+          "value": 0.000519,
           "formattedValue": "518.64K"
         },
         {
           "name": "Options",
-          "value": 0.0004,
+          "value": 0.000351,
           "formattedValue": "350.63K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0191,
-      "formattedValue": "19.07M",
+      "value": 0.019126,
+      "formattedValue": "19.13M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0172,
+          "value": 0.017191,
           "formattedValue": "17.19M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0019,
+          "value": 0.001876,
           "formattedValue": "1.88M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3.5e-05,
+          "formattedValue": "34.92K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 2.3e-05,
+          "formattedValue": "23.38K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "0.26K"
         }
       ]
     },
     {
       "name": "GBP",
-      "value": 0.0013,
-      "formattedValue": "1.34M",
+      "value": 0.001363,
+      "formattedValue": "1.36M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0013,
+          "value": 0.001344,
           "formattedValue": "1.34M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.9e-05,
+          "formattedValue": "19.03K"
         }
       ]
     },
     {
       "name": "JPY",
-      "value": 0.0006,
-      "formattedValue": "617.36K",
+      "value": 0.000671,
+      "formattedValue": "671.13K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0006,
+          "value": 0.000617,
           "formattedValue": "617.36K"
+        },
+        {
+          "name": "Warrants",
+          "value": 5.4e-05,
+          "formattedValue": "53.77K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 0.0004,
-      "formattedValue": "358.29K",
+      "value": 0.000359,
+      "formattedValue": "358.51K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0002,
+          "value": 0.00022,
           "formattedValue": "220.49K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0001,
+          "value": 0.000138,
           "formattedValue": "137.80K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.23K"
         }
       ]
     }

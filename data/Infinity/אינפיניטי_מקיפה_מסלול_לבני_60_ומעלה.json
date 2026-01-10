@@ -1744,57 +1744,91 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.06,
+      "value": 0.060004,
       "formattedValue": "60.00M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0412,
+          "value": 0.041207,
           "formattedValue": "41.21M"
         },
         {
           "name": "Stocks",
-          "value": 0.0129,
+          "value": 0.012898,
           "formattedValue": "12.90M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0059,
+          "value": 0.005899,
           "formattedValue": "5.90M"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0281,
-      "formattedValue": "28.14M",
+      "value": 0.028169,
+      "formattedValue": "28.17M",
       "children": [
         {
           "name": "Other Assets",
-          "value": 0.0278,
+          "value": 0.027837,
           "formattedValue": "27.84M"
         },
         {
           "name": "Stocks",
-          "value": 0.0003,
+          "value": 0.000304,
           "formattedValue": "303.54K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 2.8e-05,
+          "formattedValue": "28.13K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0129,
-      "formattedValue": "12.90M",
+      "value": 0.012905,
+      "formattedValue": "12.91M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.011,
+          "value": 0.011045,
           "formattedValue": "11.05M"
         },
         {
           "name": "Bonds",
-          "value": 0.0019,
+          "value": 0.001859,
           "formattedValue": "1.86M"
+        },
+        {
+          "name": "Futures",
+          "value": 1e-06,
+          "formattedValue": "0.98K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 1.1e-05,
+      "formattedValue": "11.50K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.1e-05,
+          "formattedValue": "11.50K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 8e-06,
+      "formattedValue": "8.39K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 8e-06,
+          "formattedValue": "8.39K"
         }
       ]
     }
@@ -1803,61 +1837,105 @@
     {
       "name": "ILS",
       "value": 0.0873,
-      "formattedValue": "87.27M",
+      "formattedValue": "87.30M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0412,
+          "value": 0.041191,
           "formattedValue": "41.19M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0278,
+          "value": 0.027837,
           "formattedValue": "27.84M"
         },
         {
           "name": "Stocks",
-          "value": 0.0128,
+          "value": 0.012784,
           "formattedValue": "12.78M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0055,
+          "value": 0.00546,
           "formattedValue": "5.46M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 2.8e-05,
+          "formattedValue": "28.13K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0136,
+      "value": 0.013638,
       "formattedValue": "13.64M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0113,
+          "value": 0.011349,
           "formattedValue": "11.35M"
         },
         {
           "name": "Bonds",
-          "value": 0.0019,
+          "value": 0.001859,
           "formattedValue": "1.86M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0004,
+          "value": 0.000429,
           "formattedValue": "428.59K"
+        },
+        {
+          "name": "Futures",
+          "value": 1e-06,
+          "formattedValue": "0.98K"
         }
       ]
     },
     {
       "name": "JPY",
-      "value": 0.0001,
+      "value": 0.000114,
       "formattedValue": "114.36K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0001,
+          "value": 0.000114,
           "formattedValue": "114.36K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 3.5e-05,
+      "formattedValue": "34.87K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 1.6e-05,
+          "formattedValue": "15.81K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.1e-05,
+          "formattedValue": "10.67K"
+        },
+        {
+          "name": "Futures",
+          "value": 8e-06,
+          "formattedValue": "8.39K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 1.1e-05,
+      "formattedValue": "11.50K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.1e-05,
+          "formattedValue": "11.50K"
         }
       ]
     }

@@ -1370,57 +1370,79 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.0494,
-      "formattedValue": "49.38M",
+      "value": 0.04939,
+      "formattedValue": "49.39M",
       "children": [
         {
           "name": "Other Assets",
-          "value": 0.0253,
+          "value": 0.025329,
           "formattedValue": "25.33M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0241,
+          "value": 0.024051,
           "formattedValue": "24.05M"
+        },
+        {
+          "name": "Futures",
+          "value": 1.1e-05,
+          "formattedValue": "10.61K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0333,
+      "value": 0.033344,
       "formattedValue": "33.34M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0237,
+          "value": 0.023731,
           "formattedValue": "23.73M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.009,
+          "value": 0.008973,
           "formattedValue": "8.97M"
         },
         {
           "name": "Options",
-          "value": 0.0005,
+          "value": 0.000532,
           "formattedValue": "532.40K"
         },
         {
           "name": "Derivatives",
-          "value": 0.0001,
+          "value": 0.000108,
           "formattedValue": "107.67K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0032,
-      "formattedValue": "3.18M",
+      "value": 0.003268,
+      "formattedValue": "3.27M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0032,
+          "value": 0.003177,
           "formattedValue": "3.18M"
+        },
+        {
+          "name": "Futures",
+          "value": 9.2e-05,
+          "formattedValue": "91.74K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 2e-06,
+      "formattedValue": "1.86K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 2e-06,
+          "formattedValue": "1.86K"
         }
       ]
     }
@@ -1428,72 +1450,77 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0787,
+      "value": 0.078676,
       "formattedValue": "78.68M",
       "children": [
         {
           "name": "Other Assets",
-          "value": 0.0253,
+          "value": 0.025329,
           "formattedValue": "25.33M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0241,
+          "value": 0.024051,
           "formattedValue": "24.05M"
         },
         {
           "name": "Bonds",
-          "value": 0.0237,
+          "value": 0.023731,
           "formattedValue": "23.73M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0049,
+          "value": 0.004925,
           "formattedValue": "4.93M"
         },
         {
           "name": "Options",
-          "value": 0.0005,
+          "value": 0.000532,
           "formattedValue": "532.40K"
         },
         {
           "name": "Derivatives",
-          "value": 0.0001,
+          "value": 0.000108,
           "formattedValue": "107.67K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0072,
+      "value": 0.007208,
       "formattedValue": "7.21M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0039,
+          "value": 0.003929,
           "formattedValue": "3.93M"
         },
         {
           "name": "Bonds",
-          "value": 0.0032,
+          "value": 0.003177,
           "formattedValue": "3.18M"
         },
         {
           "name": "Futures",
-          "value": 0.0001,
+          "value": 0.000102,
           "formattedValue": "102.35K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 0.0001,
-      "formattedValue": "118.77K",
+      "value": 0.000121,
+      "formattedValue": "120.63K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0001,
+          "value": 0.000119,
           "formattedValue": "118.77K"
+        },
+        {
+          "name": "Futures",
+          "value": 2e-06,
+          "formattedValue": "1.86K"
         }
       ]
     }

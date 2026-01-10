@@ -1499,83 +1499,98 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.5329,
-      "formattedValue": "532.94M",
+      "value": 0.53297,
+      "formattedValue": "532.97M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.438,
+          "value": 0.437973,
           "formattedValue": "437.97M"
         },
         {
           "name": "Loans",
-          "value": 0.0717,
+          "value": 0.071735,
           "formattedValue": "71.73M"
         },
         {
           "name": "Structured Products",
-          "value": 0.0087,
+          "value": 0.00865,
           "formattedValue": "8.65M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0064,
+          "value": 0.00641,
           "formattedValue": "6.41M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0055,
+          "value": 0.005453,
           "formattedValue": "5.45M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0027,
+          "value": 0.002716,
           "formattedValue": "2.72M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3.4e-05,
+          "formattedValue": "33.53K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.2419,
+      "value": 0.241909,
       "formattedValue": "241.91M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.1751,
+          "value": 0.175059,
           "formattedValue": "175.06M"
         },
         {
           "name": "Other Assets",
-          "value": 0.061,
+          "value": 0.060987,
           "formattedValue": "60.99M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0059,
+          "value": 0.005863,
           "formattedValue": "5.86M"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0169,
-      "formattedValue": "16.89M",
+      "value": 0.016921,
+      "formattedValue": "16.92M",
       "children": [
         {
           "name": "Investment Funds",
-          "value": 0.0169,
+          "value": 0.016894,
           "formattedValue": "16.89M"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 2.2e-05,
+          "formattedValue": "21.94K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 6e-06,
+          "formattedValue": "5.83K"
         }
       ]
     },
     {
       "name": "Eurozone",
-      "value": 0.0037,
+      "value": 0.003693,
       "formattedValue": "3.69M",
       "children": [
         {
           "name": "Investment Funds",
-          "value": 0.0037,
+          "value": 0.003693,
           "formattedValue": "3.69M"
         }
       ]
@@ -1584,99 +1599,124 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.7594,
+      "value": 0.759383,
       "formattedValue": "759.38M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.438,
+          "value": 0.437973,
           "formattedValue": "437.97M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.1805,
+          "value": 0.18048,
           "formattedValue": "180.48M"
         },
         {
           "name": "Loans",
-          "value": 0.0628,
+          "value": 0.062807,
           "formattedValue": "62.81M"
         },
         {
           "name": "Other Assets",
-          "value": 0.061,
+          "value": 0.060987,
           "formattedValue": "60.99M"
         },
         {
           "name": "Structured Products",
-          "value": 0.0087,
+          "value": 0.00865,
           "formattedValue": "8.65M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0058,
+          "value": 0.005771,
           "formattedValue": "5.77M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0027,
+          "value": 0.002716,
           "formattedValue": "2.72M"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0214,
-      "formattedValue": "21.45M",
+      "value": 0.021518,
+      "formattedValue": "21.52M",
       "children": [
         {
           "name": "Investment Funds",
-          "value": 0.0169,
+          "value": 0.016894,
           "formattedValue": "16.89M"
         },
         {
           "name": "Loans",
-          "value": 0.0041,
+          "value": 0.004101,
           "formattedValue": "4.10M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0005,
+          "value": 0.000454,
           "formattedValue": "453.86K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 3.8e-05,
+          "formattedValue": "38.05K"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 2.2e-05,
+          "formattedValue": "21.94K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-05,
+          "formattedValue": "9.90K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 0.0139,
-      "formattedValue": "13.93M",
+      "value": 0.013957,
+      "formattedValue": "13.96M",
       "children": [
         {
           "name": "Investment Funds",
-          "value": 0.0096,
+          "value": 0.009556,
           "formattedValue": "9.56M"
         },
         {
           "name": "Loans",
-          "value": 0.0042,
+          "value": 0.004197,
           "formattedValue": "4.20M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0002,
+          "value": 0.00018,
           "formattedValue": "180.14K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 2.4e-05,
+          "formattedValue": "23.63K"
         }
       ]
     },
     {
       "name": "GBP",
-      "value": 0.0006,
-      "formattedValue": "630.29K",
+      "value": 0.000635,
+      "formattedValue": "635.20K",
       "children": [
         {
           "name": "Loans",
-          "value": 0.0006,
+          "value": 0.00063,
           "formattedValue": "630.29K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 5e-06,
+          "formattedValue": "4.90K"
         }
       ]
     }

@@ -2215,22 +2215,22 @@
         "value": -0.0,
         "formattedValue": "-17.06K",
         "percentageOfClass": 100.0,
-        "itemCount": 19,
-        "totalPages": 2,
+        "itemCount": 24,
+        "totalPages": 3,
         "holdingsPages": [
           [
             {
               "name": "ביטחונות CSA במטבע ש\"ח לאומי_x000D_",
               "value": -0.0,
               "formattedValue": "-15.10K",
-              "percentage": 88.5,
+              "percentage": 88.52,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "הלוואה למגורים לציבור בנק מזרחי טפחות בעמ",
               "value": -0.0,
               "formattedValue": "-1.13K",
-              "percentage": 6.64,
+              "percentage": 6.63,
               "countryEmoji": "🇮🇱"
             },
             {
@@ -2353,6 +2353,43 @@
               "formattedValue": "0.00K",
               "percentage": -0.01,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אמפל אמ ב חש1/14",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "אמפל אמרי ב'חש 01/13",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אמפל ב' חש 2/15",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אמפל אמרי אגח ב",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חבס אג\"ח 12",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -2446,28 +2483,89 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0666,
-      "formattedValue": "66.63M",
+      "value": 0.066734,
+      "formattedValue": "66.73M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0554,
+          "value": 0.055375,
           "formattedValue": "55.37M"
         },
         {
           "name": "Loans",
-          "value": 0.0081,
+          "value": 0.008059,
           "formattedValue": "8.06M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0025,
+          "value": 0.002546,
           "formattedValue": "2.55M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0006,
+          "value": 0.000645,
           "formattedValue": "645.13K"
+        },
+        {
+          "name": "Structured Products",
+          "value": 7e-05,
+          "formattedValue": "70.36K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1.9e-05,
+          "formattedValue": "18.84K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1.9e-05,
+          "formattedValue": "19.36K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 9e-05,
+      "formattedValue": "90.26K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 8.5e-05,
+          "formattedValue": "85.45K"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 5e-06,
+          "formattedValue": "4.81K"
+        }
+      ]
+    },
+    {
+      "name": "UK",
+      "value": 2.2e-05,
+      "formattedValue": "21.99K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 2.2e-05,
+          "formattedValue": "21.99K"
+        }
+      ]
+    },
+    {
+      "name": "China",
+      "value": 2e-06,
+      "formattedValue": "1.90K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 2e-06,
+          "formattedValue": "1.90K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     }
@@ -2475,45 +2573,126 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0662,
-      "formattedValue": "66.18M",
+      "value": 0.066281,
+      "formattedValue": "66.28M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0553,
+          "value": 0.055258,
           "formattedValue": "55.26M"
         },
         {
           "name": "Loans",
-          "value": 0.0081,
+          "value": 0.008059,
           "formattedValue": "8.06M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0022,
+          "value": 0.002212,
           "formattedValue": "2.21M"
         },
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0006,
+          "value": 0.000645,
           "formattedValue": "645.13K"
+        },
+        {
+          "name": "Structured Products",
+          "value": 7e-05,
+          "formattedValue": "70.36K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1.8e-05,
+          "formattedValue": "18.23K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1.7e-05,
+          "formattedValue": "17.29K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0005,
-      "formattedValue": "471.39K",
+      "value": 0.000479,
+      "formattedValue": "478.69K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0003,
+          "value": 0.000333,
           "formattedValue": "333.21K"
         },
         {
           "name": "Bonds",
-          "value": 0.0001,
+          "value": 0.000138,
           "formattedValue": "138.17K"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 5e-06,
+          "formattedValue": "4.81K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 2e-06,
+          "formattedValue": "1.87K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1e-06,
+          "formattedValue": "0.62K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 4.2e-05,
+      "formattedValue": "42.37K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 4.2e-05,
+          "formattedValue": "42.37K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 2.4e-05,
+      "formattedValue": "23.51K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 2.3e-05,
+          "formattedValue": "23.27K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.04K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "0.20K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 2.2e-05,
+      "formattedValue": "21.99K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 2.2e-05,
+          "formattedValue": "21.99K"
         }
       ]
     }

@@ -223,10 +223,9 @@ def clean_value(val):
     s = str(val).strip()
     if pd.isna(val) or s in ['nan', 'ריק במקור', 'תא ללא תוכן, המשך בתא הבא']: return 0.0
     try:
-        s = s.replace(',', '')
-        # FIX: Handle accounting negative format (1,000) -> -1000
+        s = s.replace('−', '-').replace('–', '-').replace(',', '')
         if s.startswith('(') and s.endswith(')'):
-            s = '-' + s[1:-1]
+            s = '-' + s[1:-1].strip()
         return float(s)
     except:
         return 0.0
@@ -310,7 +309,8 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
-                if abs(val_bn) < 1e-9: continue
+                # CHANGED: Lower threshold to almost zero so small/negative values aren't skipped
+                if abs(val_bn) < 1e-12: continue 
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
                 cls, sub = default_cls, default_sub
@@ -335,7 +335,6 @@ def process_institution_data(target_dir, inst_key, config, master_map):
     return all_tracks_data
 
 def calculate_geo_sunburst(data_store):
-    """ Returns Geo data using ABSOLUTE values for Exposure size """
     country_groups = {} 
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
@@ -351,18 +350,18 @@ def calculate_geo_sunburst(data_store):
         asset_children = []
         children_sum = 0.0
         for cls_name, abs_val in assets_dict.items():
-            if abs_val > 0.0001:
-                asset_children.append({ "name": cls_name, "value": round(abs_val, 4), "formattedValue": format_currency(abs_val) })
+            # CHANGED: Threshold lowered to include small items
+            if abs_val > 1e-12:
+                asset_children.append({ "name": cls_name, "value": round(abs_val, 6), "formattedValue": format_currency(abs_val) })
                 children_sum += abs_val
         if not asset_children: continue
         asset_children.sort(key=lambda x: x["value"], reverse=True)
         display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
-        sunburst_data.append({ "name": display_name, "value": round(children_sum, 4), "formattedValue": format_currency(children_sum), "children": asset_children })
+        sunburst_data.append({ "name": display_name, "value": round(children_sum, 6), "formattedValue": format_currency(children_sum), "children": asset_children })
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
 def calculate_currency_sunburst(data_store):
-    """ Returns Currency data using ABSOLUTE values for Exposure size """
     currency_groups = {} 
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
@@ -377,12 +376,13 @@ def calculate_currency_sunburst(data_store):
         asset_children = []
         children_sum = 0.0
         for cls_name, abs_val in assets_dict.items():
-            if abs_val > 0.0001:
-                asset_children.append({ "name": cls_name, "value": round(abs_val, 4), "formattedValue": format_currency(abs_val) })
+            # CHANGED: Threshold lowered
+            if abs_val > 1e-12:
+                asset_children.append({ "name": cls_name, "value": round(abs_val, 6), "formattedValue": format_currency(abs_val) })
                 children_sum += abs_val
         if not asset_children: continue
         asset_children.sort(key=lambda x: x["value"], reverse=True)
-        sunburst_data.append({ "name": curr, "value": round(children_sum, 4), "formattedValue": format_currency(children_sum), "children": asset_children })
+        sunburst_data.append({ "name": curr, "value": round(children_sum, 6), "formattedValue": format_currency(children_sum), "children": asset_children })
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
@@ -426,7 +426,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                     grouped[i['name']] = grouped.get(i['name'], 0) + i['value']
                     if i['emoji']: name_to_emoji[i['name']] = i['emoji']
 
-                # Sort by Absolute Magnitude to put biggest movers on top
                 sorted_h = sorted([
                     {"name": k, "value": v, "emoji": name_to_emoji.get(k, "")} 
                     for k,v in grouped.items()

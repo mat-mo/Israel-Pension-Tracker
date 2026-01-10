@@ -1405,35 +1405,45 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.0436,
+      "value": 0.043596,
       "formattedValue": "43.60M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0293,
+          "value": 0.029325,
           "formattedValue": "29.32M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0143,
+          "value": 0.014272,
           "formattedValue": "14.27M"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0262,
-      "formattedValue": "26.24M",
+      "value": 0.026247,
+      "formattedValue": "26.25M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0216,
+          "value": 0.021561,
           "formattedValue": "21.56M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0047,
+          "value": 0.004679,
           "formattedValue": "4.68M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 3e-06,
+          "formattedValue": "3.08K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3e-06,
+          "formattedValue": "3.43K"
         }
       ]
     }
@@ -1441,28 +1451,33 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0698,
+      "value": 0.069843,
       "formattedValue": "69.84M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
-          "value": 0.0293,
+          "value": 0.029325,
           "formattedValue": "29.32M"
         },
         {
           "name": "Bonds",
-          "value": 0.0216,
+          "value": 0.021561,
           "formattedValue": "21.56M"
         },
         {
           "name": "Other Assets",
-          "value": 0.0143,
+          "value": 0.014275,
           "formattedValue": "14.27M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0047,
+          "value": 0.004679,
           "formattedValue": "4.68M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3e-06,
+          "formattedValue": "3.43K"
         }
       ]
     }

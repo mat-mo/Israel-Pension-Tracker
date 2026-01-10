@@ -619,52 +619,67 @@
   "geoSunburst": [
     {
       "name": "USA",
-      "value": 0.0611,
-      "formattedValue": "61.06M",
+      "value": 0.061084,
+      "formattedValue": "61.08M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0599,
+          "value": 0.059859,
           "formattedValue": "59.86M"
         },
         {
           "name": "Bonds",
-          "value": 0.0007,
+          "value": 0.000661,
           "formattedValue": "661.24K"
         },
         {
           "name": "Derivatives",
-          "value": 0.0005,
+          "value": 0.000538,
           "formattedValue": "537.80K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 2e-05,
+          "formattedValue": "20.37K"
+        },
+        {
+          "name": "Futures",
+          "value": 5e-06,
+          "formattedValue": "4.97K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0227,
+      "value": 0.022663,
       "formattedValue": "22.66M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0223,
+          "value": 0.022338,
           "formattedValue": "22.34M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0003,
+          "value": 0.000325,
           "formattedValue": "324.54K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0206,
-      "formattedValue": "20.56M",
+      "value": 0.020623,
+      "formattedValue": "20.62M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0206,
+          "value": 0.020563,
           "formattedValue": "20.56M"
+        },
+        {
+          "name": "Futures",
+          "value": 6e-05,
+          "formattedValue": "59.77K"
         }
       ]
     }
@@ -672,39 +687,49 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.0827,
-      "formattedValue": "82.72M",
+      "value": 0.082803,
+      "formattedValue": "82.80M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0804,
+          "value": 0.080423,
           "formattedValue": "80.42M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0009,
+          "value": 0.000862,
           "formattedValue": "862.34K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0008,
+          "value": 0.000771,
           "formattedValue": "771.23K"
         },
         {
           "name": "Bonds",
-          "value": 0.0007,
+          "value": 0.000661,
           "formattedValue": "661.24K"
+        },
+        {
+          "name": "Futures",
+          "value": 6.5e-05,
+          "formattedValue": "64.74K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 2e-05,
+          "formattedValue": "20.37K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.0216,
+      "value": 0.021567,
       "formattedValue": "21.57M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0216,
+          "value": 0.021567,
           "formattedValue": "21.57M"
         }
       ]

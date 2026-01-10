@@ -21,6 +21,12 @@
       "value": 0.0,
       "formattedValue": "9.92K",
       "percentage": 0.68
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "percentage": 0.0
     }
   ],
   "breakdown": {
@@ -65,7 +71,7 @@
         "value": 0.0003,
         "formattedValue": "281.96K",
         "percentageOfClass": 100.0,
-        "itemCount": 2,
+        "itemCount": 4,
         "totalPages": 1,
         "holdingsPages": [
           [
@@ -82,6 +88,41 @@
               "formattedValue": "113.28K",
               "percentage": 40.18,
               "countryEmoji": "🇨🇳"
+            },
+            {
+              "name": "iShares USD High Yield Corp Bo",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "iShares iBoxx $ High Yield Cor",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": 0.0,
+        "formattedValue": "0.00K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "iShares USD High Yield Corp Bo",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 100.0,
+              "countryEmoji": "🇺🇸"
             }
           ]
         ]
@@ -140,36 +181,51 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0012,
-      "formattedValue": "1.17M",
+      "value": 0.001192,
+      "formattedValue": "1.19M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0012,
+          "value": 0.001171,
           "formattedValue": "1.17M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 2.1e-05,
+          "formattedValue": "20.59K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0002,
-      "formattedValue": "168.68K",
+      "value": 0.000204,
+      "formattedValue": "204.37K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0002,
+          "value": 0.000169,
           "formattedValue": "168.68K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 3.6e-05,
+          "formattedValue": "35.69K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     },
     {
       "name": "China",
-      "value": 0.0001,
+      "value": 0.000113,
       "formattedValue": "113.28K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0001,
+          "value": 0.000113,
           "formattedValue": "113.28K"
         }
       ]
@@ -178,25 +234,40 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0011,
+      "value": 0.001121,
       "formattedValue": "1.12M",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.0011,
+          "value": 0.001121,
           "formattedValue": "1.12M"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.0003,
-      "formattedValue": "281.96K",
+      "value": 0.000389,
+      "formattedValue": "388.96K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0003,
+          "value": 0.000282,
           "formattedValue": "281.96K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 5.6e-05,
+          "formattedValue": "56.28K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 5.1e-05,
+          "formattedValue": "50.72K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     }

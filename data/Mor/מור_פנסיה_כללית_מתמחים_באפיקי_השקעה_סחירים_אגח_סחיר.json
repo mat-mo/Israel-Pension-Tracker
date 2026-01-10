@@ -2116,18 +2116,50 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0011,
-      "formattedValue": "1.10M",
+      "value": 0.00121,
+      "formattedValue": "1.21M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0009,
+          "value": 0.000946,
           "formattedValue": "946.03K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0002,
+          "value": 0.000156,
           "formattedValue": "156.04K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 7.6e-05,
+          "formattedValue": "76.48K"
+        },
+        {
+          "name": "Stocks",
+          "value": 2.9e-05,
+          "formattedValue": "29.03K"
+        },
+        {
+          "name": "Warrants",
+          "value": 2e-06,
+          "formattedValue": "1.59K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1e-06,
+          "formattedValue": "0.73K"
+        }
+      ]
+    },
+    {
+      "name": "USA",
+      "value": 1.9e-05,
+      "formattedValue": "18.71K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 1.9e-05,
+          "formattedValue": "18.71K"
         }
       ]
     }
@@ -2135,18 +2167,89 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.0011,
-      "formattedValue": "1.09M",
+      "value": 0.001158,
+      "formattedValue": "1.16M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0009,
+          "value": 0.00093,
           "formattedValue": "930.32K"
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0002,
+          "value": 0.000156,
           "formattedValue": "156.04K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 4.1e-05,
+          "formattedValue": "40.71K"
+        },
+        {
+          "name": "Stocks",
+          "value": 2.9e-05,
+          "formattedValue": "29.03K"
+        },
+        {
+          "name": "Warrants",
+          "value": 2e-06,
+          "formattedValue": "1.59K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.39K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 6.2e-05,
+      "formattedValue": "61.64K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 3.6e-05,
+          "formattedValue": "35.69K"
+        },
+        {
+          "name": "Bonds",
+          "value": 2.6e-05,
+          "formattedValue": "25.60K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.35K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 7e-06,
+      "formattedValue": "6.88K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 7e-06,
+          "formattedValue": "6.80K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.08K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 2e-06,
+      "formattedValue": "2.02K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 2e-06,
+          "formattedValue": "2.02K"
         }
       ]
     }
