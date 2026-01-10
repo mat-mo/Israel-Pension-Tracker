@@ -20,6 +20,9 @@ INPUT_DIRECTORY = BASE_PATH / "institution_reports"
 OUTPUT_BASE_DIRECTORY = BASE_PATH / "data"
 CONFIG_FILE = BASE_PATH / "config.json"
 MASTER_TRACK_FILE = BASE_PATH / "master_track_list.json"
+# NEW: Pointer to the JSON Database
+MAPPING_FILE = BASE_PATH / "master_country_currency_map.json"
+
 ITEMS_PER_PAGE = 10
 
 # Columns to search for Track Name
@@ -40,60 +43,6 @@ COUNTRY_COLUMNS = [
 
 # Currency Columns
 CURRENCY_COLUMNS = ["מטבע פעילות", "מטבע", "סוג מטבע", "בסיס הצמדה", "Currency", "Linkage Base"]
-
-# Emoji Map
-COUNTRY_MAPPING = {
-    "ישראל": "🇮🇱", "Israel": "🇮🇱", "IL": "🇮🇱",
-    "ארה\"ב": "🇺🇸", "ארהב": "🇺🇸", "ארצות הברית": "🇺🇸", "United States": "🇺🇸", "USA": "🇺🇸", "US": "🇺🇸", "U.S.A": "🇺🇸",
-    "אירלנד": "🇮🇪", "Ireland": "🇮🇪",
-    "בריטניה": "🇬🇧", "אנגליה": "🇬🇧", "United Kingdom": "🇬🇧", "UK": "🇬🇧", "Great Britain": "🇬🇧",
-    "לוקסמבורג": "🇱🇺", "Luxembourg": "🇱🇺",
-    "צרפת": "🇫🇷", "France": "🇫🇷",
-    "גרמניה": "🇩🇪", "Germany": "🇩🇪",
-    "הולנד": "🇳🇱", "Netherlands": "🇳🇱",
-    "שוויץ": "🇨🇭", "Switzerland": "🇨🇭", "Swiss": "🇨🇭",
-    "ספרד": "🇪🇸", "Spain": "🇪🇸",
-    "איטליה": "🇮🇹", "Italy": "🇮🇹",
-    "שבדיה": "🇸🇪", "Sweden": "🇸🇪",
-    "נורבגיה": "🇳🇴", "Norway": "🇳🇴",
-    "דנמרק": "🇩🇰", "Denmark": "🇩🇰",
-    "פולין": "🇵🇱", "Poland": "🇵🇱",
-    "בלגיה": "🇧🇪", "Belgium": "🇧🇪",
-    "אוסטריה": "🇦🇹", "Austria": "🇦🇹",
-    "יפן": "🇯🇵", "Japan": "🇯🇵",
-    "סין": "🇨🇳", "China": "🇨🇳",
-    "הודו": "🇮🇳", "India": "🇮🇳",
-    "דרום קוריאה": "🇰🇷", "South Korea": "🇰🇷",
-    "טאיוואן": "🇹🇼", "Taiwan": "🇹🇼",
-    "הונג קונג": "🇭🇰", "Hong Kong": "🇭🇰",
-    "סינגפור": "🇸🇬", "Singapore": "🇸🇬",
-    "אוסטרליה": "🇦🇺", "Australia": "🇦🇺",
-    "קנדה": "🇨🇦", "Canada": "🇨🇦",
-    "ברזיל": "🇧🇷", "Brazil": "🇧🇷",
-    "מקסיקו": "🇲🇽", "Mexico": "🇲🇽",
-    "איי קיימן": "🇰🇾", "Cayman Islands": "🇰🇾", "Cayman": "🇰🇾",
-}
-
-EMOJI_TO_NAME = {
-    "🇮🇱": "Israel", "🇺🇸": "USA", "🇬🇧": "UK", "🇮🇪": "Ireland",
-    "🇱🇺": "Luxembourg", "🇫🇷": "France", "🇩🇪": "Germany", "🇳🇱": "Netherlands",
-    "🇨🇭": "Switzerland", "🇯🇵": "Japan", "🇨🇳": "China", "🇮🇳": "India",
-    "🇨🇦": "Canada", "🇦🇺": "Australia", "🇰🇷": "South Korea", "🇹🇼": "Taiwan",
-    "🇸🇬": "Singapore", "🇭🇰": "Hong Kong", "🇪🇸": "Spain", "🇮🇹": "Italy",
-    "🇸🇪": "Sweden", "🇳🇴": "Norway", "🇩🇰": "Denmark", "🇧🇪": "Belgium",
-    "🇵🇱": "Poland", "🇦🇹": "Austria", "🇧🇷": "Brazil", "🇲🇽": "Mexico",
-    "🇰🇾": "Cayman Is.", "🇪🇺": "Eurozone"
-}
-
-CURRENCY_KEYWORDS = {
-    "USD": ["dollar", "usd", "דולר", "ארה\"ב", "u.s."],
-    "EUR": ["euro", "eur", "אירו", "יורו"],
-    "GBP": ["gbp", "sterling", "ליש\"ט", "פאונד"],
-    "JPY": ["yen", "jpy", "יין"],
-    "ILS": ["shekel", "nis", "שקל", "ש\"ח"]
-}
-
-HEDGED_KEYWORDS = ["מנוטרל", "גידור", "hedged", "currency hedged", "נטרול"]
 
 FILE_MAPPING = {
     "מזומנים": ("Cash & Equivalents", "Cash"),
@@ -120,12 +69,61 @@ FILE_MAPPING = {
     "יתרות התחייבות": ("Other Assets", "Commitment Balances"),
 }
 
+# --- Runtime Dictionaries (Populated from JSON) ---
+COUNTRY_LOOKUP = {}      # Maps match_string -> Emoji (e.g., "ארהב" -> "🇺🇸")
+EMOJI_TO_NAME = {}       # Maps Emoji -> Display Name (e.g., "🇺🇸" -> "USA")
+CURRENCY_LOOKUP = {}     # Maps match_string -> Currency Code (e.g., "dollar" -> "USD")
+HEDGED_KEYWORDS = ["מנוטרל", "גידור", "hedged", "currency hedged", "נטרול"]
+
 # ==========================================
 # 2. HELPER FUNCTIONS
 # ==========================================
 
 def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
+
+def load_mappings():
+    """
+    Reads master_country_currency_map.json and builds optimized lookup dictionaries.
+    """
+    global COUNTRY_LOOKUP, EMOJI_TO_NAME, CURRENCY_LOOKUP
+    
+    if not MAPPING_FILE.exists():
+        log(f"[!!!] CRITICAL: Mapping file not found at {MAPPING_FILE}")
+        return False
+        
+    try:
+        with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
+            data_list = json.load(f)
+            
+        count = 0
+        for entry in data_list:
+            emoji = entry.get("emoji", "❓")
+            name = entry.get("name", "Unknown")
+            curr_code = entry.get("currency_code", "ILS")
+            matches = entry.get("match_strings", [])
+            
+            # 1. Map Emoji to Display Name
+            EMOJI_TO_NAME[emoji] = name
+            
+            # 2. Map all Match Strings to the Emoji & Currency
+            for s in matches:
+                clean_s = str(s).strip()
+                COUNTRY_LOOKUP[clean_s] = emoji
+                COUNTRY_LOOKUP[clean_s.lower()] = emoji # Case insensitive support
+                
+                # Build Currency Lookup based on these keywords too
+                # (Only if string length > 2 to avoid bad matches like 'US')
+                if len(clean_s) > 2:
+                    CURRENCY_LOOKUP[clean_s.lower()] = curr_code
+                    
+            count += 1
+            
+        log(f"Loaded mappings for {count} regions/countries.")
+        return True
+    except Exception as e:
+        log(f"[!!!] Error loading mappings: {e}")
+        return False
 
 def load_master_track_list():
     if not MASTER_TRACK_FILE.exists(): return None
@@ -134,7 +132,7 @@ def load_master_track_list():
             track_map = json.load(f)
         return {str(k).strip(): str(v).strip() for k, v in track_map.items()}
     except Exception as e:
-        log(f"[!!!] CRITICAL ERROR: Could not read JSON file: {e}")
+        log(f"[!!!] CRITICAL ERROR: Could not read Master Track List: {e}")
         return None
 
 def format_currency(value_bn):
@@ -170,51 +168,72 @@ def get_column_value(row, possible_columns):
     return None
 
 def get_country_emoji(row, asset_class=""):
+    """Determines Country Emoji using the loaded JSON logic."""
+    
+    # 1. Check specific country columns (Exact Match)
     val = get_column_value(row, COUNTRY_COLUMNS)
     if val:
         clean_raw = str(val).strip()
-        if clean_raw in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean_raw]
+        # Direct lookup
+        if clean_raw in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_raw]
+        # Clean quotes
         clean_no_quotes = clean_raw.replace('"', '').replace("'", "")
-        if clean_no_quotes in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean_no_quotes]
-        for k, v in COUNTRY_MAPPING.items():
-            if k in clean_raw: return v
+        if clean_no_quotes in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_no_quotes]
+        # Lowercase check
+        if clean_raw.lower() in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_raw.lower()]
 
+    # 2. Check Asset Name for Keywords (Thematic/Regional/Country names)
+    asset_name = get_column_value(row, NAME_COLUMNS)
+    if asset_name:
+        name_lower = str(asset_name).strip().lower()
+        
+        # Scan for ANY known match string in the name
+        # We iterate our lookup keys. Optimization: Filter for longer keys to avoid noise.
+        # This solves "Taiwan", "Pacific", "SGIIF" automatically if they are in JSON.
+        for match_str, emoji in COUNTRY_LOOKUP.items():
+            # Skip very short keys like "IL", "US" to prevent "TRUST" matching "US"
+            if len(match_str) > 3 and match_str in name_lower:
+                return emoji
+
+    # 3. Fallback: General Israel/Abroad column
     val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל", "Israel/Abroad"])
     if val_general:
         if "ישראל" in str(val_general) or "Israel" in str(val_general):
              return "🇮🇱"
-    
-    asset_name = get_column_value(row, NAME_COLUMNS)
-    if asset_name:
-        name_lower = str(asset_name).lower()
-        if any(x in name_lower for x in ["dollar", "usd", "דולר", "ארה\"ב", "u.s."]): return "🇺🇸"
-        if any(x in name_lower for x in ["euro", "eur", "אירו", "יורו"]): return "🇪🇺"
-        if any(x in name_lower for x in ["gbp", "sterling", "ליש\"ט", "פאונד"]): return "🇬🇧"
 
+    # 4. Smart Default for Cash/Loans
     if asset_class in ["Cash & Equivalents", "Loans"]: return "🇮🇱"
     
-    return ""
+    # 5. Generic Fallback
+    return "🌎"
 
 def detect_currency(row, country_emoji, asset_name):
     name_str = str(asset_name).lower() if asset_name else ""
+    
+    # 1. Hedging Check (Overrides everything)
     if any(k in name_str for k in HEDGED_KEYWORDS): return "ILS"
 
+    # 2. Explicit Column Check
     val = get_column_value(row, CURRENCY_COLUMNS)
     if val:
         clean = str(val).strip().lower()
-        if "דולר" in clean or "dollar" in clean or "usd" in clean: return "USD"
-        if "אירו" in clean or "eur" in clean: return "EUR"
-        if "ליש" in clean or "gbp" in clean: return "GBP"
-        if "יין" in clean or "jpy" in clean: return "JPY"
-        if "שקל" in clean or "shekel" in clean or "nis" in clean: return "ILS"
+        # Check against our loaded JSON keywords
+        for match_str, code in CURRENCY_LOOKUP.items():
+            if match_str in clean: return code
         if "צמוד מדד" in clean: return "ILS" 
     
-    for curr, keywords in CURRENCY_KEYWORDS.items():
-        if any(k in name_str for k in keywords): return curr
+    # 3. Name Inference (Scan name for "Dollar", "Euro", etc from JSON)
+    for match_str, code in CURRENCY_LOOKUP.items():
+        if len(match_str) > 3 and match_str in name_str: 
+            return code
 
+    # 4. Country Inference (Map Flag -> Currency Code manually or via JSON logic)
+    # Ideally, we should reverse map the emoji to the currency code from JSON list.
+    # But doing it via the loaded dictionary is tricky since it's flattened.
+    # Simple hardcoded fallback for major currencies is safe here:
     if country_emoji == "🇺🇸": return "USD"
-    if country_emoji in ["🇬🇧"]: return "GBP"
-    if country_emoji in ["🇯🇵"]: return "JPY"
+    if country_emoji == "🇬🇧": return "GBP"
+    if country_emoji == "🇯🇵": return "JPY"
     if country_emoji in ["🇪🇺", "🇫🇷", "🇩🇪", "🇳🇱", "🇮🇹", "🇪🇸"]: return "EUR"
     
     return "ILS"
@@ -309,7 +328,6 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
-                # CHANGED: Lower threshold to almost zero so small/negative values aren't skipped
                 if abs(val_bn) < 1e-12: continue 
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
@@ -343,14 +361,13 @@ def calculate_geo_sunburst(data_store):
                 country_key = emoji if emoji else "Other"
                 if country_key not in country_groups: country_groups[country_key] = {}
                 if cls_name not in country_groups[country_key]: country_groups[country_key][cls_name] = 0.0
-                country_groups[country_key][cls_name] += abs(item["value"]) # ABSOLUTE
+                country_groups[country_key][cls_name] += abs(item["value"]) 
 
     sunburst_data = []
     for country_key, assets_dict in country_groups.items():
         asset_children = []
         children_sum = 0.0
         for cls_name, abs_val in assets_dict.items():
-            # CHANGED: Threshold lowered to include small items
             if abs_val > 1e-12:
                 asset_children.append({ "name": cls_name, "value": round(abs_val, 6), "formattedValue": format_currency(abs_val) })
                 children_sum += abs_val
@@ -369,14 +386,13 @@ def calculate_currency_sunburst(data_store):
                 curr = item.get("currency", "ILS")
                 if curr not in currency_groups: currency_groups[curr] = {}
                 if cls_name not in currency_groups[curr]: currency_groups[curr][cls_name] = 0.0
-                currency_groups[curr][cls_name] += abs(item["value"]) # ABSOLUTE
+                currency_groups[curr][cls_name] += abs(item["value"]) 
 
     sunburst_data = []
     for curr, assets_dict in currency_groups.items():
         asset_children = []
         children_sum = 0.0
         for cls_name, abs_val in assets_dict.items():
-            # CHANGED: Threshold lowered
             if abs_val > 1e-12:
                 asset_children.append({ "name": cls_name, "value": round(abs_val, 6), "formattedValue": format_currency(abs_val) })
                 children_sum += abs_val
@@ -393,7 +409,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
         
-        # NET Assets for Display and Main Pie
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
 
@@ -401,14 +416,12 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         breakdown = {}
         
         for c_name, subs in data_store.items():
-            # NET Sums for Main Pie
             c_net = sum(sum(i['value'] for i in s_list) for s_list in subs.values())
-            
             c_pct = (c_net / total_assets) * 100
             
             asset_classes.append({
                 "name": c_name, 
-                "value": round(c_net, 4), # Signed Value
+                "value": round(c_net, 4), 
                 "formattedValue": format_currency(c_net), 
                 "percentage": round(c_pct, 2)
             })
@@ -422,7 +435,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 name_to_emoji = {}
                 
                 for i in items: 
-                    # Group by Signed Values (Net)
                     grouped[i['name']] = grouped.get(i['name'], 0) + i['value']
                     if i['emoji']: name_to_emoji[i['name']] = i['emoji']
 
@@ -460,7 +472,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             
         asset_classes.sort(key=lambda x: x['percentage'], reverse=True)
         
-        # --- GEO & CURRENCY CALCULATIONS (Abs Exposure) ---
         geo_sunburst_data = calculate_geo_sunburst(data_store)
         currency_sunburst_data = calculate_currency_sunburst(data_store)
 
@@ -485,13 +496,21 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     return sorted(manifest_entries, key=lambda x: x['name'])
 
 def main():
+    log("Starting Pipeline...")
+    if not load_mappings():
+        return
+
     log("Loading Master Track List...")
     master_map = load_master_track_list() or {}
     config = {"institutions": {}} 
     
-    if not INPUT_DIRECTORY.exists(): return
+    if not INPUT_DIRECTORY.exists(): 
+        log(f"Input directory {INPUT_DIRECTORY} not found.")
+        return
+        
     excel_files = list(INPUT_DIRECTORY.glob("*.xlsx"))
     global_manifest = []
+
     OUTPUT_BASE_DIRECTORY.mkdir(parents=True, exist_ok=True)
 
     for excel_path in excel_files:

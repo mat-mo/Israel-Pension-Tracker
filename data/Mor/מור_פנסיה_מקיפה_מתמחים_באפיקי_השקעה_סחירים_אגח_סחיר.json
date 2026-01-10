@@ -57,7 +57,7 @@
               "value": 0.0048,
               "formattedValue": "4.80M",
               "percentage": 100.0,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -2408,7 +2408,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.000266,
       "formattedValue": "266.15K",
       "children": [
@@ -2425,7 +2425,7 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "United Kingdom",
       "value": 7e-06,
       "formattedValue": "7.18K",
       "children": [
@@ -2452,13 +2452,13 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.017242,
-      "formattedValue": "17.24M",
+      "value": 0.017159,
+      "formattedValue": "17.16M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.010853,
-          "formattedValue": "10.85M"
+          "value": 0.010771,
+          "formattedValue": "10.77M"
         },
         {
           "name": "Other Assets",
@@ -2511,18 +2511,30 @@
     },
     {
       "name": "EUR",
-      "value": 0.000115,
-      "formattedValue": "115.20K",
+      "value": 0.000155,
+      "formattedValue": "155.14K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.000112,
-          "formattedValue": "112.41K"
+          "value": 0.000152,
+          "formattedValue": "152.35K"
         },
         {
           "name": "Cash & Equivalents",
           "value": 3e-06,
           "formattedValue": "2.79K"
+        }
+      ]
+    },
+    {
+      "name": "CAD",
+      "value": 7e-05,
+      "formattedValue": "70.25K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 7e-05,
+          "formattedValue": "70.25K"
         }
       ]
     },
@@ -2540,18 +2552,6 @@
           "name": "Cash & Equivalents",
           "value": 2e-05,
           "formattedValue": "20.16K"
-        }
-      ]
-    },
-    {
-      "name": "JPY",
-      "value": 2.7e-05,
-      "formattedValue": "27.29K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 2.7e-05,
-          "formattedValue": "27.29K"
         }
       ]
     }

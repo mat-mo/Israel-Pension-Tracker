@@ -1176,7 +1176,7 @@
               "value": 0.0,
               "formattedValue": "3.98K",
               "percentage": 0.32,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "CITCON 5.3 7/31",
@@ -2862,7 +2862,7 @@
               "value": 0.0,
               "formattedValue": "1.98K",
               "percentage": 99.96,
-              "countryEmoji": "🇺🇸"
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסם תל בונד 20",
@@ -3249,9 +3249,9 @@
       ]
     },
     {
-      "name": "USA",
-      "value": 8.8e-05,
-      "formattedValue": "87.73K",
+      "name": "United States",
+      "value": 8.6e-05,
+      "formattedValue": "85.75K",
       "children": [
         {
           "name": "Bonds",
@@ -3269,11 +3269,6 @@
           "formattedValue": "3.31K"
         },
         {
-          "name": "Mutual Funds",
-          "value": 2e-06,
-          "formattedValue": "1.98K"
-        },
-        {
           "name": "Non-Tradable Bonds",
           "value": 0.0,
           "formattedValue": "0.00K"
@@ -3287,13 +3282,18 @@
     },
     {
       "name": "Global",
-      "value": 4e-06,
-      "formattedValue": "3.98K",
+      "value": 6e-06,
+      "formattedValue": "5.96K",
       "children": [
         {
           "name": "Bonds",
           "value": 4e-06,
           "formattedValue": "3.98K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 2e-06,
+          "formattedValue": "1.98K"
         }
       ]
     },
@@ -3322,7 +3322,7 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "United Kingdom",
       "value": 0.0,
       "formattedValue": "0.00K",
       "children": [
@@ -3337,18 +3337,18 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.002661,
-      "formattedValue": "2.66M",
+      "value": 0.002647,
+      "formattedValue": "2.65M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.00231,
-          "formattedValue": "2.31M"
+          "value": 0.002297,
+          "formattedValue": "2.30M"
         },
         {
           "name": "Cash & Equivalents",
           "value": 0.000187,
-          "formattedValue": "187.28K"
+          "formattedValue": "186.74K"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -3431,13 +3431,13 @@
     },
     {
       "name": "EUR",
-      "value": 2.7e-05,
-      "formattedValue": "27.30K",
+      "value": 3.2e-05,
+      "formattedValue": "32.42K",
       "children": [
         {
           "name": "Bonds",
-          "value": 1.9e-05,
-          "formattedValue": "18.72K"
+          "value": 2.4e-05,
+          "formattedValue": "23.84K"
         },
         {
           "name": "Cash & Equivalents",
@@ -3447,14 +3447,26 @@
       ]
     },
     {
-      "name": "JPY",
-      "value": 4e-06,
-      "formattedValue": "4.04K",
+      "name": "CAD",
+      "value": 1.2e-05,
+      "formattedValue": "12.04K",
       "children": [
         {
           "name": "Bonds",
-          "value": 4e-06,
-          "formattedValue": "4.04K"
+          "value": 1.2e-05,
+          "formattedValue": "12.04K"
+        }
+      ]
+    },
+    {
+      "name": "CHF",
+      "value": 1e-06,
+      "formattedValue": "0.54K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 1e-06,
+          "formattedValue": "0.54K"
         }
       ]
     },

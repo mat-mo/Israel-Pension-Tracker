@@ -93,28 +93,28 @@
               "value": 0.029,
               "formattedValue": "28.98M",
               "percentage": 49.28,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "ערד סדרה 8911",
               "value": 0.0236,
               "formattedValue": "23.60M",
               "percentage": 40.14,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "ערד סדרה 8910",
               "value": 0.0061,
               "formattedValue": "6.12M",
               "percentage": 10.4,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "ערד סדרה 8909",
               "value": 0.0001,
               "formattedValue": "106.96K",
               "percentage": 0.18,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -154,7 +154,7 @@
               "value": 0.9078,
               "formattedValue": "907.82M",
               "percentage": 100.0,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -1005,7 +1005,7 @@
               "value": 0.0006,
               "formattedValue": "570.65K",
               "percentage": 4.3,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "SP MICRO 12/25",
@@ -1426,7 +1426,7 @@
               "value": 0.0058,
               "formattedValue": "5.78M",
               "percentage": 0.65,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "חילן",
@@ -1751,7 +1751,7 @@
               "value": 0.0023,
               "formattedValue": "2.33M",
               "percentage": 0.26,
-              "countryEmoji": "🇨🇳"
+              "countryEmoji": "🌎"
             },
             {
               "name": "איילון",
@@ -2272,8 +2272,8 @@
     },
     {
       "name": "Global",
-      "value": 0.966637,
-      "formattedValue": "966.64M",
+      "value": 0.968966,
+      "formattedValue": "968.97M",
       "children": [
         {
           "name": "Other Assets",
@@ -2284,11 +2284,16 @@
           "name": "Non-Tradable Bonds",
           "value": 0.058813,
           "formattedValue": "58.81M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.002329,
+          "formattedValue": "2.33M"
         }
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.090039,
       "formattedValue": "90.04M",
       "children": [
@@ -2335,19 +2340,7 @@
       ]
     },
     {
-      "name": "China",
-      "value": 0.007368,
-      "formattedValue": "7.37M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.007368,
-          "formattedValue": "7.37M"
-        }
-      ]
-    },
-    {
-      "name": "Germany",
+      "name": "Eurozone",
       "value": 0.006347,
       "formattedValue": "6.35M",
       "children": [
@@ -2364,7 +2357,19 @@
       ]
     },
     {
-      "name": "Cayman Is.",
+      "name": "China",
+      "value": 0.005039,
+      "formattedValue": "5.04M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.005039,
+          "formattedValue": "5.04M"
+        }
+      ]
+    },
+    {
+      "name": "Cayman Islands",
       "value": 0.003348,
       "formattedValue": "3.35M",
       "children": [
@@ -2376,7 +2381,7 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "United Kingdom",
       "value": 0.002629,
       "formattedValue": "2.63M",
       "children": [
@@ -2439,7 +2444,7 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 2.817224,
+      "value": 2.820703,
       "formattedValue": "2.82B",
       "children": [
         {
@@ -2449,8 +2454,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.854414,
-          "formattedValue": "854.41M"
+          "value": 0.85736,
+          "formattedValue": "857.36M"
         },
         {
           "name": "Bonds",
@@ -2459,8 +2464,8 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.083075,
-          "formattedValue": "83.08M"
+          "value": 0.082245,
+          "formattedValue": "82.25M"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -2486,13 +2491,18 @@
           "name": "Loans",
           "value": 0.002305,
           "formattedValue": "2.31M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.001364,
+          "formattedValue": "1.36M"
         }
       ]
     },
     {
       "name": "USD",
-      "value": 0.614611,
-      "formattedValue": "614.61M",
+      "value": 0.613247,
+      "formattedValue": "613.25M",
       "children": [
         {
           "name": "Cash & Equivalents",
@@ -2535,14 +2545,14 @@
           "formattedValue": "4.05M"
         },
         {
-          "name": "Derivatives",
-          "value": 0.00141,
-          "formattedValue": "1.41M"
-        },
-        {
           "name": "Warrants",
           "value": 0.001042,
           "formattedValue": "1.04M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 4.6e-05,
+          "formattedValue": "45.92K"
         }
       ]
     },
@@ -2575,18 +2585,13 @@
     },
     {
       "name": "JPY",
-      "value": 0.018245,
-      "formattedValue": "18.25M",
+      "value": 0.015087,
+      "formattedValue": "15.09M",
       "children": [
         {
           "name": "Cash & Equivalents",
           "value": 0.013759,
           "formattedValue": "13.76M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.003158,
-          "formattedValue": "3.16M"
         },
         {
           "name": "Futures",
@@ -2609,6 +2614,47 @@
           "name": "Cash & Equivalents",
           "value": 0.002419,
           "formattedValue": "2.42M"
+        }
+      ]
+    },
+    {
+      "name": "CHF",
+      "value": 0.000486,
+      "formattedValue": "485.82K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.000274,
+          "formattedValue": "273.51K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.000212,
+          "formattedValue": "212.31K"
+        }
+      ]
+    },
+    {
+      "name": "AUD",
+      "value": 0.000346,
+      "formattedValue": "345.54K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.000346,
+          "formattedValue": "345.54K"
+        }
+      ]
+    },
+    {
+      "name": "CAD",
+      "value": 0.000211,
+      "formattedValue": "210.77K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.000211,
+          "formattedValue": "210.77K"
         }
       ]
     }

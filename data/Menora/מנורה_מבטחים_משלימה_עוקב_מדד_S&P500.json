@@ -252,7 +252,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.512745,
       "formattedValue": "512.74M",
       "children": [
@@ -281,9 +281,26 @@
   ],
   "currencySunburst": [
     {
+      "name": "ILS",
+      "value": 0.646401,
+      "formattedValue": "646.40M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.627431,
+          "formattedValue": "627.43M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.018969,
+          "formattedValue": "18.97M"
+        }
+      ]
+    },
+    {
       "name": "USD",
-      "value": 0.657459,
-      "formattedValue": "657.46M",
+      "value": 0.63849,
+      "formattedValue": "638.49M",
       "children": [
         {
           "name": "Stocks",
@@ -301,26 +318,14 @@
           "formattedValue": "62.35M"
         },
         {
-          "name": "Derivatives",
-          "value": 0.02487,
-          "formattedValue": "24.87M"
-        },
-        {
           "name": "Futures",
           "value": 0.010901,
           "formattedValue": "10.90M"
-        }
-      ]
-    },
-    {
-      "name": "ILS",
-      "value": 0.627431,
-      "formattedValue": "627.43M",
-      "children": [
+        },
         {
-          "name": "Cash & Equivalents",
-          "value": 0.627431,
-          "formattedValue": "627.43M"
+          "name": "Derivatives",
+          "value": 0.005901,
+          "formattedValue": "5.90M"
         }
       ]
     }

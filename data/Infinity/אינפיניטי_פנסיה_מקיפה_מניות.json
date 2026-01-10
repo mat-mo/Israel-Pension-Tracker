@@ -145,7 +145,7 @@
               "value": 0.0,
               "formattedValue": "10.52K",
               "percentage": 3.66,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "mtf סל (A4) dax מנוט",
@@ -513,7 +513,7 @@
               "value": 0.0,
               "formattedValue": "14.38K",
               "percentage": 100.0,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -523,13 +523,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.000379,
-      "formattedValue": "379.20K",
+      "value": 0.000369,
+      "formattedValue": "368.68K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000212,
-          "formattedValue": "212.50K"
+          "value": 0.000202,
+          "formattedValue": "201.98K"
         },
         {
           "name": "Cash & Equivalents",
@@ -544,7 +544,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.000135,
       "formattedValue": "134.82K",
       "children": [
@@ -557,13 +557,18 @@
     },
     {
       "name": "Global",
-      "value": 1.4e-05,
-      "formattedValue": "14.38K",
+      "value": 2.5e-05,
+      "formattedValue": "24.90K",
       "children": [
         {
           "name": "Other Assets",
           "value": 1.4e-05,
           "formattedValue": "14.38K"
+        },
+        {
+          "name": "Stocks",
+          "value": 1.1e-05,
+          "formattedValue": "10.52K"
         }
       ]
     }
@@ -571,13 +576,13 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.000391,
-      "formattedValue": "391.20K",
+      "value": 0.000389,
+      "formattedValue": "388.59K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000212,
-          "formattedValue": "212.50K"
+          "value": 0.00021,
+          "formattedValue": "209.89K"
         },
         {
           "name": "Cash & Equivalents",
@@ -610,6 +615,18 @@
           "name": "Cash & Equivalents",
           "value": 2e-06,
           "formattedValue": "2.38K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 3e-06,
+      "formattedValue": "2.61K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 3e-06,
+          "formattedValue": "2.61K"
         }
       ]
     }

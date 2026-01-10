@@ -58,14 +58,14 @@
               "value": 0.0009,
               "formattedValue": "911.31K",
               "percentage": 34.76,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "ISHR EDGE MSCI",
               "value": 0.0008,
               "formattedValue": "755.41K",
               "percentage": 28.81,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -214,28 +214,28 @@
               "value": 0.0,
               "formattedValue": "49.74K",
               "percentage": 50.9,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "F-12/25 MSCI US",
               "value": 0.0,
               "formattedValue": "32.77K",
               "percentage": 33.53,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "F- 12/25 MSCI W",
               "value": 0.0,
               "formattedValue": "14.46K",
               "percentage": 14.8,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "F - 12/25 MSCI",
               "value": 0.0,
               "formattedValue": "0.76K",
               "percentage": 0.78,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -266,8 +266,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.021879,
-      "formattedValue": "21.88M",
+      "value": 0.020967,
+      "formattedValue": "20.97M",
       "children": [
         {
           "name": "Bonds",
@@ -280,11 +280,6 @@
           "formattedValue": "3.13M"
         },
         {
-          "name": "Stocks",
-          "value": 0.000911,
-          "formattedValue": "911.31K"
-        },
-        {
           "name": "Derivatives",
           "value": 0.000581,
           "formattedValue": "580.93K"
@@ -292,7 +287,24 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "Global",
+      "value": 0.001764,
+      "formattedValue": "1.76M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.001667,
+          "formattedValue": "1.67M"
+        },
+        {
+          "name": "Futures",
+          "value": 9.8e-05,
+          "formattedValue": "97.74K"
+        }
+      ]
+    },
+    {
+      "name": "United States",
       "value": 0.000955,
       "formattedValue": "955.14K",
       "children": [
@@ -302,30 +314,13 @@
           "formattedValue": "955.14K"
         }
       ]
-    },
-    {
-      "name": "Global",
-      "value": 0.000853,
-      "formattedValue": "853.15K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000755,
-          "formattedValue": "755.41K"
-        },
-        {
-          "name": "Futures",
-          "value": 9.8e-05,
-          "formattedValue": "97.74K"
-        }
-      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.019742,
-      "formattedValue": "19.74M",
+      "value": 0.01883,
+      "formattedValue": "18.83M",
       "children": [
         {
           "name": "Bonds",
@@ -338,11 +333,6 @@
           "formattedValue": "991.02K"
         },
         {
-          "name": "Stocks",
-          "value": 0.000911,
-          "formattedValue": "911.31K"
-        },
-        {
           "name": "Derivatives",
           "value": 0.000581,
           "formattedValue": "580.93K"
@@ -351,18 +341,18 @@
     },
     {
       "name": "USD",
-      "value": 0.003945,
-      "formattedValue": "3.95M",
+      "value": 0.004857,
+      "formattedValue": "4.86M",
       "children": [
+        {
+          "name": "Stocks",
+          "value": 0.002622,
+          "formattedValue": "2.62M"
+        },
         {
           "name": "Cash & Equivalents",
           "value": 0.002137,
           "formattedValue": "2.14M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.001711,
-          "formattedValue": "1.71M"
         },
         {
           "name": "Futures",

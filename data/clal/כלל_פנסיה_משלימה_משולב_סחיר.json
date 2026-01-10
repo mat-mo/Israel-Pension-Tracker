@@ -605,7 +605,7 @@
               "value": 0.0,
               "formattedValue": "30.75K",
               "percentage": 0.35,
-              "countryEmoji": "🇳🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "CYBERARK SOFTWARE LTD/ISRAEL",
@@ -930,7 +930,7 @@
               "value": 0.0,
               "formattedValue": "14.73K",
               "percentage": 0.17,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "SENTINELONE INC -CLASS A",
@@ -4625,7 +4625,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.000281,
       "formattedValue": "280.58K",
       "children": [
@@ -4647,26 +4647,14 @@
       ]
     },
     {
-      "name": "Netherlands",
-      "value": 3.1e-05,
-      "formattedValue": "30.75K",
+      "name": "Eurozone",
+      "value": 4.5e-05,
+      "formattedValue": "45.48K",
       "children": [
         {
           "name": "Stocks",
-          "value": 3.1e-05,
-          "formattedValue": "30.75K"
-        }
-      ]
-    },
-    {
-      "name": "Germany",
-      "value": 1.5e-05,
-      "formattedValue": "14.73K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 1.5e-05,
-          "formattedValue": "14.73K"
+          "value": 4.5e-05,
+          "formattedValue": "45.48K"
         }
       ]
     },
@@ -4700,7 +4688,7 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "United Kingdom",
       "value": 3e-06,
       "formattedValue": "3.15K",
       "children": [
@@ -4715,18 +4703,18 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.017487,
-      "formattedValue": "17.49M",
+      "value": 0.017592,
+      "formattedValue": "17.59M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.008383,
-          "formattedValue": "8.38M"
+          "value": 0.008419,
+          "formattedValue": "8.42M"
         },
         {
           "name": "Bonds",
-          "value": 0.008322,
-          "formattedValue": "8.32M"
+          "value": 0.00833,
+          "formattedValue": "8.33M"
         },
         {
           "name": "Cash & Equivalents",
@@ -4735,13 +4723,13 @@
         },
         {
           "name": "Derivatives",
-          "value": 9.6e-05,
-          "formattedValue": "96.06K"
+          "value": 0.000154,
+          "formattedValue": "153.61K"
         },
         {
           "name": "Warrants",
-          "value": 3.8e-05,
-          "formattedValue": "38.28K"
+          "value": 4.2e-05,
+          "formattedValue": "41.67K"
         },
         {
           "name": "Structured Products",
@@ -4762,8 +4750,8 @@
     },
     {
       "name": "USD",
-      "value": 0.001563,
-      "formattedValue": "1.56M",
+      "value": 0.001504,
+      "formattedValue": "1.50M",
       "children": [
         {
           "name": "Stocks",
@@ -4781,19 +4769,14 @@
           "formattedValue": "171.32K"
         },
         {
-          "name": "Derivatives",
-          "value": 5.8e-05,
-          "formattedValue": "57.55K"
-        },
-        {
-          "name": "Other Assets",
-          "value": 2e-06,
-          "formattedValue": "1.56K"
-        },
-        {
           "name": "Futures",
           "value": 1e-06,
           "formattedValue": "1.34K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1e-06,
+          "formattedValue": "0.64K"
         },
         {
           "name": "Warrants",
@@ -4825,33 +4808,6 @@
       ]
     },
     {
-      "name": "JPY",
-      "value": 5.2e-05,
-      "formattedValue": "52.09K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 4.1e-05,
-          "formattedValue": "41.24K"
-        },
-        {
-          "name": "Bonds",
-          "value": 7e-06,
-          "formattedValue": "7.26K"
-        },
-        {
-          "name": "Warrants",
-          "value": 4e-06,
-          "formattedValue": "3.59K"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
       "name": "EUR",
       "value": 4.6e-05,
       "formattedValue": "45.65K",
@@ -4875,6 +4831,40 @@
           "name": "Other Assets",
           "value": 0.0,
           "formattedValue": "0.02K"
+        }
+      ]
+    },
+    {
+      "name": "CAD",
+      "value": 6e-06,
+      "formattedValue": "5.93K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 5e-06,
+          "formattedValue": "4.81K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 1e-06,
+          "formattedValue": "0.92K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0,
+          "formattedValue": "0.20K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     }

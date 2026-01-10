@@ -79,7 +79,7 @@
               "value": 0.0012,
               "formattedValue": "1.25M",
               "percentage": 71.44,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "NQZ5 Index",
@@ -191,7 +191,7 @@
               "value": 0.0051,
               "formattedValue": "5.13M",
               "percentage": 16.91,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -222,7 +222,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.025718,
       "formattedValue": "25.72M",
       "children": [
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "name": "Eurozone",
+      "name": "Global",
       "value": 0.005134,
       "formattedValue": "5.13M",
       "children": [
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "name": "Germany",
+      "name": "Eurozone",
       "value": 0.001245,
       "formattedValue": "1.25M",
       "children": [
@@ -266,8 +266,8 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.059398,
-      "formattedValue": "59.40M",
+      "value": 0.058826,
+      "formattedValue": "58.83M",
       "children": [
         {
           "name": "Cash & Equivalents",
@@ -280,11 +280,6 @@
           "formattedValue": "23.61M"
         },
         {
-          "name": "Derivatives",
-          "value": 0.000572,
-          "formattedValue": "571.74K"
-        },
-        {
           "name": "Futures",
           "value": 0.000498,
           "formattedValue": "497.83K"
@@ -293,13 +288,18 @@
     },
     {
       "name": "ILS",
-      "value": 0.008992,
-      "formattedValue": "8.99M",
+      "value": 0.009564,
+      "formattedValue": "9.56M",
       "children": [
         {
           "name": "Cash & Equivalents",
           "value": 0.00867,
           "formattedValue": "8.67M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.000572,
+          "formattedValue": "571.74K"
         },
         {
           "name": "Other Assets",

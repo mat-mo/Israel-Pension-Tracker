@@ -865,7 +865,7 @@
               "value": 0.0001,
               "formattedValue": "66.96K",
               "percentage": 4.24,
-              "countryEmoji": ""
+              "countryEmoji": "🇨🇳"
             },
             {
               "name": "MTF סל (A4) Nasdaq10",
@@ -879,7 +879,7 @@
               "value": 0.0001,
               "formattedValue": "63.83K",
               "percentage": 4.04,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ],
           [
@@ -1074,7 +1074,7 @@
               "value": 0.0,
               "formattedValue": "1.34K",
               "percentage": 0.08,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "SPDR S&P 400",
@@ -1542,7 +1542,7 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.003727,
+      "value": 0.003726,
       "formattedValue": "3.73M",
       "children": [
         {
@@ -1552,7 +1552,7 @@
         },
         {
           "name": "Stocks",
-          "value": 0.001129,
+          "value": 0.001128,
           "formattedValue": "1.13M"
         },
         {
@@ -1563,7 +1563,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.000994,
       "formattedValue": "993.92K",
       "children": [
@@ -1575,19 +1575,31 @@
       ]
     },
     {
-      "name": "Global",
-      "value": 0.000131,
-      "formattedValue": "130.78K",
+      "name": "China",
+      "value": 6.7e-05,
+      "formattedValue": "66.96K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000131,
-          "formattedValue": "130.78K"
+          "value": 6.7e-05,
+          "formattedValue": "66.96K"
         }
       ]
     },
     {
-      "name": "UK",
+      "name": "Global",
+      "value": 6.5e-05,
+      "formattedValue": "65.16K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 6.5e-05,
+          "formattedValue": "65.16K"
+        }
+      ]
+    },
+    {
+      "name": "United Kingdom",
       "value": 0.0,
       "formattedValue": "0.39K",
       "children": [
@@ -1602,7 +1614,7 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.003712,
+      "value": 0.003709,
       "formattedValue": "3.71M",
       "children": [
         {
@@ -1612,7 +1624,7 @@
         },
         {
           "name": "Stocks",
-          "value": 0.001129,
+          "value": 0.001126,
           "formattedValue": "1.13M"
         },
         {
@@ -1641,9 +1653,14 @@
     },
     {
       "name": "EUR",
-      "value": 1e-06,
-      "formattedValue": "0.68K",
+      "value": 3e-06,
+      "formattedValue": "3.43K",
       "children": [
+        {
+          "name": "Stocks",
+          "value": 3e-06,
+          "formattedValue": "2.75K"
+        },
         {
           "name": "Bonds",
           "value": 1e-06,

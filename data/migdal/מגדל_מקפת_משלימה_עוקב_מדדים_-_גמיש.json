@@ -136,7 +136,7 @@
               "value": 0.0014,
               "formattedValue": "1.43M",
               "percentage": 16.29,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "X USD HIGH YIELD BOND",
@@ -199,7 +199,7 @@
               "value": 0.0012,
               "formattedValue": "1.21M",
               "percentage": 10.09,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "INVESCO US TREASURY DIST",
@@ -227,7 +227,7 @@
               "value": 0.0008,
               "formattedValue": "849.73K",
               "percentage": 7.08,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🌎"
             },
             {
               "name": "DBX STX EUROPE 600",
@@ -250,7 +250,7 @@
   },
   "geoSunburst": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.016316,
       "formattedValue": "16.32M",
       "children": [
@@ -268,18 +268,18 @@
     },
     {
       "name": "Global",
-      "value": 0.002643,
-      "formattedValue": "2.64M",
+      "value": 0.003493,
+      "formattedValue": "3.49M",
       "children": [
+        {
+          "name": "Stocks",
+          "value": 0.00206,
+          "formattedValue": "2.06M"
+        },
         {
           "name": "Bonds",
           "value": 0.001433,
           "formattedValue": "1.43M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.00121,
-          "formattedValue": "1.21M"
         }
       ]
     },
@@ -302,13 +302,13 @@
     },
     {
       "name": "Eurozone",
-      "value": 0.001355,
-      "formattedValue": "1.35M",
+      "value": 0.000505,
+      "formattedValue": "505.23K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.001355,
-          "formattedValue": "1.35M"
+          "value": 0.000505,
+          "formattedValue": "505.23K"
         }
       ]
     },
@@ -328,8 +328,8 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.019858,
-      "formattedValue": "19.86M",
+      "value": 0.019176,
+      "formattedValue": "19.18M",
       "children": [
         {
           "name": "Stocks",
@@ -340,11 +340,6 @@
           "name": "Bonds",
           "value": 0.008796,
           "formattedValue": "8.80M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000682,
-          "formattedValue": "681.78K"
         },
         {
           "name": "Cash & Equivalents",
@@ -372,13 +367,18 @@
     },
     {
       "name": "ILS",
-      "value": 0.000637,
-      "formattedValue": "636.88K",
+      "value": 0.001319,
+      "formattedValue": "1.32M",
       "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.000682,
+          "formattedValue": "681.78K"
+        },
         {
           "name": "Cash & Equivalents",
           "value": 0.000637,
-          "formattedValue": "636.88K"
+          "formattedValue": "636.84K"
         }
       ]
     },
@@ -396,6 +396,30 @@
           "name": "Cash & Equivalents",
           "value": 0.000108,
           "formattedValue": "107.95K"
+        }
+      ]
+    },
+    {
+      "name": "AUD",
+      "value": 0.0,
+      "formattedValue": "0.03K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.03K"
+        }
+      ]
+    },
+    {
+      "name": "CAD",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     }

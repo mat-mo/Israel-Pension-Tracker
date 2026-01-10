@@ -101,7 +101,7 @@
               "value": 0.0002,
               "formattedValue": "151.90K",
               "percentage": 21.28,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🌎"
             },
             {
               "name": "ISHARES MARKIT IBOXX $ HIGH",
@@ -129,14 +129,14 @@
               "value": 0.0,
               "formattedValue": "45.63K",
               "percentage": 6.39,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "AMUNDI ETF EUR HY LIQ BD IBX",
               "value": 0.0,
               "formattedValue": "44.81K",
               "percentage": 6.28,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🌎"
             },
             {
               "name": "ISHARES USD CORP BND",
@@ -180,7 +180,7 @@
   },
   "geoSunburst": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.000556,
       "formattedValue": "555.91K",
       "children": [
@@ -214,26 +214,26 @@
       ]
     },
     {
-      "name": "Eurozone",
-      "value": 0.000263,
-      "formattedValue": "262.80K",
+      "name": "Global",
+      "value": 0.000242,
+      "formattedValue": "242.34K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.000263,
-          "formattedValue": "262.80K"
+          "value": 0.000242,
+          "formattedValue": "242.34K"
         }
       ]
     },
     {
-      "name": "Global",
-      "value": 4.6e-05,
-      "formattedValue": "45.63K",
+      "name": "Eurozone",
+      "value": 6.6e-05,
+      "formattedValue": "66.09K",
       "children": [
         {
           "name": "Bonds",
-          "value": 4.6e-05,
-          "formattedValue": "45.63K"
+          "value": 6.6e-05,
+          "formattedValue": "66.09K"
         }
       ]
     }
@@ -241,18 +241,13 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.001036,
-      "formattedValue": "1.04M",
+      "value": 0.000607,
+      "formattedValue": "607.28K",
       "children": [
         {
           "name": "Bonds",
           "value": 0.000451,
           "formattedValue": "450.95K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000429,
-          "formattedValue": "429.00K"
         },
         {
           "name": "Stocks",
@@ -263,6 +258,23 @@
           "name": "Cash & Equivalents",
           "value": 6e-06,
           "formattedValue": "5.74K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.000475,
+      "formattedValue": "474.98K",
+      "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.000429,
+          "formattedValue": "429.00K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 4.6e-05,
+          "formattedValue": "45.98K"
         }
       ]
     },
@@ -280,18 +292,6 @@
           "name": "Cash & Equivalents",
           "value": 0.0,
           "formattedValue": "0.17K"
-        }
-      ]
-    },
-    {
-      "name": "ILS",
-      "value": 4.6e-05,
-      "formattedValue": "45.98K",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 4.6e-05,
-          "formattedValue": "45.98K"
         }
       ]
     }

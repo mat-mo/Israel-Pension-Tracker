@@ -383,7 +383,7 @@
               "value": 0.0002,
               "formattedValue": "234.03K",
               "percentage": 0.66,
-              "countryEmoji": "🇨🇳"
+              "countryEmoji": "🌎"
             },
             {
               "name": "רבוע נדלן",
@@ -397,7 +397,7 @@
               "value": 0.0002,
               "formattedValue": "230.01K",
               "percentage": 0.65,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "פורמולה",
@@ -492,7 +492,7 @@
               "value": 0.0002,
               "formattedValue": "185.83K",
               "percentage": 0.53,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "פריורטק",
@@ -671,7 +671,7 @@
               "value": 0.0001,
               "formattedValue": "112.26K",
               "percentage": 0.32,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסטרו",
@@ -743,7 +743,7 @@
               "value": 0.0001,
               "formattedValue": "84.05K",
               "percentage": 0.24,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "Stratasys Ltd",
@@ -1470,7 +1470,7 @@
               "value": 0.0,
               "formattedValue": "10.03K",
               "percentage": 0.03,
-              "countryEmoji": "🇳🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "כרמל קורפ בע\"מ",
@@ -1709,7 +1709,7 @@
               "value": 0.0,
               "formattedValue": "1.35K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "גאון אחזקות",
@@ -3487,7 +3487,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.005679,
       "formattedValue": "5.68M",
       "children": [
@@ -3519,36 +3519,31 @@
       ]
     },
     {
-      "name": "Germany",
-      "value": 0.000416,
-      "formattedValue": "415.84K",
+      "name": "Global",
+      "value": 0.000432,
+      "formattedValue": "431.69K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000416,
-          "formattedValue": "415.84K"
+          "value": 0.000432,
+          "formattedValue": "431.69K"
         }
       ]
     },
     {
-      "name": "China",
-      "value": 0.00027,
-      "formattedValue": "269.82K",
+      "name": "Eurozone",
+      "value": 0.000426,
+      "formattedValue": "425.87K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000234,
-          "formattedValue": "234.03K"
-        },
-        {
-          "name": "Options",
-          "value": 3.6e-05,
-          "formattedValue": "35.79K"
+          "value": 0.000426,
+          "formattedValue": "425.87K"
         }
       ]
     },
     {
-      "name": "UK",
+      "name": "United Kingdom",
       "value": 0.000266,
       "formattedValue": "265.65K",
       "children": [
@@ -3565,14 +3560,14 @@
       ]
     },
     {
-      "name": "Global",
-      "value": 0.000198,
-      "formattedValue": "197.66K",
+      "name": "China",
+      "value": 3.6e-05,
+      "formattedValue": "35.79K",
       "children": [
         {
-          "name": "Stocks",
-          "value": 0.000198,
-          "formattedValue": "197.66K"
+          "name": "Options",
+          "value": 3.6e-05,
+          "formattedValue": "35.79K"
         }
       ]
     },
@@ -3587,25 +3582,13 @@
           "formattedValue": "10.21K"
         }
       ]
-    },
-    {
-      "name": "Netherlands",
-      "value": 1e-05,
-      "formattedValue": "10.03K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 1e-05,
-          "formattedValue": "10.03K"
-        }
-      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.038981,
-      "formattedValue": "38.98M",
+      "value": 0.038999,
+      "formattedValue": "39.00M",
       "children": [
         {
           "name": "Stocks",
@@ -3624,8 +3607,8 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.000148,
-          "formattedValue": "147.66K"
+          "value": 0.000165,
+          "formattedValue": "165.00K"
         },
         {
           "name": "Bonds",
@@ -3651,13 +3634,13 @@
     },
     {
       "name": "USD",
-      "value": 0.007272,
-      "formattedValue": "7.27M",
+      "value": 0.007236,
+      "formattedValue": "7.24M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.004405,
-          "formattedValue": "4.40M"
+          "value": 0.004386,
+          "formattedValue": "4.39M"
         },
         {
           "name": "Bonds",
@@ -3673,11 +3656,6 @@
           "name": "Cash & Equivalents",
           "value": 0.000126,
           "formattedValue": "126.23K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 1.7e-05,
-          "formattedValue": "17.34K"
         },
         {
           "name": "Other Assets",
@@ -3727,6 +3705,35 @@
           "name": "Cash & Equivalents",
           "value": 2e-06,
           "formattedValue": "2.11K"
+        }
+      ]
+    },
+    {
+      "name": "CAD",
+      "value": 1.9e-05,
+      "formattedValue": "18.79K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.9e-05,
+          "formattedValue": "18.79K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
+      "name": "CHF",
+      "value": 0.0,
+      "formattedValue": "0.00K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.00K"
         }
       ]
     },

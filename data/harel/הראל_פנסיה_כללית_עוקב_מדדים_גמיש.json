@@ -187,7 +187,7 @@
               "value": 0.0023,
               "formattedValue": "2.34M",
               "percentage": 15.94,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסם סל תא 125",
@@ -201,7 +201,7 @@
               "value": 0.0017,
               "formattedValue": "1.70M",
               "percentage": 11.59,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "INVESCO S&P 500 ACC",
@@ -222,7 +222,7 @@
               "value": 0.0009,
               "formattedValue": "915.72K",
               "percentage": 6.23,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -253,8 +253,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0217,
-      "formattedValue": "21.70M",
+      "value": 0.01674,
+      "formattedValue": "16.74M",
       "children": [
         {
           "name": "Bonds",
@@ -263,8 +263,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.010536,
-          "formattedValue": "10.54M"
+          "value": 0.005576,
+          "formattedValue": "5.58M"
         },
         {
           "name": "Cash & Equivalents",
@@ -279,7 +279,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.005238,
       "formattedValue": "5.24M",
       "children": [
@@ -294,13 +294,25 @@
           "formattedValue": "1.08M"
         }
       ]
+    },
+    {
+      "name": "Global",
+      "value": 0.00496,
+      "formattedValue": "4.96M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.00496,
+          "formattedValue": "4.96M"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.021659,
-      "formattedValue": "21.66M",
+      "value": 0.018402,
+      "formattedValue": "18.40M",
       "children": [
         {
           "name": "Bonds",
@@ -309,8 +321,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.010536,
-          "formattedValue": "10.54M"
+          "value": 0.007279,
+          "formattedValue": "7.28M"
         },
         {
           "name": "Cash & Equivalents",
@@ -326,13 +338,13 @@
     },
     {
       "name": "USD",
-      "value": 0.00528,
-      "formattedValue": "5.28M",
+      "value": 0.008537,
+      "formattedValue": "8.54M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.004157,
-          "formattedValue": "4.16M"
+          "value": 0.007414,
+          "formattedValue": "7.41M"
         },
         {
           "name": "Bonds",

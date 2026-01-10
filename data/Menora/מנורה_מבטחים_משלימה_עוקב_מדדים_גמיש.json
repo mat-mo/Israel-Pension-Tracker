@@ -201,42 +201,42 @@
               "value": 0.0016,
               "formattedValue": "1.58M",
               "percentage": 7.73,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "MTF סל אנד צמיחה עולמי",
               "value": 0.0016,
               "formattedValue": "1.58M",
               "percentage": 7.73,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "MTF סל אנד ערך עולמי",
               "value": 0.0016,
               "formattedValue": "1.57M",
               "percentage": 7.71,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסם ETF אינדקס ערך עולמי",
               "value": 0.0016,
               "formattedValue": "1.57M",
               "percentage": 7.69,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל צמיחה עולמי",
               "value": 0.0012,
               "formattedValue": "1.23M",
               "percentage": 6.04,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל ערך עולמי מד",
               "value": 0.0012,
               "formattedValue": "1.20M",
               "percentage": 5.89,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל World Quality מד",
@@ -259,14 +259,14 @@
               "value": 0.0008,
               "formattedValue": "795.07K",
               "percentage": 3.89,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "איביאיסל אינד צמיחה עולמי",
               "value": 0.0008,
               "formattedValue": "787.84K",
               "percentage": 3.86,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "הראל סל אינד מומנטום ארהב",
@@ -339,14 +339,9 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.040141,
-      "formattedValue": "40.14M",
+      "value": 0.029821,
+      "formattedValue": "29.82M",
       "children": [
-        {
-          "name": "Stocks",
-          "value": 0.016392,
-          "formattedValue": "16.39M"
-        },
         {
           "name": "Bonds",
           "value": 0.015984,
@@ -358,6 +353,11 @@
           "formattedValue": "6.82M"
         },
         {
+          "name": "Stocks",
+          "value": 0.006073,
+          "formattedValue": "6.07M"
+        },
+        {
           "name": "Cash & Equivalents",
           "value": 0.000943,
           "formattedValue": "943.00K"
@@ -365,7 +365,19 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "Global",
+      "value": 0.01032,
+      "formattedValue": "10.32M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.01032,
+          "formattedValue": "10.32M"
+        }
+      ]
+    },
+    {
+      "name": "United States",
       "value": 0.004031,
       "formattedValue": "4.03M",
       "children": [
@@ -380,23 +392,23 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.038059,
-      "formattedValue": "38.06M",
+      "value": 0.029819,
+      "formattedValue": "29.82M",
       "children": [
         {
-          "name": "Stocks",
-          "value": 0.016392,
-          "formattedValue": "16.39M"
-        },
-        {
           "name": "Bonds",
-          "value": 0.013904,
-          "formattedValue": "13.90M"
+          "value": 0.015984,
+          "formattedValue": "15.98M"
         },
         {
           "name": "Mutual Funds",
           "value": 0.006821,
           "formattedValue": "6.82M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.006073,
+          "formattedValue": "6.07M"
         },
         {
           "name": "Cash & Equivalents",
@@ -407,18 +419,13 @@
     },
     {
       "name": "USD",
-      "value": 0.006113,
-      "formattedValue": "6.11M",
+      "value": 0.014353,
+      "formattedValue": "14.35M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.004031,
-          "formattedValue": "4.03M"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.00208,
-          "formattedValue": "2.08M"
+          "value": 0.014351,
+          "formattedValue": "14.35M"
         },
         {
           "name": "Cash & Equivalents",

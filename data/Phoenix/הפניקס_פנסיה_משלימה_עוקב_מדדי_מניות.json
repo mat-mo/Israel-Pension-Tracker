@@ -85,7 +85,7 @@
               "value": 0.0206,
               "formattedValue": "20.56M",
               "percentage": 46.17,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "Invesco QQQ Trust Series 1",
@@ -602,7 +602,7 @@
               "value": -0.0001,
               "formattedValue": "-59.77K",
               "percentage": 109.07,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "NASDAQ 100 STOCK INDX",
@@ -618,7 +618,7 @@
   },
   "geoSunburst": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.061084,
       "formattedValue": "61.08M",
       "children": [
@@ -687,18 +687,13 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.082803,
-      "formattedValue": "82.80M",
+      "value": 0.082478,
+      "formattedValue": "82.48M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.080423,
           "formattedValue": "80.42M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000862,
-          "formattedValue": "862.34K"
         },
         {
           "name": "Cash & Equivalents",
@@ -709,6 +704,11 @@
           "name": "Bonds",
           "value": 0.000661,
           "formattedValue": "661.24K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.000538,
+          "formattedValue": "537.80K"
         },
         {
           "name": "Futures",
@@ -724,13 +724,18 @@
     },
     {
       "name": "ILS",
-      "value": 0.021567,
-      "formattedValue": "21.57M",
+      "value": 0.021891,
+      "formattedValue": "21.89M",
       "children": [
         {
           "name": "Cash & Equivalents",
           "value": 0.021567,
           "formattedValue": "21.57M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.000325,
+          "formattedValue": "324.54K"
         }
       ]
     }

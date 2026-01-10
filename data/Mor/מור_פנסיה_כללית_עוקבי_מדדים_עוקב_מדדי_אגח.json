@@ -214,7 +214,7 @@
   },
   "geoSunburst": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 3.2e-05,
       "formattedValue": "31.55K",
       "children": [
@@ -257,7 +257,7 @@
     {
       "name": "USD",
       "value": 3.3e-05,
-      "formattedValue": "32.97K",
+      "formattedValue": "32.71K",
       "children": [
         {
           "name": "Stocks",
@@ -278,18 +278,13 @@
           "name": "Other Assets",
           "value": 0.0,
           "formattedValue": "0.01K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0,
-          "formattedValue": "0.27K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.0,
-      "formattedValue": "0.43K",
+      "value": 1e-06,
+      "formattedValue": "0.70K",
       "children": [
         {
           "name": "Other Assets",
@@ -300,6 +295,11 @@
           "name": "Cash & Equivalents",
           "value": 0.0,
           "formattedValue": "0.39K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0,
+          "formattedValue": "0.27K"
         }
       ]
     }

@@ -382,7 +382,7 @@
               "value": 0.0,
               "formattedValue": "18.02K",
               "percentage": 10.02,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל PHLX Semiconductor",
@@ -481,8 +481,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.001032,
-      "formattedValue": "1.03M",
+      "value": 0.001014,
+      "formattedValue": "1.01M",
       "children": [
         {
           "name": "Bonds",
@@ -491,8 +491,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.000194,
-          "formattedValue": "194.10K"
+          "value": 0.000176,
+          "formattedValue": "176.09K"
         },
         {
           "name": "Cash & Equivalents",
@@ -502,7 +502,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 5.7e-05,
       "formattedValue": "57.48K",
       "children": [
@@ -512,13 +512,25 @@
           "formattedValue": "57.48K"
         }
       ]
+    },
+    {
+      "name": "Global",
+      "value": 1.8e-05,
+      "formattedValue": "18.02K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.8e-05,
+          "formattedValue": "18.02K"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.001032,
-      "formattedValue": "1.03M",
+      "value": 0.001014,
+      "formattedValue": "1.01M",
       "children": [
         {
           "name": "Bonds",
@@ -527,8 +539,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.000194,
-          "formattedValue": "194.10K"
+          "value": 0.000176,
+          "formattedValue": "176.09K"
         },
         {
           "name": "Cash & Equivalents",
@@ -539,13 +551,13 @@
     },
     {
       "name": "USD",
-      "value": 5.7e-05,
-      "formattedValue": "57.48K",
+      "value": 7.5e-05,
+      "formattedValue": "75.50K",
       "children": [
         {
           "name": "Stocks",
-          "value": 5.7e-05,
-          "formattedValue": "57.48K"
+          "value": 7.5e-05,
+          "formattedValue": "75.50K"
         }
       ]
     }

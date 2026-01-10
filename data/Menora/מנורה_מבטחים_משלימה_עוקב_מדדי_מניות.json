@@ -68,42 +68,42 @@
               "value": 0.0718,
               "formattedValue": "71.81M",
               "percentage": 11.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "MTF סל אנד צמיחה עולמי",
               "value": 0.0718,
               "formattedValue": "71.79M",
               "percentage": 11.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "MTF סל אנד ערך עולמי",
               "value": 0.0716,
               "formattedValue": "71.61M",
               "percentage": 10.97,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסם ETF אינדקס ערך עולמי",
               "value": 0.0715,
               "formattedValue": "71.46M",
               "percentage": 10.95,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל צמיחה עולמי",
               "value": 0.0561,
               "formattedValue": "56.13M",
               "percentage": 8.6,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל ערך עולמי מד",
               "value": 0.0547,
               "formattedValue": "54.69M",
               "percentage": 8.38,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל World Quality מד",
@@ -117,14 +117,14 @@
               "value": 0.0362,
               "formattedValue": "36.17M",
               "percentage": 5.54,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "איביאיסל אינד צמיחה עולמי",
               "value": 0.0358,
               "formattedValue": "35.84M",
               "percentage": 5.49,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             }
           ],
           [
@@ -149,24 +149,19 @@
   },
   "geoSunburst": [
     {
-      "name": "Israel",
-      "value": 0.472388,
-      "formattedValue": "472.39M",
+      "name": "Global",
+      "value": 0.469494,
+      "formattedValue": "469.49M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.469494,
           "formattedValue": "469.49M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.002894,
-          "formattedValue": "2.89M"
         }
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.1834,
       "formattedValue": "183.40M",
       "children": [
@@ -176,40 +171,47 @@
           "formattedValue": "183.40M"
         }
       ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.002894,
+      "formattedValue": "2.89M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.002894,
+          "formattedValue": "2.89M"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
-      "name": "ILS",
-      "value": 0.472293,
-      "formattedValue": "472.29M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.469494,
-          "formattedValue": "469.49M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.002799,
-          "formattedValue": "2.80M"
-        }
-      ]
-    },
-    {
       "name": "USD",
-      "value": 0.183495,
-      "formattedValue": "183.49M",
+      "value": 0.652989,
+      "formattedValue": "652.99M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.1834,
-          "formattedValue": "183.40M"
+          "value": 0.652894,
+          "formattedValue": "652.89M"
         },
         {
           "name": "Cash & Equivalents",
           "value": 9.5e-05,
           "formattedValue": "94.94K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.002799,
+      "formattedValue": "2.80M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.002799,
+          "formattedValue": "2.80M"
         }
       ]
     },

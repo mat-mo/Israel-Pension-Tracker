@@ -917,7 +917,7 @@
               "value": 0.0,
               "formattedValue": "32.01K",
               "percentage": 3.6,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "FT MINI DOW 12/25",
@@ -1635,7 +1635,7 @@
               "value": 0.0002,
               "formattedValue": "154.02K",
               "percentage": 0.26,
-              "countryEmoji": "🇩🇪"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "דלתא מותגים",
@@ -1691,7 +1691,7 @@
               "value": 0.0001,
               "formattedValue": "126.12K",
               "percentage": 0.22,
-              "countryEmoji": "🇨🇳"
+              "countryEmoji": "🌎"
             }
           ],
           [
@@ -2115,7 +2115,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.012131,
       "formattedValue": "12.13M",
       "children": [
@@ -2152,19 +2152,7 @@
       ]
     },
     {
-      "name": "China",
-      "value": 0.00031,
-      "formattedValue": "310.40K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.00031,
-          "formattedValue": "310.40K"
-        }
-      ]
-    },
-    {
-      "name": "Germany",
+      "name": "Eurozone",
       "value": 0.000186,
       "formattedValue": "186.03K",
       "children": [
@@ -2181,7 +2169,19 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "China",
+      "value": 0.000184,
+      "formattedValue": "184.28K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000184,
+          "formattedValue": "184.28K"
+        }
+      ]
+    },
+    {
+      "name": "United Kingdom",
       "value": 0.000173,
       "formattedValue": "173.47K",
       "children": [
@@ -2193,7 +2193,19 @@
       ]
     },
     {
-      "name": "Cayman Is.",
+      "name": "Global",
+      "value": 0.000126,
+      "formattedValue": "126.12K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000126,
+          "formattedValue": "126.12K"
+        }
+      ]
+    },
+    {
+      "name": "Cayman Islands",
       "value": 9.6e-05,
       "formattedValue": "95.67K",
       "children": [
@@ -2256,8 +2268,8 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.151057,
-      "formattedValue": "151.06M",
+      "value": 0.151241,
+      "formattedValue": "151.24M",
       "children": [
         {
           "name": "Bonds",
@@ -2266,13 +2278,13 @@
         },
         {
           "name": "Stocks",
-          "value": 0.060754,
-          "formattedValue": "60.75M"
+          "value": 0.060968,
+          "formattedValue": "60.97M"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.019231,
-          "formattedValue": "19.23M"
+          "value": 0.019201,
+          "formattedValue": "19.20M"
         },
         {
           "name": "Mutual Funds",
@@ -2355,18 +2367,13 @@
     },
     {
       "name": "JPY",
-      "value": 0.001471,
-      "formattedValue": "1.47M",
+      "value": 0.001249,
+      "formattedValue": "1.25M",
       "children": [
         {
           "name": "Cash & Equivalents",
           "value": 0.001157,
           "formattedValue": "1.16M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.000223,
-          "formattedValue": "222.61K"
         },
         {
           "name": "Futures",
@@ -2416,6 +2423,23 @@
           "name": "Cash & Equivalents",
           "value": 0.000149,
           "formattedValue": "149.29K"
+        }
+      ]
+    },
+    {
+      "name": "CHF",
+      "value": 3.9e-05,
+      "formattedValue": "39.03K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 3.1e-05,
+          "formattedValue": "30.58K"
+        },
+        {
+          "name": "Stocks",
+          "value": 8e-06,
+          "formattedValue": "8.45K"
         }
       ]
     }

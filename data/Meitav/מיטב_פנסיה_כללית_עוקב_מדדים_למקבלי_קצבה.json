@@ -57,14 +57,14 @@
               "value": 0.0005,
               "formattedValue": "521.62K",
               "percentage": 16.76,
-              "countryEmoji": "🇺🇸"
+              "countryEmoji": "🌎"
             },
             {
               "name": "SPDR MSCI ACWI",
               "value": 0.0005,
               "formattedValue": "519.50K",
               "percentage": 16.69,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסם SP500 ETF מנוטרל",
@@ -399,28 +399,6 @@
   },
   "geoSunburst": [
     {
-      "name": "USA",
-      "value": 0.002022,
-      "formattedValue": "2.02M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.002005,
-          "formattedValue": "2.00M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 1.8e-05,
-          "formattedValue": "17.84K"
-        },
-        {
-          "name": "Futures",
-          "value": 0.0,
-          "formattedValue": "0.02K"
-        }
-      ]
-    },
-    {
       "name": "Israel",
       "value": 0.001827,
       "formattedValue": "1.83M",
@@ -453,14 +431,36 @@
       ]
     },
     {
-      "name": "Global",
-      "value": 0.00052,
-      "formattedValue": "519.50K",
+      "name": "United States",
+      "value": 0.001501,
+      "formattedValue": "1.50M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.00052,
-          "formattedValue": "519.50K"
+          "value": 0.001483,
+          "formattedValue": "1.48M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1.8e-05,
+          "formattedValue": "17.84K"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0,
+          "formattedValue": "0.02K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.001041,
+      "formattedValue": "1.04M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.001041,
+          "formattedValue": "1.04M"
         }
       ]
     }

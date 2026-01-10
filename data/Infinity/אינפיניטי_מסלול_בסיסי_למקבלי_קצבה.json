@@ -524,7 +524,7 @@
               "value": 0.0003,
               "formattedValue": "260.46K",
               "percentage": 10.78,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "הראל S&P 500 Equal W",
@@ -668,7 +668,7 @@
               "value": 0.0,
               "formattedValue": "13.04K",
               "percentage": 0.54,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "הראל סל NDX 100",
@@ -726,7 +726,7 @@
               "value": 0.0,
               "formattedValue": "0.34K",
               "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "קסם A4)ETF) תא 35",
@@ -1082,14 +1082,14 @@
               "value": 0.0,
               "formattedValue": "35.40K",
               "percentage": 50.38,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "ערד 8912",
               "value": 0.0,
               "formattedValue": "34.88K",
               "percentage": 49.62,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -1110,7 +1110,7 @@
               "value": 0.0077,
               "formattedValue": "7.66M",
               "percentage": 100.0,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -1120,8 +1120,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.00875,
-      "formattedValue": "8.75M",
+      "value": 0.008476,
+      "formattedValue": "8.48M",
       "children": [
         {
           "name": "Bonds",
@@ -1135,20 +1135,25 @@
         },
         {
           "name": "Stocks",
-          "value": 0.001952,
-          "formattedValue": "1.95M"
+          "value": 0.001679,
+          "formattedValue": "1.68M"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.007727,
-      "formattedValue": "7.73M",
+      "value": 0.008,
+      "formattedValue": "8.00M",
       "children": [
         {
           "name": "Other Assets",
           "value": 0.007656,
           "formattedValue": "7.66M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.000274,
+          "formattedValue": "273.84K"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -1158,7 +1163,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.001386,
       "formattedValue": "1.39M",
       "children": [
@@ -1170,7 +1175,7 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "United Kingdom",
       "value": 3e-06,
       "formattedValue": "3.14K",
       "children": [
@@ -1185,8 +1190,8 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.016646,
-      "formattedValue": "16.65M",
+      "value": 0.016366,
+      "formattedValue": "16.37M",
       "children": [
         {
           "name": "Other Assets",
@@ -1205,8 +1210,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.002143,
-          "formattedValue": "2.14M"
+          "value": 0.001864,
+          "formattedValue": "1.86M"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -1217,18 +1222,30 @@
     },
     {
       "name": "USD",
-      "value": 0.001217,
-      "formattedValue": "1.22M",
+      "value": 0.001478,
+      "formattedValue": "1.48M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.001195,
-          "formattedValue": "1.20M"
+          "value": 0.001456,
+          "formattedValue": "1.46M"
         },
         {
           "name": "Cash & Equivalents",
           "value": 2.2e-05,
           "formattedValue": "21.82K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 1.9e-05,
+      "formattedValue": "18.66K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.9e-05,
+          "formattedValue": "18.66K"
         }
       ]
     },

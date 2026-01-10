@@ -1165,7 +1165,7 @@
               "value": 0.0,
               "formattedValue": "4.46K",
               "percentage": 5.12,
-              "countryEmoji": ""
+              "countryEmoji": "🇨🇳"
             },
             {
               "name": "תכלית סל (40) תא - ב",
@@ -1237,7 +1237,7 @@
               "value": 0.0,
               "formattedValue": "0.59K",
               "percentage": 0.67,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "מור סל (4D) NASDAQ10",
@@ -1258,7 +1258,7 @@
               "value": 0.0,
               "formattedValue": "0.26K",
               "percentage": 0.3,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🌎"
             },
             {
               "name": "הראל סל NDX 100",
@@ -1298,8 +1298,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.000798,
-      "formattedValue": "798.34K",
+      "value": 0.000797,
+      "formattedValue": "797.49K",
       "children": [
         {
           "name": "Bonds",
@@ -1308,8 +1308,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.000133,
-          "formattedValue": "133.02K"
+          "value": 0.000132,
+          "formattedValue": "132.17K"
         },
         {
           "name": "Cash & Equivalents",
@@ -1319,7 +1319,7 @@
       ]
     },
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.00013,
       "formattedValue": "129.76K",
       "children": [
@@ -1336,7 +1336,7 @@
       ]
     },
     {
-      "name": "Global",
+      "name": "China",
       "value": 4e-06,
       "formattedValue": "4.46K",
       "children": [
@@ -1348,7 +1348,19 @@
       ]
     },
     {
-      "name": "UK",
+      "name": "Global",
+      "value": 1e-06,
+      "formattedValue": "0.85K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1e-06,
+          "formattedValue": "0.85K"
+        }
+      ]
+    },
+    {
+      "name": "United Kingdom",
       "value": 0.0,
       "formattedValue": "0.12K",
       "children": [
@@ -1363,18 +1375,18 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.000779,
-      "formattedValue": "778.87K",
+      "value": 0.000778,
+      "formattedValue": "778.02K",
       "children": [
         {
           "name": "Bonds",
           "value": 0.000619,
-          "formattedValue": "619.39K"
+          "formattedValue": "619.27K"
         },
         {
           "name": "Stocks",
-          "value": 0.000136,
-          "formattedValue": "135.58K"
+          "value": 0.000135,
+          "formattedValue": "134.84K"
         },
         {
           "name": "Cash & Equivalents",
@@ -1386,12 +1398,12 @@
     {
       "name": "USD",
       "value": 0.000153,
-      "formattedValue": "153.12K",
+      "formattedValue": "153.38K",
       "children": [
         {
           "name": "Stocks",
           "value": 0.000103,
-          "formattedValue": "102.58K"
+          "formattedValue": "102.84K"
         },
         {
           "name": "Bonds",
@@ -1408,12 +1420,17 @@
     {
       "name": "EUR",
       "value": 1e-06,
-      "formattedValue": "0.57K",
+      "formattedValue": "1.16K",
       "children": [
         {
           "name": "Bonds",
           "value": 1e-06,
-          "formattedValue": "0.57K"
+          "formattedValue": "0.69K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "0.47K"
         }
       ]
     },

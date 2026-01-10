@@ -199,7 +199,7 @@
               "value": 0.0001,
               "formattedValue": "103.77K",
               "percentage": 3.13,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🌎"
             },
             {
               "name": "Invesco STOXX Europe 600 UCITS",
@@ -215,7 +215,7 @@
               "value": 0.0001,
               "formattedValue": "76.56K",
               "percentage": 2.31,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "iFree ETF-Nikkei 225",
@@ -271,14 +271,14 @@
               "value": 0.0,
               "formattedValue": "11.27K",
               "percentage": 0.34,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             },
             {
               "name": "iShares Global Energy ETF",
               "value": 0.0,
               "formattedValue": "10.49K",
               "percentage": 0.32,
-              "countryEmoji": ""
+              "countryEmoji": "🌎"
             }
           ]
         ]
@@ -287,7 +287,7 @@
   },
   "geoSunburst": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 0.002836,
       "formattedValue": "2.84M",
       "children": [
@@ -326,14 +326,26 @@
       ]
     },
     {
-      "name": "Eurozone",
-      "value": 0.000259,
-      "formattedValue": "259.25K",
+      "name": "Global",
+      "value": 0.000202,
+      "formattedValue": "202.10K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000259,
-          "formattedValue": "259.25K"
+          "value": 0.000202,
+          "formattedValue": "202.10K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.000155,
+      "formattedValue": "155.48K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000155,
+          "formattedValue": "155.48K"
         }
       ]
     },
@@ -346,18 +358,6 @@
           "name": "Stocks",
           "value": 0.000124,
           "formattedValue": "124.03K"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 9.8e-05,
-      "formattedValue": "98.32K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 9.8e-05,
-          "formattedValue": "98.32K"
         }
       ]
     }
@@ -381,13 +381,13 @@
         {
           "name": "Derivatives",
           "value": 4e-06,
-          "formattedValue": "4.46K"
+          "formattedValue": "4.44K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.001393,
+      "value": 0.001394,
       "formattedValue": "1.39M",
       "children": [
         {
@@ -399,13 +399,18 @@
           "name": "Other Assets",
           "value": 3e-05,
           "formattedValue": "29.70K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 1e-06,
+          "formattedValue": "1.11K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 0.000301,
-      "formattedValue": "301.17K",
+      "value": 0.0003,
+      "formattedValue": "300.07K",
       "children": [
         {
           "name": "Stocks",
@@ -416,11 +421,6 @@
           "name": "Cash & Equivalents",
           "value": 4.1e-05,
           "formattedValue": "40.82K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 1e-06,
-          "formattedValue": "1.10K"
         }
       ]
     },
