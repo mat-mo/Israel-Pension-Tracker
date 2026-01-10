@@ -1206,6 +1206,13 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "EURUSD",
+              "value": -0.018,
+              "formattedValue": "-18.00M",
+              "percentage": -2.22,
+              "countryEmoji": "🇺🇸"
+            },
+            {
               "name": "MLBLMUSS Index",
               "value": 0.0133,
               "formattedValue": "13.34M",
@@ -1217,6 +1224,13 @@
               "value": 0.0058,
               "formattedValue": "5.79M",
               "percentage": 0.72,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "USDJPY",
+              "value": -0.0039,
+              "formattedValue": "-3.94M",
+              "percentage": -0.49,
               "countryEmoji": "🇺🇸"
             },
             {
@@ -1239,7 +1253,9 @@
               "formattedValue": "2.77M",
               "percentage": 0.34,
               "countryEmoji": "🇺🇸"
-            },
+            }
+          ],
+          [
             {
               "name": "TASE IT Equity",
               "value": 0.0026,
@@ -1253,9 +1269,14 @@
               "formattedValue": "1.68M",
               "percentage": 0.21,
               "countryEmoji": ""
-            }
-          ],
-          [
+            },
+            {
+              "name": "GBPUSD",
+              "value": -0.0011,
+              "formattedValue": "-1.14M",
+              "percentage": -0.14,
+              "countryEmoji": "🇺🇸"
+            },
             {
               "name": "IXVTR Index",
               "value": 0.0002,
@@ -1276,27 +1297,6 @@
               "formattedValue": "1.19K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "GBPUSD",
-              "value": -0.0011,
-              "formattedValue": "-1.14M",
-              "percentage": -0.14,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "USDJPY",
-              "value": -0.0039,
-              "formattedValue": "-3.94M",
-              "percentage": -0.49,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "EURUSD",
-              "value": -0.018,
-              "formattedValue": "-18.00M",
-              "percentage": -2.22,
-              "countryEmoji": "🇺🇸"
             }
           ]
         ]
@@ -3367,6 +3367,13 @@
               "countryEmoji": "🇺🇸"
             },
             {
+              "name": "SPXW US 12/31/25 P5900 Index",
+              "value": -0.0176,
+              "formattedValue": "-17.61M",
+              "percentage": -318.78,
+              "countryEmoji": "🇺🇸"
+            },
+            {
               "name": "bC 7050 OCT",
               "value": 0.0077,
               "formattedValue": "7.70M",
@@ -3374,10 +3381,31 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "TA35 C 3000 OCT",
+              "value": -0.0067,
+              "formattedValue": "-6.74M",
+              "percentage": -121.91,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "TA35 C 3150 OCT",
               "value": 0.0031,
               "formattedValue": "3.11M",
               "percentage": 56.27,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "TA35 P 3150 OCT",
+              "value": -0.0012,
+              "formattedValue": "-1.20M",
+              "percentage": -21.72,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "bP 7050 OCT",
+              "value": -0.0004,
+              "formattedValue": "-431.23K",
+              "percentage": -7.81,
               "countryEmoji": "🇮🇱"
             },
             {
@@ -3399,34 +3427,6 @@
               "value": -0.0001,
               "formattedValue": "-65.12K",
               "percentage": -1.18,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "bP 7050 OCT",
-              "value": -0.0004,
-              "formattedValue": "-431.23K",
-              "percentage": -7.81,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TA35 P 3150 OCT",
-              "value": -0.0012,
-              "formattedValue": "-1.20M",
-              "percentage": -21.72,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TA35 C 3000 OCT",
-              "value": -0.0067,
-              "formattedValue": "-6.74M",
-              "percentage": -121.91,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "SPXW US 12/31/25 P5900 Index",
-              "value": -0.0176,
-              "formattedValue": "-17.61M",
-              "percentage": -318.78,
               "countryEmoji": "🇺🇸"
             }
           ]
@@ -3510,6 +3510,20 @@
         "holdingsPages": [
           [
             {
+              "name": "חייבים זכאים תפעולי",
+              "value": -0.0388,
+              "formattedValue": "-38.82M",
+              "percentage": 104.98,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "קרן יוזמה - אבן דרך",
+              "value": -0.0023,
+              "formattedValue": "-2.28M",
+              "percentage": 6.17,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "מס לקבל אגח דולר בוני",
               "value": 0.0012,
               "formattedValue": "1.18M",
@@ -3564,7 +3578,9 @@
               "formattedValue": "190.11K",
               "percentage": -0.51,
               "countryEmoji": "🇮🇱"
-            },
+            }
+          ],
+          [
             {
               "name": "חוז פנסיה וגמל בגין מס לקבל שנת 2023",
               "value": 0.0002,
@@ -3578,9 +3594,7 @@
               "formattedValue": "145.93K",
               "percentage": -0.39,
               "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
+            },
             {
               "name": "מס לקבל דולר בוני בגין שנת 2024",
               "value": 0.0001,
@@ -3636,28 +3650,14 @@
               "formattedValue": "1.22K",
               "percentage": -0.0,
               "countryEmoji": "🇮🇱"
-            },
+            }
+          ],
+          [
             {
               "name": "אול יר אגח ה",
               "value": 0.0,
               "formattedValue": "0.23K",
               "percentage": -0.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "קרן יוזמה - אבן דרך",
-              "value": -0.0023,
-              "formattedValue": "-2.28M",
-              "percentage": 6.17,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "חייבים זכאים תפעולי",
-              "value": -0.0388,
-              "formattedValue": "-38.82M",
-              "percentage": 104.98,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -5049,10 +5049,24 @@
               "countryEmoji": "🇺🇸"
             },
             {
+              "name": "12/2025 JPM ESZ5 Index התחייבות",
+              "value": -1.509,
+              "formattedValue": "-1.51B",
+              "percentage": -3542.4,
+              "countryEmoji": "🇺🇸"
+            },
+            {
               "name": "12/2025 JPM NQZ5 Index משתנה",
               "value": 0.657,
               "formattedValue": "657.03M",
               "percentage": 1542.39,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "12/2025 JPM NQZ5 Index התחייבות",
+              "value": -0.6489,
+              "formattedValue": "-648.87M",
+              "percentage": -1523.23,
               "countryEmoji": "🇺🇸"
             },
             {
@@ -5063,10 +5077,24 @@
               "countryEmoji": "🇩🇪"
             },
             {
+              "name": "12/2025 JPM VGZ5 Index התחייבות",
+              "value": -0.6025,
+              "formattedValue": "-602.49M",
+              "percentage": -1414.36,
+              "countryEmoji": "🇩🇪"
+            },
+            {
               "name": "12/2025 JPM TPZ5 Index משתנה",
               "value": 0.2554,
               "formattedValue": "255.36M",
               "percentage": 599.47,
+              "countryEmoji": "🇯🇵"
+            },
+            {
+              "name": "12/2025 JPM TPZ5 Index התחייבות",
+              "value": -0.2544,
+              "formattedValue": "-254.44M",
+              "percentage": -597.31,
               "countryEmoji": "🇯🇵"
             },
             {
@@ -5077,10 +5105,26 @@
               "countryEmoji": "🇯🇵"
             },
             {
+              "name": "12/2025 JPM NKZ5 Index התחייבות",
+              "value": -0.0706,
+              "formattedValue": "-70.60M",
+              "percentage": -165.73,
+              "countryEmoji": "🇯🇵"
+            }
+          ],
+          [
+            {
               "name": "12/2025 JPM GXZ5 Index משתנה",
               "value": 0.0651,
               "formattedValue": "65.13M",
               "percentage": 152.9,
+              "countryEmoji": "🇩🇪"
+            },
+            {
+              "name": "12/2025 JPM GXZ5 Index התחייבות",
+              "value": -0.0644,
+              "formattedValue": "-64.44M",
+              "percentage": -151.26,
               "countryEmoji": "🇩🇪"
             },
             {
@@ -5095,50 +5139,6 @@
               "value": 0.0,
               "formattedValue": "1.54K",
               "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "12/2025 JPM GXZ5 Index התחייבות",
-              "value": -0.0644,
-              "formattedValue": "-64.44M",
-              "percentage": -151.26,
-              "countryEmoji": "🇩🇪"
-            },
-            {
-              "name": "12/2025 JPM NKZ5 Index התחייבות",
-              "value": -0.0706,
-              "formattedValue": "-70.60M",
-              "percentage": -165.73,
-              "countryEmoji": "🇯🇵"
-            }
-          ],
-          [
-            {
-              "name": "12/2025 JPM TPZ5 Index התחייבות",
-              "value": -0.2544,
-              "formattedValue": "-254.44M",
-              "percentage": -597.31,
-              "countryEmoji": "🇯🇵"
-            },
-            {
-              "name": "12/2025 JPM VGZ5 Index התחייבות",
-              "value": -0.6025,
-              "formattedValue": "-602.49M",
-              "percentage": -1414.36,
-              "countryEmoji": "🇩🇪"
-            },
-            {
-              "name": "12/2025 JPM NQZ5 Index התחייבות",
-              "value": -0.6489,
-              "formattedValue": "-648.87M",
-              "percentage": -1523.23,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "12/2025 JPM ESZ5 Index התחייבות",
-              "value": -1.509,
-              "formattedValue": "-1.51B",
-              "percentage": -3542.4,
               "countryEmoji": "🇺🇸"
             }
           ]
@@ -5431,10 +5431,24 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "בנק הפועלים בע\"מ",
+              "value": -0.1278,
+              "formattedValue": "-127.78M",
+              "percentage": -16.43,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "בנק דיסקונט לישראל בע\"מ",
               "value": 0.0882,
               "formattedValue": "88.22M",
               "percentage": 11.34,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JPM SE",
+              "value": -0.0844,
+              "formattedValue": "-84.43M",
+              "percentage": -10.86,
               "countryEmoji": "🇮🇱"
             },
             {
@@ -5445,17 +5459,17 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "Bny Mellon",
+              "value": -0.0765,
+              "formattedValue": "-76.51M",
+              "percentage": -9.84,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "הבנק הבינלאומי הראשון לישראל בע\"מ",
               "value": 0.0721,
               "formattedValue": "72.05M",
               "percentage": 9.27,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "סיטיבנק",
-              "value": 0.0233,
-              "formattedValue": "23.30M",
-              "percentage": 3.0,
               "countryEmoji": "🇮🇱"
             },
             {
@@ -5464,28 +5478,14 @@
               "formattedValue": "-39.11M",
               "percentage": -5.03,
               "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "Bny Mellon",
-              "value": -0.0765,
-              "formattedValue": "-76.51M",
-              "percentage": -9.84,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "JPM SE",
-              "value": -0.0844,
-              "formattedValue": "-84.43M",
-              "percentage": -10.86,
-              "countryEmoji": "🇮🇱"
             }
           ],
           [
             {
-              "name": "בנק הפועלים בע\"מ",
-              "value": -0.1278,
-              "formattedValue": "-127.78M",
-              "percentage": -16.43,
+              "name": "סיטיבנק",
+              "value": 0.0233,
+              "formattedValue": "23.30M",
+              "percentage": 3.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -7336,11 +7336,25 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "The Veritas Capital Fund IX",
+              "value": -0.0003,
+              "formattedValue": "-286.87K",
+              "percentage": -0.01,
+              "countryEmoji": ""
+            },
+            {
               "name": "Vintage Fund of Funds VIII Breakout",
               "value": 0.0002,
               "formattedValue": "242.92K",
               "percentage": 0.01,
               "countryEmoji": ""
+            },
+            {
+              "name": "Clearlake Credit Europe Subordinated Debt VI Feede",
+              "value": -0.0002,
+              "formattedValue": "-220.01K",
+              "percentage": -0.01,
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Equitix MA 12 LP",
@@ -7369,20 +7383,6 @@
               "formattedValue": "40.49K",
               "percentage": 0.0,
               "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Clearlake Credit Europe Subordinated Debt VI Feede",
-              "value": -0.0002,
-              "formattedValue": "-220.01K",
-              "percentage": -0.01,
-              "countryEmoji": "🇪🇺"
-            },
-            {
-              "name": "The Veritas Capital Fund IX",
-              "value": -0.0003,
-              "formattedValue": "-286.87K",
-              "percentage": -0.01,
-              "countryEmoji": ""
             }
           ]
         ]
@@ -10278,14 +10278,28 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "ממשל שקלית 0537 ריפו 03/09/2026",
+              "value": -0.0001,
+              "formattedValue": "-125.08K",
+              "percentage": -0.17,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
               "name": "ממשק 0226",
               "value": 0.0001,
               "formattedValue": "123.12K",
               "percentage": 0.17,
               "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
+            },
+            {
+              "name": "ממשל צמודה 1028 ריפו 16/03/2026",
+              "value": -0.0001,
+              "formattedValue": "-116.27K",
+              "percentage": -0.16,
+              "countryEmoji": "🇮🇱"
+            },
             {
               "name": "ממצמ 0726",
               "value": 0.0001,
@@ -10298,6 +10312,13 @@
               "value": 0.0001,
               "formattedValue": "101.03K",
               "percentage": 0.14,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ממשל צמודה 0726 ריפו 27/08/2026",
+              "value": -0.0001,
+              "formattedValue": "-97.23K",
+              "percentage": -0.13,
               "countryEmoji": "🇮🇱"
             },
             {
@@ -10315,12 +10336,28 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "ממשל שקלית 0537 ריפו 09/10/2025",
+              "value": -0.0001,
+              "formattedValue": "-71.41K",
+              "percentage": -0.1,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "מקמ 816",
               "value": 0.0,
               "formattedValue": "46.72K",
               "percentage": 0.06,
               "countryEmoji": "🇮🇱"
             },
+            {
+              "name": "ממשל צמודה 1028 ריפו 08/10/2025",
+              "value": -0.0,
+              "formattedValue": "-46.12K",
+              "percentage": -0.06,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
             {
               "name": "מקמ 316",
               "value": 0.0,
@@ -10350,14 +10387,19 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "ממשל צמודה 1028 ריפו 27/08/2026",
+              "value": -0.0,
+              "formattedValue": "-25.81K",
+              "percentage": -0.04,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "ממצמ 1151",
               "value": 0.0,
               "formattedValue": "14.00K",
               "percentage": 0.02,
               "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
+            },
             {
               "name": "ממשק 0927",
               "value": 0.0,
@@ -10385,7 +10427,9 @@
               "formattedValue": "3.60K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
-            },
+            }
+          ],
+          [
             {
               "name": "ממצמ 0545",
               "value": 0.0,
@@ -10426,50 +10470,6 @@
               "value": 0.0,
               "formattedValue": "0.03K",
               "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "ממשל צמודה 1028 ריפו 27/08/2026",
-              "value": -0.0,
-              "formattedValue": "-25.81K",
-              "percentage": -0.04,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ממשל צמודה 1028 ריפו 08/10/2025",
-              "value": -0.0,
-              "formattedValue": "-46.12K",
-              "percentage": -0.06,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ממשל שקלית 0537 ריפו 09/10/2025",
-              "value": -0.0001,
-              "formattedValue": "-71.41K",
-              "percentage": -0.1,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ממשל צמודה 0726 ריפו 27/08/2026",
-              "value": -0.0001,
-              "formattedValue": "-97.23K",
-              "percentage": -0.13,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ממשל צמודה 1028 ריפו 16/03/2026",
-              "value": -0.0001,
-              "formattedValue": "-116.27K",
-              "percentage": -0.16,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ממשל שקלית 0537 ריפו 03/09/2026",
-              "value": -0.0001,
-              "formattedValue": "-125.08K",
-              "percentage": -0.17,
               "countryEmoji": "🇮🇱"
             }
           ]

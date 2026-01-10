@@ -211,17 +211,17 @@
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "CITIBANK",
-              "value": -0.0,
-              "formattedValue": "-5.02K",
-              "percentage": -0.02,
-              "countryEmoji": "🇮🇱"
-            },
-            {
               "name": "GOLDMAN SACHS",
               "value": -0.0001,
               "formattedValue": "-63.21K",
               "percentage": -0.31,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITIBANK",
+              "value": -0.0,
+              "formattedValue": "-5.02K",
+              "percentage": -0.02,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -281,6 +281,13 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "USDJPY",
+              "value": -0.0,
+              "formattedValue": "-13.74K",
+              "percentage": -2.97,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "CLIS IT",
               "value": 0.0,
               "formattedValue": "12.47K",
@@ -300,16 +307,30 @@
               "formattedValue": "10.86K",
               "percentage": 2.35,
               "countryEmoji": "🇺🇸"
-            },
+            }
+          ],
+          [
             {
               "name": "GBPUSD",
               "value": 0.0,
               "formattedValue": "8.23K",
               "percentage": 1.78,
               "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
+            },
+            {
+              "name": "ISCD IT",
+              "value": -0.0,
+              "formattedValue": "-8.16K",
+              "percentage": -1.76,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "EURUSD",
+              "value": -0.0,
+              "formattedValue": "-5.44K",
+              "percentage": -1.18,
+              "countryEmoji": "🇮🇱"
+            },
             {
               "name": "LQD US",
               "value": 0.0,
@@ -339,6 +360,13 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "AUDUSD",
+              "value": -0.0,
+              "formattedValue": "-0.94K",
+              "percentage": -0.2,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "HARL IT",
               "value": 0.0,
               "formattedValue": "0.87K",
@@ -346,11 +374,20 @@
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "SKBN IT",
-              "value": 0.0,
-              "formattedValue": "0.04K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
+              "name": "BNPHAP01",
+              "value": -0.0,
+              "formattedValue": "-0.25K",
+              "percentage": -0.05,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "HYG US",
+              "value": -0.0,
+              "formattedValue": "-0.20K",
+              "percentage": -0.04,
+              "countryEmoji": "🇺🇸"
             },
             {
               "name": "IDIN IT",
@@ -360,47 +397,10 @@
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "HYG US",
-              "value": -0.0,
-              "formattedValue": "-0.20K",
-              "percentage": -0.04,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "BNPHAP01",
-              "value": -0.0,
-              "formattedValue": "-0.25K",
-              "percentage": -0.05,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "AUDUSD",
-              "value": -0.0,
-              "formattedValue": "-0.94K",
-              "percentage": -0.2,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "EURUSD",
-              "value": -0.0,
-              "formattedValue": "-5.44K",
-              "percentage": -1.18,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ISCD IT",
-              "value": -0.0,
-              "formattedValue": "-8.16K",
-              "percentage": -1.76,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "USDJPY",
-              "value": -0.0,
-              "formattedValue": "-13.74K",
-              "percentage": -2.97,
+              "name": "SKBN IT",
+              "value": 0.0,
+              "formattedValue": "0.04K",
+              "percentage": 0.01,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -6073,10 +6073,38 @@
               "countryEmoji": "🇮🇱"
             },
             {
+              "name": "bP 7340 NOV 25",
+              "value": -0.0,
+              "formattedValue": "-8.30K",
+              "percentage": -26.6,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "TEVA US 12/19/25 C24",
+              "value": -0.0,
+              "formattedValue": "-2.04K",
+              "percentage": -6.55,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "TEVA US 12/19/25 P16",
+              "value": -0.0,
+              "formattedValue": "-1.17K",
+              "percentage": -3.76,
+              "countryEmoji": "🇮🇱"
+            },
+            {
               "name": "CIC 17000",
               "value": 0.0,
               "formattedValue": "1.04K",
               "percentage": 3.34,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CIP 17000",
+              "value": -0.0,
+              "formattedValue": "-1.01K",
+              "percentage": -3.24,
               "countryEmoji": "🇮🇱"
             },
             {
@@ -6098,34 +6126,6 @@
               "value": -0.0,
               "formattedValue": "-0.02K",
               "percentage": -0.05,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "CIP 17000",
-              "value": -0.0,
-              "formattedValue": "-1.01K",
-              "percentage": -3.24,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TEVA US 12/19/25 P16",
-              "value": -0.0,
-              "formattedValue": "-1.17K",
-              "percentage": -3.76,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TEVA US 12/19/25 C24",
-              "value": -0.0,
-              "formattedValue": "-2.04K",
-              "percentage": -6.55,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "bP 7340 NOV 25",
-              "value": -0.0,
-              "formattedValue": "-8.30K",
-              "percentage": -26.6,
               "countryEmoji": "🇮🇱"
             }
           ]
