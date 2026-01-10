@@ -43,9 +43,6 @@ COUNTRY_COLUMNS = [
 # Currency Columns
 CURRENCY_COLUMNS = ["מטבע פעילות", "מטבע", "סוג מטבע", "בסיס הצמדה", "Currency", "Linkage Base"]
 
-# Sector Columns
-SECTOR_COLUMNS = ["ענף מסחר", "ענף", "סקטור", "Sector", "Industry", "Trade Sector"]
-
 FILE_MAPPING = {
     "מזומנים": ("Cash & Equivalents", "Cash"),
     "פיקדונות": ("Cash & Equivalents", "Deposits"),
@@ -202,17 +199,13 @@ def detect_currency(row, country_emoji, asset_name):
     return "ILS"
 
 def get_sector(row, asset_class=""):
-    """Extracts and normalizes sector data."""
     val = get_column_value(row, SECTOR_COLUMNS)
     if val:
         clean = str(val).strip()
         if len(clean) > 1 and clean.lower() != 'nan':
             return clean
-            
-    # Smart Defaults for Cleaner Charts
     if asset_class == "Bonds": return "Government / General"
     if asset_class == "Cash & Equivalents": return "Liquidity"
-    
     return "General"
 
 def clean_value(val):
@@ -348,12 +341,12 @@ def calculate_geo_sunburst(data_store):
         children_sum = 0.0
         for cls_name, abs_val in assets_dict.items():
             if abs_val > 1e-12:
-                asset_children.append({ "name": cls_name, "value": round(abs_val, 6), "formattedValue": format_currency(abs_val) })
+                asset_children.append({ "name": cls_name, "value": round(abs_val, 9), "formattedValue": format_currency(abs_val) })
                 children_sum += abs_val
         if not asset_children: continue
         asset_children.sort(key=lambda x: x["value"], reverse=True)
         display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
-        sunburst_data.append({ "name": display_name, "value": round(children_sum, 6), "formattedValue": format_currency(children_sum), "children": asset_children })
+        sunburst_data.append({ "name": display_name, "value": round(children_sum, 9), "formattedValue": format_currency(children_sum), "children": asset_children })
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
@@ -373,73 +366,47 @@ def calculate_currency_sunburst(data_store):
         children_sum = 0.0
         for cls_name, abs_val in assets_dict.items():
             if abs_val > 1e-12:
-                asset_children.append({ "name": cls_name, "value": round(abs_val, 6), "formattedValue": format_currency(abs_val) })
+                asset_children.append({ "name": cls_name, "value": round(abs_val, 9), "formattedValue": format_currency(abs_val) })
                 children_sum += abs_val
         if not asset_children: continue
         asset_children.sort(key=lambda x: x["value"], reverse=True)
-        sunburst_data.append({ "name": curr, "value": round(children_sum, 6), "formattedValue": format_currency(children_sum), "children": asset_children })
+        sunburst_data.append({ "name": curr, "value": round(children_sum, 9), "formattedValue": format_currency(children_sum), "children": asset_children })
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
 def calculate_sector_sunburst(data_store):
-    """
-    Groups data by Asset Class -> Sector.
-    Asset Class is the Parent (Inner Ring).
-    Sector is the Child (Outer Ring).
-    """
     class_groups = {} 
-    
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
             for item in sub_items:
                 sec = item.get("sector", "General")
-                
                 if cls_name not in class_groups: class_groups[cls_name] = {}
                 if sec not in class_groups[cls_name]: class_groups[cls_name][sec] = 0.0
-                
-                # Sum Absolute Exposure
                 class_groups[cls_name][sec] += abs(item["value"])
 
     sunburst_data = []
     for cls_name, sectors_dict in class_groups.items():
         sector_children = []
         class_total_exposure = 0.0
-        
         for sec_name, val in sectors_dict.items():
             if val > 1e-12:
-                sector_children.append({
-                    "name": sec_name,
-                    "value": round(val, 6),
-                    "formattedValue": format_currency(val)
-                })
+                sector_children.append({ "name": sec_name, "value": round(val, 9), "formattedValue": format_currency(val) })
                 class_total_exposure += val
-        
         if not sector_children: continue
-        
         sector_children.sort(key=lambda x: x["value"], reverse=True)
-        
-        sunburst_data.append({
-            "name": cls_name,
-            "value": round(class_total_exposure, 6),
-            "formattedValue": format_currency(class_total_exposure),
-            "children": sector_children
-        })
-    
+        sunburst_data.append({ "name": cls_name, "value": round(class_total_exposure, 9), "formattedValue": format_currency(class_total_exposure), "children": sector_children })
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
 def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     track_map = config['institutions'][inst_key]['tracks']
     manifest_entries = []
-    
     inst_total_aum = 0.0
 
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
-        
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
-        
         inst_total_aum += total_assets
 
         asset_classes = []
@@ -451,7 +418,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             
             asset_classes.append({
                 "name": c_name, 
-                "value": round(c_net, 4), 
+                "value": round(c_net, 9), 
                 "formattedValue": format_currency(c_net), 
                 "percentage": round(c_pct, 2)
             })
@@ -478,7 +445,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                     h_pct = (h['value'] / s_net * 100) if s_net else 0
                     all_holdings.append({
                         "name": h['name'], 
-                        "value": round(h['value'], 4), 
+                        "value": round(h['value'], 9), 
                         "formattedValue": format_currency(h['value']),
                         "percentage": round(h_pct, 2),
                         "countryEmoji": h['emoji']
@@ -490,7 +457,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 
                 c_breakdown.append({
                     "subclass": s_name, 
-                    "value": round(s_net, 4), 
+                    "value": round(s_net, 9), 
                     "formattedValue": format_currency(s_net),
                     "percentageOfClass": round(s_pct_class, 2),
                     "itemCount": total_items, 
@@ -501,7 +468,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             breakdown[c_name] = c_breakdown
             
         asset_classes.sort(key=lambda x: x['percentage'], reverse=True)
-        
         geo_sunburst_data = calculate_geo_sunburst(data_store)
         currency_sunburst_data = calculate_currency_sunburst(data_store)
         sector_sunburst_data = calculate_sector_sunburst(data_store)
@@ -511,7 +477,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         final_obj = {
             "fundName": t_name, 
             "trackId": t_id, 
-            "totalAssetsBN": round(total_assets, 2), 
+            "totalAssetsBN": round(total_assets, 9), 
             "formattedTotalAssets": format_currency(total_assets),
             "assetClasses": asset_classes, 
             "breakdown": breakdown,
@@ -529,20 +495,13 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
 
 def main():
     log("Starting Pipeline...")
-    if not load_mappings():
-        return
-
+    if not load_mappings(): return
     log("Loading Master Track List...")
     master_map = load_master_track_list() or {}
     config = {"institutions": {}} 
-    
-    if not INPUT_DIRECTORY.exists(): 
-        log(f"Input directory {INPUT_DIRECTORY} not found.")
-        return
-        
+    if not INPUT_DIRECTORY.exists(): return
     excel_files = list(INPUT_DIRECTORY.glob("*.xlsx"))
     global_manifest = []
-
     OUTPUT_BASE_DIRECTORY.mkdir(parents=True, exist_ok=True)
 
     for excel_path in excel_files:
@@ -550,27 +509,17 @@ def main():
         inst_key = excel_path.stem
         target_dir = OUTPUT_BASE_DIRECTORY / inst_key
         target_dir.mkdir(parents=True, exist_ok=True)
-        
         if split_excel_to_csvs(excel_path, target_dir):
             all_data = process_institution_data(target_dir, inst_key, config, master_map)
             tracks_list, total_aum = generate_jsons(target_dir, all_data, inst_key, config)
             inst_name = config['institutions'][inst_key].get("name", inst_key)
-            
             formatted_aum = format_currency(total_aum)
-            
-            global_manifest.append({
-                "id": inst_key, 
-                "name": inst_name, 
-                "directory": inst_key, 
-                "tracks": tracks_list,
-                "totalAUM": formatted_aum
-            })
+            global_manifest.append({ "id": inst_key, "name": inst_name, "directory": inst_key, "tracks": tracks_list, "totalAUM": formatted_aum })
 
     with open(CONFIG_FILE, 'w', encoding='utf-8') as f:
         json.dump(config, f, indent=2, ensure_ascii=False)
     with open(OUTPUT_BASE_DIRECTORY / "manifest.json", 'w', encoding='utf-8') as f:
         json.dump(global_manifest, f, indent=2, ensure_ascii=False)
-    
     log(f"--- Pipeline Complete. ---")
 
 if __name__ == "__main__":

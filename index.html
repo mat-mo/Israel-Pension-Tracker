@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Israel Pension Tracker</title>
-    
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
-
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-    
     <script>
         const originalWarn = console.warn;
         console.warn = (...args) => {
@@ -17,19 +14,9 @@
         };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        dark: { bg: '#0f172a', card: '#1e293b', border: '#334155', text: '#e2e8f0', textMuted: '#94a3b8' }
-                    }
-                }
-            }
-        }
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { dark: { bg: '#0f172a', card: '#1e293b', border: '#334155', text: '#e2e8f0', textMuted: '#94a3b8' } } } } }
     </script>
     <style>
         body { font-family: 'Heebo', sans-serif; transition: background-color 0.3s, color 0.3s; }
@@ -40,19 +27,14 @@
     </style>
 </head>
 <body class="p-4 md:p-8 bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
-
     <div id="loading"><div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>
-
     <div class="max-w-7xl mx-auto space-y-6">
-        
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300 gap-4">
             <div class="mb-2 md:mb-0">
                 <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pension Holdings Tracker</h1>
                 <p class="text-gray-500 dark:text-dark-textMuted text-sm">Transparency dashboard for Israeli institutional assets</p>
             </div>
-            
             <div class="flex flex-row items-start gap-4">
-                
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-col sm:flex-row sm:items-center gap-2">
                         <select id="instSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2 shadow-sm w-64 focus:ring-blue-500 focus:border-blue-500 transition-colors">
@@ -62,7 +44,6 @@
                             Inst. AUM: <span id="instAumDisplay" class="text-gray-700 dark:text-gray-300 font-bold">-</span>
                         </div>
                     </div>
-
                     <div class="flex flex-col sm:flex-row sm:items-center gap-2">
                         <select id="trackSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2 shadow-sm w-64 focus:ring-blue-500 focus:border-blue-500 transition-colors" disabled>
                             <option disabled selected>Select Institution First</option>
@@ -72,14 +53,12 @@
                         </div>
                     </div>
                 </div>
-
                 <button id="themeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none transition-all h-fit mt-1 border border-gray-200 dark:border-gray-600">
                     <svg id="sunIcon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
                     <svg id="moonIcon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
                 </button>
             </div>
         </div>
-
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
                 <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
@@ -88,7 +67,6 @@
                 </div>
                 <div id="mainChart" class="chart-box"></div>
             </div>
-
             <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border flex flex-col transition-colors duration-300">
                 <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
                     <h2 id="subChartTitle" class="font-bold text-lg text-gray-800 dark:text-white">2. Category Breakdown</h2>
@@ -97,7 +75,6 @@
                 <div id="subChart" class="chart-box"></div>
             </div>
         </div>
-
         <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-100 dark:border-dark-border overflow-hidden transition-colors duration-300 mt-6">
             <div class="p-6 border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300">
                 <h3 id="tableTitle" class="font-bold text-gray-700 dark:text-gray-200">Holdings</h3>
@@ -113,26 +90,18 @@
                             <th class="px-6 py-3 text-right w-1/8">% of Cat</th>
                         </tr>
                     </thead>
-                    <tbody id="holdingsBody" class="divide-y divide-gray-100 dark:divide-gray-700">
-                        <tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">Select an asset class to view holdings</td></tr>
-                    </tbody>
+                    <tbody id="holdingsBody" class="divide-y divide-gray-100 dark:divide-gray-700"><tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">Select an asset class to view holdings</td></tr></tbody>
                 </table>
             </div>
             <div id="paginationControls" class="px-6 py-4 border-t border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300 hidden">
                 <span class="text-xs text-gray-500 dark:text-gray-400 font-medium" id="pageInfo">Page 1 of 1</span>
                 <div class="flex gap-2">
-                    <button onclick="changePage(-1)" id="btnPrev" class="px-3 py-1.5 text-xs font-medium rounded-md bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm">
-                        Previous
-                    </button>
-                    <button onclick="changePage(1)" id="btnNext" class="px-3 py-1.5 text-xs font-medium rounded-md bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm">
-                        Next
-                    </button>
+                    <button onclick="changePage(-1)" id="btnPrev" class="px-3 py-1.5 text-xs font-medium rounded-md bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm">Previous</button>
+                    <button onclick="changePage(1)" id="btnNext" class="px-3 py-1.5 text-xs font-medium rounded-md bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm">Next</button>
                 </div>
             </div>
         </div>
-
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-            
             <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
                 <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
                     <h2 class="font-bold text-lg text-gray-800 dark:text-white">3. Geographic Exposure</h2>
@@ -140,7 +109,6 @@
                 </div>
                 <div id="geoSunburstChart" class="h-[500px] w-full"></div> 
             </div>
-
             <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
                 <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
                     <h2 class="font-bold text-lg text-gray-800 dark:text-white">4. Currency Exposure</h2>
@@ -149,7 +117,6 @@
                 <div id="currencySunburstChart" class="h-[500px] w-full"></div> 
             </div>
         </div>
-
         <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300 mt-6">
             <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
                 <h2 class="font-bold text-lg text-gray-800 dark:text-white">5. Sector Allocation</h2>
@@ -157,372 +124,146 @@
             </div>
             <div id="sectorSunburstChart" class="h-[600px] w-full"></div> 
         </div>
-        
-        <footer class="mt-8 text-center text-xs text-gray-400 dark:text-gray-600 pb-4">
-            <p>Source: Capital Market Authority. Amounts in Billions NIS.</p>
-        </footer>
+        <footer class="mt-8 text-center text-xs text-gray-400 dark:text-gray-600 pb-4"><p>Source: Capital Market Authority. Amounts in Billions NIS.</p></footer>
     </div>
-
     <script>
-        let mainChart = null;
-        let subChart = null;
-        let geoSunburstChart = null;
-        let currencySunburstChart = null;
-        let sectorSunburstChart = null;
-        
-        let currentManifest = [];
-        let currentInst = null;
-        let currentTrackData = null;
-        
-        let currentSubclassData = null;
-        let currentPage = 0;
+        let mainChart = null, subChart = null, geoSunburstChart = null, currencySunburstChart = null, sectorSunburstChart = null;
+        let currentManifest = [], currentInst = null, currentTrackData = null, currentSubclassData = null, currentPage = 0;
 
-        // --- HELPER: Micro-Slice Formatter ---
-        // Prevents "0.00%" display for tiny values
         function formatShare(value, total) {
             if (!total || total === 0) return '-';
             let raw = (value / total) * 100;
-            let abs = Math.abs(raw);
-            if (abs > 0 && abs < 0.01) return '< 0.01';
+            if (Math.abs(raw) > 0 && Math.abs(raw) < 0.01) return '< 0.01';
             return raw.toFixed(2);
         }
 
-        // --- Theme Init ---
         const themeToggleBtn = document.getElementById('themeToggle');
         const sunIcon = document.getElementById('sunIcon');
         const moonIcon = document.getElementById('moonIcon');
-
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
+            document.documentElement.classList.add('dark'); sunIcon.classList.remove('hidden'); moonIcon.classList.add('hidden');
         } else {
-            document.documentElement.classList.remove('dark');
-            moonIcon.classList.remove('hidden');
-            sunIcon.classList.add('hidden');
+            document.documentElement.classList.remove('dark'); moonIcon.classList.remove('hidden'); sunIcon.classList.add('hidden');
         }
-
         themeToggleBtn.addEventListener('click', function() {
-            sunIcon.classList.toggle('hidden');
-            moonIcon.classList.toggle('hidden');
+            sunIcon.classList.toggle('hidden'); moonIcon.classList.toggle('hidden');
             if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
+                document.documentElement.classList.remove('dark'); localStorage.setItem('color-theme', 'light');
             } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
+                document.documentElement.classList.add('dark'); localStorage.setItem('color-theme', 'dark');
             }
             if (currentTrackData) renderCharts(currentTrackData, false);
         });
 
         function getChartColors() {
             const isDark = document.documentElement.classList.contains('dark');
-            return {
-                text: isDark ? '#e2e8f0' : '#333',
-                tooltipBg: isDark ? 'rgba(30, 41, 59, 0.95)' : 'rgba(255, 255, 255, 0.95)',
-                tooltipBorder: isDark ? '#334155' : '#e5e7eb',
-                tooltipText: isDark ? '#f1f5f9' : '#374151',
-                borderColor: isDark ? '#1e293b' : '#fff'
-            };
+            return { text: isDark ? '#e2e8f0' : '#333', tooltipBg: isDark ? 'rgba(30, 41, 59, 0.95)' : 'rgba(255, 255, 255, 0.95)', tooltipBorder: isDark ? '#334155' : '#e5e7eb', tooltipText: isDark ? '#f1f5f9' : '#374151', borderColor: isDark ? '#1e293b' : '#fff' };
         }
 
-        // --- Data Loading ---
         const loading = document.getElementById('loading');
-        
-        fetch('data/manifest.json')
-            .then(res => res.json())
-            .then(data => {
-                currentManifest = data;
-                initApp();
-            })
-            .catch(err => {
-                console.error("Manifest Error:", err);
-                alert("Error loading manifest.json. Ensure file structure is correct.");
-            });
+        fetch('data/manifest.json').then(res => res.json()).then(data => { currentManifest = data; initApp(); }).catch(err => { console.error(err); alert("Error loading manifest.json."); });
 
         function initApp() {
             const instSelector = document.getElementById('instSelector');
             instSelector.innerHTML = '<option disabled selected>Select Institution</option>';
-
             currentManifest.forEach((inst, index) => {
                 const opt = document.createElement('option');
-                opt.value = index;
-                opt.text = inst.name; 
-                instSelector.appendChild(opt);
+                opt.value = index; opt.text = inst.name; instSelector.appendChild(opt);
             });
-
             instSelector.addEventListener('change', (e) => {
-                const instIndex = e.target.value;
-                currentInst = currentManifest[instIndex];
-                
-                const aum = currentInst.totalAUM || '0';
-                document.getElementById('instAumDisplay').innerText = `₪${aum}`;
-                
+                const instIndex = e.target.value; currentInst = currentManifest[instIndex];
+                document.getElementById('instAumDisplay').innerText = `₪${currentInst.totalAUM || '0'}`;
                 populateTracks(currentInst);
             });
-
             if (currentManifest.length > 0) {
-                instSelector.value = 0;
-                currentInst = currentManifest[0];
-                const aum = currentInst.totalAUM || '0';
-                document.getElementById('instAumDisplay').innerText = `₪${aum}`;
+                instSelector.value = 0; currentInst = currentManifest[0];
+                document.getElementById('instAumDisplay').innerText = `₪${currentInst.totalAUM || '0'}`;
                 populateTracks(currentInst);
             }
         }
 
         function populateTracks(inst) {
             const trackSelector = document.getElementById('trackSelector');
-            trackSelector.innerHTML = '';
-            trackSelector.disabled = false;
-
+            trackSelector.innerHTML = ''; trackSelector.disabled = false;
             inst.tracks.forEach((track, index) => {
                 const opt = document.createElement('option');
-                opt.value = index;
-                opt.text = `${track.name} (${track.id})`;
-                trackSelector.appendChild(opt);
+                opt.value = index; opt.text = `${track.name} (${track.id})`; trackSelector.appendChild(opt);
             });
-
             trackSelector.removeEventListener('change', handleTrackChange);
             trackSelector.addEventListener('change', handleTrackChange);
-
-            if (inst.tracks.length > 0) {
-                fetchTrack(inst.directory, inst.tracks[0].file);
-            }
+            if (inst.tracks.length > 0) fetchTrack(inst.directory, inst.tracks[0].file);
         }
 
         function handleTrackChange(e) {
-            const trackIndex = e.target.value;
-            const track = currentInst.tracks[trackIndex];
+            const trackIndex = e.target.value; const track = currentInst.tracks[trackIndex];
             fetchTrack(currentInst.directory, track.file);
         }
 
         function fetchTrack(dir, file) {
             loading.style.display = 'flex';
-            fetch(`data/${dir}/${file}`)
-                .then(res => {
-                    if(!res.ok) throw new Error("File not found");
-                    return res.json();
-                })
-                .then(data => {
-                    currentTrackData = data;
-                    document.getElementById('totalAssetsDisplay').innerText = `₪${data.formattedTotalAssets}`;
-                    renderCharts(data, true);
-                    loading.style.display = 'none';
-                })
-                .catch(err => {
-                    console.error(err);
-                    loading.style.display = 'none';
-                    alert("Error loading track data");
-                });
+            fetch(`data/${dir}/${file}`).then(res => { if(!res.ok) throw new Error("File not found"); return res.json(); }).then(data => {
+                currentTrackData = data;
+                document.getElementById('totalAssetsDisplay').innerText = `₪${data.formattedTotalAssets}`;
+                renderCharts(data, true);
+                loading.style.display = 'none';
+            }).catch(err => { console.error(err); loading.style.display = 'none'; alert("Error loading track data"); });
         }
 
-        // --- Chart Rendering ---
         function renderCharts(data, resetView) {
             const isMobile = window.innerWidth < 768;
             if (!mainChart) mainChart = echarts.init(document.getElementById('mainChart'));
             if (!subChart) subChart = echarts.init(document.getElementById('subChart'));
-
             const colors = getChartColors();
-            
             const option = {
                 color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
-                tooltip: { 
-                    confine: true,
-                    trigger: 'item', 
-                    backgroundColor: colors.tooltipBg,
-                    borderColor: colors.tooltipBorder,
-                    textStyle: { color: colors.tooltipText },
-                    formatter: (params) => {
-                         if (!params.data) return '';
-                         return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`;
-                    }
-                },
+                tooltip: { confine: true, trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`; } },
                 series: [{
-                    name: 'Asset Class',
-                    type: 'pie',
-                    radius: isMobile ? ['25%', '50%'] : ['35%', '65%'],
-                    avoidLabelOverlap: true,
-                    itemStyle: { 
-                        borderRadius: 5, 
-                        borderColor: colors.borderColor, 
-                        borderWidth: 2 
-                    },
-                    label: { 
-                        show: true, 
-                        position: 'outside', 
-                        formatter: function(params) {
-                           if (!params.data) return '';
-                           const val = params.data.formattedValue || params.value + 'B';
-                           return `${params.name}\n${val}`;
-                        }, 
-                        color: colors.text,
-                        fontWeight: 'bold'
-                    },
+                    name: 'Asset Class', type: 'pie', radius: isMobile ? ['25%', '50%'] : ['35%', '65%'], avoidLabelOverlap: true,
+                    itemStyle: { borderRadius: 5, borderColor: colors.borderColor, borderWidth: 2 },
+                    label: { show: true, position: 'outside', formatter: (params) => { if (!params.data) return ''; const val = params.data.formattedValue || params.value + 'B'; return `${params.name}\n${val}`; }, color: colors.text, fontWeight: 'bold' },
                     labelLine: { show: true, length: 15, length2: 10 },
                     data: data.assetClasses.map(item => ({ value: item.value, name: item.name, formattedValue: item.formattedValue }))
                 }]
             };
             mainChart.setOption(option);
-            
-            mainChart.off('click'); 
-            mainChart.on('click', function (params) {
-                updateSubChart(params.name);
-            });
-
-            if (resetView && data.assetClasses.length > 0) {
-                updateSubChart(data.assetClasses[0].name);
-            }
-
-            renderGeoSunburst(data);
-            renderCurrencySunburst(data);
-            renderSectorSunburst(data);
-            
-            window.addEventListener('resize', () => {
-                mainChart.resize();
-                subChart.resize();
-                if(geoSunburstChart) geoSunburstChart.resize();
-                if(currencySunburstChart) currencySunburstChart.resize();
-                if(sectorSunburstChart) sectorSunburstChart.resize();
-            });
+            mainChart.off('click'); mainChart.on('click', function (params) { updateSubChart(params.name); });
+            if (resetView && data.assetClasses.length > 0) updateSubChart(data.assetClasses[0].name);
+            renderGeoSunburst(data); renderCurrencySunburst(data); renderSectorSunburst(data);
+            window.addEventListener('resize', () => { mainChart.resize(); subChart.resize(); if(geoSunburstChart) geoSunburstChart.resize(); if(currencySunburstChart) currencySunburstChart.resize(); if(sectorSunburstChart) sectorSunburstChart.resize(); });
         }
 
         function renderGeoSunburst(data) {
             if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
-            
-            if (!data.geoSunburst || data.geoSunburst.length === 0) { 
-                geoSunburstChart.clear();
-                geoSunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
-                return; 
-            }
-
+            if (!data.geoSunburst || data.geoSunburst.length === 0) { geoSunburstChart.clear(); geoSunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } }); return; }
             const totalExposure = data.geoSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
-            const colors = getChartColors(); 
-
+            const colors = getChartColors();
             const option = {
-                tooltip: {
-                    trigger: 'item',
-                    backgroundColor: colors.tooltipBg,
-                    borderColor: colors.tooltipBorder,
-                    textStyle: { color: colors.tooltipText },
-                    formatter: (params) => {
-                        if (!params.data) return '';
-                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
-                        let val = params.data.formattedValue || params.value;
-                        
-                        // Use Helper for Consistent Micro-Slices
-                        let share = formatShare(params.value, totalExposure);
-                        
-                        return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
-                    }
-                },
-                series: {
-                    type: 'sunburst',
-                    data: data.geoSunburst,
-                    radius: ['15%', '80%'],
-                    sort: null, 
-                    emphasis: { focus: 'ancestor' },
-                    itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor },
-                    label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
-                    levels: [
-                        {}, 
-                        { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
-                        { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
-                    ]
-                }
+                tooltip: { trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > '); let val = params.data.formattedValue || params.value; let share = formatShare(params.value, totalExposure); return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`; } },
+                series: { type: 'sunburst', data: data.geoSunburst, radius: ['15%', '80%'], sort: null, emphasis: { focus: 'ancestor' }, itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor }, label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 }, levels: [ {}, { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } }, { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } } ] }
             };
             geoSunburstChart.setOption(option);
         }
 
         function renderCurrencySunburst(data) {
             if (!currencySunburstChart) currencySunburstChart = echarts.init(document.getElementById('currencySunburstChart'));
-            
-            if (!data.currencySunburst || data.currencySunburst.length === 0) { 
-                currencySunburstChart.clear();
-                currencySunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
-                return; 
-            }
-
+            if (!data.currencySunburst || data.currencySunburst.length === 0) { currencySunburstChart.clear(); currencySunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } }); return; }
             const totalExposure = data.currencySunburst.reduce((sum, item) => sum + (item.value || 0), 0);
-            const colors = getChartColors(); 
-
+            const colors = getChartColors();
             const option = {
-                tooltip: {
-                    trigger: 'item',
-                    backgroundColor: colors.tooltipBg,
-                    borderColor: colors.tooltipBorder,
-                    textStyle: { color: colors.tooltipText },
-                    formatter: (params) => {
-                        if (!params.data) return '';
-                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
-                        let val = params.data.formattedValue || params.value;
-                        
-                        // Use Helper
-                        let share = formatShare(params.value, totalExposure);
-
-                        return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
-                    }
-                },
-                series: {
-                    type: 'sunburst',
-                    data: data.currencySunburst,
-                    radius: ['15%', '80%'],
-                    sort: null,
-                    emphasis: { focus: 'ancestor' },
-                    itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor },
-                    label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
-                     levels: [
-                        {}, 
-                        { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
-                        { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
-                    ]
-                }
+                tooltip: { trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > '); let val = params.data.formattedValue || params.value; let share = formatShare(params.value, totalExposure); return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`; } },
+                series: { type: 'sunburst', data: data.currencySunburst, radius: ['15%', '80%'], sort: null, emphasis: { focus: 'ancestor' }, itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor }, label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 }, levels: [ {}, { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } }, { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } } ] }
             };
             currencySunburstChart.setOption(option);
         }
 
         function renderSectorSunburst(data) {
             if (!sectorSunburstChart) sectorSunburstChart = echarts.init(document.getElementById('sectorSunburstChart'));
-            
-            if (!data.sectorSunburst || data.sectorSunburst.length === 0) { 
-                sectorSunburstChart.clear();
-                sectorSunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
-                return; 
-            }
-
+            if (!data.sectorSunburst || data.sectorSunburst.length === 0) { sectorSunburstChart.clear(); sectorSunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } }); return; }
             const totalExposure = data.sectorSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
-            const colors = getChartColors(); 
-
+            const colors = getChartColors();
             const option = {
-                tooltip: {
-                    trigger: 'item',
-                    backgroundColor: colors.tooltipBg,
-                    borderColor: colors.tooltipBorder,
-                    textStyle: { color: colors.tooltipText },
-                    formatter: (params) => {
-                        if (!params.data) return '';
-                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
-                        let val = params.data.formattedValue || params.value;
-                        
-                        // Use Helper
-                        let share = formatShare(params.value, totalExposure);
-
-                        return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
-                    }
-                },
-                series: {
-                    type: 'sunburst',
-                    data: data.sectorSunburst,
-                    radius: ['15%', '80%'],
-                    sort: null,
-                    emphasis: { focus: 'ancestor' },
-                    itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor },
-                    label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
-                     levels: [
-                        {}, 
-                        { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
-                        { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
-                    ]
-                }
+                tooltip: { trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > '); let val = params.data.formattedValue || params.value; let share = formatShare(params.value, totalExposure); return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`; } },
+                series: { type: 'sunburst', data: data.sectorSunburst, radius: ['15%', '80%'], sort: null, emphasis: { focus: 'ancestor' }, itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor }, label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 }, levels: [ {}, { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } }, { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } } ] }
             };
             sectorSunburstChart.setOption(option);
         }
@@ -531,71 +272,39 @@
             const isMobile = window.innerWidth < 768;
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
-            
             let totalPortfolioValue = currentTrackData.totalAssetsBN;
             if (!totalPortfolioValue || totalPortfolioValue === 0) {
                 if (currentTrackData.assetClasses) {
                     totalPortfolioValue = currentTrackData.assetClasses.reduce((sum, item) => sum + (item.value || 0), 0);
                 }
             }
-
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
-            
-            if (!breakdown || breakdown.length === 0) {
-                subChart.clear();
-                subChart.setOption({ title: { text: 'No breakdown', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
-                renderTable([]); 
-                return;
-            }
-
+            if (!breakdown || breakdown.length === 0) { subChart.clear(); subChart.setOption({ title: { text: 'No breakdown', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } }); renderTable([]); return; }
             const pieData = breakdown.map(b => ({ value: b.value, name: b.subclass, formattedValue: b.formattedValue }));
-
             const option = {
                 color: ['#60a5fa', '#34d399', '#fbbf24', '#f87171', '#a78bfa'],
-                tooltip: { 
-                    trigger: 'item', 
-                    backgroundColor: colors.tooltipBg,
-                    borderColor: colors.tooltipBorder,
-                    textStyle: { color: colors.tooltipText },
-                    formatter: (params) => {
-                        if (!params.data) return '';
-                        
-                        const localShare = params.percent;
-                        
-                        // Use Helper for Global Share
-                        let globalShareDisplay = formatShare(params.value, totalPortfolioValue);
-
-                        return `<b>${params.name}</b><br/>
-                                Value: ${params.data.formattedValue}<br/>
-                                <hr style="border-color: ${colors.borderColor}; margin: 5px 0; opacity: 0.3;">
-                                Share of ${categoryName}: <b>${localShare}%</b><br/>
-                                Share of Portfolio: <b>${globalShareDisplay}%</b>`;
-                    } 
-                },
+                tooltip: { trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; const localShare = params.percent; let globalShareDisplay = formatShare(params.value, totalPortfolioValue); return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/><hr style="border-color: ${colors.borderColor}; margin: 5px 0; opacity: 0.3;">Share of ${categoryName}: <b>${localShare}%</b><br/>Share of Portfolio: <b>${globalShareDisplay}%</b>`; } },
                 series: [{
-                    name: 'Subclass',
-                    type: 'pie',
-                    radius: isMobile ? ['25%', '50%'] : ['35%', '65%'],
-                    itemStyle: { borderRadius: 4, borderColor: colors.borderColor, borderWidth: 2 },
-                    label: { show: true, formatter: '{b}\n{d}%', color: colors.text },
+                    name: 'Subclass', type: 'pie', radius: isMobile ? ['25%', '50%'] : ['35%', '65%'], itemStyle: { borderRadius: 4, borderColor: colors.borderColor, borderWidth: 2 },
+                    label: { 
+                        show: true, 
+                        color: colors.text,
+                        formatter: function(params) {
+                            // CUSTOM LABEL FORMATTER TO FIX 0% ISSUE
+                            if (params.percent < 0.01 && params.percent > 0) return params.name + '\n< 0.01%';
+                            return params.name + '\n' + params.percent + '%';
+                        }
+                    },
                     data: pieData
                 }]
             };
-            
             subChart.setOption(option, true);
-            
-            subChart.off('click');
-            subChart.on('click', function(params) {
-                const selectedSubclass = breakdown.find(b => b.subclass === params.name);
-                if (selectedSubclass) { loadSubclassTable(selectedSubclass); }
-            });
-
+            subChart.off('click'); subChart.on('click', function(params) { const selectedSubclass = breakdown.find(b => b.subclass === params.name); if (selectedSubclass) { loadSubclassTable(selectedSubclass); } });
             if (breakdown.length > 0) { loadSubclassTable(breakdown[0]); }
         }
 
         function loadSubclassTable(subclassData) {
-            currentSubclassData = subclassData;
-            currentPage = 0; 
+            currentSubclassData = subclassData; currentPage = 0;
             document.getElementById('tableTitle').innerText = `Holdings: ${subclassData.subclass}`;
             document.getElementById('tableBadge').innerText = `${subclassData.itemCount || (subclassData.topHoldings ? subclassData.topHoldings.length : 0)} Items`;
             renderTable();
@@ -604,64 +313,27 @@
         function changePage(delta) {
             if (!currentSubclassData || !currentSubclassData.holdingsPages) return;
             const newPage = currentPage + delta;
-            if (newPage >= 0 && newPage < currentSubclassData.totalPages) {
-                currentPage = newPage;
-                renderTable();
-            }
+            if (newPage >= 0 && newPage < currentSubclassData.totalPages) { currentPage = newPage; renderTable(); }
         }
 
         function renderTable() {
-            const tbody = document.getElementById('holdingsBody');
-            const paginationControls = document.getElementById('paginationControls');
-            tbody.innerHTML = '';
-
+            const tbody = document.getElementById('holdingsBody'); const paginationControls = document.getElementById('paginationControls'); tbody.innerHTML = '';
             if (!currentSubclassData) return;
-
-            let holdingsToShow = [];
-            let isPaginated = false;
-
-            if (currentSubclassData.holdingsPages && Array.isArray(currentSubclassData.holdingsPages)) {
-                isPaginated = true;
-                holdingsToShow = currentSubclassData.holdingsPages[currentPage];
-            } else if (currentSubclassData.topHoldings) {
-                holdingsToShow = currentSubclassData.topHoldings;
-            }
-
-            if (!holdingsToShow || holdingsToShow.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">No holdings available</td></tr>';
-                paginationControls.classList.add('hidden');
-                return;
-            }
-
+            let holdingsToShow = []; let isPaginated = false;
+            if (currentSubclassData.holdingsPages && Array.isArray(currentSubclassData.holdingsPages)) { isPaginated = true; holdingsToShow = currentSubclassData.holdingsPages[currentPage]; } else if (currentSubclassData.topHoldings) { holdingsToShow = currentSubclassData.topHoldings; }
+            if (!holdingsToShow || holdingsToShow.length === 0) { tbody.innerHTML = '<tr><td colspan="4" class="px-6 py-8 text-center text-gray-400 dark:text-gray-500">No holdings available</td></tr>'; paginationControls.classList.add('hidden'); return; }
             holdingsToShow.forEach(h => {
                 const tr = document.createElement('tr');
                 tr.className = "bg-white dark:bg-dark-card border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors";
-                tr.innerHTML = `
-                    <th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-normal break-words max-w-[200px] md:max-w-none" title="${h.name}"> 
-                        ${h.countryEmoji ? h.countryEmoji + ' ' : ''}${h.name} 
-                    </th>
-                    <td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${currentSubclassData.subclass}</td>
-                    <td class="px-6 py-3 text-right font-mono text-sm text-gray-700 dark:text-gray-300">₪${h.formattedValue}</td>
-                    <td class="px-6 py-3 text-right text-blue-600 dark:text-blue-400 font-bold text-sm">${h.percentage}%</td>
-                `;
+                tr.innerHTML = `<th scope="row" class="px-6 py-3 font-medium text-gray-900 dark:text-gray-100 whitespace-normal break-words max-w-[200px] md:max-w-none" title="${h.name}">${h.countryEmoji ? h.countryEmoji + ' ' : ''}${h.name}</th><td class="px-6 py-3 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide">${currentSubclassData.subclass}</td><td class="px-6 py-3 text-right font-mono text-sm text-gray-700 dark:text-gray-300">₪${h.formattedValue}</td><td class="px-6 py-3 text-right text-blue-600 dark:text-blue-400 font-bold text-sm">${h.percentage}%</td>`;
                 tbody.appendChild(tr);
             });
-
             if (isPaginated && currentSubclassData.totalPages > 1) {
-                paginationControls.classList.remove('hidden');
-                document.getElementById('pageInfo').innerText = `Page ${currentPage + 1} of ${currentSubclassData.totalPages}`;
-                
-                const btnPrev = document.getElementById('btnPrev');
-                const btnNext = document.getElementById('btnNext');
-                
-                btnPrev.disabled = currentPage === 0;
-                btnNext.disabled = currentPage === currentSubclassData.totalPages - 1;
-                
-                btnPrev.classList.toggle('opacity-50', currentPage === 0);
-                btnNext.classList.toggle('opacity-50', currentPage === currentSubclassData.totalPages - 1);
-            } else {
-                paginationControls.classList.add('hidden');
-            }
+                paginationControls.classList.remove('hidden'); document.getElementById('pageInfo').innerText = `Page ${currentPage + 1} of ${currentSubclassData.totalPages}`;
+                const btnPrev = document.getElementById('btnPrev'); const btnNext = document.getElementById('btnNext');
+                btnPrev.disabled = currentPage === 0; btnNext.disabled = currentPage === currentSubclassData.totalPages - 1;
+                btnPrev.classList.toggle('opacity-50', currentPage === 0); btnNext.classList.toggle('opacity-50', currentPage === currentSubclassData.totalPages - 1);
+            } else { paginationControls.classList.add('hidden'); }
         }
     </script>
 </body>
