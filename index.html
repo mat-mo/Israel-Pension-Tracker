@@ -524,6 +524,7 @@
             const isMobile = window.innerWidth < 768;
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
+            const totalPortfolioValue = currentTrackData.totalAssetsBN;
             
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
             
@@ -545,6 +546,15 @@
                     textStyle: { color: colors.tooltipText },
                     formatter: (params) => {
                         if (!params.data) return '';
+
+                        // 1. Local Share (% of Category) - ECharts calculates this automatically
+                const localShare = params.percent;
+                
+                // 2. Global Share (% of Total Portfolio) - We calculate this manually
+                let globalShare = 0;
+                if (totalPortfolioValue > 0) {
+                    globalShare = ((params.value / totalPortfolioValue) * 100).toFixed(2);
+                }
                         return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`;
                     } 
                 },
