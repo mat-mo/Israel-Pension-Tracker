@@ -5,7 +5,7 @@
     "emoji": "🇮🇱",
     "currency_code": "ILS",
     "currency_name": "New Israeli Sheqel",
-    "match_strings": ["Israel", "ישראל", "IL", "שקל", "shekel", "nis", "צמוד מדד"]
+    "match_strings": ["Israel", "ישראל", "IL", "שקל", "shekel", "nis", "צמוד מדד", "agurot", "אגורות"]
   },
   {
     "name": "United States",
@@ -13,7 +13,7 @@
     "emoji": "🇺🇸",
     "currency_code": "USD",
     "currency_name": "US Dollar",
-    "match_strings": ["United States", "USA", "US", "U.S.A", "ארה\"ב", "ארהב", "ארצות הברית", "dollar", "usd", "דולר"]
+    "match_strings": ["United States", "USA", "US", "U.S.A", "ארה\"ב", "ארהב", "ארצות הברית", "America", "אמריקה", "dollar", "usd", "דולר"]
   },
   {
     "name": "Eurozone",
@@ -21,7 +21,7 @@
     "emoji": "🇪🇺",
     "currency_code": "EUR",
     "currency_name": "Euro",
-    "match_strings": ["Euro", "EUR", "Europe", "אירו", "יורו", "France", "Germany", "Spain", "Italy", "Netherlands", "Belgium", "Austria", "צרפת", "גרמניה", "ספרד", "איטליה", "הולנד", "בלגיה", "אוסטריה"]
+    "match_strings": ["Eurozone", "Europe", "EU", "אירופה", "האיחוד האירופי", "גוש האירו", "Euro", "EUR", "אירו", "יורו"]
   },
   {
     "name": "United Kingdom",
@@ -29,7 +29,7 @@
     "emoji": "🇬🇧",
     "currency_code": "GBP",
     "currency_name": "Pound Sterling",
-    "match_strings": ["United Kingdom", "UK", "Great Britain", "England", "London", "בריטניה", "אנגליה", "gbp", "sterling", "ליש\"ט", "פאונד"]
+    "match_strings": ["United Kingdom", "UK", "Great Britain", "GB", "England", "London", "בריטניה", "אנגליה", "הממלכה המאוחדת", "לונדון", "gbp", "sterling", "ליש\"ט", "פאונד"]
   },
   {
     "name": "Japan",
@@ -37,7 +37,7 @@
     "emoji": "🇯🇵",
     "currency_code": "JPY",
     "currency_name": "Yen",
-    "match_strings": ["Japan", "JP", "יפן", "yen", "jpy", "יין"]
+    "match_strings": ["Japan", "JP", "יפן", "Tokyo", "yen", "jpy", "יין"]
   },
   {
     "name": "China",
@@ -45,7 +45,23 @@
     "emoji": "🇨🇳",
     "currency_code": "CNY",
     "currency_name": "Yuan Renminbi",
-    "match_strings": ["China", "CN", "סין", "Renminbi", "Yuan"]
+    "match_strings": ["China", "CN", "PRC", "סין", "Renminbi", "Yuan", "יואן", "רנמינבי"]
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "emoji": "🇩🇪",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Germany", "Deutschland", "DE", "גרמניה", "פרנקפורט"]
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "emoji": "🇫🇷",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["France", "FR", "צרפת", "פריז"]
   },
   {
     "name": "Switzerland",
@@ -53,7 +69,7 @@
     "emoji": "🇨🇭",
     "currency_code": "CHF",
     "currency_name": "Swiss Franc",
-    "match_strings": ["Switzerland", "Swiss", "CH", "שוויץ", "franc", "chf", "פרנק"]
+    "match_strings": ["Switzerland", "Swiss", "CH", "שוויץ", "ציריך", "franc", "chf", "פרנק"]
   },
   {
     "name": "Canada",
@@ -61,7 +77,7 @@
     "emoji": "🇨🇦",
     "currency_code": "CAD",
     "currency_name": "Canadian Dollar",
-    "match_strings": ["Canada", "CA", "קנדה", "CAD"]
+    "match_strings": ["Canada", "CA", "קנדה", "Toronto", "CAD"]
   },
   {
     "name": "Australia",
@@ -69,7 +85,7 @@
     "emoji": "🇦🇺",
     "currency_code": "AUD",
     "currency_name": "Australian Dollar",
-    "match_strings": ["Australia", "AU", "אוסטרליה", "AUD"]
+    "match_strings": ["Australia", "AU", "אוסטרליה", "Sydney", "AUD"]
   },
   {
     "name": "India",
@@ -77,7 +93,7 @@
     "emoji": "🇮🇳",
     "currency_code": "INR",
     "currency_name": "Indian Rupee",
-    "match_strings": ["India", "IN", "הודו", "Rupee"]
+    "match_strings": ["India", "IN", "הודו", "Mumbai", "Rupee", "רופי"]
   },
   {
     "name": "South Korea",
@@ -85,7 +101,7 @@
     "emoji": "🇰🇷",
     "currency_code": "KRW",
     "currency_name": "Won",
-    "match_strings": ["South Korea", "Korea", "KR", "דרום קוריאה", "קוריאה", "Won"]
+    "match_strings": ["South Korea", "Korea", "KR", "דרום קוריאה", "קוריאה", "Seoul", "Won", "וון"]
   },
   {
     "name": "Taiwan",
@@ -93,7 +109,7 @@
     "emoji": "🇹🇼",
     "currency_code": "TWD",
     "currency_name": "New Taiwan Dollar",
-    "match_strings": ["Taiwan", "TW", "טאיוואן", "טייוואן"]
+    "match_strings": ["Taiwan", "TW", "טאיוואן", "טייוואן", "Taipei", "TWD"]
   },
   {
     "name": "Hong Kong",
@@ -101,7 +117,7 @@
     "emoji": "🇭🇰",
     "currency_code": "HKD",
     "currency_name": "Hong Kong Dollar",
-    "match_strings": ["Hong Kong", "HK", "הונג קונג"]
+    "match_strings": ["Hong Kong", "HK", "הונג קונג", "HKD"]
   },
   {
     "name": "Singapore",
@@ -109,7 +125,7 @@
     "emoji": "🇸🇬",
     "currency_code": "SGD",
     "currency_name": "Singapore Dollar",
-    "match_strings": ["Singapore", "SG", "סינגפור"]
+    "match_strings": ["Singapore", "SG", "סינגפור", "SGD"]
   },
   {
     "name": "Brazil",
@@ -117,7 +133,39 @@
     "emoji": "🇧🇷",
     "currency_code": "BRL",
     "currency_name": "Brazilian Real",
-    "match_strings": ["Brazil", "BR", "ברזיל"]
+    "match_strings": ["Brazil", "BR", "ברזיל", "Real", "ריאל"]
+  },
+  {
+    "name": "Russia",
+    "code": "RU",
+    "emoji": "🇷🇺",
+    "currency_code": "RUB",
+    "currency_name": "Russian Ruble",
+    "match_strings": ["Russia", "RU", "רוסיה", "Ruble", "רובל"]
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "emoji": "🇳🇱",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Netherlands", "Holland", "NL", "הולנד", "Amsterdam"]
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "emoji": "🇮🇹",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Italy", "IT", "איטליה", "Milano", "Rome"]
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "emoji": "🇪🇸",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Spain", "ES", "ספרד", "Madrid"]
   },
   {
     "name": "Ireland",
@@ -125,15 +173,7 @@
     "emoji": "🇮🇪",
     "currency_code": "EUR",
     "currency_name": "Euro",
-    "match_strings": ["Ireland", "IE", "אירלנד"]
-  },
-  {
-    "name": "Cayman Islands",
-    "code": "KY",
-    "emoji": "🇰🇾",
-    "currency_code": "KYD",
-    "currency_name": "Cayman Islands Dollar",
-    "match_strings": ["Cayman", "איי קיימן"]
+    "match_strings": ["Ireland", "IE", "אירלנד", "Dublin"]
   },
   {
     "name": "Sweden",
@@ -141,7 +181,7 @@
     "emoji": "🇸🇪",
     "currency_code": "SEK",
     "currency_name": "Swedish Krona",
-    "match_strings": ["Sweden", "שבדיה", "שוודיה"]
+    "match_strings": ["Sweden", "SE", "שבדיה", "שוודיה", "Krona", "כתר שוודי"]
   },
   {
     "name": "Norway",
@@ -149,7 +189,7 @@
     "emoji": "🇳🇴",
     "currency_code": "NOK",
     "currency_name": "Norwegian Krone",
-    "match_strings": ["Norway", "נורבגיה"]
+    "match_strings": ["Norway", "NO", "נורבגיה", "Krone", "כתר נורבגי"]
   },
   {
     "name": "Denmark",
@@ -157,7 +197,7 @@
     "emoji": "🇩🇰",
     "currency_code": "DKK",
     "currency_name": "Danish Krone",
-    "match_strings": ["Denmark", "דנמרק"]
+    "match_strings": ["Denmark", "DK", "דנמרק", "דניה", "כתר דני"]
   },
   {
     "name": "Poland",
@@ -165,7 +205,343 @@
     "emoji": "🇵🇱",
     "currency_code": "PLN",
     "currency_name": "Zloty",
-    "match_strings": ["Poland", "פולין"]
+    "match_strings": ["Poland", "PL", "פולין", "Zloty", "זלוטי"]
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "emoji": "🇧🇪",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Belgium", "BE", "בלגיה"]
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "emoji": "🇦🇹",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Austria", "AT", "אוסטריה"]
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "emoji": "🇲🇽",
+    "currency_code": "MXN",
+    "currency_name": "Mexican Peso",
+    "match_strings": ["Mexico", "MX", "מקסיקו", "Peso", "פזו"]
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "emoji": "🇿🇦",
+    "currency_code": "ZAR",
+    "currency_name": "Rand",
+    "match_strings": ["South Africa", "ZA", "דרום אפריקה", "Rand", "ראנד"]
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "emoji": "🇹🇷",
+    "currency_code": "TRY",
+    "currency_name": "Turkish Lira",
+    "match_strings": ["Turkey", "TR", "טורקיה", "תורכיה", "Lira", "לירה טורקית"]
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "emoji": "🇮🇩",
+    "currency_code": "IDR",
+    "currency_name": "Rupiah",
+    "match_strings": ["Indonesia", "ID", "אינדונזיה", "Rupiah"]
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "emoji": "🇸🇦",
+    "currency_code": "SAR",
+    "currency_name": "Saudi Riyal",
+    "match_strings": ["Saudi Arabia", "SA", "ערב הסעודית", "Riyal"]
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "emoji": "🇦🇪",
+    "currency_code": "AED",
+    "currency_name": "Dirham",
+    "match_strings": ["United Arab Emirates", "UAE", "AE", "איחוד האמירויות", "דובאי", "Dirham"]
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "emoji": "🇹🇭",
+    "currency_code": "THB",
+    "currency_name": "Baht",
+    "match_strings": ["Thailand", "TH", "תאילנד", "Baht", "באט"]
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "emoji": "🇲🇾",
+    "currency_code": "MYR",
+    "currency_name": "Ringgit",
+    "match_strings": ["Malaysia", "MY", "מלזיה", "Ringgit"]
+  },
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "emoji": "🇻🇳",
+    "currency_code": "VND",
+    "currency_name": "Dong",
+    "match_strings": ["Vietnam", "VN", "וייטנאם", "Dong"]
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "emoji": "🇵🇭",
+    "currency_code": "PHP",
+    "currency_name": "Philippine Peso",
+    "match_strings": ["Philippines", "PH", "פיליפינים", "Peso"]
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "emoji": "🇳🇿",
+    "currency_code": "NZD",
+    "currency_name": "New Zealand Dollar",
+    "match_strings": ["New Zealand", "NZ", "ניו זילנד", "NZD"]
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "emoji": "🇫🇮",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Finland", "FI", "פינלנד"]
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "emoji": "🇱🇺",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Luxembourg", "LU", "לוקסמבורג"]
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "emoji": "🇵🇹",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Portugal", "PT", "פורטוגל"]
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "emoji": "🇬🇷",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Greece", "GR", "יוון"]
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "emoji": "🇨🇿",
+    "currency_code": "CZK",
+    "currency_name": "Czech Koruna",
+    "match_strings": ["Czech", "CZ", "צ'כיה"]
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "emoji": "🇭🇺",
+    "currency_code": "HUF",
+    "currency_name": "Forint",
+    "match_strings": ["Hungary", "HU", "הונגריה"]
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "emoji": "🇰🇾",
+    "currency_code": "KYD",
+    "currency_name": "Cayman Islands Dollar",
+    "match_strings": ["Cayman", "KY", "איי קיימן", "קיימן"]
+  },
+  {
+    "name": "British Virgin Islands",
+    "code": "VG",
+    "emoji": "🇻🇬",
+    "currency_code": "USD",
+    "currency_name": "US Dollar",
+    "match_strings": ["Virgin Islands", "BVI", "איי בתולה", "איי הבתולה"]
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "emoji": "🇧🇲",
+    "currency_code": "BMD",
+    "currency_name": "Bermudian Dollar",
+    "match_strings": ["Bermuda", "BM", "ברמודה"]
+  },
+  {
+    "name": "Jersey",
+    "code": "JE",
+    "emoji": "🇯🇪",
+    "currency_code": "GBP",
+    "currency_name": "Pound Sterling",
+    "match_strings": ["Jersey", "JE", "ג'רזי"]
+  },
+  {
+    "name": "Guernsey",
+    "code": "GG",
+    "emoji": "🇬🇬",
+    "currency_code": "GBP",
+    "currency_name": "Pound Sterling",
+    "match_strings": ["Guernsey", "GG", "גרנזי"]
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "emoji": "🇨🇾",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Cyprus", "CY", "קפריסין"]
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "emoji": "🇲🇹",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Malta", "MT", "מלטה"]
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "emoji": "🇨🇱",
+    "currency_code": "CLP",
+    "currency_name": "Chilean Peso",
+    "match_strings": ["Chile", "CL", "צ'ילה"]
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "emoji": "🇨🇴",
+    "currency_code": "COP",
+    "currency_name": "Colombian Peso",
+    "match_strings": ["Colombia", "CO", "קולומביה"]
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "emoji": "🇦🇷",
+    "currency_code": "ARS",
+    "currency_name": "Argentine Peso",
+    "match_strings": ["Argentina", "AR", "ארגנטינה"]
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "emoji": "🇵🇪",
+    "currency_code": "PEN",
+    "currency_name": "Sol",
+    "match_strings": ["Peru", "PE", "פרו"]
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "emoji": "🇪🇬",
+    "currency_code": "EGP",
+    "currency_name": "Egyptian Pound",
+    "match_strings": ["Egypt", "EG", "מצרים"]
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "emoji": "🇳🇬",
+    "currency_code": "NGN",
+    "currency_name": "Naira",
+    "match_strings": ["Nigeria", "NG", "ניגריה"]
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "emoji": "🇰🇪",
+    "currency_code": "KES",
+    "currency_name": "Kenyan Shilling",
+    "match_strings": ["Kenya", "KE", "קניה"]
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "emoji": "🇲🇦",
+    "currency_code": "MAD",
+    "currency_name": "Moroccan Dirham",
+    "match_strings": ["Morocco", "MA", "מרוקו"]
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "emoji": "🇺🇦",
+    "currency_code": "UAH",
+    "currency_name": "Hryvnia",
+    "match_strings": ["Ukraine", "UA", "אוקראינה"]
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "emoji": "🇷🇴",
+    "currency_code": "RON",
+    "currency_name": "Leu",
+    "match_strings": ["Romania", "RO", "רומניה"]
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "emoji": "🇧🇬",
+    "currency_code": "BGN",
+    "currency_name": "Lev",
+    "match_strings": ["Bulgaria", "BG", "בולגריה"]
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "emoji": "🇭🇷",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Croatia", "HR", "קרואטיה"]
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "emoji": "🇷🇸",
+    "currency_code": "RSD",
+    "currency_name": "Serbian Dinar",
+    "match_strings": ["Serbia", "RS", "סרביה"]
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "emoji": "🇸🇮",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Slovenia", "SI", "סלובניה"]
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "emoji": "🇸🇰",
+    "currency_code": "EUR",
+    "currency_name": "Euro",
+    "match_strings": ["Slovakia", "SK", "סלובקיה"]
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "emoji": "🇮🇸",
+    "currency_code": "ISK",
+    "currency_name": "Icelandic Króna",
+    "match_strings": ["Iceland", "IS", "איסלנד"]
   },
   {
     "name": "Global",
@@ -173,7 +549,7 @@
     "emoji": "🌎",
     "currency_code": "USD",
     "currency_name": "Basket",
-    "match_strings": ["Global", "World", "All Country", "ACWI", "VT", "SSAC", "MSCI WORLD", "גלובלי", "עולמי", "Clean Edge", "SGIIF"]
+    "match_strings": ["Global", "World", "All Country", "ACWI", "VT", "SSAC", "MSCI WORLD", "גלובלי", "עולמי", "Clean Edge", "SGIIF", "Vanguard Total World", "URTH", "IOO"]
   },
   {
     "name": "Emerging Markets",
@@ -181,7 +557,7 @@
     "emoji": "🏗️",
     "currency_code": "USD",
     "currency_name": "Basket",
-    "match_strings": ["Emerging Markets", "Emerging", "שווקים מתעוררים"]
+    "match_strings": ["Emerging Markets", "Emerging", "שווקים מתעוררים", "VWO", "EEM", "IEMG", "SCHE"]
   },
   {
     "name": "Pacific",
@@ -189,6 +565,6 @@
     "emoji": "🌏",
     "currency_code": "USD",
     "currency_name": "Basket",
-    "match_strings": ["Pacific", "פסיפיק"]
+    "match_strings": ["Pacific", "פסיפיק", "VPL", "IPAC"]
   }
 ]
