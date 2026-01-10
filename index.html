@@ -290,7 +290,6 @@
                         show: true, 
                         color: colors.text,
                         formatter: function(params) {
-                            // CUSTOM LABEL FORMATTER TO FIX 0% ISSUE
                             if (params.percent < 0.01 && params.percent > 0) return params.name + '\n< 0.01%';
                             return params.name + '\n' + params.percent + '%';
                         }

@@ -1,24 +1,24 @@
 {
   "fundName": "מור פנסיה כללית - כספי (שקלי)",
   "trackId": "13926",
-  "totalAssetsBN": 0.0,
+  "totalAssetsBN": 0.000261569,
   "formattedTotalAssets": "261.57K",
   "assetClasses": [
     {
       "name": "Bonds",
-      "value": 0.0003,
+      "value": 0.000252509,
       "formattedValue": "252.51K",
       "percentage": 96.54
     },
     {
       "name": "Cash & Equivalents",
-      "value": 0.0,
+      "value": 5.318e-06,
       "formattedValue": "5.32K",
       "percentage": 2.03
     },
     {
       "name": "Other Assets",
-      "value": 0.0,
+      "value": 3.741e-06,
       "formattedValue": "3.74K",
       "percentage": 1.43
     }
@@ -27,7 +27,7 @@
     "Other Assets": [
       {
         "subclass": "General",
-        "value": 0.0,
+        "value": 3.741e-06,
         "formattedValue": "3.74K",
         "percentageOfClass": 100.0,
         "itemCount": 3,
@@ -36,21 +36,21 @@
           [
             {
               "name": "חוז שונות",
-              "value": 0.0,
+              "value": 3.724e-06,
               "formattedValue": "3.72K",
               "percentage": 99.54,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ריבית עוש לקבל",
-              "value": 0.0,
+              "value": 1.9e-08,
               "formattedValue": "0.02K",
               "percentage": 0.5,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "הפרשי רטרו",
-              "value": -0.0,
+              "value": -1e-09,
               "formattedValue": "-0.00K",
               "percentage": -0.04,
               "countryEmoji": "🇮🇱"
@@ -62,7 +62,7 @@
     "Cash & Equivalents": [
       {
         "subclass": "Cash",
-        "value": 0.0,
+        "value": 5.318e-06,
         "formattedValue": "5.32K",
         "percentageOfClass": 100.0,
         "itemCount": 2,
@@ -71,7 +71,7 @@
           [
             {
               "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.0,
+              "value": 5.318e-06,
               "formattedValue": "5.32K",
               "percentage": 99.99,
               "countryEmoji": "🇮🇱"
@@ -90,7 +90,7 @@
     "Bonds": [
       {
         "subclass": "Government Bonds",
-        "value": 0.0003,
+        "value": 0.000252509,
         "formattedValue": "252.51K",
         "percentageOfClass": 100.0,
         "itemCount": 6,
@@ -99,42 +99,42 @@
           [
             {
               "name": "ממשל משתנה 1130",
-              "value": 0.0001,
+              "value": 0.000149015,
               "formattedValue": "149.01K",
               "percentage": 59.01,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 616",
-              "value": 0.0,
+              "value": 4.4845e-05,
               "formattedValue": "44.84K",
               "percentage": 17.76,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 516",
-              "value": 0.0,
+              "value": 3.77e-05,
               "formattedValue": "37.70K",
               "percentage": 14.93,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ממשל קצרה 11/25",
-              "value": 0.0,
+              "value": 9.936e-06,
               "formattedValue": "9.94K",
               "percentage": 3.93,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מ.ק.מ. 316",
-              "value": 0.0,
+              "value": 5.899e-06,
               "formattedValue": "5.90K",
               "percentage": 2.34,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ממשל קצרה 02/26",
-              "value": 0.0,
+              "value": 5.115e-06,
               "formattedValue": "5.12K",
               "percentage": 2.03,
               "countryEmoji": "🇮🇱"
@@ -147,22 +147,22 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.000262,
+      "value": 0.000261572,
       "formattedValue": "261.57K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.000253,
+          "value": 0.000252509,
           "formattedValue": "252.51K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 5e-06,
+          "value": 5.318e-06,
           "formattedValue": "5.32K"
         },
         {
           "name": "Other Assets",
-          "value": 4e-06,
+          "value": 3.744e-06,
           "formattedValue": "3.74K"
         }
       ]
@@ -171,22 +171,22 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.000262,
+      "value": 0.000261571,
       "formattedValue": "261.57K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.000253,
+          "value": 0.000252509,
           "formattedValue": "252.51K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 5e-06,
+          "value": 5.318e-06,
           "formattedValue": "5.32K"
         },
         {
           "name": "Other Assets",
-          "value": 4e-06,
+          "value": 3.744e-06,
           "formattedValue": "3.74K"
         }
       ]
@@ -207,36 +207,36 @@
   "sectorSunburst": [
     {
       "name": "Bonds",
-      "value": 0.000253,
+      "value": 0.000252509,
       "formattedValue": "252.51K",
       "children": [
         {
           "name": "Government / General",
-          "value": 0.000253,
+          "value": 0.000252509,
           "formattedValue": "252.51K"
         }
       ]
     },
     {
       "name": "Cash & Equivalents",
-      "value": 5e-06,
+      "value": 5.318e-06,
       "formattedValue": "5.32K",
       "children": [
         {
           "name": "Liquidity",
-          "value": 5e-06,
+          "value": 5.318e-06,
           "formattedValue": "5.32K"
         }
       ]
     },
     {
       "name": "Other Assets",
-      "value": 4e-06,
+      "value": 3.744e-06,
       "formattedValue": "3.74K",
       "children": [
         {
           "name": "General",
-          "value": 4e-06,
+          "value": 3.744e-06,
           "formattedValue": "3.74K"
         }
       ]

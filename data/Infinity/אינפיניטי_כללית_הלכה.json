@@ -1,30 +1,30 @@
 {
   "fundName": "אינפיניטי כללית הלכה",
   "trackId": "14049",
-  "totalAssetsBN": 0.0,
+  "totalAssetsBN": 0.001858248,
   "formattedTotalAssets": "1.86M",
   "assetClasses": [
     {
       "name": "Bonds",
-      "value": 0.0009,
+      "value": 0.000932813,
       "formattedValue": "932.81K",
       "percentage": 50.2
     },
     {
       "name": "Stocks",
-      "value": 0.0007,
+      "value": 0.000746188,
       "formattedValue": "746.19K",
       "percentage": 40.16
     },
     {
       "name": "Cash & Equivalents",
-      "value": 0.0002,
+      "value": 0.000180378,
       "formattedValue": "180.38K",
       "percentage": 9.71
     },
     {
       "name": "Futures",
-      "value": -0.0,
+      "value": -1.131e-06,
       "formattedValue": "-1.13K",
       "percentage": -0.06
     }
@@ -33,7 +33,7 @@
     "Cash & Equivalents": [
       {
         "subclass": "Cash",
-        "value": 0.0002,
+        "value": 0.000180378,
         "formattedValue": "180.38K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
@@ -42,7 +42,7 @@
           [
             {
               "name": "מזרחי",
-              "value": 0.0002,
+              "value": 0.000180378,
               "formattedValue": "180.38K",
               "percentage": 100.0,
               "countryEmoji": "🇮🇱"
@@ -54,7 +54,7 @@
     "Stocks": [
       {
         "subclass": "ETFs",
-        "value": 0.0007,
+        "value": 0.000746188,
         "formattedValue": "746.19K",
         "percentageOfClass": 100.0,
         "itemCount": 5,
@@ -63,35 +63,35 @@
           [
             {
               "name": "אי.בי.אי סל MSCI AC",
-              "value": 0.0002,
+              "value": 0.000181104,
               "formattedValue": "181.10K",
               "percentage": 24.27,
               "countryEmoji": "🌎"
             },
             {
               "name": "MTF סל (4D) MSCI AC",
-              "value": 0.0002,
+              "value": 0.000177504,
               "formattedValue": "177.50K",
               "percentage": 23.79,
               "countryEmoji": "🌎"
             },
             {
               "name": "תכלית סל (D4) MSCI A",
-              "value": 0.0002,
+              "value": 0.000150832,
               "formattedValue": "150.83K",
               "percentage": 20.21,
               "countryEmoji": "🌎"
             },
             {
               "name": "הראל סל (MSCI AC WOR",
-              "value": 0.0001,
+              "value": 0.000130734,
               "formattedValue": "130.73K",
               "percentage": 17.52,
               "countryEmoji": "🌎"
             },
             {
               "name": "קסם MSCI AC WORLD (D",
-              "value": 0.0001,
+              "value": 0.000106014,
               "formattedValue": "106.01K",
               "percentage": 14.21,
               "countryEmoji": "🌎"
@@ -103,7 +103,7 @@
     "Bonds": [
       {
         "subclass": "Government Bonds",
-        "value": 0.0009,
+        "value": 0.000896763,
         "formattedValue": "896.76K",
         "percentageOfClass": 96.14,
         "itemCount": 2,
@@ -112,14 +112,14 @@
           [
             {
               "name": "T 14/5/26",
-              "value": 0.0008,
+              "value": 0.000804614,
               "formattedValue": "804.61K",
               "percentage": 89.72,
               "countryEmoji": "🇺🇸"
             },
             {
               "name": "מ.ק.מ.     1115",
-              "value": 0.0001,
+              "value": 9.2149e-05,
               "formattedValue": "92.15K",
               "percentage": 10.28,
               "countryEmoji": "🇮🇱"
@@ -129,7 +129,7 @@
       },
       {
         "subclass": "ETFs",
-        "value": 0.0,
+        "value": 3.605e-05,
         "formattedValue": "36.05K",
         "percentageOfClass": 3.86,
         "itemCount": 1,
@@ -138,7 +138,7 @@
           [
             {
               "name": "קסם EFT‏(00) תל בונד",
-              "value": 0.0,
+              "value": 3.605e-05,
               "formattedValue": "36.05K",
               "percentage": 100.0,
               "countryEmoji": "🇮🇱"
@@ -150,7 +150,7 @@
     "Futures": [
       {
         "subclass": "General",
-        "value": -0.0,
+        "value": -1.131e-06,
         "formattedValue": "-1.13K",
         "percentageOfClass": 100.0,
         "itemCount": 1,
@@ -159,7 +159,7 @@
           [
             {
               "name": "F - 12/25 MSCI",
-              "value": -0.0,
+              "value": -1.131e-06,
               "formattedValue": "-1.13K",
               "percentage": 100.0,
               "countryEmoji": "🇪🇺"
@@ -172,53 +172,53 @@
   "geoSunburst": [
     {
       "name": "United States",
-      "value": 0.000805,
+      "value": 0.000804614,
       "formattedValue": "804.61K",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.000805,
+          "value": 0.000804614,
           "formattedValue": "804.61K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.000746,
+      "value": 0.000746188,
       "formattedValue": "746.19K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000746,
+          "value": 0.000746188,
           "formattedValue": "746.19K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.000309,
+      "value": 0.000308577,
       "formattedValue": "308.58K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 0.00018,
+          "value": 0.000180378,
           "formattedValue": "180.38K"
         },
         {
           "name": "Bonds",
-          "value": 0.000128,
+          "value": 0.000128199,
           "formattedValue": "128.20K"
         }
       ]
     },
     {
       "name": "Eurozone",
-      "value": 1e-06,
+      "value": 1.131e-06,
       "formattedValue": "1.13K",
       "children": [
         {
           "name": "Futures",
-          "value": 1e-06,
+          "value": 1.131e-06,
           "formattedValue": "1.13K"
         }
       ]
@@ -227,61 +227,61 @@
   "currencySunburst": [
     {
       "name": "USD",
-      "value": 0.001025,
+      "value": 0.001025246,
       "formattedValue": "1.03M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.000805,
+          "value": 0.000804614,
           "formattedValue": "804.61K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.000113,
+          "value": 0.000113487,
           "formattedValue": "113.49K"
         },
         {
           "name": "Stocks",
-          "value": 0.000106,
+          "value": 0.000106014,
           "formattedValue": "106.01K"
         },
         {
           "name": "Futures",
-          "value": 1e-06,
+          "value": 1.131e-06,
           "formattedValue": "1.13K"
         }
       ]
     },
     {
       "name": "ILS",
-      "value": 0.000796,
+      "value": 0.000796263,
       "formattedValue": "796.26K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.00064,
+          "value": 0.000640174,
           "formattedValue": "640.17K"
         },
         {
           "name": "Bonds",
-          "value": 0.000128,
+          "value": 0.000128199,
           "formattedValue": "128.20K"
         },
         {
           "name": "Cash & Equivalents",
-          "value": 2.8e-05,
+          "value": 2.789e-05,
           "formattedValue": "27.89K"
         }
       ]
     },
     {
       "name": "EUR",
-      "value": 3.9e-05,
+      "value": 3.9001e-05,
       "formattedValue": "39.00K",
       "children": [
         {
           "name": "Cash & Equivalents",
-          "value": 3.9e-05,
+          "value": 3.9001e-05,
           "formattedValue": "39.00K"
         }
       ]
@@ -290,48 +290,48 @@
   "sectorSunburst": [
     {
       "name": "Bonds",
-      "value": 0.000933,
+      "value": 0.000932813,
       "formattedValue": "932.81K",
       "children": [
         {
           "name": "Government / General",
-          "value": 0.000933,
+          "value": 0.000932813,
           "formattedValue": "932.81K"
         }
       ]
     },
     {
       "name": "Stocks",
-      "value": 0.000746,
+      "value": 0.000746188,
       "formattedValue": "746.19K",
       "children": [
         {
           "name": "General",
-          "value": 0.000746,
+          "value": 0.000746188,
           "formattedValue": "746.19K"
         }
       ]
     },
     {
       "name": "Cash & Equivalents",
-      "value": 0.00018,
+      "value": 0.000180378,
       "formattedValue": "180.38K",
       "children": [
         {
           "name": "Liquidity",
-          "value": 0.00018,
+          "value": 0.000180378,
           "formattedValue": "180.38K"
         }
       ]
     },
     {
       "name": "Futures",
-      "value": 1e-06,
+      "value": 1.131e-06,
       "formattedValue": "1.13K",
       "children": [
         {
           "name": "General",
-          "value": 1e-06,
+          "value": 1.131e-06,
           "formattedValue": "1.13K"
         }
       ]

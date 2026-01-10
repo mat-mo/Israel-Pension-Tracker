@@ -43,6 +43,9 @@ COUNTRY_COLUMNS = [
 # Currency Columns
 CURRENCY_COLUMNS = ["מטבע פעילות", "מטבע", "סוג מטבע", "בסיס הצמדה", "Currency", "Linkage Base"]
 
+# Sector Columns
+SECTOR_COLUMNS = ["ענף מסחר", "ענף", "סקטור", "Sector", "Industry", "Trade Sector"]
+
 FILE_MAPPING = {
     "מזומנים": ("Cash & Equivalents", "Cash"),
     "פיקדונות": ("Cash & Equivalents", "Deposits"),
@@ -89,7 +92,9 @@ def load_mappings():
     try:
         with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
             data_list = json.load(f)
-        if not isinstance(data_list, list): return False
+        if not isinstance(data_list, list): 
+            log("[!!!] JSON Error: Expected a List of objects.")
+            return False
 
         count = 0
         for entry in data_list:
@@ -97,6 +102,7 @@ def load_mappings():
             name = entry.get("name", "Unknown")
             curr_code = entry.get("currency_code", "ILS")
             matches = entry.get("match_strings", [])
+            
             EMOJI_TO_NAME[emoji] = name
             for s in matches:
                 clean_s = str(s).strip()
@@ -105,7 +111,7 @@ def load_mappings():
                 if len(clean_s) > 2:
                     CURRENCY_LOOKUP[clean_s.lower()] = curr_code
             count += 1
-        log(f"Mappings loaded successfully for {count} entries.")
+        log(f"Mappings loaded successfully for {count} regions.")
         return True
     except Exception as e:
         log(f"[!!!] Error loading mappings: {e}")
@@ -298,6 +304,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
+                # HIGH PRECISION FIX: Keeps small ETFs alive
                 if abs(val_bn) < 1e-12: continue 
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
