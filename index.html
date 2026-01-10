@@ -555,7 +555,11 @@
                 if (totalPortfolioValue > 0) {
                     globalShare = ((params.value / totalPortfolioValue) * 100).toFixed(2);
                 }
-                        return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`;
+                        return `<b>${params.name}</b><br/>
+                    Value: ${params.data.formattedValue}<br/>
+                    <hr style="border-color: ${colors.borderColor}; margin: 5px 0;">
+                    Share of ${categoryName}: <b>${localShare}%</b><br/>
+                    Share of Portfolio: <b>${globalShare}%</b>`;
                     } 
                 },
                 series: [{
