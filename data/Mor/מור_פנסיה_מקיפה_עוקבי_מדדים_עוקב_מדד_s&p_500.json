@@ -1,44 +1,38 @@
 {
   "fundName": "מור פנסיה מקיפה עוקבי מדדים עוקב מדד s&p 500",
   "trackId": "15266",
-  "totalAssetsBN": 0.37,
-  "formattedTotalAssets": "374.51M",
+  "totalAssetsBN": 0.23,
+  "formattedTotalAssets": "234.50M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.14,
-      "formattedValue": "140.01M",
-      "percentage": 37.39
-    },
     {
       "name": "Bonds",
       "value": 0.1294,
       "formattedValue": "129.43M",
-      "percentage": 34.56
+      "percentage": 55.19
     },
     {
       "name": "Stocks",
       "value": 0.1017,
       "formattedValue": "101.66M",
-      "percentage": 27.14
+      "percentage": 43.35
     },
     {
       "name": "Other Assets",
       "value": 0.0081,
       "formattedValue": "8.07M",
-      "percentage": 2.15
+      "percentage": 3.44
     },
     {
       "name": "Futures",
       "value": 0.0023,
       "formattedValue": "2.30M",
-      "percentage": 0.61
+      "percentage": 0.98
     },
     {
       "name": "Derivatives",
       "value": -0.007,
       "formattedValue": "-6.95M",
-      "percentage": -1.86
+      "percentage": -2.96
     }
   ],
   "breakdown": {
@@ -85,34 +79,6 @@
               "value": -0.0001,
               "formattedValue": "-96.36K",
               "percentage": -1.19,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.14,
-        "formattedValue": "140.01M",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.14,
-              "formattedValue": "139.99M",
-              "percentage": 99.98,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק המזרחי המאוחד בע\"מ",
-              "value": 0.0,
-              "formattedValue": "24.09K",
-              "percentage": 0.02,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -284,14 +250,9 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.2847,
-      "formattedValue": "284.66M",
+      "value": 0.1446,
+      "formattedValue": "144.64M",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.14,
-          "formattedValue": "140.02M"
-        },
         {
           "name": "Bonds",
           "value": 0.1294,

@@ -2,31 +2,19 @@
   "fundName": "אינפיניטי מסלול בסיסי למקבלי קצבה",
   "trackId": "14043",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "10.21M",
+  "formattedTotalAssets": "7.16M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0038,
       "formattedValue": "3.82M",
-      "percentage": 37.42
+      "percentage": 53.34
     },
     {
       "name": "Stocks",
       "value": 0.0033,
       "formattedValue": "3.34M",
-      "percentage": 32.73
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.003,
-      "formattedValue": "2.98M",
-      "percentage": 29.16
-    },
-    {
-      "name": "Non-Tradable Bonds",
-      "value": 0.0001,
-      "formattedValue": "70.28K",
-      "percentage": 0.69
+      "percentage": 46.66
     }
   ],
   "breakdown": {
@@ -468,27 +456,6 @@
         ]
       }
     ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.003,
-        "formattedValue": "2.98M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.003,
-              "formattedValue": "2.98M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -518,7 +485,7 @@
               "value": 0.0003,
               "formattedValue": "260.46K",
               "percentage": 10.78,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הראל S&P 500 Equal W",
@@ -662,7 +629,7 @@
               "value": 0.0,
               "formattedValue": "13.04K",
               "percentage": 0.54,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הראל סל NDX 100",
@@ -720,7 +687,7 @@
               "value": 0.0,
               "formattedValue": "0.34K",
               "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "קסם A4)ETF) תא 35",
@@ -1060,41 +1027,13 @@
           ]
         ]
       }
-    ],
-    "Non-Tradable Bonds": [
-      {
-        "subclass": "General",
-        "value": 0.0001,
-        "formattedValue": "70.28K",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "ערד 8911",
-              "value": 0.0,
-              "formattedValue": "35.40K",
-              "percentage": 50.38,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8912",
-              "value": 0.0,
-              "formattedValue": "34.88K",
-              "percentage": 49.62,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0087,
-      "formattedValue": "8.75M",
+      "value": 0.0055,
+      "formattedValue": "5.50M",
       "children": [
         {
           "name": "Bonds",
@@ -1102,14 +1041,9 @@
           "formattedValue": "3.82M"
         },
         {
-          "name": "Cash & Equivalents",
-          "value": 0.003,
-          "formattedValue": "2.98M"
-        },
-        {
           "name": "Stocks",
-          "value": 0.002,
-          "formattedValue": "1.95M"
+          "value": 0.0017,
+          "formattedValue": "1.68M"
         }
       ]
     },
@@ -1122,6 +1056,18 @@
           "name": "Stocks",
           "value": 0.0014,
           "formattedValue": "1.39M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0003,
+      "formattedValue": "273.84K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0003,
+          "formattedValue": "273.84K"
         }
       ]
     }

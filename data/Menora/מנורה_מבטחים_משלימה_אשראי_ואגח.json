@@ -2,61 +2,55 @@
   "fundName": "מנורה מבטחים משלימה אשראי ואג\"ח",
   "trackId": "13351",
   "totalAssetsBN": 0.03,
-  "formattedTotalAssets": "33.20M",
+  "formattedTotalAssets": "30.30M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0239,
       "formattedValue": "23.90M",
-      "percentage": 71.98
+      "percentage": 78.89
     },
     {
       "name": "Stocks",
       "value": 0.005,
       "formattedValue": "5.04M",
-      "percentage": 15.17
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0029,
-      "formattedValue": "2.92M",
-      "percentage": 8.8
+      "percentage": 16.62
     },
     {
       "name": "Mutual Funds",
       "value": 0.0011,
       "formattedValue": "1.08M",
-      "percentage": 3.26
+      "percentage": 3.57
     },
     {
       "name": "Structured Products",
       "value": 0.0002,
       "formattedValue": "167.92K",
-      "percentage": 0.51
+      "percentage": 0.55
     },
     {
       "name": "Derivatives",
       "value": 0.0001,
       "formattedValue": "75.69K",
-      "percentage": 0.23
+      "percentage": 0.25
+    },
+    {
+      "name": "Options",
+      "value": 0.0,
+      "formattedValue": "17.17K",
+      "percentage": 0.06
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0,
+      "formattedValue": "7.71K",
+      "percentage": 0.03
     },
     {
       "name": "Futures",
       "value": 0.0,
       "formattedValue": "9.09K",
       "percentage": 0.03
-    },
-    {
-      "name": "Other Assets",
-      "value": 0.0,
-      "formattedValue": "7.71K",
-      "percentage": 0.02
-    },
-    {
-      "name": "Options",
-      "value": 0.0,
-      "formattedValue": "3.52K",
-      "percentage": 0.01
     },
     {
       "name": "Warrants",
@@ -3475,14 +3469,14 @@
               "value": 0.0,
               "formattedValue": "0.16K",
               "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "פלאזה סנטר אג\"ח ב",
               "value": 0.0,
               "formattedValue": "0.04K",
               "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             }
           ]
         ]
@@ -3699,7 +3693,7 @@
               "value": 0.0,
               "formattedValue": "1.74K",
               "percentage": 2.3,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "BCMETESS",
@@ -3736,7 +3730,7 @@
               "value": 0.0,
               "formattedValue": "0.98K",
               "percentage": 1.3,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "JPHCMEN",
@@ -3750,7 +3744,7 @@
               "value": 0.0,
               "formattedValue": "0.76K",
               "percentage": 1.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "DABJFNNL",
@@ -3794,7 +3788,7 @@
               "value": -0.0,
               "formattedValue": "-7.91K",
               "percentage": -10.45,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             }
           ]
         ]
@@ -3863,6 +3857,497 @@
               "formattedValue": "0.04K",
               "percentage": 12.64,
               "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Options": [
+      {
+        "subclass": "Non-Tradable",
+        "value": 0.0,
+        "formattedValue": "13.64K",
+        "percentageOfClass": 79.49,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "BEZQ IT C001 09.07.2026",
+              "value": 0.0,
+              "formattedValue": "6.52K",
+              "percentage": 47.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "PHOE IT C001 04.08.2026",
+              "value": 0.0,
+              "formattedValue": "2.75K",
+              "percentage": 20.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "PHOE IT C001 28.07.2026",
+              "value": 0.0,
+              "formattedValue": "1.97K",
+              "percentage": 14.47,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "PTNR IT C001 13.07.2026",
+              "value": 0.0,
+              "formattedValue": "1.75K",
+              "percentage": 12.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CEL IT C001 24/06/2026",
+              "value": 0.0,
+              "formattedValue": "0.65K",
+              "percentage": 4.74,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      },
+      {
+        "subclass": "Tradable",
+        "value": 0.0,
+        "formattedValue": "3.52K",
+        "percentageOfClass": 20.51,
+        "itemCount": 60,
+        "totalPages": 6,
+        "holdingsPages": [
+          [
+            {
+              "name": "TLT US 16/01/2026 C87",
+              "value": 0.0,
+              "formattedValue": "3.15K",
+              "percentage": 89.53,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KWEB US C40 20/02/26",
+              "value": 0.0,
+              "formattedValue": "2.32K",
+              "percentage": 65.84,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "TLT US 16/01/2026 C86",
+              "value": 0.0,
+              "formattedValue": "2.22K",
+              "percentage": 63.17,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KWEB US C38 16/01/26",
+              "value": 0.0,
+              "formattedValue": "1.54K",
+              "percentage": 43.78,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KRE C60 16/01/26",
+              "value": 0.0,
+              "formattedValue": "1.35K",
+              "percentage": 38.48,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SEDG US 17/10/2025 C25",
+              "value": 0.0,
+              "formattedValue": "1.20K",
+              "percentage": 34.13,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ORA C80 19/12/2025",
+              "value": 0.0,
+              "formattedValue": "0.89K",
+              "percentage": 25.28,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SPXW P6400 31/10/25",
+              "value": 0.0,
+              "formattedValue": "0.61K",
+              "percentage": 17.26,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ALB US C100 16/01/26",
+              "value": 0.0,
+              "formattedValue": "0.58K",
+              "percentage": 16.58,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "RRC US C45 19/12/25",
+              "value": 0.0,
+              "formattedValue": "0.40K",
+              "percentage": 11.37,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "CAMT C95 21/11/25",
+              "value": 0.0,
+              "formattedValue": "0.37K",
+              "percentage": 10.63,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "SEDG US 19/12/2025 C22.5",
+              "value": 0.0,
+              "formattedValue": "0.37K",
+              "percentage": 10.45,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "WIX C160 19/12/25",
+              "value": 0.0,
+              "formattedValue": "0.27K",
+              "percentage": 7.62,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "PN C12000 OCT25",
+              "value": 0.0,
+              "formattedValue": "0.23K",
+              "percentage": 6.46,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "TEVA C17 16/01/26",
+              "value": 0.0,
+              "formattedValue": "0.20K",
+              "percentage": 5.65,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "NVMI P300 20/02/2026",
+              "value": 0.0,
+              "formattedValue": "0.18K",
+              "percentage": 5.11,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "NVMI P270 21/11/25",
+              "value": 0.0,
+              "formattedValue": "0.08K",
+              "percentage": 2.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "NICE US C165 17/10/25",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.33,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "SEDG US 17/10/2025 P20",
+              "value": -0.0,
+              "formattedValue": "-0.00K",
+              "percentage": -0.05,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SEDG P20 17/10/2025",
+              "value": -0.0,
+              "formattedValue": "-0.00K",
+              "percentage": -0.07,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "ODD 16/01/26 C90",
+              "value": -0.0,
+              "formattedValue": "-0.01K",
+              "percentage": -0.19,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ODD 16/01/26 C95",
+              "value": -0.0,
+              "formattedValue": "-0.01K",
+              "percentage": -0.19,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "NICE US C185 17/10/25",
+              "value": -0.0,
+              "formattedValue": "-0.01K",
+              "percentage": -0.29,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "TEVA P15 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.01K",
+              "percentage": -0.35,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "WIX C240 19/12/25",
+              "value": -0.0,
+              "formattedValue": "-0.03K",
+              "percentage": -0.84,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "NVMI P230 20/02/2026",
+              "value": -0.0,
+              "formattedValue": "-0.04K",
+              "percentage": -1.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ODD 15/01/27 C95",
+              "value": -0.0,
+              "formattedValue": "-0.06K",
+              "percentage": -1.61,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ODD 15/01/27 C90",
+              "value": -0.0,
+              "formattedValue": "-0.06K",
+              "percentage": -1.7,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "NICE US P140 17/10/25",
+              "value": -0.0,
+              "formattedValue": "-0.06K",
+              "percentage": -1.79,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "PN P12000 OCT25",
+              "value": -0.0,
+              "formattedValue": "-0.08K",
+              "percentage": -2.27,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "TEVA C21 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.08K",
+              "percentage": -2.29,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KWEB US P32 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.09K",
+              "percentage": -2.57,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "VRNS C70 20/03/26",
+              "value": -0.0,
+              "formattedValue": "-0.10K",
+              "percentage": -2.81,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "CAMT C115 20/02/26",
+              "value": -0.0,
+              "formattedValue": "-0.10K",
+              "percentage": -2.82,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CAMT C115 21/11/25",
+              "value": -0.0,
+              "formattedValue": "-0.12K",
+              "percentage": -3.27,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "VRNS C65 20/03/26",
+              "value": -0.0,
+              "formattedValue": "-0.13K",
+              "percentage": -3.77,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KWEB US P32 20/02/26",
+              "value": -0.0,
+              "formattedValue": "-0.14K",
+              "percentage": -3.98,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "NVMI C360 20/02/2026",
+              "value": -0.0,
+              "formattedValue": "-0.15K",
+              "percentage": -4.4,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "KRE C74 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.16K",
+              "percentage": -4.58,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SPXW P6000 31/10/25",
+              "value": -0.0,
+              "formattedValue": "-0.19K",
+              "percentage": -5.52,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "SEDG US 19/12/2025 C32.5",
+              "value": -0.0,
+              "formattedValue": "-0.20K",
+              "percentage": -5.65,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SEDG US 19/12/2025 C35",
+              "value": -0.0,
+              "formattedValue": "-0.20K",
+              "percentage": -5.66,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ALB US C120 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.23K",
+              "percentage": -6.51,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "GRAB C6 17/04/26",
+              "value": -0.0,
+              "formattedValue": "-0.25K",
+              "percentage": -7.02,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "RRC US P35 19/12/25",
+              "value": -0.0,
+              "formattedValue": "-0.29K",
+              "percentage": -8.27,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KRE P54 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.29K",
+              "percentage": -8.29,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ALB US P60 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.29K",
+              "percentage": -8.37,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "GRAB C7 17/04/26",
+              "value": -0.0,
+              "formattedValue": "-0.33K",
+              "percentage": -9.51,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "RRC US C40 19/12/25",
+              "value": -0.0,
+              "formattedValue": "-0.34K",
+              "percentage": -9.63,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SEDG US 17/10/2025 C35",
+              "value": -0.0,
+              "formattedValue": "-0.34K",
+              "percentage": -9.77,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "KWEB US C47 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-0.35K",
+              "percentage": -10.03,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "ORA C90 19/12/2025",
+              "value": -0.0,
+              "formattedValue": "-0.42K",
+              "percentage": -11.98,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "KWEB US C50 20/02/26",
+              "value": -0.0,
+              "formattedValue": "-0.57K",
+              "percentage": -16.09,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "NVMI C310 21/11/25",
+              "value": -0.0,
+              "formattedValue": "-0.59K",
+              "percentage": -16.65,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "LYFT US C21 20/03/26",
+              "value": -0.0,
+              "formattedValue": "-0.59K",
+              "percentage": -16.72,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SEDG C35 20/03/2026",
+              "value": -0.0,
+              "formattedValue": "-0.81K",
+              "percentage": -23.08,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "TLT US 16/01/2026 P85",
+              "value": -0.0,
+              "formattedValue": "-0.99K",
+              "percentage": -28.08,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "TLT US 16/01/2026 C95",
+              "value": -0.0,
+              "formattedValue": "-1.12K",
+              "percentage": -31.8,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "OSCR C25 15/01/2027",
+              "value": -0.0,
+              "formattedValue": "-1.14K",
+              "percentage": -32.46,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SEDG US CALL 35 16/01/26",
+              "value": -0.0,
+              "formattedValue": "-1.47K",
+              "percentage": -41.79,
+              "countryEmoji": "🇺🇸"
             }
           ]
         ]
@@ -3976,7 +4461,7 @@
               "value": 0.0,
               "formattedValue": "0.13K",
               "percentage": 1.66,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "ALL US ALLSTATE CORP",
@@ -4262,7 +4747,7 @@
               "value": 0.0,
               "formattedValue": "44.23K",
               "percentage": 1.22,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "BRK/B US-Berkshire Hathaway",
@@ -5807,14 +6292,14 @@
               "value": 0.0,
               "formattedValue": "46.75K",
               "percentage": 3.29,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "X7PS GY- Banks DJ600 Source",
               "value": 0.0,
               "formattedValue": "41.17K",
               "percentage": 2.9,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "XLU-SPDR Utilities",
@@ -5916,7 +6401,7 @@
               "value": 0.0,
               "formattedValue": "26.66K",
               "percentage": 1.88,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "HXT CN EQUITY",
@@ -5951,7 +6436,7 @@
               "value": 0.0,
               "formattedValue": "22.99K",
               "percentage": 1.62,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "קסם ETF תא 125",
@@ -5981,7 +6466,7 @@
               "value": 0.0,
               "formattedValue": "20.20K",
               "percentage": 1.42,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "XLV-SPDR Health Care",
@@ -6030,7 +6515,7 @@
               "value": 0.0,
               "formattedValue": "15.08K",
               "percentage": 1.06,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "2837 JP Global X Japan Mid & Small Cap",
@@ -6067,7 +6552,7 @@
               "value": 0.0,
               "formattedValue": "12.37K",
               "percentage": 0.87,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "איביאי סל תא-ביטוח",
@@ -6132,500 +6617,7 @@
               "value": 0.0,
               "formattedValue": "0.05K",
               "percentage": 0.0,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0029,
-        "formattedValue": "2.92M",
-        "percentageOfClass": 100.0,
-        "itemCount": 5,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים בע''מ",
-              "value": 0.0019,
-              "formattedValue": "1.88M",
-              "percentage": 64.37,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.0005,
-              "formattedValue": "533.33K",
-              "percentage": 18.25,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "הבנק הבינלאומי הראשון לישראל בע\"מ",
-              "value": 0.0003,
-              "formattedValue": "280.20K",
-              "percentage": 9.59,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי טפחות בע\"מ",
-              "value": 0.0002,
-              "formattedValue": "230.93K",
-              "percentage": 7.9,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט לישראל בע\"מ",
-              "value": -0.0,
-              "formattedValue": "-3.58K",
-              "percentage": -0.12,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Options": [
-      {
-        "subclass": "Tradable",
-        "value": 0.0,
-        "formattedValue": "3.52K",
-        "percentageOfClass": 100.0,
-        "itemCount": 60,
-        "totalPages": 6,
-        "holdingsPages": [
-          [
-            {
-              "name": "TLT US 16/01/2026 C87",
-              "value": 0.0,
-              "formattedValue": "3.15K",
-              "percentage": 89.53,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KWEB US C40 20/02/26",
-              "value": 0.0,
-              "formattedValue": "2.32K",
-              "percentage": 65.84,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "TLT US 16/01/2026 C86",
-              "value": 0.0,
-              "formattedValue": "2.22K",
-              "percentage": 63.17,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KWEB US C38 16/01/26",
-              "value": 0.0,
-              "formattedValue": "1.54K",
-              "percentage": 43.78,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KRE C60 16/01/26",
-              "value": 0.0,
-              "formattedValue": "1.35K",
-              "percentage": 38.48,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SEDG US 17/10/2025 C25",
-              "value": 0.0,
-              "formattedValue": "1.20K",
-              "percentage": 34.13,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ORA C80 19/12/2025",
-              "value": 0.0,
-              "formattedValue": "0.89K",
-              "percentage": 25.28,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SPXW P6400 31/10/25",
-              "value": 0.0,
-              "formattedValue": "0.61K",
-              "percentage": 17.26,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ALB US C100 16/01/26",
-              "value": 0.0,
-              "formattedValue": "0.58K",
-              "percentage": 16.58,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "RRC US C45 19/12/25",
-              "value": 0.0,
-              "formattedValue": "0.40K",
-              "percentage": 11.37,
-              "countryEmoji": "🇺🇸"
-            }
-          ],
-          [
-            {
-              "name": "CAMT C95 21/11/25",
-              "value": 0.0,
-              "formattedValue": "0.37K",
-              "percentage": 10.63,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "SEDG US 19/12/2025 C22.5",
-              "value": 0.0,
-              "formattedValue": "0.37K",
-              "percentage": 10.45,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "WIX C160 19/12/25",
-              "value": 0.0,
-              "formattedValue": "0.27K",
-              "percentage": 7.62,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "PN C12000 OCT25",
-              "value": 0.0,
-              "formattedValue": "0.23K",
-              "percentage": 6.46,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TEVA C17 16/01/26",
-              "value": 0.0,
-              "formattedValue": "0.20K",
-              "percentage": 5.65,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "NVMI P300 20/02/2026",
-              "value": 0.0,
-              "formattedValue": "0.18K",
-              "percentage": 5.11,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "NVMI P270 21/11/25",
-              "value": 0.0,
-              "formattedValue": "0.08K",
-              "percentage": 2.16,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "NICE US C165 17/10/25",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.33,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "SEDG US 17/10/2025 P20",
-              "value": -0.0,
-              "formattedValue": "-0.00K",
-              "percentage": -0.05,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SEDG P20 17/10/2025",
-              "value": -0.0,
-              "formattedValue": "-0.00K",
-              "percentage": -0.07,
-              "countryEmoji": "🇺🇸"
-            }
-          ],
-          [
-            {
-              "name": "ODD 16/01/26 C90",
-              "value": -0.0,
-              "formattedValue": "-0.01K",
-              "percentage": -0.19,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ODD 16/01/26 C95",
-              "value": -0.0,
-              "formattedValue": "-0.01K",
-              "percentage": -0.19,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "NICE US C185 17/10/25",
-              "value": -0.0,
-              "formattedValue": "-0.01K",
-              "percentage": -0.29,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TEVA P15 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.01K",
-              "percentage": -0.35,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "WIX C240 19/12/25",
-              "value": -0.0,
-              "formattedValue": "-0.03K",
-              "percentage": -0.84,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "NVMI P230 20/02/2026",
-              "value": -0.0,
-              "formattedValue": "-0.04K",
-              "percentage": -1.12,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "ODD 15/01/27 C95",
-              "value": -0.0,
-              "formattedValue": "-0.06K",
-              "percentage": -1.61,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ODD 15/01/27 C90",
-              "value": -0.0,
-              "formattedValue": "-0.06K",
-              "percentage": -1.7,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "NICE US P140 17/10/25",
-              "value": -0.0,
-              "formattedValue": "-0.06K",
-              "percentage": -1.79,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "PN P12000 OCT25",
-              "value": -0.0,
-              "formattedValue": "-0.08K",
-              "percentage": -2.27,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "TEVA C21 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.08K",
-              "percentage": -2.29,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KWEB US P32 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.09K",
-              "percentage": -2.57,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "VRNS C70 20/03/26",
-              "value": -0.0,
-              "formattedValue": "-0.10K",
-              "percentage": -2.81,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "CAMT C115 20/02/26",
-              "value": -0.0,
-              "formattedValue": "-0.10K",
-              "percentage": -2.82,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "CAMT C115 21/11/25",
-              "value": -0.0,
-              "formattedValue": "-0.12K",
-              "percentage": -3.27,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "VRNS C65 20/03/26",
-              "value": -0.0,
-              "formattedValue": "-0.13K",
-              "percentage": -3.77,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KWEB US P32 20/02/26",
-              "value": -0.0,
-              "formattedValue": "-0.14K",
-              "percentage": -3.98,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "NVMI C360 20/02/2026",
-              "value": -0.0,
-              "formattedValue": "-0.15K",
-              "percentage": -4.4,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "KRE C74 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.16K",
-              "percentage": -4.58,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SPXW P6000 31/10/25",
-              "value": -0.0,
-              "formattedValue": "-0.19K",
-              "percentage": -5.52,
-              "countryEmoji": "🇺🇸"
-            }
-          ],
-          [
-            {
-              "name": "SEDG US 19/12/2025 C32.5",
-              "value": -0.0,
-              "formattedValue": "-0.20K",
-              "percentage": -5.65,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SEDG US 19/12/2025 C35",
-              "value": -0.0,
-              "formattedValue": "-0.20K",
-              "percentage": -5.66,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ALB US C120 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.23K",
-              "percentage": -6.51,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "GRAB C6 17/04/26",
-              "value": -0.0,
-              "formattedValue": "-0.25K",
-              "percentage": -7.02,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "RRC US P35 19/12/25",
-              "value": -0.0,
-              "formattedValue": "-0.29K",
-              "percentage": -8.27,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KRE P54 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.29K",
-              "percentage": -8.29,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ALB US P60 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.29K",
-              "percentage": -8.37,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "GRAB C7 17/04/26",
-              "value": -0.0,
-              "formattedValue": "-0.33K",
-              "percentage": -9.51,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "RRC US C40 19/12/25",
-              "value": -0.0,
-              "formattedValue": "-0.34K",
-              "percentage": -9.63,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SEDG US 17/10/2025 C35",
-              "value": -0.0,
-              "formattedValue": "-0.34K",
-              "percentage": -9.77,
-              "countryEmoji": "🇺🇸"
-            }
-          ],
-          [
-            {
-              "name": "KWEB US C47 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-0.35K",
-              "percentage": -10.03,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "ORA C90 19/12/2025",
-              "value": -0.0,
-              "formattedValue": "-0.42K",
-              "percentage": -11.98,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "KWEB US C50 20/02/26",
-              "value": -0.0,
-              "formattedValue": "-0.57K",
-              "percentage": -16.09,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "NVMI C310 21/11/25",
-              "value": -0.0,
-              "formattedValue": "-0.59K",
-              "percentage": -16.65,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "LYFT US C21 20/03/26",
-              "value": -0.0,
-              "formattedValue": "-0.59K",
-              "percentage": -16.72,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SEDG C35 20/03/2026",
-              "value": -0.0,
-              "formattedValue": "-0.81K",
-              "percentage": -23.08,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "TLT US 16/01/2026 P85",
-              "value": -0.0,
-              "formattedValue": "-0.99K",
-              "percentage": -28.08,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "TLT US 16/01/2026 C95",
-              "value": -0.0,
-              "formattedValue": "-1.12K",
-              "percentage": -31.8,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "OSCR C25 15/01/2027",
-              "value": -0.0,
-              "formattedValue": "-1.14K",
-              "percentage": -32.46,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SEDG US CALL 35 16/01/26",
-              "value": -0.0,
-              "formattedValue": "-1.47K",
-              "percentage": -41.79,
-              "countryEmoji": "🇺🇸"
+              "countryEmoji": "🇪🇺 "
             }
           ]
         ]
@@ -6774,7 +6766,7 @@
               "value": 0.0,
               "formattedValue": "9.90K",
               "percentage": 0.92,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "LION TRUST GLOBAL ALPHA FUND USD",
@@ -6874,28 +6866,28 @@
               "value": 0.0,
               "formattedValue": "27.43K",
               "percentage": 16.33,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "JUBIL 2024-29X B1 CLO",
               "value": 0.0,
               "formattedValue": "23.29K",
               "percentage": 13.87,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "JUBIL 2022-26X B1R CLO",
               "value": 0.0,
               "formattedValue": "20.69K",
               "percentage": 12.32,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "MDPKE 19X B1R 2 CLO",
               "value": 0.0,
               "formattedValue": "19.16K",
               "percentage": 11.41,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "MDPK 2018-31A B CLO",
@@ -7040,18 +7032,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0275,
-      "formattedValue": "27.52M",
+      "value": 0.0245,
+      "formattedValue": "24.48M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0228,
           "formattedValue": "22.76M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.003,
-          "formattedValue": "3.04M"
         },
         {
           "name": "Stocks",
@@ -7083,7 +7070,7 @@
       ]
     },
     {
-      "name": "Global",
+      "name": "🇪🇺 ",
       "value": 0.0002,
       "formattedValue": "185.27K",
       "children": [

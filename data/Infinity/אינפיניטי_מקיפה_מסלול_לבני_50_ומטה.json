@@ -1,32 +1,20 @@
 {
   "fundName": "אינפיניטי מקיפה מסלול לבני 50 ומטה",
   "trackId": "14037",
-  "totalAssetsBN": 0.37,
-  "formattedTotalAssets": "373.05M",
+  "totalAssetsBN": 0.34,
+  "formattedTotalAssets": "342.88M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.272,
       "formattedValue": "271.98M",
-      "percentage": 72.91
+      "percentage": 79.32
     },
     {
       "name": "Bonds",
       "value": 0.0709,
       "formattedValue": "70.87M",
-      "percentage": 19.0
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0294,
-      "formattedValue": "29.42M",
-      "percentage": 7.89
-    },
-    {
-      "name": "Non-Tradable Bonds",
-      "value": 0.0007,
-      "formattedValue": "745.48K",
-      "percentage": 0.2
+      "percentage": 20.67
     },
     {
       "name": "Futures",
@@ -669,27 +657,6 @@
         ]
       }
     ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0294,
-        "formattedValue": "29.42M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0294,
-              "formattedValue": "29.42M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -863,7 +830,7 @@
               "value": 0.0028,
               "formattedValue": "2.79M",
               "percentage": 1.67,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הראל סל NDX 100",
@@ -993,21 +960,21 @@
               "value": 0.0001,
               "formattedValue": "86.03K",
               "percentage": 0.05,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "MTF סל (4D) MSCI AC",
               "value": 0.0001,
               "formattedValue": "79.54K",
               "percentage": 0.05,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הראל סל (MSCI AC WOR",
               "value": 0.0001,
               "formattedValue": "70.52K",
               "percentage": 0.04,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "iShares USD Corp Bond 0-3yr ESG UCITS",
@@ -1021,7 +988,7 @@
               "value": 0.0,
               "formattedValue": "36.11K",
               "percentage": 0.02,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "אי.בי.אי סל(4D)  SP",
@@ -1657,48 +1624,6 @@
         ]
       }
     ],
-    "Non-Tradable Bonds": [
-      {
-        "subclass": "General",
-        "value": 0.0007,
-        "formattedValue": "745.48K",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "ערד 8912",
-              "value": 0.0003,
-              "formattedValue": "322.80K",
-              "percentage": 43.3,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8911",
-              "value": 0.0002,
-              "formattedValue": "214.79K",
-              "percentage": 28.81,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8909",
-              "value": 0.0002,
-              "formattedValue": "172.32K",
-              "percentage": 23.11,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8910",
-              "value": 0.0,
-              "formattedValue": "35.58K",
-              "percentage": 4.77,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Futures": [
       {
         "subclass": "General",
@@ -1724,23 +1649,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.2469,
-      "formattedValue": "246.94M",
+      "value": 0.2153,
+      "formattedValue": "215.33M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.1507,
-          "formattedValue": "150.69M"
+          "value": 0.1476,
+          "formattedValue": "147.63M"
         },
         {
           "name": "Bonds",
           "value": 0.0677,
           "formattedValue": "67.71M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0285,
-          "formattedValue": "28.55M"
         }
       ]
     },
@@ -1763,23 +1683,13 @@
     },
     {
       "name": "Global",
-      "value": 0.0036,
-      "formattedValue": "3.56M",
+      "value": 0.005,
+      "formattedValue": "4.98M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0019,
-          "formattedValue": "1.92M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0009,
-          "formattedValue": "895.20K"
-        },
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.0007,
-          "formattedValue": "745.48K"
+          "value": 0.005,
+          "formattedValue": "4.98M"
         }
       ]
     },

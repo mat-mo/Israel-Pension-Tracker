@@ -2,71 +2,16 @@
   "fundName": "מגדל מקפת משלימה כספי (שקלי)",
   "trackId": "2147",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "13.18M",
+  "formattedTotalAssets": "12.78M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0128,
       "formattedValue": "12.78M",
-      "percentage": 96.93
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0004,
-      "formattedValue": "405.28K",
-      "percentage": 3.07
+      "percentage": 100.0
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0004,
-        "formattedValue": "405.28K",
-        "percentageOfClass": 100.0,
-        "itemCount": 5,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.0003,
-              "formattedValue": "263.87K",
-              "percentage": 65.11,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט לישראל בע\"מ",
-              "value": 0.0001,
-              "formattedValue": "129.58K",
-              "percentage": 31.97,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים בע\"מ",
-              "value": 0.0,
-              "formattedValue": "8.53K",
-              "percentage": 2.11,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי טפחות בע\"מ",
-              "value": 0.0,
-              "formattedValue": "2.43K",
-              "percentage": 0.6,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "יובנק",
-              "value": 0.0,
-              "formattedValue": "0.87K",
-              "percentage": 0.21,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Bonds": [
       {
         "subclass": "Government Bonds",
@@ -502,18 +447,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0132,
-      "formattedValue": "13.18M",
+      "value": 0.0128,
+      "formattedValue": "12.78M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0128,
           "formattedValue": "12.78M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0004,
-          "formattedValue": "405.28K"
         }
       ]
     }

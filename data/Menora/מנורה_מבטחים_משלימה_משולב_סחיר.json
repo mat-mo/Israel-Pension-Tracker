@@ -2,31 +2,25 @@
   "fundName": "מנורה מבטחים משלימה משולב סחיר",
   "trackId": "14308",
   "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "22.49M",
+  "formattedTotalAssets": "21.73M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0144,
       "formattedValue": "14.41M",
-      "percentage": 64.05
+      "percentage": 66.3
     },
     {
       "name": "Bonds",
       "value": 0.0055,
       "formattedValue": "5.50M",
-      "percentage": 24.44
+      "percentage": 25.29
     },
     {
       "name": "Mutual Funds",
       "value": 0.0018,
       "formattedValue": "1.82M",
-      "percentage": 8.11
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0008,
-      "formattedValue": "760.43K",
-      "percentage": 3.38
+      "percentage": 8.4
     },
     {
       "name": "Other Assets",
@@ -52,34 +46,6 @@
               "formattedValue": "3.68K",
               "percentage": 100.0,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0008,
-        "formattedValue": "760.43K",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.0006,
-              "formattedValue": "571.44K",
-              "percentage": 75.15,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים בע''מ",
-              "value": 0.0002,
-              "formattedValue": "188.99K",
-              "percentage": 24.85,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -121,7 +87,7 @@
               "value": 0.0007,
               "formattedValue": "715.21K",
               "percentage": 13.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "תכלית סל תלבונד מאגר",
@@ -207,7 +173,7 @@
               "value": 0.0013,
               "formattedValue": "1.30M",
               "percentage": 9.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "T ROWE PRC CAP APPRECIATION",
@@ -385,35 +351,47 @@
     },
     {
       "name": "Israel",
-      "value": 0.0081,
-      "formattedValue": "8.08M",
+      "value": 0.0066,
+      "formattedValue": "6.61M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0055,
-          "formattedValue": "5.50M"
+          "value": 0.0048,
+          "formattedValue": "4.78M"
         },
         {
           "name": "Mutual Funds",
           "value": 0.0018,
           "formattedValue": "1.82M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0008,
-          "formattedValue": "760.43K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0036,
-      "formattedValue": "3.60M",
+      "value": 0.0023,
+      "formattedValue": "2.30M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0036,
-          "formattedValue": "3.60M"
+          "value": 0.0023,
+          "formattedValue": "2.30M"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
+      "value": 0.002,
+      "formattedValue": "2.01M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0013,
+          "formattedValue": "1.30M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0007,
+          "formattedValue": "715.21K"
         }
       ]
     }

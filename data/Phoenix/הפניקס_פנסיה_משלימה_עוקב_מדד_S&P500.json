@@ -1,97 +1,35 @@
 {
   "fundName": "הפניקס פנסיה משלימה עוקב מדד S&P500",
   "trackId": "13465",
-  "totalAssetsBN": 2.33,
-  "formattedTotalAssets": "2.33B",
+  "totalAssetsBN": 0.72,
+  "formattedTotalAssets": "718.55M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 1.6132,
-      "formattedValue": "1.61B",
-      "percentage": 69.18
-    },
     {
       "name": "Stocks",
       "value": 0.4825,
       "formattedValue": "482.47M",
-      "percentage": 20.69
+      "percentage": 67.15
     },
     {
       "name": "Bonds",
       "value": 0.1721,
       "formattedValue": "172.12M",
-      "percentage": 7.38
+      "percentage": 23.95
     },
     {
       "name": "Derivatives",
       "value": 0.0642,
       "formattedValue": "64.25M",
-      "percentage": 2.76
+      "percentage": 8.94
     },
     {
       "name": "Futures",
       "value": -0.0003,
       "formattedValue": "-290.87K",
-      "percentage": -0.01
+      "percentage": -0.04
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 1.6132,
-        "formattedValue": "1.61B",
-        "percentageOfClass": 100.0,
-        "itemCount": 6,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים",
-              "value": 0.6678,
-              "formattedValue": "667.80M",
-              "percentage": 41.4,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.5527,
-              "formattedValue": "552.73M",
-              "percentage": 34.26,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק לאומי",
-              "value": 0.359,
-              "formattedValue": "359.01M",
-              "percentage": 22.25,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק U בנק",
-              "value": 0.0308,
-              "formattedValue": "30.77M",
-              "percentage": 1.91,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט",
-              "value": 0.0022,
-              "formattedValue": "2.25M",
-              "percentage": 0.14,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "CITI",
-              "value": 0.0006,
-              "formattedValue": "598.58K",
-              "percentage": 0.04,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -263,28 +201,6 @@
   },
   "geoSunburst": [
     {
-      "name": "Israel",
-      "value": 1.6723,
-      "formattedValue": "1.67B",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 1.6126,
-          "formattedValue": "1.61B"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.037,
-          "formattedValue": "36.97M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0228,
-          "formattedValue": "22.75M"
-        }
-      ]
-    },
-    {
       "name": "USA",
       "value": 0.7333,
       "formattedValue": "733.30M",
@@ -312,14 +228,19 @@
       ]
     },
     {
-      "name": "Global",
-      "value": 0.0006,
-      "formattedValue": "598.58K",
+      "name": "Israel",
+      "value": 0.0597,
+      "formattedValue": "59.72M",
       "children": [
         {
-          "name": "Cash & Equivalents",
-          "value": 0.0006,
-          "formattedValue": "598.58K"
+          "name": "Derivatives",
+          "value": 0.037,
+          "formattedValue": "36.97M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0228,
+          "formattedValue": "22.75M"
         }
       ]
     }

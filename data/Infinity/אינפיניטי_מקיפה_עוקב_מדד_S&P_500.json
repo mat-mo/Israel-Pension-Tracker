@@ -1,62 +1,29 @@
 {
   "fundName": "אינפיניטי מקיפה עוקב מדד S&P 500",
   "trackId": "14054",
-  "totalAssetsBN": 0.05,
-  "formattedTotalAssets": "48.57M",
+  "totalAssetsBN": 0.04,
+  "formattedTotalAssets": "39.85M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0374,
       "formattedValue": "37.41M",
-      "percentage": 77.01
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0087,
-      "formattedValue": "8.65M",
-      "percentage": 17.82
+      "percentage": 93.88
     },
     {
       "name": "Bonds",
       "value": 0.0024,
       "formattedValue": "2.36M",
-      "percentage": 4.86
+      "percentage": 5.92
     },
     {
       "name": "Futures",
       "value": 0.0001,
       "formattedValue": "80.31K",
-      "percentage": 0.17
-    },
-    {
-      "name": "Non-Tradable Bonds",
-      "value": 0.0001,
-      "formattedValue": "71.00K",
-      "percentage": 0.15
+      "percentage": 0.2
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0087,
-        "formattedValue": "8.65M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0087,
-              "formattedValue": "8.65M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -155,48 +122,6 @@
         ]
       }
     ],
-    "Non-Tradable Bonds": [
-      {
-        "subclass": "General",
-        "value": 0.0001,
-        "formattedValue": "71.00K",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "ערד 8912",
-              "value": 0.0,
-              "formattedValue": "44.26K",
-              "percentage": 62.33,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8910",
-              "value": 0.0,
-              "formattedValue": "15.25K",
-              "percentage": 21.48,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8911",
-              "value": 0.0,
-              "formattedValue": "7.27K",
-              "percentage": 10.24,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8909",
-              "value": 0.0,
-              "formattedValue": "4.22K",
-              "percentage": 5.94,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Futures": [
       {
         "subclass": "General",
@@ -234,30 +159,6 @@
           "name": "Bonds",
           "value": 0.0024,
           "formattedValue": "2.36M"
-        }
-      ]
-    },
-    {
-      "name": "Israel",
-      "value": 0.0067,
-      "formattedValue": "6.66M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0067,
-          "formattedValue": "6.66M"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.002,
-      "formattedValue": "2.00M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.002,
-          "formattedValue": "2.00M"
         }
       ]
     }

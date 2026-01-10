@@ -1,70 +1,29 @@
 {
   "fundName": "מגדל מקפת משלימה עוקב מדדי מניות",
   "trackId": "14930",
-  "totalAssetsBN": 0.28,
-  "formattedTotalAssets": "280.71M",
+  "totalAssetsBN": 0.13,
+  "formattedTotalAssets": "127.36M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.1533,
-      "formattedValue": "153.34M",
-      "percentage": 54.63
-    },
     {
       "name": "Stocks",
       "value": 0.1294,
       "formattedValue": "129.43M",
-      "percentage": 46.11
+      "percentage": 101.62
     },
     {
       "name": "Futures",
       "value": 0.0031,
       "formattedValue": "3.07M",
-      "percentage": 1.1
+      "percentage": 2.41
     },
     {
       "name": "Derivatives",
       "value": -0.0051,
       "formattedValue": "-5.14M",
-      "percentage": -1.83
+      "percentage": -4.03
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.1533,
-        "formattedValue": "153.34M",
-        "percentageOfClass": 100.0,
-        "itemCount": 3,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.1065,
-              "formattedValue": "106.50M",
-              "percentage": 69.45,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים בע\"מ",
-              "value": 0.0468,
-              "formattedValue": "46.84M",
-              "percentage": 30.55,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "JPMORGAN CHASE BANK",
-              "value": 0.0,
-              "formattedValue": "0.13K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -159,23 +118,6 @@
   },
   "geoSunburst": [
     {
-      "name": "Israel",
-      "value": 0.1587,
-      "formattedValue": "158.66M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.1533,
-          "formattedValue": "153.34M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0053,
-          "formattedValue": "5.32M"
-        }
-      ]
-    },
-    {
       "name": "USA",
       "value": 0.1325,
       "formattedValue": "132.50M",
@@ -189,6 +131,18 @@
           "name": "Futures",
           "value": 0.0031,
           "formattedValue": "3.07M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0053,
+      "formattedValue": "5.32M",
+      "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.0053,
+          "formattedValue": "5.32M"
         }
       ]
     }

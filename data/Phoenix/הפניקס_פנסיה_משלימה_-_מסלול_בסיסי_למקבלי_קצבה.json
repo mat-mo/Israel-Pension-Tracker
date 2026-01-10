@@ -1,74 +1,62 @@
 {
   "fundName": "הפניקס פנסיה משלימה - מסלול בסיסי למקבלי קצבה",
   "trackId": "12120",
-  "totalAssetsBN": 0.36,
-  "formattedTotalAssets": "361.39M",
+  "totalAssetsBN": 0.3,
+  "formattedTotalAssets": "303.29M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.2346,
       "formattedValue": "234.62M",
-      "percentage": 64.92
+      "percentage": 77.36
     },
     {
       "name": "Stocks",
       "value": 0.0411,
       "formattedValue": "41.10M",
-      "percentage": 11.37
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0325,
-      "formattedValue": "32.49M",
-      "percentage": 8.99
-    },
-    {
-      "name": "Loans",
-      "value": 0.0276,
-      "formattedValue": "27.61M",
-      "percentage": 7.64
+      "percentage": 13.55
     },
     {
       "name": "Investment Funds",
       "value": 0.0153,
       "formattedValue": "15.32M",
-      "percentage": 4.24
+      "percentage": 5.05
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0055,
       "formattedValue": "5.46M",
-      "percentage": 1.51
+      "percentage": 1.8
     },
     {
       "name": "Mutual Funds",
       "value": 0.0048,
       "formattedValue": "4.85M",
-      "percentage": 1.34
+      "percentage": 1.6
+    },
+    {
+      "name": "Options",
+      "value": 0.0022,
+      "formattedValue": "2.22M",
+      "percentage": 0.73
     },
     {
       "name": "Other Assets",
       "value": 0.0011,
       "formattedValue": "1.09M",
-      "percentage": 0.3
-    },
-    {
-      "name": "Options",
-      "value": 0.0002,
-      "formattedValue": "206.04K",
-      "percentage": 0.06
+      "percentage": 0.36
     },
     {
       "name": "Futures",
       "value": 0.0002,
       "formattedValue": "200.02K",
-      "percentage": 0.06
+      "percentage": 0.07
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.0002,
       "formattedValue": "151.75K",
-      "percentage": 0.04
+      "percentage": 0.05
     },
     {
       "name": "Structured Products",
@@ -86,94 +74,10 @@
       "name": "Derivatives",
       "value": -0.0018,
       "formattedValue": "-1.83M",
-      "percentage": -0.51
+      "percentage": -0.6
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0325,
-        "formattedValue": "32.49M",
-        "percentageOfClass": 100.0,
-        "itemCount": 10,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0159,
-              "formattedValue": "15.87M",
-              "percentage": 48.83,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.008,
-              "formattedValue": "8.01M",
-              "percentage": 24.64,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק לאומי",
-              "value": 0.0037,
-              "formattedValue": "3.74M",
-              "percentage": 11.51,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט",
-              "value": 0.0029,
-              "formattedValue": "2.95M",
-              "percentage": 9.08,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "CITI",
-              "value": 0.0012,
-              "formattedValue": "1.23M",
-              "percentage": 3.78,
-              "countryEmoji": ""
-            },
-            {
-              "name": "CITI_GlobalCustody",
-              "value": 0.0007,
-              "formattedValue": "660.17K",
-              "percentage": 2.03,
-              "countryEmoji": ""
-            },
-            {
-              "name": "בנק ירושלים",
-              "value": 0.0001,
-              "formattedValue": "145.82K",
-              "percentage": 0.45,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק U בנק",
-              "value": 0.0001,
-              "formattedValue": "82.17K",
-              "percentage": 0.25,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "J.P. MORGAN",
-              "value": 0.0,
-              "formattedValue": "16.08K",
-              "percentage": 0.05,
-              "countryEmoji": ""
-            },
-            {
-              "name": "CITI FXPB",
-              "value": -0.0002,
-              "formattedValue": "-201.38K",
-              "percentage": -0.62,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Structured Products": [
       {
         "subclass": "Non-Tradable",
@@ -2218,7 +2122,7 @@
               "value": 0.0001,
               "formattedValue": "96.26K",
               "percentage": 0.1,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "סיאון אגח א",
@@ -2650,7 +2554,7 @@
               "value": 0.0001,
               "formattedValue": "55.22K",
               "percentage": 0.05,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הכשרת ישוב אגח 25",
@@ -2961,7 +2865,7 @@
               "value": 0.0,
               "formattedValue": "39.63K",
               "percentage": 0.04,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "קיסטון אינ אגח ב",
@@ -4861,7 +4765,7 @@
               "value": 0.0,
               "formattedValue": "0.94K",
               "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "מיטב דש  אגח ג",
@@ -4919,7 +4823,7 @@
               "value": 0.0,
               "formattedValue": "0.42K",
               "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "לאומי התח נד 402 (COCO)",
@@ -5445,7 +5349,7 @@
               "value": 0.0002,
               "formattedValue": "237.37K",
               "percentage": 0.82,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "Galp Energia SGPS SA",
@@ -5582,7 +5486,7 @@
               "value": 0.0002,
               "formattedValue": "157.67K",
               "percentage": 0.55,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "ארגו פרופרטיז",
@@ -6757,7 +6661,7 @@
               "value": 0.0,
               "formattedValue": "11.06K",
               "percentage": 0.04,
-              "countryEmoji": "🇸🇪"
+              "countryEmoji": ""
             },
             {
               "name": "נורסטאר",
@@ -8249,7 +8153,7 @@
               "value": 0.0001,
               "formattedValue": "88.58K",
               "percentage": 0.72,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "SPDR MSCI Europe Small Cap Val",
@@ -8457,800 +8361,275 @@
         ]
       }
     ],
-    "Mutual Funds": [
+    "Options": [
       {
-        "subclass": "General",
-        "value": 0.0048,
-        "formattedValue": "4.85M",
-        "percentageOfClass": 100.0,
-        "itemCount": 18,
-        "totalPages": 2,
+        "subclass": "Non-Tradable",
+        "value": 0.002,
+        "formattedValue": "2.01M",
+        "percentageOfClass": 90.71,
+        "itemCount": 35,
+        "totalPages": 4,
         "holdingsPages": [
           [
             {
-              "name": "PIMCO GIS Emerging Local Bond",
-              "value": 0.0022,
-              "formattedValue": "2.17M",
-              "percentage": 44.71,
-              "countryEmoji": "🇨🇳"
-            },
-            {
-              "name": "Capital Group Emerging Markets",
-              "value": 0.0007,
-              "formattedValue": "674.84K",
-              "percentage": 13.92,
-              "countryEmoji": "🇨🇳"
-            },
-            {
-              "name": "Colchester Local Markets Bond",
-              "value": 0.0005,
-              "formattedValue": "451.60K",
-              "percentage": 9.31,
-              "countryEmoji": "🇮🇪"
-            },
-            {
-              "name": "CT Lux Global Technology",
-              "value": 0.0004,
-              "formattedValue": "418.92K",
-              "percentage": 8.64,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Kotak Bond Feeder Fund",
-              "value": 0.0003,
-              "formattedValue": "334.23K",
-              "percentage": 6.89,
-              "countryEmoji": "🇮🇳"
-            },
-            {
-              "name": "India Dynamic Bond Fund",
-              "value": 0.0003,
-              "formattedValue": "287.72K",
-              "percentage": 5.93,
-              "countryEmoji": "🇮🇳"
-            },
-            {
-              "name": "Ashoka WhiteOak ICAV - Ashoka",
+              "name": "CALL001 אנלייט 17.12.2025",
               "value": 0.0002,
-              "formattedValue": "191.71K",
-              "percentage": 3.95,
-              "countryEmoji": "🇮🇳"
+              "formattedValue": "210.92K",
+              "percentage": 10.48,
+              "countryEmoji": "🇮🇱"
             },
             {
-              "name": "M&G Lux Investment Funds 1 - M",
+              "name": "26.11.25 עסקת CALL לאומי",
+              "value": 0.0002,
+              "formattedValue": "189.93K",
+              "percentage": 9.44,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "26.09.26 עסקת CALL לאומי",
+              "value": 0.0002,
+              "formattedValue": "154.29K",
+              "percentage": 7.67,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "עסקת פועלים CALL 18.09.26",
               "value": 0.0001,
-              "formattedValue": "128.48K",
-              "percentage": 2.65,
-              "countryEmoji": "🇯🇵"
+              "formattedValue": "131.74K",
+              "percentage": 6.55,
+              "countryEmoji": "🇮🇱"
             },
             {
-              "name": "THRLXIU LX",
+              "name": "עסקת CALL001 פועלים 12.08.2026",
               "value": 0.0001,
-              "formattedValue": "89.62K",
-              "percentage": 1.85,
-              "countryEmoji": "🇯🇵"
+              "formattedValue": "131.28K",
+              "percentage": 6.52,
+              "countryEmoji": "🇮🇱"
             },
             {
-              "name": "Fullgoal International Funds S",
-              "value": 0.0,
-              "formattedValue": "35.23K",
-              "percentage": 0.73,
-              "countryEmoji": "🇨🇳"
+              "name": "עסקת לאומי CALL 18.09.26",
+              "value": 0.0001,
+              "formattedValue": "131.06K",
+              "percentage": 6.51,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "26.11.25 עסקת CALL פועלים",
+              "value": 0.0001,
+              "formattedValue": "124.88K",
+              "percentage": 6.21,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "עסקת CALL001 לאומי 12.08.2026",
+              "value": 0.0001,
+              "formattedValue": "122.88K",
+              "percentage": 6.11,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "יבולי שמש אופציה",
+              "value": 0.0001,
+              "formattedValue": "120.05K",
+              "percentage": 5.97,
+              "countryEmoji": ""
+            },
+            {
+              "name": "עסקת CALL בזק 29.01.26",
+              "value": 0.0001,
+              "formattedValue": "91.73K",
+              "percentage": 4.56,
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
             {
-              "name": "Sdcl Energy Efficiency Income",
-              "value": 0.0,
-              "formattedValue": "26.79K",
-              "percentage": 0.55,
-              "countryEmoji": "🇬🇧"
-            },
-            {
-              "name": "CVC INCOME & GROWTH LTD",
-              "value": 0.0,
-              "formattedValue": "18.60K",
-              "percentage": 0.38,
-              "countryEmoji": ""
-            },
-            {
-              "name": "PIMCO GIS Capital Securities F",
-              "value": 0.0,
-              "formattedValue": "16.17K",
-              "percentage": 0.33,
-              "countryEmoji": "🇬🇧"
-            },
-            {
-              "name": "PRESTIGE ALT FI",
-              "value": 0.0,
-              "formattedValue": "4.75K",
-              "percentage": 0.1,
-              "countryEmoji": "🇬🇧"
-            },
-            {
-              "name": "MTF סל תלבונד שקלי",
-              "value": 0.0,
-              "formattedValue": "1.63K",
-              "percentage": 0.03,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "COLCHIS P2P INCOME FUND",
-              "value": 0.0,
-              "formattedValue": "0.39K",
-              "percentage": 0.01,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "הראל Htf שקליות ריבית קבועה ממשלתיות",
-              "value": 0.0,
-              "formattedValue": "0.16K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "MTF מח תל גוב-שקלי",
-              "value": 0.0,
-              "formattedValue": "0.15K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Non-Tradable Stocks": [
-      {
-        "subclass": "Direct Holdings",
-        "value": 0.0002,
-        "formattedValue": "151.75K",
-        "percentageOfClass": 100.0,
-        "itemCount": 5,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "Navitas Petroleum Holdings- preffered shares",
-              "value": 0.0002,
-              "formattedValue": "151.58K",
-              "percentage": 99.89,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "חנל יהש חייבים לקבל",
-              "value": 0.0,
-              "formattedValue": "0.06K",
-              "percentage": 0.04,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "סיאלו",
-              "value": 0.0,
-              "formattedValue": "0.06K",
-              "percentage": 0.04,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "נפטא חיפושים חייבים לקבל",
-              "value": 0.0,
-              "formattedValue": "0.05K",
-              "percentage": 0.03,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בוימלגרין",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Other Assets": [
-      {
-        "subclass": "General",
-        "value": 0.0011,
-        "formattedValue": "1.09M",
-        "percentageOfClass": 100.0,
-        "itemCount": 81,
-        "totalPages": 9,
-        "holdingsPages": [
-          [
-            {
-              "name": "RAIF Apollo USD יתרה לניצול",
-              "value": 0.0005,
-              "formattedValue": "509.88K",
-              "percentage": 46.58,
-              "countryEmoji": ""
-            },
-            {
-              "name": "חייבים דולר ניו זילנד",
-              "value": 0.0002,
-              "formattedValue": "205.89K",
-              "percentage": 18.81,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "חייבים דולר",
+              "name": "26.09.2026 עסקת CALL פועלים",
               "value": 0.0001,
-              "formattedValue": "136.21K",
-              "percentage": 12.44,
+              "formattedValue": "86.09K",
+              "percentage": 4.28,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "RAIF Apollo AUD יתרה לניצול",
+              "name": "CALL001 דיסקונט 26.5.26",
               "value": 0.0001,
-              "formattedValue": "112.33K",
-              "percentage": 10.26,
-              "countryEmoji": ""
+              "formattedValue": "80.72K",
+              "percentage": 4.01,
+              "countryEmoji": "🇮🇱"
             },
             {
-              "name": "פיקדון-מזרחי עסקים קטנים",
+              "name": "פועלים 03.07.2026 CALL001",
               "value": 0.0001,
-              "formattedValue": "63.23K",
-              "percentage": 5.78,
+              "formattedValue": "78.92K",
+              "percentage": 3.92,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "RAIF CVC EUR יתרה לניצול",
+              "name": "CALL001 בזק 26/05/2026",
               "value": 0.0001,
-              "formattedValue": "61.18K",
-              "percentage": 5.59,
-              "countryEmoji": ""
-            },
-            {
-              "name": "Marlette חייבים",
-              "value": 0.0,
-              "formattedValue": "30.57K",
-              "percentage": 2.79,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "חשמל אגח 27",
-              "value": 0.0,
-              "formattedValue": "18.68K",
-              "percentage": 1.71,
+              "formattedValue": "66.07K",
+              "percentage": 3.28,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "חייבים שח",
-              "value": 0.0,
-              "formattedValue": "17.58K",
-              "percentage": 1.61,
+              "name": "CALL001 פועלים 23.07.26",
+              "value": 0.0001,
+              "formattedValue": "61.78K",
+              "percentage": 3.07,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "RAIF Apollo GBP יתרה לניצול",
+              "name": "CALL001 כלל 15.07.26",
               "value": 0.0,
-              "formattedValue": "16.64K",
-              "percentage": 1.52,
-              "countryEmoji": ""
+              "formattedValue": "47.89K",
+              "percentage": 2.38,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CALL001 כלל 17.12.25",
+              "value": 0.0,
+              "formattedValue": "38.93K",
+              "percentage": 1.93,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CALL001 פועלים 26.05.26",
+              "value": 0.0,
+              "formattedValue": "37.71K",
+              "percentage": 1.87,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "קיקר רמת חובב 30.06.40",
+              "value": 0.0,
+              "formattedValue": "35.17K",
+              "percentage": 1.75,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אשדוד התפלה קיקר",
+              "value": 0.0,
+              "formattedValue": "21.95K",
+              "percentage": 1.09,
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
             {
-              "name": "ENOIGA 8.5  09/30/33",
+              "name": "אשדוד  ורמת נגב אנרגיה-קיקר 31.12.34",
               "value": 0.0,
-              "formattedValue": "14.11K",
-              "percentage": 1.29,
+              "formattedValue": "12.16K",
+              "percentage": 0.6,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "Pollen Sreets - חייבים",
+              "name": "מימון ישיר 21.09.2026 CALL001",
               "value": 0.0,
-              "formattedValue": "9.70K",
-              "percentage": 0.89,
-              "countryEmoji": "🇬🇧"
-            },
-            {
-              "name": "RAIF Apollo EUR יתרת לניצול",
-              "value": 0.0,
-              "formattedValue": "8.26K",
-              "percentage": 0.75,
-              "countryEmoji": ""
-            },
-            {
-              "name": "דלתא גליל",
-              "value": 0.0,
-              "formattedValue": "7.64K",
-              "percentage": 0.7,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "אלרון",
-              "value": 0.0,
-              "formattedValue": "6.95K",
-              "percentage": 0.63,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "בזק",
-              "value": 0.0,
-              "formattedValue": "6.44K",
-              "percentage": 0.59,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "חייבים לישט",
-              "value": 0.0,
-              "formattedValue": "6.10K",
+              "formattedValue": "11.33K",
               "percentage": 0.56,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "EQSAsset Leumi 27.03.26 BEZQ IT",
+              "name": "ישראכרט 07.05.2026 CALL001",
               "value": 0.0,
-              "formattedValue": "5.16K",
-              "percentage": 0.47,
+              "formattedValue": "7.01K",
+              "percentage": 0.35,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "חושן - יתרה לניצול",
+              "name": "קיקר נאוויטס פטרוליום שותפות מוגבל",
               "value": 0.0,
-              "formattedValue": "5.02K",
-              "percentage": 0.46,
-              "countryEmoji": "🇮🇱"
+              "formattedValue": "6.14K",
+              "percentage": 0.31,
+              "countryEmoji": "🇺🇸"
             },
             {
-              "name": "שופרסל",
+              "name": "אפ לס בכספת-רוטשטין 26.07.2026",
               "value": 0.0,
-              "formattedValue": "4.15K",
-              "percentage": 0.38,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "RAIF GBP יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "4.04K",
-              "percentage": 0.37,
-              "countryEmoji": ""
-            },
-            {
-              "name": "אנרג'יאן",
-              "value": 0.0,
-              "formattedValue": "3.60K",
-              "percentage": 0.33,
-              "countryEmoji": "🇬🇧"
-            },
-            {
-              "name": "מכלול נדלן אגח 2 1% פריים 01.01.28",
-              "value": 0.0,
-              "formattedValue": "3.46K",
-              "percentage": 0.32,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "אמות אגח ו",
-              "value": 0.0,
-              "formattedValue": "2.85K",
-              "percentage": 0.26,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "חייבים אירו",
-              "value": 0.0,
-              "formattedValue": "2.38K",
+              "formattedValue": "4.46K",
               "percentage": 0.22,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "RAIF USD יתרה לניצול",
+              "name": "איי.פי.סי-קיקר 03.09.29",
               "value": 0.0,
-              "formattedValue": "2.32K",
-              "percentage": 0.21,
-              "countryEmoji": ""
-            },
-            {
-              "name": "מימון ישיר 9 - חייבים",
-              "value": 0.0,
-              "formattedValue": "2.31K",
-              "percentage": 0.21,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "מליסרון אגח טז",
-              "value": 0.0,
-              "formattedValue": "2.09K",
+              "formattedValue": "3.74K",
               "percentage": 0.19,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "פז נפט",
+              "name": "מימון ישיר 26.03.2026 CALL001",
               "value": 0.0,
-              "formattedValue": "2.00K",
-              "percentage": 0.18,
+              "formattedValue": "1.71K",
+              "percentage": 0.09,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "חוז מס הכנה שקל",
+              "name": "אפ לס סולאיר סדרה ב 25.12.2027",
               "value": 0.0,
-              "formattedValue": "1.37K",
-              "percentage": 0.13,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "אדגר אגח יג",
-              "value": 0.0,
-              "formattedValue": "1.18K",
-              "percentage": 0.11,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "מכלול נדלן אגח 1 1.00% פריים 30.11.26",
-              "value": 0.0,
-              "formattedValue": "1.09K",
-              "percentage": 0.1,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "מטריקס",
-              "value": 0.0,
-              "formattedValue": "1.08K",
-              "percentage": 0.1,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "מימון ישיר 2 - חייבים",
-              "value": 0.0,
-              "formattedValue": "0.88K",
-              "percentage": 0.08,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "חלל תקש אג יח",
-              "value": 0.0,
-              "formattedValue": "0.84K",
-              "percentage": 0.08,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "אלקטרה",
-              "value": 0.0,
-              "formattedValue": "0.67K",
-              "percentage": 0.06,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "מימון ישיר 8 - חייבים",
-              "value": 0.0,
-              "formattedValue": "0.55K",
+              "formattedValue": "1.10K",
               "percentage": 0.05,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "גנריישן קפיטל",
+              "name": "אפ לס טופ גאם 31.01.2027",
               "value": 0.0,
-              "formattedValue": "0.45K",
+              "formattedValue": "0.90K",
               "percentage": 0.04,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "Taiwan Semiconductor Manufactu",
+              "name": "אפ לס סולאיר סדרה א 25.12.2025",
               "value": 0.0,
-              "formattedValue": "0.38K",
-              "percentage": 0.03,
-              "countryEmoji": "🇹🇼"
-            },
-            {
-              "name": "אלרוב נדלן אגח ו",
-              "value": 0.0,
-              "formattedValue": "0.26K",
-              "percentage": 0.02,
+              "formattedValue": "0.78K",
+              "percentage": 0.04,
               "countryEmoji": "🇮🇱"
             }
           ],
           [
             {
-              "name": "ארי נדלן אגח א",
+              "name": "אפ לס דוניץ 31.12.25",
               "value": 0.0,
-              "formattedValue": "0.22K",
+              "formattedValue": "0.41K",
               "percentage": 0.02,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "מימון ישיר 6 - חייבים",
+              "name": "אפ לס אקרו 05.08.2026",
               "value": 0.0,
-              "formattedValue": "0.21K",
-              "percentage": 0.02,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "Lam Research Corp",
-              "value": 0.0,
-              "formattedValue": "0.18K",
-              "percentage": 0.02,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "SPDR S&P 500 ETF Trust",
-              "value": 0.0,
-              "formattedValue": "0.16K",
-              "percentage": 0.02,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "מימון ישיר 7 - חייבים",
-              "value": 0.0,
-              "formattedValue": "0.16K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "Ituran Location and Control Lt",
-              "value": 0.0,
-              "formattedValue": "0.10K",
-              "percentage": 0.01,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "מימון ישיר 5 - חייבים",
-              "value": 0.0,
-              "formattedValue": "0.09K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "שופרסל אגח ד",
-              "value": 0.0,
-              "formattedValue": "0.09K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "תומר אנרגיה",
-              "value": 0.0,
-              "formattedValue": "0.08K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "RAIF CVC GBP יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "0.06K",
-              "percentage": 0.01,
-              "countryEmoji": ""
-            }
-          ],
-          [
-            {
-              "name": "מימון ישיר 1 - חייבים",
-              "value": 0.0,
-              "formattedValue": "0.06K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "קרסו אגח ד",
-              "value": 0.0,
-              "formattedValue": "0.06K",
-              "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "שופרסל אגח ה",
-              "value": 0.0,
-              "formattedValue": "0.05K",
+              "formattedValue": "0.03K",
               "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "RAIF Ares EUR יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "0.04K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "RAIF GS EUR יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "0.04K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "אלביט מערכות",
-              "value": 0.0,
-              "formattedValue": "0.04K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "Bank of America Corp",
-              "value": 0.0,
-              "formattedValue": "0.02K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Suncor Energy Inc",
-              "value": 0.0,
-              "formattedValue": "0.02K",
-              "percentage": 0.0,
-              "countryEmoji": "🇨🇦"
-            },
-            {
-              "name": "Medtronic PLC",
-              "value": 0.0,
-              "formattedValue": "0.02K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "NVIDIA Corp",
-              "value": 0.0,
-              "formattedValue": "0.02K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            }
-          ],
-          [
-            {
-              "name": "מימון ישיר 3 - חייבים",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "TJX Cos Inc/The",
+              "name": "אפ לס ODYS US 31/03/2026",
               "value": 0.0,
               "formattedValue": "0.01K",
               "percentage": 0.0,
               "countryEmoji": "🇺🇸"
             },
             {
-              "name": "Apple Inc",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "RAIF Ares GBP יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "Citigroup Inc",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "RAIF Ares USD יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "Alphabet Inc",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Meta Platforms Inc",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "RAIF CVC USD יתרה לניצול",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "CF Industries Holdings Inc",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            }
-          ],
-          [
-            {
-              "name": "Stryker Corp",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Salesforce Inc",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Eaton Corp PLC",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "McKesson Corp",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "Solaris Energy Infrastructure",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇺🇸"
-            },
-            {
-              "name": "זכאים אירו",
+              "name": "FXVOpt 3.6800 CALL USD-PLN 30.10.25",
               "value": -0.0,
-              "formattedValue": "-0.17K",
-              "percentage": -0.02,
+              "formattedValue": "-0.68K",
+              "percentage": -0.03,
               "countryEmoji": "🇮🇱"
             },
             {
-              "name": "זכאים בשח",
+              "name": "FXVOpt 145.0000 PUT USD-JPY 20.10.25",
               "value": -0.0,
-              "formattedValue": "-0.25K",
-              "percentage": -0.02,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "חוז מס ריפו 2025",
-              "value": -0.0,
-              "formattedValue": "-0.54K",
-              "percentage": -0.05,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "RAIF EUR יתרה לניצול",
-              "value": -0.0,
-              "formattedValue": "-1.76K",
-              "percentage": -0.16,
-              "countryEmoji": ""
-            },
-            {
-              "name": "קרנות השקעה זכאים אירו",
-              "value": -0.0,
-              "formattedValue": "-32.18K",
-              "percentage": -2.94,
-              "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
-            {
-              "name": "קרנות השקעה זכאים דולר",
-              "value": -0.0002,
-              "formattedValue": "-151.69K",
-              "percentage": -13.86,
+              "formattedValue": "-0.81K",
+              "percentage": -0.04,
               "countryEmoji": "🇮🇱"
             }
           ]
         ]
-      }
-    ],
-    "Options": [
+      },
       {
         "subclass": "Tradable",
         "value": 0.0002,
         "formattedValue": "206.04K",
-        "percentageOfClass": 100.0,
+        "percentageOfClass": 9.29,
         "itemCount": 221,
         "totalPages": 23,
         "holdingsPages": [
@@ -10101,7 +9480,7 @@
               "value": -0.0,
               "formattedValue": "-0.01K",
               "percentage": -0.01,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "TSEM P 45 16/01/26",
@@ -10850,6 +10229,794 @@
         ]
       }
     ],
+    "Mutual Funds": [
+      {
+        "subclass": "General",
+        "value": 0.0048,
+        "formattedValue": "4.85M",
+        "percentageOfClass": 100.0,
+        "itemCount": 18,
+        "totalPages": 2,
+        "holdingsPages": [
+          [
+            {
+              "name": "PIMCO GIS Emerging Local Bond",
+              "value": 0.0022,
+              "formattedValue": "2.17M",
+              "percentage": 44.71,
+              "countryEmoji": "🇨🇳"
+            },
+            {
+              "name": "Capital Group Emerging Markets",
+              "value": 0.0007,
+              "formattedValue": "674.84K",
+              "percentage": 13.92,
+              "countryEmoji": "🇨🇳"
+            },
+            {
+              "name": "Colchester Local Markets Bond",
+              "value": 0.0005,
+              "formattedValue": "451.60K",
+              "percentage": 9.31,
+              "countryEmoji": "🇮🇪"
+            },
+            {
+              "name": "CT Lux Global Technology",
+              "value": 0.0004,
+              "formattedValue": "418.92K",
+              "percentage": 8.64,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Kotak Bond Feeder Fund",
+              "value": 0.0003,
+              "formattedValue": "334.23K",
+              "percentage": 6.89,
+              "countryEmoji": "🇮🇳"
+            },
+            {
+              "name": "India Dynamic Bond Fund",
+              "value": 0.0003,
+              "formattedValue": "287.72K",
+              "percentage": 5.93,
+              "countryEmoji": "🇮🇳"
+            },
+            {
+              "name": "Ashoka WhiteOak ICAV - Ashoka",
+              "value": 0.0002,
+              "formattedValue": "191.71K",
+              "percentage": 3.95,
+              "countryEmoji": "🇮🇳"
+            },
+            {
+              "name": "M&G Lux Investment Funds 1 - M",
+              "value": 0.0001,
+              "formattedValue": "128.48K",
+              "percentage": 2.65,
+              "countryEmoji": "🇯🇵"
+            },
+            {
+              "name": "THRLXIU LX",
+              "value": 0.0001,
+              "formattedValue": "89.62K",
+              "percentage": 1.85,
+              "countryEmoji": "🇯🇵"
+            },
+            {
+              "name": "Fullgoal International Funds S",
+              "value": 0.0,
+              "formattedValue": "35.23K",
+              "percentage": 0.73,
+              "countryEmoji": "🇨🇳"
+            }
+          ],
+          [
+            {
+              "name": "Sdcl Energy Efficiency Income",
+              "value": 0.0,
+              "formattedValue": "26.79K",
+              "percentage": 0.55,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "CVC INCOME & GROWTH LTD",
+              "value": 0.0,
+              "formattedValue": "18.60K",
+              "percentage": 0.38,
+              "countryEmoji": "🇪🇺 "
+            },
+            {
+              "name": "PIMCO GIS Capital Securities F",
+              "value": 0.0,
+              "formattedValue": "16.17K",
+              "percentage": 0.33,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "PRESTIGE ALT FI",
+              "value": 0.0,
+              "formattedValue": "4.75K",
+              "percentage": 0.1,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "MTF סל תלבונד שקלי",
+              "value": 0.0,
+              "formattedValue": "1.63K",
+              "percentage": 0.03,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "COLCHIS P2P INCOME FUND",
+              "value": 0.0,
+              "formattedValue": "0.39K",
+              "percentage": 0.01,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "הראל Htf שקליות ריבית קבועה ממשלתיות",
+              "value": 0.0,
+              "formattedValue": "0.16K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "MTF מח תל גוב-שקלי",
+              "value": 0.0,
+              "formattedValue": "0.15K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Non-Tradable Stocks": [
+      {
+        "subclass": "Direct Holdings",
+        "value": 0.0002,
+        "formattedValue": "151.75K",
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "Navitas Petroleum Holdings- preffered shares",
+              "value": 0.0002,
+              "formattedValue": "151.58K",
+              "percentage": 99.89,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "חנל יהש חייבים לקבל",
+              "value": 0.0,
+              "formattedValue": "0.06K",
+              "percentage": 0.04,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "סיאלו",
+              "value": 0.0,
+              "formattedValue": "0.06K",
+              "percentage": 0.04,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "נפטא חיפושים חייבים לקבל",
+              "value": 0.0,
+              "formattedValue": "0.05K",
+              "percentage": 0.03,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בוימלגרין",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "General",
+        "value": 0.0011,
+        "formattedValue": "1.09M",
+        "percentageOfClass": 100.0,
+        "itemCount": 81,
+        "totalPages": 9,
+        "holdingsPages": [
+          [
+            {
+              "name": "RAIF Apollo USD יתרה לניצול",
+              "value": 0.0005,
+              "formattedValue": "509.88K",
+              "percentage": 46.58,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "חייבים דולר ניו זילנד",
+              "value": 0.0002,
+              "formattedValue": "205.89K",
+              "percentage": 18.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חייבים דולר",
+              "value": 0.0001,
+              "formattedValue": "136.21K",
+              "percentage": 12.44,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF Apollo AUD יתרה לניצול",
+              "value": 0.0001,
+              "formattedValue": "112.33K",
+              "percentage": 10.26,
+              "countryEmoji": ""
+            },
+            {
+              "name": "פיקדון-מזרחי עסקים קטנים",
+              "value": 0.0001,
+              "formattedValue": "63.23K",
+              "percentage": 5.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF CVC EUR יתרה לניצול",
+              "value": 0.0001,
+              "formattedValue": "61.18K",
+              "percentage": 5.59,
+              "countryEmoji": "🇪🇺"
+            },
+            {
+              "name": "Marlette חייבים",
+              "value": 0.0,
+              "formattedValue": "30.57K",
+              "percentage": 2.79,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "חשמל אגח 27",
+              "value": 0.0,
+              "formattedValue": "18.68K",
+              "percentage": 1.71,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חייבים שח",
+              "value": 0.0,
+              "formattedValue": "17.58K",
+              "percentage": 1.61,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF Apollo GBP יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "16.64K",
+              "percentage": 1.52,
+              "countryEmoji": "🇬🇧"
+            }
+          ],
+          [
+            {
+              "name": "ENOIGA 8.5  09/30/33",
+              "value": 0.0,
+              "formattedValue": "14.11K",
+              "percentage": 1.29,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Pollen Sreets - חייבים",
+              "value": 0.0,
+              "formattedValue": "9.70K",
+              "percentage": 0.89,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "RAIF Apollo EUR יתרת לניצול",
+              "value": 0.0,
+              "formattedValue": "8.26K",
+              "percentage": 0.75,
+              "countryEmoji": "🇪🇺"
+            },
+            {
+              "name": "דלתא גליל",
+              "value": 0.0,
+              "formattedValue": "7.64K",
+              "percentage": 0.7,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אלרון",
+              "value": 0.0,
+              "formattedValue": "6.95K",
+              "percentage": 0.63,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "בזק",
+              "value": 0.0,
+              "formattedValue": "6.44K",
+              "percentage": 0.59,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חייבים לישט",
+              "value": 0.0,
+              "formattedValue": "6.10K",
+              "percentage": 0.56,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "EQSAsset Leumi 27.03.26 BEZQ IT",
+              "value": 0.0,
+              "formattedValue": "5.16K",
+              "percentage": 0.47,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חושן - יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "5.02K",
+              "percentage": 0.46,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "שופרסל",
+              "value": 0.0,
+              "formattedValue": "4.15K",
+              "percentage": 0.38,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "RAIF GBP יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "4.04K",
+              "percentage": 0.37,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "אנרג'יאן",
+              "value": 0.0,
+              "formattedValue": "3.60K",
+              "percentage": 0.33,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "מכלול נדלן אגח 2 1% פריים 01.01.28",
+              "value": 0.0,
+              "formattedValue": "3.46K",
+              "percentage": 0.32,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אמות אגח ו",
+              "value": 0.0,
+              "formattedValue": "2.85K",
+              "percentage": 0.26,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חייבים אירו",
+              "value": 0.0,
+              "formattedValue": "2.38K",
+              "percentage": 0.22,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF USD יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "2.32K",
+              "percentage": 0.21,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "מימון ישיר 9 - חייבים",
+              "value": 0.0,
+              "formattedValue": "2.31K",
+              "percentage": 0.21,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "מליסרון אגח טז",
+              "value": 0.0,
+              "formattedValue": "2.09K",
+              "percentage": 0.19,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "פז נפט",
+              "value": 0.0,
+              "formattedValue": "2.00K",
+              "percentage": 0.18,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חוז מס הכנה שקל",
+              "value": 0.0,
+              "formattedValue": "1.37K",
+              "percentage": 0.13,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "אדגר אגח יג",
+              "value": 0.0,
+              "formattedValue": "1.18K",
+              "percentage": 0.11,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "מכלול נדלן אגח 1 1.00% פריים 30.11.26",
+              "value": 0.0,
+              "formattedValue": "1.09K",
+              "percentage": 0.1,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "מטריקס",
+              "value": 0.0,
+              "formattedValue": "1.08K",
+              "percentage": 0.1,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "מימון ישיר 2 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.88K",
+              "percentage": 0.08,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חלל תקש אג יח",
+              "value": 0.0,
+              "formattedValue": "0.84K",
+              "percentage": 0.08,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אלקטרה",
+              "value": 0.0,
+              "formattedValue": "0.67K",
+              "percentage": 0.06,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "מימון ישיר 8 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.55K",
+              "percentage": 0.05,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "גנריישן קפיטל",
+              "value": 0.0,
+              "formattedValue": "0.45K",
+              "percentage": 0.04,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Taiwan Semiconductor Manufactu",
+              "value": 0.0,
+              "formattedValue": "0.38K",
+              "percentage": 0.03,
+              "countryEmoji": ""
+            },
+            {
+              "name": "אלרוב נדלן אגח ו",
+              "value": 0.0,
+              "formattedValue": "0.26K",
+              "percentage": 0.02,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "ארי נדלן אגח א",
+              "value": 0.0,
+              "formattedValue": "0.22K",
+              "percentage": 0.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "מימון ישיר 6 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.21K",
+              "percentage": 0.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Lam Research Corp",
+              "value": 0.0,
+              "formattedValue": "0.18K",
+              "percentage": 0.02,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "SPDR S&P 500 ETF Trust",
+              "value": 0.0,
+              "formattedValue": "0.16K",
+              "percentage": 0.02,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "מימון ישיר 7 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.16K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Ituran Location and Control Lt",
+              "value": 0.0,
+              "formattedValue": "0.10K",
+              "percentage": 0.01,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "מימון ישיר 5 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.09K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "שופרסל אגח ד",
+              "value": 0.0,
+              "formattedValue": "0.09K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "תומר אנרגיה",
+              "value": 0.0,
+              "formattedValue": "0.08K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF CVC GBP יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "0.06K",
+              "percentage": 0.01,
+              "countryEmoji": "🇬🇧"
+            }
+          ],
+          [
+            {
+              "name": "מימון ישיר 1 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.06K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "קרסו אגח ד",
+              "value": 0.0,
+              "formattedValue": "0.06K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "שופרסל אגח ה",
+              "value": 0.0,
+              "formattedValue": "0.05K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF Ares EUR יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "0.04K",
+              "percentage": 0.0,
+              "countryEmoji": "🇪🇺"
+            },
+            {
+              "name": "RAIF GS EUR יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "0.04K",
+              "percentage": 0.0,
+              "countryEmoji": "🇪🇺"
+            },
+            {
+              "name": "אלביט מערכות",
+              "value": 0.0,
+              "formattedValue": "0.04K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Bank of America Corp",
+              "value": 0.0,
+              "formattedValue": "0.02K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Suncor Energy Inc",
+              "value": 0.0,
+              "formattedValue": "0.02K",
+              "percentage": 0.0,
+              "countryEmoji": "🇨🇦"
+            },
+            {
+              "name": "Medtronic PLC",
+              "value": 0.0,
+              "formattedValue": "0.02K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "NVIDIA Corp",
+              "value": 0.0,
+              "formattedValue": "0.02K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "מימון ישיר 3 - חייבים",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "TJX Cos Inc/The",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Apple Inc",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "RAIF Ares GBP יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇬🇧"
+            },
+            {
+              "name": "Citigroup Inc",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "RAIF Ares USD יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Alphabet Inc",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Meta Platforms Inc",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "RAIF CVC USD יתרה לניצול",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "CF Industries Holdings Inc",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "Stryker Corp",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Salesforce Inc",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Eaton Corp PLC",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "McKesson Corp",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "Solaris Energy Infrastructure",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "זכאים אירו",
+              "value": -0.0,
+              "formattedValue": "-0.17K",
+              "percentage": -0.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "זכאים בשח",
+              "value": -0.0,
+              "formattedValue": "-0.25K",
+              "percentage": -0.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "חוז מס ריפו 2025",
+              "value": -0.0,
+              "formattedValue": "-0.54K",
+              "percentage": -0.05,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "RAIF EUR יתרה לניצול",
+              "value": -0.0,
+              "formattedValue": "-1.76K",
+              "percentage": -0.16,
+              "countryEmoji": "🇪🇺"
+            },
+            {
+              "name": "קרנות השקעה זכאים אירו",
+              "value": -0.0,
+              "formattedValue": "-32.18K",
+              "percentage": -2.94,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "קרנות השקעה זכאים דולר",
+              "value": -0.0002,
+              "formattedValue": "-151.69K",
+              "percentage": -13.86,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Investment Funds": [
       {
         "subclass": "Funds",
@@ -11246,7 +11413,7 @@
               "value": 0.0001,
               "formattedValue": "52.07K",
               "percentage": 0.34,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "AC Investment Opportunities",
@@ -11448,34 +11615,6 @@
         ]
       }
     ],
-    "Loans": [
-      {
-        "subclass": "Direct Loans",
-        "value": 0.0276,
-        "formattedValue": "27.61M",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "תאגיד",
-              "value": 0.0275,
-              "formattedValue": "27.50M",
-              "percentage": 99.6,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "אחר",
-              "value": 0.0001,
-              "formattedValue": "109.79K",
-              "percentage": 0.4,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -11663,7 +11802,7 @@
               "value": 0.0,
               "formattedValue": "3.01K",
               "percentage": -0.16,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "OPAL IT",
@@ -11900,7 +12039,7 @@
               "value": -0.0003,
               "formattedValue": "-292.45K",
               "percentage": 15.99,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "JPY",
@@ -12061,28 +12200,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.283,
-      "formattedValue": "283.01M",
+      "value": 0.2384,
+      "formattedValue": "238.44M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.198,
-          "formattedValue": "197.98M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0308,
-          "formattedValue": "30.79M"
+          "value": 0.1978,
+          "formattedValue": "197.79M"
         },
         {
           "name": "Stocks",
-          "value": 0.0224,
-          "formattedValue": "22.42M"
-        },
-        {
-          "name": "Loans",
-          "value": 0.0152,
-          "formattedValue": "15.23M"
+          "value": 0.0222,
+          "formattedValue": "22.19M"
         },
         {
           "name": "Derivatives",
@@ -12095,6 +12224,11 @@
           "formattedValue": "5.46M"
         },
         {
+          "name": "Options",
+          "value": 0.0021,
+          "formattedValue": "2.13M"
+        },
+        {
           "name": "Investment Funds",
           "value": 0.0015,
           "formattedValue": "1.46M"
@@ -12103,18 +12237,13 @@
           "name": "Other Assets",
           "value": 0.0007,
           "formattedValue": "699.57K"
-        },
-        {
-          "name": "Options",
-          "value": 0.0002,
-          "formattedValue": "245.80K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0443,
-      "formattedValue": "44.30M",
+      "value": 0.0449,
+      "formattedValue": "44.86M",
       "children": [
         {
           "name": "Bonds",
@@ -12132,9 +12261,19 @@
           "formattedValue": "8.21M"
         },
         {
+          "name": "Other Assets",
+          "value": 0.0006,
+          "formattedValue": "550.28K"
+        },
+        {
           "name": "Mutual Funds",
           "value": 0.0004,
           "formattedValue": "419.31K"
+        },
+        {
+          "name": "Options",
+          "value": 0.0002,
+          "formattedValue": "150.34K"
         },
         {
           "name": "Non-Tradable Stocks",
@@ -12150,48 +12289,6 @@
           "name": "Futures",
           "value": 0.0002,
           "formattedValue": "174.40K"
-        },
-        {
-          "name": "Options",
-          "value": 0.0001,
-          "formattedValue": "144.18K"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.0184,
-      "formattedValue": "18.39M",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.0125,
-          "formattedValue": "12.47M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0028,
-          "formattedValue": "2.78M"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.0013,
-          "formattedValue": "1.27M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0009,
-          "formattedValue": "859.03K"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.0007,
-          "formattedValue": "716.58K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0003,
-          "formattedValue": "295.47K"
         }
       ]
     },
@@ -12236,6 +12333,33 @@
           "name": "Stocks",
           "value": 0.0006,
           "formattedValue": "616.20K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0029,
+      "formattedValue": "2.87M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0015,
+          "formattedValue": "1.46M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0012,
+          "formattedValue": "1.18M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0001,
+          "formattedValue": "120.06K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0001,
+          "formattedValue": "112.71K"
         }
       ]
     },
@@ -12482,6 +12606,18 @@
       ]
     },
     {
+      "name": "Europe",
+      "value": 0.0003,
+      "formattedValue": "292.45K",
+      "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.0003,
+          "formattedValue": "292.45K"
+        }
+      ]
+    },
+    {
       "name": "Spain",
       "value": 0.0002,
       "formattedValue": "220.34K",
@@ -12490,18 +12626,6 @@
           "name": "Investment Funds",
           "value": 0.0002,
           "formattedValue": "220.34K"
-        }
-      ]
-    },
-    {
-      "name": "Taiwan",
-      "value": 0.0002,
-      "formattedValue": "157.67K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0002,
-          "formattedValue": "157.67K"
         }
       ]
     }

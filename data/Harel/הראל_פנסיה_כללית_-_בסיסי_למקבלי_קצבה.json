@@ -1,80 +1,80 @@
 {
   "fundName": "הראל פנסיה כללית - בסיסי למקבלי קצבה",
   "trackId": "12140",
-  "totalAssetsBN": 0.34,
-  "formattedTotalAssets": "336.32M",
+  "totalAssetsBN": 0.31,
+  "formattedTotalAssets": "313.61M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.151,
       "formattedValue": "151.01M",
-      "percentage": 44.9
+      "percentage": 48.15
     },
     {
       "name": "Stocks",
       "value": 0.075,
       "formattedValue": "74.96M",
-      "percentage": 22.29
+      "percentage": 23.9
     },
     {
       "name": "Loans",
       "value": 0.0515,
       "formattedValue": "51.50M",
-      "percentage": 15.31
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0227,
-      "formattedValue": "22.73M",
-      "percentage": 6.76
+      "percentage": 16.42
     },
     {
       "name": "Mutual Funds",
       "value": 0.0123,
       "formattedValue": "12.31M",
-      "percentage": 3.66
+      "percentage": 3.92
     },
     {
       "name": "Structured Products",
       "value": 0.0101,
       "formattedValue": "10.10M",
-      "percentage": 3.0
+      "percentage": 3.22
     },
     {
       "name": "Investment Funds",
       "value": 0.0051,
       "formattedValue": "5.12M",
-      "percentage": 1.52
+      "percentage": 1.63
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.003,
       "formattedValue": "3.02M",
-      "percentage": 0.9
+      "percentage": 0.96
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0022,
       "formattedValue": "2.24M",
-      "percentage": 0.67
+      "percentage": 0.71
     },
     {
       "name": "Other Assets",
       "value": 0.0018,
       "formattedValue": "1.83M",
-      "percentage": 0.54
+      "percentage": 0.58
     },
     {
       "name": "Futures",
       "value": 0.0009,
       "formattedValue": "853.62K",
-      "percentage": 0.25
+      "percentage": 0.27
     },
     {
       "name": "Derivatives",
       "value": 0.0006,
       "formattedValue": "634.37K",
-      "percentage": 0.19
+      "percentage": 0.2
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "17.53K",
+      "percentage": 0.01
     },
     {
       "name": "Warrants",
@@ -182,7 +182,7 @@
               "value": 0.0001,
               "formattedValue": "83.69K",
               "percentage": 9.8,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "NIKKEI 225 FU 12/25",
@@ -710,14 +710,14 @@
               "value": 0.0005,
               "formattedValue": "518.35K",
               "percentage": 0.85,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "ג'י סיטי אגח יג",
               "value": 0.0005,
               "formattedValue": "508.77K",
               "percentage": 0.83,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NWG 3.032 28/08/30",
@@ -903,7 +903,7 @@
               "value": 0.0004,
               "formattedValue": "369.60K",
               "percentage": 0.61,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             }
           ],
           [
@@ -1472,7 +1472,7 @@
               "value": 0.0002,
               "formattedValue": "193.89K",
               "percentage": 0.32,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "סילברסטין אגח ג",
@@ -1509,7 +1509,7 @@
               "value": 0.0002,
               "formattedValue": "181.18K",
               "percentage": 0.3,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "דיסקונט מנ נד י",
@@ -1632,7 +1632,7 @@
               "value": 0.0002,
               "formattedValue": "157.70K",
               "percentage": 0.26,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "פועלים התח נד ה",
@@ -1941,7 +1941,7 @@
               "value": 0.0001,
               "formattedValue": "100.41K",
               "percentage": 0.16,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "מגדל הון אגח י",
@@ -2631,64 +2631,10 @@
     ],
     "Cash & Equivalents": [
       {
-        "subclass": "Cash",
-        "value": 0.0227,
-        "formattedValue": "22.71M",
-        "percentageOfClass": 99.92,
-        "itemCount": 6,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי",
-              "value": 0.0164,
-              "formattedValue": "16.44M",
-              "percentage": 72.38,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים",
-              "value": 0.002,
-              "formattedValue": "1.97M",
-              "percentage": 8.68,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.0015,
-              "formattedValue": "1.51M",
-              "percentage": 6.66,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הבינלאומי",
-              "value": 0.0012,
-              "formattedValue": "1.23M",
-              "percentage": 5.43,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט",
-              "value": 0.001,
-              "formattedValue": "1.04M",
-              "percentage": 4.59,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "JPM",
-              "value": 0.0005,
-              "formattedValue": "514.18K",
-              "percentage": 2.26,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      },
-      {
         "subclass": "Deposits",
         "value": 0.0,
         "formattedValue": "17.53K",
-        "percentageOfClass": 0.08,
+        "percentageOfClass": 100.0,
         "itemCount": 1,
         "totalPages": 1,
         "holdingsPages": [
@@ -3040,7 +2986,7 @@
               "value": 0.0,
               "formattedValue": "1.86K",
               "percentage": 0.1,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "חוז מס במקור עמיתים 2023 מהסל",
@@ -3345,7 +3291,7 @@
               "value": 0.0,
               "formattedValue": "0.89K",
               "percentage": 14.85,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             }
           ]
         ]
@@ -3429,7 +3375,7 @@
               "value": 0.0002,
               "formattedValue": "170.79K",
               "percentage": 1.39,
-              "countryEmoji": ""
+              "countryEmoji": "🇺🇸"
             }
           ],
           [
@@ -3438,14 +3384,14 @@
               "value": 0.0002,
               "formattedValue": "161.34K",
               "percentage": 1.31,
-              "countryEmoji": ""
+              "countryEmoji": "🇺🇸"
             },
             {
               "name": "FIDELITY FDS-GL FOCUS-IAUSD",
               "value": 0.0001,
               "formattedValue": "127.42K",
               "percentage": 1.04,
-              "countryEmoji": ""
+              "countryEmoji": "🇺🇸"
             },
             {
               "name": "PICTET CH IN SWISS E-IINSCAP",
@@ -3466,7 +3412,7 @@
               "value": 0.0001,
               "formattedValue": "115.44K",
               "percentage": 0.94,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "UBAM-SWISS EQUITY-IC",
@@ -3501,14 +3447,14 @@
               "value": 0.0014,
               "formattedValue": "1.40M",
               "percentage": 27.43,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Direct Lending Fund IV (EUR-10) SLP",
               "value": 0.0009,
               "formattedValue": "935.95K",
               "percentage": 18.28,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "ארקין אופורטוניטי שותפות מוגבלת",
@@ -3529,14 +3475,14 @@
               "value": 0.0004,
               "formattedValue": "371.51K",
               "percentage": 7.26,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "CVC CPE DL FEEDER Fund IV E SCSp",
               "value": 0.0003,
               "formattedValue": "254.18K",
               "percentage": 4.96,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Horsley Bridge Venture 15",
@@ -3557,7 +3503,7 @@
               "value": 0.0001,
               "formattedValue": "113.38K",
               "percentage": 2.21,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Red Dot 3 Capital Partners Israel LP",
@@ -3692,7 +3638,7 @@
               "value": 0.0009,
               "formattedValue": "902.96K",
               "percentage": 1.99,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             }
           ],
           [
@@ -3701,7 +3647,7 @@
               "value": 0.0008,
               "formattedValue": "805.65K",
               "percentage": 1.77,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "ביג",
@@ -3836,7 +3782,7 @@
               "value": 0.0004,
               "formattedValue": "389.32K",
               "percentage": 0.86,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             }
           ],
           [
@@ -4658,7 +4604,7 @@
               "value": 0.0,
               "formattedValue": "42.59K",
               "percentage": 0.09,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "יוניברסל מוטורס",
@@ -5025,7 +4971,7 @@
               "value": 0.0,
               "formattedValue": "4.00K",
               "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "HIPPO HOLDINGS INC",
@@ -5223,7 +5169,7 @@
               "value": 0.0011,
               "formattedValue": "1.13M",
               "percentage": 3.82,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "TECHNOLOGY SELECT SECT SPDR",
@@ -5288,7 +5234,7 @@
               "value": 0.0008,
               "formattedValue": "823.25K",
               "percentage": 2.79,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "INVESCO KBW BANK ETF",
@@ -5323,7 +5269,7 @@
               "value": 0.0006,
               "formattedValue": "613.61K",
               "percentage": 2.08,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "MTF סל ת\"א 125",
@@ -5418,7 +5364,7 @@
               "value": 0.0003,
               "formattedValue": "346.79K",
               "percentage": 1.17,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "SPDR EMERGING MARKETS",
@@ -5446,7 +5392,7 @@
               "value": 0.0003,
               "formattedValue": "299.01K",
               "percentage": 1.01,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "NEXT FUNDS NIKKEI 225 EXCHAN",
@@ -5481,7 +5427,7 @@
               "value": 0.0002,
               "formattedValue": "246.19K",
               "percentage": 0.83,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             }
           ],
           [
@@ -5525,7 +5471,7 @@
               "value": 0.0002,
               "formattedValue": "192.62K",
               "percentage": 0.65,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "WISDOMTREE INDIA EARNINGS",
@@ -5583,7 +5529,7 @@
               "value": 0.0001,
               "formattedValue": "105.05K",
               "percentage": 0.36,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "ISHARES DJ US MEDICAL DEVICE",
@@ -5597,7 +5543,7 @@
               "value": 0.0001,
               "formattedValue": "94.54K",
               "percentage": 0.32,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺   "
             },
             {
               "name": "ילין לפידות סל ת\"א בנקים",
@@ -5641,7 +5587,7 @@
               "value": 0.0001,
               "formattedValue": "50.18K",
               "percentage": 0.17,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "VANGUARD COMMUNICATION SERVI",
@@ -5662,7 +5608,7 @@
               "value": 0.0,
               "formattedValue": "35.75K",
               "percentage": 0.12,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "X HARVEST CSI300 1D",
@@ -5781,7 +5727,7 @@
               "value": 0.0,
               "formattedValue": "6.81K",
               "percentage": 1.07,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             }
           ],
           [
@@ -5811,7 +5757,7 @@
               "value": 0.0,
               "formattedValue": "0.29K",
               "percentage": 0.05,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "EURUSD",
@@ -5828,28 +5774,23 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.2581,
-      "formattedValue": "258.05M",
+      "value": 0.2367,
+      "formattedValue": "236.71M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.1325,
-          "formattedValue": "132.53M"
+          "value": 0.1305,
+          "formattedValue": "130.50M"
         },
         {
           "name": "Loans",
-          "value": 0.0468,
-          "formattedValue": "46.83M"
+          "value": 0.0515,
+          "formattedValue": "51.50M"
         },
         {
           "name": "Stocks",
-          "value": 0.0363,
-          "formattedValue": "36.30M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0222,
-          "formattedValue": "22.21M"
+          "value": 0.0345,
+          "formattedValue": "34.53M"
         },
         {
           "name": "Structured Products",
@@ -5885,8 +5826,8 @@
     },
     {
       "name": "USA",
-      "value": 0.0445,
-      "formattedValue": "44.53M",
+      "value": 0.045,
+      "formattedValue": "44.99M",
       "children": [
         {
           "name": "Stocks",
@@ -5895,8 +5836,8 @@
         },
         {
           "name": "Mutual Funds",
-          "value": 0.0108,
-          "formattedValue": "10.78M"
+          "value": 0.0112,
+          "formattedValue": "11.24M"
         },
         {
           "name": "Bonds",
@@ -5927,38 +5868,45 @@
     },
     {
       "name": "Global",
-      "value": 0.0199,
-      "formattedValue": "19.89M",
+      "value": 0.0101,
+      "formattedValue": "10.08M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0107,
-          "formattedValue": "10.70M"
-        },
-        {
-          "name": "Loans",
-          "value": 0.0047,
-          "formattedValue": "4.67M"
-        },
-        {
-          "name": "Investment Funds",
-          "value": 0.0033,
-          "formattedValue": "3.27M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0006,
-          "formattedValue": "575.00K"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0005,
-          "formattedValue": "514.18K"
+          "value": 0.0097,
+          "formattedValue": "9.73M"
         },
         {
           "name": "Non-Tradable Bonds",
           "value": 0.0002,
           "formattedValue": "159.17K"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0002,
+          "formattedValue": "191.89K"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
+      "value": 0.0063,
+      "formattedValue": "6.28M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0031,
+          "formattedValue": "3.08M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.002,
+          "formattedValue": "2.03M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0012,
+          "formattedValue": "1.17M"
         }
       ]
     },
@@ -5998,6 +5946,23 @@
           "name": "Non-Tradable Bonds",
           "value": 0.0003,
           "formattedValue": "325.67K"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺   ",
+      "value": 0.0025,
+      "formattedValue": "2.49M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0024,
+          "formattedValue": "2.37M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0001,
+          "formattedValue": "115.44K"
         }
       ]
     },
@@ -6078,18 +6043,6 @@
           "name": "Stocks",
           "value": 0.0005,
           "formattedValue": "507.21K"
-        }
-      ]
-    },
-    {
-      "name": "Taiwan",
-      "value": 0.0008,
-      "formattedValue": "805.65K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0008,
-          "formattedValue": "805.65K"
         }
       ]
     },

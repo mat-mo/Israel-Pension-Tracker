@@ -1,26 +1,20 @@
 {
   "fundName": "מיטב פנסיה כללית עוקב מדד S&P500",
   "trackId": "13285",
-  "totalAssetsBN": 0.7,
-  "formattedTotalAssets": "699.76M",
+  "totalAssetsBN": 0.52,
+  "formattedTotalAssets": "515.34M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.4382,
       "formattedValue": "438.23M",
-      "percentage": 62.63
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.1844,
-      "formattedValue": "184.42M",
-      "percentage": 26.35
+      "percentage": 85.04
     },
     {
       "name": "Stocks",
       "value": 0.0901,
       "formattedValue": "90.08M",
-      "percentage": 12.87
+      "percentage": 17.48
     },
     {
       "name": "Futures",
@@ -32,7 +26,7 @@
       "name": "Derivatives",
       "value": -0.013,
       "formattedValue": "-12.99M",
-      "percentage": -1.86
+      "percentage": -2.52
     }
   ],
   "breakdown": {
@@ -66,41 +60,6 @@
               "formattedValue": "8.33M",
               "percentage": 9.25,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.1844,
-        "formattedValue": "184.42M",
-        "percentageOfClass": 100.0,
-        "itemCount": 3,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.1234,
-              "formattedValue": "123.42M",
-              "percentage": 66.92,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "פועלים",
-              "value": 0.0322,
-              "formattedValue": "32.19M",
-              "percentage": 17.45,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "דיסקונט",
-              "value": 0.0288,
-              "formattedValue": "28.81M",
-              "percentage": 15.62,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -287,18 +246,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.7331,
-      "formattedValue": "733.15M",
+      "value": 0.4715,
+      "formattedValue": "471.52M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.4382,
           "formattedValue": "438.23M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.2616,
-          "formattedValue": "261.63M"
         },
         {
           "name": "Derivatives",

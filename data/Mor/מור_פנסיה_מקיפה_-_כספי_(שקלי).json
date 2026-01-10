@@ -2,31 +2,19 @@
   "fundName": "מור פנסיה מקיפה - כספי (שקלי)",
   "trackId": "13914",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "10.76M",
+  "formattedTotalAssets": "10.55M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0098,
       "formattedValue": "9.77M",
-      "percentage": 90.84
+      "percentage": 92.63
     },
     {
       "name": "Other Assets",
       "value": 0.0008,
       "formattedValue": "778.13K",
-      "percentage": 7.23
-    },
-    {
-      "name": "Non-Tradable Bonds",
-      "value": 0.0001,
-      "formattedValue": "149.01K",
-      "percentage": 1.39
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0001,
-      "formattedValue": "57.92K",
-      "percentage": 0.54
+      "percentage": 7.37
     }
   ],
   "breakdown": {
@@ -160,55 +148,6 @@
           ]
         ]
       }
-    ],
-    "Non-Tradable Bonds": [
-      {
-        "subclass": "General",
-        "value": 0.0001,
-        "formattedValue": "149.01K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "ערד סדרה 8911",
-              "value": 0.0001,
-              "formattedValue": "149.01K",
-              "percentage": 100.0,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0001,
-        "formattedValue": "57.92K",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.0001,
-              "formattedValue": "57.91K",
-              "percentage": 99.98,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק המזרחי המאוחד בע\"מ",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.02,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
     ]
   },
   "geoSunburst": [
@@ -226,18 +165,6 @@
           "name": "Other Assets",
           "value": 0.0008,
           "formattedValue": "778.13K"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.0001,
-      "formattedValue": "149.01K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.0001,
-          "formattedValue": "149.01K"
         }
       ]
     }

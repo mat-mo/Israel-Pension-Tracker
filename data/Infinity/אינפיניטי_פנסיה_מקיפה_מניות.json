@@ -2,49 +2,22 @@
   "fundName": "אינפיניטי פנסיה מקיפה מניות",
   "trackId": "15685",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "514.03K",
+  "formattedTotalAssets": "353.55K",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0003,
       "formattedValue": "347.32K",
-      "percentage": 67.57
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0002,
-      "formattedValue": "160.48K",
-      "percentage": 31.22
+      "percentage": 98.24
     },
     {
       "name": "Bonds",
       "value": 0.0,
       "formattedValue": "6.23K",
-      "percentage": 1.21
+      "percentage": 1.76
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0002,
-        "formattedValue": "160.48K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0002,
-              "formattedValue": "160.48K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -139,7 +112,7 @@
               "value": 0.0,
               "formattedValue": "10.52K",
               "percentage": 3.66,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "mtf סל (A4) dax מנוט",
@@ -496,18 +469,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0004,
-      "formattedValue": "372.97K",
+      "value": 0.0002,
+      "formattedValue": "201.98K",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0002,
-          "formattedValue": "160.48K"
-        },
         {
           "name": "Stocks",
           "value": 0.0002,
-          "formattedValue": "212.50K"
+          "formattedValue": "201.98K"
         }
       ]
     },

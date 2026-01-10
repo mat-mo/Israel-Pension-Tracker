@@ -2,83 +2,28 @@
   "fundName": "מגדל מקפת משלימה הלכה",
   "trackId": "2149",
   "totalAssetsBN": 0.04,
-  "formattedTotalAssets": "38.19M",
+  "formattedTotalAssets": "37.51M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0188,
       "formattedValue": "18.76M",
-      "percentage": 49.13
+      "percentage": 50.01
     },
     {
       "name": "Bonds",
       "value": 0.0183,
       "formattedValue": "18.30M",
-      "percentage": 47.93
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0007,
-      "formattedValue": "677.35K",
-      "percentage": 1.77
+      "percentage": 48.79
     },
     {
       "name": "Derivatives",
       "value": 0.0004,
       "formattedValue": "448.75K",
-      "percentage": 1.18
+      "percentage": 1.2
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0007,
-        "formattedValue": "677.35K",
-        "percentageOfClass": 100.0,
-        "itemCount": 5,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.0006,
-              "formattedValue": "638.50K",
-              "percentage": 94.26,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט לישראל בע\"מ",
-              "value": 0.0,
-              "formattedValue": "33.30K",
-              "percentage": 4.92,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי טפחות בע\"מ",
-              "value": 0.0,
-              "formattedValue": "5.16K",
-              "percentage": 0.76,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "יובנק",
-              "value": 0.0,
-              "formattedValue": "0.21K",
-              "percentage": 0.03,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים בע\"מ",
-              "value": 0.0,
-              "formattedValue": "0.19K",
-              "percentage": 0.03,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -243,7 +188,7 @@
               "value": 0.0002,
               "formattedValue": "159.04K",
               "percentage": 1.31,
-              "countryEmoji": ""
+              "countryEmoji": "🇺🇸"
             },
             {
               "name": "קסם ETF כשרה תלבונד תשו צ",
@@ -257,14 +202,14 @@
               "value": 0.0001,
               "formattedValue": "122.21K",
               "percentage": 1.01,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "ISHARES MARKIT IBOXX EUR HIGH YIELD",
               "value": 0.0001,
               "formattedValue": "109.77K",
               "percentage": 0.91,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "SPDR PORTFOLIO INTERMEDIATE",
@@ -604,14 +549,14 @@
               "value": 0.0005,
               "formattedValue": "478.43K",
               "percentage": 2.55,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "ISHARES DJ EURO STOXX 50",
               "value": 0.0005,
               "formattedValue": "472.67K",
               "percentage": 2.52,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "DAIWA ETF TOPIX",
@@ -625,7 +570,7 @@
               "value": 0.0003,
               "formattedValue": "332.32K",
               "percentage": 1.77,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "GLOBAL X S AND P/TSX 60 INDEX CORPO RATE",
@@ -649,8 +594,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0256,
-      "formattedValue": "25.56M",
+      "value": 0.0239,
+      "formattedValue": "23.94M",
       "children": [
         {
           "name": "Bonds",
@@ -663,11 +608,6 @@
           "formattedValue": "7.95M"
         },
         {
-          "name": "Cash & Equivalents",
-          "value": 0.0016,
-          "formattedValue": "1.63M"
-        },
-        {
           "name": "Derivatives",
           "value": 0.0007,
           "formattedValue": "689.06K"
@@ -676,8 +616,8 @@
     },
     {
       "name": "USA",
-      "value": 0.0103,
-      "formattedValue": "10.32M",
+      "value": 0.0105,
+      "formattedValue": "10.48M",
       "children": [
         {
           "name": "Stocks",
@@ -686,25 +626,37 @@
         },
         {
           "name": "Bonds",
-          "value": 0.0026,
-          "formattedValue": "2.61M"
+          "value": 0.0028,
+          "formattedValue": "2.77M"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
+      "value": 0.0015,
+      "formattedValue": "1.52M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0013,
+          "formattedValue": "1.28M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0002,
+          "formattedValue": "231.98K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0028,
-      "formattedValue": "2.84M",
+      "value": 0.0012,
+      "formattedValue": "1.16M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0024,
-          "formattedValue": "2.45M"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.0004,
-          "formattedValue": "391.03K"
+          "value": 0.0012,
+          "formattedValue": "1.16M"
         }
       ]
     },

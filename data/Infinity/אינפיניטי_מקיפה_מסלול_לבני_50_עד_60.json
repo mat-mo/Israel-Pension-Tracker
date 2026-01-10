@@ -1,32 +1,20 @@
 {
   "fundName": "אינפיניטי מקיפה מסלול לבני 50 עד 60",
   "trackId": "14038",
-  "totalAssetsBN": 0.11,
-  "formattedTotalAssets": "111.94M",
+  "totalAssetsBN": 0.1,
+  "formattedTotalAssets": "104.70M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0699,
       "formattedValue": "69.92M",
-      "percentage": 62.46
+      "percentage": 66.78
     },
     {
       "name": "Bonds",
       "value": 0.0348,
       "formattedValue": "34.77M",
-      "percentage": 31.06
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0068,
-      "formattedValue": "6.78M",
-      "percentage": 6.06
-    },
-    {
-      "name": "Non-Tradable Bonds",
-      "value": 0.0005,
-      "formattedValue": "452.13K",
-      "percentage": 0.4
+      "percentage": 33.21
     },
     {
       "name": "Futures",
@@ -711,27 +699,6 @@
         ]
       }
     ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0068,
-        "formattedValue": "6.78M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0068,
-              "formattedValue": "6.78M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -847,7 +814,7 @@
               "value": 0.0013,
               "formattedValue": "1.28M",
               "percentage": 2.64,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "mtf סל (A4) dax מנוט",
@@ -1606,48 +1573,6 @@
         ]
       }
     ],
-    "Non-Tradable Bonds": [
-      {
-        "subclass": "General",
-        "value": 0.0005,
-        "formattedValue": "452.13K",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "ערד 8909",
-              "value": 0.0004,
-              "formattedValue": "402.74K",
-              "percentage": 89.08,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8910",
-              "value": 0.0,
-              "formattedValue": "28.60K",
-              "percentage": 6.32,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8911",
-              "value": 0.0,
-              "formattedValue": "16.23K",
-              "percentage": 3.59,
-              "countryEmoji": ""
-            },
-            {
-              "name": "ערד 8912",
-              "value": 0.0,
-              "formattedValue": "4.56K",
-              "percentage": 1.01,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Futures": [
       {
         "subclass": "General",
@@ -1680,23 +1605,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0773,
-      "formattedValue": "77.31M",
+      "value": 0.0693,
+      "formattedValue": "69.35M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0367,
-          "formattedValue": "36.70M"
+          "value": 0.0354,
+          "formattedValue": "35.43M"
         },
         {
           "name": "Bonds",
           "value": 0.0339,
           "formattedValue": "33.92M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0067,
-          "formattedValue": "6.69M"
         }
       ]
     },
@@ -1719,18 +1639,13 @@
     },
     {
       "name": "Global",
-      "value": 0.0028,
-      "formattedValue": "2.80M",
+      "value": 0.0036,
+      "formattedValue": "3.63M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0024,
-          "formattedValue": "2.35M"
-        },
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.0005,
-          "formattedValue": "452.13K"
+          "value": 0.0036,
+          "formattedValue": "3.63M"
         }
       ]
     }

@@ -2,25 +2,19 @@
   "fundName": "מיטב פנסיה כללית עוקב מדדים גמיש",
   "trackId": "14268",
   "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "21.98M",
+  "formattedTotalAssets": "21.74M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0116,
       "formattedValue": "11.64M",
-      "percentage": 52.96
+      "percentage": 53.55
     },
     {
       "name": "Stocks",
       "value": 0.0101,
       "formattedValue": "10.13M",
-      "percentage": 46.07
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0002,
-      "formattedValue": "242.47K",
-      "percentage": 1.1
+      "percentage": 46.59
     },
     {
       "name": "Other Assets",
@@ -65,7 +59,7 @@
               "value": 0.0017,
               "formattedValue": "1.75M",
               "percentage": 17.25,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "קסם S&P 500 4D ETF",
@@ -79,7 +73,7 @@
               "value": 0.0011,
               "formattedValue": "1.07M",
               "percentage": 10.54,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇺🇸"
             },
             {
               "name": "הראל סל 4D ‏NASDAQ 100",
@@ -189,7 +183,7 @@
               "value": 0.0005,
               "formattedValue": "476.54K",
               "percentage": 58.89,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Xtrackers USD High Yield Corporate Bond ETF",
@@ -203,7 +197,7 @@
               "value": 0.0001,
               "formattedValue": "56.65K",
               "percentage": 7.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "ISHARES USD CORPORATE BOND",
@@ -211,41 +205,6 @@
               "formattedValue": "48.12K",
               "percentage": 5.95,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0002,
-        "formattedValue": "242.47K",
-        "percentageOfClass": 100.0,
-        "itemCount": 3,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "פועלים",
-              "value": 0.0001,
-              "formattedValue": "109.95K",
-              "percentage": 45.35,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "מזרחי",
-              "value": 0.0001,
-              "formattedValue": "104.32K",
-              "percentage": 43.02,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "לאומי למשכנתאות‎ בנק",
-              "value": 0.0,
-              "formattedValue": "28.19K",
-              "percentage": 11.63,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -294,14 +253,14 @@
               "value": 0.0,
               "formattedValue": "7.58K",
               "percentage": -36.13,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "LECPTREU",
               "value": 0.0,
               "formattedValue": "0.29K",
               "percentage": -1.41,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Unfunded Forward",
@@ -338,41 +297,14 @@
   },
   "geoSunburst": [
     {
-      "name": "Israel",
-      "value": 0.0113,
-      "formattedValue": "11.32M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0075,
-          "formattedValue": "7.45M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0028,
-          "formattedValue": "2.81M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0007,
-          "formattedValue": "699.20K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0004,
-          "formattedValue": "350.16K"
-        }
-      ]
-    },
-    {
       "name": "USA",
-      "value": 0.0112,
-      "formattedValue": "11.16M",
+      "value": 0.0122,
+      "formattedValue": "12.23M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0073,
-          "formattedValue": "7.31M"
+          "value": 0.0084,
+          "formattedValue": "8.38M"
         },
         {
           "name": "Bonds",
@@ -387,7 +319,36 @@
       ]
     },
     {
+      "name": "Israel",
+      "value": 0.0078,
+      "formattedValue": "7.80M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0075,
+          "formattedValue": "7.45M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0004,
+          "formattedValue": "350.16K"
+        }
+      ]
+    },
+    {
       "name": "Global",
+      "value": 0.0017,
+      "formattedValue": "1.75M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0017,
+          "formattedValue": "1.75M"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
       "value": 0.0005,
       "formattedValue": "533.19K",
       "children": [

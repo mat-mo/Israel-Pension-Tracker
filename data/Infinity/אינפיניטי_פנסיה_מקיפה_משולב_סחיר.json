@@ -2,43 +2,16 @@
   "fundName": "אינפיניטי פנסיה מקיפה משולב סחיר",
   "trackId": "14333",
   "totalAssetsBN": 0.03,
-  "formattedTotalAssets": "29.89M",
+  "formattedTotalAssets": "28.50M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0285,
       "formattedValue": "28.50M",
-      "percentage": 95.35
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0014,
-      "formattedValue": "1.39M",
-      "percentage": 4.65
+      "percentage": 100.0
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0014,
-        "formattedValue": "1.39M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0014,
-              "formattedValue": "1.39M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "Direct Holdings",
@@ -838,18 +811,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0298,
-      "formattedValue": "29.84M",
+      "value": 0.0285,
+      "formattedValue": "28.45M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0285,
           "formattedValue": "28.45M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0014,
-          "formattedValue": "1.39M"
         }
       ]
     }

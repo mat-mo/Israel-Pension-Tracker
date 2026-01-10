@@ -1,38 +1,32 @@
 {
   "fundName": "מנורה מבטחים משלימה עוקב מדד S&P500",
   "trackId": "13875",
-  "totalAssetsBN": 1.24,
-  "formattedTotalAssets": "1.24B",
+  "totalAssetsBN": 0.49,
+  "formattedTotalAssets": "493.79M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.7503,
-      "formattedValue": "750.32M",
-      "percentage": 60.31
-    },
     {
       "name": "Stocks",
       "value": 0.4336,
       "formattedValue": "433.59M",
-      "percentage": 34.85
+      "percentage": 87.81
     },
     {
       "name": "Mutual Funds",
       "value": 0.0623,
       "formattedValue": "62.35M",
-      "percentage": 5.01
+      "percentage": 12.63
     },
     {
       "name": "Futures",
       "value": 0.0109,
       "formattedValue": "10.90M",
-      "percentage": 0.88
+      "percentage": 2.21
     },
     {
       "name": "Derivatives",
       "value": -0.0131,
       "formattedValue": "-13.05M",
-      "percentage": -1.05
+      "percentage": -2.64
     }
   ],
   "breakdown": {
@@ -58,48 +52,6 @@
               "value": -0.019,
               "formattedValue": "-18.96M",
               "percentage": 145.2,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.7503,
-        "formattedValue": "750.32M",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.3369,
-              "formattedValue": "336.93M",
-              "percentage": 44.9,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט לישראל בע\"מ",
-              "value": 0.2718,
-              "formattedValue": "271.84M",
-              "percentage": 36.23,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי טפחות בע\"מ",
-              "value": 0.1126,
-              "formattedValue": "112.62M",
-              "percentage": 15.01,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים בע''מ",
-              "value": 0.0289,
-              "formattedValue": "28.93M",
-              "percentage": 3.86,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -235,23 +187,6 @@
   },
   "geoSunburst": [
     {
-      "name": "Israel",
-      "value": 0.7721,
-      "formattedValue": "772.15M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.7532,
-          "formattedValue": "753.18M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.019,
-          "formattedValue": "18.97M"
-        }
-      ]
-    },
-    {
       "name": "USA",
       "value": 0.5127,
       "formattedValue": "512.74M",
@@ -275,6 +210,18 @@
           "name": "Derivatives",
           "value": 0.0059,
           "formattedValue": "5.90M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.019,
+      "formattedValue": "18.97M",
+      "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.019,
+          "formattedValue": "18.97M"
         }
       ]
     }

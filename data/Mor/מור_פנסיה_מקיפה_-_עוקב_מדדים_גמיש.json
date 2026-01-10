@@ -1,50 +1,44 @@
 {
   "fundName": "מור פנסיה מקיפה - עוקב מדדים גמיש",
   "trackId": "14340",
-  "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "18.20M",
+  "totalAssetsBN": 0.01,
+  "formattedTotalAssets": "14.24M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0093,
       "formattedValue": "9.26M",
-      "percentage": 50.9
+      "percentage": 65.04
     },
     {
       "name": "Bonds",
       "value": 0.0043,
       "formattedValue": "4.27M",
-      "percentage": 23.45
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.004,
-      "formattedValue": "3.96M",
-      "percentage": 21.74
+      "percentage": 29.96
     },
     {
       "name": "Mutual Funds",
       "value": 0.0006,
       "formattedValue": "580.55K",
-      "percentage": 3.19
+      "percentage": 4.08
     },
     {
       "name": "Other Assets",
       "value": 0.0002,
       "formattedValue": "233.02K",
-      "percentage": 1.28
+      "percentage": 1.64
     },
     {
       "name": "Futures",
       "value": 0.0001,
       "formattedValue": "66.34K",
-      "percentage": 0.36
+      "percentage": 0.47
     },
     {
       "name": "Derivatives",
       "value": -0.0002,
       "formattedValue": "-168.59K",
-      "percentage": -0.93
+      "percentage": -1.18
     }
   ],
   "breakdown": {
@@ -112,35 +106,7 @@
               "value": 0.0001,
               "formattedValue": "94.81K",
               "percentage": 16.33,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.004,
-        "formattedValue": "3.96M",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.0039,
-              "formattedValue": "3.95M",
-              "percentage": 99.73,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק המזרחי המאוחד בע\"מ",
-              "value": 0.0,
-              "formattedValue": "10.56K",
-              "percentage": 0.27,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             }
           ]
         ]
@@ -224,7 +190,7 @@
               "value": 0.0014,
               "formattedValue": "1.44M",
               "percentage": 15.5,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NASDAQ 100.IBI",
@@ -366,23 +332,18 @@
     },
     {
       "name": "Israel",
-      "value": 0.0078,
-      "formattedValue": "7.79M",
+      "value": 0.0024,
+      "formattedValue": "2.40M",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.004,
-          "formattedValue": "3.96M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0022,
-          "formattedValue": "2.20M"
-        },
         {
           "name": "Bonds",
           "value": 0.0012,
           "formattedValue": "1.23M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0008,
+          "formattedValue": "759.10K"
         },
         {
           "name": "Other Assets",
@@ -393,6 +354,18 @@
           "name": "Derivatives",
           "value": 0.0002,
           "formattedValue": "176.82K"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
+      "value": 0.0014,
+      "formattedValue": "1.44M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0014,
+          "formattedValue": "1.44M"
         }
       ]
     }

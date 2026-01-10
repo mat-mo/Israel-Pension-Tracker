@@ -2,37 +2,31 @@
   "fundName": "מיטב פנסיה כללית קיימות",
   "trackId": "14269",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "11.66M",
+  "formattedTotalAssets": "10.36M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0098,
       "formattedValue": "9.81M",
-      "percentage": 84.14
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0013,
-      "formattedValue": "1.30M",
-      "percentage": 11.17
+      "percentage": 94.72
     },
     {
       "name": "Stocks",
       "value": 0.0003,
       "formattedValue": "342.10K",
-      "percentage": 2.93
+      "percentage": 3.3
     },
     {
       "name": "Futures",
       "value": 0.0002,
       "formattedValue": "189.48K",
-      "percentage": 1.63
+      "percentage": 1.83
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "15.56K",
-      "percentage": 0.13
+      "percentage": 0.15
     }
   ],
   "breakdown": {
@@ -52,27 +46,6 @@
               "formattedValue": "342.10K",
               "percentage": 100.0,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0013,
-        "formattedValue": "1.30M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0013,
-              "formattedValue": "1.30M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -245,18 +218,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0119,
-      "formattedValue": "11.95M",
+      "value": 0.0098,
+      "formattedValue": "9.81M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0098,
           "formattedValue": "9.81M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0021,
-          "formattedValue": "2.14M"
         }
       ]
     },

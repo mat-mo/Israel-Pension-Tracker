@@ -2,43 +2,37 @@
   "fundName": "מור פנסיה כללית - עוקב מדדים גמיש",
   "trackId": "14338",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.64M",
+  "formattedTotalAssets": "1.46M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0012,
       "formattedValue": "1.19M",
-      "percentage": 72.88
+      "percentage": 81.55
     },
     {
       "name": "Bonds",
       "value": 0.0002,
       "formattedValue": "224.12K",
-      "percentage": 13.68
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0002,
-      "formattedValue": "174.26K",
-      "percentage": 10.64
+      "percentage": 15.31
     },
     {
       "name": "Mutual Funds",
       "value": 0.0,
       "formattedValue": "47.01K",
-      "percentage": 2.87
+      "percentage": 3.21
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "3.34K",
-      "percentage": 0.2
+      "percentage": 0.23
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-4.43K",
-      "percentage": -0.27
+      "percentage": -0.3
     }
   ],
   "breakdown": {
@@ -119,34 +113,6 @@
         ]
       }
     ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0002,
-        "formattedValue": "174.26K",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.0002,
-              "formattedValue": "174.79K",
-              "percentage": 100.3,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק המזרחי המאוחד בע\"מ",
-              "value": -0.0,
-              "formattedValue": "-0.53K",
-              "percentage": -0.3,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -190,7 +156,7 @@
               "value": 0.0001,
               "formattedValue": "140.10K",
               "percentage": 11.74,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "ISHARES BROAD USD HIGH YIELD",
@@ -234,7 +200,7 @@
               "value": 0.0,
               "formattedValue": "10.23K",
               "percentage": 0.86,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "RUSS2000.תכ",
@@ -349,19 +315,14 @@
       ]
     },
     {
-      "name": "Israel",
-      "value": 0.0004,
-      "formattedValue": "402.62K",
+      "name": "🇪🇺 ",
+      "value": 0.0002,
+      "formattedValue": "150.34K",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0002,
-          "formattedValue": "175.35K"
-        },
         {
           "name": "Stocks",
           "value": 0.0002,
-          "formattedValue": "227.28K"
+          "formattedValue": "150.34K"
         }
       ]
     }

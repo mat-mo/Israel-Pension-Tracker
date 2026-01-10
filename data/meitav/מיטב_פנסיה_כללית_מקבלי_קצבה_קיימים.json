@@ -2,25 +2,19 @@
   "fundName": "מיטב פנסיה כללית מקבלי קצבה קיימים",
   "trackId": "2160",
   "totalAssetsBN": 0.04,
-  "formattedTotalAssets": "44.84M",
+  "formattedTotalAssets": "44.36M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0435,
       "formattedValue": "43.53M",
-      "percentage": 97.06
+      "percentage": 98.13
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0008,
       "formattedValue": "831.44K",
-      "percentage": 1.85
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0005,
-      "formattedValue": "485.54K",
-      "percentage": 1.08
+      "percentage": 1.87
     }
   ],
   "breakdown": {
@@ -53,27 +47,6 @@
               "value": 0.0001,
               "formattedValue": "104.85K",
               "percentage": 12.61,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0005,
-        "formattedValue": "485.54K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0005,
-              "formattedValue": "485.54K",
-              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -266,8 +239,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0448,
-      "formattedValue": "44.84M",
+      "value": 0.0444,
+      "formattedValue": "44.36M",
       "children": [
         {
           "name": "Bonds",
@@ -278,11 +251,6 @@
           "name": "Non-Tradable Bonds",
           "value": 0.0008,
           "formattedValue": "831.44K"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0005,
-          "formattedValue": "485.54K"
         }
       ]
     }

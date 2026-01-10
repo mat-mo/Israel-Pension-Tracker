@@ -1,38 +1,32 @@
 {
   "fundName": "כלל פנסיה משלימה עוקב מדדי מניות",
   "trackId": "15091",
-  "totalAssetsBN": 0.07,
-  "formattedTotalAssets": "74.77M",
+  "totalAssetsBN": 0.03,
+  "formattedTotalAssets": "32.04M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0427,
-      "formattedValue": "42.73M",
-      "percentage": 57.15
-    },
     {
       "name": "Stocks",
       "value": 0.0304,
       "formattedValue": "30.35M",
-      "percentage": 40.6
+      "percentage": 94.73
     },
     {
       "name": "Futures",
       "value": 0.0017,
       "formattedValue": "1.74M",
-      "percentage": 2.33
+      "percentage": 5.44
     },
     {
       "name": "Derivatives",
       "value": 0.0003,
       "formattedValue": "268.54K",
-      "percentage": 0.36
+      "percentage": 0.84
     },
     {
       "name": "Other Assets",
       "value": -0.0003,
       "formattedValue": "-322.02K",
-      "percentage": -0.43
+      "percentage": -1.0
     }
   ],
   "breakdown": {
@@ -87,48 +81,6 @@
               "formattedValue": "497.83K",
               "percentage": 28.56,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0427,
-        "formattedValue": "42.73M",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק דיסקונט לישראל בע\"מ",
-              "value": 0.0261,
-              "formattedValue": "26.10M",
-              "percentage": 61.07,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים בע\"מ",
-              "value": 0.0073,
-              "formattedValue": "7.34M",
-              "percentage": 17.17,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי טפחות בע\"מ",
-              "value": 0.0069,
-              "formattedValue": "6.94M",
-              "percentage": 16.24,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק לאומי לישראל בע\"מ",
-              "value": 0.0024,
-              "formattedValue": "2.36M",
-              "percentage": 5.52,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -191,7 +143,7 @@
               "value": 0.0051,
               "formattedValue": "5.13M",
               "percentage": 16.91,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -199,28 +151,6 @@
     ]
   },
   "geoSunburst": [
-    {
-      "name": "Israel",
-      "value": 0.0443,
-      "formattedValue": "44.28M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0434,
-          "formattedValue": "43.39M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0006,
-          "formattedValue": "571.74K"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.0003,
-          "formattedValue": "322.02K"
-        }
-      ]
-    },
     {
       "name": "USA",
       "value": 0.0257,
@@ -239,7 +169,7 @@
       ]
     },
     {
-      "name": "Global",
+      "name": "Europe",
       "value": 0.0051,
       "formattedValue": "5.13M",
       "children": [
@@ -259,6 +189,23 @@
           "name": "Futures",
           "value": 0.0012,
           "formattedValue": "1.25M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0009,
+      "formattedValue": "893.76K",
+      "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.0006,
+          "formattedValue": "571.74K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0003,
+          "formattedValue": "322.02K"
         }
       ]
     }

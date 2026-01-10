@@ -2,31 +2,25 @@
   "fundName": "מור פנסיה מקיפה עוקבי מדדים עוקב מדדים - למקבלי קצבה",
   "trackId": "15267",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.18M",
+  "formattedTotalAssets": "1.22M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.001,
-      "formattedValue": "958.47K",
-      "percentage": 44.01
-    },
     {
       "name": "Stocks",
       "value": 0.0005,
       "formattedValue": "483.97K",
-      "percentage": 22.22
+      "percentage": 39.69
     },
     {
       "name": "Bonds",
       "value": 0.0005,
       "formattedValue": "474.36K",
-      "percentage": 21.78
+      "percentage": 38.9
     },
     {
       "name": "Other Assets",
       "value": 0.0003,
       "formattedValue": "260.97K",
-      "percentage": 11.98
+      "percentage": 21.4
     }
   ],
   "breakdown": {
@@ -72,27 +66,6 @@
         ]
       }
     ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.001,
-        "formattedValue": "958.47K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.001,
-              "formattedValue": "958.47K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -129,7 +102,7 @@
               "value": 0.0001,
               "formattedValue": "53.72K",
               "percentage": 11.1,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "SP500.IBI",
@@ -202,14 +175,9 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.002,
-      "formattedValue": "1.96M",
+      "value": 0.0009,
+      "formattedValue": "944.76K",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.001,
-          "formattedValue": "958.47K"
-        },
         {
           "name": "Bonds",
           "value": 0.0005,
@@ -222,8 +190,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.0003,
-          "formattedValue": "263.15K"
+          "value": 0.0002,
+          "formattedValue": "209.43K"
         }
       ]
     },

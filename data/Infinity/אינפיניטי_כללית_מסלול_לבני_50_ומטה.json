@@ -2,25 +2,19 @@
   "fundName": "אינפיניטי כללית מסלול לבני 50 ומטה",
   "trackId": "14045",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "7.59M",
+  "formattedTotalAssets": "6.92M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.004,
       "formattedValue": "4.02M",
-      "percentage": 52.93
+      "percentage": 58.07
     },
     {
       "name": "Bonds",
       "value": 0.0029,
       "formattedValue": "2.90M",
-      "percentage": 38.22
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0007,
-      "formattedValue": "670.91K",
-      "percentage": 8.84
+      "percentage": 41.93
     }
   ],
   "breakdown": {
@@ -678,27 +672,6 @@
         ]
       }
     ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0007,
-        "formattedValue": "670.91K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0007,
-              "formattedValue": "670.91K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -858,7 +831,7 @@
               "value": 0.0,
               "formattedValue": "37.36K",
               "percentage": 1.56,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "תכלית סל SP500 מנוטר",
@@ -937,7 +910,7 @@
               "value": 0.0,
               "formattedValue": "3.40K",
               "percentage": 0.14,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הראל סל NDX 100",
@@ -1512,8 +1485,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.006,
-      "formattedValue": "5.96M",
+      "value": 0.005,
+      "formattedValue": "4.95M",
       "children": [
         {
           "name": "Bonds",
@@ -1523,12 +1496,7 @@
         {
           "name": "Stocks",
           "value": 0.0021,
-          "formattedValue": "2.09M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.001,
-          "formattedValue": "964.74K"
+          "formattedValue": "2.05M"
         }
       ]
     },

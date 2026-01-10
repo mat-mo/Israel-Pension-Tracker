@@ -1,26 +1,20 @@
 {
   "fundName": "הראל פנסיה כללית כספי (שקלי)",
   "trackId": "13279",
-  "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "15.28M",
+  "totalAssetsBN": 0.01,
+  "formattedTotalAssets": "7.10M",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0082,
-      "formattedValue": "8.17M",
-      "percentage": 53.49
-    },
     {
       "name": "Bonds",
       "value": 0.0078,
       "formattedValue": "7.77M",
-      "percentage": 50.85
+      "percentage": 109.33
     },
     {
       "name": "Other Assets",
       "value": -0.0007,
       "formattedValue": "-663.01K",
-      "percentage": -4.34
+      "percentage": -9.33
     }
   ],
   "breakdown": {
@@ -151,68 +145,14 @@
           ]
         ]
       }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0082,
-        "formattedValue": "8.17M",
-        "percentageOfClass": 100.0,
-        "itemCount": 5,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי",
-              "value": 0.0029,
-              "formattedValue": "2.90M",
-              "percentage": 35.46,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הבינלאומי",
-              "value": 0.0024,
-              "formattedValue": "2.37M",
-              "percentage": 29.04,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.002,
-              "formattedValue": "1.99M",
-              "percentage": 24.3,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0006,
-              "formattedValue": "600.01K",
-              "percentage": 7.34,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט",
-              "value": 0.0003,
-              "formattedValue": "315.41K",
-              "percentage": 3.86,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0166,
-      "formattedValue": "16.60M",
+      "value": 0.0084,
+      "formattedValue": "8.43M",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0082,
-          "formattedValue": "8.17M"
-        },
         {
           "name": "Bonds",
           "value": 0.0078,

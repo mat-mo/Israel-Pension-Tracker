@@ -2,43 +2,37 @@
   "fundName": "מור פנסיה כללית - משולב סחיר",
   "trackId": "14337",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "10.77M",
+  "formattedTotalAssets": "10.06M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0063,
       "formattedValue": "6.25M",
-      "percentage": 58.02
+      "percentage": 62.13
     },
     {
       "name": "Stocks",
       "value": 0.0024,
       "formattedValue": "2.42M",
-      "percentage": 22.42
+      "percentage": 24.01
     },
     {
       "name": "Mutual Funds",
       "value": 0.0014,
       "formattedValue": "1.37M",
-      "percentage": 12.68
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0007,
-      "formattedValue": "711.46K",
-      "percentage": 6.6
+      "percentage": 13.58
     },
     {
       "name": "Warrants",
       "value": 0.0,
       "formattedValue": "17.42K",
-      "percentage": 0.16
+      "percentage": 0.17
     },
     {
       "name": "Futures",
       "value": 0.0,
       "formattedValue": "11.70K",
-      "percentage": 0.11
+      "percentage": 0.12
     },
     {
       "name": "Other Assets",
@@ -2062,7 +2056,7 @@
               "value": 0.0002,
               "formattedValue": "234.11K",
               "percentage": 17.14,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "S&P 500 מח MTF",
@@ -2084,34 +2078,6 @@
               "formattedValue": "102.26K",
               "percentage": 7.48,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0007,
-        "formattedValue": "711.46K",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.0007,
-              "formattedValue": "711.62K",
-              "percentage": 100.02,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק המזרחי המאוחד בע\"מ",
-              "value": -0.0,
-              "formattedValue": "-0.16K",
-              "percentage": -0.02,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -2911,7 +2877,7 @@
               "value": 0.0001,
               "formattedValue": "68.21K",
               "percentage": 8.1,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "MSCI EM.הרל",
@@ -2963,8 +2929,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0091,
-      "formattedValue": "9.14M",
+      "value": 0.0081,
+      "formattedValue": "8.12M",
       "children": [
         {
           "name": "Bonds",
@@ -2973,18 +2939,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.0021,
-          "formattedValue": "2.06M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0007,
-          "formattedValue": "711.79K"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0002,
-          "formattedValue": "234.11K"
+          "value": 0.002,
+          "formattedValue": "2.00M"
         }
       ]
     },
@@ -3007,6 +2963,18 @@
           "name": "Bonds",
           "value": 0.0001,
           "formattedValue": "124.85K"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
+      "value": 0.0002,
+      "formattedValue": "234.11K",
+      "children": [
+        {
+          "name": "Mutual Funds",
+          "value": 0.0002,
+          "formattedValue": "234.11K"
         }
       ]
     }

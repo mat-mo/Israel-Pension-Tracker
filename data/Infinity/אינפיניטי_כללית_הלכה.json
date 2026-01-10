@@ -2,55 +2,28 @@
   "fundName": "אינפיניטי כללית הלכה",
   "trackId": "14049",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.86M",
+  "formattedTotalAssets": "1.68M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0009,
       "formattedValue": "932.81K",
-      "percentage": 50.2
+      "percentage": 55.6
     },
     {
       "name": "Stocks",
       "value": 0.0007,
       "formattedValue": "746.19K",
-      "percentage": 40.16
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0002,
-      "formattedValue": "180.38K",
-      "percentage": 9.71
+      "percentage": 44.47
     },
     {
       "name": "Futures",
       "value": -0.0,
       "formattedValue": "-1.13K",
-      "percentage": -0.06
+      "percentage": -0.07
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0002,
-        "formattedValue": "180.38K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי",
-              "value": 0.0002,
-              "formattedValue": "180.38K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -66,35 +39,35 @@
               "value": 0.0002,
               "formattedValue": "181.10K",
               "percentage": 24.27,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "MTF סל (4D) MSCI AC",
               "value": 0.0002,
               "formattedValue": "177.50K",
               "percentage": 23.79,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "תכלית סל (D4) MSCI A",
               "value": 0.0002,
               "formattedValue": "150.83K",
               "percentage": 20.21,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "הראל סל (MSCI AC WOR",
               "value": 0.0001,
               "formattedValue": "130.73K",
               "percentage": 17.52,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "קסם MSCI AC WORLD (D",
               "value": 0.0001,
               "formattedValue": "106.01K",
               "percentage": 14.21,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             }
           ]
         ]
@@ -162,7 +135,7 @@
               "value": -0.0,
               "formattedValue": "-1.13K",
               "percentage": 100.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             }
           ]
         ]
@@ -170,23 +143,6 @@
     ]
   },
   "geoSunburst": [
-    {
-      "name": "Israel",
-      "value": 0.0009,
-      "formattedValue": "874.39K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0007,
-          "formattedValue": "746.19K"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.0001,
-          "formattedValue": "128.20K"
-        }
-      ]
-    },
     {
       "name": "USA",
       "value": 0.0008,
@@ -196,6 +152,30 @@
           "name": "Bonds",
           "value": 0.0008,
           "formattedValue": "804.61K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0007,
+      "formattedValue": "746.19K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0007,
+          "formattedValue": "746.19K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0001,
+      "formattedValue": "128.20K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0001,
+          "formattedValue": "128.20K"
         }
       ]
     }

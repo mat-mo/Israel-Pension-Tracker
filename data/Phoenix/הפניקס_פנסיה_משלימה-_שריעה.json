@@ -1,26 +1,20 @@
 {
   "fundName": "הפניקס פנסיה משלימה- שריעה",
   "trackId": "14082",
-  "totalAssetsBN": 0.45,
-  "formattedTotalAssets": "451.64M",
+  "totalAssetsBN": 0.41,
+  "formattedTotalAssets": "407.16M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.4069,
       "formattedValue": "406.93M",
-      "percentage": 90.1
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0445,
-      "formattedValue": "44.48M",
-      "percentage": 9.85
+      "percentage": 99.94
     },
     {
       "name": "Mutual Funds",
       "value": 0.0001,
       "formattedValue": "147.21K",
-      "percentage": 0.03
+      "percentage": 0.04
     },
     {
       "name": "Other Assets",
@@ -30,27 +24,6 @@
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0445,
-        "formattedValue": "44.48M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0445,
-              "formattedValue": "44.48M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Mutual Funds": [
       {
         "subclass": "General",
@@ -1821,18 +1794,6 @@
           "name": "Mutual Funds",
           "value": 0.0001,
           "formattedValue": "147.21K"
-        }
-      ]
-    },
-    {
-      "name": "Israel",
-      "value": 0.0445,
-      "formattedValue": "44.48M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0445,
-          "formattedValue": "44.48M"
         }
       ]
     },

@@ -1,26 +1,20 @@
 {
   "fundName": "הראל פנסיה כללית עוקב מדדי מניות",
   "trackId": "15039",
-  "totalAssetsBN": 0.2,
-  "formattedTotalAssets": "199.09M",
+  "totalAssetsBN": 0.19,
+  "formattedTotalAssets": "193.65M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.1929,
       "formattedValue": "192.93M",
-      "percentage": 96.91
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0054,
-      "formattedValue": "5.44M",
-      "percentage": 2.73
+      "percentage": 99.63
     },
     {
       "name": "Other Assets",
       "value": 0.0007,
       "formattedValue": "714.53K",
-      "percentage": 0.36
+      "percentage": 0.37
     },
     {
       "name": "Bonds",
@@ -210,48 +204,6 @@
           ]
         ]
       }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0054,
-        "formattedValue": "5.44M",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק לאומי",
-              "value": 0.0054,
-              "formattedValue": "5.44M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הבינלאומי",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0,
-              "formattedValue": "0.00K",
-              "percentage": 0.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
     ]
   },
   "geoSunburst": [
@@ -269,14 +221,9 @@
     },
     {
       "name": "Israel",
-      "value": 0.0062,
-      "formattedValue": "6.16M",
+      "value": 0.0007,
+      "formattedValue": "714.53K",
       "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0054,
-          "formattedValue": "5.44M"
-        },
         {
           "name": "Other Assets",
           "value": 0.0007,

@@ -2,49 +2,43 @@
   "fundName": "מור פנסיה כללית - עוקב מדדי מניות",
   "trackId": "13925",
   "totalAssetsBN": 0.03,
-  "formattedTotalAssets": "31.74M",
+  "formattedTotalAssets": "26.92M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.019,
       "formattedValue": "18.98M",
-      "percentage": 59.79
+      "percentage": 70.5
     },
     {
       "name": "Bonds",
       "value": 0.0063,
       "formattedValue": "6.34M",
-      "percentage": 19.99
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0048,
-      "formattedValue": "4.82M",
-      "percentage": 15.19
+      "percentage": 23.57
     },
     {
       "name": "Mutual Funds",
       "value": 0.0018,
       "formattedValue": "1.78M",
-      "percentage": 5.61
+      "percentage": 6.61
     },
     {
       "name": "Futures",
       "value": 0.0001,
       "formattedValue": "122.45K",
-      "percentage": 0.39
+      "percentage": 0.45
     },
     {
       "name": "Other Assets",
       "value": 0.0001,
       "formattedValue": "75.48K",
-      "percentage": 0.24
+      "percentage": 0.28
     },
     {
       "name": "Derivatives",
       "value": -0.0004,
       "formattedValue": "-380.73K",
-      "percentage": -1.2
+      "percentage": -1.41
     }
   ],
   "breakdown": {
@@ -98,7 +92,7 @@
               "value": 0.0013,
               "formattedValue": "1.32M",
               "percentage": 74.25,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NASDAQ 100 הראל",
@@ -106,34 +100,6 @@
               "formattedValue": "458.08K",
               "percentage": 25.75,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0048,
-        "formattedValue": "4.82M",
-        "percentageOfClass": 100.0,
-        "itemCount": 2,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הבינלאומי הראשון בע\"מ",
-              "value": 0.0048,
-              "formattedValue": "4.82M",
-              "percentage": 99.98,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק המזרחי המאוחד בע\"מ",
-              "value": 0.0,
-              "formattedValue": "0.93K",
-              "percentage": 0.02,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -231,7 +197,7 @@
               "value": 0.0022,
               "formattedValue": "2.25M",
               "percentage": 11.85,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NDX 100.הרל",
@@ -352,38 +318,6 @@
   },
   "geoSunburst": [
     {
-      "name": "Israel",
-      "value": 0.0166,
-      "formattedValue": "16.57M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0063,
-          "formattedValue": "6.34M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0048,
-          "formattedValue": "4.82M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0037,
-          "formattedValue": "3.70M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0013,
-          "formattedValue": "1.32M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0004,
-          "formattedValue": "380.73K"
-        }
-      ]
-    },
-    {
       "name": "USA",
       "value": 0.0157,
       "formattedValue": "15.74M",
@@ -397,6 +331,45 @@
           "name": "Mutual Funds",
           "value": 0.0005,
           "formattedValue": "458.08K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0082,
+      "formattedValue": "8.17M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0063,
+          "formattedValue": "6.34M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0014,
+          "formattedValue": "1.45M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0004,
+          "formattedValue": "380.73K"
+        }
+      ]
+    },
+    {
+      "name": "🇪🇺 ",
+      "value": 0.0036,
+      "formattedValue": "3.57M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0022,
+          "formattedValue": "2.25M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0013,
+          "formattedValue": "1.32M"
         }
       ]
     }

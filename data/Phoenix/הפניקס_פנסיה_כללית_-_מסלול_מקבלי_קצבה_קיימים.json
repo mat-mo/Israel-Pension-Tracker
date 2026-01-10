@@ -2,43 +2,16 @@
   "fundName": "הפניקס פנסיה כללית - מסלול מקבלי קצבה קיימים",
   "trackId": "2202",
   "totalAssetsBN": 0.03,
-  "formattedTotalAssets": "34.70M",
+  "formattedTotalAssets": "34.27M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0343,
       "formattedValue": "34.27M",
-      "percentage": 98.75
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0004,
-      "formattedValue": "432.55K",
-      "percentage": 1.25
+      "percentage": 100.0
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0004,
-        "formattedValue": "432.55K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0004,
-              "formattedValue": "432.55K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Bonds": [
       {
         "subclass": "Government Bonds",
@@ -99,18 +72,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0347,
-      "formattedValue": "34.70M",
+      "value": 0.0343,
+      "formattedValue": "34.27M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0343,
           "formattedValue": "34.27M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0004,
-          "formattedValue": "432.55K"
         }
       ]
     }

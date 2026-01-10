@@ -2,67 +2,40 @@
   "fundName": "אלטשולר שחם פנסיה כללית עוקב מדד S&P 500",
   "trackId": "14854",
   "totalAssetsBN": 0.11,
-  "formattedTotalAssets": "106.80M",
+  "formattedTotalAssets": "106.02M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.072,
       "formattedValue": "72.00M",
-      "percentage": 67.42
+      "percentage": 67.91
     },
     {
       "name": "Bonds",
       "value": 0.0348,
       "formattedValue": "34.77M",
-      "percentage": 32.56
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0008,
-      "formattedValue": "781.38K",
-      "percentage": 0.73
+      "percentage": 32.8
     },
     {
       "name": "Futures",
       "value": 0.0004,
       "formattedValue": "397.63K",
-      "percentage": 0.37
+      "percentage": 0.38
     },
     {
       "name": "Other Assets",
       "value": -0.0005,
       "formattedValue": "-536.72K",
-      "percentage": -0.5
+      "percentage": -0.51
     },
     {
       "name": "Derivatives",
       "value": -0.0006,
       "formattedValue": "-613.74K",
-      "percentage": -0.57
+      "percentage": -0.58
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0008,
-        "formattedValue": "781.38K",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "לאומי",
-              "value": 0.0008,
-              "formattedValue": "781.38K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Other Assets": [
       {
         "subclass": "General",
@@ -338,18 +311,13 @@
     },
     {
       "name": "Israel",
-      "value": 0.057,
-      "formattedValue": "56.99M",
+      "value": 0.0353,
+      "formattedValue": "35.31M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0348,
           "formattedValue": "34.77M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0217,
-          "formattedValue": "21.68M"
         },
         {
           "name": "Other Assets",

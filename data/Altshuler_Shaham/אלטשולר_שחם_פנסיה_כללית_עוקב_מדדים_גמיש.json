@@ -2,55 +2,28 @@
   "fundName": "אלטשולר שחם פנסיה כללית עוקב מדדים גמיש",
   "trackId": "14305",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "4.80M",
+  "formattedTotalAssets": "3.28M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0033,
       "formattedValue": "3.31M",
-      "percentage": 69.06
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0015,
-      "formattedValue": "1.52M",
-      "percentage": 31.58
+      "percentage": 100.93
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-0.71K",
-      "percentage": -0.01
+      "percentage": -0.02
     },
     {
       "name": "Other Assets",
       "value": -0.0,
       "formattedValue": "-29.70K",
-      "percentage": -0.62
+      "percentage": -0.9
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0015,
-        "formattedValue": "1.52M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "לאומי",
-              "value": 0.0015,
-              "formattedValue": "1.52M",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Other Assets": [
       {
         "subclass": "General",
@@ -101,14 +74,14 @@
               "value": 0.0,
               "formattedValue": "0.62K",
               "percentage": -86.88,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "EURUSD",
               "value": -0.0,
               "formattedValue": "-0.01K",
               "percentage": 2.12,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "USDJPY",
@@ -199,14 +172,14 @@
               "value": 0.0001,
               "formattedValue": "103.77K",
               "percentage": 3.13,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Invesco STOXX Europe 600 UCITS",
               "value": 0.0001,
               "formattedValue": "96.82K",
               "percentage": 2.92,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             }
           ],
           [
@@ -236,7 +209,7 @@
               "value": 0.0001,
               "formattedValue": "58.66K",
               "percentage": 1.77,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NEXT FUNDS TOPIX Exchange Trad",
@@ -299,26 +272,14 @@
       ]
     },
     {
-      "name": "Israel",
-      "value": 0.0016,
-      "formattedValue": "1.61M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0016,
-          "formattedValue": "1.61M"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.0004,
-      "formattedValue": "357.58K",
+      "name": "🇪🇺 ",
+      "value": 0.0002,
+      "formattedValue": "155.48K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0004,
-          "formattedValue": "357.58K"
+          "value": 0.0002,
+          "formattedValue": "155.48K"
         }
       ]
     },
@@ -331,6 +292,18 @@
           "name": "Stocks",
           "value": 0.0001,
           "formattedValue": "124.03K"
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "value": 0.0001,
+      "formattedValue": "103.77K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "103.77K"
         }
       ]
     }

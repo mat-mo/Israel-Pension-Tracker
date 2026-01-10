@@ -1,74 +1,62 @@
 {
   "fundName": "אלטשולר שחם פנסיה כללית מסלול לבני 50 עד 60",
   "trackId": "9762",
-  "totalAssetsBN": 0.18,
-  "formattedTotalAssets": "181.01M",
+  "totalAssetsBN": 0.16,
+  "formattedTotalAssets": "160.35M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.1091,
       "formattedValue": "109.14M",
-      "percentage": 60.29
+      "percentage": 68.06
     },
     {
       "name": "Stocks",
       "value": 0.0419,
       "formattedValue": "41.89M",
-      "percentage": 23.14
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0194,
-      "formattedValue": "19.44M",
-      "percentage": 10.74
+      "percentage": 26.13
     },
     {
       "name": "Investment Funds",
       "value": 0.0048,
       "formattedValue": "4.79M",
-      "percentage": 2.65
+      "percentage": 2.99
     },
     {
       "name": "Mutual Funds",
       "value": 0.003,
       "formattedValue": "2.97M",
-      "percentage": 1.64
-    },
-    {
-      "name": "Loans",
-      "value": 0.0011,
-      "formattedValue": "1.14M",
-      "percentage": 0.63
+      "percentage": 1.85
     },
     {
       "name": "Derivatives",
       "value": 0.0011,
       "formattedValue": "1.09M",
-      "percentage": 0.6
+      "percentage": 0.68
     },
     {
       "name": "Futures",
       "value": 0.0006,
       "formattedValue": "648.90K",
-      "percentage": 0.36
+      "percentage": 0.4
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.0005,
       "formattedValue": "491.85K",
-      "percentage": 0.27
+      "percentage": 0.31
     },
     {
       "name": "Structured Products",
       "value": 0.0003,
       "formattedValue": "341.24K",
-      "percentage": 0.19
+      "percentage": 0.21
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0003,
       "formattedValue": "338.34K",
-      "percentage": 0.19
+      "percentage": 0.21
     },
     {
       "name": "Warrants",
@@ -83,16 +71,22 @@
       "percentage": 0.01
     },
     {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "6.88K",
+      "percentage": 0.0
+    },
+    {
       "name": "Options",
-      "value": -0.0,
-      "formattedValue": "-21.12K",
-      "percentage": -0.01
+      "value": -0.0001,
+      "formattedValue": "-111.41K",
+      "percentage": -0.07
     },
     {
       "name": "Other Assets",
       "value": -0.0013,
       "formattedValue": "-1.31M",
-      "percentage": -0.72
+      "percentage": -0.81
     }
   ],
   "breakdown": {
@@ -219,109 +213,6 @@
               "formattedValue": "0.27K",
               "percentage": 0.05,
               "countryEmoji": "🇺🇸"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0194,
-        "formattedValue": "19.43M",
-        "percentageOfClass": 99.96,
-        "itemCount": 10,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "לאומי",
-              "value": 0.0177,
-              "formattedValue": "17.66M",
-              "percentage": 90.89,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "Goldman Sachs Group Inc",
-              "value": 0.0023,
-              "formattedValue": "2.31M",
-              "percentage": 11.91,
-              "countryEmoji": ""
-            },
-            {
-              "name": "Signature Bank/New York NY",
-              "value": 0.0001,
-              "formattedValue": "70.55K",
-              "percentage": 0.36,
-              "countryEmoji": ""
-            },
-            {
-              "name": "פועלים",
-              "value": 0.0,
-              "formattedValue": "8.01K",
-              "percentage": 0.04,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "UBS Switzerland AG",
-              "value": 0.0,
-              "formattedValue": "7.70K",
-              "percentage": 0.04,
-              "countryEmoji": ""
-            },
-            {
-              "name": "Alpha bank",
-              "value": 0.0,
-              "formattedValue": "0.86K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "Valley National Bank",
-              "value": 0.0,
-              "formattedValue": "0.01K",
-              "percentage": 0.0,
-              "countryEmoji": ""
-            },
-            {
-              "name": "דיסקונט",
-              "value": -0.0001,
-              "formattedValue": "-64.59K",
-              "percentage": -0.33,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "Citibank, NA",
-              "value": -0.0002,
-              "formattedValue": "-179.41K",
-              "percentage": -0.92,
-              "countryEmoji": ""
-            },
-            {
-              "name": "JP Morgan",
-              "value": -0.0004,
-              "formattedValue": "-388.19K",
-              "percentage": -2.0,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      },
-      {
-        "subclass": "Deposits",
-        "value": 0.0,
-        "formattedValue": "6.88K",
-        "percentageOfClass": 0.04,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "מזרחי טפחות",
-              "value": 0.0,
-              "formattedValue": "6.88K",
-              "percentage": 100.0,
-              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -1081,6 +972,483 @@
         ]
       }
     ],
+    "Options": [
+      {
+        "subclass": "Tradable",
+        "value": -0.0,
+        "formattedValue": "-21.12K",
+        "percentageOfClass": 18.95,
+        "itemCount": 13,
+        "totalPages": 2,
+        "holdingsPages": [
+          [
+            {
+              "name": "S&P500 EMINI OPTN Oct25P",
+              "value": 0.0001,
+              "formattedValue": "74.34K",
+              "percentage": -352.01,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NKY 12/12/25 C43000",
+              "value": 0.0001,
+              "formattedValue": "62.45K",
+              "percentage": -295.72,
+              "countryEmoji": ""
+            },
+            {
+              "name": "S&P500 EMINI OPTN Dec25P",
+              "value": 0.0001,
+              "formattedValue": "52.95K",
+              "percentage": -250.72,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NKY 10/10/25 C43000",
+              "value": 0.0,
+              "formattedValue": "45.57K",
+              "percentage": -215.81,
+              "countryEmoji": ""
+            },
+            {
+              "name": "S&P500 EMINI OPTN Nov25P",
+              "value": 0.0,
+              "formattedValue": "24.49K",
+              "percentage": -115.98,
+              "countryEmoji": ""
+            },
+            {
+              "name": "US 10yr Ultra Opt Dec25P",
+              "value": 0.0,
+              "formattedValue": "11.80K",
+              "percentage": -55.87,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NKY 10/10/25 C45000",
+              "value": -0.0,
+              "formattedValue": "-13.44K",
+              "percentage": 63.62,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NASD100 Min EOM O NOV25P",
+              "value": -0.0,
+              "formattedValue": "-24.74K",
+              "percentage": 117.17,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NKY 10/10/25 C44000",
+              "value": -0.0,
+              "formattedValue": "-27.62K",
+              "percentage": 130.81,
+              "countryEmoji": ""
+            },
+            {
+              "name": "WFC US 10/17/25 C80",
+              "value": -0.0,
+              "formattedValue": "-31.70K",
+              "percentage": 150.1,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "NASDAQ 100 E-MINI Dec24P",
+              "value": -0.0,
+              "formattedValue": "-40.11K",
+              "percentage": 189.95,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NKY 12/12/25 C45000",
+              "value": -0.0001,
+              "formattedValue": "-69.87K",
+              "percentage": 330.84,
+              "countryEmoji": ""
+            },
+            {
+              "name": "NASDAQ 100 E-MINI Dec24c",
+              "value": -0.0001,
+              "formattedValue": "-85.24K",
+              "percentage": 403.63,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      },
+      {
+        "subclass": "Non-Tradable",
+        "value": -0.0001,
+        "formattedValue": "-90.29K",
+        "percentageOfClass": 81.05,
+        "itemCount": 50,
+        "totalPages": 5,
+        "holdingsPages": [
+          [
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.65 08/10/25",
+              "value": 0.0002,
+              "formattedValue": "220.47K",
+              "percentage": -244.16,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.55 08/10/25 BUY",
+              "value": 0.0002,
+              "formattedValue": "156.37K",
+              "percentage": -173.18,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI P3.7 13/10/25 L",
+              "value": 0.0001,
+              "formattedValue": "126.17K",
+              "percentage": -139.73,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM P3.6 06/10/25",
+              "value": 0.0001,
+              "formattedValue": "94.24K",
+              "percentage": -104.36,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל Leumi P3.6 13/10/25 L",
+              "value": 0.0001,
+              "formattedValue": "94.14K",
+              "percentage": -104.26,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM P3.5 06/10/25 BUY",
+              "value": 0.0001,
+              "formattedValue": "62.17K",
+              "percentage": -68.86,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס אירו שקל GS P3.9 03/10/25",
+              "value": 0.0,
+              "formattedValue": "7.05K",
+              "percentage": -7.81,
+              "countryEmoji": "🇪🇺 "
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM C3.59 26/03/26 BUY",
+              "value": 0.0,
+              "formattedValue": "5.79K",
+              "percentage": -6.42,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.575 12/03/26 BUY",
+              "value": 0.0,
+              "formattedValue": "5.60K",
+              "percentage": -6.2,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל CITI C3.575 06/03/26 BUY",
+              "value": 0.0,
+              "formattedValue": "5.49K",
+              "percentage": -6.08,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.6 24/03/26 BUY",
+              "value": 0.0,
+              "formattedValue": "5.11K",
+              "percentage": -5.65,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.55 13/01/26 BUY",
+              "value": 0.0,
+              "formattedValue": "2.83K",
+              "percentage": -3.14,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.59 06/01/26 BUY",
+              "value": 0.0,
+              "formattedValue": "2.75K",
+              "percentage": -3.04,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.60 07/01/26 BUY",
+              "value": 0.0,
+              "formattedValue": "2.58K",
+              "percentage": -2.85,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM C3.5 05/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "2.46K",
+              "percentage": -2.73,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל CITI C3.62 18/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "1.31K",
+              "percentage": -1.45,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל CITI C3.60 18/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.93K",
+              "percentage": -1.03,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM C3.6 05/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.86K",
+              "percentage": -0.96,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.58 23/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.76K",
+              "percentage": -0.85,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.6 01/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.72K",
+              "percentage": -0.8,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "אופציה לס דולר שקל CITI C3.75 18/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.23K",
+              "percentage": -0.26,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM C3.70 05/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.10K",
+              "percentage": -0.11,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.73 01/12/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.04K",
+              "percentage": -0.05,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.75 26/11/25 BUY",
+              "value": 0.0,
+              "formattedValue": "0.02K",
+              "percentage": -0.02,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.73 01/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-0.15K",
+              "percentage": 0.17,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל CITI C3.75 18/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-0.22K",
+              "percentage": 0.25,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM C3.7 05/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-0.28K",
+              "percentage": 0.31,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM C3.7 05/12/25 SELL 15/07",
+              "value": -0.0,
+              "formattedValue": "-0.29K",
+              "percentage": 0.33,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.4 26/11/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-2.46K",
+              "percentage": 2.72,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.38 01/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-3.36K",
+              "percentage": 3.72,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "אופציה לס דולר שקל LEUMI C3.39 05/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-3.37K",
+              "percentage": 3.73,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס GS C1,637.14 ESLT.TA 15/10/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-3.68K",
+              "percentage": 4.08,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "אופציה לס דולר שקל CITI C3.38 18/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-4.13K",
+              "percentage": 4.57,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.21 12/03/26 SELL",
+              "value": -0.0,
+              "formattedValue": "-5.56K",
+              "percentage": 6.16,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל CITI P3.22 06/03/26 SELL",
+              "value": -0.0,
+              "formattedValue": "-6.06K",
+              "percentage": 6.71,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס אירו שקל GS P3.9 03/10/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-6.85K",
+              "percentage": 7.59,
+              "countryEmoji": "🇪🇺 "
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.29 23/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-7.88K",
+              "percentage": 8.73,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.25 24/03/26 SELL",
+              "value": -0.0,
+              "formattedValue": "-8.12K",
+              "percentage": 8.99,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM P3.25 26/03/26 SELL",
+              "value": -0.0,
+              "formattedValue": "-8.39K",
+              "percentage": 9.29,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT C3.29 23/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-10.70K",
+              "percentage": 11.85,
+              "countryEmoji": "🇺🇸"
+            }
+          ],
+          [
+            {
+              "name": "אופציה לס דולר שקל CITI P3.38 18/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-14.87K",
+              "percentage": 16.47,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI P3.38 01/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-15.04K",
+              "percentage": 16.66,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM P3.39 05/12/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-16.50K",
+              "percentage": 18.27,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.4 26/11/25 SELL",
+              "value": -0.0,
+              "formattedValue": "-17.27K",
+              "percentage": 19.12,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM P3.5 06/10/25",
+              "value": -0.0001,
+              "formattedValue": "-62.16K",
+              "percentage": 68.84,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל LEUMI P3.6 13/10/25 S",
+              "value": -0.0001,
+              "formattedValue": "-94.10K",
+              "percentage": 104.21,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל POALIM P3.6 06/10/25 SELL",
+              "value": -0.0001,
+              "formattedValue": "-94.20K",
+              "percentage": 104.32,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל Leumi P3.7 13/10/25 S",
+              "value": -0.0001,
+              "formattedValue": "-126.12K",
+              "percentage": 139.68,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.55 08/10/25",
+              "value": -0.0002,
+              "formattedValue": "-156.31K",
+              "percentage": 173.12,
+              "countryEmoji": "🇺🇸"
+            },
+            {
+              "name": "אופציה לס דולר שקל DISCOUNT P3.65 08/10/25 SELL",
+              "value": -0.0002,
+              "formattedValue": "-220.41K",
+              "percentage": 244.1,
+              "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "Direct Holdings",
@@ -1110,7 +1478,7 @@
               "value": 0.0021,
               "formattedValue": "2.10M",
               "percentage": 5.51,
-              "countryEmoji": "🇹🇼"
+              "countryEmoji": ""
             },
             {
               "name": "דיסקונט א",
@@ -1661,7 +2029,7 @@
               "value": 0.0017,
               "formattedValue": "1.68M",
               "percentage": 44.3,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Energy Select Sector SPDR Fund",
@@ -1682,7 +2050,7 @@
               "value": 0.0004,
               "formattedValue": "438.94K",
               "percentage": 11.56,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Health Care Select Sector SPDR",
@@ -1747,14 +2115,14 @@
               "value": 0.0,
               "formattedValue": "0.20K",
               "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Invesco STOXX Europe 600 UCITS",
               "value": 0.0,
               "formattedValue": "0.10K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "iShares Core S&P 500 ETF",
@@ -1833,14 +2201,14 @@
               "value": 0.0003,
               "formattedValue": "310.85K",
               "percentage": 6.48,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Klirmark Opportunity Fund 4",
               "value": 0.0002,
               "formattedValue": "202.48K",
               "percentage": 4.22,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "Terramont",
@@ -1919,7 +2287,7 @@
               "value": 0.0001,
               "formattedValue": "93.60K",
               "percentage": 1.95,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "נוי 4",
@@ -1954,7 +2322,7 @@
               "value": 0.0001,
               "formattedValue": "77.12K",
               "percentage": 1.61,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NORTHWIND HEALTHCARE DEBT FUND 1 FEEDER D LP",
@@ -2056,14 +2424,14 @@
               "value": 0.0,
               "formattedValue": "47.98K",
               "percentage": 1.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Signal Alpha 2",
               "value": 0.0,
               "formattedValue": "47.62K",
               "percentage": 0.99,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "NORTHWIND HEALTHCARE DEBT FUND 1 FEEDER C LP",
@@ -2221,7 +2589,7 @@
               "value": 0.0,
               "formattedValue": "28.60K",
               "percentage": 0.6,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Accolade Partners Blockchain 2 Select Feeder",
@@ -2300,7 +2668,7 @@
               "value": 0.0,
               "formattedValue": "24.70K",
               "percentage": 0.52,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "OEP 7 Infobip",
@@ -2314,7 +2682,7 @@
               "value": 0.0,
               "formattedValue": "21.86K",
               "percentage": 0.46,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "Gatewood 2",
@@ -2328,7 +2696,7 @@
               "value": 0.0,
               "formattedValue": "21.28K",
               "percentage": 0.44,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             }
           ],
           [
@@ -2444,7 +2812,7 @@
               "value": 0.0,
               "formattedValue": "15.98K",
               "percentage": 0.33,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "10D",
@@ -2567,7 +2935,7 @@
               "value": 0.0,
               "formattedValue": "5.12K",
               "percentage": 0.11,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "StageOne 3",
@@ -2602,7 +2970,7 @@
               "value": 0.0,
               "formattedValue": "3.15K",
               "percentage": 0.07,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "נוי פשה 2",
@@ -2632,7 +3000,7 @@
               "value": 0.0,
               "formattedValue": "1.51K",
               "percentage": 0.03,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             },
             {
               "name": "יסודות א אנקס 1",
@@ -2646,7 +3014,7 @@
               "value": 0.0,
               "formattedValue": "0.41K",
               "percentage": 0.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": ""
             }
           ]
         ]
@@ -2914,14 +3282,14 @@
               "value": 0.0001,
               "formattedValue": "74.55K",
               "percentage": 6.87,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "EURILS",
               "value": 0.0001,
               "formattedValue": "57.64K",
               "percentage": 5.31,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "USDJPY",
@@ -2951,7 +3319,7 @@
               "value": 0.0,
               "formattedValue": "2.11K",
               "percentage": 0.19,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "PLNILS",
@@ -2986,7 +3354,7 @@
               "value": -0.0,
               "formattedValue": "-4.25K",
               "percentage": -0.39,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "IXVTR INDEX",
@@ -3000,27 +3368,6 @@
               "value": -0.0,
               "formattedValue": "-47.49K",
               "percentage": -4.37,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Loans": [
-      {
-        "subclass": "Direct Loans",
-        "value": 0.0011,
-        "formattedValue": "1.14M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "תאגיד",
-              "value": 0.0011,
-              "formattedValue": "1.14M",
-              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -3083,113 +3430,6 @@
         ]
       }
     ],
-    "Options": [
-      {
-        "subclass": "Tradable",
-        "value": -0.0,
-        "formattedValue": "-21.12K",
-        "percentageOfClass": 100.0,
-        "itemCount": 13,
-        "totalPages": 2,
-        "holdingsPages": [
-          [
-            {
-              "name": "S&P500 EMINI OPTN Oct25P",
-              "value": 0.0001,
-              "formattedValue": "74.34K",
-              "percentage": -352.01,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NKY 12/12/25 C43000",
-              "value": 0.0001,
-              "formattedValue": "62.45K",
-              "percentage": -295.72,
-              "countryEmoji": ""
-            },
-            {
-              "name": "S&P500 EMINI OPTN Dec25P",
-              "value": 0.0001,
-              "formattedValue": "52.95K",
-              "percentage": -250.72,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NKY 10/10/25 C43000",
-              "value": 0.0,
-              "formattedValue": "45.57K",
-              "percentage": -215.81,
-              "countryEmoji": ""
-            },
-            {
-              "name": "S&P500 EMINI OPTN Nov25P",
-              "value": 0.0,
-              "formattedValue": "24.49K",
-              "percentage": -115.98,
-              "countryEmoji": ""
-            },
-            {
-              "name": "US 10yr Ultra Opt Dec25P",
-              "value": 0.0,
-              "formattedValue": "11.80K",
-              "percentage": -55.87,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NKY 10/10/25 C45000",
-              "value": -0.0,
-              "formattedValue": "-13.44K",
-              "percentage": 63.62,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NASD100 Min EOM O NOV25P",
-              "value": -0.0,
-              "formattedValue": "-24.74K",
-              "percentage": 117.17,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NKY 10/10/25 C44000",
-              "value": -0.0,
-              "formattedValue": "-27.62K",
-              "percentage": 130.81,
-              "countryEmoji": ""
-            },
-            {
-              "name": "WFC US 10/17/25 C80",
-              "value": -0.0,
-              "formattedValue": "-31.70K",
-              "percentage": 150.1,
-              "countryEmoji": ""
-            }
-          ],
-          [
-            {
-              "name": "NASDAQ 100 E-MINI Dec24P",
-              "value": -0.0,
-              "formattedValue": "-40.11K",
-              "percentage": 189.95,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NKY 12/12/25 C45000",
-              "value": -0.0001,
-              "formattedValue": "-69.87K",
-              "percentage": 330.84,
-              "countryEmoji": ""
-            },
-            {
-              "name": "NASDAQ 100 E-MINI Dec24c",
-              "value": -0.0001,
-              "formattedValue": "-85.24K",
-              "percentage": 403.63,
-              "countryEmoji": ""
-            }
-          ]
-        ]
-      }
-    ],
     "Mutual Funds": [
       {
         "subclass": "General",
@@ -3226,14 +3466,14 @@
               "value": 0.0003,
               "formattedValue": "312.23K",
               "percentage": 10.52,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "TRIGON - New Europe Fund/Luxem",
               "value": 0.0003,
               "formattedValue": "252.38K",
               "percentage": 8.5,
-              "countryEmoji": ""
+              "countryEmoji": "🇪🇺 "
             },
             {
               "name": "Nomura Funds Ireland - India E",
@@ -3339,6 +3579,27 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Deposits",
+        "value": 0.0,
+        "formattedValue": "6.88K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי טפחות",
+              "value": 0.0,
+              "formattedValue": "6.88K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Non-Tradable Bonds": [
       {
         "subclass": "General",
@@ -3399,18 +3660,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.1569,
-      "formattedValue": "156.89M",
+      "value": 0.1193,
+      "formattedValue": "119.27M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0997,
           "formattedValue": "99.69M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0365,
-          "formattedValue": "36.55M"
         },
         {
           "name": "Stocks",
@@ -3419,8 +3675,8 @@
         },
         {
           "name": "Investment Funds",
-          "value": 0.0016,
-          "formattedValue": "1.59M"
+          "value": 0.0013,
+          "formattedValue": "1.32M"
         },
         {
           "name": "Other Assets",
@@ -3428,31 +3684,26 @@
           "formattedValue": "1.09M"
         },
         {
-          "name": "Loans",
-          "value": 0.0006,
-          "formattedValue": "590.22K"
-        },
-        {
           "name": "Non-Tradable Stocks",
           "value": 0.0004,
           "formattedValue": "368.81K"
         },
         {
-          "name": "Derivatives",
-          "value": 0.0004,
-          "formattedValue": "417.12K"
-        },
-        {
           "name": "Non-Tradable Bonds",
           "value": 0.0003,
           "formattedValue": "338.34K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0002,
+          "formattedValue": "207.27K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0268,
-      "formattedValue": "26.80M",
+      "value": 0.0285,
+      "formattedValue": "28.47M",
       "children": [
         {
           "name": "Stocks",
@@ -3463,6 +3714,11 @@
           "name": "Bonds",
           "value": 0.0078,
           "formattedValue": "7.83M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0017,
+          "formattedValue": "1.67M"
         },
         {
           "name": "Investment Funds",
@@ -3488,23 +3744,18 @@
     },
     {
       "name": "Global",
-      "value": 0.0117,
-      "formattedValue": "11.67M",
+      "value": 0.0071,
+      "formattedValue": "7.13M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0044,
-          "formattedValue": "4.38M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.003,
-          "formattedValue": "2.99M"
+          "formattedValue": "4.36M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0015,
-          "formattedValue": "1.54M"
+          "value": 0.0012,
+          "formattedValue": "1.16M"
         },
         {
           "name": "Options",
@@ -3517,16 +3768,6 @@
           "formattedValue": "664.56K"
         },
         {
-          "name": "Loans",
-          "value": 0.0006,
-          "formattedValue": "551.28K"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0006,
-          "formattedValue": "604.71K"
-        },
-        {
           "name": "Bonds",
           "value": 0.0002,
           "formattedValue": "192.41K"
@@ -3534,14 +3775,29 @@
       ]
     },
     {
-      "name": "Taiwan",
-      "value": 0.0021,
-      "formattedValue": "2.10M",
+      "name": "🇪🇺 ",
+      "value": 0.0032,
+      "formattedValue": "3.24M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0021,
-          "formattedValue": "2.10M"
+          "formattedValue": "2.12M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0006,
+          "formattedValue": "564.61K"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0003,
+          "formattedValue": "340.46K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0002,
+          "formattedValue": "210.90K"
         }
       ]
     },
@@ -3675,6 +3931,18 @@
           "name": "Stocks",
           "value": 0.0003,
           "formattedValue": "342.19K"
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "value": 0.0003,
+      "formattedValue": "310.85K",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0003,
+          "formattedValue": "310.85K"
         }
       ]
     },

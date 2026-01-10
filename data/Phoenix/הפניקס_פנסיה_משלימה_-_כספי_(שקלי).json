@@ -2,70 +2,22 @@
   "fundName": "הפניקס פנסיה משלימה - כספי (שקלי)",
   "trackId": "8320",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "10.31M",
+  "formattedTotalAssets": "9.96M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0096,
       "formattedValue": "9.63M",
-      "percentage": 93.39
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0003,
-      "formattedValue": "346.70K",
-      "percentage": 3.36
+      "percentage": 96.64
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0003,
       "formattedValue": "334.81K",
-      "percentage": 3.25
+      "percentage": 3.36
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0003,
-        "formattedValue": "346.70K",
-        "percentageOfClass": 100.0,
-        "itemCount": 4,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0003,
-              "formattedValue": "317.31K",
-              "percentage": 91.52,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.0,
-              "formattedValue": "14.78K",
-              "percentage": 4.26,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק דיסקונט",
-              "value": 0.0,
-              "formattedValue": "11.50K",
-              "percentage": 3.32,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק לאומי",
-              "value": 0.0,
-              "formattedValue": "3.11K",
-              "percentage": 0.9,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Bonds": [
       {
         "subclass": "Government Bonds",
@@ -341,18 +293,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0103,
-      "formattedValue": "10.31M",
+      "value": 0.01,
+      "formattedValue": "9.96M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0096,
           "formattedValue": "9.63M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0003,
-          "formattedValue": "346.70K"
         },
         {
           "name": "Non-Tradable Bonds",

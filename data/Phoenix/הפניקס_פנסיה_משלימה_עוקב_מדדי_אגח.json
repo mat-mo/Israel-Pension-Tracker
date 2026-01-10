@@ -2,63 +2,22 @@
   "fundName": "הפניקס פנסיה משלימה עוקב מדדי אג\"ח",
   "trackId": "15222",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.46M",
+  "formattedTotalAssets": "291.88K",
   "assetClasses": [
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0012,
-      "formattedValue": "1.17M",
-      "percentage": 80.05
-    },
     {
       "name": "Bonds",
       "value": 0.0003,
       "formattedValue": "281.96K",
-      "percentage": 19.27
+      "percentage": 96.6
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "9.92K",
-      "percentage": 0.68
+      "percentage": 3.4
     }
   ],
   "breakdown": {
-    "Cash & Equivalents": [
-      {
-        "subclass": "Cash",
-        "value": 0.0012,
-        "formattedValue": "1.17M",
-        "percentageOfClass": 100.0,
-        "itemCount": 3,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק הפועלים",
-              "value": 0.0005,
-              "formattedValue": "542.78K",
-              "percentage": 46.33,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק לאומי",
-              "value": 0.0005,
-              "formattedValue": "495.54K",
-              "percentage": 42.3,
-              "countryEmoji": "🇮🇱"
-            },
-            {
-              "name": "בנק מזרחי",
-              "value": 0.0001,
-              "formattedValue": "133.13K",
-              "percentage": 11.36,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
     "Bonds": [
       {
         "subclass": "ETFs",
@@ -138,18 +97,6 @@
     ]
   },
   "geoSunburst": [
-    {
-      "name": "Israel",
-      "value": 0.0012,
-      "formattedValue": "1.17M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0012,
-          "formattedValue": "1.17M"
-        }
-      ]
-    },
     {
       "name": "USA",
       "value": 0.0002,
