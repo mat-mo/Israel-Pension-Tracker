@@ -423,6 +423,7 @@ def calculate_currency_sunburst(data_store):
                 if curr not in currency_groups: currency_groups[curr] = {}
                 if cls_name not in currency_groups[curr]: currency_groups[curr][cls_name] = 0.0
                 
+                # <--- FIX: Using ABS() prevents negative values from creating gaps/errors
                 currency_groups[curr][cls_name] += abs(item["value"])
 
     sunburst_data = []
