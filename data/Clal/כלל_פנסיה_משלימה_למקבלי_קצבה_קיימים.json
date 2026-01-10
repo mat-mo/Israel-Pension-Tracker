@@ -1007,299 +1007,201 @@
   ],
   "sectorSunburst": [
     {
-      "name": "Government / General",
-      "value": 0.109139,
-      "formattedValue": "109.14M",
+      "name": "Bonds",
+      "value": 0.121555,
+      "formattedValue": "121.56M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.109139,
           "formattedValue": "109.14M"
-        }
-      ]
-    },
-    {
-      "name": "נדל\"ן מניב בישראל",
-      "value": 0.006394,
-      "formattedValue": "6.39M",
-      "children": [
+        },
         {
-          "name": "Bonds",
+          "name": "נדל\"ן מניב בישראל",
           "value": 0.005753,
           "formattedValue": "5.75M"
         },
         {
-          "name": "Loans",
-          "value": 0.000627,
-          "formattedValue": "627.48K"
-        },
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 1.3e-05,
-          "formattedValue": "13.26K"
-        }
-      ]
-    },
-    {
-      "name": "Liquidity",
-      "value": 0.00499,
-      "formattedValue": "4.99M",
-      "children": [
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.00499,
-          "formattedValue": "4.99M"
-        }
-      ]
-    },
-    {
-      "name": "שירותים",
-      "value": 0.004545,
-      "formattedValue": "4.55M",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "שירותים",
           "value": 0.0024,
           "formattedValue": "2.40M"
         },
         {
-          "name": "Non-Tradable Bonds",
-          "value": 0.00173,
-          "formattedValue": "1.73M"
+          "name": "תקשורת ומדיה",
+          "value": 0.001981,
+          "formattedValue": "1.98M"
         },
         {
-          "name": "Loans",
-          "value": 0.000415,
-          "formattedValue": "415.09K"
-        }
-      ]
-    },
-    {
-      "name": "בנקים",
-      "value": 0.002213,
-      "formattedValue": "2.21M",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "בנקים",
           "value": 0.00136,
           "formattedValue": "1.36M"
         },
         {
-          "name": "Non-Tradable Bonds",
-          "value": 0.000854,
-          "formattedValue": "853.51K"
-        }
-      ]
-    },
-    {
-      "name": "תקשורת ומדיה",
-      "value": 0.001981,
-      "formattedValue": "1.98M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.001981,
-          "formattedValue": "1.98M"
-        }
-      ]
-    },
-    {
-      "name": "בנייה",
-      "value": 0.001548,
-      "formattedValue": "1.55M",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.001548,
-          "formattedValue": "1.55M"
-        }
-      ]
-    },
-    {
-      "name": "חשמל",
-      "value": 0.001187,
-      "formattedValue": "1.19M",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.001187,
-          "formattedValue": "1.19M"
-        }
-      ]
-    },
-    {
-      "name": "אנרגיה",
-      "value": 0.000995,
-      "formattedValue": "995.45K",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "אנרגיה",
           "value": 0.000922,
           "formattedValue": "922.13K"
+        }
+      ]
+    },
+    {
+      "name": "Loans",
+      "value": 0.005856,
+      "formattedValue": "5.86M",
+      "children": [
+        {
+          "name": "בנייה",
+          "value": 0.001548,
+          "formattedValue": "1.55M"
         },
         {
-          "name": "Non-Tradable Bonds",
-          "value": 5.8e-05,
-          "formattedValue": "58.32K"
+          "name": "חשמל",
+          "value": 0.001187,
+          "formattedValue": "1.19M"
         },
         {
-          "name": "Loans",
+          "name": "אנשים פרטיים",
+          "value": 0.000955,
+          "formattedValue": "955.15K"
+        },
+        {
+          "name": "נדל\"ן מניב בישראל",
+          "value": 0.000627,
+          "formattedValue": "627.48K"
+        },
+        {
+          "name": "אחר",
+          "value": 0.000526,
+          "formattedValue": "526.44K"
+        },
+        {
+          "name": "שירותים",
+          "value": 0.000415,
+          "formattedValue": "415.09K"
+        },
+        {
+          "name": "Real Estate Management & Development",
+          "value": 0.000392,
+          "formattedValue": "391.88K"
+        },
+        {
+          "name": "שירותים פיננסיים",
+          "value": 0.00012,
+          "formattedValue": "119.94K"
+        },
+        {
+          "name": "Energy Equipment & Services",
+          "value": 7.1e-05,
+          "formattedValue": "70.91K"
+        },
+        {
+          "name": "אנרגיה",
           "value": 1.5e-05,
           "formattedValue": "14.99K"
         }
       ]
     },
     {
-      "name": "אנשים פרטיים",
-      "value": 0.000955,
-      "formattedValue": "955.15K",
+      "name": "Cash & Equivalents",
+      "value": 0.00499,
+      "formattedValue": "4.99M",
       "children": [
         {
-          "name": "Loans",
-          "value": 0.000955,
-          "formattedValue": "955.15K"
+          "name": "Liquidity",
+          "value": 0.00499,
+          "formattedValue": "4.99M"
         }
       ]
     },
     {
-      "name": "General / Unclassified",
-      "value": 0.000534,
-      "formattedValue": "534.27K",
+      "name": "Non-Tradable Bonds",
+      "value": 0.003707,
+      "formattedValue": "3.71M",
       "children": [
         {
-          "name": "Investment Funds",
-          "value": 0.000515,
-          "formattedValue": "515.36K"
+          "name": "שירותים",
+          "value": 0.00173,
+          "formattedValue": "1.73M"
         },
         {
-          "name": "Other Assets",
+          "name": "בנקים",
+          "value": 0.000854,
+          "formattedValue": "853.51K"
+        },
+        {
+          "name": "אנרגיה מתחדשת",
+          "value": 0.000354,
+          "formattedValue": "354.25K"
+        },
+        {
+          "name": "אשראי חוץ בנקאי",
+          "value": 0.000328,
+          "formattedValue": "327.84K"
+        },
+        {
+          "name": "ביטחוניות",
+          "value": 0.000138,
+          "formattedValue": "138.11K"
+        },
+        {
+          "name": "ביטוח",
+          "value": 0.000123,
+          "formattedValue": "123.29K"
+        },
+        {
+          "name": "השקעה ואחזקות",
+          "value": 7.4e-05,
+          "formattedValue": "74.38K"
+        },
+        {
+          "name": "אנרגיה",
+          "value": 5.8e-05,
+          "formattedValue": "58.32K"
+        },
+        {
+          "name": "קלינטק",
+          "value": 3.4e-05,
+          "formattedValue": "33.93K"
+        },
+        {
+          "name": "נדל\"ן מניב בישראל",
+          "value": 1.3e-05,
+          "formattedValue": "13.26K"
+        }
+      ]
+    },
+    {
+      "name": "Investment Funds",
+      "value": 0.000515,
+      "formattedValue": "515.36K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000515,
+          "formattedValue": "515.36K"
+        }
+      ]
+    },
+    {
+      "name": "Other Assets",
+      "value": 1.9e-05,
+      "formattedValue": "18.91K",
+      "children": [
+        {
+          "name": "General",
           "value": 1.9e-05,
           "formattedValue": "18.91K"
         }
       ]
     },
     {
-      "name": "אחר",
-      "value": 0.000526,
-      "formattedValue": "526.44K",
+      "name": "Options",
+      "value": 0.0,
+      "formattedValue": "0.30K",
       "children": [
         {
-          "name": "Loans",
-          "value": 0.000526,
-          "formattedValue": "526.44K"
-        }
-      ]
-    },
-    {
-      "name": "Real Estate Management & Development",
-      "value": 0.000392,
-      "formattedValue": "391.88K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.000392,
-          "formattedValue": "391.88K"
-        }
-      ]
-    },
-    {
-      "name": "אנרגיה מתחדשת",
-      "value": 0.000354,
-      "formattedValue": "354.25K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.000354,
-          "formattedValue": "354.25K"
-        }
-      ]
-    },
-    {
-      "name": "אשראי חוץ בנקאי",
-      "value": 0.000328,
-      "formattedValue": "327.84K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.000328,
-          "formattedValue": "327.84K"
-        }
-      ]
-    },
-    {
-      "name": "ביטחוניות",
-      "value": 0.000138,
-      "formattedValue": "138.11K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.000138,
-          "formattedValue": "138.11K"
-        }
-      ]
-    },
-    {
-      "name": "ביטוח",
-      "value": 0.000123,
-      "formattedValue": "123.29K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.000123,
-          "formattedValue": "123.29K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים פיננסיים",
-      "value": 0.00012,
-      "formattedValue": "120.24K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.00012,
-          "formattedValue": "119.94K"
-        },
-        {
-          "name": "Options",
+          "name": "שירותים פיננסיים",
           "value": 0.0,
           "formattedValue": "0.30K"
-        }
-      ]
-    },
-    {
-      "name": "השקעה ואחזקות",
-      "value": 7.4e-05,
-      "formattedValue": "74.38K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 7.4e-05,
-          "formattedValue": "74.38K"
-        }
-      ]
-    },
-    {
-      "name": "Energy Equipment & Services",
-      "value": 7.1e-05,
-      "formattedValue": "70.91K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 7.1e-05,
-          "formattedValue": "70.91K"
-        }
-      ]
-    },
-    {
-      "name": "קלינטק",
-      "value": 3.4e-05,
-      "formattedValue": "33.93K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 3.4e-05,
-          "formattedValue": "33.93K"
         }
       ]
     }

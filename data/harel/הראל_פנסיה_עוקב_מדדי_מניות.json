@@ -1375,53 +1375,74 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 1.757538,
-      "formattedValue": "1.76B",
+      "name": "Stocks",
+      "value": 1.222328,
+      "formattedValue": "1.22B",
       "children": [
         {
-          "name": "Stocks",
+          "name": "General",
           "value": 1.222328,
           "formattedValue": "1.22B"
-        },
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.357179,
-          "formattedValue": "357.18M"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.178024,
-          "formattedValue": "178.02M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 7e-06,
-          "formattedValue": "7.13K"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Non-Tradable Bonds",
+      "value": 0.357179,
+      "formattedValue": "357.18M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.357179,
+          "formattedValue": "357.18M"
+        }
+      ]
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.178024,
+      "formattedValue": "178.02M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.178024,
+          "formattedValue": "178.02M"
+        }
+      ]
+    },
+    {
+      "name": "Cash & Equivalents",
       "value": 0.045939,
       "formattedValue": "45.94M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.045939,
           "formattedValue": "45.94M"
         }
       ]
     },
     {
-      "name": "Government / General",
+      "name": "Bonds",
       "value": 0.000796,
       "formattedValue": "795.90K",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.000796,
           "formattedValue": "795.90K"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 7e-06,
+      "formattedValue": "7.13K",
+      "children": [
+        {
+          "name": "General",
+          "value": 7e-06,
+          "formattedValue": "7.13K"
         }
       ]
     }

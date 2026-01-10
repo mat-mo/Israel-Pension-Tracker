@@ -2229,63 +2229,98 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 0.06456,
-      "formattedValue": "64.56M",
+      "name": "Non-Tradable Bonds",
+      "value": 0.032234,
+      "formattedValue": "32.23M",
       "children": [
         {
-          "name": "Non-Tradable Bonds",
+          "name": "General",
           "value": 0.032234,
           "formattedValue": "32.23M"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.015975,
-          "formattedValue": "15.98M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.015387,
-          "formattedValue": "15.39M"
-        },
-        {
-          "name": "Futures",
-          "value": 0.000425,
-          "formattedValue": "425.18K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000294,
-          "formattedValue": "293.67K"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.000245,
-          "formattedValue": "245.23K"
         }
       ]
     },
     {
-      "name": "Government / General",
+      "name": "Other Assets",
+      "value": 0.015975,
+      "formattedValue": "15.98M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.015975,
+          "formattedValue": "15.98M"
+        }
+      ]
+    },
+    {
+      "name": "Stocks",
+      "value": 0.015387,
+      "formattedValue": "15.39M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.015387,
+          "formattedValue": "15.39M"
+        }
+      ]
+    },
+    {
+      "name": "Bonds",
       "value": 0.010767,
       "formattedValue": "10.77M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.010767,
           "formattedValue": "10.77M"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Cash & Equivalents",
       "value": 0.003014,
       "formattedValue": "3.01M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.003014,
           "formattedValue": "3.01M"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.000425,
+      "formattedValue": "425.18K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000425,
+          "formattedValue": "425.18K"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.000294,
+      "formattedValue": "293.67K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000294,
+          "formattedValue": "293.67K"
+        }
+      ]
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.000245,
+      "formattedValue": "245.23K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000245,
+          "formattedValue": "245.23K"
         }
       ]
     }

@@ -1610,92 +1610,106 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 0.671605,
-      "formattedValue": "671.61M",
+      "name": "Stocks",
+      "value": 0.384441,
+      "formattedValue": "384.44M",
       "children": [
         {
-          "name": "Stocks",
+          "name": "General",
           "value": 0.384441,
           "formattedValue": "384.44M"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.141185,
-          "formattedValue": "141.19M"
-        },
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.136983,
-          "formattedValue": "136.98M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.008258,
-          "formattedValue": "8.26M"
-        },
-        {
-          "name": "Futures",
-          "value": 0.000738,
-          "formattedValue": "737.61K"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Cash & Equivalents",
       "value": 0.205601,
       "formattedValue": "205.60M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.205601,
           "formattedValue": "205.60M"
         }
       ]
     },
     {
-      "name": "Government / General",
-      "value": 0.158611,
-      "formattedValue": "158.61M",
+      "name": "Bonds",
+      "value": 0.160823,
+      "formattedValue": "160.82M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.158611,
           "formattedValue": "158.61M"
-        }
-      ]
-    },
-    {
-      "name": "בנקים",
-      "value": 0.001783,
-      "formattedValue": "1.78M",
-      "children": [
+        },
         {
-          "name": "Bonds",
+          "name": "בנקים",
           "value": 0.001783,
           "formattedValue": "1.78M"
-        }
-      ]
-    },
-    {
-      "name": "ביטוח",
-      "value": 0.000428,
-      "formattedValue": "428.34K",
-      "children": [
+        },
         {
-          "name": "Bonds",
+          "name": "ביטוח",
           "value": 0.000428,
           "formattedValue": "428.34K"
         }
       ]
     },
     {
-      "name": "שירותים ציבוריים",
+      "name": "Other Assets",
+      "value": 0.141185,
+      "formattedValue": "141.19M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.141185,
+          "formattedValue": "141.19M"
+        }
+      ]
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.136983,
+      "formattedValue": "136.98M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.136983,
+          "formattedValue": "136.98M"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.008258,
+      "formattedValue": "8.26M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.008258,
+          "formattedValue": "8.26M"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.000738,
+      "formattedValue": "737.61K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000738,
+          "formattedValue": "737.61K"
+        }
+      ]
+    },
+    {
+      "name": "Options",
       "value": 0.0,
       "formattedValue": "0.25K",
       "children": [
         {
-          "name": "Options",
+          "name": "שירותים ציבוריים",
           "value": 0.0,
           "formattedValue": "0.25K"
         }

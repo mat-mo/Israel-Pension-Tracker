@@ -382,48 +382,62 @@
   ],
   "sectorSunburst": [
     {
-      "name": "Liquidity",
+      "name": "Cash & Equivalents",
       "value": 1.613155,
       "formattedValue": "1.61B",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 1.613155,
           "formattedValue": "1.61B"
         }
       ]
     },
     {
-      "name": "General / Unclassified",
-      "value": 0.620905,
-      "formattedValue": "620.91M",
+      "name": "Stocks",
+      "value": 0.482473,
+      "formattedValue": "482.47M",
       "children": [
         {
-          "name": "Stocks",
+          "name": "General",
           "value": 0.482473,
           "formattedValue": "482.47M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.138141,
-          "formattedValue": "138.14M"
-        },
-        {
-          "name": "Futures",
-          "value": 0.000291,
-          "formattedValue": "290.87K"
         }
       ]
     },
     {
-      "name": "Government / General",
+      "name": "Bonds",
       "value": 0.172119,
       "formattedValue": "172.12M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.172119,
           "formattedValue": "172.12M"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.138141,
+      "formattedValue": "138.14M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.138141,
+          "formattedValue": "138.14M"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.000291,
+      "formattedValue": "290.87K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000291,
+          "formattedValue": "290.87K"
         }
       ]
     }

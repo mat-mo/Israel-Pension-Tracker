@@ -3529,456 +3529,288 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 0.025801,
+      "name": "Non-Tradable Bonds",
+      "value": 0.025803,
       "formattedValue": "25.80M",
       "children": [
         {
-          "name": "Non-Tradable Bonds",
+          "name": "General",
           "value": 0.025801,
           "formattedValue": "25.80M"
         },
         {
-          "name": "Structured Products",
+          "name": "ביטחוניות",
+          "value": 2e-06,
+          "formattedValue": "2.29K"
+        },
+        {
+          "name": "שירותים",
           "value": 0.0,
-          "formattedValue": "0.46K"
+          "formattedValue": "0.00K"
         },
         {
-          "name": "Other Assets",
+          "name": "נדל\"ן מניב בישראל",
           "value": 0.0,
-          "formattedValue": "0.08K"
+          "formattedValue": "0.00K"
         },
         {
-          "name": "Derivatives",
-          "value": 0.0,
-          "formattedValue": "0.10K"
-        }
-      ]
-    },
-    {
-      "name": "Government / General",
-      "value": 0.002103,
-      "formattedValue": "2.10M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.002103,
-          "formattedValue": "2.10M"
-        }
-      ]
-    },
-    {
-      "name": "נדל\"ן מניב בישראל",
-      "value": 0.000691,
-      "formattedValue": "690.88K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.000619,
-          "formattedValue": "619.37K"
-        },
-        {
-          "name": "Loans",
-          "value": 7.2e-05,
-          "formattedValue": "71.51K"
-        },
-        {
-          "name": "Non-Tradable Bonds",
+          "name": "אנרגיה",
           "value": 0.0,
           "formattedValue": "0.00K"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Bonds",
+      "value": 0.003123,
+      "formattedValue": "3.12M",
+      "children": [
+        {
+          "name": "Government / General",
+          "value": 0.002103,
+          "formattedValue": "2.10M"
+        },
+        {
+          "name": "נדל\"ן מניב בישראל",
+          "value": 0.000619,
+          "formattedValue": "619.37K"
+        },
+        {
+          "name": "אנרגיה",
+          "value": 0.000168,
+          "formattedValue": "167.90K"
+        },
+        {
+          "name": "תקשורת ומדיה",
+          "value": 6.6e-05,
+          "formattedValue": "66.47K"
+        },
+        {
+          "name": "בנקים",
+          "value": 6.2e-05,
+          "formattedValue": "61.71K"
+        },
+        {
+          "name": "ביטוח",
+          "value": 5.1e-05,
+          "formattedValue": "50.54K"
+        },
+        {
+          "name": "שירותים",
+          "value": 4e-05,
+          "formattedValue": "40.12K"
+        },
+        {
+          "name": "נדל\"ן מניב בחו\"ל",
+          "value": 6e-06,
+          "formattedValue": "5.67K"
+        },
+        {
+          "name": "חיפושי נפט וגז",
+          "value": 2e-06,
+          "formattedValue": "2.09K"
+        },
+        {
+          "name": "בנייה",
+          "value": 1e-06,
+          "formattedValue": "1.40K"
+        },
+        {
+          "name": "אנרגיה מתחדשת",
+          "value": 1e-06,
+          "formattedValue": "0.97K"
+        },
+        {
+          "name": "אשראי חוץ בנקאי",
+          "value": 1e-06,
+          "formattedValue": "0.66K"
+        },
+        {
+          "name": "Oil, Gas & Consumable Fuels",
+          "value": 1e-06,
+          "formattedValue": "0.83K"
+        },
+        {
+          "name": "כימיה, גומי ופלסטיק",
+          "value": 0.0,
+          "formattedValue": "0.43K"
+        },
+        {
+          "name": "שירותים פיננסיים",
+          "value": 0.0,
+          "formattedValue": "0.01K"
+        },
+        {
+          "name": "השקעה ואחזקות",
+          "value": 0.0,
+          "formattedValue": "0.49K"
+        },
+        {
+          "name": "מסחר",
+          "value": 0.0,
+          "formattedValue": "0.09K"
+        },
+        {
+          "name": "תוכנה ואינטרנט",
+          "value": 0.0,
+          "formattedValue": "0.07K"
+        },
+        {
+          "name": "מתכת ומוצרי בניה",
+          "value": 0.0,
+          "formattedValue": "0.24K"
+        },
+        {
+          "name": "Banks",
+          "value": 0.0,
+          "formattedValue": "0.40K"
+        },
+        {
+          "name": "Pharmaceuticals",
+          "value": 0.0,
+          "formattedValue": "0.43K"
+        }
+      ]
+    },
+    {
+      "name": "Loans",
+      "value": 0.000691,
+      "formattedValue": "690.77K",
+      "children": [
+        {
+          "name": "תשתיות",
+          "value": 0.000553,
+          "formattedValue": "553.13K"
+        },
+        {
+          "name": "נדל\"ן מניב בישראל",
+          "value": 7.2e-05,
+          "formattedValue": "71.51K"
+        },
+        {
+          "name": "חשמל",
+          "value": 3.2e-05,
+          "formattedValue": "31.76K"
+        },
+        {
+          "name": "בנייה",
+          "value": 1.3e-05,
+          "formattedValue": "13.01K"
+        },
+        {
+          "name": "אנרגיה",
+          "value": 1.1e-05,
+          "formattedValue": "11.24K"
+        },
+        {
+          "name": "רשויות מקומיות",
+          "value": 3e-06,
+          "formattedValue": "2.95K"
+        },
+        {
+          "name": "מסחר",
+          "value": 3e-06,
+          "formattedValue": "2.70K"
+        },
+        {
+          "name": "נדל\"ן מניב בחו\"ל",
+          "value": 2e-06,
+          "formattedValue": "2.43K"
+        },
+        {
+          "name": "שירותים פיננסיים",
+          "value": 1e-06,
+          "formattedValue": "1.03K"
+        },
+        {
+          "name": "שירותים ציבוריים",
+          "value": 1e-06,
+          "formattedValue": "1.00K"
+        },
+        {
+          "name": "תעשיה",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "אשראי חוץ בנקאי",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "אנשים פרטיים",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "מלונאות ותיירות",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "תחבורה",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
+      "name": "Cash & Equivalents",
       "value": 0.000649,
       "formattedValue": "649.49K",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.000649,
           "formattedValue": "649.49K"
         }
       ]
     },
     {
-      "name": "תשתיות",
-      "value": 0.000553,
-      "formattedValue": "553.13K",
+      "name": "Structured Products",
+      "value": 0.0,
+      "formattedValue": "0.46K",
       "children": [
         {
-          "name": "Loans",
-          "value": 0.000553,
-          "formattedValue": "553.13K"
-        }
-      ]
-    },
-    {
-      "name": "אנרגיה",
-      "value": 0.000179,
-      "formattedValue": "179.14K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.000168,
-          "formattedValue": "167.90K"
-        },
-        {
-          "name": "Loans",
-          "value": 1.1e-05,
-          "formattedValue": "11.24K"
-        },
-        {
-          "name": "Non-Tradable Bonds",
+          "name": "General",
           "value": 0.0,
-          "formattedValue": "0.00K"
+          "formattedValue": "0.46K"
         }
       ]
     },
     {
-      "name": "תקשורת ומדיה",
-      "value": 6.6e-05,
-      "formattedValue": "66.47K",
+      "name": "Other Assets",
+      "value": 0.0,
+      "formattedValue": "0.08K",
       "children": [
         {
-          "name": "Bonds",
-          "value": 6.6e-05,
-          "formattedValue": "66.47K"
-        }
-      ]
-    },
-    {
-      "name": "בנקים",
-      "value": 6.2e-05,
-      "formattedValue": "61.71K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 6.2e-05,
-          "formattedValue": "61.71K"
-        }
-      ]
-    },
-    {
-      "name": "ביטוח",
-      "value": 5.1e-05,
-      "formattedValue": "50.54K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 5.1e-05,
-          "formattedValue": "50.54K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים",
-      "value": 4e-05,
-      "formattedValue": "40.12K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 4e-05,
-          "formattedValue": "40.12K"
-        },
-        {
-          "name": "Non-Tradable Bonds",
+          "name": "General",
           "value": 0.0,
-          "formattedValue": "0.00K"
+          "formattedValue": "0.08K"
         }
       ]
     },
     {
-      "name": "חשמל",
-      "value": 3.2e-05,
-      "formattedValue": "31.76K",
+      "name": "Derivatives",
+      "value": 0.0,
+      "formattedValue": "0.10K",
       "children": [
         {
-          "name": "Loans",
-          "value": 3.2e-05,
-          "formattedValue": "31.76K"
-        }
-      ]
-    },
-    {
-      "name": "בנייה",
-      "value": 1.4e-05,
-      "formattedValue": "14.42K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 1.3e-05,
-          "formattedValue": "13.01K"
-        },
-        {
-          "name": "Bonds",
-          "value": 1e-06,
-          "formattedValue": "1.40K"
-        }
-      ]
-    },
-    {
-      "name": "נדל\"ן מניב בחו\"ל",
-      "value": 8e-06,
-      "formattedValue": "8.10K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 6e-06,
-          "formattedValue": "5.67K"
-        },
-        {
-          "name": "Loans",
-          "value": 2e-06,
-          "formattedValue": "2.43K"
-        }
-      ]
-    },
-    {
-      "name": "רשויות מקומיות",
-      "value": 3e-06,
-      "formattedValue": "2.95K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 3e-06,
-          "formattedValue": "2.95K"
-        }
-      ]
-    },
-    {
-      "name": "מסחר",
-      "value": 3e-06,
-      "formattedValue": "2.79K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 3e-06,
-          "formattedValue": "2.70K"
-        },
-        {
-          "name": "Bonds",
+          "name": "General",
           "value": 0.0,
-          "formattedValue": "0.09K"
+          "formattedValue": "0.10K"
         }
       ]
     },
     {
-      "name": "חיפושי נפט וגז",
-      "value": 2e-06,
-      "formattedValue": "2.09K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 2e-06,
-          "formattedValue": "2.09K"
-        }
-      ]
-    },
-    {
-      "name": "ביטחוניות",
-      "value": 2e-06,
-      "formattedValue": "2.29K",
-      "children": [
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 2e-06,
-          "formattedValue": "2.29K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים פיננסיים",
-      "value": 1e-06,
-      "formattedValue": "1.04K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 1e-06,
-          "formattedValue": "1.03K"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.01K"
-        }
-      ]
-    },
-    {
-      "name": "אשראי חוץ בנקאי",
-      "value": 1e-06,
-      "formattedValue": "0.66K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 1e-06,
-          "formattedValue": "0.66K"
-        },
-        {
-          "name": "Loans",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים ציבוריים",
-      "value": 1e-06,
-      "formattedValue": "1.00K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 1e-06,
-          "formattedValue": "1.00K"
-        }
-      ]
-    },
-    {
-      "name": "אנרגיה מתחדשת",
-      "value": 1e-06,
-      "formattedValue": "0.97K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 1e-06,
-          "formattedValue": "0.97K"
-        }
-      ]
-    },
-    {
-      "name": "Oil, Gas & Consumable Fuels",
-      "value": 1e-06,
-      "formattedValue": "0.83K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 1e-06,
-          "formattedValue": "0.83K"
-        }
-      ]
-    },
-    {
-      "name": "תעשיה",
+      "name": "Stocks",
       "value": 0.0,
       "formattedValue": "0.00K",
       "children": [
         {
-          "name": "Loans",
+          "name": "השקעה ואחזקות",
           "value": 0.0,
           "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "אנשים פרטיים",
-      "value": 0.0,
-      "formattedValue": "0.00K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "מלונאות ותיירות",
-      "value": 0.0,
-      "formattedValue": "0.00K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "תחבורה",
-      "value": 0.0,
-      "formattedValue": "0.00K",
-      "children": [
-        {
-          "name": "Loans",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "כימיה, גומי ופלסטיק",
-      "value": 0.0,
-      "formattedValue": "0.43K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.43K"
-        }
-      ]
-    },
-    {
-      "name": "השקעה ואחזקות",
-      "value": 0.0,
-      "formattedValue": "0.49K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.49K"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "תוכנה ואינטרנט",
-      "value": 0.0,
-      "formattedValue": "0.07K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.07K"
-        }
-      ]
-    },
-    {
-      "name": "מתכת ומוצרי בניה",
-      "value": 0.0,
-      "formattedValue": "0.24K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.24K"
-        }
-      ]
-    },
-    {
-      "name": "Banks",
-      "value": 0.0,
-      "formattedValue": "0.40K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.40K"
-        }
-      ]
-    },
-    {
-      "name": "Pharmaceuticals",
-      "value": 0.0,
-      "formattedValue": "0.43K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0,
-          "formattedValue": "0.43K"
         }
       ]
     }

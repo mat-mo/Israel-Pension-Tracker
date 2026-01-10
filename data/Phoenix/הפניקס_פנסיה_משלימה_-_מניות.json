@@ -8466,1354 +8466,871 @@
   ],
   "sectorSunburst": [
     {
-      "name": "Liquidity",
+      "name": "Stocks",
+      "value": 0.902592,
+      "formattedValue": "902.59M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.278549,
+          "formattedValue": "278.55M"
+        },
+        {
+          "name": "בנקים",
+          "value": 0.123268,
+          "formattedValue": "123.27M"
+        },
+        {
+          "name": "נדל\"ן מניב בישראל",
+          "value": 0.066608,
+          "formattedValue": "66.61M"
+        },
+        {
+          "name": "בנייה",
+          "value": 0.036492,
+          "formattedValue": "36.49M"
+        },
+        {
+          "name": "Health Care Equipment & Supplies",
+          "value": 0.032726,
+          "formattedValue": "32.73M"
+        },
+        {
+          "name": "אנרגיה מתחדשת",
+          "value": 0.028177,
+          "formattedValue": "28.18M"
+        },
+        {
+          "name": "Wireless Telecommunication Services",
+          "value": 0.025117,
+          "formattedValue": "25.12M"
+        },
+        {
+          "name": "Software",
+          "value": 0.018092,
+          "formattedValue": "18.09M"
+        },
+        {
+          "name": "מלונאות ותיירות",
+          "value": 0.016714,
+          "formattedValue": "16.71M"
+        },
+        {
+          "name": "רשתות שיווק",
+          "value": 0.016677,
+          "formattedValue": "16.68M"
+        },
+        {
+          "name": "ביטחוניות",
+          "value": 0.016042,
+          "formattedValue": "16.04M"
+        },
+        {
+          "name": "כימיה, גומי ופלסטיק",
+          "value": 0.014909,
+          "formattedValue": "14.91M"
+        },
+        {
+          "name": "Oil, Gas & Consumable Fuels",
+          "value": 0.014847,
+          "formattedValue": "14.85M"
+        },
+        {
+          "name": "נדל\"ן מניב בחו\"ל",
+          "value": 0.014794,
+          "formattedValue": "14.79M"
+        },
+        {
+          "name": "ביטוח",
+          "value": 0.014787,
+          "formattedValue": "14.79M"
+        },
+        {
+          "name": "חיפושי נפט וגז",
+          "value": 0.014512,
+          "formattedValue": "14.51M"
+        },
+        {
+          "name": "אנרגיה",
+          "value": 0.013407,
+          "formattedValue": "13.41M"
+        },
+        {
+          "name": "שירותי מידע",
+          "value": 0.013111,
+          "formattedValue": "13.11M"
+        },
+        {
+          "name": "Semiconductors & Semiconductor Equipment",
+          "value": 0.012491,
+          "formattedValue": "12.49M"
+        },
+        {
+          "name": "מתכת ומוצרי בניה",
+          "value": 0.011754,
+          "formattedValue": "11.75M"
+        },
+        {
+          "name": "Construction Materials",
+          "value": 0.007665,
+          "formattedValue": "7.67M"
+        },
+        {
+          "name": "השקעה ואחזקות",
+          "value": 0.007524,
+          "formattedValue": "7.52M"
+        },
+        {
+          "name": "Technology Hardware, Storage & Peripherals",
+          "value": 0.00738,
+          "formattedValue": "7.38M"
+        },
+        {
+          "name": "תקשורת ומדיה",
+          "value": 0.007159,
+          "formattedValue": "7.16M"
+        },
+        {
+          "name": "מסחר",
+          "value": 0.006599,
+          "formattedValue": "6.60M"
+        },
+        {
+          "name": "Financial Services",
+          "value": 0.006594,
+          "formattedValue": "6.59M"
+        },
+        {
+          "name": "מזון",
+          "value": 0.00646,
+          "formattedValue": "6.46M"
+        },
+        {
+          "name": "Diversified Telecommunication Services",
+          "value": 0.005729,
+          "formattedValue": "5.73M"
+        },
+        {
+          "name": "Aerospace & Defense",
+          "value": 0.005587,
+          "formattedValue": "5.59M"
+        },
+        {
+          "name": "Electronic Equipment, Instruments & Components",
+          "value": 0.004864,
+          "formattedValue": "4.86M"
+        },
+        {
+          "name": "Metals & Mining",
+          "value": 0.004845,
+          "formattedValue": "4.84M"
+        },
+        {
+          "name": "אלקטרוניקה ואופטיקה",
+          "value": 0.004338,
+          "formattedValue": "4.34M"
+        },
+        {
+          "name": "פארמה",
+          "value": 0.003747,
+          "formattedValue": "3.75M"
+        },
+        {
+          "name": "Chemicals",
+          "value": 0.003472,
+          "formattedValue": "3.47M"
+        },
+        {
+          "name": "Diversified REITs",
+          "value": 0.003436,
+          "formattedValue": "3.44M"
+        },
+        {
+          "name": "Industrial Conglomerates",
+          "value": 0.003133,
+          "formattedValue": "3.13M"
+        },
+        {
+          "name": "מוליכים למחצה",
+          "value": 0.003058,
+          "formattedValue": "3.06M"
+        },
+        {
+          "name": "Diversified Consumer Services",
+          "value": 0.002498,
+          "formattedValue": "2.50M"
+        },
+        {
+          "name": "שירותים",
+          "value": 0.002426,
+          "formattedValue": "2.43M"
+        },
+        {
+          "name": "קלינטק",
+          "value": 0.002013,
+          "formattedValue": "2.01M"
+        },
+        {
+          "name": "Commercial Services & Supplies",
+          "value": 0.001954,
+          "formattedValue": "1.95M"
+        },
+        {
+          "name": "Real Estate Management & Development",
+          "value": 0.001922,
+          "formattedValue": "1.92M"
+        },
+        {
+          "name": "Other",
+          "value": 0.001751,
+          "formattedValue": "1.75M"
+        },
+        {
+          "name": "Electric Utilities",
+          "value": 0.001697,
+          "formattedValue": "1.70M"
+        },
+        {
+          "name": "Health Care Providers & Services",
+          "value": 0.001396,
+          "formattedValue": "1.40M"
+        },
+        {
+          "name": "תוכנה ואינטרנט",
+          "value": 0.001265,
+          "formattedValue": "1.26M"
+        },
+        {
+          "name": "פודטק",
+          "value": 0.001246,
+          "formattedValue": "1.25M"
+        },
+        {
+          "name": "מכשור רפואי",
+          "value": 0.001121,
+          "formattedValue": "1.12M"
+        },
+        {
+          "name": "Retail REITs",
+          "value": 0.001097,
+          "formattedValue": "1.10M"
+        },
+        {
+          "name": "Automobiles",
+          "value": 0.000941,
+          "formattedValue": "941.12K"
+        },
+        {
+          "name": "ציוד תקשורת",
+          "value": 0.000838,
+          "formattedValue": "837.71K"
+        },
+        {
+          "name": "שירותים ציבוריים",
+          "value": 0.000764,
+          "formattedValue": "763.97K"
+        },
+        {
+          "name": "שירותים פיננסיים",
+          "value": 0.000704,
+          "formattedValue": "704.34K"
+        },
+        {
+          "name": "Consumer Finance",
+          "value": 0.000674,
+          "formattedValue": "673.77K"
+        },
+        {
+          "name": "אשראי חוץ בנקאי",
+          "value": 0.00063,
+          "formattedValue": "630.00K"
+        },
+        {
+          "name": "Automobile Components",
+          "value": 0.000543,
+          "formattedValue": "543.21K"
+        },
+        {
+          "name": "חשמל",
+          "value": 0.000542,
+          "formattedValue": "541.82K"
+        },
+        {
+          "name": "ביוטכנולוגיה",
+          "value": 0.000443,
+          "formattedValue": "443.19K"
+        },
+        {
+          "name": "Multi-Utilities",
+          "value": 0.000429,
+          "formattedValue": "429.26K"
+        },
+        {
+          "name": "תעופה",
+          "value": 0.000355,
+          "formattedValue": "355.41K"
+        },
+        {
+          "name": "השקעות במדעי החיים",
+          "value": 0.000209,
+          "formattedValue": "208.97K"
+        },
+        {
+          "name": "Independent Power and Renewable Electricity Producers",
+          "value": 0.000182,
+          "formattedValue": "182.33K"
+        },
+        {
+          "name": "Consumer Staples Distribution & Retail",
+          "value": 0.000107,
+          "formattedValue": "107.18K"
+        },
+        {
+          "name": "Energy Equipment & Services",
+          "value": 5.1e-05,
+          "formattedValue": "50.95K"
+        },
+        {
+          "name": "Health Care Technology",
+          "value": 3.8e-05,
+          "formattedValue": "37.63K"
+        },
+        {
+          "name": "Capital Markets",
+          "value": 2.2e-05,
+          "formattedValue": "21.92K"
+        },
+        {
+          "name": "Insurance",
+          "value": 1.6e-05,
+          "formattedValue": "15.98K"
+        },
+        {
+          "name": "Textiles, Apparel & Luxury Goods",
+          "value": 1.5e-05,
+          "formattedValue": "14.82K"
+        },
+        {
+          "name": "Tobacco",
+          "value": 1.2e-05,
+          "formattedValue": "12.04K"
+        },
+        {
+          "name": "Transportation Infrastructure",
+          "value": 9e-06,
+          "formattedValue": "9.21K"
+        },
+        {
+          "name": "Hotels, Restaurants & Leisure",
+          "value": 7e-06,
+          "formattedValue": "7.14K"
+        },
+        {
+          "name": "Passenger Airlines",
+          "value": 6e-06,
+          "formattedValue": "5.89K"
+        },
+        {
+          "name": "רובוטיקה ותלת מימד",
+          "value": 5e-06,
+          "formattedValue": "4.84K"
+        },
+        {
+          "name": "עץ, נייר ודפוס",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "אחר",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
+      "name": "Cash & Equivalents",
       "value": 0.478036,
       "formattedValue": "478.04M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.478036,
           "formattedValue": "478.04M"
         }
       ]
     },
     {
-      "name": "General / Unclassified",
-      "value": 0.426119,
-      "formattedValue": "426.12M",
+      "name": "Bonds",
+      "value": 0.135367,
+      "formattedValue": "135.37M",
       "children": [
         {
-          "name": "Stocks",
-          "value": 0.278549,
-          "formattedValue": "278.55M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.122484,
-          "formattedValue": "122.48M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.020429,
-          "formattedValue": "20.43M"
-        },
-        {
-          "name": "Futures",
-          "value": 0.003765,
-          "formattedValue": "3.77M"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.000879,
-          "formattedValue": "879.02K"
-        },
-        {
-          "name": "Investment Funds",
-          "value": 1.2e-05,
-          "formattedValue": "12.40K"
-        }
-      ]
-    },
-    {
-      "name": "בנקים",
-      "value": 0.139198,
-      "formattedValue": "139.20M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.123268,
-          "formattedValue": "123.27M"
-        },
-        {
-          "name": "Options",
-          "value": 0.01593,
-          "formattedValue": "15.93M"
-        }
-      ]
-    },
-    {
-      "name": "Government / General",
-      "value": 0.100061,
-      "formattedValue": "100.06M",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.100061,
           "formattedValue": "100.06M"
-        }
-      ]
-    },
-    {
-      "name": "נדל\"ן מניב בישראל",
-      "value": 0.066744,
-      "formattedValue": "66.74M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.066608,
-          "formattedValue": "66.61M"
         },
         {
-          "name": "Warrants",
-          "value": 0.000135,
-          "formattedValue": "135.41K"
-        }
-      ]
-    },
-    {
-      "name": "בנייה",
-      "value": 0.036647,
-      "formattedValue": "36.65M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.036492,
-          "formattedValue": "36.49M"
-        },
-        {
-          "name": "Options",
-          "value": 0.000105,
-          "formattedValue": "105.03K"
-        },
-        {
-          "name": "Warrants",
-          "value": 5e-05,
-          "formattedValue": "50.40K"
-        }
-      ]
-    },
-    {
-      "name": "אנרגיה מתחדשת",
-      "value": 0.033096,
-      "formattedValue": "33.10M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.028177,
-          "formattedValue": "28.18M"
-        },
-        {
-          "name": "Options",
-          "value": 0.004848,
-          "formattedValue": "4.85M"
-        },
-        {
-          "name": "Bonds",
-          "value": 7.1e-05,
-          "formattedValue": "71.01K"
-        }
-      ]
-    },
-    {
-      "name": "Health Care Equipment & Supplies",
-      "value": 0.032841,
-      "formattedValue": "32.84M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.032726,
-          "formattedValue": "32.73M"
-        },
-        {
-          "name": "Options",
-          "value": 0.000111,
-          "formattedValue": "110.54K"
-        },
-        {
-          "name": "Bonds",
-          "value": 5e-06,
-          "formattedValue": "5.00K"
-        }
-      ]
-    },
-    {
-      "name": "Semiconductors & Semiconductor Equipment",
-      "value": 0.029885,
-      "formattedValue": "29.89M",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "Semiconductors & Semiconductor Equipment",
           "value": 0.016042,
           "formattedValue": "16.04M"
         },
         {
-          "name": "Stocks",
-          "value": 0.012491,
-          "formattedValue": "12.49M"
-        },
-        {
-          "name": "Options",
-          "value": 0.001353,
-          "formattedValue": "1.35M"
-        }
-      ]
-    },
-    {
-      "name": "Wireless Telecommunication Services",
-      "value": 0.02551,
-      "formattedValue": "25.51M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.025117,
-          "formattedValue": "25.12M"
-        },
-        {
-          "name": "Options",
-          "value": 0.000388,
-          "formattedValue": "387.71K"
-        },
-        {
-          "name": "Bonds",
-          "value": 5e-06,
-          "formattedValue": "4.81K"
-        },
-        {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "0.01K"
-        }
-      ]
-    },
-    {
-      "name": "אשראי חוץ בנקאי",
-      "value": 0.020849,
-      "formattedValue": "20.85M",
-      "children": [
-        {
-          "name": "Options",
-          "value": 0.020219,
-          "formattedValue": "20.22M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.00063,
-          "formattedValue": "630.00K"
-        }
-      ]
-    },
-    {
-      "name": "Software",
-      "value": 0.018103,
-      "formattedValue": "18.10M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.018092,
-          "formattedValue": "18.09M"
-        },
-        {
-          "name": "Options",
-          "value": 1.1e-05,
-          "formattedValue": "11.47K"
-        }
-      ]
-    },
-    {
-      "name": "מלונאות ותיירות",
-      "value": 0.016741,
-      "formattedValue": "16.74M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.016714,
-          "formattedValue": "16.71M"
-        },
-        {
-          "name": "Warrants",
-          "value": 2.7e-05,
-          "formattedValue": "26.82K"
-        }
-      ]
-    },
-    {
-      "name": "רשתות שיווק",
-      "value": 0.016677,
-      "formattedValue": "16.68M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.016677,
-          "formattedValue": "16.68M"
-        }
-      ]
-    },
-    {
-      "name": "ביטחוניות",
-      "value": 0.016042,
-      "formattedValue": "16.04M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.016042,
-          "formattedValue": "16.04M"
-        }
-      ]
-    },
-    {
-      "name": "כימיה, גומי ופלסטיק",
-      "value": 0.014909,
-      "formattedValue": "14.91M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.014909,
-          "formattedValue": "14.91M"
-        }
-      ]
-    },
-    {
-      "name": "Oil, Gas & Consumable Fuels",
-      "value": 0.014852,
-      "formattedValue": "14.85M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.014847,
-          "formattedValue": "14.85M"
-        },
-        {
-          "name": "Bonds",
-          "value": 5e-06,
-          "formattedValue": "4.93K"
-        },
-        {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.16K"
-        }
-      ]
-    },
-    {
-      "name": "נדל\"ן מניב בחו\"ל",
-      "value": 0.014794,
-      "formattedValue": "14.79M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.014794,
-          "formattedValue": "14.79M"
-        }
-      ]
-    },
-    {
-      "name": "ביטוח",
-      "value": 0.014787,
-      "formattedValue": "14.79M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.014787,
-          "formattedValue": "14.79M"
-        }
-      ]
-    },
-    {
-      "name": "חיפושי נפט וגז",
-      "value": 0.014548,
-      "formattedValue": "14.55M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.014512,
-          "formattedValue": "14.51M"
-        },
-        {
-          "name": "Warrants",
-          "value": 3.4e-05,
-          "formattedValue": "33.74K"
-        },
-        {
-          "name": "Non-Tradable Stocks",
-          "value": 2e-06,
-          "formattedValue": "2.31K"
-        }
-      ]
-    },
-    {
-      "name": "Technology Hardware, Storage & Peripherals",
-      "value": 0.014418,
-      "formattedValue": "14.42M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.00738,
-          "formattedValue": "7.38M"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.006341,
-          "formattedValue": "6.34M"
-        },
-        {
-          "name": "Options",
-          "value": 0.000697,
-          "formattedValue": "697.16K"
-        }
-      ]
-    },
-    {
-      "name": "אנרגיה",
-      "value": 0.013407,
-      "formattedValue": "13.41M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.013407,
-          "formattedValue": "13.41M"
-        }
-      ]
-    },
-    {
-      "name": "שירותי מידע",
-      "value": 0.013111,
-      "formattedValue": "13.11M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.013111,
-          "formattedValue": "13.11M"
-        }
-      ]
-    },
-    {
-      "name": "מתכת ומוצרי בניה",
-      "value": 0.011754,
-      "formattedValue": "11.75M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.011754,
-          "formattedValue": "11.75M"
-        }
-      ]
-    },
-    {
-      "name": "תקשורת ומדיה",
-      "value": 0.008908,
-      "formattedValue": "8.91M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.007159,
-          "formattedValue": "7.16M"
-        },
-        {
-          "name": "Options",
-          "value": 0.001749,
-          "formattedValue": "1.75M"
-        }
-      ]
-    },
-    {
-      "name": "Construction Materials",
-      "value": 0.007669,
-      "formattedValue": "7.67M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.007665,
-          "formattedValue": "7.67M"
-        },
-        {
-          "name": "Bonds",
-          "value": 4e-06,
-          "formattedValue": "4.04K"
-        },
-        {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.17K"
-        }
-      ]
-    },
-    {
-      "name": "השקעה ואחזקות",
-      "value": 0.007524,
-      "formattedValue": "7.52M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.007524,
-          "formattedValue": "7.52M"
-        },
-        {
-          "name": "Non-Tradable Stocks",
-          "value": 0.0,
-          "formattedValue": "0.04K"
-        }
-      ]
-    },
-    {
-      "name": "Energy Equipment & Services",
-      "value": 0.007404,
-      "formattedValue": "7.40M",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "Energy Equipment & Services",
           "value": 0.006852,
           "formattedValue": "6.85M"
         },
         {
-          "name": "Options",
-          "value": 0.000501,
-          "formattedValue": "501.20K"
+          "name": "Technology Hardware, Storage & Peripherals",
+          "value": 0.006341,
+          "formattedValue": "6.34M"
         },
         {
-          "name": "Stocks",
-          "value": 5.1e-05,
-          "formattedValue": "50.95K"
-        }
-      ]
-    },
-    {
-      "name": "Electronic Equipment, Instruments & Components",
-      "value": 0.007389,
-      "formattedValue": "7.39M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.004864,
-          "formattedValue": "4.86M"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.001995,
-          "formattedValue": "2.00M"
-        },
-        {
-          "name": "Options",
-          "value": 0.00053,
-          "formattedValue": "529.67K"
-        }
-      ]
-    },
-    {
-      "name": "מסחר",
-      "value": 0.006688,
-      "formattedValue": "6.69M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.006599,
-          "formattedValue": "6.60M"
-        },
-        {
-          "name": "Warrants",
-          "value": 8.9e-05,
-          "formattedValue": "89.33K"
-        }
-      ]
-    },
-    {
-      "name": "Financial Services",
-      "value": 0.006632,
-      "formattedValue": "6.63M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.006594,
-          "formattedValue": "6.59M"
-        },
-        {
-          "name": "Bonds",
-          "value": 3.8e-05,
-          "formattedValue": "37.72K"
-        },
-        {
-          "name": "Options",
-          "value": 1e-06,
-          "formattedValue": "0.69K"
-        }
-      ]
-    },
-    {
-      "name": "Diversified Telecommunication Services",
-      "value": 0.006501,
-      "formattedValue": "6.50M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.005729,
-          "formattedValue": "5.73M"
-        },
-        {
-          "name": "Options",
-          "value": 0.000768,
-          "formattedValue": "768.37K"
-        },
-        {
-          "name": "Bonds",
-          "value": 4e-06,
-          "formattedValue": "4.45K"
-        }
-      ]
-    },
-    {
-      "name": "מזון",
-      "value": 0.00646,
-      "formattedValue": "6.46M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.00646,
-          "formattedValue": "6.46M"
-        }
-      ]
-    },
-    {
-      "name": "Aerospace & Defense",
-      "value": 0.005587,
-      "formattedValue": "5.59M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.005587,
-          "formattedValue": "5.59M"
-        },
-        {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.06K"
-        }
-      ]
-    },
-    {
-      "name": "Electric Utilities",
-      "value": 0.005003,
-      "formattedValue": "5.00M",
-      "children": [
-        {
-          "name": "Bonds",
+          "name": "Electric Utilities",
           "value": 0.002937,
           "formattedValue": "2.94M"
         },
         {
-          "name": "Stocks",
-          "value": 0.001697,
-          "formattedValue": "1.70M"
+          "name": "Electronic Equipment, Instruments & Components",
+          "value": 0.001995,
+          "formattedValue": "2.00M"
         },
         {
-          "name": "Options",
-          "value": 0.000369,
-          "formattedValue": "368.59K"
-        }
-      ]
-    },
-    {
-      "name": "Metals & Mining",
-      "value": 0.004845,
-      "formattedValue": "4.84M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.004845,
-          "formattedValue": "4.84M"
-        }
-      ]
-    },
-    {
-      "name": "אלקטרוניקה ואופטיקה",
-      "value": 0.004338,
-      "formattedValue": "4.34M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.004338,
-          "formattedValue": "4.34M"
-        }
-      ]
-    },
-    {
-      "name": "Industrial Conglomerates",
-      "value": 0.004122,
-      "formattedValue": "4.12M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.003133,
-          "formattedValue": "3.13M"
-        },
-        {
-          "name": "Bonds",
+          "name": "Industrial Conglomerates",
           "value": 0.000936,
           "formattedValue": "935.98K"
         },
         {
-          "name": "Options",
-          "value": 5.3e-05,
-          "formattedValue": "52.81K"
+          "name": "אנרגיה מתחדשת",
+          "value": 7.1e-05,
+          "formattedValue": "71.01K"
         },
         {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "0.01K"
-        }
-      ]
-    },
-    {
-      "name": "פארמה",
-      "value": 0.003747,
-      "formattedValue": "3.75M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.003747,
-          "formattedValue": "3.75M"
-        }
-      ]
-    },
-    {
-      "name": "Chemicals",
-      "value": 0.003475,
-      "formattedValue": "3.48M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.003472,
-          "formattedValue": "3.47M"
+          "name": "Financial Services",
+          "value": 3.8e-05,
+          "formattedValue": "37.72K"
         },
         {
-          "name": "Bonds",
-          "value": 3e-06,
-          "formattedValue": "3.35K"
-        }
-      ]
-    },
-    {
-      "name": "Diversified REITs",
-      "value": 0.003445,
-      "formattedValue": "3.44M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.003436,
-          "formattedValue": "3.44M"
-        },
-        {
-          "name": "Bonds",
-          "value": 9e-06,
-          "formattedValue": "9.11K"
-        }
-      ]
-    },
-    {
-      "name": "מוליכים למחצה",
-      "value": 0.003058,
-      "formattedValue": "3.06M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.003058,
-          "formattedValue": "3.06M"
-        }
-      ]
-    },
-    {
-      "name": "Diversified Consumer Services",
-      "value": 0.002511,
-      "formattedValue": "2.51M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.002498,
-          "formattedValue": "2.50M"
-        },
-        {
-          "name": "Bonds",
-          "value": 1.1e-05,
-          "formattedValue": "11.23K"
-        },
-        {
-          "name": "Options",
-          "value": 2e-06,
-          "formattedValue": "1.65K"
-        },
-        {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "0.03K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים",
-      "value": 0.002426,
-      "formattedValue": "2.43M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.002426,
-          "formattedValue": "2.43M"
-        }
-      ]
-    },
-    {
-      "name": "קלינטק",
-      "value": 0.002015,
-      "formattedValue": "2.02M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.002013,
-          "formattedValue": "2.01M"
-        },
-        {
-          "name": "Warrants",
-          "value": 3e-06,
-          "formattedValue": "2.60K"
-        }
-      ]
-    },
-    {
-      "name": "Commercial Services & Supplies",
-      "value": 0.001968,
-      "formattedValue": "1.97M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001954,
-          "formattedValue": "1.95M"
-        },
-        {
-          "name": "Bonds",
+          "name": "Commercial Services & Supplies",
           "value": 1.3e-05,
           "formattedValue": "12.90K"
         },
         {
-          "name": "Warrants",
-          "value": 2e-06,
-          "formattedValue": "1.55K"
-        }
-      ]
-    },
-    {
-      "name": "Real Estate Management & Development",
-      "value": 0.001922,
-      "formattedValue": "1.92M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001922,
-          "formattedValue": "1.92M"
-        }
-      ]
-    },
-    {
-      "name": "Other",
-      "value": 0.001771,
-      "formattedValue": "1.77M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001751,
-          "formattedValue": "1.75M"
+          "name": "Diversified Consumer Services",
+          "value": 1.1e-05,
+          "formattedValue": "11.23K"
         },
         {
-          "name": "Options",
-          "value": 1.5e-05,
-          "formattedValue": "14.79K"
+          "name": "Consumer Staples Distribution & Retail",
+          "value": 1e-05,
+          "formattedValue": "10.08K"
         },
         {
-          "name": "Bonds",
+          "name": "Diversified REITs",
+          "value": 9e-06,
+          "formattedValue": "9.11K"
+        },
+        {
+          "name": "Oil, Gas & Consumable Fuels",
+          "value": 5e-06,
+          "formattedValue": "4.93K"
+        },
+        {
+          "name": "Insurance",
+          "value": 5e-06,
+          "formattedValue": "4.75K"
+        },
+        {
+          "name": "Health Care Equipment & Supplies",
+          "value": 5e-06,
+          "formattedValue": "5.00K"
+        },
+        {
+          "name": "Wireless Telecommunication Services",
+          "value": 5e-06,
+          "formattedValue": "4.81K"
+        },
+        {
+          "name": "Passenger Airlines",
+          "value": 4e-06,
+          "formattedValue": "4.20K"
+        },
+        {
+          "name": "Diversified Telecommunication Services",
+          "value": 4e-06,
+          "formattedValue": "4.45K"
+        },
+        {
+          "name": "Construction Materials",
+          "value": 4e-06,
+          "formattedValue": "4.04K"
+        },
+        {
+          "name": "Other",
           "value": 4e-06,
           "formattedValue": "4.48K"
-        }
-      ]
-    },
-    {
-      "name": "Health Care Providers & Services",
-      "value": 0.001396,
-      "formattedValue": "1.40M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001396,
-          "formattedValue": "1.40M"
-        }
-      ]
-    },
-    {
-      "name": "פודטק",
-      "value": 0.001265,
-      "formattedValue": "1.27M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001246,
-          "formattedValue": "1.25M"
         },
         {
-          "name": "Options",
-          "value": 1.9e-05,
-          "formattedValue": "19.33K"
-        }
-      ]
-    },
-    {
-      "name": "תוכנה ואינטרנט",
-      "value": 0.001265,
-      "formattedValue": "1.26M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001265,
-          "formattedValue": "1.26M"
-        }
-      ]
-    },
-    {
-      "name": "מכשור רפואי",
-      "value": 0.001122,
-      "formattedValue": "1.12M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001121,
-          "formattedValue": "1.12M"
-        },
-        {
-          "name": "Non-Tradable Stocks",
-          "value": 1e-06,
-          "formattedValue": "1.19K"
-        }
-      ]
-    },
-    {
-      "name": "Retail REITs",
-      "value": 0.001101,
-      "formattedValue": "1.10M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001097,
-          "formattedValue": "1.10M"
-        },
-        {
-          "name": "Bonds",
+          "name": "Retail REITs",
           "value": 3e-06,
           "formattedValue": "3.25K"
         },
         {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.00K"
+          "name": "Chemicals",
+          "value": 3e-06,
+          "formattedValue": "3.35K"
         },
         {
-          "name": "Warrants",
-          "value": 0.0,
-          "formattedValue": "0.29K"
-        }
-      ]
-    },
-    {
-      "name": "Automobiles",
-      "value": 0.000942,
-      "formattedValue": "941.83K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000941,
-          "formattedValue": "941.12K"
+          "name": "Communications Equipment",
+          "value": 3e-06,
+          "formattedValue": "2.93K"
         },
         {
-          "name": "Bonds",
+          "name": "Hotels, Restaurants & Leisure",
+          "value": 2e-06,
+          "formattedValue": "1.94K"
+        },
+        {
+          "name": "Automobiles",
           "value": 1e-06,
           "formattedValue": "0.71K"
-        }
-      ]
-    },
-    {
-      "name": "ציוד תקשורת",
-      "value": 0.000838,
-      "formattedValue": "837.71K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000838,
-          "formattedValue": "837.71K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים ציבוריים",
-      "value": 0.000764,
-      "formattedValue": "763.97K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000764,
-          "formattedValue": "763.97K"
-        }
-      ]
-    },
-    {
-      "name": "שירותים פיננסיים",
-      "value": 0.000704,
-      "formattedValue": "704.34K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000704,
-          "formattedValue": "704.34K"
-        }
-      ]
-    },
-    {
-      "name": "Consumer Finance",
-      "value": 0.000674,
-      "formattedValue": "673.83K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000674,
-          "formattedValue": "673.77K"
         },
         {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.05K"
-        }
-      ]
-    },
-    {
-      "name": "Automobile Components",
-      "value": 0.000586,
-      "formattedValue": "585.56K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000543,
-          "formattedValue": "543.21K"
+          "name": "Food Products",
+          "value": 1e-06,
+          "formattedValue": "1.26K"
         },
         {
-          "name": "Options",
-          "value": 4.2e-05,
-          "formattedValue": "42.35K"
-        }
-      ]
-    },
-    {
-      "name": "חשמל",
-      "value": 0.000542,
-      "formattedValue": "541.82K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000542,
-          "formattedValue": "541.82K"
-        }
-      ]
-    },
-    {
-      "name": "ביוטכנולוגיה",
-      "value": 0.000443,
-      "formattedValue": "443.19K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000443,
-          "formattedValue": "443.19K"
-        }
-      ]
-    },
-    {
-      "name": "Multi-Utilities",
-      "value": 0.00043,
-      "formattedValue": "429.96K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000429,
-          "formattedValue": "429.26K"
-        },
-        {
-          "name": "Bonds",
+          "name": "Multi-Utilities",
           "value": 1e-06,
           "formattedValue": "0.70K"
         }
       ]
     },
     {
-      "name": "תעופה",
-      "value": 0.000355,
-      "formattedValue": "355.41K",
+      "name": "Derivatives",
+      "value": 0.122484,
+      "formattedValue": "122.48M",
       "children": [
         {
-          "name": "Stocks",
-          "value": 0.000355,
-          "formattedValue": "355.41K"
+          "name": "General",
+          "value": 0.122484,
+          "formattedValue": "122.48M"
         }
       ]
     },
     {
-      "name": "השקעות במדעי החיים",
-      "value": 0.000209,
-      "formattedValue": "208.97K",
+      "name": "Options",
+      "value": 0.047727,
+      "formattedValue": "47.73M",
       "children": [
         {
-          "name": "Stocks",
-          "value": 0.000209,
-          "formattedValue": "208.97K"
-        }
-      ]
-    },
-    {
-      "name": "Independent Power and Renewable Electricity Producers",
-      "value": 0.000182,
-      "formattedValue": "182.33K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000182,
-          "formattedValue": "182.33K"
-        }
-      ]
-    },
-    {
-      "name": "Consumer Staples Distribution & Retail",
-      "value": 0.000117,
-      "formattedValue": "117.35K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000107,
-          "formattedValue": "107.18K"
+          "name": "אשראי חוץ בנקאי",
+          "value": 0.020219,
+          "formattedValue": "20.22M"
         },
         {
-          "name": "Bonds",
-          "value": 1e-05,
-          "formattedValue": "10.08K"
+          "name": "בנקים",
+          "value": 0.01593,
+          "formattedValue": "15.93M"
         },
         {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.09K"
-        }
-      ]
-    },
-    {
-      "name": "Health Care Technology",
-      "value": 3.8e-05,
-      "formattedValue": "37.63K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 3.8e-05,
-          "formattedValue": "37.63K"
-        }
-      ]
-    },
-    {
-      "name": "Capital Markets",
-      "value": 2.7e-05,
-      "formattedValue": "26.97K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 2.2e-05,
-          "formattedValue": "21.92K"
+          "name": "אנרגיה מתחדשת",
+          "value": 0.004848,
+          "formattedValue": "4.85M"
         },
         {
-          "name": "Options",
-          "value": 5e-06,
-          "formattedValue": "5.05K"
-        }
-      ]
-    },
-    {
-      "name": "Insurance",
-      "value": 2.1e-05,
-      "formattedValue": "20.73K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 1.6e-05,
-          "formattedValue": "15.98K"
+          "name": "תקשורת ומדיה",
+          "value": 0.001749,
+          "formattedValue": "1.75M"
         },
         {
-          "name": "Bonds",
-          "value": 5e-06,
-          "formattedValue": "4.75K"
-        }
-      ]
-    },
-    {
-      "name": "Textiles, Apparel & Luxury Goods",
-      "value": 1.5e-05,
-      "formattedValue": "14.82K",
-      "children": [
+          "name": "Semiconductors & Semiconductor Equipment",
+          "value": 0.001353,
+          "formattedValue": "1.35M"
+        },
         {
-          "name": "Stocks",
+          "name": "Diversified Telecommunication Services",
+          "value": 0.000768,
+          "formattedValue": "768.37K"
+        },
+        {
+          "name": "Technology Hardware, Storage & Peripherals",
+          "value": 0.000697,
+          "formattedValue": "697.16K"
+        },
+        {
+          "name": "Electronic Equipment, Instruments & Components",
+          "value": 0.00053,
+          "formattedValue": "529.67K"
+        },
+        {
+          "name": "Energy Equipment & Services",
+          "value": 0.000501,
+          "formattedValue": "501.20K"
+        },
+        {
+          "name": "Wireless Telecommunication Services",
+          "value": 0.000388,
+          "formattedValue": "387.71K"
+        },
+        {
+          "name": "Electric Utilities",
+          "value": 0.000369,
+          "formattedValue": "368.59K"
+        },
+        {
+          "name": "Health Care Equipment & Supplies",
+          "value": 0.000111,
+          "formattedValue": "110.54K"
+        },
+        {
+          "name": "בנייה",
+          "value": 0.000105,
+          "formattedValue": "105.03K"
+        },
+        {
+          "name": "Industrial Conglomerates",
+          "value": 5.3e-05,
+          "formattedValue": "52.81K"
+        },
+        {
+          "name": "Automobile Components",
+          "value": 4.2e-05,
+          "formattedValue": "42.35K"
+        },
+        {
+          "name": "פודטק",
+          "value": 1.9e-05,
+          "formattedValue": "19.33K"
+        },
+        {
+          "name": "Other",
           "value": 1.5e-05,
-          "formattedValue": "14.82K"
-        }
-      ]
-    },
-    {
-      "name": "Tobacco",
-      "value": 1.2e-05,
-      "formattedValue": "12.04K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 1.2e-05,
-          "formattedValue": "12.04K"
-        }
-      ]
-    },
-    {
-      "name": "Passenger Airlines",
-      "value": 1.1e-05,
-      "formattedValue": "10.55K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 6e-06,
-          "formattedValue": "5.89K"
+          "formattedValue": "14.79K"
         },
         {
-          "name": "Bonds",
-          "value": 4e-06,
-          "formattedValue": "4.20K"
+          "name": "Software",
+          "value": 1.1e-05,
+          "formattedValue": "11.47K"
         },
         {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.47K"
-        }
-      ]
-    },
-    {
-      "name": "אחר",
-      "value": 9e-06,
-      "formattedValue": "8.61K",
-      "children": [
-        {
-          "name": "Options",
+          "name": "אחר",
           "value": 9e-06,
           "formattedValue": "8.60K"
         },
         {
-          "name": "Stocks",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        },
-        {
-          "name": "Non-Tradable Stocks",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "Transportation Infrastructure",
-      "value": 9e-06,
-      "formattedValue": "9.21K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 9e-06,
-          "formattedValue": "9.21K"
-        }
-      ]
-    },
-    {
-      "name": "Hotels, Restaurants & Leisure",
-      "value": 9e-06,
-      "formattedValue": "9.08K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 7e-06,
-          "formattedValue": "7.14K"
-        },
-        {
-          "name": "Bonds",
-          "value": 2e-06,
-          "formattedValue": "1.94K"
-        },
-        {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "רובוטיקה ותלת מימד",
-      "value": 5e-06,
-      "formattedValue": "4.84K",
-      "children": [
-        {
-          "name": "Stocks",
+          "name": "Capital Markets",
           "value": 5e-06,
-          "formattedValue": "4.84K"
-        }
-      ]
-    },
-    {
-      "name": "Communications Equipment",
-      "value": 3e-06,
-      "formattedValue": "2.93K",
-      "children": [
+          "formattedValue": "5.05K"
+        },
         {
-          "name": "Bonds",
-          "value": 3e-06,
-          "formattedValue": "2.93K"
-        }
-      ]
-    },
-    {
-      "name": "השקעות בהיי-טק",
-      "value": 3e-06,
-      "formattedValue": "2.65K",
-      "children": [
-        {
-          "name": "Options",
+          "name": "השקעות בהיי-טק",
           "value": 3e-06,
           "formattedValue": "2.65K"
-        }
-      ]
-    },
-    {
-      "name": "Food Products",
-      "value": 1e-06,
-      "formattedValue": "1.26K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 1e-06,
-          "formattedValue": "1.26K"
         },
         {
-          "name": "Non-Tradable Bonds",
+          "name": "Diversified Consumer Services",
+          "value": 2e-06,
+          "formattedValue": "1.65K"
+        },
+        {
+          "name": "Financial Services",
+          "value": 1e-06,
+          "formattedValue": "0.69K"
+        },
+        {
+          "name": "Consumer Finance",
+          "value": 0.0,
+          "formattedValue": "0.05K"
+        },
+        {
+          "name": "Consumer Staples Distribution & Retail",
+          "value": 0.0,
+          "formattedValue": "0.09K"
+        },
+        {
+          "name": "Passenger Airlines",
+          "value": 0.0,
+          "formattedValue": "0.47K"
+        },
+        {
+          "name": "Entertainment",
+          "value": 0.0,
+          "formattedValue": "0.02K"
+        },
+        {
+          "name": "Oil, Gas & Consumable Fuels",
+          "value": 0.0,
+          "formattedValue": "0.16K"
+        },
+        {
+          "name": "Construction Materials",
+          "value": 0.0,
+          "formattedValue": "0.17K"
+        },
+        {
+          "name": "Aerospace & Defense",
+          "value": 0.0,
+          "formattedValue": "0.06K"
+        },
+        {
+          "name": "Hotels, Restaurants & Leisure",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "Retail REITs",
           "value": 0.0,
           "formattedValue": "0.00K"
         }
       ]
     },
     {
-      "name": "עץ, נייר ודפוס",
+      "name": "Mutual Funds",
+      "value": 0.020429,
+      "formattedValue": "20.43M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.020429,
+          "formattedValue": "20.43M"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.003765,
+      "formattedValue": "3.77M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.003765,
+          "formattedValue": "3.77M"
+        }
+      ]
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.000879,
+      "formattedValue": "879.02K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000879,
+          "formattedValue": "879.02K"
+        }
+      ]
+    },
+    {
+      "name": "Warrants",
+      "value": 0.00034,
+      "formattedValue": "340.21K",
+      "children": [
+        {
+          "name": "נדל\"ן מניב בישראל",
+          "value": 0.000135,
+          "formattedValue": "135.41K"
+        },
+        {
+          "name": "מסחר",
+          "value": 8.9e-05,
+          "formattedValue": "89.33K"
+        },
+        {
+          "name": "בנייה",
+          "value": 5e-05,
+          "formattedValue": "50.40K"
+        },
+        {
+          "name": "חיפושי נפט וגז",
+          "value": 3.4e-05,
+          "formattedValue": "33.74K"
+        },
+        {
+          "name": "מלונאות ותיירות",
+          "value": 2.7e-05,
+          "formattedValue": "26.82K"
+        },
+        {
+          "name": "קלינטק",
+          "value": 3e-06,
+          "formattedValue": "2.60K"
+        },
+        {
+          "name": "Commercial Services & Supplies",
+          "value": 2e-06,
+          "formattedValue": "1.55K"
+        },
+        {
+          "name": "Retail REITs",
+          "value": 0.0,
+          "formattedValue": "0.29K"
+        },
+        {
+          "name": "Diversified Consumer Services",
+          "value": 0.0,
+          "formattedValue": "0.03K"
+        },
+        {
+          "name": "Wireless Telecommunication Services",
+          "value": 0.0,
+          "formattedValue": "0.01K"
+        },
+        {
+          "name": "Industrial Conglomerates",
+          "value": 0.0,
+          "formattedValue": "0.01K"
+        }
+      ]
+    },
+    {
+      "name": "Investment Funds",
+      "value": 1.2e-05,
+      "formattedValue": "12.40K",
+      "children": [
+        {
+          "name": "General",
+          "value": 1.2e-05,
+          "formattedValue": "12.40K"
+        }
+      ]
+    },
+    {
+      "name": "Non-Tradable Stocks",
+      "value": 4e-06,
+      "formattedValue": "3.54K",
+      "children": [
+        {
+          "name": "חיפושי נפט וגז",
+          "value": 2e-06,
+          "formattedValue": "2.31K"
+        },
+        {
+          "name": "מכשור רפואי",
+          "value": 1e-06,
+          "formattedValue": "1.19K"
+        },
+        {
+          "name": "השקעה ואחזקות",
+          "value": 0.0,
+          "formattedValue": "0.04K"
+        },
+        {
+          "name": "אחר",
+          "value": 0.0,
+          "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
+      "name": "Non-Tradable Bonds",
       "value": 0.0,
       "formattedValue": "0.00K",
       "children": [
         {
-          "name": "Stocks",
+          "name": "Food Products",
           "value": 0.0,
           "formattedValue": "0.00K"
-        }
-      ]
-    },
-    {
-      "name": "Entertainment",
-      "value": 0.0,
-      "formattedValue": "0.02K",
-      "children": [
-        {
-          "name": "Options",
-          "value": 0.0,
-          "formattedValue": "0.02K"
         }
       ]
     }

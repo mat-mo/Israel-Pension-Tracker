@@ -394,58 +394,86 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 0.022916,
-      "formattedValue": "22.92M",
+      "name": "Stocks",
+      "value": 0.015723,
+      "formattedValue": "15.72M",
       "children": [
         {
-          "name": "Stocks",
+          "name": "General",
           "value": 0.015723,
           "formattedValue": "15.72M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.006402,
-          "formattedValue": "6.40M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000527,
-          "formattedValue": "526.75K"
-        },
-        {
-          "name": "Futures",
-          "value": 0.000167,
-          "formattedValue": "166.52K"
-        },
-        {
-          "name": "Other Assets",
-          "value": 9.8e-05,
-          "formattedValue": "97.59K"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Cash & Equivalents",
       "value": 0.010657,
       "formattedValue": "10.66M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.010657,
           "formattedValue": "10.66M"
         }
       ]
     },
     {
-      "name": "Government / General",
+      "name": "Bonds",
       "value": 0.008313,
       "formattedValue": "8.31M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.008313,
           "formattedValue": "8.31M"
+        }
+      ]
+    },
+    {
+      "name": "Mutual Funds",
+      "value": 0.006402,
+      "formattedValue": "6.40M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.006402,
+          "formattedValue": "6.40M"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.000527,
+      "formattedValue": "526.75K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000527,
+          "formattedValue": "526.75K"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.000167,
+      "formattedValue": "166.52K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000167,
+          "formattedValue": "166.52K"
+        }
+      ]
+    },
+    {
+      "name": "Other Assets",
+      "value": 9.8e-05,
+      "formattedValue": "97.59K",
+      "children": [
+        {
+          "name": "General",
+          "value": 9.8e-05,
+          "formattedValue": "97.59K"
         }
       ]
     }

@@ -670,60 +670,74 @@
   ],
   "sectorSunburst": [
     {
-      "name": "Government / General",
+      "name": "Bonds",
       "value": 0.016146,
       "formattedValue": "16.15M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.016146,
           "formattedValue": "16.15M"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Cash & Equivalents",
       "value": 0.007913,
       "formattedValue": "7.91M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.007913,
           "formattedValue": "7.91M"
         }
       ]
     },
     {
-      "name": "General / Unclassified",
-      "value": 0.001251,
-      "formattedValue": "1.25M",
+      "name": "Other Assets",
+      "value": 0.000994,
+      "formattedValue": "993.93K",
       "children": [
         {
-          "name": "Other Assets",
+          "name": "General",
           "value": 0.000994,
           "formattedValue": "993.93K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000149,
-          "formattedValue": "148.92K"
-        },
-        {
-          "name": "Futures",
-          "value": 0.000108,
-          "formattedValue": "107.78K"
         }
       ]
     },
     {
-      "name": "Capital Markets",
+      "name": "Options",
       "value": 0.000343,
       "formattedValue": "343.26K",
       "children": [
         {
-          "name": "Options",
+          "name": "Capital Markets",
           "value": 0.000343,
           "formattedValue": "343.26K"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.000149,
+      "formattedValue": "148.92K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000149,
+          "formattedValue": "148.92K"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.000108,
+      "formattedValue": "107.78K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000108,
+          "formattedValue": "107.78K"
         }
       ]
     }

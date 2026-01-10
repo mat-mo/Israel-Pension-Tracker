@@ -1376,101 +1376,87 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 0.021929,
-      "formattedValue": "21.93M",
+      "name": "Stocks",
+      "value": 0.019062,
+      "formattedValue": "19.06M",
       "children": [
         {
-          "name": "Stocks",
+          "name": "General",
           "value": 0.012124,
           "formattedValue": "12.12M"
         },
         {
-          "name": "Non-Tradable Bonds",
-          "value": 0.005874,
-          "formattedValue": "5.87M"
+          "name": "Semiconductors & Semiconductor Equipment",
+          "value": 0.002145,
+          "formattedValue": "2.15M"
         },
         {
-          "name": "Other Assets",
-          "value": 0.003323,
-          "formattedValue": "3.32M"
+          "name": "Biotechnology",
+          "value": 0.001857,
+          "formattedValue": "1.86M"
         },
         {
-          "name": "Derivatives",
-          "value": 0.000608,
-          "formattedValue": "608.06K"
+          "name": "Food Products",
+          "value": 0.00099,
+          "formattedValue": "990.42K"
+        },
+        {
+          "name": "Pharmaceuticals",
+          "value": 0.000977,
+          "formattedValue": "976.96K"
+        },
+        {
+          "name": "Health Care Equipment & Supplies",
+          "value": 0.000969,
+          "formattedValue": "968.92K"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Non-Tradable Bonds",
+      "value": 0.005874,
+      "formattedValue": "5.87M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.005874,
+          "formattedValue": "5.87M"
+        }
+      ]
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.003323,
+      "formattedValue": "3.32M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.003323,
+          "formattedValue": "3.32M"
+        }
+      ]
+    },
+    {
+      "name": "Cash & Equivalents",
       "value": 0.002514,
       "formattedValue": "2.51M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.002514,
           "formattedValue": "2.51M"
         }
       ]
     },
     {
-      "name": "Semiconductors & Semiconductor Equipment",
-      "value": 0.002145,
-      "formattedValue": "2.15M",
+      "name": "Derivatives",
+      "value": 0.000608,
+      "formattedValue": "608.06K",
       "children": [
         {
-          "name": "Stocks",
-          "value": 0.002145,
-          "formattedValue": "2.15M"
-        }
-      ]
-    },
-    {
-      "name": "Biotechnology",
-      "value": 0.001857,
-      "formattedValue": "1.86M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.001857,
-          "formattedValue": "1.86M"
-        }
-      ]
-    },
-    {
-      "name": "Food Products",
-      "value": 0.00099,
-      "formattedValue": "990.42K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.00099,
-          "formattedValue": "990.42K"
-        }
-      ]
-    },
-    {
-      "name": "Pharmaceuticals",
-      "value": 0.000977,
-      "formattedValue": "976.96K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000977,
-          "formattedValue": "976.96K"
-        }
-      ]
-    },
-    {
-      "name": "Health Care Equipment & Supplies",
-      "value": 0.000969,
-      "formattedValue": "968.92K",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.000969,
-          "formattedValue": "968.92K"
+          "name": "General",
+          "value": 0.000608,
+          "formattedValue": "608.06K"
         }
       ]
     }

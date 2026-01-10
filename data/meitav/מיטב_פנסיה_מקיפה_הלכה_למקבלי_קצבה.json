@@ -1527,65 +1527,86 @@
   ],
   "sectorSunburst": [
     {
-      "name": "General / Unclassified",
-      "value": 0.049591,
-      "formattedValue": "49.59M",
-      "children": [
-        {
-          "name": "Other Assets",
-          "value": 0.025329,
-          "formattedValue": "25.33M"
-        },
-        {
-          "name": "Non-Tradable Bonds",
-          "value": 0.024051,
-          "formattedValue": "24.05M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.000108,
-          "formattedValue": "107.67K"
-        },
-        {
-          "name": "Futures",
-          "value": 0.000104,
-          "formattedValue": "104.21K"
-        }
-      ]
-    },
-    {
-      "name": "Government / General",
+      "name": "Bonds",
       "value": 0.026907,
       "formattedValue": "26.91M",
       "children": [
         {
-          "name": "Bonds",
+          "name": "Government / General",
           "value": 0.026907,
           "formattedValue": "26.91M"
         }
       ]
     },
     {
-      "name": "Liquidity",
+      "name": "Other Assets",
+      "value": 0.025329,
+      "formattedValue": "25.33M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.025329,
+          "formattedValue": "25.33M"
+        }
+      ]
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.024051,
+      "formattedValue": "24.05M",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.024051,
+          "formattedValue": "24.05M"
+        }
+      ]
+    },
+    {
+      "name": "Cash & Equivalents",
       "value": 0.008973,
       "formattedValue": "8.97M",
       "children": [
         {
-          "name": "Cash & Equivalents",
+          "name": "Liquidity",
           "value": 0.008973,
           "formattedValue": "8.97M"
         }
       ]
     },
     {
-      "name": "אחר",
+      "name": "Options",
       "value": 0.000532,
       "formattedValue": "532.40K",
       "children": [
         {
-          "name": "Options",
+          "name": "אחר",
           "value": 0.000532,
           "formattedValue": "532.40K"
+        }
+      ]
+    },
+    {
+      "name": "Derivatives",
+      "value": 0.000108,
+      "formattedValue": "107.67K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000108,
+          "formattedValue": "107.67K"
+        }
+      ]
+    },
+    {
+      "name": "Futures",
+      "value": 0.000104,
+      "formattedValue": "104.21K",
+      "children": [
+        {
+          "name": "General",
+          "value": 0.000104,
+          "formattedValue": "104.21K"
         }
       ]
     }

@@ -43,7 +43,7 @@ COUNTRY_COLUMNS = [
 # Currency Columns
 CURRENCY_COLUMNS = ["מטבע פעילות", "מטבע", "סוג מטבע", "בסיס הצמדה", "Currency", "Linkage Base"]
 
-# NEW: Sector Columns
+# Sector Columns
 SECTOR_COLUMNS = ["ענף מסחר", "ענף", "סקטור", "Sector", "Industry", "Trade Sector"]
 
 FILE_MAPPING = {
@@ -71,7 +71,7 @@ FILE_MAPPING = {
     "יתרות התחייבות": ("Other Assets", "Commitment Balances"),
 }
 
-# --- Runtime Dictionaries (Populated from JSON) ---
+# --- Runtime Dictionaries ---
 COUNTRY_LOOKUP = {}      
 EMOJI_TO_NAME = {}       
 CURRENCY_LOOKUP = {}     
@@ -199,7 +199,6 @@ def detect_currency(row, country_emoji, asset_name):
     if country_emoji == "🇬🇧": return "GBP"
     if country_emoji == "🇯🇵": return "JPY"
     if country_emoji in ["🇪🇺", "🇫🇷", "🇩🇪", "🇳🇱", "🇮🇹", "🇪🇸"]: return "EUR"
-    
     return "ILS"
 
 def get_sector(row, asset_class=""):
@@ -207,15 +206,14 @@ def get_sector(row, asset_class=""):
     val = get_column_value(row, SECTOR_COLUMNS)
     if val:
         clean = str(val).strip()
-        # Basic cleanup: if it says "nan" or empty, handle below
         if len(clean) > 1 and clean.lower() != 'nan':
             return clean
             
-    # Smart Defaults based on Asset Class
+    # Smart Defaults for Cleaner Charts
     if asset_class == "Bonds": return "Government / General"
     if asset_class == "Cash & Equivalents": return "Liquidity"
     
-    return "General / Unclassified"
+    return "General"
 
 def clean_value(val):
     s = str(val).strip()
@@ -317,7 +315,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
 
                 emoji = get_country_emoji(row, cls) 
                 currency = detect_currency(row, emoji, name)
-                sector = get_sector(row, cls) # <--- Extract Sector
+                sector = get_sector(row, cls)
 
                 if track_id not in all_tracks_data: all_tracks_data[track_id] = {}
                 if cls not in all_tracks_data[track_id]: all_tracks_data[track_id][cls] = {}
@@ -328,7 +326,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                     "value": val_bn,
                     "emoji": emoji,
                     "currency": currency,
-                    "sector": sector # <--- Store Sector
+                    "sector": sector
                 })
         except Exception: pass 
     return all_tracks_data
@@ -385,45 +383,46 @@ def calculate_currency_sunburst(data_store):
 
 def calculate_sector_sunburst(data_store):
     """
-    Groups data by Sector -> Asset Class.
-    Uses ABSOLUTE values for chart sizing (Exposure).
+    Groups data by Asset Class -> Sector.
+    Asset Class is the Parent (Inner Ring).
+    Sector is the Child (Outer Ring).
     """
-    sector_groups = {} 
+    class_groups = {} 
     
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
             for item in sub_items:
                 sec = item.get("sector", "General")
                 
-                if sec not in sector_groups: sector_groups[sec] = {}
-                if cls_name not in sector_groups[sec]: sector_groups[sec][cls_name] = 0.0
+                if cls_name not in class_groups: class_groups[cls_name] = {}
+                if sec not in class_groups[cls_name]: class_groups[cls_name][sec] = 0.0
                 
                 # Sum Absolute Exposure
-                sector_groups[sec][cls_name] += abs(item["value"])
+                class_groups[cls_name][sec] += abs(item["value"])
 
     sunburst_data = []
-    for sec, assets_dict in sector_groups.items():
-        asset_children = []
-        children_sum = 0.0
+    for cls_name, sectors_dict in class_groups.items():
+        sector_children = []
+        class_total_exposure = 0.0
         
-        for cls_name, abs_val in assets_dict.items():
-            if abs_val > 1e-12:
-                asset_children.append({
-                    "name": cls_name,
-                    "value": round(abs_val, 6),
-                    "formattedValue": format_currency(abs_val)
+        for sec_name, val in sectors_dict.items():
+            if val > 1e-12:
+                sector_children.append({
+                    "name": sec_name,
+                    "value": round(val, 6),
+                    "formattedValue": format_currency(val)
                 })
-                children_sum += abs_val
+                class_total_exposure += val
         
-        if not asset_children: continue
+        if not sector_children: continue
         
-        asset_children.sort(key=lambda x: x["value"], reverse=True)
+        sector_children.sort(key=lambda x: x["value"], reverse=True)
         
         sunburst_data.append({
-            "name": sec,
-            "value": round(children_sum, 6),
-            "formattedValue": format_currency(children_sum),
-            "children": asset_children
+            "name": cls_name,
+            "value": round(class_total_exposure, 6),
+            "formattedValue": format_currency(class_total_exposure),
+            "children": sector_children
         })
     
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
@@ -505,8 +504,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         
         geo_sunburst_data = calculate_geo_sunburst(data_store)
         currency_sunburst_data = calculate_currency_sunburst(data_store)
-        
-        # --- NEW SECTOR DATA ---
         sector_sunburst_data = calculate_sector_sunburst(data_store)
 
         safe_filename = get_safe_filename(t_name)
@@ -520,7 +517,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             "breakdown": breakdown,
             "geoSunburst": geo_sunburst_data,
             "currencySunburst": currency_sunburst_data,
-            "sectorSunburst": sector_sunburst_data # <--- Added to JSON
+            "sectorSunburst": sector_sunburst_data
         }
         
         with open(target_dir / safe_filename, 'w', encoding='utf-8') as f:
