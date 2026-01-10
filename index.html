@@ -524,7 +524,13 @@
             const isMobile = window.innerWidth < 768;
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
-            const totalPortfolioValue = currentTrackData.totalAssetsBN;
+            let totalPortfolioValue = currentTrackData.totalAssetsBN;
+
+            if (!totalPortfolioValue || totalPortfolioValue === 0) {
+                if (currentTrackData.assetClasses && Array.isArray(currentTrackData.assetClasses)) {
+                    totalPortfolioValue = currentTrackData.assetClasses.reduce((sum, item) => sum + (item.value || 0), 0);
+                }
+            }
             
             document.getElementById('subChartTitle').innerText = `${categoryName} Breakdown`;
             
@@ -549,12 +555,23 @@
 
                         // 1. Local Share (% of Category) - ECharts calculates this automatically
                 const localShare = params.percent;
-                
-                // 2. Global Share (% of Total Portfolio) - We calculate this manually
-                let globalShare = 0;
-                if (totalPortfolioValue > 0) {
-                    globalShare = ((params.value / totalPortfolioValue) * 100).toFixed(2);
-                }
+                let globalShareDisplay = '-';
+
+                // 2. Global Share (% of Total Portfolio) - Calculated manually
+        
+        // Ensure we have a valid total to divide by
+        if (totalPortfolioValue && totalPortfolioValue !== 0) {
+            const rawGlobalShare = (params.value / totalPortfolioValue) * 100;
+            const absShare = Math.abs(rawGlobalShare);
+
+            if (absShare > 0 && absShare < 0.01) {
+                // If it's tiny but exists, show "< 0.01" instead of "0.00"
+                globalShareDisplay = '< 0.01';
+            } else {
+                // Otherwise, standard rounding
+                globalShareDisplay = rawGlobalShare.toFixed(2);
+            }
+        }}
                         return `<b>${params.name}</b><br/>
                     Value: ${params.data.formattedValue}<br/>
                     <hr style="border-color: ${colors.borderColor}; margin: 5px 0;">
