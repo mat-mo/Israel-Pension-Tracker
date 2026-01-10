@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Israel Pension Tracker</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    
     <script>
         const originalWarn = console.warn;
         console.warn = (...args) => {
@@ -14,7 +17,7 @@
         };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -42,28 +45,35 @@
 
     <div class="max-w-7xl mx-auto space-y-6">
         
-        <div class="flex flex-col md:flex-row justify-between items-center bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
-            <div class="mb-4 md:mb-0">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300 gap-4">
+            <div class="mb-2 md:mb-0">
                 <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pension Holdings Tracker</h1>
                 <p class="text-gray-500 dark:text-dark-textMuted text-sm">Transparency dashboard for Israeli institutional assets</p>
             </div>
             
-            <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-                <div class="text-right hidden md:block pl-4 border-l border-gray-200 dark:border-gray-700">
-                    <p class="text-xs text-gray-400 dark:text-gray-500 uppercase">Total Assets</p>
-                    <p id="totalAssetsDisplay" class="text-xl font-bold text-blue-600 dark:text-blue-400">-</p>
-                </div>
+            <div class="flex flex-row items-start gap-4">
                 
-                <div class="flex flex-col gap-2">
-                    <select id="instSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2.5 shadow-sm w-64 focus:ring-blue-500 focus:border-blue-500">
-                        <option disabled selected>Loading...</option>
-                    </select>
-                    <select id="trackSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2.5 shadow-sm w-64 focus:ring-blue-500 focus:border-blue-500" disabled>
-                        <option disabled selected>Select Institution First</option>
-                    </select>
+                <div class="flex flex-col gap-3">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <select id="instSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2 shadow-sm w-64 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            <option disabled selected>Loading...</option>
+                        </select>
+                        <div class="text-xs text-gray-500 dark:text-gray-400 font-medium whitespace-nowrap min-w-[100px]">
+                            Inst. AUM: <span id="instAumDisplay" class="text-gray-700 dark:text-gray-300 font-bold">-</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <select id="trackSelector" class="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2 shadow-sm w-64 focus:ring-blue-500 focus:border-blue-500 transition-colors" disabled>
+                            <option disabled selected>Select Institution First</option>
+                        </select>
+                        <div class="text-sm font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap min-w-[100px]">
+                            Assets: <span id="totalAssetsDisplay">-</span>
+                        </div>
+                    </div>
                 </div>
 
-                <button id="themeToggle" class="p-2.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 transition-all">
+                <button id="themeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none transition-all h-fit mt-1 border border-gray-200 dark:border-gray-600">
                     <svg id="sunIcon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
                     <svg id="moonIcon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
                 </button>
@@ -149,13 +159,12 @@
         let mainChart = null;
         let subChart = null;
         let geoSunburstChart = null;
-        let currencySunburstChart = null; // NEW Variable
+        let currencySunburstChart = null;
         
         let currentManifest = [];
         let currentInst = null;
         let currentTrackData = null;
         
-        // Pagination State
         let currentSubclassData = null;
         let currentPage = 0;
 
@@ -219,19 +228,27 @@
             currentManifest.forEach((inst, index) => {
                 const opt = document.createElement('option');
                 opt.value = index;
-                opt.text = `${inst.name}₪${inst.totalAUM})`;;
+                // Use Name only (Clean Display)
+                opt.text = inst.name; 
                 instSelector.appendChild(opt);
             });
 
             instSelector.addEventListener('change', (e) => {
                 const instIndex = e.target.value;
                 currentInst = currentManifest[instIndex];
+                
+                // Update Institution AUM (Safeguard if field missing)
+                const aum = currentInst.totalAUM || '0';
+                document.getElementById('instAumDisplay').innerText = `₪${aum}`;
+                
                 populateTracks(currentInst);
             });
 
             if (currentManifest.length > 0) {
                 instSelector.value = 0;
                 currentInst = currentManifest[0];
+                const aum = currentInst.totalAUM || '0';
+                document.getElementById('instAumDisplay').innerText = `₪${aum}`;
                 populateTracks(currentInst);
             }
         }
@@ -271,6 +288,7 @@
                 })
                 .then(data => {
                     currentTrackData = data;
+                    // Update Track Assets Display
                     document.getElementById('totalAssetsDisplay').innerText = `₪${data.formattedTotalAssets}`;
                     renderCharts(data, true);
                     loading.style.display = 'none';
@@ -290,7 +308,6 @@
 
             const colors = getChartColors();
             
-            // --- MAIN PIE ---
             const option = {
                 color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
                 tooltip: { 
@@ -340,7 +357,6 @@
                 updateSubChart(data.assetClasses[0].name);
             }
 
-            // --- RENDER SUNBURSTS ---
             renderGeoSunburst(data);
             renderCurrencySunburst(data);
             
@@ -352,7 +368,6 @@
             });
         }
 
-        // --- Geo Sunburst ---
         function renderGeoSunburst(data) {
             if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
             
@@ -362,9 +377,7 @@
                 return; 
             }
 
-            // Calc Total (Absolute Exposure) for Share
             const totalExposure = data.geoSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
-            const isMobile = window.innerWidth < 768;
             const colors = getChartColors(); 
 
             const option = {
@@ -377,7 +390,6 @@
                         if (!params.data) return '';
                         let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
                         let val = params.data.formattedValue || params.value;
-                        
                         let share = params.percent;
                         if (share === undefined && totalExposure > 0) {
                             share = ((params.value / totalExposure) * 100).toFixed(2);
@@ -403,7 +415,6 @@
             geoSunburstChart.setOption(option);
         }
 
-        // --- Currency Sunburst ---
         function renderCurrencySunburst(data) {
             if (!currencySunburstChart) currencySunburstChart = echarts.init(document.getElementById('currencySunburstChart'));
             
@@ -413,7 +424,6 @@
                 return; 
             }
 
-            // Calc Total (Absolute Exposure)
             const totalExposure = data.currencySunburst.reduce((sum, item) => sum + (item.value || 0), 0);
             const colors = getChartColors(); 
 
@@ -427,7 +437,6 @@
                         if (!params.data) return '';
                         let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
                         let val = params.data.formattedValue || params.value;
-                        
                         let share = params.percent;
                         if (share === undefined && totalExposure > 0) {
                             share = ((params.value / totalExposure) * 100).toFixed(2);
@@ -492,6 +501,7 @@
             };
             
             subChart.setOption(option, true);
+            
             subChart.off('click');
             subChart.on('click', function(params) {
                 const selectedSubclass = breakdown.find(b => b.subclass === params.name);
@@ -500,8 +510,6 @@
 
             if (breakdown.length > 0) { loadSubclassTable(breakdown[0]); }
         }
-
-        // --- Table & Pagination Logic ---
 
         function loadSubclassTable(subclassData) {
             currentSubclassData = subclassData;
