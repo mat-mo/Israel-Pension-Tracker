@@ -264,13 +264,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 1.6353,
-      "formattedValue": "1.64B",
+      "value": 1.6723,
+      "formattedValue": "1.67B",
       "children": [
         {
           "name": "Cash & Equivalents",
           "value": 1.6126,
           "formattedValue": "1.61B"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.037,
+          "formattedValue": "36.97M"
         },
         {
           "name": "Stocks",
@@ -281,8 +286,8 @@
     },
     {
       "name": "USA",
-      "value": 0.733,
-      "formattedValue": "733.01M",
+      "value": 0.7333,
+      "formattedValue": "733.30M",
       "children": [
         {
           "name": "Stocks",
@@ -298,6 +303,11 @@
           "name": "Derivatives",
           "value": 0.1012,
           "formattedValue": "101.17M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0003,
+          "formattedValue": "290.87K"
         }
       ]
     },

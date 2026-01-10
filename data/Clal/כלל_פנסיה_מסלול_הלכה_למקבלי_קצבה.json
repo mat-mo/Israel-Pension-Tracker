@@ -1872,8 +1872,8 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.0343,
-      "formattedValue": "34.30M",
+      "value": 0.0345,
+      "formattedValue": "34.53M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
@@ -1889,18 +1889,23 @@
           "name": "Bonds",
           "value": 0.0004,
           "formattedValue": "406.08K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "228.84K"
         }
       ]
     },
     {
       "name": "Israel",
-      "value": 0.0181,
-      "formattedValue": "18.08M",
+      "value": 0.0192,
+      "formattedValue": "19.15M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.0081,
-          "formattedValue": "8.14M"
+          "value": 0.0088,
+          "formattedValue": "8.82M"
         },
         {
           "name": "Stocks",
@@ -1909,13 +1914,18 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0027,
-          "formattedValue": "2.67M"
+          "value": 0.0028,
+          "formattedValue": "2.79M"
         },
         {
           "name": "Other Assets",
           "value": 0.0006,
           "formattedValue": "577.60K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0003,
+          "formattedValue": "268.89K"
         }
       ]
     },
@@ -1933,6 +1943,18 @@
           "name": "Bonds",
           "value": 0.0014,
           "formattedValue": "1.39M"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.0004,
+      "formattedValue": "423.97K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0004,
+          "formattedValue": "423.97K"
         }
       ]
     },

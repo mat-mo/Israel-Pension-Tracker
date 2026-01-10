@@ -305,11 +305,12 @@ def process_institution_data(target_dir, inst_key, config, master_map):
 def calculate_geo_sunburst(data_store):
     """
     Groups data by Country (Emoji) -> Asset Class.
+    USES ABSOLUTE VALUES for chart sizing to represent total exposure magnitude.
     Returns the 'children' array structure for ECharts Sunburst.
     """
     country_groups = {} 
     
-    # 1. Aggregate Data
+    # 1. Aggregate Data (Using ABSOLUTE values for magnitude)
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
             for item in sub_items:
@@ -325,45 +326,47 @@ def calculate_geo_sunburst(data_store):
                 if cls_name not in country_groups[country_key]:
                     country_groups[country_key][cls_name] = 0.0
                 
-                # Add Value
-                country_groups[country_key][cls_name] += item["value"]
+                # <--- KEY CHANGE: Sum Absolute Exposure
+                country_groups[country_key][cls_name] += abs(item["value"])
 
     # 2. Format for ECharts
     sunburst_data = []
     
     for country_key, assets_dict in country_groups.items():
-        # Build Children List FIRST
+        # Build Children List
         asset_children = []
-        children_sum_value = 0.0  # <--- accumulator for visible children
+        children_sum_exposure = 0.0  
 
-        for cls_name, val in assets_dict.items():
-            if val > 0.0001:  # Filter out 0 or negative values
+        for cls_name, abs_val in assets_dict.items():
+            if abs_val > 0.0001:  # Filter out near-zero exposures
                 asset_children.append({
                     "name": cls_name,
-                    "value": round(val, 4),
-                    "formattedValue": format_currency(val)
+                    "value": round(abs_val, 4), # Size is Absolute
+                    # Note: We don't have the signed total here easily without re-looping, 
+                    # but for high-level geo view, ABS is usually preferred. 
+                    # If you strictly need signed text, we'd need a secondary aggregation.
+                    "formattedValue": format_currency(abs_val) 
                 })
-                children_sum_value += val
+                children_sum_exposure += abs_val
 
         if not asset_children:
             continue
         
-        # Sort assets by size
+        # Sort assets by size (magnitude)
         asset_children.sort(key=lambda x: x["value"], reverse=True)
         
         # Get readable name
         display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
         
-        # <--- KEY FIX: Use 'children_sum_value' for Parent, NOT the raw sum.
-        # This guarantees Parent == Sum(Children) and eliminates gaps.
+        # Parent Value is exactly the sum of ABS children -> Perfect Fit, No Gaps.
         sunburst_data.append({
             "name": display_name,
-            "value": round(children_sum_value, 4), 
-            "formattedValue": format_currency(children_sum_value),
+            "value": round(children_sum_exposure, 4), 
+            "formattedValue": format_currency(children_sum_exposure),
             "children": asset_children
         })
 
-    # Sort Countries by size
+    # Sort Countries by total exposure size
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     
     return sunburst_data

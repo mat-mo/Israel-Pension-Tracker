@@ -3520,8 +3520,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.3279,
-      "formattedValue": "327.86M",
+      "value": 0.3866,
+      "formattedValue": "386.59M",
       "children": [
         {
           "name": "Bonds",
@@ -3529,14 +3529,14 @@
           "formattedValue": "251.59M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.0691,
+          "formattedValue": "69.07M"
+        },
+        {
           "name": "Stocks",
           "value": 0.0523,
           "formattedValue": "52.30M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0119,
-          "formattedValue": "11.89M"
         },
         {
           "name": "Investment Funds",
@@ -3544,14 +3544,14 @@
           "formattedValue": "6.07M"
         },
         {
+          "name": "Other Assets",
+          "value": 0.0026,
+          "formattedValue": "2.64M"
+        },
+        {
           "name": "Loans",
           "value": 0.0019,
           "formattedValue": "1.85M"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.0017,
-          "formattedValue": "1.71M"
         },
         {
           "name": "Non-Tradable Stocks",
@@ -3559,21 +3559,21 @@
           "formattedValue": "1.22M"
         },
         {
+          "name": "Derivatives",
+          "value": 0.0011,
+          "formattedValue": "1.12M"
+        },
+        {
           "name": "Non-Tradable Bonds",
           "value": 0.0007,
           "formattedValue": "724.19K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0005,
-          "formattedValue": "499.03K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0824,
-      "formattedValue": "82.37M",
+      "value": 0.0841,
+      "formattedValue": "84.09M",
       "children": [
         {
           "name": "Stocks",
@@ -3592,20 +3592,25 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.0027,
-          "formattedValue": "2.71M"
+          "value": 0.0039,
+          "formattedValue": "3.92M"
         },
         {
           "name": "Structured Products",
           "value": 0.0009,
           "formattedValue": "883.70K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0005,
+          "formattedValue": "503.43K"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.0309,
-      "formattedValue": "30.93M",
+      "value": 0.0369,
+      "formattedValue": "36.90M",
       "children": [
         {
           "name": "Stocks",
@@ -3614,8 +3619,8 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0058,
-          "formattedValue": "5.82M"
+          "value": 0.0094,
+          "formattedValue": "9.42M"
         },
         {
           "name": "Investment Funds",
@@ -3623,9 +3628,14 @@
           "formattedValue": "5.59M"
         },
         {
+          "name": "Options",
+          "value": 0.0023,
+          "formattedValue": "2.33M"
+        },
+        {
           "name": "Futures",
           "value": 0.002,
-          "formattedValue": "2.01M"
+          "formattedValue": "2.05M"
         },
         {
           "name": "Mutual Funds",
@@ -3730,6 +3740,23 @@
       ]
     },
     {
+      "name": "Mexico",
+      "value": 0.0017,
+      "formattedValue": "1.65M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0013,
+          "formattedValue": "1.34M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0003,
+          "formattedValue": "309.98K"
+        }
+      ]
+    },
+    {
       "name": "Canada",
       "value": 0.0014,
       "formattedValue": "1.39M",
@@ -3755,18 +3782,6 @@
           "name": "Non-Tradable Stocks",
           "value": 0.0002,
           "formattedValue": "178.47K"
-        }
-      ]
-    },
-    {
-      "name": "Mexico",
-      "value": 0.0013,
-      "formattedValue": "1.34M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0013,
-          "formattedValue": "1.34M"
         }
       ]
     },

@@ -1246,9 +1246,31 @@
   },
   "geoSunburst": [
     {
+      "name": "Israel",
+      "value": 0.6633,
+      "formattedValue": "663.31M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.3685,
+          "formattedValue": "368.53M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.291,
+          "formattedValue": "290.99M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0038,
+          "formattedValue": "3.79M"
+        }
+      ]
+    },
+    {
       "name": "USA",
-      "value": 0.45,
-      "formattedValue": "450.05M",
+      "value": 0.4763,
+      "formattedValue": "476.32M",
       "children": [
         {
           "name": "Stocks",
@@ -1257,15 +1279,15 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.0711,
-          "formattedValue": "71.06M"
+          "value": 0.0973,
+          "formattedValue": "97.34M"
         }
       ]
     },
     {
       "name": "Global",
-      "value": 0.435,
-      "formattedValue": "434.96M",
+      "value": 0.4721,
+      "formattedValue": "472.12M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
@@ -1278,26 +1300,14 @@
           "formattedValue": "99.64M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.0372,
+          "formattedValue": "37.16M"
+        },
+        {
           "name": "Futures",
           "value": 0.002,
           "formattedValue": "2.00M"
-        }
-      ]
-    },
-    {
-      "name": "Israel",
-      "value": 0.4137,
-      "formattedValue": "413.70M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.3685,
-          "formattedValue": "368.53M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0452,
-          "formattedValue": "45.16M"
         }
       ]
     }

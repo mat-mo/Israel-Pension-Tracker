@@ -8300,8 +8300,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 1.3546,
-      "formattedValue": "1.35B",
+      "value": 1.3918,
+      "formattedValue": "1.39B",
       "children": [
         {
           "name": "Bonds",
@@ -8315,13 +8315,18 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.3141,
-          "formattedValue": "314.12M"
+          "value": 0.3426,
+          "formattedValue": "342.57M"
         },
         {
           "name": "Loans",
           "value": 0.1073,
           "formattedValue": "107.35M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0221,
+          "formattedValue": "22.05M"
         },
         {
           "name": "Structured Products",
@@ -8332,11 +8337,6 @@
           "name": "Real Estate",
           "value": 0.0156,
           "formattedValue": "15.56M"
-        },
-        {
-          "name": "Derivatives",
-          "value": 0.0141,
-          "formattedValue": "14.14M"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -8355,20 +8355,72 @@
         },
         {
           "name": "Options",
-          "value": 0.0006,
-          "formattedValue": "613.69K"
+          "value": 0.0011,
+          "formattedValue": "1.11M"
         },
         {
           "name": "Warrants",
           "value": 0.0005,
           "formattedValue": "484.19K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0003,
+          "formattedValue": "269.87K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.2314,
+      "formattedValue": "231.39M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0983,
+          "formattedValue": "98.27M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0527,
+          "formattedValue": "52.74M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.04,
+          "formattedValue": "40.05M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0325,
+          "formattedValue": "32.49M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0066,
+          "formattedValue": "6.61M"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0007,
+          "formattedValue": "744.18K"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0004,
+          "formattedValue": "350.12K"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0001,
+          "formattedValue": "142.95K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.231,
-      "formattedValue": "231.03M",
+      "value": 0.2311,
+      "formattedValue": "231.07M",
       "children": [
         {
           "name": "Stocks",
@@ -8398,54 +8450,7 @@
         {
           "name": "Derivatives",
           "value": 0.0034,
-          "formattedValue": "3.36M"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.229,
-      "formattedValue": "229.03M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0983,
-          "formattedValue": "98.27M"
-        },
-        {
-          "name": "Investment Funds",
-          "value": 0.0525,
-          "formattedValue": "52.53M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0379,
-          "formattedValue": "37.89M"
-        },
-        {
-          "name": "Loans",
-          "value": 0.0325,
-          "formattedValue": "32.49M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0066,
-          "formattedValue": "6.61M"
-        },
-        {
-          "name": "Non-Tradable Stocks",
-          "value": 0.0007,
-          "formattedValue": "744.18K"
-        },
-        {
-          "name": "Structured Products",
-          "value": 0.0004,
-          "formattedValue": "350.12K"
-        },
-        {
-          "name": "Futures",
-          "value": 0.0001,
-          "formattedValue": "142.95K"
+          "formattedValue": "3.40M"
         }
       ]
     },

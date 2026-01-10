@@ -10649,13 +10649,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 7.4479,
-      "formattedValue": "7.45B",
+      "value": 7.7491,
+      "formattedValue": "7.75B",
       "children": [
         {
           "name": "Stocks",
           "value": 3.4332,
           "formattedValue": "3.43B"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.2057,
+          "formattedValue": "1.21B"
         },
         {
           "name": "Bonds",
@@ -10666,11 +10671,6 @@
           "name": "Loans",
           "value": 1.1361,
           "formattedValue": "1.14B"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.9141,
-          "formattedValue": "914.14M"
         },
         {
           "name": "Investment Funds",
@@ -10694,8 +10694,8 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.0692,
-          "formattedValue": "69.22M"
+          "value": 0.0744,
+          "formattedValue": "74.43M"
         },
         {
           "name": "Real Estate",
@@ -10708,6 +10708,11 @@
           "formattedValue": "4.60M"
         },
         {
+          "name": "Options",
+          "value": 0.0044,
+          "formattedValue": "4.44M"
+        },
+        {
           "name": "Warrants",
           "value": 0.0008,
           "formattedValue": "763.62K"
@@ -10716,7 +10721,7 @@
     },
     {
       "name": "Global",
-      "value": 4.9732,
+      "value": 4.974,
       "formattedValue": "4.97B",
       "children": [
         {
@@ -10761,8 +10766,8 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.0015,
-          "formattedValue": "1.49M"
+          "value": 0.0023,
+          "formattedValue": "2.29M"
         },
         {
           "name": "Futures",
@@ -10773,8 +10778,8 @@
     },
     {
       "name": "USA",
-      "value": 4.2473,
-      "formattedValue": "4.25B",
+      "value": 4.264,
+      "formattedValue": "4.26B",
       "children": [
         {
           "name": "Stocks",
@@ -10793,8 +10798,8 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.1065,
-          "formattedValue": "106.52M"
+          "value": 0.1094,
+          "formattedValue": "109.42M"
         },
         {
           "name": "Bonds",
@@ -10802,14 +10807,14 @@
           "formattedValue": "100.14M"
         },
         {
+          "name": "Options",
+          "value": 0.0199,
+          "formattedValue": "19.93M"
+        },
+        {
           "name": "Non-Tradable Stocks",
           "value": 0.0188,
           "formattedValue": "18.82M"
-        },
-        {
-          "name": "Options",
-          "value": 0.0061,
-          "formattedValue": "6.07M"
         },
         {
           "name": "Structured Products",
@@ -11248,13 +11253,18 @@
     },
     {
       "name": "Australia",
-      "value": 0.0024,
-      "formattedValue": "2.40M",
+      "value": 0.0026,
+      "formattedValue": "2.61M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0024,
           "formattedValue": "2.40M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0002,
+          "formattedValue": "209.11K"
         }
       ]
     },

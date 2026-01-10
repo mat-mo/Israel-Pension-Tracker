@@ -1858,9 +1858,14 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.113,
-      "formattedValue": "112.98M",
+      "value": 0.1448,
+      "formattedValue": "144.79M",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0563,
+          "formattedValue": "56.31M"
+        },
         {
           "name": "Bonds",
           "value": 0.0491,
@@ -1872,14 +1877,14 @@
           "formattedValue": "35.70M"
         },
         {
-          "name": "Cash & Equivalents",
-          "value": 0.0257,
-          "formattedValue": "25.67M"
-        },
-        {
           "name": "Investment Funds",
           "value": 0.0016,
           "formattedValue": "1.61M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.001,
+          "formattedValue": "991.11K"
         },
         {
           "name": "Non-Tradable Stocks",
@@ -1888,15 +1893,15 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.0001,
-          "formattedValue": "132.37K"
+          "value": 0.0003,
+          "formattedValue": "317.06K"
         }
       ]
     },
     {
       "name": "USA",
-      "value": 0.0543,
-      "formattedValue": "54.27M",
+      "value": 0.0549,
+      "formattedValue": "54.87M",
       "children": [
         {
           "name": "Stocks",
@@ -1910,8 +1915,8 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.0016,
-          "formattedValue": "1.64M"
+          "value": 0.0022,
+          "formattedValue": "2.24M"
         },
         {
           "name": "Investment Funds",
@@ -1922,8 +1927,8 @@
     },
     {
       "name": "Global",
-      "value": 0.0176,
-      "formattedValue": "17.57M",
+      "value": 0.0216,
+      "formattedValue": "21.59M",
       "children": [
         {
           "name": "Stocks",
@@ -1932,8 +1937,13 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.0041,
-          "formattedValue": "4.05M"
+          "value": 0.0064,
+          "formattedValue": "6.43M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0016,
+          "formattedValue": "1.65M"
         },
         {
           "name": "Mutual Funds",

@@ -8121,8 +8121,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.6425,
-      "formattedValue": "642.54M",
+      "value": 0.6544,
+      "formattedValue": "654.35M",
       "children": [
         {
           "name": "Bonds",
@@ -8136,8 +8136,8 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.1327,
-          "formattedValue": "132.67M"
+          "value": 0.1412,
+          "formattedValue": "141.18M"
         },
         {
           "name": "Loans",
@@ -8148,6 +8148,11 @@
           "name": "Structured Products",
           "value": 0.0071,
           "formattedValue": "7.14M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.007,
+          "formattedValue": "7.05M"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -8165,14 +8170,14 @@
           "formattedValue": "4.07M"
         },
         {
-          "name": "Derivatives",
-          "value": 0.004,
-          "formattedValue": "4.05M"
-        },
-        {
           "name": "Non-Tradable Stocks",
           "value": 0.0026,
           "formattedValue": "2.65M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0004,
+          "formattedValue": "441.28K"
         },
         {
           "name": "Warrants",
@@ -8180,16 +8185,58 @@
           "formattedValue": "184.80K"
         },
         {
-          "name": "Options",
+          "name": "Other Assets",
+          "value": 0.0001,
+          "formattedValue": "104.98K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0881,
+      "formattedValue": "88.15M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0358,
+          "formattedValue": "35.79M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0201,
+          "formattedValue": "20.14M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0146,
+          "formattedValue": "14.61M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0138,
+          "formattedValue": "13.76M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0034,
+          "formattedValue": "3.44M"
+        },
+        {
+          "name": "Structured Products",
           "value": 0.0002,
-          "formattedValue": "244.60K"
+          "formattedValue": "157.68K"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0002,
+          "formattedValue": "232.19K"
         }
       ]
     },
     {
       "name": "USA",
       "value": 0.0878,
-      "formattedValue": "87.81M",
+      "formattedValue": "87.84M",
       "children": [
         {
           "name": "Stocks",
@@ -8214,54 +8261,12 @@
         {
           "name": "Derivatives",
           "value": 0.0013,
-          "formattedValue": "1.27M"
+          "formattedValue": "1.29M"
         },
         {
           "name": "Futures",
           "value": 0.0013,
           "formattedValue": "1.34M"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.0872,
-      "formattedValue": "87.24M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0358,
-          "formattedValue": "35.79M"
-        },
-        {
-          "name": "Investment Funds",
-          "value": 0.0201,
-          "formattedValue": "20.07M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0138,
-          "formattedValue": "13.78M"
-        },
-        {
-          "name": "Loans",
-          "value": 0.0138,
-          "formattedValue": "13.76M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0034,
-          "formattedValue": "3.44M"
-        },
-        {
-          "name": "Structured Products",
-          "value": 0.0002,
-          "formattedValue": "157.68K"
-        },
-        {
-          "name": "Non-Tradable Stocks",
-          "value": 0.0002,
-          "formattedValue": "232.19K"
         }
       ]
     },
