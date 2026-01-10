@@ -177,6 +177,16 @@
         let currentSubclassData = null;
         let currentPage = 0;
 
+        // --- HELPER: Micro-Slice Formatter ---
+        // Prevents "0.00%" display for tiny values
+        function formatShare(value, total) {
+            if (!total || total === 0) return '-';
+            let raw = (value / total) * 100;
+            let abs = Math.abs(raw);
+            if (abs > 0 && abs < 0.01) return '< 0.01';
+            return raw.toFixed(2);
+        }
+
         // --- Theme Init ---
         const themeToggleBtn = document.getElementById('themeToggle');
         const sunIcon = document.getElementById('sunIcon');
@@ -398,10 +408,10 @@
                         if (!params.data) return '';
                         let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
                         let val = params.data.formattedValue || params.value;
-                        let share = params.percent;
-                        if (share === undefined && totalExposure > 0) {
-                            share = ((params.value / totalExposure) * 100).toFixed(2);
-                        }
+                        
+                        // Use Helper for Consistent Micro-Slices
+                        let share = formatShare(params.value, totalExposure);
+                        
                         return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
                     }
                 },
@@ -445,10 +455,10 @@
                         if (!params.data) return '';
                         let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
                         let val = params.data.formattedValue || params.value;
-                        let share = params.percent;
-                        if (share === undefined && totalExposure > 0) {
-                            share = ((params.value / totalExposure) * 100).toFixed(2);
-                        }
+                        
+                        // Use Helper
+                        let share = formatShare(params.value, totalExposure);
+
                         return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
                     }
                 },
@@ -492,10 +502,10 @@
                         if (!params.data) return '';
                         let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
                         let val = params.data.formattedValue || params.value;
-                        let share = params.percent;
-                        if (share === undefined && totalExposure > 0) {
-                            share = ((params.value / totalExposure) * 100).toFixed(2);
-                        }
+                        
+                        // Use Helper
+                        let share = formatShare(params.value, totalExposure);
+
                         return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
                     }
                 },
@@ -522,8 +532,6 @@
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
             
-            // --- CORRECT LOGIC HERE ---
-            // Calculate total dynamically to be safe
             let totalPortfolioValue = currentTrackData.totalAssetsBN;
             if (!totalPortfolioValue || totalPortfolioValue === 0) {
                 if (currentTrackData.assetClasses) {
@@ -553,16 +561,9 @@
                         if (!params.data) return '';
                         
                         const localShare = params.percent;
-                        let globalShareDisplay = '-';
-
-                        if (totalPortfolioValue && totalPortfolioValue !== 0) {
-                            const rawGlobalShare = (params.value / totalPortfolioValue) * 100;
-                            if (Math.abs(rawGlobalShare) > 0 && Math.abs(rawGlobalShare) < 0.01) {
-                                globalShareDisplay = '< 0.01';
-                            } else {
-                                globalShareDisplay = rawGlobalShare.toFixed(2);
-                            }
-                        }
+                        
+                        // Use Helper for Global Share
+                        let globalShareDisplay = formatShare(params.value, totalPortfolioValue);
 
                         return `<b>${params.name}</b><br/>
                                 Value: ${params.data.formattedValue}<br/>
