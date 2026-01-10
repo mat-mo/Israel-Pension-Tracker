@@ -1,41 +1,246 @@
 {
   "fundName": "הפניקס פנסיה מקיפה עוקב מדדי מניות",
   "trackId": "15219",
-  "totalAssetsBN": 0.5,
-  "formattedTotalAssets": "497.26M",
+  "totalAssetsBN": 0.86,
+  "formattedTotalAssets": "859.88M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.4921,
       "formattedValue": "492.12M",
-      "percentage": 98.97
+      "percentage": 57.23
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.1416,
+      "formattedValue": "141.59M",
+      "percentage": 16.47
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.1123,
+      "formattedValue": "112.31M",
+      "percentage": 13.06
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.1088,
+      "formattedValue": "108.85M",
+      "percentage": 12.66
     },
     {
       "name": "Bonds",
       "value": 0.004,
       "formattedValue": "4.05M",
-      "percentage": 0.81
+      "percentage": 0.47
     },
     {
       "name": "Derivatives",
       "value": 0.0013,
       "formattedValue": "1.31M",
-      "percentage": 0.26
-    },
-    {
-      "name": "Other Assets",
-      "value": 0.0001,
-      "formattedValue": "124.63K",
-      "percentage": 0.03
+      "percentage": 0.15
     },
     {
       "name": "Futures",
       "value": -0.0003,
       "formattedValue": "-335.31K",
-      "percentage": -0.07
+      "percentage": -0.04
     }
   ],
   "breakdown": {
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.1088,
+        "formattedValue": "108.85M",
+        "percentageOfClass": 100.0,
+        "itemCount": 21,
+        "totalPages": 3,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד 2037 סדרה 8905",
+              "value": 0.0131,
+              "formattedValue": "13.14M",
+              "percentage": 12.07,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2037 סדרה 8911",
+              "value": 0.0123,
+              "formattedValue": "12.25M",
+              "percentage": 11.26,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2037 סדרה 8907",
+              "value": 0.0082,
+              "formattedValue": "8.16M",
+              "percentage": 7.5,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2035 סדרה 8891",
+              "value": 0.008,
+              "formattedValue": "8.01M",
+              "percentage": 7.36,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2032 סדרה 8853",
+              "value": 0.008,
+              "formattedValue": "7.99M",
+              "percentage": 7.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2037 סדרה 8912",
+              "value": 0.0072,
+              "formattedValue": "7.15M",
+              "percentage": 6.57,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2034 סדרה 8877",
+              "value": 0.0064,
+              "formattedValue": "6.35M",
+              "percentage": 5.84,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2029 סדרה 8821",
+              "value": 0.0055,
+              "formattedValue": "5.53M",
+              "percentage": 5.08,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2036 סדרה 8897",
+              "value": 0.0054,
+              "formattedValue": "5.35M",
+              "percentage": 4.92,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2032 סדרה 8846",
+              "value": 0.0053,
+              "formattedValue": "5.28M",
+              "percentage": 4.85,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד 2036 סדרה 8903",
+              "value": 0.0046,
+              "formattedValue": "4.59M",
+              "percentage": 4.22,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2033 סדרה 8858",
+              "value": 0.0045,
+              "formattedValue": "4.52M",
+              "percentage": 4.15,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2036 סדרה 8894",
+              "value": 0.0041,
+              "formattedValue": "4.07M",
+              "percentage": 3.74,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2033 סדרה 8859",
+              "value": 0.0039,
+              "formattedValue": "3.89M",
+              "percentage": 3.57,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2033 סדרה 8864",
+              "value": 0.0032,
+              "formattedValue": "3.21M",
+              "percentage": 2.95,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2032 סדרה 8857",
+              "value": 0.0025,
+              "formattedValue": "2.52M",
+              "percentage": 2.32,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2034 סדרה 8880",
+              "value": 0.0024,
+              "formattedValue": "2.42M",
+              "percentage": 2.22,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2037 סדרה 8908",
+              "value": 0.002,
+              "formattedValue": "1.99M",
+              "percentage": 1.82,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2029 סדרה 8814",
+              "value": 0.0009,
+              "formattedValue": "915.66K",
+              "percentage": 0.84,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 2036 סדרה 8901",
+              "value": 0.0008,
+              "formattedValue": "767.00K",
+              "percentage": 0.7,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד 2035 סדרה 8888",
+              "value": 0.0007,
+              "formattedValue": "736.93K",
+              "percentage": 0.68,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.1416,
+        "formattedValue": "141.59M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.1405,
+              "formattedValue": "140.55M",
+              "percentage": 99.26,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI",
+              "value": 0.001,
+              "formattedValue": "1.04M",
+              "percentage": 0.74,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -471,10 +676,29 @@
     ],
     "Other Assets": [
       {
+        "subclass": "Unclassified",
+        "value": 0.1122,
+        "formattedValue": "112.18M",
+        "percentageOfClass": 99.89,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "החזקה באפיק השקעה מובטח תשואה",
+              "value": 0.1122,
+              "formattedValue": "112.18M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "General",
         "value": 0.0001,
         "formattedValue": "124.63K",
-        "percentageOfClass": 100.0,
+        "percentageOfClass": 0.11,
         "itemCount": 6,
         "totalPages": 1,
         "holdingsPages": [
@@ -612,13 +836,23 @@
     },
     {
       "name": "Global",
-      "value": 0.1262,
-      "formattedValue": "126.19M",
+      "value": 0.3472,
+      "formattedValue": "347.23M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.1258,
           "formattedValue": "125.83M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.1122,
+          "formattedValue": "112.18M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.1088,
+          "formattedValue": "108.85M"
         },
         {
           "name": "Futures",
@@ -629,13 +863,79 @@
     },
     {
       "name": "Israel",
-      "value": 0.002,
-      "formattedValue": "1.99M",
+      "value": 0.1436,
+      "formattedValue": "143.58M",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.1416,
+          "formattedValue": "141.59M"
+        },
         {
           "name": "Derivatives",
           "value": 0.002,
           "formattedValue": "1.99M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.5067,
+      "formattedValue": "506.68M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.4921,
+          "formattedValue": "492.12M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0053,
+          "formattedValue": "5.28M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0047,
+          "formattedValue": "4.72M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.004,
+          "formattedValue": "4.05M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0004,
+          "formattedValue": "396.15K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0001,
+          "formattedValue": "124.63K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.3579,
+      "formattedValue": "357.90M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.1369,
+          "formattedValue": "136.87M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.1122,
+          "formattedValue": "112.18M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.1088,
+          "formattedValue": "108.85M"
         }
       ]
     }

@@ -2,28 +2,55 @@
   "fundName": "מגדל מקפת משלימה עוקב מדדי אג\"ח",
   "trackId": "15527",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "856.71K",
+  "formattedTotalAssets": "908.60K",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0007,
       "formattedValue": "713.75K",
-      "percentage": 83.31
+      "percentage": 78.56
     },
     {
       "name": "Stocks",
       "value": 0.0002,
       "formattedValue": "150.59K",
-      "percentage": 17.58
+      "percentage": 16.57
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "formattedValue": "51.89K",
+      "percentage": 5.71
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-7.63K",
-      "percentage": -0.89
+      "percentage": -0.84
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "51.89K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0001,
+              "formattedValue": "51.89K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -74,7 +101,7 @@
               "value": 0.0002,
               "formattedValue": "151.90K",
               "percentage": 21.28,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ISHARES MARKIT IBOXX $ HIGH",
@@ -95,21 +122,21 @@
               "value": 0.0001,
               "formattedValue": "66.09K",
               "percentage": 9.26,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "AT1 LN EQUITY",
               "value": 0.0,
               "formattedValue": "45.63K",
               "percentage": 6.39,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "AMUNDI ETF EUR HY LIQ BD IBX",
               "value": 0.0,
               "formattedValue": "44.81K",
               "percentage": 6.28,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ISHARES USD CORP BND",
@@ -182,14 +209,50 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
+      "name": "Eurozone",
       "value": 0.0003,
-      "formattedValue": "308.43K",
+      "formattedValue": "262.80K",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0003,
-          "formattedValue": "308.43K"
+          "formattedValue": "262.80K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.001,
+      "formattedValue": "1.03M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0005,
+          "formattedValue": "450.95K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0004,
+          "formattedValue": "429.00K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "150.59K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0003,
+      "formattedValue": "262.80K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "262.80K"
         }
       ]
     }

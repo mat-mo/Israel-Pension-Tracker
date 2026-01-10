@@ -2,28 +2,59 @@
   "fundName": "מור פנסיה מקיפה - כספי (שקלי)",
   "trackId": "13914",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "10.55M",
+  "formattedTotalAssets": "13.96M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0098,
       "formattedValue": "9.77M",
-      "percentage": 92.63
+      "percentage": 69.99
     },
     {
       "name": "Other Assets",
-      "value": 0.0008,
-      "formattedValue": "778.13K",
-      "percentage": 7.37
+      "value": 0.004,
+      "formattedValue": "3.98M",
+      "percentage": 28.53
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0001,
+      "formattedValue": "149.01K",
+      "percentage": 1.07
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "formattedValue": "57.92K",
+      "percentage": 0.41
     }
   ],
   "breakdown": {
     "Other Assets": [
       {
+        "subclass": "Unclassified",
+        "value": 0.0032,
+        "formattedValue": "3.21M",
+        "percentageOfClass": 80.47,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "נכס או התחייבות בגין השלמת המדינה לתשואת היעד",
+              "value": 0.0032,
+              "formattedValue": "3.21M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "General",
         "value": 0.0008,
         "formattedValue": "778.13K",
-        "percentageOfClass": 100.0,
+        "percentageOfClass": 19.53,
         "itemCount": 4,
         "totalPages": 1,
         "holdingsPages": [
@@ -148,6 +179,55 @@
           ]
         ]
       }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0001,
+        "formattedValue": "149.01K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד סדרה 8911",
+              "value": 0.0001,
+              "formattedValue": "149.01K",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "57.92K",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0001,
+              "formattedValue": "57.91K",
+              "percentage": 99.98,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.01K",
+              "percentage": 0.02,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
@@ -165,6 +245,47 @@
           "name": "Other Assets",
           "value": 0.0008,
           "formattedValue": "778.13K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.007,
+      "formattedValue": "7.01M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.0069,
+          "formattedValue": "6.86M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0001,
+          "formattedValue": "149.01K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0176,
+      "formattedValue": "17.56M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0098,
+          "formattedValue": "9.77M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0076,
+          "formattedValue": "7.64M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0001,
+          "formattedValue": "149.01K"
         }
       ]
     }

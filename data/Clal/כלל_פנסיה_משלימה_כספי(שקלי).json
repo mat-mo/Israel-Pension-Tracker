@@ -2,19 +2,25 @@
   "fundName": "כלל פנסיה משלימה כספי(שקלי)",
   "trackId": "13214",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "12.09M",
+  "formattedTotalAssets": "12.44M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0109,
       "formattedValue": "10.88M",
-      "percentage": 89.96
+      "percentage": 87.46
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0012,
       "formattedValue": "1.23M",
-      "percentage": 10.15
+      "percentage": 9.87
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0003,
+      "formattedValue": "345.20K",
+      "percentage": 2.78
     },
     {
       "name": "Other Assets",
@@ -24,6 +30,48 @@
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0003,
+        "formattedValue": "345.20K",
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0003,
+              "formattedValue": "344.94K",
+              "percentage": 99.92,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.16K",
+              "percentage": 0.05,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.10K",
+              "percentage": 0.03,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.00K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Non-Tradable Bonds": [
       {
         "subclass": "Commercial Paper",
@@ -289,8 +337,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0121,
-      "formattedValue": "12.11M",
+      "value": 0.0125,
+      "formattedValue": "12.45M",
       "children": [
         {
           "name": "Bonds",
@@ -301,6 +349,47 @@
           "name": "Non-Tradable Bonds",
           "value": 0.0012,
           "formattedValue": "1.23M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "345.20K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.012,
+      "formattedValue": "12.02M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0109,
+          "formattedValue": "10.88M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0008,
+          "formattedValue": "796.72K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "345.20K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0004,
+      "formattedValue": "430.75K",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0004,
+          "formattedValue": "430.75K"
         }
       ]
     }

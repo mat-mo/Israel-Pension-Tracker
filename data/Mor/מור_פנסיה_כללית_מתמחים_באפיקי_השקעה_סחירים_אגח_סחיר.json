@@ -2,31 +2,37 @@
   "fundName": "מור פנסיה כללית מתמחים באפיקי השקעה סחירים אג\"ח סחיר",
   "trackId": "15271",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.15M",
+  "formattedTotalAssets": "1.23M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.001,
       "formattedValue": "964.74K",
-      "percentage": 83.73
+      "percentage": 78.55
     },
     {
       "name": "Mutual Funds",
       "value": 0.0002,
       "formattedValue": "156.04K",
-      "percentage": 13.54
+      "percentage": 12.7
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "formattedValue": "76.12K",
+      "percentage": 6.2
     },
     {
       "name": "Stocks",
       "value": 0.0,
       "formattedValue": "29.03K",
-      "percentage": 2.52
+      "percentage": 2.36
     },
     {
       "name": "Warrants",
       "value": 0.0,
       "formattedValue": "1.59K",
-      "percentage": 0.14
+      "percentage": 0.13
     },
     {
       "name": "Other Assets",
@@ -1971,6 +1977,34 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "76.12K",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0001,
+              "formattedValue": "76.26K",
+              "percentage": 100.19,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": -0.0,
+              "formattedValue": "-0.14K",
+              "percentage": -0.19,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "Direct Holdings",
@@ -2089,6 +2123,25 @@
           "name": "Bonds",
           "value": 0.0009,
           "formattedValue": "946.03K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0002,
+          "formattedValue": "156.04K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0011,
+      "formattedValue": "1.09M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0009,
+          "formattedValue": "930.32K"
         },
         {
           "name": "Mutual Funds",

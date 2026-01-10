@@ -1,41 +1,75 @@
 {
   "fundName": "הפניקס פנסיה משלימה עוקב מדדי מניות",
   "trackId": "15223",
-  "totalAssetsBN": 0.08,
-  "formattedTotalAssets": "81.26M",
+  "totalAssetsBN": 0.1,
+  "formattedTotalAssets": "103.60M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0804,
       "formattedValue": "80.42M",
-      "percentage": 98.97
+      "percentage": 77.63
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0223,
+      "formattedValue": "22.34M",
+      "percentage": 21.56
     },
     {
       "name": "Bonds",
       "value": 0.0007,
       "formattedValue": "661.24K",
-      "percentage": 0.81
+      "percentage": 0.64
     },
     {
       "name": "Derivatives",
       "value": 0.0002,
       "formattedValue": "213.27K",
-      "percentage": 0.26
+      "percentage": 0.21
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "20.37K",
-      "percentage": 0.03
+      "percentage": 0.02
     },
     {
       "name": "Futures",
       "value": -0.0001,
       "formattedValue": "-54.80K",
-      "percentage": -0.07
+      "percentage": -0.05
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0223,
+        "formattedValue": "22.34M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0222,
+              "formattedValue": "22.17M",
+              "percentage": 99.24,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI",
+              "value": 0.0002,
+              "formattedValue": "170.51K",
+              "percentage": 0.76,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -606,6 +640,23 @@
       ]
     },
     {
+      "name": "Israel",
+      "value": 0.0227,
+      "formattedValue": "22.66M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0223,
+          "formattedValue": "22.34M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0003,
+          "formattedValue": "324.54K"
+        }
+      ]
+    },
+    {
       "name": "Global",
       "value": 0.0206,
       "formattedValue": "20.56M",
@@ -616,16 +667,45 @@
           "formattedValue": "20.56M"
         }
       ]
-    },
+    }
+  ],
+  "currencySunburst": [
     {
-      "name": "Israel",
-      "value": 0.0003,
-      "formattedValue": "324.54K",
+      "name": "USD",
+      "value": 0.0827,
+      "formattedValue": "82.72M",
       "children": [
         {
+          "name": "Stocks",
+          "value": 0.0804,
+          "formattedValue": "80.42M"
+        },
+        {
           "name": "Derivatives",
-          "value": 0.0003,
-          "formattedValue": "324.54K"
+          "value": 0.0009,
+          "formattedValue": "862.34K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0008,
+          "formattedValue": "771.23K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0007,
+          "formattedValue": "661.24K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0216,
+      "formattedValue": "21.57M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0216,
+          "formattedValue": "21.57M"
         }
       ]
     }

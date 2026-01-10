@@ -32,11 +32,14 @@ NAME_COLUMNS = [
     "טיקר", "מאפיין עיקרי"
 ]
 
-# Country Columns (Expanded)
+# Country Columns
 COUNTRY_COLUMNS = [
     "מדינה לפי חשיפה כלכלית", "מדינת הרישום", "מדינת התאגדות",
     "מדינת מיקום נדל\"ן", "מקום המסחר", "מדינה", "ארץ", "Country"
 ]
+
+# Currency Columns (Added "מטבע פעילות" as priority)
+CURRENCY_COLUMNS = ["מטבע פעילות", "מטבע", "סוג מטבע", "בסיס הצמדה", "Currency", "Linkage Base"]
 
 # Emoji Map
 COUNTRY_MAPPING = {
@@ -48,7 +51,6 @@ COUNTRY_MAPPING = {
     "United States": "🇺🇸", "USA": "🇺🇸", "US": "🇺🇸", "U.S.A": "🇺🇸",
     
     # Europe
-    "אירופה": "🇪🇺 ", "Europe": "🇪🇺   ",
     "אירלנד": "🇮🇪", "Ireland": "🇮🇪",
     "בריטניה": "🇬🇧", "אנגליה": "🇬🇧", "United Kingdom": "🇬🇧", "UK": "🇬🇧", "Great Britain": "🇬🇧",
     "לוקסמבורג": "🇱🇺", "Luxembourg": "🇱🇺",
@@ -90,8 +92,20 @@ EMOJI_TO_NAME = {
     "🇸🇬": "Singapore", "🇭🇰": "Hong Kong", "🇪🇸": "Spain", "🇮🇹": "Italy",
     "🇸🇪": "Sweden", "🇳🇴": "Norway", "🇩🇰": "Denmark", "🇧🇪": "Belgium",
     "🇵🇱": "Poland", "🇦🇹": "Austria", "🇧🇷": "Brazil", "🇲🇽": "Mexico",
-    "🇰🇾": "Cayman Is.", "🇪🇺": "Europe"
+    "🇰🇾": "Cayman Is.", "🇪🇺": "Eurozone"
 }
+
+# Keywords to detect Currency from Asset Name if column missing
+CURRENCY_KEYWORDS = {
+    "USD": ["dollar", "usd", "דולר", "ארה\"ב", "u.s."],
+    "EUR": ["euro", "eur", "אירו", "יורו"],
+    "GBP": ["gbp", "sterling", "ליש\"ט", "פאונד"],
+    "JPY": ["yen", "jpy", "יין"],
+    "ILS": ["shekel", "nis", "שקל", "ש\"ח"]
+}
+
+# Keywords that imply the asset is Hedged to Shekel
+HEDGED_KEYWORDS = ["מנוטרל", "גידור", "hedged", "currency hedged", "נטרול"]
 
 FILE_MAPPING = {
     "מזומנים": ("Cash & Equivalents", "Cash"),
@@ -178,24 +192,65 @@ def get_country_emoji(row, asset_class=""):
         if clean_no_quotes in COUNTRY_MAPPING: return COUNTRY_MAPPING[clean_no_quotes]
         for k, v in COUNTRY_MAPPING.items():
             if k in clean_raw: return v
-   
-        asset_name = get_column_value(row, NAME_COLUMNS)
+
+    # 2. Check General Israel/Abroad column
+    val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל", "Israel/Abroad"])
+    if val_general:
+        if "ישראל" in str(val_general) or "Israel" in str(val_general):
+             return "🇮🇱"
+    
+    # 3. Check Asset Name for Currency/Location Keywords (before defaulting)
+    asset_name = get_column_value(row, NAME_COLUMNS)
     if asset_name:
         name_lower = str(asset_name).lower()
         if any(x in name_lower for x in ["dollar", "usd", "דולר", "ארה\"ב", "u.s."]):
             return "🇺🇸"
         if any(x in name_lower for x in ["euro", "eur", "אירו", "יורו"]):
-            return "🇪🇺" # Or map to a specific EU country if you prefer
+            return "🇪🇺"
         if any(x in name_lower for x in ["gbp", "sterling", "ליש\"ט", "פאונד"]):
             return "🇬🇧"
-        if any(x in name_lower for x in ["yen", "jpy", "יין"]):
-            return "🇯🇵"
 
     # 4. Fallback: Default Cash/Loans to Israel only if no foreign traits found
     if asset_class in ["Cash & Equivalents", "Loans"]:
         return "🇮🇱"
     
     return ""
+
+def detect_currency(row, country_emoji, asset_name):
+    """
+    Determines the Currency Exposure (ILS, USD, EUR, etc.)
+    Logic: Hedged keywords -> Explicit Column -> Name Inference -> Country Inference
+    """
+    name_str = str(asset_name).lower() if asset_name else ""
+    
+    # 1. Check for Hedging (Overrides everything to ILS)
+    if any(k in name_str for k in HEDGED_KEYWORDS):
+        return "ILS"
+
+    # 2. Check explicit "מטבע פעילות" or similar columns
+    val = get_column_value(row, CURRENCY_COLUMNS)
+    if val:
+        clean = str(val).strip().lower()
+        if "דולר" in clean or "dollar" in clean or "usd" in clean: return "USD"
+        if "אירו" in clean or "eur" in clean: return "EUR"
+        if "ליש" in clean or "gbp" in clean: return "GBP"
+        if "יין" in clean or "jpy" in clean: return "JPY"
+        if "שקל" in clean or "shekel" in clean or "nis" in clean: return "ILS"
+        if "צמוד מדד" in clean: return "ILS" 
+    
+    # 3. Infer from Name
+    for curr, keywords in CURRENCY_KEYWORDS.items():
+        if any(k in name_str for k in keywords):
+            return curr
+
+    # 4. Infer from Country (Fallback)
+    if country_emoji == "🇺🇸": return "USD"
+    if country_emoji in ["🇬🇧"]: return "GBP"
+    if country_emoji in ["🇯🇵"]: return "JPY"
+    if country_emoji in ["🇪🇺", "🇫🇷", "🇩🇪", "🇳🇱", "🇮🇹", "🇪🇸"]: return "EUR"
+    
+    # 5. Default to Shekel
+    return "ILS"
 
 def clean_value(val):
     if pd.isna(val) or str(val).strip() in ['nan', 'ריק במקור', 'תא ללא תוכן, המשך בתא הבא']: return 0.0
@@ -263,19 +318,14 @@ def process_institution_data(target_dir, inst_key, config, master_map):
             df.columns = [c.strip() for c in df.columns]
             if 'מספר מסלול' not in df.columns: continue
             
-            # --- IMPROVED COLUMN DETECTION ---
-            # Priority 1: Fair Value in Thousands (Standard)
+            # --- Robust Value Column Detection ---
             val_col = next((c for c in df.columns if "שווי" in c and "הוגן" in c and "באלפי" in c), None)
-            # Priority 2: Market Value in Thousands
             if not val_col: val_col = next((c for c in df.columns if "שווי" in c and "שוק" in c and "באלפי" in c), None)
-            # Priority 3: Fair Value (Any)
             if not val_col: val_col = next((c for c in df.columns if "שווי" in c and "הוגן" in c), None)
-            # Priority 4: Market Value (Any)
             if not val_col: val_col = next((c for c in df.columns if "שווי" in c and "שוק" in c), None)
-            # Priority 5: Just "Value" (Fallback for weird files like Cash)
             if not val_col: val_col = next((c for c in df.columns if "שווי" in c), None)
             
-            if not val_col: continue # Skip if no value column found
+            if not val_col: continue 
             
             class_col = "סיווג הקרן" if "סיווג הקרן" in df.columns else None
 
@@ -293,7 +343,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
-                if abs(val_bn) < 1e-9: continue # Skip zero/empty
+                if abs(val_bn) < 1e-9: continue
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
                 
@@ -302,8 +352,10 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                     c_val = str(row[class_col])
                     if "אג\"ח" in c_val or "אג”ח" in c_val: cls, sub = "Bonds", "ETFs"
 
-                # Pass Asset Class to get_country_emoji for better defaulting
                 emoji = get_country_emoji(row, cls) 
+                
+                # Capture currency here to pass to storage
+                currency = detect_currency(row, emoji, name)
 
                 if track_id not in all_tracks_data: all_tracks_data[track_id] = {}
                 if cls not in all_tracks_data[track_id]: all_tracks_data[track_id][cls] = {}
@@ -312,7 +364,8 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 all_tracks_data[track_id][cls][sub].append({
                     "name": name, 
                     "value": val_bn,
-                    "emoji": emoji 
+                    "emoji": emoji,
+                    "currency": currency # Store calculated currency
                 })
                 
         except Exception: pass 
@@ -320,56 +373,78 @@ def process_institution_data(target_dir, inst_key, config, master_map):
     return all_tracks_data
 
 def calculate_geo_sunburst(data_store):
-    """
-    Groups data by Country (Emoji) -> Asset Class.
-    Uses ABSOLUTE values for chart sizing to show exposure magnitude.
-    """
+    """ Groups data by Country -> Asset Class (Uses ABSOLUTE values) """
     country_groups = {} 
     
-    # 1. Aggregate Data (Sum Absolute Values)
     for cls_name, subclasses in data_store.items():
         for sub_items in subclasses.values():
             for item in sub_items:
                 emoji = item.get("emoji", "")
                 country_key = emoji if emoji else "Other"
                 
-                if country_key not in country_groups:
-                    country_groups[country_key] = {}
-                
-                if cls_name not in country_groups[country_key]:
-                    country_groups[country_key][cls_name] = 0.0
+                if country_key not in country_groups: country_groups[country_key] = {}
+                if cls_name not in country_groups[country_key]: country_groups[country_key][cls_name] = 0.0
                 
                 country_groups[country_key][cls_name] += abs(item["value"])
 
-    # 2. Format for ECharts
     sunburst_data = []
-    
     for country_key, assets_dict in country_groups.items():
         asset_children = []
-        children_sum_exposure = 0.0  
-
-        for cls_name, abs_val in assets_dict.items():
-            if abs_val > 0.0001:  
-                asset_children.append({
-                    "name": cls_name,
-                    "value": round(abs_val, 4),
-                    "formattedValue": format_currency(abs_val)
-                })
-                children_sum_exposure += abs_val
-
-        if not asset_children:
-            continue
+        children_sum = 0.0
         
+        for cls_name, abs_val in assets_dict.items():
+            if abs_val > 0.0001:
+                asset_children.append({ "name": cls_name, "value": round(abs_val, 4), "formattedValue": format_currency(abs_val) })
+                children_sum += abs_val
+        
+        if not asset_children: continue
         asset_children.sort(key=lambda x: x["value"], reverse=True)
         display_name = EMOJI_TO_NAME.get(country_key, "Global" if country_key == "Other" else country_key)
         
         sunburst_data.append({
             "name": display_name,
-            "value": round(children_sum_exposure, 4), 
-            "formattedValue": format_currency(children_sum_exposure),
+            "value": round(children_sum, 4),
+            "formattedValue": format_currency(children_sum),
             "children": asset_children
         })
+    
+    sunburst_data.sort(key=lambda x: x["value"], reverse=True)
+    return sunburst_data
 
+def calculate_currency_sunburst(data_store):
+    """ Groups data by Currency -> Asset Class (Uses ABSOLUTE values) """
+    currency_groups = {} 
+    
+    for cls_name, subclasses in data_store.items():
+        for sub_items in subclasses.values():
+            for item in sub_items:
+                curr = item.get("currency", "ILS") # Use pre-calculated currency
+                
+                if curr not in currency_groups: currency_groups[curr] = {}
+                if cls_name not in currency_groups[curr]: currency_groups[curr][cls_name] = 0.0
+                
+                currency_groups[curr][cls_name] += abs(item["value"])
+
+    sunburst_data = []
+    for curr, assets_dict in currency_groups.items():
+        asset_children = []
+        children_sum = 0.0
+        
+        for cls_name, abs_val in assets_dict.items():
+            if abs_val > 0.0001:
+                asset_children.append({ "name": cls_name, "value": round(abs_val, 4), "formattedValue": format_currency(abs_val) })
+                children_sum += abs_val
+        
+        if not asset_children: continue
+        asset_children.sort(key=lambda x: x["value"], reverse=True)
+        
+        sunburst_data.append({
+            "name": curr,
+            "value": round(children_sum, 4),
+            "formattedValue": format_currency(children_sum),
+            "children": asset_children
+        })
+    
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
@@ -380,7 +455,6 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
         
-        # Total Assets uses Signed Values (Net Value)
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
 
@@ -444,8 +518,9 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             
         asset_classes.sort(key=lambda x: x['percentage'], reverse=True)
         
-        # Generate Geo Data (Absolute Exposure)
+        # --- GEO & CURRENCY CALCULATIONS ---
         geo_sunburst_data = calculate_geo_sunburst(data_store)
+        currency_sunburst_data = calculate_currency_sunburst(data_store)
 
         safe_filename = get_safe_filename(t_name)
         
@@ -456,7 +531,8 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             "formattedTotalAssets": format_currency(total_assets),
             "assetClasses": asset_classes, 
             "breakdown": breakdown,
-            "geoSunburst": geo_sunburst_data 
+            "geoSunburst": geo_sunburst_data,
+            "currencySunburst": currency_sunburst_data
         }
         
         with open(target_dir / safe_filename, 'w', encoding='utf-8') as f:

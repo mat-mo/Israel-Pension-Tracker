@@ -2,25 +2,31 @@
   "fundName": "הראל פנסיה כללית קיימות",
   "trackId": "14194",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.15M",
+  "formattedTotalAssets": "1.26M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0011,
       "formattedValue": "1.13M",
-      "percentage": 98.49
+      "percentage": 89.72
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "formattedValue": "112.58K",
+      "percentage": 8.9
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "33.48K",
-      "percentage": 2.91
+      "percentage": 2.65
     },
     {
       "name": "Other Assets",
       "value": -0.0,
       "formattedValue": "-16.06K",
-      "percentage": -1.39
+      "percentage": -1.27
     }
   ],
   "breakdown": {
@@ -116,7 +122,7 @@
               "value": 0.0001,
               "formattedValue": "73.57K",
               "percentage": 10.2,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -203,6 +209,27 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "112.58K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי",
+              "value": 0.0001,
+              "formattedValue": "112.58K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
@@ -220,13 +247,51 @@
     },
     {
       "name": "Global",
-      "value": 0.0003,
-      "formattedValue": "294.13K",
+      "value": 0.0002,
+      "formattedValue": "220.56K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0003,
-          "formattedValue": "294.13K"
+          "value": 0.0002,
+          "formattedValue": "220.56K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0001,
+      "formattedValue": "112.58K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "112.58K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0011,
+      "formattedValue": "1.06M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0011,
+          "formattedValue": "1.06M"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0001,
+      "formattedValue": "104.59K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "104.59K"
         }
       ]
     }

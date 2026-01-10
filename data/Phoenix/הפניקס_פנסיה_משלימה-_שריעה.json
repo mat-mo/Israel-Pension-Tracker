@@ -1,20 +1,26 @@
 {
   "fundName": "הפניקס פנסיה משלימה- שריעה",
   "trackId": "14082",
-  "totalAssetsBN": 0.41,
-  "formattedTotalAssets": "407.16M",
+  "totalAssetsBN": 0.45,
+  "formattedTotalAssets": "451.64M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.4069,
       "formattedValue": "406.93M",
-      "percentage": 99.94
+      "percentage": 90.1
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0445,
+      "formattedValue": "44.48M",
+      "percentage": 9.85
     },
     {
       "name": "Mutual Funds",
       "value": 0.0001,
       "formattedValue": "147.21K",
-      "percentage": 0.04
+      "percentage": 0.03
     },
     {
       "name": "Other Assets",
@@ -24,6 +30,27 @@
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0445,
+        "formattedValue": "44.48M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0445,
+              "formattedValue": "44.48M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Mutual Funds": [
       {
         "subclass": "General",
@@ -1798,6 +1825,18 @@
       ]
     },
     {
+      "name": "Israel",
+      "value": 0.0445,
+      "formattedValue": "44.48M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0445,
+          "formattedValue": "44.48M"
+        }
+      ]
+    },
+    {
       "name": "Ireland",
       "value": 0.0008,
       "formattedValue": "839.71K",
@@ -1818,6 +1857,42 @@
           "name": "Stocks",
           "value": 0.0007,
           "formattedValue": "675.05K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.4347,
+      "formattedValue": "434.65M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.4069,
+          "formattedValue": "406.93M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0276,
+          "formattedValue": "27.57M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0001,
+          "formattedValue": "147.21K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0169,
+      "formattedValue": "16.91M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0169,
+          "formattedValue": "16.91M"
         }
       ]
     }

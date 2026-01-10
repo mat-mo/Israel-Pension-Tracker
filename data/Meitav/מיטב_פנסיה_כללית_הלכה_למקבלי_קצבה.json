@@ -2,31 +2,37 @@
   "fundName": "מיטב פנסיה כללית הלכה למקבלי קצבה",
   "trackId": "13286",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.29M",
+  "formattedTotalAssets": "1.42M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0013,
       "formattedValue": "1.27M",
-      "percentage": 98.64
+      "percentage": 89.47
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "formattedValue": "131.81K",
+      "percentage": 9.3
     },
     {
       "name": "Options",
       "value": 0.0,
       "formattedValue": "17.14K",
-      "percentage": 1.33
+      "percentage": 1.21
     },
     {
       "name": "Futures",
       "value": 0.0,
       "formattedValue": "2.16K",
-      "percentage": 0.17
+      "percentage": 0.15
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-1.86K",
-      "percentage": -0.14
+      "percentage": -0.13
     }
   ],
   "breakdown": {
@@ -44,6 +50,27 @@
               "name": "C 3040 NOV",
               "value": 0.0,
               "formattedValue": "17.14K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "131.81K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0001,
+              "formattedValue": "131.81K",
               "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
@@ -187,7 +214,7 @@
               "value": 0.0,
               "formattedValue": "0.62K",
               "percentage": 28.74,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -218,6 +245,25 @@
   "geoSunburst": [
     {
       "name": "Israel",
+      "value": 0.0014,
+      "formattedValue": "1.40M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0013,
+          "formattedValue": "1.27M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "131.81K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
       "value": 0.0013,
       "formattedValue": "1.27M",
       "children": [

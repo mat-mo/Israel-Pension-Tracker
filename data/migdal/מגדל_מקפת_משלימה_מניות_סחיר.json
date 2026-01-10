@@ -2,37 +2,43 @@
   "fundName": "מגדל מקפת משלימה מניות סחיר",
   "trackId": "15526",
   "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "19.78M",
+  "formattedTotalAssets": "21.05M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0194,
       "formattedValue": "19.41M",
-      "percentage": 98.13
+      "percentage": 92.19
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0013,
+      "formattedValue": "1.27M",
+      "percentage": 6.05
     },
     {
       "name": "Derivatives",
       "value": 0.0002,
       "formattedValue": "221.21K",
-      "percentage": 1.12
+      "percentage": 1.05
     },
     {
       "name": "Investment Funds",
       "value": 0.0001,
       "formattedValue": "77.23K",
-      "percentage": 0.39
+      "percentage": 0.37
     },
     {
       "name": "Options",
       "value": 0.0,
       "formattedValue": "32.21K",
-      "percentage": 0.16
+      "percentage": 0.15
     },
     {
       "name": "Warrants",
       "value": 0.0,
       "formattedValue": "20.93K",
-      "percentage": 0.11
+      "percentage": 0.1
     },
     {
       "name": "Bonds",
@@ -42,6 +48,55 @@
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0013,
+        "formattedValue": "1.27M",
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0008,
+              "formattedValue": "782.59K",
+              "percentage": 61.45,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0005,
+              "formattedValue": "484.88K",
+              "percentage": 38.07,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0,
+              "formattedValue": "8.48K",
+              "percentage": 0.67,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0,
+              "formattedValue": "0.20K",
+              "percentage": 0.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": -0.0,
+              "formattedValue": "-2.60K",
+              "percentage": -0.2,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -2116,13 +2171,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0193,
-      "formattedValue": "19.26M",
+      "value": 0.0209,
+      "formattedValue": "20.89M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.019,
           "formattedValue": "19.02M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0016,
+          "formattedValue": "1.63M"
         },
         {
           "name": "Derivatives",
@@ -2140,6 +2200,47 @@
           "name": "Stocks",
           "value": 0.0003,
           "formattedValue": "265.01K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0187,
+      "formattedValue": "18.75M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0172,
+          "formattedValue": "17.16M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0014,
+          "formattedValue": "1.39M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0002,
+          "formattedValue": "191.62K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0023,
+      "formattedValue": "2.27M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.002,
+          "formattedValue": "2.03M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "239.80K"
         }
       ]
     }

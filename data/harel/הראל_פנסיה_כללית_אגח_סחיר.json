@@ -2,19 +2,25 @@
   "fundName": "הראל פנסיה כללית אג\"ח סחיר",
   "trackId": "15280",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.25M",
+  "formattedTotalAssets": "2.43M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0022,
       "formattedValue": "2.22M",
-      "percentage": 98.68
+      "percentage": 91.37
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0002,
+      "formattedValue": "180.24K",
+      "percentage": 7.4
     },
     {
       "name": "Structured Products",
       "value": 0.0,
       "formattedValue": "28.16K",
-      "percentage": 1.25
+      "percentage": 1.16
     },
     {
       "name": "Other Assets",
@@ -670,7 +676,7 @@
               "value": 0.0,
               "formattedValue": "8.96K",
               "percentage": 0.46,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "דיסקונט מנ נד י",
@@ -749,14 +755,14 @@
               "value": 0.0,
               "formattedValue": "7.90K",
               "percentage": 0.41,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "ג'י סיטי אגח יג",
               "value": 0.0,
               "formattedValue": "7.76K",
               "percentage": 0.4,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
@@ -900,7 +906,7 @@
               "value": 0.0,
               "formattedValue": "5.64K",
               "percentage": 0.29,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
@@ -1188,7 +1194,7 @@
               "value": 0.0,
               "formattedValue": "2.96K",
               "percentage": 0.15,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
@@ -1246,7 +1252,7 @@
               "value": 0.0,
               "formattedValue": "2.40K",
               "percentage": 0.12,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "מניבים ריט אגח ב",
@@ -1369,7 +1375,7 @@
               "value": 0.0,
               "formattedValue": "1.53K",
               "percentage": 0.08,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "נאוויטס פטרו אגח ו",
@@ -1840,18 +1846,72 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0002,
+        "formattedValue": "180.24K",
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי",
+              "value": 0.0002,
+              "formattedValue": "156.25K",
+              "percentage": 86.69,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0,
+              "formattedValue": "9.45K",
+              "percentage": 5.24,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הבינלאומי",
+              "value": 0.0,
+              "formattedValue": "8.15K",
+              "percentage": 4.52,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0,
+              "formattedValue": "5.52K",
+              "percentage": 3.06,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0,
+              "formattedValue": "0.88K",
+              "percentage": 0.49,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.002,
-      "formattedValue": "2.03M",
+      "value": 0.0022,
+      "formattedValue": "2.25M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.002,
-          "formattedValue": "2.03M"
+          "value": 0.0021,
+          "formattedValue": "2.07M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "180.24K"
         }
       ]
     },
@@ -1864,6 +1924,37 @@
           "name": "Bonds",
           "value": 0.0001,
           "formattedValue": "144.74K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0022,
+      "formattedValue": "2.18M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.002,
+          "formattedValue": "2.00M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "179.85K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0002,
+      "formattedValue": "157.08K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0002,
+          "formattedValue": "157.08K"
         }
       ]
     }

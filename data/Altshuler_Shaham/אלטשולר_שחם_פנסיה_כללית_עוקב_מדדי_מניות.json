@@ -2,25 +2,25 @@
   "fundName": "אלטשולר שחם פנסיה כללית עוקב מדדי מניות",
   "trackId": "13820",
   "totalAssetsBN": 0.09,
-  "formattedTotalAssets": "88.91M",
+  "formattedTotalAssets": "86.72M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0453,
       "formattedValue": "45.31M",
-      "percentage": 50.96
+      "percentage": 52.25
     },
     {
       "name": "Bonds",
       "value": 0.0381,
       "formattedValue": "38.06M",
-      "percentage": 42.81
+      "percentage": 43.89
     },
     {
       "name": "Derivatives",
       "value": 0.0057,
       "formattedValue": "5.73M",
-      "percentage": 6.45
+      "percentage": 6.61
     },
     {
       "name": "Futures",
@@ -32,10 +32,44 @@
       "name": "Other Assets",
       "value": -0.0004,
       "formattedValue": "-431.47K",
-      "percentage": -0.49
+      "percentage": -0.5
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": -0.0022,
+      "formattedValue": "-2.19M",
+      "percentage": -2.53
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": -0.0022,
+        "formattedValue": "-2.19M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "לאומי",
+              "value": 0.0008,
+              "formattedValue": "848.87K",
+              "percentage": -38.71,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Citibank, NA",
+              "value": -0.003,
+              "formattedValue": "-3.04M",
+              "percentage": 138.71,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Other Assets": [
       {
         "subclass": "General",
@@ -265,6 +299,28 @@
   },
   "geoSunburst": [
     {
+      "name": "Israel",
+      "value": 0.0672,
+      "formattedValue": "67.20M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0381,
+          "formattedValue": "38.06M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0287,
+          "formattedValue": "28.70M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0004,
+          "formattedValue": "431.47K"
+        }
+      ]
+    },
+    {
       "name": "USA",
       "value": 0.0541,
       "formattedValue": "54.10M",
@@ -282,23 +338,6 @@
       ]
     },
     {
-      "name": "Israel",
-      "value": 0.0385,
-      "formattedValue": "38.50M",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.0381,
-          "formattedValue": "38.06M"
-        },
-        {
-          "name": "Other Assets",
-          "value": 0.0004,
-          "formattedValue": "431.47K"
-        }
-      ]
-    },
-    {
       "name": "Global",
       "value": 0.0002,
       "formattedValue": "237.19K",
@@ -307,6 +346,57 @@
           "name": "Futures",
           "value": 0.0002,
           "formattedValue": "237.19K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.063,
+      "formattedValue": "63.04M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0453,
+          "formattedValue": "45.31M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0088,
+          "formattedValue": "8.80M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0087,
+          "formattedValue": "8.70M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0002,
+          "formattedValue": "237.19K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0585,
+      "formattedValue": "58.50M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0381,
+          "formattedValue": "38.06M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.02,
+          "formattedValue": "20.01M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0004,
+          "formattedValue": "431.47K"
         }
       ]
     }

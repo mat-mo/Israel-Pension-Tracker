@@ -2,25 +2,31 @@
   "fundName": "מיטב פנסיה כללית משולב סחיר",
   "trackId": "14267",
   "totalAssetsBN": 0.06,
-  "formattedTotalAssets": "59.83M",
+  "formattedTotalAssets": "61.56M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0449,
       "formattedValue": "44.94M",
-      "percentage": 75.1
+      "percentage": 72.99
     },
     {
       "name": "Bonds",
       "value": 0.0128,
       "formattedValue": "12.80M",
-      "percentage": 21.4
+      "percentage": 20.8
     },
     {
       "name": "Options",
       "value": 0.002,
       "formattedValue": "2.00M",
-      "percentage": 3.34
+      "percentage": 3.25
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0017,
+      "formattedValue": "1.73M",
+      "percentage": 2.81
     },
     {
       "name": "Derivatives",
@@ -32,7 +38,7 @@
       "name": "Warrants",
       "value": 0.0,
       "formattedValue": "39.20K",
-      "percentage": 0.07
+      "percentage": 0.06
     }
   ],
   "breakdown": {
@@ -892,7 +898,7 @@
               "value": 0.0,
               "formattedValue": "0.03K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "INNOVID CORP",
@@ -1201,6 +1207,34 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0017,
+        "formattedValue": "1.73M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0017,
+              "formattedValue": "1.73M",
+              "percentage": 99.8,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "פועלים",
+              "value": 0.0,
+              "formattedValue": "3.52K",
+              "percentage": 0.2,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Bonds": [
       {
         "subclass": "Government Bonds",
@@ -1483,8 +1517,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0571,
-      "formattedValue": "57.08M",
+      "value": 0.0609,
+      "formattedValue": "60.92M",
       "children": [
         {
           "name": "Stocks",
@@ -1495,6 +1529,11 @@
           "name": "Bonds",
           "value": 0.0128,
           "formattedValue": "12.77M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0038,
+          "formattedValue": "3.84M"
         },
         {
           "name": "Options",
@@ -1536,6 +1575,88 @@
           "name": "Stocks",
           "value": 0.0001,
           "formattedValue": "144.14K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0605,
+      "formattedValue": "60.54M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0419,
+          "formattedValue": "41.86M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0127,
+          "formattedValue": "12.71M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0037,
+          "formattedValue": "3.71M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0023,
+          "formattedValue": "2.25M"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0027,
+      "formattedValue": "2.75M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0026,
+          "formattedValue": "2.63M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "122.62K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0002,
+      "formattedValue": "162.46K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "162.46K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.0001,
+      "formattedValue": "144.17K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "144.17K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0001,
+      "formattedValue": "142.45K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "142.45K"
         }
       ]
     }

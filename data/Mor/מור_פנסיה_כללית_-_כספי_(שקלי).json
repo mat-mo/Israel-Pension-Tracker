@@ -2,19 +2,25 @@
   "fundName": "מור פנסיה כללית - כספי (שקלי)",
   "trackId": "13926",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "256.25K",
+  "formattedTotalAssets": "261.57K",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0003,
       "formattedValue": "252.51K",
-      "percentage": 98.54
+      "percentage": 96.54
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "5.32K",
+      "percentage": 2.03
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "3.74K",
-      "percentage": 1.46
+      "percentage": 1.43
     }
   ],
   "breakdown": {
@@ -47,6 +53,27 @@
               "value": -0.0,
               "formattedValue": "-0.00K",
               "percentage": -0.04,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0,
+        "formattedValue": "5.32K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0,
+              "formattedValue": "5.32K",
+              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -113,6 +140,20 @@
   "geoSunburst": [
     {
       "name": "Israel",
+      "value": 0.0003,
+      "formattedValue": "252.51K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "252.51K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
       "value": 0.0003,
       "formattedValue": "252.51K",
       "children": [

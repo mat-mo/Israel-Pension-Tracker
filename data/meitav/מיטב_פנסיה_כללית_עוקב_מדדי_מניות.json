@@ -1,26 +1,32 @@
 {
   "fundName": "מיטב פנסיה כללית עוקב מדדי מניות",
   "trackId": "15362",
-  "totalAssetsBN": 0.11,
-  "formattedTotalAssets": "111.95M",
+  "totalAssetsBN": 0.12,
+  "formattedTotalAssets": "124.83M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0865,
       "formattedValue": "86.54M",
-      "percentage": 77.3
+      "percentage": 69.33
     },
     {
       "name": "Stocks",
       "value": 0.0212,
       "formattedValue": "21.16M",
-      "percentage": 18.91
+      "percentage": 16.95
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0129,
+      "formattedValue": "12.88M",
+      "percentage": 10.32
     },
     {
       "name": "Derivatives",
       "value": 0.0042,
       "formattedValue": "4.24M",
-      "percentage": 3.79
+      "percentage": 3.4
     }
   ],
   "breakdown": {
@@ -61,6 +67,34 @@
               "formattedValue": "819.25K",
               "percentage": 3.87,
               "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0129,
+        "formattedValue": "12.88M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0084,
+              "formattedValue": "8.40M",
+              "percentage": 65.2,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "לאומי למשכנתאות‎ בנק",
+              "value": 0.0045,
+              "formattedValue": "4.48M",
+              "percentage": 34.8,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -233,13 +267,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0882,
-      "formattedValue": "88.16M",
+      "value": 0.1173,
+      "formattedValue": "117.34M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0865,
           "formattedValue": "86.54M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0292,
+          "formattedValue": "29.18M"
         },
         {
           "name": "Derivatives",
@@ -257,6 +296,52 @@
           "name": "Stocks",
           "value": 0.0212,
           "formattedValue": "21.16M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0034,
+          "formattedValue": "3.45M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.1011,
+      "formattedValue": "101.11M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0865,
+          "formattedValue": "86.54M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.013,
+          "formattedValue": "12.96M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0016,
+          "formattedValue": "1.62M"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0408,
+      "formattedValue": "40.84M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0212,
+          "formattedValue": "21.16M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0162,
+          "formattedValue": "16.22M"
         },
         {
           "name": "Derivatives",

@@ -2,25 +2,31 @@
   "fundName": "מיטב פנסיה כללית הלכה",
   "trackId": "2159",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "7.01M",
+  "formattedTotalAssets": "8.13M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0069,
       "formattedValue": "6.94M",
-      "percentage": 98.97
+      "percentage": 85.35
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0011,
+      "formattedValue": "1.12M",
+      "percentage": 13.76
     },
     {
       "name": "Options",
       "value": 0.0,
       "formattedValue": "34.27K",
-      "percentage": 0.49
+      "percentage": 0.42
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "34.22K",
-      "percentage": 0.49
+      "percentage": 0.42
     },
     {
       "name": "Futures",
@@ -44,6 +50,27 @@
               "name": "C 3040 NOV",
               "value": 0.0,
               "formattedValue": "34.27K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0011,
+        "formattedValue": "1.12M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0011,
+              "formattedValue": "1.12M",
               "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
@@ -325,13 +352,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0066,
-      "formattedValue": "6.64M",
+      "value": 0.008,
+      "formattedValue": "8.05M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0066,
           "formattedValue": "6.64M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0014,
+          "formattedValue": "1.41M"
         }
       ]
     },
@@ -340,6 +372,42 @@
       "value": 0.0003,
       "formattedValue": "292.37K",
       "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "292.37K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0071,
+      "formattedValue": "7.12M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0066,
+          "formattedValue": "6.64M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "475.05K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0012,
+      "formattedValue": "1.22M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0009,
+          "formattedValue": "930.19K"
+        },
         {
           "name": "Bonds",
           "value": 0.0003,

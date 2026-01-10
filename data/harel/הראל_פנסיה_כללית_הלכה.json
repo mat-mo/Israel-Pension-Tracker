@@ -2,37 +2,43 @@
   "fundName": "הראל פנסיה כללית הלכה",
   "trackId": "13684",
   "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "16.31M",
+  "formattedTotalAssets": "24.22M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0161,
       "formattedValue": "16.15M",
-      "percentage": 99.0
+      "percentage": 66.66
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0079,
+      "formattedValue": "7.91M",
+      "percentage": 32.67
     },
     {
       "name": "Options",
       "value": 0.0003,
       "formattedValue": "312.26K",
-      "percentage": 1.91
+      "percentage": 1.29
     },
     {
       "name": "Futures",
       "value": 0.0001,
       "formattedValue": "107.78K",
-      "percentage": 0.66
+      "percentage": 0.44
     },
     {
       "name": "Other Assets",
       "value": -0.0001,
       "formattedValue": "-116.94K",
-      "percentage": -0.72
+      "percentage": -0.48
     },
     {
       "name": "Derivatives",
       "value": -0.0001,
       "formattedValue": "-139.73K",
-      "percentage": -0.86
+      "percentage": -0.58
     }
   ],
   "breakdown": {
@@ -58,7 +64,7 @@
               "value": 0.0,
               "formattedValue": "23.42K",
               "percentage": 21.73,
-              "countryEmoji": "🇪🇺   "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "mini MSCI Emg Mkt FU 12/25",
@@ -468,18 +474,72 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0079,
+        "formattedValue": "7.91M",
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי",
+              "value": 0.004,
+              "formattedValue": "4.03M",
+              "percentage": 50.87,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הבינלאומי",
+              "value": 0.0017,
+              "formattedValue": "1.73M",
+              "percentage": 21.92,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0015,
+              "formattedValue": "1.46M",
+              "percentage": 18.4,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0005,
+              "formattedValue": "454.69K",
+              "percentage": 5.75,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0002,
+              "formattedValue": "242.72K",
+              "percentage": 3.07,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0176,
-      "formattedValue": "17.63M",
+      "value": 0.0255,
+      "formattedValue": "25.55M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0161,
           "formattedValue": "16.15M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0079,
+          "formattedValue": "7.91M"
         },
         {
           "name": "Other Assets",
@@ -495,6 +555,69 @@
           "name": "Derivatives",
           "value": 0.0001,
           "formattedValue": "148.92K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0236,
+      "formattedValue": "23.60M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0161,
+          "formattedValue": "16.15M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0066,
+          "formattedValue": "6.55M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0006,
+          "formattedValue": "555.44K"
+        },
+        {
+          "name": "Options",
+          "value": 0.0003,
+          "formattedValue": "343.26K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0015,
+      "formattedValue": "1.53M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.001,
+          "formattedValue": "951.03K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0004,
+          "formattedValue": "438.49K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0001,
+          "formattedValue": "143.30K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0003,
+      "formattedValue": "338.12K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "338.12K"
         }
       ]
     }

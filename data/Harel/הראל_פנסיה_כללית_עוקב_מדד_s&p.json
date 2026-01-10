@@ -1,26 +1,32 @@
 {
   "fundName": "הראל פנסיה כללית עוקב מדד s&p",
   "trackId": "13424",
-  "totalAssetsBN": 1.09,
-  "formattedTotalAssets": "1.09B",
+  "totalAssetsBN": 2.58,
+  "formattedTotalAssets": "2.58B",
   "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 1.4898,
+      "formattedValue": "1.49B",
+      "percentage": 57.78
+    },
     {
       "name": "Stocks",
       "value": 0.7393,
       "formattedValue": "739.34M",
-      "percentage": 67.92
+      "percentage": 28.67
     },
     {
       "name": "Bonds",
       "value": 0.3544,
       "formattedValue": "354.43M",
-      "percentage": 32.56
+      "percentage": 13.75
     },
     {
       "name": "Derivatives",
       "value": 0.0233,
       "formattedValue": "23.33M",
-      "percentage": 2.14
+      "percentage": 0.9
     },
     {
       "name": "Futures",
@@ -32,7 +38,7 @@
       "name": "Other Assets",
       "value": -0.0285,
       "formattedValue": "-28.54M",
-      "percentage": -2.62
+      "percentage": -1.11
     }
   ],
   "breakdown": {
@@ -280,9 +286,85 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 1.4898,
+        "formattedValue": "1.49B",
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.5666,
+              "formattedValue": "566.58M",
+              "percentage": 38.03,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.5586,
+              "formattedValue": "558.59M",
+              "percentage": 37.49,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.2946,
+              "formattedValue": "294.63M",
+              "percentage": 19.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0694,
+              "formattedValue": "69.40M",
+              "percentage": 4.66,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הבינלאומי",
+              "value": 0.0006,
+              "formattedValue": "587.93K",
+              "percentage": 0.04,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
+    {
+      "name": "Israel",
+      "value": 1.8527,
+      "formattedValue": "1.85B",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.4898,
+          "formattedValue": "1.49B"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.2825,
+          "formattedValue": "282.50M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0422,
+          "formattedValue": "42.23M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0382,
+          "formattedValue": "38.20M"
+        }
+      ]
+    },
     {
       "name": "USA",
       "value": 0.8725,
@@ -304,12 +386,19 @@
           "formattedValue": "61.26M"
         }
       ]
-    },
+    }
+  ],
+  "currencySunburst": [
     {
-      "name": "Israel",
-      "value": 0.3629,
-      "formattedValue": "362.93M",
+      "name": "ILS",
+      "value": 1.6534,
+      "formattedValue": "1.65B",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 1.3676,
+          "formattedValue": "1.37B"
+        },
         {
           "name": "Bonds",
           "value": 0.2825,
@@ -317,13 +406,40 @@
         },
         {
           "name": "Other Assets",
-          "value": 0.0422,
-          "formattedValue": "42.23M"
+          "value": 0.0033,
+          "formattedValue": "3.27M"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 1.0719,
+      "formattedValue": "1.07B",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.7393,
+          "formattedValue": "739.34M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.1222,
+          "formattedValue": "122.18M"
         },
         {
           "name": "Derivatives",
-          "value": 0.0382,
-          "formattedValue": "38.20M"
+          "value": 0.0995,
+          "formattedValue": "99.46M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0719,
+          "formattedValue": "71.93M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.039,
+          "formattedValue": "38.96M"
         }
       ]
     }

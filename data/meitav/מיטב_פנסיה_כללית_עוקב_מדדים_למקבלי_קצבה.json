@@ -2,25 +2,31 @@
   "fundName": "מיטב פנסיה כללית עוקב מדדים למקבלי קצבה",
   "trackId": "15665",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "3.96M",
+  "formattedTotalAssets": "4.19M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0031,
       "formattedValue": "3.11M",
-      "percentage": 78.64
+      "percentage": 74.22
     },
     {
       "name": "Bonds",
       "value": 0.0008,
       "formattedValue": "832.69K",
-      "percentage": 21.04
+      "percentage": 19.85
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0002,
+      "formattedValue": "235.83K",
+      "percentage": 5.62
     },
     {
       "name": "Options",
       "value": 0.0,
       "formattedValue": "24.22K",
-      "percentage": 0.61
+      "percentage": 0.58
     },
     {
       "name": "Futures",
@@ -32,7 +38,7 @@
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-11.58K",
-      "percentage": -0.29
+      "percentage": -0.28
     }
   ],
   "breakdown": {
@@ -172,6 +178,41 @@
               "value": 0.0,
               "formattedValue": "24.22K",
               "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0002,
+        "formattedValue": "235.83K",
+        "percentageOfClass": 100.0,
+        "itemCount": 3,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0002,
+              "formattedValue": "181.48K",
+              "percentage": 76.95,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "פועלים",
+              "value": 0.0,
+              "formattedValue": "28.68K",
+              "percentage": 12.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "דיסקונט",
+              "value": 0.0,
+              "formattedValue": "25.67K",
+              "percentage": 10.89,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -371,8 +412,8 @@
     },
     {
       "name": "Israel",
-      "value": 0.0014,
-      "formattedValue": "1.42M",
+      "value": 0.0018,
+      "formattedValue": "1.76M",
       "children": [
         {
           "name": "Bonds",
@@ -383,6 +424,11 @@
           "name": "Stocks",
           "value": 0.0006,
           "formattedValue": "589.04K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "342.50K"
         }
       ]
     },
@@ -395,6 +441,42 @@
           "name": "Stocks",
           "value": 0.0005,
           "formattedValue": "519.50K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0031,
+      "formattedValue": "3.09M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.002,
+          "formattedValue": "1.99M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0008,
+          "formattedValue": "832.69K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "269.87K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0011,
+      "formattedValue": "1.12M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0011,
+          "formattedValue": "1.12M"
         }
       ]
     }

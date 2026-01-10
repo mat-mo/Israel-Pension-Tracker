@@ -1,38 +1,56 @@
 {
   "fundName": "מנורה מבטחים פנסיה מסלול אג\"ח ממשלות",
   "trackId": "15342",
-  "totalAssetsBN": 0.48,
-  "formattedTotalAssets": "481.30M",
+  "totalAssetsBN": 0.8,
+  "formattedTotalAssets": "795.46M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.438,
       "formattedValue": "437.97M",
-      "percentage": 91.0
+      "percentage": 55.06
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.1805,
+      "formattedValue": "180.52M",
+      "percentage": 22.69
+    },
+    {
+      "name": "Loans",
+      "value": 0.0717,
+      "formattedValue": "71.73M",
+      "percentage": 9.02
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.061,
+      "formattedValue": "60.99M",
+      "percentage": 7.67
     },
     {
       "name": "Investment Funds",
       "value": 0.0292,
       "formattedValue": "29.17M",
-      "percentage": 6.06
+      "percentage": 3.67
     },
     {
       "name": "Structured Products",
       "value": 0.0087,
       "formattedValue": "8.65M",
-      "percentage": 1.8
+      "percentage": 1.09
     },
     {
-      "name": "Non-Tradable Bonds",
-      "value": 0.0055,
-      "formattedValue": "5.46M",
-      "percentage": 1.13
+      "name": "Cash & Equivalents",
+      "value": 0.0064,
+      "formattedValue": "6.38M",
+      "percentage": 0.8
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "33.52K",
-      "percentage": 0.01
+      "percentage": 0.0
     },
     {
       "name": "Non-Tradable Stocks",
@@ -164,204 +182,1061 @@
     "Non-Tradable Bonds": [
       {
         "subclass": "General",
-        "value": 0.0055,
-        "formattedValue": "5.46M",
+        "value": 0.1805,
+        "formattedValue": "180.52M",
         "percentageOfClass": 100.0,
-        "itemCount": 27,
-        "totalPages": 3,
+        "itemCount": 146,
+        "totalPages": 15,
         "holdingsPages": [
           [
+            {
+              "name": "ערד סדרה 8892 4.8% 2035",
+              "value": 0.007,
+              "formattedValue": "7.03M",
+              "percentage": 3.9,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8889 4.8% 2035",
+              "value": 0.0039,
+              "formattedValue": "3.93M",
+              "percentage": 2.18,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8894 4.8% 2036",
+              "value": 0.0038,
+              "formattedValue": "3.81M",
+              "percentage": 2.11,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8897 4.8% 2036",
+              "value": 0.0038,
+              "formattedValue": "3.77M",
+              "percentage": 2.09,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8905 4.8% 2037",
+              "value": 0.0035,
+              "formattedValue": "3.53M",
+              "percentage": 1.96,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8882 4.8% 2035",
+              "value": 0.0035,
+              "formattedValue": "3.46M",
+              "percentage": 1.92,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8901 4.8% 2036",
+              "value": 0.0034,
+              "formattedValue": "3.36M",
+              "percentage": 1.86,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8880 4.8% 2034",
+              "value": 0.0033,
+              "formattedValue": "3.28M",
+              "percentage": 1.82,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8859 4.80% 2033",
+              "value": 0.0032,
+              "formattedValue": "3.18M",
+              "percentage": 1.76,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8903 4.8% 2036",
+              "value": 0.0031,
+              "formattedValue": "3.15M",
+              "percentage": 1.74,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8874 4.8% 2034",
+              "value": 0.0031,
+              "formattedValue": "3.14M",
+              "percentage": 1.74,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8872 4.8% 2034",
+              "value": 0.0031,
+              "formattedValue": "3.06M",
+              "percentage": 1.69,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8895 4.8% 2036",
+              "value": 0.0031,
+              "formattedValue": "3.05M",
+              "percentage": 1.69,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8877 4.8% 2034",
+              "value": 0.003,
+              "formattedValue": "2.96M",
+              "percentage": 1.64,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8853 4.80% 2032",
+              "value": 0.0028,
+              "formattedValue": "2.78M",
+              "percentage": 1.54,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8841 4.80% 2031",
+              "value": 0.0028,
+              "formattedValue": "2.78M",
+              "percentage": 1.54,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8862 4.80% 2033",
+              "value": 0.0027,
+              "formattedValue": "2.72M",
+              "percentage": 1.51,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8866 4.8% 2033",
+              "value": 0.0027,
+              "formattedValue": "2.68M",
+              "percentage": 1.48,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8865 4.8% 2033",
+              "value": 0.0027,
+              "formattedValue": "2.67M",
+              "percentage": 1.48,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8832 4.80% 2030",
+              "value": 0.0025,
+              "formattedValue": "2.51M",
+              "percentage": 1.39,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8898 4.8% 2036",
+              "value": 0.0024,
+              "formattedValue": "2.43M",
+              "percentage": 1.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8837 4.80% 2031",
+              "value": 0.0023,
+              "formattedValue": "2.35M",
+              "percentage": 1.3,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8893 4.8% 2036",
+              "value": 0.0023,
+              "formattedValue": "2.33M",
+              "percentage": 1.29,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8879 4.8% 2034",
+              "value": 0.0023,
+              "formattedValue": "2.26M",
+              "percentage": 1.25,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8850 4.80% 2032",
+              "value": 0.0022,
+              "formattedValue": "2.21M",
+              "percentage": 1.22,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8856 4.80% 2032",
+              "value": 0.0022,
+              "formattedValue": "2.21M",
+              "percentage": 1.22,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8824 4.80% 2030",
+              "value": 0.0022,
+              "formattedValue": "2.19M",
+              "percentage": 1.21,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8838 4.80% 2031",
+              "value": 0.0022,
+              "formattedValue": "2.17M",
+              "percentage": 1.2,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8858 4.80% 2033",
+              "value": 0.0021,
+              "formattedValue": "2.12M",
+              "percentage": 1.17,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8846 4.80% 2032",
+              "value": 0.0019,
+              "formattedValue": "1.93M",
+              "percentage": 1.07,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8891 4.8% 2035",
+              "value": 0.0019,
+              "formattedValue": "1.90M",
+              "percentage": 1.05,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8855 4.80% 2032",
+              "value": 0.0018,
+              "formattedValue": "1.79M",
+              "percentage": 0.99,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8826 4.80% 2030",
+              "value": 0.0018,
+              "formattedValue": "1.76M",
+              "percentage": 0.98,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8851 4.80% 2032",
+              "value": 0.0017,
+              "formattedValue": "1.73M",
+              "percentage": 0.96,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8871 4.8% 2034",
+              "value": 0.0017,
+              "formattedValue": "1.73M",
+              "percentage": 0.96,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8857 4.80% 2032",
+              "value": 0.0017,
+              "formattedValue": "1.71M",
+              "percentage": 0.95,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8825 4.80% 2030",
+              "value": 0.0017,
+              "formattedValue": "1.71M",
+              "percentage": 0.95,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8883 4.8% 2035",
+              "value": 0.0016,
+              "formattedValue": "1.61M",
+              "percentage": 0.89,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8848 4.80% 2032",
+              "value": 0.0016,
+              "formattedValue": "1.56M",
+              "percentage": 0.87,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8817 4.80% 2029",
+              "value": 0.0016,
+              "formattedValue": "1.56M",
+              "percentage": 0.86,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8845 4.80% 2031",
+              "value": 0.0016,
+              "formattedValue": "1.56M",
+              "percentage": 0.86,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8863 4.80% 2033",
+              "value": 0.0015,
+              "formattedValue": "1.54M",
+              "percentage": 0.85,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8803 4.80% 2028",
+              "value": 0.0015,
+              "formattedValue": "1.51M",
+              "percentage": 0.84,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8818 4.80% 2029",
+              "value": 0.0015,
+              "formattedValue": "1.48M",
+              "percentage": 0.82,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8904 4.8% 2036",
+              "value": 0.0015,
+              "formattedValue": "1.47M",
+              "percentage": 0.82,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8812 4.80% 2029",
+              "value": 0.0015,
+              "formattedValue": "1.46M",
+              "percentage": 0.81,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8844 4.80% 2031",
+              "value": 0.0015,
+              "formattedValue": "1.46M",
+              "percentage": 0.81,
+              "countryEmoji": ""
+            },
             {
               "name": "מקורות אג\"ח 6 רצף",
               "value": 0.0015,
               "formattedValue": "1.45M",
-              "percentage": 26.62,
+              "percentage": 0.81,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מקורות אג\"ח 8 רצף",
               "value": 0.0014,
               "formattedValue": "1.45M",
-              "percentage": 26.54,
+              "percentage": 0.8,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד סדרה 8808 4.80% 2028",
+              "value": 0.0014,
+              "formattedValue": "1.44M",
+              "percentage": 0.8,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8813 4.80% 2029",
+              "value": 0.0014,
+              "formattedValue": "1.42M",
+              "percentage": 0.79,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8906 4.8% 2037",
+              "value": 0.0014,
+              "formattedValue": "1.41M",
+              "percentage": 0.78,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8899 4.8% 2036",
+              "value": 0.0014,
+              "formattedValue": "1.41M",
+              "percentage": 0.78,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8807 4.80% 2028",
+              "value": 0.0014,
+              "formattedValue": "1.36M",
+              "percentage": 0.75,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8842 4.80% 2031",
+              "value": 0.0013,
+              "formattedValue": "1.34M",
+              "percentage": 0.74,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8821 4.80% 2029",
+              "value": 0.0013,
+              "formattedValue": "1.33M",
+              "percentage": 0.74,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8787 4.8%",
+              "value": 0.0013,
+              "formattedValue": "1.31M",
+              "percentage": 0.73,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8869 4.8% 2033",
+              "value": 0.0013,
+              "formattedValue": "1.30M",
+              "percentage": 0.72,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8815 4.80% 2029",
+              "value": 0.0013,
+              "formattedValue": "1.29M",
+              "percentage": 0.71,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8867 4.8% 2033",
+              "value": 0.0013,
+              "formattedValue": "1.28M",
+              "percentage": 0.71,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8847 4.80% 2032",
+              "value": 0.0013,
+              "formattedValue": "1.27M",
+              "percentage": 0.7,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8799 4.8% 2028",
+              "value": 0.0012,
+              "formattedValue": "1.21M",
+              "percentage": 0.67,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8823 4.80% 2029",
+              "value": 0.0012,
+              "formattedValue": "1.20M",
+              "percentage": 0.67,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8854 4.80% 2032",
+              "value": 0.0012,
+              "formattedValue": "1.19M",
+              "percentage": 0.66,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8876 4.8% 2034",
+              "value": 0.0012,
+              "formattedValue": "1.19M",
+              "percentage": 0.66,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8793  4.8% 2027",
+              "value": 0.0012,
+              "formattedValue": "1.19M",
+              "percentage": 0.66,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8829 4.80% 2030",
+              "value": 0.0012,
+              "formattedValue": "1.17M",
+              "percentage": 0.65,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8809 4.80% 2028",
+              "value": 0.0012,
+              "formattedValue": "1.16M",
+              "percentage": 0.64,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8864 4.8% 2033",
+              "value": 0.0012,
+              "formattedValue": "1.16M",
+              "percentage": 0.64,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8819 4.80% 2029",
+              "value": 0.0012,
+              "formattedValue": "1.15M",
+              "percentage": 0.64,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8896 4.8% 2036",
+              "value": 0.0011,
+              "formattedValue": "1.14M",
+              "percentage": 0.63,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8839 4.80% 2031",
+              "value": 0.0011,
+              "formattedValue": "1.14M",
+              "percentage": 0.63,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8797 4.8% 2027",
+              "value": 0.0011,
+              "formattedValue": "1.12M",
+              "percentage": 0.62,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8796 4.8% 2027",
+              "value": 0.0011,
+              "formattedValue": "1.11M",
+              "percentage": 0.61,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8789 4.8% 2027",
+              "value": 0.001,
+              "formattedValue": "1.02M",
+              "percentage": 0.56,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8849 4.80% 2032",
+              "value": 0.001,
+              "formattedValue": "998.27K",
+              "percentage": 0.55,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8820 4.80% 2029",
+              "value": 0.001,
+              "formattedValue": "983.66K",
+              "percentage": 0.54,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8873 4.8% 2034",
+              "value": 0.001,
+              "formattedValue": "978.22K",
+              "percentage": 0.54,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8902 4.8% 2036",
+              "value": 0.001,
+              "formattedValue": "974.29K",
+              "percentage": 0.54,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8805 4.80% 2028",
+              "value": 0.001,
+              "formattedValue": "969.81K",
+              "percentage": 0.54,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8881 4.8% 2034",
+              "value": 0.001,
+              "formattedValue": "959.08K",
+              "percentage": 0.53,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה  8802  4.8%  2028",
+              "value": 0.001,
+              "formattedValue": "954.08K",
+              "percentage": 0.53,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8843 4.80% 2031",
+              "value": 0.001,
+              "formattedValue": "951.13K",
+              "percentage": 0.53,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8860 4.80% 2033",
+              "value": 0.0009,
+              "formattedValue": "936.49K",
+              "percentage": 0.52,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8784  % 4.8",
+              "value": 0.0009,
+              "formattedValue": "896.74K",
+              "percentage": 0.5,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8801 4.8% 2028",
+              "value": 0.0008,
+              "formattedValue": "829.29K",
+              "percentage": 0.46,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8798 4.8% 2028",
+              "value": 0.0008,
+              "formattedValue": "817.55K",
+              "percentage": 0.45,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8814 4.80% 2029",
+              "value": 0.0008,
+              "formattedValue": "815.25K",
+              "percentage": 0.45,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8771 4.8% 2024",
+              "value": 0.0008,
+              "formattedValue": "766.39K",
+              "percentage": 0.42,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8788 % 4.8",
+              "value": 0.0008,
+              "formattedValue": "763.59K",
+              "percentage": 0.42,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8795 4.8% 2027",
+              "value": 0.0008,
+              "formattedValue": "754.82K",
+              "percentage": 0.42,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8772 4.8% 2024",
+              "value": 0.0008,
+              "formattedValue": "751.26K",
+              "percentage": 0.42,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8833 4.80% 2030",
+              "value": 0.0008,
+              "formattedValue": "750.57K",
+              "percentage": 0.42,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8810 4.80% 2029",
+              "value": 0.0007,
+              "formattedValue": "726.78K",
+              "percentage": 0.4,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8774 4.8% 2024",
+              "value": 0.0007,
+              "formattedValue": "722.52K",
+              "percentage": 0.4,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8800 4.8% 2028",
+              "value": 0.0007,
+              "formattedValue": "698.35K",
+              "percentage": 0.39,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8794  4.8% 2027",
+              "value": 0.0007,
+              "formattedValue": "692.74K",
+              "percentage": 0.38,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8775 4.8% 2024",
+              "value": 0.0007,
+              "formattedValue": "677.54K",
+              "percentage": 0.38,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8900 4.8% 2036",
+              "value": 0.0007,
+              "formattedValue": "653.92K",
+              "percentage": 0.36,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8811 4.80% 2029",
+              "value": 0.0006,
+              "formattedValue": "613.41K",
+              "percentage": 0.34,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8827 4.80% 2030",
+              "value": 0.0005,
+              "formattedValue": "549.01K",
+              "percentage": 0.3,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8790 4.8% 2027",
+              "value": 0.0005,
+              "formattedValue": "537.55K",
+              "percentage": 0.3,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8778 4.8% 2024",
+              "value": 0.0005,
+              "formattedValue": "517.44K",
+              "percentage": 0.29,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8852 4.80% 2032",
+              "value": 0.0005,
+              "formattedValue": "505.67K",
+              "percentage": 0.28,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8776 4.8% 2024",
+              "value": 0.0005,
+              "formattedValue": "465.56K",
+              "percentage": 0.26,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8781 4.8%",
+              "value": 0.0005,
+              "formattedValue": "453.71K",
+              "percentage": 0.25,
+              "countryEmoji": ""
             },
             {
               "name": "נתיבי גז אג\"ח ג רצף",
               "value": 0.0004,
               "formattedValue": "436.21K",
-              "percentage": 7.99,
+              "percentage": 0.24,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד סדרה 8834 4.80% 2031",
+              "value": 0.0004,
+              "formattedValue": "430.42K",
+              "percentage": 0.24,
+              "countryEmoji": ""
             },
             {
               "name": "חברת החשמל 2029 צמוד רצף",
               "value": 0.0004,
               "formattedValue": "359.03K",
-              "percentage": 6.58,
+              "percentage": 0.2,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד סדרה 8786 % 4.8",
+              "value": 0.0003,
+              "formattedValue": "321.63K",
+              "percentage": 0.18,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8773 4.8% 2024",
+              "value": 0.0003,
+              "formattedValue": "305.92K",
+              "percentage": 0.17,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8836 4.80% 2031",
+              "value": 0.0003,
+              "formattedValue": "301.50K",
+              "percentage": 0.17,
+              "countryEmoji": ""
             },
             {
               "name": "תשתיות אנרגיה אג\"ח א רצף",
               "value": 0.0002,
               "formattedValue": "249.68K",
-              "percentage": 4.57,
+              "percentage": 0.14,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד סדרה 8861 4.80% 2033",
+              "value": 0.0002,
+              "formattedValue": "225.49K",
+              "percentage": 0.12,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8806 4.80% 2028",
+              "value": 0.0002,
+              "formattedValue": "213.26K",
+              "percentage": 0.12,
+              "countryEmoji": ""
             },
             {
               "name": "מת\"ם ב רצף",
               "value": 0.0002,
               "formattedValue": "197.25K",
-              "percentage": 3.61,
+              "percentage": 0.11,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "אגד אגח 1-רמ",
               "value": 0.0002,
               "formattedValue": "195.17K",
-              "percentage": 3.57,
+              "percentage": 0.11,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ביטוח ישיר סדרה י\"א רצף",
               "value": 0.0002,
               "formattedValue": "174.40K",
-              "percentage": 3.19,
+              "percentage": 0.1,
               "countryEmoji": "🇮🇱"
             },
+            {
+              "name": "ערד סדרה 8830 4.80% 2030",
+              "value": 0.0002,
+              "formattedValue": "174.29K",
+              "percentage": 0.1,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8777 4.8% 2024",
+              "value": 0.0002,
+              "formattedValue": "168.92K",
+              "percentage": 0.09,
+              "countryEmoji": ""
+            }
+          ],
+          [
             {
               "name": "כלל תעשאג טז-רמ",
               "value": 0.0002,
               "formattedValue": "167.33K",
-              "percentage": 3.07,
+              "percentage": 0.09,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מימון משכנתאות הנפקות 1",
               "value": 0.0002,
               "formattedValue": "151.93K",
-              "percentage": 2.78,
+              "percentage": 0.08,
               "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
+            },
             {
               "name": "ביטוח ישיר אג\"ח יב - רמ",
               "value": 0.0001,
               "formattedValue": "115.97K",
-              "percentage": 2.12,
+              "percentage": 0.06,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד סדרה 8822 4.80% 2029",
+              "value": 0.0001,
+              "formattedValue": "102.02K",
+              "percentage": 0.06,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8840 4.80% 2031",
+              "value": 0.0001,
+              "formattedValue": "96.33K",
+              "percentage": 0.05,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8831 4.80% 2030",
+              "value": 0.0001,
+              "formattedValue": "90.12K",
+              "percentage": 0.05,
+              "countryEmoji": ""
             },
             {
               "name": "קרן שמש אגח א-רמ",
               "value": 0.0001,
               "formattedValue": "88.83K",
-              "percentage": 1.63,
+              "percentage": 0.05,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "גדות מסף אגא-רמ",
               "value": 0.0001,
               "formattedValue": "78.84K",
-              "percentage": 1.44,
+              "percentage": 0.04,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מימון משכנתאות הנפקות 2א",
               "value": 0.0001,
               "formattedValue": "70.41K",
-              "percentage": 1.29,
+              "percentage": 0.04,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מימון משכנתאות א",
               "value": 0.0001,
               "formattedValue": "60.95K",
-              "percentage": 1.12,
+              "percentage": 0.03,
               "countryEmoji": "🇮🇱"
-            },
+            }
+          ],
+          [
             {
               "name": "רפאל אגח ה רצף",
               "value": 0.0,
               "formattedValue": "48.77K",
-              "percentage": 0.89,
+              "percentage": 0.03,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "נתיבי גז אג\"ח א רצף",
               "value": 0.0,
               "formattedValue": "47.39K",
-              "percentage": 0.87,
+              "percentage": 0.03,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "מימון משכנתאות הנפקות 2ב",
               "value": 0.0,
               "formattedValue": "36.83K",
-              "percentage": 0.67,
+              "percentage": 0.02,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "נתיבים אג\"ח קונצרן (נסחר $ ) רצף",
               "value": 0.0,
               "formattedValue": "32.21K",
-              "percentage": 0.59,
+              "percentage": 0.02,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "נתיבי גז אג\"ח א' רצף",
               "value": 0.0,
               "formattedValue": "15.48K",
-              "percentage": 0.28,
+              "percentage": 0.01,
               "countryEmoji": "🇮🇱"
-            }
-          ],
-          [
+            },
+            {
+              "name": "ערד סדרה 8875 4.8% 2034",
+              "value": 0.0,
+              "formattedValue": "7.52K",
+              "percentage": 0.0,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8884 4.8% 2035",
+              "value": 0.0,
+              "formattedValue": "6.49K",
+              "percentage": 0.0,
+              "countryEmoji": ""
+            },
             {
               "name": "רפאל   אגח ד רצף",
               "value": 0.0,
               "formattedValue": "6.12K",
-              "percentage": 0.11,
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ישיר הנפקות אג\"ח 16",
               "value": 0.0,
               "formattedValue": "5.88K",
-              "percentage": 0.11,
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "אורמת אג\"ח ד רצף",
               "value": 0.0,
               "formattedValue": "5.83K",
-              "percentage": 0.11,
+              "percentage": 0.0,
               "countryEmoji": "🇺🇸"
-            },
+            }
+          ],
+          [
             {
               "name": "וי.אי.די התפלת מי אשקלון 0706 נשר",
               "value": 0.0,
               "formattedValue": "5.43K",
-              "percentage": 0.1,
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "לאומי אג\"ח 1",
               "value": 0.0,
               "formattedValue": "5.30K",
-              "percentage": 0.1,
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד סדרה 8868 4.8% 2033",
+              "value": 0.0,
+              "formattedValue": "4.63K",
+              "percentage": 0.0,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8878 4.8% 2034",
+              "value": 0.0,
+              "formattedValue": "4.45K",
+              "percentage": 0.0,
+              "countryEmoji": ""
             },
             {
               "name": "י.ח.ק להשקעות אג\"ח ב",
               "value": 0.0,
               "formattedValue": "1.22K",
-              "percentage": 0.02,
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "וי.אי.די התפלת מי אשקלון 0103 נשר",
               "value": 0.0,
               "formattedValue": "0.29K",
-              "percentage": 0.01,
+              "percentage": 0.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -432,21 +1307,21 @@
               "value": 0.0037,
               "formattedValue": "3.69M",
               "percentage": 12.66,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Arcmont Direct Lending IV (DLF IV)",
               "value": 0.0033,
               "formattedValue": "3.34M",
               "percentage": 11.44,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Arcmont Co-Invest (DLF IV)",
               "value": 0.0025,
               "formattedValue": "2.53M",
               "percentage": 8.67,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "ארבל 2",
@@ -529,6 +1404,76 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0064,
+        "formattedValue": "6.38M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים בע''מ",
+              "value": 0.0051,
+              "formattedValue": "5.13M",
+              "percentage": 80.45,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0012,
+              "formattedValue": "1.25M",
+              "percentage": 19.55,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Loans": [
+      {
+        "subclass": "Direct Loans",
+        "value": 0.0717,
+        "formattedValue": "71.73M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "תאגיד",
+              "value": 0.0717,
+              "formattedValue": "71.73M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "Unclassified",
+        "value": 0.061,
+        "formattedValue": "60.99M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "החזקה באפיק השקעה מובטח תשואה",
+              "value": 0.061,
+              "formattedValue": "60.99M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
+    ],
     "Non-Tradable Stocks": [
       {
         "subclass": "Direct Holdings",
@@ -554,8 +1499,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.4548,
-      "formattedValue": "454.79M",
+      "value": 0.5329,
+      "formattedValue": "532.94M",
       "children": [
         {
           "name": "Bonds",
@@ -563,9 +1508,19 @@
           "formattedValue": "437.97M"
         },
         {
+          "name": "Loans",
+          "value": 0.0717,
+          "formattedValue": "71.73M"
+        },
+        {
           "name": "Structured Products",
           "value": 0.0087,
           "formattedValue": "8.65M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0064,
+          "formattedValue": "6.41M"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -576,6 +1531,28 @@
           "name": "Investment Funds",
           "value": 0.0027,
           "formattedValue": "2.72M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.2419,
+      "formattedValue": "241.91M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.1751,
+          "formattedValue": "175.06M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.061,
+          "formattedValue": "60.99M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0059,
+          "formattedValue": "5.86M"
         }
       ]
     },
@@ -592,14 +1569,114 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
-      "value": 0.0096,
-      "formattedValue": "9.56M",
+      "name": "Eurozone",
+      "value": 0.0037,
+      "formattedValue": "3.69M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0037,
+          "formattedValue": "3.69M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.7594,
+      "formattedValue": "759.38M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.438,
+          "formattedValue": "437.97M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.1805,
+          "formattedValue": "180.48M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0628,
+          "formattedValue": "62.81M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.061,
+          "formattedValue": "60.99M"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0087,
+          "formattedValue": "8.65M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0058,
+          "formattedValue": "5.77M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0027,
+          "formattedValue": "2.72M"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0214,
+      "formattedValue": "21.45M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0169,
+          "formattedValue": "16.89M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0041,
+          "formattedValue": "4.10M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "453.86K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0139,
+      "formattedValue": "13.93M",
       "children": [
         {
           "name": "Investment Funds",
           "value": 0.0096,
           "formattedValue": "9.56M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0042,
+          "formattedValue": "4.20M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "180.14K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.0006,
+      "formattedValue": "630.29K",
+      "children": [
+        {
+          "name": "Loans",
+          "value": 0.0006,
+          "formattedValue": "630.29K"
         }
       ]
     }

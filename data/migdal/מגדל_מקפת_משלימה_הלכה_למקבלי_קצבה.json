@@ -2,28 +2,76 @@
   "fundName": "מגדל מקפת משלימה הלכה למקבלי קצבה",
   "trackId": "8604",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.94M",
+  "formattedTotalAssets": "1.98M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0014,
       "formattedValue": "1.44M",
-      "percentage": 74.02
+      "percentage": 72.7
     },
     {
       "name": "Stocks",
       "value": 0.0005,
       "formattedValue": "490.17K",
-      "percentage": 25.21
+      "percentage": 24.76
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "35.37K",
+      "percentage": 1.79
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "14.99K",
-      "percentage": 0.77
+      "percentage": 0.76
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0,
+        "formattedValue": "35.37K",
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0,
+              "formattedValue": "31.56K",
+              "percentage": 89.25,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0,
+              "formattedValue": "3.30K",
+              "percentage": 9.33,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.48K",
+              "percentage": 1.37,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.02K",
+              "percentage": 0.05,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -202,7 +250,7 @@
               "value": 0.0,
               "formattedValue": "4.66K",
               "percentage": 0.54,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "SPDR BARCLAYS INTERMEDIATE GOV",
@@ -216,7 +264,7 @@
               "value": 0.0,
               "formattedValue": "4.07K",
               "percentage": 0.47,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -505,7 +553,7 @@
               "value": 0.0,
               "formattedValue": "23.41K",
               "percentage": 4.78,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "הראל סל כש תא 90",
@@ -549,7 +597,7 @@
               "value": 0.0,
               "formattedValue": "9.10K",
               "percentage": 1.86,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "GLOBAL X S AND P/TSX 60 INDEX CORPO RATE",
@@ -563,7 +611,7 @@
               "value": 0.0,
               "formattedValue": "1.04K",
               "percentage": 0.21,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "VANGUARD AUST SHARES IDX ETF",
@@ -604,6 +652,42 @@
           "name": "Stocks",
           "value": 0.0002,
           "formattedValue": "199.66K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0001,
+          "formattedValue": "124.02K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0015,
+      "formattedValue": "1.52M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0013,
+          "formattedValue": "1.31M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "212.25K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0004,
+      "formattedValue": "355.88K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "231.86K"
         },
         {
           "name": "Bonds",

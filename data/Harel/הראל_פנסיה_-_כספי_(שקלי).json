@@ -1,26 +1,38 @@
 {
   "fundName": "הראל פנסיה - כספי (שקלי)",
   "trackId": "9097",
-  "totalAssetsBN": 0.08,
-  "formattedTotalAssets": "83.36M",
+  "totalAssetsBN": 0.24,
+  "formattedTotalAssets": "244.44M",
   "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0889,
+      "formattedValue": "88.89M",
+      "percentage": 36.37
+    },
     {
       "name": "Bonds",
       "value": 0.0827,
       "formattedValue": "82.73M",
-      "percentage": 99.25
+      "percentage": 33.84
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0486,
+      "formattedValue": "48.56M",
+      "percentage": 19.87
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0226,
+      "formattedValue": "22.56M",
+      "percentage": 9.23
     },
     {
       "name": "Loans",
       "value": 0.0017,
       "formattedValue": "1.70M",
-      "percentage": 2.04
-    },
-    {
-      "name": "Other Assets",
-      "value": -0.0011,
-      "formattedValue": "-1.07M",
-      "percentage": -1.29
+      "percentage": 0.7
     }
   ],
   "breakdown": {
@@ -154,10 +166,29 @@
     ],
     "Other Assets": [
       {
+        "subclass": "Unclassified",
+        "value": 0.0236,
+        "formattedValue": "23.63M",
+        "percentageOfClass": 104.76,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "החזקה באפיק השקעה מובטח תשואה",
+              "value": 0.0236,
+              "formattedValue": "23.63M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "General",
         "value": -0.0011,
         "formattedValue": "-1.07M",
-        "percentageOfClass": 100.0,
+        "percentageOfClass": -4.76,
         "itemCount": 2,
         "totalPages": 1,
         "holdingsPages": [
@@ -179,14 +210,1016 @@
           ]
         ]
       }
+    ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0486,
+        "formattedValue": "48.56M",
+        "percentageOfClass": 100.0,
+        "itemCount": 130,
+        "totalPages": 13,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד סדרה 8892",
+              "value": 0.0018,
+              "formattedValue": "1.84M",
+              "percentage": 3.79,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8889",
+              "value": 0.0015,
+              "formattedValue": "1.50M",
+              "percentage": 3.1,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8894",
+              "value": 0.0013,
+              "formattedValue": "1.28M",
+              "percentage": 2.63,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8882",
+              "value": 0.001,
+              "formattedValue": "1.03M",
+              "percentage": 2.13,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8880",
+              "value": 0.001,
+              "formattedValue": "1.01M",
+              "percentage": 2.07,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8897",
+              "value": 0.0009,
+              "formattedValue": "896.63K",
+              "percentage": 1.85,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8872",
+              "value": 0.0009,
+              "formattedValue": "872.73K",
+              "percentage": 1.8,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8859",
+              "value": 0.0009,
+              "formattedValue": "860.14K",
+              "percentage": 1.77,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8903",
+              "value": 0.0009,
+              "formattedValue": "851.49K",
+              "percentage": 1.75,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8874",
+              "value": 0.0008,
+              "formattedValue": "844.53K",
+              "percentage": 1.74,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8901",
+              "value": 0.0008,
+              "formattedValue": "824.81K",
+              "percentage": 1.7,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8905",
+              "value": 0.0008,
+              "formattedValue": "819.30K",
+              "percentage": 1.69,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8898",
+              "value": 0.0008,
+              "formattedValue": "812.94K",
+              "percentage": 1.67,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8865",
+              "value": 0.0008,
+              "formattedValue": "809.07K",
+              "percentage": 1.67,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8877",
+              "value": 0.0008,
+              "formattedValue": "808.38K",
+              "percentage": 1.66,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8879",
+              "value": 0.0008,
+              "formattedValue": "806.50K",
+              "percentage": 1.66,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8883",
+              "value": 0.0008,
+              "formattedValue": "788.86K",
+              "percentage": 1.62,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8841",
+              "value": 0.0008,
+              "formattedValue": "762.42K",
+              "percentage": 1.57,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8893",
+              "value": 0.0007,
+              "formattedValue": "734.36K",
+              "percentage": 1.51,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8853",
+              "value": 0.0007,
+              "formattedValue": "731.88K",
+              "percentage": 1.51,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8904",
+              "value": 0.0007,
+              "formattedValue": "726.05K",
+              "percentage": 1.5,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8896",
+              "value": 0.0007,
+              "formattedValue": "724.04K",
+              "percentage": 1.49,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8837",
+              "value": 0.0006,
+              "formattedValue": "649.56K",
+              "percentage": 1.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8866",
+              "value": 0.0006,
+              "formattedValue": "645.21K",
+              "percentage": 1.33,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8862",
+              "value": 0.0006,
+              "formattedValue": "640.97K",
+              "percentage": 1.32,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8856",
+              "value": 0.0006,
+              "formattedValue": "610.33K",
+              "percentage": 1.26,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8850",
+              "value": 0.0006,
+              "formattedValue": "607.76K",
+              "percentage": 1.25,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8851",
+              "value": 0.0006,
+              "formattedValue": "588.74K",
+              "percentage": 1.21,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8858",
+              "value": 0.0006,
+              "formattedValue": "556.54K",
+              "percentage": 1.15,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8824",
+              "value": 0.0006,
+              "formattedValue": "551.28K",
+              "percentage": 1.14,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8838",
+              "value": 0.0005,
+              "formattedValue": "543.74K",
+              "percentage": 1.12,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8793",
+              "value": 0.0005,
+              "formattedValue": "536.27K",
+              "percentage": 1.1,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8848",
+              "value": 0.0005,
+              "formattedValue": "534.04K",
+              "percentage": 1.1,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8871",
+              "value": 0.0005,
+              "formattedValue": "532.73K",
+              "percentage": 1.1,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8846",
+              "value": 0.0005,
+              "formattedValue": "516.85K",
+              "percentage": 1.06,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8888",
+              "value": 0.0005,
+              "formattedValue": "512.29K",
+              "percentage": 1.05,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8847",
+              "value": 0.0005,
+              "formattedValue": "511.13K",
+              "percentage": 1.05,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8855",
+              "value": 0.0005,
+              "formattedValue": "480.35K",
+              "percentage": 0.99,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8832",
+              "value": 0.0005,
+              "formattedValue": "466.24K",
+              "percentage": 0.96,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8895",
+              "value": 0.0005,
+              "formattedValue": "460.06K",
+              "percentage": 0.95,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8826",
+              "value": 0.0004,
+              "formattedValue": "449.23K",
+              "percentage": 0.93,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8857",
+              "value": 0.0004,
+              "formattedValue": "429.92K",
+              "percentage": 0.89,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8867",
+              "value": 0.0004,
+              "formattedValue": "416.12K",
+              "percentage": 0.86,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8854",
+              "value": 0.0004,
+              "formattedValue": "411.70K",
+              "percentage": 0.85,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8825",
+              "value": 0.0004,
+              "formattedValue": "409.81K",
+              "percentage": 0.84,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8807",
+              "value": 0.0004,
+              "formattedValue": "402.03K",
+              "percentage": 0.83,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8881",
+              "value": 0.0004,
+              "formattedValue": "399.90K",
+              "percentage": 0.82,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8900",
+              "value": 0.0004,
+              "formattedValue": "395.16K",
+              "percentage": 0.81,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8891",
+              "value": 0.0004,
+              "formattedValue": "391.23K",
+              "percentage": 0.81,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8803",
+              "value": 0.0004,
+              "formattedValue": "382.60K",
+              "percentage": 0.79,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8818",
+              "value": 0.0004,
+              "formattedValue": "364.75K",
+              "percentage": 0.75,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8812",
+              "value": 0.0004,
+              "formattedValue": "363.78K",
+              "percentage": 0.75,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8863",
+              "value": 0.0004,
+              "formattedValue": "361.80K",
+              "percentage": 0.75,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8821",
+              "value": 0.0004,
+              "formattedValue": "359.44K",
+              "percentage": 0.74,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8873",
+              "value": 0.0003,
+              "formattedValue": "348.21K",
+              "percentage": 0.72,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8842",
+              "value": 0.0003,
+              "formattedValue": "334.58K",
+              "percentage": 0.69,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8823",
+              "value": 0.0003,
+              "formattedValue": "330.97K",
+              "percentage": 0.68,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8876",
+              "value": 0.0003,
+              "formattedValue": "330.84K",
+              "percentage": 0.68,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8849",
+              "value": 0.0003,
+              "formattedValue": "330.44K",
+              "percentage": 0.68,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8902",
+              "value": 0.0003,
+              "formattedValue": "327.23K",
+              "percentage": 0.67,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8815",
+              "value": 0.0003,
+              "formattedValue": "318.59K",
+              "percentage": 0.66,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8844",
+              "value": 0.0003,
+              "formattedValue": "314.40K",
+              "percentage": 0.65,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8899",
+              "value": 0.0003,
+              "formattedValue": "311.68K",
+              "percentage": 0.64,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8813",
+              "value": 0.0003,
+              "formattedValue": "303.32K",
+              "percentage": 0.62,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8845",
+              "value": 0.0003,
+              "formattedValue": "301.77K",
+              "percentage": 0.62,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8809",
+              "value": 0.0003,
+              "formattedValue": "301.42K",
+              "percentage": 0.62,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8805",
+              "value": 0.0003,
+              "formattedValue": "285.00K",
+              "percentage": 0.59,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8808",
+              "value": 0.0003,
+              "formattedValue": "280.53K",
+              "percentage": 0.58,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8787",
+              "value": 0.0003,
+              "formattedValue": "272.13K",
+              "percentage": 0.56,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8822",
+              "value": 0.0003,
+              "formattedValue": "266.37K",
+              "percentage": 0.55,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8843",
+              "value": 0.0003,
+              "formattedValue": "254.22K",
+              "percentage": 0.52,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8819",
+              "value": 0.0003,
+              "formattedValue": "252.61K",
+              "percentage": 0.52,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8799",
+              "value": 0.0002,
+              "formattedValue": "247.23K",
+              "percentage": 0.51,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8833",
+              "value": 0.0002,
+              "formattedValue": "245.63K",
+              "percentage": 0.51,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8817",
+              "value": 0.0002,
+              "formattedValue": "240.07K",
+              "percentage": 0.49,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8797",
+              "value": 0.0002,
+              "formattedValue": "239.63K",
+              "percentage": 0.49,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8789",
+              "value": 0.0002,
+              "formattedValue": "234.79K",
+              "percentage": 0.48,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8810",
+              "value": 0.0002,
+              "formattedValue": "234.33K",
+              "percentage": 0.48,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8801",
+              "value": 0.0002,
+              "formattedValue": "234.26K",
+              "percentage": 0.48,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8829",
+              "value": 0.0002,
+              "formattedValue": "233.39K",
+              "percentage": 0.48,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8796",
+              "value": 0.0002,
+              "formattedValue": "230.30K",
+              "percentage": 0.47,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8814",
+              "value": 0.0002,
+              "formattedValue": "226.97K",
+              "percentage": 0.47,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8816",
+              "value": 0.0002,
+              "formattedValue": "219.22K",
+              "percentage": 0.45,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8798",
+              "value": 0.0002,
+              "formattedValue": "215.92K",
+              "percentage": 0.44,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8820",
+              "value": 0.0002,
+              "formattedValue": "211.77K",
+              "percentage": 0.44,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8795",
+              "value": 0.0002,
+              "formattedValue": "207.04K",
+              "percentage": 0.43,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8784",
+              "value": 0.0002,
+              "formattedValue": "198.35K",
+              "percentage": 0.41,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8794",
+              "value": 0.0002,
+              "formattedValue": "192.19K",
+              "percentage": 0.4,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8811",
+              "value": 0.0002,
+              "formattedValue": "192.10K",
+              "percentage": 0.4,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8800",
+              "value": 0.0002,
+              "formattedValue": "191.44K",
+              "percentage": 0.39,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8864",
+              "value": 0.0002,
+              "formattedValue": "181.97K",
+              "percentage": 0.37,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8802",
+              "value": 0.0002,
+              "formattedValue": "174.54K",
+              "percentage": 0.36,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8831",
+              "value": 0.0002,
+              "formattedValue": "170.36K",
+              "percentage": 0.35,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8839",
+              "value": 0.0002,
+              "formattedValue": "166.50K",
+              "percentage": 0.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8771",
+              "value": 0.0002,
+              "formattedValue": "164.50K",
+              "percentage": 0.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8775",
+              "value": 0.0002,
+              "formattedValue": "164.34K",
+              "percentage": 0.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8772",
+              "value": 0.0002,
+              "formattedValue": "162.92K",
+              "percentage": 0.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8786",
+              "value": 0.0001,
+              "formattedValue": "145.82K",
+              "percentage": 0.3,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8788",
+              "value": 0.0001,
+              "formattedValue": "143.89K",
+              "percentage": 0.3,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8790",
+              "value": 0.0001,
+              "formattedValue": "141.77K",
+              "percentage": 0.29,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8852",
+              "value": 0.0001,
+              "formattedValue": "138.28K",
+              "percentage": 0.28,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8774",
+              "value": 0.0001,
+              "formattedValue": "134.44K",
+              "percentage": 0.28,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8861",
+              "value": 0.0001,
+              "formattedValue": "131.19K",
+              "percentage": 0.27,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8781",
+              "value": 0.0001,
+              "formattedValue": "127.17K",
+              "percentage": 0.26,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8827",
+              "value": 0.0001,
+              "formattedValue": "124.28K",
+              "percentage": 0.26,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8834",
+              "value": 0.0001,
+              "formattedValue": "115.59K",
+              "percentage": 0.24,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8777",
+              "value": 0.0001,
+              "formattedValue": "115.01K",
+              "percentage": 0.24,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8840",
+              "value": 0.0001,
+              "formattedValue": "93.88K",
+              "percentage": 0.19,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8778",
+              "value": 0.0001,
+              "formattedValue": "88.34K",
+              "percentage": 0.18,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8773",
+              "value": 0.0001,
+              "formattedValue": "82.20K",
+              "percentage": 0.17,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8860",
+              "value": 0.0001,
+              "formattedValue": "69.29K",
+              "percentage": 0.14,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8869",
+              "value": 0.0001,
+              "formattedValue": "65.82K",
+              "percentage": 0.14,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8836",
+              "value": 0.0001,
+              "formattedValue": "61.80K",
+              "percentage": 0.13,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8806",
+              "value": 0.0001,
+              "formattedValue": "50.12K",
+              "percentage": 0.1,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8780",
+              "value": 0.0,
+              "formattedValue": "42.72K",
+              "percentage": 0.09,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8776",
+              "value": 0.0,
+              "formattedValue": "35.19K",
+              "percentage": 0.07,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8828",
+              "value": 0.0,
+              "formattedValue": "34.30K",
+              "percentage": 0.07,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8878",
+              "value": 0.0,
+              "formattedValue": "28.12K",
+              "percentage": 0.06,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8792",
+              "value": 0.0,
+              "formattedValue": "19.65K",
+              "percentage": 0.04,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8779",
+              "value": 0.0,
+              "formattedValue": "16.77K",
+              "percentage": 0.03,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד סדרה 8887",
+              "value": 0.0,
+              "formattedValue": "14.45K",
+              "percentage": 0.03,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8884",
+              "value": 0.0,
+              "formattedValue": "13.92K",
+              "percentage": 0.03,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8830",
+              "value": 0.0,
+              "formattedValue": "13.61K",
+              "percentage": 0.03,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8785",
+              "value": 0.0,
+              "formattedValue": "12.85K",
+              "percentage": 0.03,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8783",
+              "value": 0.0,
+              "formattedValue": "8.50K",
+              "percentage": 0.02,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8782",
+              "value": 0.0,
+              "formattedValue": "7.03K",
+              "percentage": 0.01,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8804",
+              "value": 0.0,
+              "formattedValue": "6.12K",
+              "percentage": 0.01,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8791",
+              "value": 0.0,
+              "formattedValue": "4.18K",
+              "percentage": 0.01,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8886",
+              "value": 0.0,
+              "formattedValue": "4.00K",
+              "percentage": 0.01,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד סדרה 8835",
+              "value": 0.0,
+              "formattedValue": "2.87K",
+              "percentage": 0.01,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0889,
+        "formattedValue": "88.89M",
+        "percentageOfClass": 100.0,
+        "itemCount": 5,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי",
+              "value": 0.0327,
+              "formattedValue": "32.73M",
+              "percentage": 36.82,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הבינלאומי",
+              "value": 0.0253,
+              "formattedValue": "25.27M",
+              "percentage": 28.43,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0211,
+              "formattedValue": "21.14M",
+              "percentage": 23.79,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0064,
+              "formattedValue": "6.39M",
+              "percentage": 7.19,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0034,
+              "formattedValue": "3.36M",
+              "percentage": 3.78,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0857,
-      "formattedValue": "85.71M",
+      "value": 0.1746,
+      "formattedValue": "174.61M",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0889,
+          "formattedValue": "88.89M"
+        },
         {
           "name": "Bonds",
           "value": 0.0827,
@@ -201,6 +1234,57 @@
           "name": "Other Assets",
           "value": 0.0013,
           "formattedValue": "1.29M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0722,
+      "formattedValue": "72.19M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0486,
+          "formattedValue": "48.56M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0236,
+          "formattedValue": "23.63M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.2468,
+      "formattedValue": "246.80M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0889,
+          "formattedValue": "88.89M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0827,
+          "formattedValue": "82.73M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0486,
+          "formattedValue": "48.56M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0249,
+          "formattedValue": "24.92M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0017,
+          "formattedValue": "1.70M"
         }
       ]
     }

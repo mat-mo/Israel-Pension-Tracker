@@ -2,13 +2,19 @@
   "fundName": "מור פנסיה כללית עוקבי מדדים עוקב מדדים - למקבלי קצבה",
   "trackId": "15274",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "0.02K",
+  "formattedTotalAssets": "15.48K",
   "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "15.46K",
+      "percentage": 99.9
+    },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "0.02K",
-      "percentage": 100.0
+      "percentage": 0.1
     }
   ],
   "breakdown": {
@@ -32,7 +38,29 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0,
+        "formattedValue": "15.46K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0,
+              "formattedValue": "15.46K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
-  "geoSunburst": []
+  "geoSunburst": [],
+  "currencySunburst": []
 }

@@ -2,31 +2,37 @@
   "fundName": "מיטב פנסיה כללית מניות סחיר",
   "trackId": "15361",
   "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "19.40M",
+  "formattedTotalAssets": "21.26M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0173,
       "formattedValue": "17.26M",
-      "percentage": 88.96
+      "percentage": 81.19
     },
     {
       "name": "Stocks",
       "value": 0.0026,
       "formattedValue": "2.62M",
-      "percentage": 13.52
+      "percentage": 12.33
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0019,
+      "formattedValue": "1.86M",
+      "percentage": 8.74
     },
     {
       "name": "Futures",
       "value": 0.0001,
       "formattedValue": "97.74K",
-      "percentage": 0.5
+      "percentage": 0.46
     },
     {
       "name": "Derivatives",
       "value": -0.0006,
       "formattedValue": "-578.90K",
-      "percentage": -2.98
+      "percentage": -2.72
     }
   ],
   "breakdown": {
@@ -52,7 +58,7 @@
               "value": 0.0009,
               "formattedValue": "911.31K",
               "percentage": 34.76,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "ISHR EDGE MSCI",
@@ -60,6 +66,27 @@
               "formattedValue": "755.41K",
               "percentage": 28.81,
               "countryEmoji": ""
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0019,
+        "formattedValue": "1.86M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0019,
+              "formattedValue": "1.86M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -239,8 +266,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0178,
-      "formattedValue": "17.84M",
+      "value": 0.0219,
+      "formattedValue": "21.88M",
       "children": [
         {
           "name": "Bonds",
@@ -248,21 +275,19 @@
           "formattedValue": "17.26M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.0031,
+          "formattedValue": "3.13M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0009,
+          "formattedValue": "911.31K"
+        },
+        {
           "name": "Derivatives",
           "value": 0.0006,
           "formattedValue": "580.93K"
-        }
-      ]
-    },
-    {
-      "name": "Global",
-      "value": 0.0017,
-      "formattedValue": "1.67M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0017,
-          "formattedValue": "1.67M"
         }
       ]
     },
@@ -275,6 +300,64 @@
           "name": "Stocks",
           "value": 0.001,
           "formattedValue": "955.14K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0008,
+      "formattedValue": "755.41K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0008,
+          "formattedValue": "755.41K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0197,
+      "formattedValue": "19.74M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0173,
+          "formattedValue": "17.26M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.001,
+          "formattedValue": "991.02K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0009,
+          "formattedValue": "911.31K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0006,
+          "formattedValue": "580.93K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0038,
+      "formattedValue": "3.85M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0021,
+          "formattedValue": "2.14M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0017,
+          "formattedValue": "1.71M"
         }
       ]
     }

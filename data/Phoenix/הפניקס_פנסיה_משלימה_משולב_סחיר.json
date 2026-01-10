@@ -2,55 +2,61 @@
   "fundName": "הפניקס פנסיה משלימה משולב סחיר",
   "trackId": "14288",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.55M",
+  "formattedTotalAssets": "3.05M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0017,
       "formattedValue": "1.65M",
-      "percentage": 64.71
+      "percentage": 54.06
     },
     {
       "name": "Stocks",
       "value": 0.0008,
       "formattedValue": "807.76K",
-      "percentage": 31.67
+      "percentage": 26.45
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0005,
+      "formattedValue": "502.88K",
+      "percentage": 16.47
     },
     {
       "name": "Mutual Funds",
       "value": 0.0001,
       "formattedValue": "52.38K",
-      "percentage": 2.05
+      "percentage": 1.72
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0,
       "formattedValue": "39.27K",
-      "percentage": 1.54
+      "percentage": 1.29
     },
     {
       "name": "Options",
       "value": 0.0,
       "formattedValue": "37.89K",
-      "percentage": 1.49
+      "percentage": 1.24
     },
     {
       "name": "Investment Funds",
       "value": 0.0,
       "formattedValue": "11.30K",
-      "percentage": 0.44
+      "percentage": 0.37
     },
     {
       "name": "Futures",
       "value": 0.0,
       "formattedValue": "3.69K",
-      "percentage": 0.14
+      "percentage": 0.12
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "1.29K",
-      "percentage": 0.05
+      "percentage": 0.04
     },
     {
       "name": "Warrants",
@@ -68,10 +74,94 @@
       "name": "Derivatives",
       "value": -0.0001,
       "formattedValue": "-54.14K",
-      "percentage": -2.12
+      "percentage": -1.77
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0005,
+        "formattedValue": "502.88K",
+        "percentageOfClass": 100.0,
+        "itemCount": 10,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0002,
+              "formattedValue": "174.10K",
+              "percentage": 34.62,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0002,
+              "formattedValue": "160.70K",
+              "percentage": 31.96,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.0001,
+              "formattedValue": "79.07K",
+              "percentage": 15.72,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0001,
+              "formattedValue": "58.49K",
+              "percentage": 11.63,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI",
+              "value": 0.0,
+              "formattedValue": "16.04K",
+              "percentage": 3.19,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI_GlobalCustody",
+              "value": 0.0,
+              "formattedValue": "13.77K",
+              "percentage": 2.74,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק ירושלים",
+              "value": 0.0,
+              "formattedValue": "3.11K",
+              "percentage": 0.62,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק U בנק",
+              "value": 0.0,
+              "formattedValue": "1.54K",
+              "percentage": 0.31,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "J.P. MORGAN",
+              "value": 0.0,
+              "formattedValue": "0.34K",
+              "percentage": 0.07,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI FXPB",
+              "value": -0.0,
+              "formattedValue": "-4.27K",
+              "percentage": -0.85,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Non-Tradable Bonds": [
       {
         "subclass": "General",
@@ -1837,7 +1927,7 @@
               "value": 0.0,
               "formattedValue": "1.71K",
               "percentage": 0.2,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "VIVION 7.9 08/31/28",
@@ -2636,7 +2726,7 @@
               "value": 0.0,
               "formattedValue": "0.98K",
               "percentage": 0.12,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "הכשרת ישוב אגח 25",
@@ -3045,7 +3135,7 @@
               "value": 0.0,
               "formattedValue": "0.70K",
               "percentage": 0.08,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "קיסטון אינ אגח ב",
@@ -4673,7 +4763,7 @@
               "value": 0.0,
               "formattedValue": "0.02K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "מיטב דש  אגח ג",
@@ -4738,7 +4828,7 @@
               "value": 0.0,
               "formattedValue": "0.01K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "לאומי התח נד 402 (COCO)",
@@ -5206,7 +5296,7 @@
               "value": 0.0,
               "formattedValue": "4.45K",
               "percentage": 0.81,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
@@ -8438,7 +8528,7 @@
               "value": 0.0,
               "formattedValue": "4.69K",
               "percentage": 8.96,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Ashoka WhiteOak ICAV - Ashoka",
@@ -9122,7 +9212,7 @@
               "value": 0.0,
               "formattedValue": "0.06K",
               "percentage": -0.12,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "OPAL IT",
@@ -9418,8 +9508,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0019,
-      "formattedValue": "1.90M",
+      "value": 0.0024,
+      "formattedValue": "2.42M",
       "children": [
         {
           "name": "Bonds",
@@ -9427,9 +9517,14 @@
           "formattedValue": "1.36M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "515.51K"
+        },
+        {
           "name": "Stocks",
           "value": 0.0004,
-          "formattedValue": "415.78K"
+          "formattedValue": "420.23K"
         },
         {
           "name": "Derivatives",
@@ -9452,6 +9547,47 @@
           "name": "Bonds",
           "value": 0.0001,
           "formattedValue": "144.13K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0022,
+      "formattedValue": "2.18M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0013,
+          "formattedValue": "1.33M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0004,
+          "formattedValue": "432.72K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0004,
+          "formattedValue": "421.13K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0006,
+      "formattedValue": "571.82K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0003,
+          "formattedValue": "251.52K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0003,
+          "formattedValue": "320.30K"
         }
       ]
     }

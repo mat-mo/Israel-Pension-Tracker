@@ -2,28 +2,55 @@
   "fundName": "אינפיניטי פנסיה כללית עוקב מדדים גמיש",
   "trackId": "14336",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "14.07K",
+  "formattedTotalAssets": "23.19K",
   "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "9.12K",
+      "percentage": 39.32
+    },
     {
       "name": "Stocks",
       "value": 0.0,
       "formattedValue": "6.48K",
-      "percentage": 46.05
+      "percentage": 27.94
     },
     {
       "name": "Bonds",
       "value": 0.0,
       "formattedValue": "4.47K",
-      "percentage": 31.78
+      "percentage": 19.28
     },
     {
       "name": "Mutual Funds",
       "value": 0.0,
       "formattedValue": "3.12K",
-      "percentage": 22.18
+      "percentage": 13.46
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0,
+        "formattedValue": "9.12K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0,
+              "formattedValue": "9.12K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Bonds": [
       {
         "subclass": "ETFs",
@@ -172,7 +199,7 @@
               "value": 0.0,
               "formattedValue": "0.43K",
               "percentage": 6.7,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "איביאי סל (4D) Nasda",
@@ -228,5 +255,6 @@
       }
     ]
   },
-  "geoSunburst": []
+  "geoSunburst": [],
+  "currencySunburst": []
 }

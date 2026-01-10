@@ -2,13 +2,19 @@
   "fundName": "מנורה מבטחים משלימה - מקבלי קצבה קיימים",
   "trackId": "2213",
   "totalAssetsBN": 0.08,
-  "formattedTotalAssets": "80.95M",
+  "formattedTotalAssets": "81.50M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.081,
       "formattedValue": "80.95M",
-      "percentage": 100.0
+      "percentage": 99.34
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0005,
+      "formattedValue": "541.93K",
+      "percentage": 0.66
     }
   ],
   "breakdown": {
@@ -74,18 +80,63 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0005,
+        "formattedValue": "541.93K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים בע''מ",
+              "value": 0.0005,
+              "formattedValue": "541.93K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.081,
-      "formattedValue": "80.95M",
+      "value": 0.0815,
+      "formattedValue": "81.50M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.081,
           "formattedValue": "80.95M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "541.93K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0815,
+      "formattedValue": "81.50M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.081,
+          "formattedValue": "80.95M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "541.93K"
         }
       ]
     }

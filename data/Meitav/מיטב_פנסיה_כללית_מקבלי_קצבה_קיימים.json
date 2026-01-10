@@ -2,19 +2,25 @@
   "fundName": "מיטב פנסיה כללית מקבלי קצבה קיימים",
   "trackId": "2160",
   "totalAssetsBN": 0.04,
-  "formattedTotalAssets": "44.36M",
+  "formattedTotalAssets": "44.84M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0435,
       "formattedValue": "43.53M",
-      "percentage": 98.13
+      "percentage": 97.06
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0008,
       "formattedValue": "831.44K",
-      "percentage": 1.87
+      "percentage": 1.85
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0005,
+      "formattedValue": "485.54K",
+      "percentage": 1.08
     }
   ],
   "breakdown": {
@@ -47,6 +53,27 @@
               "value": 0.0001,
               "formattedValue": "104.85K",
               "percentage": 12.61,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0005,
+        "formattedValue": "485.54K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0005,
+              "formattedValue": "485.54K",
+              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -239,8 +266,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0444,
-      "formattedValue": "44.36M",
+      "value": 0.0448,
+      "formattedValue": "44.84M",
       "children": [
         {
           "name": "Bonds",
@@ -251,6 +278,47 @@
           "name": "Non-Tradable Bonds",
           "value": 0.0008,
           "formattedValue": "831.44K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "485.54K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0447,
+      "formattedValue": "44.71M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0434,
+          "formattedValue": "43.40M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0008,
+          "formattedValue": "831.44K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "483.09K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0001,
+      "formattedValue": "130.06K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0001,
+          "formattedValue": "130.06K"
         }
       ]
     }

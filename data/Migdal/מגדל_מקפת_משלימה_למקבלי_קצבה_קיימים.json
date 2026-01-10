@@ -1,56 +1,68 @@
 {
   "fundName": "מגדל מקפת משלימה למקבלי קצבה קיימים",
   "trackId": "2208",
-  "totalAssetsBN": 0.07,
-  "formattedTotalAssets": "74.49M",
+  "totalAssetsBN": 0.08,
+  "formattedTotalAssets": "82.97M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0692,
       "formattedValue": "69.21M",
-      "percentage": 92.92
+      "percentage": 83.42
+    },
+    {
+      "name": "Loans",
+      "value": 0.0048,
+      "formattedValue": "4.77M",
+      "percentage": 5.75
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0037,
+      "formattedValue": "3.71M",
+      "percentage": 4.47
     },
     {
       "name": "Investment Funds",
       "value": 0.0026,
       "formattedValue": "2.59M",
-      "percentage": 3.48
+      "percentage": 3.12
     },
     {
       "name": "Stocks",
       "value": 0.001,
       "formattedValue": "964.12K",
-      "percentage": 1.29
+      "percentage": 1.16
     },
     {
       "name": "Structured Products",
       "value": 0.0007,
       "formattedValue": "713.32K",
-      "percentage": 0.96
+      "percentage": 0.86
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0006,
       "formattedValue": "566.09K",
-      "percentage": 0.76
+      "percentage": 0.68
     },
     {
       "name": "Derivatives",
       "value": 0.0003,
       "formattedValue": "283.11K",
-      "percentage": 0.38
+      "percentage": 0.34
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.0001,
       "formattedValue": "145.14K",
-      "percentage": 0.19
+      "percentage": 0.17
     },
     {
       "name": "Mutual Funds",
       "value": 0.0,
       "formattedValue": "11.42K",
-      "percentage": 0.02
+      "percentage": 0.01
     },
     {
       "name": "Futures",
@@ -129,6 +141,83 @@
               "formattedValue": "1.42K",
               "percentage": 12.46,
               "countryEmoji": "🇮🇳"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0037,
+        "formattedValue": "3.71M",
+        "percentageOfClass": 100.0,
+        "itemCount": 9,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0019,
+              "formattedValue": "1.90M",
+              "percentage": 51.25,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0015,
+              "formattedValue": "1.46M",
+              "percentage": 39.43,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0002,
+              "formattedValue": "242.70K",
+              "percentage": 6.54,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0001,
+              "formattedValue": "66.56K",
+              "percentage": 1.79,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0,
+              "formattedValue": "25.00K",
+              "percentage": 0.67,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "יובנק",
+              "value": 0.0,
+              "formattedValue": "10.69K",
+              "percentage": 0.29,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק ירושלים בע\"מ",
+              "value": 0.0,
+              "formattedValue": "2.33K",
+              "percentage": 0.06,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITIBANK",
+              "value": -0.0,
+              "formattedValue": "-0.14K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "GOLDMAN SACHS",
+              "value": -0.0,
+              "formattedValue": "-1.44K",
+              "percentage": -0.04,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -235,7 +324,7 @@
               "value": 0.0,
               "formattedValue": "0.05K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "לאומי למשכנתאות שה",
@@ -454,7 +543,7 @@
               "value": 0.0,
               "formattedValue": "7.05K",
               "percentage": 4.86,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "שותפות הפורטפוליו הבטחוני",
@@ -761,7 +850,7 @@
               "value": 0.0,
               "formattedValue": "47.12K",
               "percentage": 8.93,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "הראל סל תא 90",
@@ -782,7 +871,7 @@
               "value": 0.0,
               "formattedValue": "26.01K",
               "percentage": 4.93,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "AMUNDI INDEX MSCI EM UCITS",
@@ -847,7 +936,7 @@
               "value": 0.0,
               "formattedValue": "9.26K",
               "percentage": 1.75,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ISHARES S&P500 SWAP UCITS",
@@ -861,28 +950,28 @@
               "value": 0.0,
               "formattedValue": "8.97K",
               "percentage": 1.7,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ISHARES DJ EURO STOXX 50",
               "value": 0.0,
               "formattedValue": "8.83K",
               "percentage": 1.67,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "SPDR MSCI Europe Health CareSM UCITS",
               "value": 0.0,
               "formattedValue": "8.72K",
               "percentage": 1.65,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "LYXOR STOXX EUROPE 600 BKS UCITS",
               "value": 0.0,
               "formattedValue": "7.51K",
               "percentage": 1.42,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "COMM SERV SELECT SECTOR SPDR",
@@ -1098,7 +1187,7 @@
               "value": 0.0,
               "formattedValue": "1.60K",
               "percentage": 0.3,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "FRANKLIN FTSE INDIA ETF",
@@ -4996,7 +5085,7 @@
               "value": 0.0,
               "formattedValue": "36.52K",
               "percentage": 1.41,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "FF6 Cell L.P",
@@ -5068,7 +5157,7 @@
               "value": 0.0,
               "formattedValue": "17.85K",
               "percentage": 0.69,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Global Infrastructure Partners IV C L.P",
@@ -5189,7 +5278,7 @@
               "value": 0.0,
               "formattedValue": "12.91K",
               "percentage": 0.5,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "BVP Forge Institutional A L.P",
@@ -5240,7 +5329,7 @@
               "value": 0.0,
               "formattedValue": "10.38K",
               "percentage": 0.4,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Group 11 Fund V",
@@ -5261,7 +5350,7 @@
               "value": 0.0,
               "formattedValue": "9.87K",
               "percentage": 0.38,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "S.H. SKY 4 L.P",
@@ -5305,7 +5394,7 @@
               "value": 0.0,
               "formattedValue": "8.97K",
               "percentage": 0.35,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "H.I.G. Advantage Buyout Fund, L.P.",
@@ -5340,7 +5429,7 @@
               "value": 0.0,
               "formattedValue": "8.18K",
               "percentage": 0.32,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Silverfort",
@@ -5363,7 +5452,7 @@
               "value": 0.0,
               "formattedValue": "7.84K",
               "percentage": 0.3,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Thoma Bravo Discover Fund II, L.P.",
@@ -5412,7 +5501,7 @@
               "value": 0.0,
               "formattedValue": "7.23K",
               "percentage": 0.28,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Project Stream Co Invest Fund L.P",
@@ -5449,7 +5538,7 @@
               "value": 0.0,
               "formattedValue": "6.30K",
               "percentage": 0.24,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Ember Co Invest SCSp",
@@ -5500,7 +5589,7 @@
               "value": 0.0,
               "formattedValue": "5.39K",
               "percentage": 0.21,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "AT-BAY, Inc.",
@@ -5665,7 +5754,7 @@
               "value": 0.0,
               "formattedValue": "3.05K",
               "percentage": 0.12,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "JoyTunes Ltd.",
@@ -5723,7 +5812,7 @@
               "value": 0.0,
               "formattedValue": "2.39K",
               "percentage": 0.09,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "LS Power V",
@@ -5772,7 +5861,7 @@
               "value": 0.0,
               "formattedValue": "1.82K",
               "percentage": 0.07,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Stage One Venture Capital Fund IV",
@@ -5809,7 +5898,7 @@
               "value": 0.0,
               "formattedValue": "1.28K",
               "percentage": 0.05,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Incline Equity Partners IV, L.P.",
@@ -5895,7 +5984,7 @@
               "value": 0.0,
               "formattedValue": "0.54K",
               "percentage": 0.02,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Greenfield Partners FloLIVE Co invest",
@@ -5916,7 +6005,7 @@
               "value": 0.0,
               "formattedValue": "0.42K",
               "percentage": 0.02,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ICG Real Estate Debt VI",
@@ -5932,7 +6021,7 @@
               "value": 0.0,
               "formattedValue": "0.36K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Monarch MCP VI",
@@ -5953,7 +6042,7 @@
               "value": 0.0,
               "formattedValue": "0.32K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Monarch Capital Partners V",
@@ -5967,14 +6056,14 @@
               "value": 0.0,
               "formattedValue": "0.31K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "DIRECT LENDING FUND IV (EUR) SLP",
               "value": 0.0,
               "formattedValue": "0.31K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Dawson Portfolio Finance 5 LP",
@@ -6004,7 +6093,7 @@
               "value": 0.0,
               "formattedValue": "0.27K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Stage One Annex Fund L.P",
@@ -6053,7 +6142,7 @@
               "value": 0.0,
               "formattedValue": "0.23K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "QUMRA OPPORTUNITY FUND I",
@@ -6076,7 +6165,7 @@
               "value": 0.0,
               "formattedValue": "0.20K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Dawson GP Finance (Offshore) 1",
@@ -6111,14 +6200,14 @@
               "value": 0.0,
               "formattedValue": "0.17K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "GIP Spectrum Fund (Parallel) L.P",
               "value": 0.0,
               "formattedValue": "0.16K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "AUDAX DLS CO INVESTMENT FUND 3 L.P",
@@ -6139,7 +6228,7 @@
               "value": 0.0,
               "formattedValue": "0.14K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             }
           ],
           [
@@ -6148,7 +6237,7 @@
               "value": 0.0,
               "formattedValue": "0.13K",
               "percentage": 0.01,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "ICG Longbow V",
@@ -6176,7 +6265,7 @@
               "value": 0.0,
               "formattedValue": "0.12K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "LUCID ALTERNATIVE u 7/23",
@@ -6190,7 +6279,7 @@
               "value": 0.0,
               "formattedValue": "0.12K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "BENNU PHARMA",
@@ -6204,14 +6293,14 @@
               "value": 0.0,
               "formattedValue": "0.11K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "KASS Unlevered II S.a r.l",
               "value": 0.0,
               "formattedValue": "0.11K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             }
           ],
           [
@@ -6248,7 +6337,7 @@
               "value": 0.0,
               "formattedValue": "0.09K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "GIP IV Seaway Energy",
@@ -6269,14 +6358,14 @@
               "value": 0.0,
               "formattedValue": "0.08K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Kartesia Credit Opportunities VI SCS",
               "value": 0.0,
               "formattedValue": "0.07K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "HPS Asset Value Lux Fund III SCSp",
@@ -6306,7 +6395,7 @@
               "value": 0.0,
               "formattedValue": "0.06K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Sima Holdings (Offshore) LP",
@@ -6320,14 +6409,14 @@
               "value": 0.0,
               "formattedValue": "0.06K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Kartesia Credit Opportunities IV",
               "value": 0.0,
               "formattedValue": "0.06K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Klirmark III",
@@ -6355,7 +6444,7 @@
               "value": 0.0,
               "formattedValue": "0.05K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             }
           ],
           [
@@ -6413,7 +6502,7 @@
               "value": 0.0,
               "formattedValue": "0.03K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "LS Power V Blocker",
@@ -6443,7 +6532,7 @@
               "value": 0.0,
               "formattedValue": "0.01K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Migdal HarbourVest 2016 Fund",
@@ -6674,7 +6763,35 @@
               "value": 0.0,
               "formattedValue": "0.05K",
               "percentage": 0.72,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
+            }
+          ]
+        ]
+      }
+    ],
+    "Loans": [
+      {
+        "subclass": "Direct Loans",
+        "value": 0.0048,
+        "formattedValue": "4.77M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "תאגיד",
+              "value": 0.0038,
+              "formattedValue": "3.82M",
+              "percentage": 80.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "יחיד שאינו עמית/מבוטח",
+              "value": 0.0009,
+              "formattedValue": "947.80K",
+              "percentage": 19.88,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -6684,13 +6801,23 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.072,
-      "formattedValue": "72.00M",
+      "value": 0.0805,
+      "formattedValue": "80.52M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0692,
           "formattedValue": "69.21M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0048,
+          "formattedValue": "4.77M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0037,
+          "formattedValue": "3.75M"
         },
         {
           "name": "Structured Products",
@@ -6742,31 +6869,131 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
+      "name": "Global",
       "value": 0.0003,
-      "formattedValue": "262.53K",
+      "formattedValue": "321.99K",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0003,
+          "formattedValue": "321.99K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.0001,
+      "formattedValue": "118.02K",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0001,
           "formattedValue": "118.02K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.079,
+      "formattedValue": "78.95M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0691,
+          "formattedValue": "69.14M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0047,
+          "formattedValue": "4.66M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0032,
+          "formattedValue": "3.16M"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0007,
+          "formattedValue": "713.27K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0006,
+          "formattedValue": "566.08K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0005,
+          "formattedValue": "478.02K"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0001,
+          "formattedValue": "106.69K"
         },
         {
           "name": "Investment Funds",
           "value": 0.0001,
-          "formattedValue": "144.51K"
+          "formattedValue": "117.57K"
         }
       ]
     },
     {
-      "name": "Global",
-      "value": 0.0002,
-      "formattedValue": "185.43K",
+      "name": "USD",
+      "value": 0.0036,
+      "formattedValue": "3.60M",
       "children": [
         {
           "name": "Investment Funds",
-          "value": 0.0002,
-          "formattedValue": "185.43K"
+          "value": 0.0024,
+          "formattedValue": "2.35M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0005,
+          "formattedValue": "465.37K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0004,
+          "formattedValue": "427.98K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0004,
+          "formattedValue": "354.53K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0002,
+      "formattedValue": "241.14K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "123.26K"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0001,
+          "formattedValue": "117.89K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.0001,
+      "formattedValue": "139.53K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "139.53K"
         }
       ]
     }

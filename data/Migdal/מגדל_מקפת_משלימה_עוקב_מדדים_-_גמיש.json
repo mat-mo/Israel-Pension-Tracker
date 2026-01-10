@@ -2,28 +2,62 @@
   "fundName": "מגדל מקפת משלימה עוקב מדדים - גמיש",
   "trackId": "14245",
   "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "20.67M",
+  "formattedTotalAssets": "21.65M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.012,
       "formattedValue": "11.99M",
-      "percentage": 58.02
+      "percentage": 55.4
     },
     {
       "name": "Bonds",
       "value": 0.0088,
       "formattedValue": "8.80M",
-      "percentage": 42.55
+      "percentage": 40.63
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.001,
+      "formattedValue": "977.73K",
+      "percentage": 4.52
     },
     {
       "name": "Derivatives",
       "value": -0.0001,
       "formattedValue": "-117.93K",
-      "percentage": -0.57
+      "percentage": -0.54
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.001,
+        "formattedValue": "977.73K",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.001,
+              "formattedValue": "977.68K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.04K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Derivatives": [
       {
         "subclass": "General",
@@ -193,14 +227,14 @@
               "value": 0.0008,
               "formattedValue": "849.73K",
               "percentage": 7.08,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "DBX STX EUROPE 600",
               "value": 0.0005,
               "formattedValue": "505.23K",
               "percentage": 4.21,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "DAIWA ETF TOPIX",
@@ -250,7 +284,24 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
+      "name": "Israel",
+      "value": 0.0017,
+      "formattedValue": "1.66M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.001,
+          "formattedValue": "977.73K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0007,
+          "formattedValue": "681.78K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
       "value": 0.0014,
       "formattedValue": "1.35M",
       "children": [
@@ -258,18 +309,6 @@
           "name": "Stocks",
           "value": 0.0014,
           "formattedValue": "1.35M"
-        }
-      ]
-    },
-    {
-      "name": "Israel",
-      "value": 0.0007,
-      "formattedValue": "681.78K",
-      "children": [
-        {
-          "name": "Derivatives",
-          "value": 0.0007,
-          "formattedValue": "681.78K"
         }
       ]
     },
@@ -282,6 +321,76 @@
           "name": "Stocks",
           "value": 0.0005,
           "formattedValue": "476.39K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0199,
+      "formattedValue": "19.86M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0102,
+          "formattedValue": "10.16M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0088,
+          "formattedValue": "8.80M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0007,
+          "formattedValue": "681.78K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "217.01K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0014,
+      "formattedValue": "1.35M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0014,
+          "formattedValue": "1.35M"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0006,
+      "formattedValue": "636.88K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0006,
+          "formattedValue": "636.88K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0006,
+      "formattedValue": "584.34K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0005,
+          "formattedValue": "476.39K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "107.95K"
         }
       ]
     }

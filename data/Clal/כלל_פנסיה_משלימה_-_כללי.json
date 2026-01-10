@@ -1,79 +1,85 @@
 {
   "fundName": "כלל פנסיה משלימה - כללי",
   "trackId": "2176",
-  "totalAssetsBN": 1.6,
-  "formattedTotalAssets": "1.60B",
+  "totalAssetsBN": 1.75,
+  "formattedTotalAssets": "1.75B",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.5934,
       "formattedValue": "593.44M",
-      "percentage": 37.11
+      "percentage": 33.88
     },
     {
       "name": "Bonds",
       "value": 0.5089,
       "formattedValue": "508.85M",
-      "percentage": 31.82
+      "percentage": 29.05
     },
     {
       "name": "Investment Funds",
       "value": 0.2633,
       "formattedValue": "263.34M",
-      "percentage": 16.47
+      "percentage": 15.04
+    },
+    {
+      "name": "Loans",
+      "value": 0.0899,
+      "formattedValue": "89.94M",
+      "percentage": 5.13
     },
     {
       "name": "Mutual Funds",
       "value": 0.0778,
       "formattedValue": "77.80M",
-      "percentage": 4.87
+      "percentage": 4.44
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0642,
+      "formattedValue": "64.18M",
+      "percentage": 3.66
     },
     {
       "name": "Derivatives",
       "value": 0.0489,
       "formattedValue": "48.90M",
-      "percentage": 3.06
+      "percentage": 2.79
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.0446,
       "formattedValue": "44.61M",
-      "percentage": 2.79
+      "percentage": 2.55
     },
     {
       "name": "Structured Products",
       "value": 0.023,
       "formattedValue": "23.00M",
-      "percentage": 1.44
+      "percentage": 1.31
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0173,
       "formattedValue": "17.32M",
-      "percentage": 1.08
+      "percentage": 0.99
     },
     {
       "name": "Real Estate",
       "value": 0.0164,
       "formattedValue": "16.37M",
-      "percentage": 1.02
+      "percentage": 0.93
     },
     {
       "name": "Warrants",
       "value": 0.0023,
       "formattedValue": "2.25M",
-      "percentage": 0.14
+      "percentage": 0.13
     },
     {
       "name": "Futures",
       "value": 0.0017,
       "formattedValue": "1.67M",
-      "percentage": 0.1
-    },
-    {
-      "name": "Cash & Equivalents",
-      "value": 0.0016,
-      "formattedValue": "1.64M",
       "percentage": 0.1
     },
     {
@@ -370,7 +376,7 @@
               "value": 0.0001,
               "formattedValue": "70.63K",
               "percentage": 0.14,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "CPI",
@@ -2120,7 +2126,7 @@
               "value": 0.0039,
               "formattedValue": "3.88M",
               "percentage": 1.64,
-              "countryEmoji": "🇪🇺   "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "CONSUMER DISCRETIONARY SELT",
@@ -2744,7 +2750,7 @@
               "value": 0.0113,
               "formattedValue": "11.27M",
               "percentage": 14.49,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "קרן כספית בחול דולר בוני",
@@ -2968,6 +2974,587 @@
               "formattedValue": "85.39K",
               "percentage": 0.11,
               "countryEmoji": "🇬🇧"
+            }
+          ]
+        ]
+      }
+    ],
+    "Loans": [
+      {
+        "subclass": "Direct Loans",
+        "value": 0.0899,
+        "formattedValue": "89.94M",
+        "percentageOfClass": 100.0,
+        "itemCount": 79,
+        "totalPages": 8,
+        "holdingsPages": [
+          [
+            {
+              "name": "הלוואה לגורם 200",
+              "value": 0.0075,
+              "formattedValue": "7.55M",
+              "percentage": 8.39,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 199",
+              "value": 0.0075,
+              "formattedValue": "7.49M",
+              "percentage": 8.33,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 165",
+              "value": 0.005,
+              "formattedValue": "4.99M",
+              "percentage": 5.55,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19774",
+              "value": 0.0046,
+              "formattedValue": "4.64M",
+              "percentage": 5.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 169",
+              "value": 0.0037,
+              "formattedValue": "3.70M",
+              "percentage": 4.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 113",
+              "value": 0.0031,
+              "formattedValue": "3.06M",
+              "percentage": 3.4,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 125",
+              "value": 0.0029,
+              "formattedValue": "2.91M",
+              "percentage": 3.23,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 174",
+              "value": 0.0027,
+              "formattedValue": "2.71M",
+              "percentage": 3.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19042",
+              "value": 0.0027,
+              "formattedValue": "2.68M",
+              "percentage": 2.98,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 186",
+              "value": 0.0025,
+              "formattedValue": "2.49M",
+              "percentage": 2.77,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 179",
+              "value": 0.0024,
+              "formattedValue": "2.41M",
+              "percentage": 2.68,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 182",
+              "value": 0.0023,
+              "formattedValue": "2.32M",
+              "percentage": 2.57,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 251",
+              "value": 0.0022,
+              "formattedValue": "2.17M",
+              "percentage": 2.42,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 198",
+              "value": 0.0021,
+              "formattedValue": "2.10M",
+              "percentage": 2.34,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 41",
+              "value": 0.0016,
+              "formattedValue": "1.60M",
+              "percentage": 1.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 203",
+              "value": 0.0016,
+              "formattedValue": "1.60M",
+              "percentage": 1.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 175",
+              "value": 0.0015,
+              "formattedValue": "1.55M",
+              "percentage": 1.72,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 100",
+              "value": 0.0015,
+              "formattedValue": "1.55M",
+              "percentage": 1.72,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 180",
+              "value": 0.0015,
+              "formattedValue": "1.54M",
+              "percentage": 1.71,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 83",
+              "value": 0.0015,
+              "formattedValue": "1.46M",
+              "percentage": 1.62,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 106",
+              "value": 0.0014,
+              "formattedValue": "1.40M",
+              "percentage": 1.56,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 154",
+              "value": 0.0013,
+              "formattedValue": "1.35M",
+              "percentage": 1.5,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 250",
+              "value": 0.0012,
+              "formattedValue": "1.24M",
+              "percentage": 1.38,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  20079",
+              "value": 0.001,
+              "formattedValue": "1.01M",
+              "percentage": 1.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 171",
+              "value": 0.001,
+              "formattedValue": "1.01M",
+              "percentage": 1.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19780",
+              "value": 0.001,
+              "formattedValue": "1.01M",
+              "percentage": 1.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 105",
+              "value": 0.0009,
+              "formattedValue": "942.54K",
+              "percentage": 1.05,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19977",
+              "value": 0.0009,
+              "formattedValue": "925.74K",
+              "percentage": 1.03,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 99",
+              "value": 0.0009,
+              "formattedValue": "872.09K",
+              "percentage": 0.97,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 162",
+              "value": 0.0009,
+              "formattedValue": "858.98K",
+              "percentage": 0.96,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 187",
+              "value": 0.0009,
+              "formattedValue": "855.51K",
+              "percentage": 0.95,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 150",
+              "value": 0.0008,
+              "formattedValue": "802.39K",
+              "percentage": 0.89,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 36",
+              "value": 0.0008,
+              "formattedValue": "787.71K",
+              "percentage": 0.88,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 195",
+              "value": 0.0008,
+              "formattedValue": "778.60K",
+              "percentage": 0.87,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 181",
+              "value": 0.0007,
+              "formattedValue": "732.35K",
+              "percentage": 0.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  20098",
+              "value": 0.0007,
+              "formattedValue": "729.19K",
+              "percentage": 0.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 194",
+              "value": 0.0007,
+              "formattedValue": "727.35K",
+              "percentage": 0.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 1279",
+              "value": 0.0007,
+              "formattedValue": "714.72K",
+              "percentage": 0.79,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 17828",
+              "value": 0.0007,
+              "formattedValue": "714.32K",
+              "percentage": 0.79,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 126",
+              "value": 0.0007,
+              "formattedValue": "710.32K",
+              "percentage": 0.79,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 19685",
+              "value": 0.0007,
+              "formattedValue": "701.05K",
+              "percentage": 0.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19803",
+              "value": 0.0007,
+              "formattedValue": "699.11K",
+              "percentage": 0.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 84",
+              "value": 0.0007,
+              "formattedValue": "679.48K",
+              "percentage": 0.76,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 202",
+              "value": 0.0007,
+              "formattedValue": "662.92K",
+              "percentage": 0.74,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19770",
+              "value": 0.0006,
+              "formattedValue": "647.34K",
+              "percentage": 0.72,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 77",
+              "value": 0.0006,
+              "formattedValue": "633.24K",
+              "percentage": 0.7,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 120",
+              "value": 0.0006,
+              "formattedValue": "616.04K",
+              "percentage": 0.68,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  18880",
+              "value": 0.0006,
+              "formattedValue": "607.67K",
+              "percentage": 0.68,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 178",
+              "value": 0.0005,
+              "formattedValue": "517.80K",
+              "percentage": 0.58,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 164",
+              "value": 0.0005,
+              "formattedValue": "494.98K",
+              "percentage": 0.55,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 185",
+              "value": 0.0005,
+              "formattedValue": "464.89K",
+              "percentage": 0.52,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  1143",
+              "value": 0.0005,
+              "formattedValue": "462.87K",
+              "percentage": 0.51,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19775",
+              "value": 0.0004,
+              "formattedValue": "423.35K",
+              "percentage": 0.47,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 116",
+              "value": 0.0003,
+              "formattedValue": "315.41K",
+              "percentage": 0.35,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 92",
+              "value": 0.0003,
+              "formattedValue": "261.75K",
+              "percentage": 0.29,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 132",
+              "value": 0.0003,
+              "formattedValue": "250.08K",
+              "percentage": 0.28,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 129",
+              "value": 0.0002,
+              "formattedValue": "247.12K",
+              "percentage": 0.27,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  19862",
+              "value": 0.0002,
+              "formattedValue": "241.71K",
+              "percentage": 0.27,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם  18633",
+              "value": 0.0002,
+              "formattedValue": "231.01K",
+              "percentage": 0.26,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 45",
+              "value": 0.0002,
+              "formattedValue": "216.66K",
+              "percentage": 0.24,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 54",
+              "value": 0.0002,
+              "formattedValue": "204.96K",
+              "percentage": 0.23,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 240",
+              "value": 0.0002,
+              "formattedValue": "204.02K",
+              "percentage": 0.23,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 173",
+              "value": 0.0002,
+              "formattedValue": "203.00K",
+              "percentage": 0.23,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 130",
+              "value": 0.0002,
+              "formattedValue": "202.93K",
+              "percentage": 0.23,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 117",
+              "value": 0.0002,
+              "formattedValue": "183.47K",
+              "percentage": 0.2,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 135",
+              "value": 0.0001,
+              "formattedValue": "141.55K",
+              "percentage": 0.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 134",
+              "value": 0.0001,
+              "formattedValue": "126.21K",
+              "percentage": 0.14,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 133",
+              "value": 0.0001,
+              "formattedValue": "118.33K",
+              "percentage": 0.13,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 167",
+              "value": 0.0001,
+              "formattedValue": "106.15K",
+              "percentage": 0.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 131",
+              "value": 0.0001,
+              "formattedValue": "105.80K",
+              "percentage": 0.12,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה לגורם 177",
+              "value": 0.0001,
+              "formattedValue": "82.69K",
+              "percentage": 0.09,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 168",
+              "value": 0.0001,
+              "formattedValue": "69.46K",
+              "percentage": 0.08,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 170",
+              "value": 0.0,
+              "formattedValue": "42.74K",
+              "percentage": 0.05,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 158",
+              "value": 0.0,
+              "formattedValue": "35.00K",
+              "percentage": 0.04,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 155",
+              "value": 0.0,
+              "formattedValue": "32.67K",
+              "percentage": 0.04,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 157",
+              "value": 0.0,
+              "formattedValue": "9.09K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 156",
+              "value": 0.0,
+              "formattedValue": "7.35K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 107",
+              "value": 0.0,
+              "formattedValue": "6.74K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה לגורם 163",
+              "value": -0.0,
+              "formattedValue": "-0.26K",
+              "percentage": -0.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -3808,6 +4395,118 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0625,
+        "formattedValue": "62.54M",
+        "percentageOfClass": 97.45,
+        "itemCount": 11,
+        "totalPages": 2,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0508,
+              "formattedValue": "50.84M",
+              "percentage": 81.3,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0135,
+              "formattedValue": "13.49M",
+              "percentage": 21.56,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JPM",
+              "value": 0.0135,
+              "formattedValue": "13.46M",
+              "percentage": 21.53,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "סיטיבנק",
+              "value": 0.0032,
+              "formattedValue": "3.17M",
+              "percentage": 5.07,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0012,
+              "formattedValue": "1.21M",
+              "percentage": 1.94,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הבנק הבינלאומי הראשון לישראל בע\"מ",
+              "value": 0.001,
+              "formattedValue": "970.94K",
+              "percentage": 1.55,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מרכנתיל דיסקונט בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.49K",
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Goldman Sachs",
+              "value": -0.0017,
+              "formattedValue": "-1.70M",
+              "percentage": -2.72,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Bny Mellon",
+              "value": -0.0022,
+              "formattedValue": "-2.25M",
+              "percentage": -3.59,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JPM SE",
+              "value": -0.0036,
+              "formattedValue": "-3.61M",
+              "percentage": -5.77,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": -0.0131,
+              "formattedValue": "-13.05M",
+              "percentage": -20.87,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      },
+      {
+        "subclass": "Deposits",
+        "value": 0.0016,
+        "formattedValue": "1.64M",
+        "percentageOfClass": 2.55,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0016,
+              "formattedValue": "1.64M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Investment Funds": [
       {
         "subclass": "Funds",
@@ -3937,14 +4636,14 @@
               "value": 0.0031,
               "formattedValue": "3.09M",
               "percentage": 1.17,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Brookfield Premier Real Estate Partners Europe",
               "value": 0.0031,
               "formattedValue": "3.07M",
               "percentage": 1.16,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Kelso Investment Associates X",
@@ -3967,7 +4666,7 @@
               "value": 0.0028,
               "formattedValue": "2.75M",
               "percentage": 1.05,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "NYL- Madison Square Value Enhancement Fund",
@@ -4016,7 +4715,7 @@
               "value": 0.0026,
               "formattedValue": "2.60M",
               "percentage": 0.99,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "K5 Private Investors",
@@ -4088,7 +4787,7 @@
               "value": 0.0023,
               "formattedValue": "2.34M",
               "percentage": 0.89,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Yellowstone Platform Holdings Parallel",
@@ -4204,7 +4903,7 @@
               "value": 0.0018,
               "formattedValue": "1.76M",
               "percentage": 0.67,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Starlight Canadian Residential Growth Fund III",
@@ -4218,7 +4917,7 @@
               "value": 0.0017,
               "formattedValue": "1.72M",
               "percentage": 0.65,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "ICG Strategic Equity Fund IV",
@@ -4311,7 +5010,7 @@
               "value": 0.0015,
               "formattedValue": "1.45M",
               "percentage": 0.55,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "THL Brooks Automation",
@@ -4448,7 +5147,7 @@
               "value": 0.0011,
               "formattedValue": "1.07M",
               "percentage": 0.41,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Astoria Power Partners Holding",
@@ -4564,7 +5263,7 @@
               "value": 0.0008,
               "formattedValue": "832.54K",
               "percentage": 0.32,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "MetLife Single Family Rental Feeder",
@@ -4664,7 +5363,7 @@
               "value": 0.0007,
               "formattedValue": "665.27K",
               "percentage": 0.25,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "Vintage Fund of Funds VI Breakout",
@@ -4945,7 +5644,7 @@
               "value": 0.0003,
               "formattedValue": "286.29K",
               "percentage": 0.11,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "CPEC 9",
@@ -4982,7 +5681,7 @@
               "value": 0.0003,
               "formattedValue": "261.54K",
               "percentage": 0.1,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Vintage Clal Co-Investment II L.P. (LVP Select V)",
@@ -5003,14 +5702,14 @@
               "value": 0.0003,
               "formattedValue": "251.21K",
               "percentage": 0.1,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "EP Crescent Co-Invest SCSp",
               "value": 0.0002,
               "formattedValue": "243.78K",
               "percentage": 0.09,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Pemba Capital Fund III",
@@ -5038,7 +5737,7 @@
               "value": 0.0002,
               "formattedValue": "219.80K",
               "percentage": 0.08,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             }
           ],
           [
@@ -5068,14 +5767,14 @@
               "value": 0.0002,
               "formattedValue": "196.35K",
               "percentage": 0.07,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Bridgepoint VII Negev Co-Investment L.P LumApps",
               "value": 0.0002,
               "formattedValue": "194.13K",
               "percentage": 0.07,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Vintage Clal Co-Investment II L.P.(Nrt F IV)",
@@ -5096,14 +5795,14 @@
               "value": 0.0002,
               "formattedValue": "188.08K",
               "percentage": 0.07,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Bridgepoint VII Negev Co-Investment L.P Vivacy",
               "value": 0.0002,
               "formattedValue": "181.21K",
               "percentage": 0.07,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "Vintage Clal Co-Investment III L.P. Nrt VII",
@@ -5147,7 +5846,7 @@
               "value": 0.0001,
               "formattedValue": "122.40K",
               "percentage": 0.05,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "ECV MANCO SPV 1",
@@ -5226,7 +5925,7 @@
               "value": 0.0,
               "formattedValue": "47.86K",
               "percentage": 0.02,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "Greenlight Fund",
@@ -5270,7 +5969,7 @@
               "value": -0.0,
               "formattedValue": "-8.22K",
               "percentage": -0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -5456,27 +6155,6 @@
               "value": -0.001,
               "formattedValue": "-970.23K",
               "percentage": 146.21,
-              "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      }
-    ],
-    "Cash & Equivalents": [
-      {
-        "subclass": "Deposits",
-        "value": 0.0016,
-        "formattedValue": "1.64M",
-        "percentageOfClass": 100.0,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "בנק מזרחי טפחות בע\"מ",
-              "value": 0.0016,
-              "formattedValue": "1.64M",
-              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -8643,8 +9321,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 1.0104,
-      "formattedValue": "1.01B",
+      "value": 1.2756,
+      "formattedValue": "1.28B",
       "children": [
         {
           "name": "Bonds",
@@ -8657,14 +9335,24 @@
           "formattedValue": "325.45M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.1759,
+          "formattedValue": "175.87M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0903,
+          "formattedValue": "90.26M"
+        },
+        {
           "name": "Derivatives",
           "value": 0.0613,
           "formattedValue": "61.33M"
         },
         {
           "name": "Investment Funds",
-          "value": 0.0442,
-          "formattedValue": "44.23M"
+          "value": 0.0449,
+          "formattedValue": "44.94M"
         },
         {
           "name": "Non-Tradable Stocks",
@@ -8690,11 +9378,6 @@
           "name": "Warrants",
           "value": 0.0021,
           "formattedValue": "2.05M"
-        },
-        {
-          "name": "Cash & Equivalents",
-          "value": 0.0016,
-          "formattedValue": "1.64M"
         },
         {
           "name": "Other Assets",
@@ -8762,23 +9445,23 @@
     },
     {
       "name": "Global",
-      "value": 0.0756,
-      "formattedValue": "75.58M",
+      "value": 0.1002,
+      "formattedValue": "100.16M",
       "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0466,
+          "formattedValue": "46.59M"
+        },
         {
           "name": "Stocks",
           "value": 0.0334,
           "formattedValue": "33.41M"
         },
         {
-          "name": "Investment Funds",
-          "value": 0.0333,
-          "formattedValue": "33.28M"
-        },
-        {
           "name": "Mutual Funds",
-          "value": 0.0055,
-          "formattedValue": "5.48M"
+          "value": 0.0168,
+          "formattedValue": "16.75M"
         },
         {
           "name": "Bonds",
@@ -8837,23 +9520,6 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
-      "value": 0.0348,
-      "formattedValue": "34.82M",
-      "children": [
-        {
-          "name": "Investment Funds",
-          "value": 0.0235,
-          "formattedValue": "23.55M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0113,
-          "formattedValue": "11.27M"
-        }
-      ]
-    },
-    {
       "name": "UK",
       "value": 0.0161,
       "formattedValue": "16.11M",
@@ -8882,6 +9548,28 @@
           "name": "Warrants",
           "value": 0.0002,
           "formattedValue": "162.17K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.016,
+      "formattedValue": "16.01M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0095,
+          "formattedValue": "9.52M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0057,
+          "formattedValue": "5.75M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0007,
+          "formattedValue": "740.59K"
         }
       ]
     },
@@ -8986,18 +9674,6 @@
       ]
     },
     {
-      "name": "🇪🇺   ",
-      "value": 0.0039,
-      "formattedValue": "3.88M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0039,
-          "formattedValue": "3.88M"
-        }
-      ]
-    },
-    {
       "name": "India",
       "value": 0.003,
       "formattedValue": "3.01M",
@@ -9011,23 +9687,6 @@
           "name": "Mutual Funds",
           "value": 0.0006,
           "formattedValue": "643.56K"
-        }
-      ]
-    },
-    {
-      "name": "Europe",
-      "value": 0.0026,
-      "formattedValue": "2.60M",
-      "children": [
-        {
-          "name": "Stocks",
-          "value": 0.0019,
-          "formattedValue": "1.86M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.0007,
-          "formattedValue": "740.59K"
         }
       ]
     },
@@ -9134,6 +9793,283 @@
           "name": "Investment Funds",
           "value": 0.0004,
           "formattedValue": "371.67K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 1.0509,
+      "formattedValue": "1.05B",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.4859,
+          "formattedValue": "485.94M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.2921,
+          "formattedValue": "292.14M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0808,
+          "formattedValue": "80.77M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0804,
+          "formattedValue": "80.44M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0361,
+          "formattedValue": "36.12M"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0189,
+          "formattedValue": "18.91M"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0176,
+          "formattedValue": "17.57M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0173,
+          "formattedValue": "17.31M"
+        },
+        {
+          "name": "Real Estate",
+          "value": 0.0135,
+          "formattedValue": "13.49M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0042,
+          "formattedValue": "4.18M"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0019,
+          "formattedValue": "1.93M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0011,
+          "formattedValue": "1.06M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.001,
+          "formattedValue": "1.05M"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.9616,
+      "formattedValue": "961.57M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.2745,
+          "formattedValue": "274.46M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.196,
+          "formattedValue": "195.97M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.1823,
+          "formattedValue": "182.29M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0881,
+          "formattedValue": "88.05M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0684,
+          "formattedValue": "68.38M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0599,
+          "formattedValue": "59.87M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.058,
+          "formattedValue": "57.97M"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0227,
+          "formattedValue": "22.66M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0081,
+          "formattedValue": "8.06M"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0022,
+          "formattedValue": "2.19M"
+        },
+        {
+          "name": "Options",
+          "value": 0.0015,
+          "formattedValue": "1.45M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0002,
+          "formattedValue": "204.59K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.1252,
+      "formattedValue": "125.20M",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0566,
+          "formattedValue": "56.58M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0238,
+          "formattedValue": "23.84M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0173,
+          "formattedValue": "17.35M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0131,
+          "formattedValue": "13.07M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.005,
+          "formattedValue": "5.02M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0049,
+          "formattedValue": "4.94M"
+        },
+        {
+          "name": "Structured Products",
+          "value": 0.0019,
+          "formattedValue": "1.90M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0018,
+          "formattedValue": "1.76M"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0007,
+          "formattedValue": "746.27K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0458,
+      "formattedValue": "45.75M",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 0.0274,
+          "formattedValue": "27.43M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0106,
+          "formattedValue": "10.65M"
+        },
+        {
+          "name": "Real Estate",
+          "value": 0.0029,
+          "formattedValue": "2.87M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.002,
+          "formattedValue": "1.96M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0012,
+          "formattedValue": "1.25M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0009,
+          "formattedValue": "852.98K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0006,
+          "formattedValue": "618.33K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0001,
+          "formattedValue": "124.44K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.019,
+      "formattedValue": "19.04M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.0066,
+          "formattedValue": "6.57M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0043,
+          "formattedValue": "4.32M"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0036,
+          "formattedValue": "3.63M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0031,
+          "formattedValue": "3.11M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0012,
+          "formattedValue": "1.24M"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0002,
+          "formattedValue": "162.17K"
         }
       ]
     }

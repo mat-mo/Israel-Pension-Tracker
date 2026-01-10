@@ -2,28 +2,55 @@
   "fundName": "אינפיניטי כללית עוקב מדד S&P 500",
   "trackId": "14058",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.44M",
+  "formattedTotalAssets": "2.99M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0022,
       "formattedValue": "2.19M",
-      "percentage": 89.9
+      "percentage": 73.09
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0006,
+      "formattedValue": "559.90K",
+      "percentage": 18.69
     },
     {
       "name": "Bonds",
       "value": 0.0002,
       "formattedValue": "239.12K",
-      "percentage": 9.82
+      "percentage": 7.98
     },
     {
       "name": "Futures",
       "value": 0.0,
       "formattedValue": "6.86K",
-      "percentage": 0.28
+      "percentage": 0.23
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0006,
+        "formattedValue": "559.90K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0006,
+              "formattedValue": "559.90K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -161,6 +188,42 @@
           "name": "Stocks",
           "value": 0.0022,
           "formattedValue": "2.19M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0002,
+          "formattedValue": "239.12K"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0006,
+      "formattedValue": "559.90K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0006,
+          "formattedValue": "559.90K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0029,
+      "formattedValue": "2.94M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0022,
+          "formattedValue": "2.19M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "514.23K"
         },
         {
           "name": "Bonds",

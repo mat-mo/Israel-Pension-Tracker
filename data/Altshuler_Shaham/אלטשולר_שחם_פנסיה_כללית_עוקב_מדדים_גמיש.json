@@ -2,28 +2,55 @@
   "fundName": "אלטשולר שחם פנסיה כללית עוקב מדדים גמיש",
   "trackId": "14305",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "3.28M",
+  "formattedTotalAssets": "4.80M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0033,
       "formattedValue": "3.31M",
-      "percentage": 100.93
+      "percentage": 69.06
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0015,
+      "formattedValue": "1.52M",
+      "percentage": 31.58
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-0.71K",
-      "percentage": -0.02
+      "percentage": -0.01
     },
     {
       "name": "Other Assets",
       "value": -0.0,
       "formattedValue": "-29.70K",
-      "percentage": -0.9
+      "percentage": -0.62
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0015,
+        "formattedValue": "1.52M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "לאומי",
+              "value": 0.0015,
+              "formattedValue": "1.52M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Other Assets": [
       {
         "subclass": "General",
@@ -74,14 +101,14 @@
               "value": 0.0,
               "formattedValue": "0.62K",
               "percentage": -86.88,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "EURUSD",
               "value": -0.0,
               "formattedValue": "-0.01K",
               "percentage": 2.12,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "USDJPY",
@@ -179,7 +206,7 @@
               "value": 0.0001,
               "formattedValue": "96.82K",
               "percentage": 2.92,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             }
           ],
           [
@@ -209,7 +236,7 @@
               "value": 0.0001,
               "formattedValue": "58.66K",
               "percentage": 1.77,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "NEXT FUNDS TOPIX Exchange Trad",
@@ -272,14 +299,26 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
-      "value": 0.0002,
-      "formattedValue": "155.48K",
+      "name": "Israel",
+      "value": 0.0016,
+      "formattedValue": "1.61M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0016,
+          "formattedValue": "1.61M"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.0003,
+      "formattedValue": "259.25K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.0002,
-          "formattedValue": "155.48K"
+          "value": 0.0003,
+          "formattedValue": "259.25K"
         }
       ]
     },
@@ -294,16 +333,59 @@
           "formattedValue": "124.03K"
         }
       ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0031,
+      "formattedValue": "3.08M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0029,
+          "formattedValue": "2.93M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "151.53K"
+        }
+      ]
     },
     {
-      "name": "Europe",
+      "name": "ILS",
+      "value": 0.0014,
+      "formattedValue": "1.36M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0014,
+          "formattedValue": "1.36M"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0003,
+      "formattedValue": "259.25K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0003,
+          "formattedValue": "259.25K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
       "value": 0.0001,
-      "formattedValue": "103.77K",
+      "formattedValue": "124.03K",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0001,
-          "formattedValue": "103.77K"
+          "formattedValue": "124.03K"
         }
       ]
     }

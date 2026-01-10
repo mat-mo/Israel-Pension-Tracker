@@ -2,19 +2,25 @@
   "fundName": "מסלול בסיסי למקבלי קצבה",
   "trackId": "14050",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.06M",
+  "formattedTotalAssets": "1.09M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0008,
       "formattedValue": "809.43K",
-      "percentage": 76.29
+      "percentage": 74.28
     },
     {
       "name": "Stocks",
       "value": 0.0003,
       "formattedValue": "251.58K",
-      "percentage": 23.71
+      "percentage": 23.09
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "28.63K",
+      "percentage": 2.63
     }
   ],
   "breakdown": {
@@ -298,6 +304,27 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0,
+        "formattedValue": "28.63K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0,
+              "formattedValue": "28.63K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -355,7 +382,7 @@
               "value": 0.0,
               "formattedValue": "18.02K",
               "percentage": 10.02,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "תכלית סל PHLX Semiconductor",
@@ -455,7 +482,7 @@
     {
       "name": "Israel",
       "value": 0.001,
-      "formattedValue": "985.52K",
+      "formattedValue": "1.00M",
       "children": [
         {
           "name": "Bonds",
@@ -465,7 +492,26 @@
         {
           "name": "Stocks",
           "value": 0.0002,
-          "formattedValue": "176.09K"
+          "formattedValue": "194.10K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.001,
+      "formattedValue": "1.00M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0008,
+          "formattedValue": "809.43K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "194.10K"
         }
       ]
     }

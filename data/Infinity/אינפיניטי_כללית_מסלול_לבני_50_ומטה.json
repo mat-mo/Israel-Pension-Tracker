@@ -2,19 +2,25 @@
   "fundName": "אינפיניטי כללית מסלול לבני 50 ומטה",
   "trackId": "14045",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "6.92M",
+  "formattedTotalAssets": "7.59M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.004,
       "formattedValue": "4.02M",
-      "percentage": 58.07
+      "percentage": 52.93
     },
     {
       "name": "Bonds",
       "value": 0.0029,
       "formattedValue": "2.90M",
-      "percentage": 41.93
+      "percentage": 38.22
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0007,
+      "formattedValue": "670.91K",
+      "percentage": 8.84
     }
   ],
   "breakdown": {
@@ -672,6 +678,27 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0007,
+        "formattedValue": "670.91K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0007,
+              "formattedValue": "670.91K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -831,7 +858,7 @@
               "value": 0.0,
               "formattedValue": "37.36K",
               "percentage": 1.56,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "תכלית סל SP500 מנוטר",
@@ -910,7 +937,7 @@
               "value": 0.0,
               "formattedValue": "3.40K",
               "percentage": 0.14,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "הראל סל NDX 100",
@@ -1485,8 +1512,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.005,
-      "formattedValue": "4.95M",
+      "value": 0.006,
+      "formattedValue": "5.96M",
       "children": [
         {
           "name": "Bonds",
@@ -1496,7 +1523,12 @@
         {
           "name": "Stocks",
           "value": 0.0021,
-          "formattedValue": "2.05M"
+          "formattedValue": "2.09M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.001,
+          "formattedValue": "964.74K"
         }
       ]
     },
@@ -1509,6 +1541,47 @@
           "name": "Stocks",
           "value": 0.0019,
           "formattedValue": "1.89M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0058,
+      "formattedValue": "5.80M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0029,
+          "formattedValue": "2.90M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0021,
+          "formattedValue": "2.10M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0008,
+          "formattedValue": "796.66K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0021,
+      "formattedValue": "2.06M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0019,
+          "formattedValue": "1.91M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "153.38K"
         }
       ]
     }

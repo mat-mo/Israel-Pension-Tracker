@@ -1,73 +1,264 @@
 {
   "fundName": "כלל פנסיה קצבה לזכאים קיימים",
   "trackId": "9649",
-  "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "1.79M",
+  "totalAssetsBN": 0.05,
+  "formattedTotalAssets": "52.29M",
   "assetClasses": [
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0505,
+      "formattedValue": "50.45M",
+      "percentage": 96.5
+    },
     {
       "name": "Bonds",
       "value": 0.0012,
       "formattedValue": "1.21M",
-      "percentage": 67.72
+      "percentage": 2.32
     },
     {
-      "name": "Non-Tradable Bonds",
+      "name": "Cash & Equivalents",
       "value": 0.0006,
-      "formattedValue": "577.43K",
-      "percentage": 32.28
+      "formattedValue": "564.05K",
+      "percentage": 1.08
+    },
+    {
+      "name": "Loans",
+      "value": 0.0001,
+      "formattedValue": "56.44K",
+      "percentage": 0.11
     }
   ],
   "breakdown": {
     "Non-Tradable Bonds": [
       {
         "subclass": "General",
-        "value": 0.0006,
-        "formattedValue": "577.43K",
+        "value": 0.0505,
+        "formattedValue": "50.45M",
         "percentageOfClass": 100.0,
-        "itemCount": 6,
-        "totalPages": 1,
+        "itemCount": 25,
+        "totalPages": 3,
         "holdingsPages": [
           [
+            {
+              "name": "ערד 8813",
+              "value": 0.0168,
+              "formattedValue": "16.82M",
+              "percentage": 33.34,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8869",
+              "value": 0.0111,
+              "formattedValue": "11.13M",
+              "percentage": 22.06,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8778",
+              "value": 0.0053,
+              "formattedValue": "5.28M",
+              "percentage": 10.46,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8777",
+              "value": 0.0031,
+              "formattedValue": "3.15M",
+              "percentage": 6.24,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8786",
+              "value": 0.003,
+              "formattedValue": "3.00M",
+              "percentage": 5.94,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8779",
+              "value": 0.0028,
+              "formattedValue": "2.78M",
+              "percentage": 5.5,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8815",
+              "value": 0.002,
+              "formattedValue": "1.99M",
+              "percentage": 3.94,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8823",
+              "value": 0.0015,
+              "formattedValue": "1.46M",
+              "percentage": 2.9,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8776",
+              "value": 0.0012,
+              "formattedValue": "1.15M",
+              "percentage": 2.29,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8801",
+              "value": 0.0009,
+              "formattedValue": "881.10K",
+              "percentage": 1.75,
+              "countryEmoji": ""
+            }
+          ],
+          [
+            {
+              "name": "ערד 8829",
+              "value": 0.0007,
+              "formattedValue": "711.43K",
+              "percentage": 1.41,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8824",
+              "value": 0.0006,
+              "formattedValue": "595.26K",
+              "percentage": 1.18,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8783",
+              "value": 0.0003,
+              "formattedValue": "317.58K",
+              "percentage": 0.63,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8784",
+              "value": 0.0003,
+              "formattedValue": "273.95K",
+              "percentage": 0.54,
+              "countryEmoji": ""
+            },
             {
               "name": "מנורה מבטחים אגח ג נשר",
               "value": 0.0002,
               "formattedValue": "246.58K",
-              "percentage": 42.7,
+              "percentage": 0.49,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד 8803",
+              "value": 0.0002,
+              "formattedValue": "168.63K",
+              "percentage": 0.33,
+              "countryEmoji": ""
             },
             {
               "name": "קרן שמש אגח א רצף מוסדי",
               "value": 0.0001,
               "formattedValue": "126.52K",
-              "percentage": 21.91,
+              "percentage": 0.25,
               "countryEmoji": "🇮🇱"
             },
             {
               "name": "ממון משכנתאות אגח 1 רצף מוסדי",
               "value": 0.0001,
               "formattedValue": "117.09K",
-              "percentage": 20.28,
+              "percentage": 0.23,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד 8782",
+              "value": 0.0001,
+              "formattedValue": "93.58K",
+              "percentage": 0.19,
+              "countryEmoji": ""
             },
             {
               "name": "נתיבי גז אגח א רצף מוסדי",
               "value": 0.0,
               "formattedValue": "46.11K",
-              "percentage": 7.99,
+              "percentage": 0.09,
               "countryEmoji": "🇮🇱"
-            },
+            }
+          ],
+          [
             {
               "name": "נתיבי גז אגח ג רצף מוסדי",
               "value": 0.0,
               "formattedValue": "39.33K",
-              "percentage": 6.81,
+              "percentage": 0.08,
               "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "ערד 8780",
+              "value": 0.0,
+              "formattedValue": "36.82K",
+              "percentage": 0.07,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8849",
+              "value": 0.0,
+              "formattedValue": "27.42K",
+              "percentage": 0.05,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8802",
+              "value": 0.0,
+              "formattedValue": "9.20K",
+              "percentage": 0.02,
+              "countryEmoji": ""
             },
             {
               "name": "תשתיות נפט ואנרגיה אגח א רצף מוסדי",
               "value": 0.0,
               "formattedValue": "1.80K",
-              "percentage": 0.31,
+              "percentage": 0.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Loans": [
+      {
+        "subclass": "Direct Loans",
+        "value": 0.0001,
+        "formattedValue": "56.44K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "הלוואה לגורם 77",
+              "value": 0.0001,
+              "formattedValue": "56.44K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0006,
+        "formattedValue": "564.05K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0006,
+              "formattedValue": "564.05K",
+              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -145,9 +336,21 @@
   },
   "geoSunburst": [
     {
+      "name": "Global",
+      "value": 0.0499,
+      "formattedValue": "49.88M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0499,
+          "formattedValue": "49.88M"
+        }
+      ]
+    },
+    {
       "name": "Israel",
-      "value": 0.0018,
-      "formattedValue": "1.79M",
+      "value": 0.0024,
+      "formattedValue": "2.35M",
       "children": [
         {
           "name": "Bonds",
@@ -158,6 +361,35 @@
           "name": "Non-Tradable Bonds",
           "value": 0.0006,
           "formattedValue": "577.43K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0006,
+          "formattedValue": "564.05K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0522,
+      "formattedValue": "52.23M",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0505,
+          "formattedValue": "50.45M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0012,
+          "formattedValue": "1.21M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0006,
+          "formattedValue": "564.05K"
         }
       ]
     }

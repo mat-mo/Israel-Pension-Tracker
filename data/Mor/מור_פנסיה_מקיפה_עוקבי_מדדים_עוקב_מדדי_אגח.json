@@ -2,40 +2,65 @@
   "fundName": "מור פנסיה מקיפה עוקבי מדדים עוקב מדדי אג\"ח",
   "trackId": "15265",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.72M",
+  "formattedTotalAssets": "3.89M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0019,
       "formattedValue": "1.92M",
-      "percentage": 70.53
+      "percentage": 49.37
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0012,
+      "formattedValue": "1.15M",
+      "percentage": 29.63
     },
     {
       "name": "Bonds",
       "value": 0.0008,
       "formattedValue": "755.51K",
-      "percentage": 27.77
+      "percentage": 19.44
     },
     {
-      "name": "Other Assets",
+      "name": "Cash & Equivalents",
       "value": 0.0001,
-      "formattedValue": "59.56K",
-      "percentage": 2.19
+      "formattedValue": "74.01K",
+      "percentage": 1.9
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-13.28K",
-      "percentage": -0.49
+      "percentage": -0.34
     }
   ],
   "breakdown": {
     "Other Assets": [
       {
+        "subclass": "Unclassified",
+        "value": 0.0011,
+        "formattedValue": "1.09M",
+        "percentageOfClass": 94.83,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "נכס או התחייבות בגין השלמת המדינה לתשואת היעד",
+              "value": 0.0011,
+              "formattedValue": "1.09M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "General",
         "value": 0.0001,
         "formattedValue": "59.56K",
-        "percentageOfClass": 100.0,
+        "percentageOfClass": 5.17,
         "itemCount": 4,
         "totalPages": 1,
         "holdingsPages": [
@@ -66,6 +91,34 @@
               "value": 0.0,
               "formattedValue": "0.17K",
               "percentage": 0.28,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "74.01K",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0001,
+              "formattedValue": "73.07K",
+              "percentage": 98.73,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": 0.0,
+              "formattedValue": "0.94K",
+              "percentage": 1.27,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -186,6 +239,49 @@
           "name": "Bonds",
           "value": 0.0008,
           "formattedValue": "755.51K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0012,
+      "formattedValue": "1.21M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.0012,
+          "formattedValue": "1.21M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0027,
+      "formattedValue": "2.67M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0019,
+          "formattedValue": "1.92M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0008,
+          "formattedValue": "755.51K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0013,
+      "formattedValue": "1.27M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.0013,
+          "formattedValue": "1.27M"
         }
       ]
     }

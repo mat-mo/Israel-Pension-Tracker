@@ -1,47 +1,72 @@
 {
   "fundName": "מור פנסיה מקיפה עוקבי מדדים עוקב מדד s&p 500",
   "trackId": "15266",
-  "totalAssetsBN": 0.23,
-  "formattedTotalAssets": "234.50M",
+  "totalAssetsBN": 0.52,
+  "formattedTotalAssets": "520.96M",
   "assetClasses": [
+    {
+      "name": "Other Assets",
+      "value": 0.1545,
+      "formattedValue": "154.52M",
+      "percentage": 29.66
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.14,
+      "formattedValue": "140.01M",
+      "percentage": 26.88
+    },
     {
       "name": "Bonds",
       "value": 0.1294,
       "formattedValue": "129.43M",
-      "percentage": 55.19
+      "percentage": 24.84
     },
     {
       "name": "Stocks",
       "value": 0.1017,
       "formattedValue": "101.66M",
-      "percentage": 43.35
-    },
-    {
-      "name": "Other Assets",
-      "value": 0.0081,
-      "formattedValue": "8.07M",
-      "percentage": 3.44
+      "percentage": 19.51
     },
     {
       "name": "Futures",
       "value": 0.0023,
       "formattedValue": "2.30M",
-      "percentage": 0.98
+      "percentage": 0.44
     },
     {
       "name": "Derivatives",
       "value": -0.007,
       "formattedValue": "-6.95M",
-      "percentage": -2.96
+      "percentage": -1.33
     }
   ],
   "breakdown": {
     "Other Assets": [
       {
+        "subclass": "Unclassified",
+        "value": 0.1465,
+        "formattedValue": "146.45M",
+        "percentageOfClass": 94.78,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "נכס או התחייבות בגין השלמת המדינה לתשואת היעד",
+              "value": 0.1465,
+              "formattedValue": "146.45M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "General",
         "value": 0.0081,
         "formattedValue": "8.07M",
-        "percentageOfClass": 100.0,
+        "percentageOfClass": 5.22,
         "itemCount": 5,
         "totalPages": 1,
         "holdingsPages": [
@@ -79,6 +104,34 @@
               "value": -0.0001,
               "formattedValue": "-96.36K",
               "percentage": -1.19,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.14,
+        "formattedValue": "140.01M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.14,
+              "formattedValue": "139.99M",
+              "percentage": 99.98,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": 0.0,
+              "formattedValue": "24.09K",
+              "percentage": 0.02,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -250,9 +303,14 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.1446,
-      "formattedValue": "144.64M",
+      "value": 0.2847,
+      "formattedValue": "284.66M",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.14,
+          "formattedValue": "140.02M"
+        },
         {
           "name": "Bonds",
           "value": 0.1294,
@@ -271,6 +329,18 @@
       ]
     },
     {
+      "name": "Global",
+      "value": 0.1465,
+      "formattedValue": "146.45M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.1465,
+          "formattedValue": "146.45M"
+        }
+      ]
+    },
+    {
       "name": "USA",
       "value": 0.104,
       "formattedValue": "103.96M",
@@ -284,6 +354,62 @@
           "name": "Futures",
           "value": 0.0023,
           "formattedValue": "2.30M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.3699,
+      "formattedValue": "369.85M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.1542,
+          "formattedValue": "154.21M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.1294,
+          "formattedValue": "129.43M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0862,
+          "formattedValue": "86.22M"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.1652,
+      "formattedValue": "165.21M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.1017,
+          "formattedValue": "101.66M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0538,
+          "formattedValue": "53.81M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.007,
+          "formattedValue": "6.95M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0023,
+          "formattedValue": "2.30M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0005,
+          "formattedValue": "495.77K"
         }
       ]
     }

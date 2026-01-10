@@ -1,38 +1,44 @@
 {
   "fundName": "כלל פנסיה משלימה מניות סחיר",
   "trackId": "15434",
-  "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "24.57M",
+  "totalAssetsBN": 0.03,
+  "formattedTotalAssets": "25.15M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0239,
       "formattedValue": "23.94M",
-      "percentage": 97.43
+      "percentage": 95.2
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0006,
+      "formattedValue": "575.22K",
+      "percentage": 2.29
     },
     {
       "name": "Derivatives",
       "value": 0.0002,
       "formattedValue": "235.02K",
-      "percentage": 0.96
+      "percentage": 0.93
     },
     {
       "name": "Other Assets",
       "value": 0.0002,
       "formattedValue": "200.71K",
-      "percentage": 0.82
+      "percentage": 0.8
     },
     {
       "name": "Warrants",
       "value": 0.0001,
       "formattedValue": "102.66K",
-      "percentage": 0.42
+      "percentage": 0.41
     },
     {
       "name": "Structured Products",
       "value": 0.0001,
       "formattedValue": "85.00K",
-      "percentage": 0.35
+      "percentage": 0.34
     },
     {
       "name": "Options",
@@ -1765,6 +1771,62 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0006,
+        "formattedValue": "575.22K",
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.0004,
+              "formattedValue": "365.63K",
+              "percentage": 63.56,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0002,
+              "formattedValue": "155.51K",
+              "percentage": 27.03,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הבנק הבינלאומי הראשון לישראל בע\"מ",
+              "value": 0.0,
+              "formattedValue": "32.83K",
+              "percentage": 5.71,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.0,
+              "formattedValue": "15.17K",
+              "percentage": 2.64,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.0,
+              "formattedValue": "3.56K",
+              "percentage": 0.62,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "סיטיבנק",
+              "value": 0.0,
+              "formattedValue": "2.53K",
+              "percentage": 0.44,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Structured Products": [
       {
         "subclass": "Non-Tradable",
@@ -1883,13 +1945,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0237,
-      "formattedValue": "23.67M",
+      "value": 0.0246,
+      "formattedValue": "24.64M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0231,
           "formattedValue": "23.13M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.001,
+          "formattedValue": "972.94K"
         },
         {
           "name": "Derivatives",
@@ -1917,6 +1984,76 @@
           "name": "Stocks",
           "value": 0.0007,
           "formattedValue": "687.71K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0218,
+      "formattedValue": "21.85M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0208,
+          "formattedValue": "20.77M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0007,
+          "formattedValue": "652.27K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0002,
+          "formattedValue": "225.43K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0002,
+          "formattedValue": "196.84K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0031,
+      "formattedValue": "3.10M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0028,
+          "formattedValue": "2.81M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "294.97K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.0002,
+      "formattedValue": "220.19K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "220.19K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0001,
+      "formattedValue": "101.18K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "101.18K"
         }
       ]
     }

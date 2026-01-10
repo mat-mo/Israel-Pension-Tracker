@@ -24,8 +24,6 @@
         .chart-box { height: 400px; width: 100%; }
         #loading { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.8); z-index: 50; justify-content: center; align-items: center; }
         .dark #loading { background: rgba(15, 23, 42, 0.8); }
-        
-        /* Table Row Transition */
         tbody tr { transition: background-color 0.2s; }
     </style>
 </head>
@@ -81,7 +79,7 @@
             </div>
         </div>
 
-        <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-100 dark:border-dark-border overflow-hidden transition-colors duration-300">
+        <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-100 dark:border-dark-border overflow-hidden transition-colors duration-300 mt-6">
             <div class="p-6 border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 flex justify-between items-center transition-colors duration-300">
                 <h3 id="tableTitle" class="font-bold text-gray-700 dark:text-gray-200">Holdings</h3>
                 <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full" id="tableBadge">Select a Category</span>
@@ -114,12 +112,23 @@
             </div>
         </div>
 
-        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
-            <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
-                <h2 class="font-bold text-lg text-gray-800 dark:text-white">3. Geographic Allocation</h2>
-                <p class="text-xs text-gray-400 dark:text-gray-500">Breakdown by Country & Asset Class (Click center to zoom out)</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            
+            <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
+                <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
+                    <h2 class="font-bold text-lg text-gray-800 dark:text-white">3. Geographic Exposure</h2>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">By Country (Economic Exposure)</p>
+                </div>
+                <div id="geoSunburstChart" class="h-[500px] w-full"></div> 
             </div>
-            <div id="geoSunburstChart" class="h-[600px] w-full"></div>
+
+            <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300">
+                <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
+                    <h2 class="font-bold text-lg text-gray-800 dark:text-white">4. Currency Exposure</h2>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">By Currency (After Hedging)</p>
+                </div>
+                <div id="currencySunburstChart" class="h-[500px] w-full"></div> 
+            </div>
         </div>
         
         <footer class="mt-8 text-center text-xs text-gray-400 dark:text-gray-600 pb-4">
@@ -130,7 +139,8 @@
     <script>
         let mainChart = null;
         let subChart = null;
-        let geoSunburstChart = null; // NEW Variable
+        let geoSunburstChart = null;
+        let currencySunburstChart = null; // NEW Variable
         
         let currentManifest = [];
         let currentInst = null;
@@ -182,7 +192,6 @@
         // --- Data Loading ---
         const loading = document.getElementById('loading');
         
-        // 1. Fetch Manifest
         fetch('data/manifest.json')
             .then(res => res.json())
             .then(data => {
@@ -211,7 +220,6 @@
                 populateTracks(currentInst);
             });
 
-            // Auto-load first
             if (currentManifest.length > 0) {
                 instSelector.value = 0;
                 currentInst = currentManifest[0];
@@ -234,7 +242,6 @@
             trackSelector.removeEventListener('change', handleTrackChange);
             trackSelector.addEventListener('change', handleTrackChange);
 
-            // Auto-load first track
             if (inst.tracks.length > 0) {
                 fetchTrack(inst.directory, inst.tracks[0].file);
             }
@@ -268,7 +275,6 @@
 
         // --- Chart Rendering ---
         function renderCharts(data, resetView) {
-            // 1. Detect Mobile
             const isMobile = window.innerWidth < 768;
             if (!mainChart) mainChart = echarts.init(document.getElementById('mainChart'));
             if (!subChart) subChart = echarts.init(document.getElementById('subChart'));
@@ -325,100 +331,121 @@
                 updateSubChart(data.assetClasses[0].name);
             }
 
+            // --- RENDER SUNBURSTS ---
             renderGeoSunburst(data);
+            renderCurrencySunburst(data);
             
-            // Resize logic
             window.addEventListener('resize', () => {
                 mainChart.resize();
                 subChart.resize();
                 if(geoSunburstChart) geoSunburstChart.resize();
+                if(currencySunburstChart) currencySunburstChart.resize();
             });
         }
 
+        // --- Geo Sunburst ---
         function renderGeoSunburst(data) {
-    if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
-    
-    // Safety check
-    if (!data.geoSunburst || data.geoSunburst.length === 0) { 
-        geoSunburstChart.clear();
-        geoSunburstChart.setOption({
-            title: {
-                text: 'No Geographic Data Available',
-                left: 'center', top: 'center',
-                textStyle: { color: '#9ca3af' }
+            if (!geoSunburstChart) geoSunburstChart = echarts.init(document.getElementById('geoSunburstChart'));
+            
+            if (!data.geoSunburst || data.geoSunburst.length === 0) { 
+                geoSunburstChart.clear();
+                geoSunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
+                return; 
             }
-        });
-        return; 
-    }
 
-    // 1. Calculate Total Value manually for the percentage share
-    const totalPortfolioValue = data.geoSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
+            // Calc Total (Absolute Exposure) for Share
+            const totalExposure = data.geoSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
+            const isMobile = window.innerWidth < 768;
+            const colors = getChartColors(); 
 
-    const isMobile = window.innerWidth < 768;
-    const colors = getChartColors(); 
-
-    const option = {
-        tooltip: {
-            trigger: 'item',
-            backgroundColor: colors.tooltipBg,
-            borderColor: colors.tooltipBorder,
-            textStyle: { color: colors.tooltipText },
-            formatter: (params) => {
-                if (!params.data) return '';
-
-                // Build Path (e.g., Israel > Stocks)
-                let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
-                
-                // Get Formatted Value
-                let val = params.data.formattedValue || params.value;
-                
-                // Fix: Manually calculate share if params.percent is undefined
-                let share = params.percent;
-                if (share === undefined && totalPortfolioValue > 0) {
-                    // Calculate percentage relative to total portfolio
-                    share = ((params.value / totalPortfolioValue) * 100).toFixed(2);
-                }
-
-                return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
-            }
-        },
-        series: {
-            type: 'sunburst',
-            data: data.geoSunburst,
-            radius: ['15%', '80%'],
-            sort: null, 
-            emphasis: { focus: 'ancestor' },
-            itemStyle: {
-                borderRadius: 4,
-                borderWidth: 2,
-                borderColor: colors.borderColor 
-            },
-            label: {
-                rotate: 'radial', 
-                color: colors.text,
-                fontWeight: 'bold',
-                minAngle: 5 
-            },
-            levels: [
-                {}, 
-                {
-                    r0: '15%', r: '45%',
-                    label: { rotate: 'tangential', align: 'center' },
-                    itemStyle: { borderWidth: 2 }
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: colors.tooltipBg,
+                    borderColor: colors.tooltipBorder,
+                    textStyle: { color: colors.tooltipText },
+                    formatter: (params) => {
+                        if (!params.data) return '';
+                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
+                        let val = params.data.formattedValue || params.value;
+                        
+                        let share = params.percent;
+                        if (share === undefined && totalExposure > 0) {
+                            share = ((params.value / totalExposure) * 100).toFixed(2);
+                        }
+                        return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
+                    }
                 },
-                {
-                    r0: '45%', r: '75%',
-                    label: { align: 'right', padding: 3 }
+                series: {
+                    type: 'sunburst',
+                    data: data.geoSunburst,
+                    radius: ['15%', '80%'],
+                    sort: null, 
+                    emphasis: { focus: 'ancestor' },
+                    itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor },
+                    label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
+                    levels: [
+                        {}, 
+                        { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
+                        { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
+                    ]
                 }
-              ]
-             }
             };
             geoSunburstChart.setOption(option);
-        }  
+        }
+
+        // --- Currency Sunburst ---
+        function renderCurrencySunburst(data) {
+            if (!currencySunburstChart) currencySunburstChart = echarts.init(document.getElementById('currencySunburstChart'));
+            
+            if (!data.currencySunburst || data.currencySunburst.length === 0) { 
+                currencySunburstChart.clear();
+                currencySunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
+                return; 
+            }
+
+            // Calc Total (Absolute Exposure)
+            const totalExposure = data.currencySunburst.reduce((sum, item) => sum + (item.value || 0), 0);
+            const colors = getChartColors(); 
+
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: colors.tooltipBg,
+                    borderColor: colors.tooltipBorder,
+                    textStyle: { color: colors.tooltipText },
+                    formatter: (params) => {
+                        if (!params.data) return '';
+                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
+                        let val = params.data.formattedValue || params.value;
+                        
+                        let share = params.percent;
+                        if (share === undefined && totalExposure > 0) {
+                            share = ((params.value / totalExposure) * 100).toFixed(2);
+                        }
+                        return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
+                    }
+                },
+                series: {
+                    type: 'sunburst',
+                    data: data.currencySunburst,
+                    radius: ['15%', '80%'],
+                    sort: null,
+                    emphasis: { focus: 'ancestor' },
+                    itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor },
+                    label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
+                     levels: [
+                        {}, 
+                        { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
+                        { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
+                    ]
+                }
+            };
+            currencySunburstChart.setOption(option);
+        }
 
         function updateSubChart(categoryName) {
             const isMobile = window.innerWidth < 768;
-
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
             
@@ -426,16 +453,8 @@
             
             if (!breakdown || breakdown.length === 0) {
                 subChart.clear();
-                subChart.setOption({
-                    title: {
-                        text: 'No breakdown available',
-                        subtext: categoryName,
-                        left: 'center',
-                        top: 'center',
-                        textStyle: { color: '#9ca3af' }
-                    }
-                });
-                renderTable([]); // Clear table
+                subChart.setOption({ title: { text: 'No breakdown', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
+                renderTable([]); 
                 return;
             }
 
@@ -457,50 +476,34 @@
                     name: 'Subclass',
                     type: 'pie',
                     radius: isMobile ? ['25%', '50%'] : ['35%', '65%'],
-                    itemStyle: { 
-                        borderRadius: 4, 
-                        borderColor: colors.borderColor, 
-                        borderWidth: 2 
-                    },
-                    label: { 
-                        show: true, 
-                        formatter: '{b}\n{d}%', 
-                        color: colors.text 
-                    },
+                    itemStyle: { borderRadius: 4, borderColor: colors.borderColor, borderWidth: 2 },
+                    label: { show: true, formatter: '{b}\n{d}%', color: colors.text },
                     data: pieData
                 }]
             };
             
             subChart.setOption(option, true);
-            
             subChart.off('click');
             subChart.on('click', function(params) {
                 const selectedSubclass = breakdown.find(b => b.subclass === params.name);
-                if (selectedSubclass) {
-                    loadSubclassTable(selectedSubclass);
-                }
+                if (selectedSubclass) { loadSubclassTable(selectedSubclass); }
             });
 
-            if (breakdown.length > 0) {
-                loadSubclassTable(breakdown[0]);
-            }
+            if (breakdown.length > 0) { loadSubclassTable(breakdown[0]); }
         }
 
         // --- Table & Pagination Logic ---
 
         function loadSubclassTable(subclassData) {
             currentSubclassData = subclassData;
-            currentPage = 0; // Reset to first page
-            
+            currentPage = 0; 
             document.getElementById('tableTitle').innerText = `Holdings: ${subclassData.subclass}`;
             document.getElementById('tableBadge').innerText = `${subclassData.itemCount || (subclassData.topHoldings ? subclassData.topHoldings.length : 0)} Items`;
-            
             renderTable();
         }
 
         function changePage(delta) {
             if (!currentSubclassData || !currentSubclassData.holdingsPages) return;
-            
             const newPage = currentPage + delta;
             if (newPage >= 0 && newPage < currentSubclassData.totalPages) {
                 currentPage = newPage;
@@ -531,7 +534,6 @@
                 return;
             }
 
-            // Render Rows
             holdingsToShow.forEach(h => {
                 const tr = document.createElement('tr');
                 tr.className = "bg-white dark:bg-dark-card border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors";

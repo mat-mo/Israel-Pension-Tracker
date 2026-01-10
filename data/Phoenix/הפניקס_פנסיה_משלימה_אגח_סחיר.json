@@ -2,37 +2,43 @@
   "fundName": "הפניקס פנסיה משלימה אג\"ח סחיר",
   "trackId": "15220",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.25M",
+  "formattedTotalAssets": "2.39M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0017,
       "formattedValue": "1.73M",
-      "percentage": 76.9
+      "percentage": 72.45
     },
     {
       "name": "Stocks",
       "value": 0.0004,
       "formattedValue": "399.19K",
-      "percentage": 17.7
+      "percentage": 16.68
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0001,
+      "formattedValue": "138.37K",
+      "percentage": 5.78
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0001,
       "formattedValue": "82.73K",
-      "percentage": 3.67
+      "percentage": 3.46
     },
     {
       "name": "Options",
       "value": 0.0,
       "formattedValue": "31.54K",
-      "percentage": 1.4
+      "percentage": 1.32
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "4.56K",
-      "percentage": 0.2
+      "percentage": 0.19
     },
     {
       "name": "Other Assets",
@@ -44,7 +50,7 @@
       "name": "Warrants",
       "value": 0.0,
       "formattedValue": "0.83K",
-      "percentage": 0.04
+      "percentage": 0.03
     },
     {
       "name": "Futures",
@@ -60,6 +66,62 @@
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0001,
+        "formattedValue": "138.37K",
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0001,
+              "formattedValue": "126.50K",
+              "percentage": 91.42,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0,
+              "formattedValue": "8.33K",
+              "percentage": 6.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק U בנק",
+              "value": 0.0,
+              "formattedValue": "1.28K",
+              "percentage": 0.93,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI",
+              "value": 0.0,
+              "formattedValue": "1.07K",
+              "percentage": 0.77,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.0,
+              "formattedValue": "0.92K",
+              "percentage": 0.66,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0,
+              "formattedValue": "0.28K",
+              "percentage": 0.2,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Non-Tradable Bonds": [
       {
         "subclass": "General",
@@ -1014,7 +1076,7 @@
               "value": 0.0,
               "formattedValue": "3.96K",
               "percentage": 0.32,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "סיאון אגח א",
@@ -1518,7 +1580,7 @@
               "value": 0.0,
               "formattedValue": "2.27K",
               "percentage": 0.18,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "הכשרת ישוב אגח 25",
@@ -1827,7 +1889,7 @@
               "value": 0.0,
               "formattedValue": "1.63K",
               "percentage": 0.13,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "קיסטון אינ אגח ב",
@@ -3295,7 +3357,7 @@
               "value": 0.0,
               "formattedValue": "0.04K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
@@ -3353,7 +3415,7 @@
               "value": 0.0,
               "formattedValue": "0.02K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "לאומי התח נד 402 (COCO)",
@@ -3986,7 +4048,7 @@
               "value": 0.0,
               "formattedValue": "3.70K",
               "percentage": 0.98,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "אשטרום קבוצה",
@@ -7085,18 +7147,59 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.002,
-      "formattedValue": "2.01M",
+      "value": 0.0022,
+      "formattedValue": "2.16M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0017,
-          "formattedValue": "1.66M"
+          "formattedValue": "1.67M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0004,
+          "formattedValue": "350.33K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "138.40K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.002,
+      "formattedValue": "2.05M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0016,
+          "formattedValue": "1.58M"
         },
         {
           "name": "Stocks",
           "value": 0.0003,
-          "formattedValue": "346.63K"
+          "formattedValue": "340.23K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "126.85K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0001,
+      "formattedValue": "126.82K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0001,
+          "formattedValue": "126.82K"
         }
       ]
     }

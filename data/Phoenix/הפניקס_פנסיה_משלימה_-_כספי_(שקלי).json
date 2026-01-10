@@ -2,22 +2,70 @@
   "fundName": "הפניקס פנסיה משלימה - כספי (שקלי)",
   "trackId": "8320",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "9.96M",
+  "formattedTotalAssets": "10.31M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0096,
       "formattedValue": "9.63M",
-      "percentage": 96.64
+      "percentage": 93.39
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0003,
+      "formattedValue": "346.70K",
+      "percentage": 3.36
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0003,
       "formattedValue": "334.81K",
-      "percentage": 3.36
+      "percentage": 3.25
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0003,
+        "formattedValue": "346.70K",
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0003,
+              "formattedValue": "317.31K",
+              "percentage": 91.52,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0,
+              "formattedValue": "14.78K",
+              "percentage": 4.26,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0,
+              "formattedValue": "11.50K",
+              "percentage": 3.32,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.0,
+              "formattedValue": "3.11K",
+              "percentage": 0.9,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Bonds": [
       {
         "subclass": "Government Bonds",
@@ -293,8 +341,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.01,
-      "formattedValue": "9.96M",
+      "value": 0.0103,
+      "formattedValue": "10.31M",
       "children": [
         {
           "name": "Bonds",
@@ -302,9 +350,50 @@
           "formattedValue": "9.63M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "346.70K"
+        },
+        {
           "name": "Non-Tradable Bonds",
           "value": 0.0003,
           "formattedValue": "334.81K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0102,
+      "formattedValue": "10.16M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0096,
+          "formattedValue": "9.63M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "346.70K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0002,
+          "formattedValue": "180.77K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0002,
+      "formattedValue": "154.03K",
+      "children": [
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0002,
+          "formattedValue": "154.03K"
         }
       ]
     }

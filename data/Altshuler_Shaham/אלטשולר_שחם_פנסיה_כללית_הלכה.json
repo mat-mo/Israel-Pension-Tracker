@@ -2,49 +2,49 @@
   "fundName": "אלטשולר שחם פנסיה כללית הלכה",
   "trackId": "13212",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.97M",
+  "formattedTotalAssets": "3.31M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0021,
       "formattedValue": "2.14M",
-      "percentage": 72.18
+      "percentage": 64.83
     },
     {
       "name": "Stocks",
       "value": 0.0008,
       "formattedValue": "757.84K",
-      "percentage": 25.52
+      "percentage": 22.92
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0003,
+      "formattedValue": "336.21K",
+      "percentage": 10.17
     },
     {
       "name": "Mutual Funds",
       "value": 0.0001,
       "formattedValue": "57.24K",
-      "percentage": 1.93
+      "percentage": 1.73
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "30.91K",
-      "percentage": 1.04
+      "percentage": 0.93
     },
     {
       "name": "Futures",
       "value": 0.0,
       "formattedValue": "12.57K",
-      "percentage": 0.42
+      "percentage": 0.38
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0,
       "formattedValue": "9.87K",
-      "percentage": 0.33
-    },
-    {
-      "name": "Warrants",
-      "value": 0.0,
-      "formattedValue": "0.15K",
-      "percentage": 0.01
+      "percentage": 0.3
     },
     {
       "name": "Structured Products",
@@ -53,19 +53,81 @@
       "percentage": 0.0
     },
     {
+      "name": "Warrants",
+      "value": 0.0,
+      "formattedValue": "0.15K",
+      "percentage": 0.0
+    },
+    {
       "name": "Options",
       "value": -0.0,
       "formattedValue": "-2.14K",
-      "percentage": -0.07
+      "percentage": -0.06
     },
     {
       "name": "Other Assets",
       "value": -0.0,
       "formattedValue": "-40.31K",
-      "percentage": -1.36
+      "percentage": -1.22
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0003,
+        "formattedValue": "336.21K",
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "לאומי",
+              "value": 0.0003,
+              "formattedValue": "303.80K",
+              "percentage": 90.36,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Goldman Sachs Group Inc",
+              "value": 0.0,
+              "formattedValue": "44.21K",
+              "percentage": 13.15,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "פועלים",
+              "value": -0.0,
+              "formattedValue": "-0.07K",
+              "percentage": -0.02,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "דיסקונט",
+              "value": -0.0,
+              "formattedValue": "-1.26K",
+              "percentage": -0.38,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "Citibank, NA",
+              "value": -0.0,
+              "formattedValue": "-2.98K",
+              "percentage": -0.88,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JP Morgan",
+              "value": -0.0,
+              "formattedValue": "-7.49K",
+              "percentage": -2.23,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Structured Products": [
       {
         "subclass": "Non-Tradable",
@@ -605,7 +667,7 @@
               "value": 0.0,
               "formattedValue": "0.14K",
               "percentage": -7.81,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "אופציה לס דולר שקל POALIM C3.59 26/03/26 BUY",
@@ -807,7 +869,7 @@
               "value": -0.0,
               "formattedValue": "-0.13K",
               "percentage": 7.58,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "אופציה לס דולר שקל DISCOUNT P3.29 23/12/25 SELL",
@@ -1382,7 +1444,7 @@
               "value": 0.0,
               "formattedValue": "32.43K",
               "percentage": 9.66,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Energy Select Sector SPDR Fund",
@@ -1403,7 +1465,7 @@
               "value": 0.0,
               "formattedValue": "8.46K",
               "percentage": 2.52,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Health Care Select Sector SPDR",
@@ -1468,14 +1530,14 @@
               "value": 0.0,
               "formattedValue": "0.00K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "Invesco STOXX Europe 600 UCITS",
               "value": 0.0,
               "formattedValue": "0.00K",
               "percentage": 0.0,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "iShares Core S&P 500 ETF",
@@ -1659,14 +1721,14 @@
               "value": 0.0,
               "formattedValue": "1.44K",
               "percentage": 4.65,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "EURILS",
               "value": 0.0,
               "formattedValue": "1.04K",
               "percentage": 3.38,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "GSALTPOW INDEX",
@@ -1680,7 +1742,7 @@
               "value": 0.0,
               "formattedValue": "0.04K",
               "percentage": 0.13,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             }
           ],
           [
@@ -1696,7 +1758,7 @@
               "value": -0.0,
               "formattedValue": "-0.15K",
               "percentage": -0.47,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "NOKILS",
@@ -1759,14 +1821,14 @@
               "value": 0.0,
               "formattedValue": "6.02K",
               "percentage": 10.52,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "TRIGON - New Europe Fund/Luxem",
               "value": 0.0,
               "formattedValue": "4.87K",
               "percentage": 8.5,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "Nomura Funds Ireland - India E",
@@ -1904,8 +1966,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0022,
-      "formattedValue": "2.19M",
+      "value": 0.0029,
+      "formattedValue": "2.92M",
       "children": [
         {
           "name": "Bonds",
@@ -1913,9 +1975,14 @@
           "formattedValue": "1.93M"
         },
         {
+          "name": "Cash & Equivalents",
+          "value": 0.0007,
+          "formattedValue": "726.06K"
+        },
+        {
           "name": "Stocks",
           "value": 0.0003,
-          "formattedValue": "263.56K"
+          "formattedValue": "263.57K"
         }
       ]
     },
@@ -1933,6 +2000,52 @@
           "name": "Bonds",
           "value": 0.0002,
           "formattedValue": "166.54K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0027,
+      "formattedValue": "2.71M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0019,
+          "formattedValue": "1.92M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0005,
+          "formattedValue": "518.57K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0003,
+          "formattedValue": "264.10K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0008,
+      "formattedValue": "773.75K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0004,
+          "formattedValue": "388.61K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "189.66K"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0002,
+          "formattedValue": "195.48K"
         }
       ]
     }

@@ -1,32 +1,38 @@
 {
   "fundName": "מנורה מבטחים משלימה עוקב מדד S&P500",
   "trackId": "13875",
-  "totalAssetsBN": 0.49,
-  "formattedTotalAssets": "493.79M",
+  "totalAssetsBN": 1.24,
+  "formattedTotalAssets": "1.24B",
   "assetClasses": [
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.7503,
+      "formattedValue": "750.32M",
+      "percentage": 60.31
+    },
     {
       "name": "Stocks",
       "value": 0.4336,
       "formattedValue": "433.59M",
-      "percentage": 87.81
+      "percentage": 34.85
     },
     {
       "name": "Mutual Funds",
       "value": 0.0623,
       "formattedValue": "62.35M",
-      "percentage": 12.63
+      "percentage": 5.01
     },
     {
       "name": "Futures",
       "value": 0.0109,
       "formattedValue": "10.90M",
-      "percentage": 2.21
+      "percentage": 0.88
     },
     {
       "name": "Derivatives",
       "value": -0.0131,
       "formattedValue": "-13.05M",
-      "percentage": -2.64
+      "percentage": -1.05
     }
   ],
   "breakdown": {
@@ -52,6 +58,48 @@
               "value": -0.019,
               "formattedValue": "-18.96M",
               "percentage": 145.2,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.7503,
+        "formattedValue": "750.32M",
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.3369,
+              "formattedValue": "336.93M",
+              "percentage": 44.9,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.2718,
+              "formattedValue": "271.84M",
+              "percentage": 36.23,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי טפחות בע\"מ",
+              "value": 0.1126,
+              "formattedValue": "112.62M",
+              "percentage": 15.01,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע''מ",
+              "value": 0.0289,
+              "formattedValue": "28.93M",
+              "percentage": 3.86,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -187,6 +235,23 @@
   },
   "geoSunburst": [
     {
+      "name": "Israel",
+      "value": 0.7721,
+      "formattedValue": "772.15M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.7532,
+          "formattedValue": "753.18M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.019,
+          "formattedValue": "18.97M"
+        }
+      ]
+    },
+    {
       "name": "USA",
       "value": 0.5127,
       "formattedValue": "512.74M",
@@ -212,16 +277,50 @@
           "formattedValue": "5.90M"
         }
       ]
-    },
+    }
+  ],
+  "currencySunburst": [
     {
-      "name": "Israel",
-      "value": 0.019,
-      "formattedValue": "18.97M",
+      "name": "USD",
+      "value": 0.6575,
+      "formattedValue": "657.46M",
       "children": [
         {
+          "name": "Stocks",
+          "value": 0.4336,
+          "formattedValue": "433.59M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.1257,
+          "formattedValue": "125.74M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0623,
+          "formattedValue": "62.35M"
+        },
+        {
           "name": "Derivatives",
-          "value": 0.019,
-          "formattedValue": "18.97M"
+          "value": 0.0249,
+          "formattedValue": "24.87M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0109,
+          "formattedValue": "10.90M"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.6274,
+      "formattedValue": "627.43M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.6274,
+          "formattedValue": "627.43M"
         }
       ]
     }

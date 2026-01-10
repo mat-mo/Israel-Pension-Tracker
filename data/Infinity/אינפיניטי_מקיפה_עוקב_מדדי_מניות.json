@@ -1,29 +1,68 @@
 {
   "fundName": "אינפיניטי מקיפה עוקב מדדי מניות",
   "trackId": "14040",
-  "totalAssetsBN": 0.02,
-  "formattedTotalAssets": "17.00M",
+  "totalAssetsBN": 0.03,
+  "formattedTotalAssets": "28.78M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0142,
       "formattedValue": "14.16M",
-      "percentage": 83.31
+      "percentage": 49.22
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0084,
+      "formattedValue": "8.42M",
+      "percentage": 29.26
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0033,
+      "formattedValue": "3.30M",
+      "percentage": 11.47
     },
     {
       "name": "Bonds",
       "value": 0.0026,
       "formattedValue": "2.59M",
-      "percentage": 15.21
+      "percentage": 8.98
     },
     {
       "name": "Futures",
       "value": 0.0003,
       "formattedValue": "251.67K",
-      "percentage": 1.48
+      "percentage": 0.87
+    },
+    {
+      "name": "Non-Tradable Bonds",
+      "value": 0.0001,
+      "formattedValue": "54.18K",
+      "percentage": 0.19
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0033,
+        "formattedValue": "3.30M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0033,
+              "formattedValue": "3.30M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -129,6 +168,34 @@
         ]
       }
     ],
+    "Non-Tradable Bonds": [
+      {
+        "subclass": "General",
+        "value": 0.0001,
+        "formattedValue": "54.18K",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "ערד 8912",
+              "value": 0.0001,
+              "formattedValue": "52.67K",
+              "percentage": 97.21,
+              "countryEmoji": ""
+            },
+            {
+              "name": "ערד 8911",
+              "value": 0.0,
+              "formattedValue": "1.51K",
+              "percentage": 2.79,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
+    ],
     "Futures": [
       {
         "subclass": "General",
@@ -145,6 +212,27 @@
               "formattedValue": "251.67K",
               "percentage": 100.0,
               "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "Unclassified",
+        "value": 0.0084,
+        "formattedValue": "8.42M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "החזקה באפיק השקעה מובטח תשואה",
+              "value": 0.0084,
+              "formattedValue": "8.42M",
+              "percentage": 100.0,
+              "countryEmoji": ""
             }
           ]
         ]
@@ -171,6 +259,76 @@
           "name": "Futures",
           "value": 0.0003,
           "formattedValue": "251.67K"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0084,
+      "formattedValue": "8.42M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.0084,
+          "formattedValue": "8.42M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0033,
+      "formattedValue": "3.30M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0033,
+          "formattedValue": "3.30M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0196,
+      "formattedValue": "19.63M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0142,
+          "formattedValue": "14.16M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0026,
+          "formattedValue": "2.63M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0026,
+          "formattedValue": "2.59M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0003,
+          "formattedValue": "251.67K"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0091,
+      "formattedValue": "9.10M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.0084,
+          "formattedValue": "8.42M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0007,
+          "formattedValue": "674.87K"
         }
       ]
     }

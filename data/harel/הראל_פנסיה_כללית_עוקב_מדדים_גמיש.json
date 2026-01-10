@@ -2,25 +2,31 @@
   "fundName": "הראל פנסיה כללית עוקב מדדים גמיש",
   "trackId": "14192",
   "totalAssetsBN": 0.03,
-  "formattedTotalAssets": "26.54M",
+  "formattedTotalAssets": "26.94M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0147,
       "formattedValue": "14.69M",
-      "percentage": 55.36
+      "percentage": 54.54
     },
     {
       "name": "Bonds",
       "value": 0.0116,
       "formattedValue": "11.64M",
-      "percentage": 43.85
+      "percentage": 43.21
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0004,
+      "formattedValue": "396.73K",
+      "percentage": 1.47
     },
     {
       "name": "Other Assets",
       "value": 0.0002,
       "formattedValue": "210.11K",
-      "percentage": 0.79
+      "percentage": 0.78
     }
   ],
   "breakdown": {
@@ -174,7 +180,7 @@
               "value": 0.0023,
               "formattedValue": "2.34M",
               "percentage": 15.94,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "קסם סל תא 125",
@@ -188,7 +194,7 @@
               "value": 0.0017,
               "formattedValue": "1.70M",
               "percentage": 11.59,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "INVESCO S&P 500 ACC",
@@ -209,7 +215,28 @@
               "value": 0.0009,
               "formattedValue": "915.72K",
               "percentage": 6.23,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0004,
+        "formattedValue": "396.73K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי",
+              "value": 0.0004,
+              "formattedValue": "396.73K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -219,8 +246,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0163,
-      "formattedValue": "16.34M",
+      "value": 0.0217,
+      "formattedValue": "21.70M",
       "children": [
         {
           "name": "Bonds",
@@ -229,8 +256,13 @@
         },
         {
           "name": "Stocks",
-          "value": 0.0056,
-          "formattedValue": "5.58M"
+          "value": 0.0105,
+          "formattedValue": "10.54M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0004,
+          "formattedValue": "396.73K"
         },
         {
           "name": "Other Assets",
@@ -255,16 +287,50 @@
           "formattedValue": "1.08M"
         }
       ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0217,
+      "formattedValue": "21.66M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0106,
+          "formattedValue": "10.56M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0105,
+          "formattedValue": "10.54M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0004,
+          "formattedValue": "355.36K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0002,
+          "formattedValue": "210.11K"
+        }
+      ]
     },
     {
-      "name": "Global",
-      "value": 0.005,
-      "formattedValue": "4.96M",
+      "name": "USD",
+      "value": 0.0052,
+      "formattedValue": "5.24M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.005,
-          "formattedValue": "4.96M"
+          "value": 0.0042,
+          "formattedValue": "4.16M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.0011,
+          "formattedValue": "1.08M"
         }
       ]
     }

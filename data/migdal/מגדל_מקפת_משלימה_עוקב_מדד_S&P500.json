@@ -1,32 +1,38 @@
 {
   "fundName": "מגדל מקפת משלימה עוקב מדד S&P500",
   "trackId": "13627",
-  "totalAssetsBN": 1.07,
-  "formattedTotalAssets": "1.07B",
+  "totalAssetsBN": 1.92,
+  "formattedTotalAssets": "1.92B",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 1.0776,
       "formattedValue": "1.08B",
-      "percentage": 100.66
+      "percentage": 56.03
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.8527,
+      "formattedValue": "852.75M",
+      "percentage": 44.34
     },
     {
       "name": "Futures",
       "value": 0.0114,
       "formattedValue": "11.42M",
-      "percentage": 1.07
+      "percentage": 0.59
     },
     {
       "name": "Mutual Funds",
       "value": 0.0082,
       "formattedValue": "8.22M",
-      "percentage": 0.77
+      "percentage": 0.43
     },
     {
       "name": "Derivatives",
       "value": -0.0267,
       "formattedValue": "-26.75M",
-      "percentage": -2.5
+      "percentage": -1.39
     }
   ],
   "breakdown": {
@@ -46,6 +52,48 @@
               "formattedValue": "8.22M",
               "percentage": 100.0,
               "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.8527,
+        "formattedValue": "852.75M",
+        "percentageOfClass": 100.0,
+        "itemCount": 4,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "value": 0.5412,
+              "formattedValue": "541.17M",
+              "percentage": 63.46,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט לישראל בע\"מ",
+              "value": 0.3066,
+              "formattedValue": "306.58M",
+              "percentage": 35.95,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק הפועלים בע\"מ",
+              "value": 0.0049,
+              "formattedValue": "4.94M",
+              "percentage": 0.58,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "JPMORGAN CHASE BANK",
+              "value": 0.0001,
+              "formattedValue": "57.27K",
+              "percentage": 0.01,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -182,13 +230,64 @@
     },
     {
       "name": "Israel",
-      "value": 0.028,
-      "formattedValue": "27.95M",
+      "value": 0.8807,
+      "formattedValue": "880.70M",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.8527,
+          "formattedValue": "852.75M"
+        },
         {
           "name": "Derivatives",
           "value": 0.028,
           "formattedValue": "27.95M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 1.3292,
+      "formattedValue": "1.33B",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1.0776,
+          "formattedValue": "1.08B"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.204,
+          "formattedValue": "203.97M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.028,
+          "formattedValue": "27.95M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0114,
+          "formattedValue": "11.42M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0082,
+          "formattedValue": "8.22M"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.6488,
+      "formattedValue": "648.77M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.6488,
+          "formattedValue": "648.77M"
         }
       ]
     }

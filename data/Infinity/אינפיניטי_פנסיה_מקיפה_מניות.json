@@ -2,22 +2,55 @@
   "fundName": "אינפיניטי פנסיה מקיפה מניות",
   "trackId": "15685",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "353.55K",
+  "formattedTotalAssets": "528.40K",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0003,
       "formattedValue": "347.32K",
-      "percentage": 98.24
+      "percentage": 65.73
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0002,
+      "formattedValue": "160.48K",
+      "percentage": 30.37
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0,
+      "formattedValue": "14.38K",
+      "percentage": 2.72
     },
     {
       "name": "Bonds",
       "value": 0.0,
       "formattedValue": "6.23K",
-      "percentage": 1.76
+      "percentage": 1.18
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0002,
+        "formattedValue": "160.48K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0002,
+              "formattedValue": "160.48K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "ETFs",
@@ -112,7 +145,7 @@
               "value": 0.0,
               "formattedValue": "10.52K",
               "percentage": 3.66,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "mtf סל (A4) dax מנוט",
@@ -464,23 +497,80 @@
           ]
         ]
       }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "Unclassified",
+        "value": 0.0,
+        "formattedValue": "14.38K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "החזקה באפיק השקעה מובטח תשואה",
+              "value": 0.0,
+              "formattedValue": "14.38K",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0002,
-      "formattedValue": "201.98K",
+      "value": 0.0004,
+      "formattedValue": "372.97K",
       "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "160.48K"
+        },
         {
           "name": "Stocks",
           "value": 0.0002,
-          "formattedValue": "201.98K"
+          "formattedValue": "212.50K"
         }
       ]
     },
     {
       "name": "USA",
+      "value": 0.0001,
+      "formattedValue": "134.82K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0001,
+          "formattedValue": "134.82K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0004,
+      "formattedValue": "370.59K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "158.09K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "212.50K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
       "value": 0.0001,
       "formattedValue": "134.82K",
       "children": [

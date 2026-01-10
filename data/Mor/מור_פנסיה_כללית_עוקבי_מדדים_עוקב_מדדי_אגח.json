@@ -2,31 +2,37 @@
   "fundName": "מור פנסיה כללית עוקבי מדדים עוקב מדדי אג\"ח",
   "trackId": "15272",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "31.44K",
+  "formattedTotalAssets": "32.97K",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0,
       "formattedValue": "23.56K",
-      "percentage": 74.94
+      "percentage": 71.45
     },
     {
       "name": "Bonds",
       "value": 0.0,
       "formattedValue": "7.99K",
-      "percentage": 25.4
+      "percentage": 24.22
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0,
+      "formattedValue": "1.53K",
+      "percentage": 4.65
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "0.06K",
-      "percentage": 0.18
+      "percentage": 0.17
     },
     {
       "name": "Derivatives",
       "value": -0.0,
       "formattedValue": "-0.16K",
-      "percentage": -0.52
+      "percentage": -0.5
     }
   ],
   "breakdown": {
@@ -66,6 +72,27 @@
               "value": 0.0,
               "formattedValue": "0.00K",
               "percentage": 1.93,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0,
+        "formattedValue": "1.53K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0,
+              "formattedValue": "1.53K",
+              "percentage": 100.0,
               "countryEmoji": "🇮🇱"
             }
           ]
@@ -171,5 +198,6 @@
       }
     ]
   },
-  "geoSunburst": []
+  "geoSunburst": [],
+  "currencySunburst": []
 }

@@ -2,48 +2,54 @@
   "fundName": "הפניקס פנסיה משלימה - אשראי ואג\"ח",
   "trackId": "8319",
   "totalAssetsBN": 0.01,
-  "formattedTotalAssets": "8.38M",
+  "formattedTotalAssets": "8.91M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0079,
       "formattedValue": "7.88M",
-      "percentage": 94.09
+      "percentage": 88.46
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0005,
+      "formattedValue": "532.95K",
+      "percentage": 5.98
     },
     {
       "name": "Mutual Funds",
       "value": 0.0002,
       "formattedValue": "229.80K",
-      "percentage": 2.74
+      "percentage": 2.58
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.0002,
       "formattedValue": "184.15K",
-      "percentage": 2.2
+      "percentage": 2.07
     },
     {
       "name": "Investment Funds",
       "value": 0.0001,
       "formattedValue": "61.77K",
-      "percentage": 0.74
+      "percentage": 0.69
     },
     {
       "name": "Derivatives",
       "value": 0.0,
       "formattedValue": "11.56K",
-      "percentage": 0.14
-    },
-    {
-      "name": "Stocks",
-      "value": 0.0,
-      "formattedValue": "2.94K",
-      "percentage": 0.04
+      "percentage": 0.13
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "2.62K",
+      "percentage": 0.03
+    },
+    {
+      "name": "Stocks",
+      "value": 0.0,
+      "formattedValue": "2.94K",
       "percentage": 0.03
     },
     {
@@ -66,6 +72,62 @@
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0005,
+        "formattedValue": "532.95K",
+        "percentageOfClass": 100.0,
+        "itemCount": 6,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הפועלים",
+              "value": 0.0004,
+              "formattedValue": "449.43K",
+              "percentage": 84.33,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI",
+              "value": 0.0001,
+              "formattedValue": "57.69K",
+              "percentage": 10.82,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק מזרחי",
+              "value": 0.0,
+              "formattedValue": "22.28K",
+              "percentage": 4.18,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק לאומי",
+              "value": 0.0,
+              "formattedValue": "1.94K",
+              "percentage": 0.36,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק דיסקונט",
+              "value": 0.0,
+              "formattedValue": "1.65K",
+              "percentage": 0.31,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "CITI FXPB",
+              "value": -0.0,
+              "formattedValue": "-0.05K",
+              "percentage": -0.01,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Non-Tradable Bonds": [
       {
         "subclass": "General",
@@ -1638,7 +1700,7 @@
               "value": 0.0,
               "formattedValue": "8.36K",
               "percentage": 0.2,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "פועלים אגח 102",
@@ -2307,7 +2369,7 @@
               "value": 0.0,
               "formattedValue": "4.79K",
               "percentage": 0.12,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "הכשרת ישוב אגח 25",
@@ -2690,7 +2752,7 @@
               "value": 0.0,
               "formattedValue": "3.44K",
               "percentage": 0.08,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "קיסטון אינ אגח ב",
@@ -4230,7 +4292,7 @@
               "value": 0.0,
               "formattedValue": "0.08K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "מיטב דש  אגח ג",
@@ -4295,7 +4357,7 @@
               "value": 0.0,
               "formattedValue": "0.04K",
               "percentage": 0.0,
-              "countryEmoji": ""
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "לאומי התח נד 402 (COCO)",
@@ -4982,7 +5044,7 @@
               "value": 0.0,
               "formattedValue": "25.65K",
               "percentage": 11.16,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": ""
             },
             {
               "name": "PIMCO GIS Capital Securities F",
@@ -5497,13 +5559,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0066,
-      "formattedValue": "6.59M",
+      "value": 0.0072,
+      "formattedValue": "7.17M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0063,
-          "formattedValue": "6.28M"
+          "formattedValue": "6.30M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0006,
+          "formattedValue": "563.29K"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -5544,12 +5611,12 @@
     {
       "name": "Global",
       "value": 0.0001,
-      "formattedValue": "122.45K",
+      "formattedValue": "105.75K",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0001,
-          "formattedValue": "122.45K"
+          "formattedValue": "105.75K"
         }
       ]
     },
@@ -5562,6 +5629,69 @@
           "name": "Mutual Funds",
           "value": 0.0001,
           "formattedValue": "126.73K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0068,
+      "formattedValue": "6.79M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0062,
+          "formattedValue": "6.20M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0004,
+          "formattedValue": "403.26K"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.0002,
+          "formattedValue": "184.81K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0017,
+      "formattedValue": "1.74M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0013,
+          "formattedValue": "1.28M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0002,
+          "formattedValue": "203.98K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "126.45K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.0001,
+          "formattedValue": "122.24K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0004,
+      "formattedValue": "359.36K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0004,
+          "formattedValue": "359.36K"
         }
       ]
     }

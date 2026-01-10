@@ -1,74 +1,86 @@
 {
   "fundName": "מור פנסיה כללית - מסלול לבני 50 עד 60",
   "trackId": "13920",
-  "totalAssetsBN": 0.09,
-  "formattedTotalAssets": "88.04M",
+  "totalAssetsBN": 0.11,
+  "formattedTotalAssets": "108.79M",
   "assetClasses": [
     {
       "name": "Bonds",
       "value": 0.0594,
       "formattedValue": "59.39M",
-      "percentage": 67.46
+      "percentage": 54.59
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0198,
+      "formattedValue": "19.79M",
+      "percentage": 18.19
     },
     {
       "name": "Stocks",
       "value": 0.0176,
       "formattedValue": "17.57M",
-      "percentage": 19.96
+      "percentage": 16.15
     },
     {
       "name": "Mutual Funds",
       "value": 0.0048,
       "formattedValue": "4.77M",
-      "percentage": 5.42
+      "percentage": 4.38
     },
     {
       "name": "Non-Tradable Bonds",
       "value": 0.003,
       "formattedValue": "3.04M",
-      "percentage": 3.46
+      "percentage": 2.8
     },
     {
       "name": "Investment Funds",
       "value": 0.002,
       "formattedValue": "2.00M",
-      "percentage": 2.28
+      "percentage": 1.84
+    },
+    {
+      "name": "Loans",
+      "value": 0.001,
+      "formattedValue": "962.35K",
+      "percentage": 0.88
     },
     {
       "name": "Real Estate",
       "value": 0.0005,
       "formattedValue": "488.45K",
-      "percentage": 0.55
+      "percentage": 0.45
     },
     {
       "name": "Non-Tradable Stocks",
       "value": 0.0003,
       "formattedValue": "280.47K",
-      "percentage": 0.32
+      "percentage": 0.26
     },
     {
       "name": "Futures",
       "value": 0.0002,
       "formattedValue": "197.72K",
-      "percentage": 0.22
+      "percentage": 0.18
     },
     {
       "name": "Warrants",
       "value": 0.0001,
       "formattedValue": "111.63K",
-      "percentage": 0.13
+      "percentage": 0.1
     },
     {
       "name": "Other Assets",
       "value": 0.0001,
       "formattedValue": "97.11K",
-      "percentage": 0.11
+      "percentage": 0.09
     },
     {
       "name": "Structured Products",
       "value": 0.0001,
       "formattedValue": "79.20K",
-      "percentage": 0.09
+      "percentage": 0.07
     }
   ],
   "breakdown": {
@@ -3320,7 +3332,7 @@
               "value": 0.0014,
               "formattedValue": "1.44M",
               "percentage": 30.23,
-              "countryEmoji": "🇪🇺 "
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "NASDAQ 100י.IBI",
@@ -3415,6 +3427,34 @@
         ]
       }
     ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0198,
+        "formattedValue": "19.79M",
+        "percentageOfClass": 100.0,
+        "itemCount": 2,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק הבינלאומי הראשון בע\"מ",
+              "value": 0.0198,
+              "formattedValue": "19.79M",
+              "percentage": 99.98,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "בנק המזרחי המאוחד בע\"מ",
+              "value": 0.0,
+              "formattedValue": "3.83K",
+              "percentage": 0.02,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Futures": [
       {
         "subclass": "General",
@@ -3473,6 +3513,292 @@
               "formattedValue": "2.37K",
               "percentage": 1.2,
               "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      }
+    ],
+    "Loans": [
+      {
+        "subclass": "Direct Loans",
+        "value": 0.001,
+        "formattedValue": "962.35K",
+        "percentageOfClass": 100.0,
+        "itemCount": 38,
+        "totalPages": 4,
+        "holdingsPages": [
+          [
+            {
+              "name": "הלוואה מספר 12",
+              "value": 0.0001,
+              "formattedValue": "139.44K",
+              "percentage": 14.49,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 21",
+              "value": 0.0001,
+              "formattedValue": "136.39K",
+              "percentage": 14.17,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 15",
+              "value": 0.0001,
+              "formattedValue": "67.01K",
+              "percentage": 6.96,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 6",
+              "value": 0.0001,
+              "formattedValue": "65.55K",
+              "percentage": 6.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 2",
+              "value": 0.0,
+              "formattedValue": "42.92K",
+              "percentage": 4.46,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 1",
+              "value": 0.0,
+              "formattedValue": "41.18K",
+              "percentage": 4.28,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 3",
+              "value": 0.0,
+              "formattedValue": "31.84K",
+              "percentage": 3.31,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 7",
+              "value": 0.0,
+              "formattedValue": "31.80K",
+              "percentage": 3.3,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 5",
+              "value": 0.0,
+              "formattedValue": "30.13K",
+              "percentage": 3.13,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 16",
+              "value": 0.0,
+              "formattedValue": "30.02K",
+              "percentage": 3.12,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה מספר 8",
+              "value": 0.0,
+              "formattedValue": "29.72K",
+              "percentage": 3.09,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 18",
+              "value": 0.0,
+              "formattedValue": "28.15K",
+              "percentage": 2.93,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 9",
+              "value": 0.0,
+              "formattedValue": "25.41K",
+              "percentage": 2.64,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 29",
+              "value": 0.0,
+              "formattedValue": "22.64K",
+              "percentage": 2.35,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 4",
+              "value": 0.0,
+              "formattedValue": "20.19K",
+              "percentage": 2.1,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 17",
+              "value": 0.0,
+              "formattedValue": "18.39K",
+              "percentage": 1.91,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 30",
+              "value": 0.0,
+              "formattedValue": "17.38K",
+              "percentage": 1.81,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 22",
+              "value": 0.0,
+              "formattedValue": "17.12K",
+              "percentage": 1.78,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 19",
+              "value": 0.0,
+              "formattedValue": "15.82K",
+              "percentage": 1.64,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 36",
+              "value": 0.0,
+              "formattedValue": "14.80K",
+              "percentage": 1.54,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה מספר 25",
+              "value": 0.0,
+              "formattedValue": "13.90K",
+              "percentage": 1.44,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 13",
+              "value": 0.0,
+              "formattedValue": "11.92K",
+              "percentage": 1.24,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 26",
+              "value": 0.0,
+              "formattedValue": "11.18K",
+              "percentage": 1.16,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 24",
+              "value": 0.0,
+              "formattedValue": "11.00K",
+              "percentage": 1.14,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 27",
+              "value": 0.0,
+              "formattedValue": "10.75K",
+              "percentage": 1.12,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 31",
+              "value": 0.0,
+              "formattedValue": "9.17K",
+              "percentage": 0.95,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 33",
+              "value": 0.0,
+              "formattedValue": "8.82K",
+              "percentage": 0.92,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 39",
+              "value": 0.0,
+              "formattedValue": "8.29K",
+              "percentage": 0.86,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 38",
+              "value": 0.0,
+              "formattedValue": "8.26K",
+              "percentage": 0.86,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 23",
+              "value": 0.0,
+              "formattedValue": "7.18K",
+              "percentage": 0.75,
+              "countryEmoji": "🇮🇱"
+            }
+          ],
+          [
+            {
+              "name": "הלוואה מספר 14",
+              "value": 0.0,
+              "formattedValue": "6.55K",
+              "percentage": 0.68,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 28",
+              "value": 0.0,
+              "formattedValue": "5.98K",
+              "percentage": 0.62,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 32",
+              "value": 0.0,
+              "formattedValue": "5.45K",
+              "percentage": 0.57,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 35",
+              "value": 0.0,
+              "formattedValue": "4.91K",
+              "percentage": 0.51,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 37",
+              "value": 0.0,
+              "formattedValue": "4.45K",
+              "percentage": 0.46,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 11",
+              "value": 0.0,
+              "formattedValue": "3.86K",
+              "percentage": 0.4,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 34",
+              "value": 0.0,
+              "formattedValue": "3.20K",
+              "percentage": 0.33,
+              "countryEmoji": "🇮🇱"
+            },
+            {
+              "name": "הלוואה מספר 10",
+              "value": 0.0,
+              "formattedValue": "1.59K",
+              "percentage": 0.17,
+              "countryEmoji": "🇮🇱"
             }
           ]
         ]
@@ -4442,13 +4768,18 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0781,
-      "formattedValue": "78.09M",
+      "value": 0.1003,
+      "formattedValue": "100.29M",
       "children": [
         {
           "name": "Bonds",
           "value": 0.0569,
           "formattedValue": "56.90M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0198,
+          "formattedValue": "19.80M"
         },
         {
           "name": "Stocks",
@@ -4459,6 +4790,16 @@
           "name": "Non-Tradable Bonds",
           "value": 0.003,
           "formattedValue": "3.04M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0014,
+          "formattedValue": "1.44M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.001,
+          "formattedValue": "962.35K"
         },
         {
           "name": "Real Estate",
@@ -4515,18 +4856,6 @@
       ]
     },
     {
-      "name": "🇪🇺 ",
-      "value": 0.0014,
-      "formattedValue": "1.44M",
-      "children": [
-        {
-          "name": "Mutual Funds",
-          "value": 0.0014,
-          "formattedValue": "1.44M"
-        }
-      ]
-    },
-    {
       "name": "Global",
       "value": 0.0005,
       "formattedValue": "452.83K",
@@ -4547,6 +4876,148 @@
           "name": "Investment Funds",
           "value": 0.0002,
           "formattedValue": "197.92K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0891,
+      "formattedValue": "89.13M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0541,
+          "formattedValue": "54.12M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0171,
+          "formattedValue": "17.14M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0119,
+          "formattedValue": "11.94M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.003,
+          "formattedValue": "3.04M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0014,
+          "formattedValue": "1.44M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0006,
+          "formattedValue": "625.67K"
+        },
+        {
+          "name": "Real Estate",
+          "value": 0.0005,
+          "formattedValue": "488.45K"
+        },
+        {
+          "name": "Non-Tradable Stocks",
+          "value": 0.0002,
+          "formattedValue": "223.23K"
+        },
+        {
+          "name": "Warrants",
+          "value": 0.0001,
+          "formattedValue": "111.63K"
+        }
+      ]
+    },
+    {
+      "name": "USD",
+      "value": 0.0172,
+      "formattedValue": "17.22M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0073,
+          "formattedValue": "7.27M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.004,
+          "formattedValue": "4.03M"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 0.0033,
+          "formattedValue": "3.33M"
+        },
+        {
+          "name": "Investment Funds",
+          "value": 0.0019,
+          "formattedValue": "1.89M"
+        },
+        {
+          "name": "Loans",
+          "value": 0.0003,
+          "formattedValue": "336.68K"
+        },
+        {
+          "name": "Futures",
+          "value": 0.0002,
+          "formattedValue": "172.26K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "199.03K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.0011,
+      "formattedValue": "1.07M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0007,
+          "formattedValue": "716.82K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0003,
+          "formattedValue": "348.52K"
+        }
+      ]
+    },
+    {
+      "name": "JPY",
+      "value": 0.0007,
+      "formattedValue": "658.96K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.0005,
+          "formattedValue": "485.14K"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "173.82K"
+        }
+      ]
+    },
+    {
+      "name": "GBP",
+      "value": 0.0002,
+      "formattedValue": "230.55K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0002,
+          "formattedValue": "230.55K"
         }
       ]
     }

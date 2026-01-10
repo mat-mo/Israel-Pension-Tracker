@@ -2,19 +2,25 @@
   "fundName": "הראל פנסיה כללית עוקב מדדי אג\"ח",
   "trackId": "15282",
   "totalAssetsBN": 0.0,
-  "formattedTotalAssets": "2.08M",
+  "formattedTotalAssets": "2.24M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0021,
       "formattedValue": "2.08M",
-      "percentage": 99.91
+      "percentage": 92.83
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0002,
+      "formattedValue": "158.63K",
+      "percentage": 7.08
     },
     {
       "name": "Other Assets",
       "value": 0.0,
       "formattedValue": "1.87K",
-      "percentage": 0.09
+      "percentage": 0.08
     },
     {
       "name": "Derivatives",
@@ -114,6 +120,27 @@
           ]
         ]
       }
+    ],
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0002,
+        "formattedValue": "158.63K",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "בנק לאומי",
+              "value": 0.0002,
+              "formattedValue": "158.63K",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
@@ -126,6 +153,44 @@
           "name": "Stocks",
           "value": 0.0021,
           "formattedValue": "2.08M"
+        }
+      ]
+    },
+    {
+      "name": "Israel",
+      "value": 0.0002,
+      "formattedValue": "158.63K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0002,
+          "formattedValue": "158.63K"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "USD",
+      "value": 0.0021,
+      "formattedValue": "2.08M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0021,
+          "formattedValue": "2.08M"
+        }
+      ]
+    },
+    {
+      "name": "ILS",
+      "value": 0.0001,
+      "formattedValue": "101.63K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0001,
+          "formattedValue": "101.63K"
         }
       ]
     }

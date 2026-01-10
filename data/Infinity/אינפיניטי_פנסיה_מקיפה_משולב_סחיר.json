@@ -1,17 +1,50 @@
 {
   "fundName": "אינפיניטי פנסיה מקיפה משולב סחיר",
   "trackId": "14333",
-  "totalAssetsBN": 0.03,
-  "formattedTotalAssets": "28.50M",
+  "totalAssetsBN": 0.04,
+  "formattedTotalAssets": "43.41M",
   "assetClasses": [
     {
       "name": "Stocks",
       "value": 0.0285,
       "formattedValue": "28.50M",
-      "percentage": 100.0
+      "percentage": 65.66
+    },
+    {
+      "name": "Other Assets",
+      "value": 0.0135,
+      "formattedValue": "13.52M",
+      "percentage": 31.14
+    },
+    {
+      "name": "Cash & Equivalents",
+      "value": 0.0014,
+      "formattedValue": "1.39M",
+      "percentage": 3.2
     }
   ],
   "breakdown": {
+    "Cash & Equivalents": [
+      {
+        "subclass": "Cash",
+        "value": 0.0014,
+        "formattedValue": "1.39M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "מזרחי",
+              "value": 0.0014,
+              "formattedValue": "1.39M",
+              "percentage": 100.0,
+              "countryEmoji": "🇮🇱"
+            }
+          ]
+        ]
+      }
+    ],
     "Stocks": [
       {
         "subclass": "Direct Holdings",
@@ -806,18 +839,80 @@
           ]
         ]
       }
+    ],
+    "Other Assets": [
+      {
+        "subclass": "Unclassified",
+        "value": 0.0135,
+        "formattedValue": "13.52M",
+        "percentageOfClass": 100.0,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "החזקה באפיק השקעה מובטח תשואה",
+              "value": 0.0135,
+              "formattedValue": "13.52M",
+              "percentage": 100.0,
+              "countryEmoji": ""
+            }
+          ]
+        ]
+      }
     ]
   },
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.0285,
-      "formattedValue": "28.45M",
+      "value": 0.0298,
+      "formattedValue": "29.84M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.0285,
           "formattedValue": "28.45M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0014,
+          "formattedValue": "1.39M"
+        }
+      ]
+    },
+    {
+      "name": "Global",
+      "value": 0.0135,
+      "formattedValue": "13.52M",
+      "children": [
+        {
+          "name": "Other Assets",
+          "value": 0.0135,
+          "formattedValue": "13.52M"
+        }
+      ]
+    }
+  ],
+  "currencySunburst": [
+    {
+      "name": "ILS",
+      "value": 0.0433,
+      "formattedValue": "43.29M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0284,
+          "formattedValue": "28.39M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0135,
+          "formattedValue": "13.52M"
+        },
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0014,
+          "formattedValue": "1.38M"
         }
       ]
     }
