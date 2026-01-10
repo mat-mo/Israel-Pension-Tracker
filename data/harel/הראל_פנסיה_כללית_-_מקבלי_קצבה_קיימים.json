@@ -703,14 +703,14 @@
               "value": 0.0,
               "formattedValue": "33.78K",
               "percentage": 0.44,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ג'י סיטי אגח יג",
               "value": 0.0,
               "formattedValue": "33.15K",
               "percentage": 0.44,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "אדמה אגח ב",
@@ -826,7 +826,7 @@
               "value": 0.0,
               "formattedValue": "24.09K",
               "percentage": 0.32,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "פועלים התח נד יא",
@@ -984,7 +984,7 @@
               "value": 0.0,
               "formattedValue": "16.71K",
               "percentage": 0.22,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "דיסקונט מנ נד י",
@@ -1121,7 +1121,7 @@
               "value": 0.0,
               "formattedValue": "12.63K",
               "percentage": 0.17,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ארפורט סיטי ה",
@@ -1177,7 +1177,7 @@
               "value": 0.0,
               "formattedValue": "10.28K",
               "percentage": 0.14,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             }
           ],
           [
@@ -1365,7 +1365,7 @@
               "value": 0.0,
               "formattedValue": "6.54K",
               "percentage": 0.09,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "נאוויטס פטרו אגח ו",
@@ -2338,7 +2338,7 @@
               "value": 0.0,
               "formattedValue": "0.01K",
               "percentage": -0.09,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "סאמיט אגח יב",
@@ -2389,7 +2389,7 @@
               "value": 0.0,
               "formattedValue": "0.00K",
               "percentage": -0.0,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -2483,13 +2483,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.066734,
-      "formattedValue": "66.73M",
+      "value": 0.066596,
+      "formattedValue": "66.60M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.055375,
-          "formattedValue": "55.37M"
+          "value": 0.055238,
+          "formattedValue": "55.24M"
         },
         {
           "name": "Loans",
@@ -2514,12 +2514,29 @@
         {
           "name": "Other Assets",
           "value": 1.9e-05,
-          "formattedValue": "18.84K"
+          "formattedValue": "18.83K"
         },
         {
           "name": "Derivatives",
           "value": 1.9e-05,
           "formattedValue": "19.36K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.000137,
+      "formattedValue": "137.19K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.000137,
+          "formattedValue": "137.18K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.01K"
         }
       ]
     },
@@ -2573,13 +2590,13 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.066326,
-      "formattedValue": "66.33M",
+      "value": 0.065018,
+      "formattedValue": "65.02M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.055301,
-          "formattedValue": "55.30M"
+          "value": 0.053993,
+          "formattedValue": "53.99M"
         },
         {
           "name": "Loans",
@@ -2609,12 +2626,24 @@
         {
           "name": "Other Assets",
           "value": 1.8e-05,
-          "formattedValue": "18.23K"
+          "formattedValue": "18.21K"
         },
         {
           "name": "Stocks",
           "value": 0.0,
           "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
+      "name": "BRL",
+      "value": 0.001171,
+      "formattedValue": "1.17M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.001171,
+          "formattedValue": "1.17M"
         }
       ]
     },
@@ -2647,18 +2676,23 @@
     },
     {
       "name": "EUR",
-      "value": 2.3e-05,
-      "formattedValue": "23.32K",
+      "value": 0.000161,
+      "formattedValue": "160.51K",
       "children": [
         {
           "name": "Bonds",
-          "value": 2.3e-05,
-          "formattedValue": "23.27K"
+          "value": 0.00016,
+          "formattedValue": "160.45K"
         },
         {
           "name": "Cash & Equivalents",
           "value": 0.0,
           "formattedValue": "0.04K"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.0,
+          "formattedValue": "0.01K"
         }
       ]
     },

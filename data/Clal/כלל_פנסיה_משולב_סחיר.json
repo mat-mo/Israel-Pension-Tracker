@@ -617,7 +617,7 @@
               "value": 0.0006,
               "formattedValue": "553.33K",
               "percentage": 0.35,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇳🇱"
             },
             {
               "name": "CYBERARK SOFTWARE LTD/ISRAEL",
@@ -942,7 +942,7 @@
               "value": 0.0003,
               "formattedValue": "265.02K",
               "percentage": 0.17,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "SENTINELONE INC -CLASS A",
@@ -5655,14 +5655,26 @@
       ]
     },
     {
-      "name": "Eurozone",
-      "value": 0.000818,
-      "formattedValue": "818.36K",
+      "name": "Netherlands",
+      "value": 0.000553,
+      "formattedValue": "553.33K",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.000818,
-          "formattedValue": "818.36K"
+          "value": 0.000553,
+          "formattedValue": "553.33K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.000265,
+      "formattedValue": "265.02K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000265,
+          "formattedValue": "265.02K"
         }
       ]
     },
@@ -5711,23 +5723,23 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.313127,
-      "formattedValue": "313.13M",
+      "value": 0.307205,
+      "formattedValue": "307.20M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.151487,
-          "formattedValue": "151.49M"
-        },
-        {
-          "name": "Bonds",
-          "value": 0.057719,
-          "formattedValue": "57.72M"
+          "value": 0.148267,
+          "formattedValue": "148.27M"
         },
         {
           "name": "Non-Tradable Bonds",
           "value": 0.057456,
           "formattedValue": "57.46M"
+        },
+        {
+          "name": "Bonds",
+          "value": 0.055017,
+          "formattedValue": "55.02M"
         },
         {
           "name": "Other Assets",
@@ -5804,6 +5816,23 @@
       ]
     },
     {
+      "name": "BRL",
+      "value": 0.005115,
+      "formattedValue": "5.11M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.002702,
+          "formattedValue": "2.70M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.002413,
+          "formattedValue": "2.41M"
+        }
+      ]
+    },
+    {
       "name": "GBP",
       "value": 0.001651,
       "formattedValue": "1.65M",
@@ -5822,6 +5851,18 @@
           "name": "Bonds",
           "value": 1.3e-05,
           "formattedValue": "12.98K"
+        }
+      ]
+    },
+    {
+      "name": "DKK",
+      "value": 0.000807,
+      "formattedValue": "807.44K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000807,
+          "formattedValue": "807.44K"
         }
       ]
     },

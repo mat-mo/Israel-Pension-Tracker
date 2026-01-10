@@ -190,7 +190,7 @@
               "value": -0.0,
               "formattedValue": "-13.19K",
               "percentage": 100.0,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -221,8 +221,8 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.04321,
-      "formattedValue": "43.21M",
+      "value": 0.043197,
+      "formattedValue": "43.20M",
       "children": [
         {
           "name": "Stocks",
@@ -233,11 +233,6 @@
           "name": "Other Assets",
           "value": 0.016333,
           "formattedValue": "16.33M"
-        },
-        {
-          "name": "Futures",
-          "value": 1.3e-05,
-          "formattedValue": "13.19K"
         },
         {
           "name": "Non-Tradable Bonds",
@@ -267,6 +262,18 @@
           "name": "Cash & Equivalents",
           "value": 0.00596,
           "formattedValue": "5.96M"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 1.3e-05,
+      "formattedValue": "13.19K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 1.3e-05,
+          "formattedValue": "13.19K"
         }
       ]
     }

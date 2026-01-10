@@ -214,14 +214,14 @@
               "value": 0.0002,
               "formattedValue": "215.03K",
               "percentage": 2945.22,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "12/2025 JPM VGZ5 Index התחייבות",
               "value": -0.0002,
               "formattedValue": "-208.94K",
               "percentage": -2861.8,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "UXYZ5 Comdty",
@@ -1318,7 +1318,7 @@
               "value": 0.0,
               "formattedValue": "37.42K",
               "percentage": 0.57,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ISHARES JPM EM LCL GOV BND",
@@ -1874,14 +1874,14 @@
               "value": 0.0,
               "formattedValue": "5.24K",
               "percentage": 0.03,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "AMUNDI MDAX UCITS ETF",
               "value": 0.0,
               "formattedValue": "5.07K",
               "percentage": 0.03,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             }
           ]
         ]
@@ -1891,8 +1891,8 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.048652,
-      "formattedValue": "48.65M",
+      "value": 0.048614,
+      "formattedValue": "48.61M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
@@ -1911,8 +1911,8 @@
         },
         {
           "name": "Bonds",
-          "value": 0.000406,
-          "formattedValue": "406.08K"
+          "value": 0.000369,
+          "formattedValue": "368.66K"
         }
       ]
     },
@@ -1982,18 +1982,35 @@
     },
     {
       "name": "Eurozone",
-      "value": 0.001482,
-      "formattedValue": "1.48M",
+      "value": 0.001085,
+      "formattedValue": "1.09M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.001058,
-          "formattedValue": "1.06M"
+          "value": 0.001048,
+          "formattedValue": "1.05M"
         },
+        {
+          "name": "Bonds",
+          "value": 3.7e-05,
+          "formattedValue": "37.42K"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.000434,
+      "formattedValue": "434.28K",
+      "children": [
         {
           "name": "Futures",
           "value": 0.000424,
           "formattedValue": "423.97K"
+        },
+        {
+          "name": "Stocks",
+          "value": 1e-05,
+          "formattedValue": "10.31K"
         }
       ]
     },

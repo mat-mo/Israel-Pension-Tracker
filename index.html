@@ -219,7 +219,7 @@
             currentManifest.forEach((inst, index) => {
                 const opt = document.createElement('option');
                 opt.value = index;
-                opt.text = inst.name;
+                opt.text = `${inst.name}₪${inst.totalAUM})`;;
                 instSelector.appendChild(opt);
             });
 

@@ -410,7 +410,7 @@
               "value": 0.003,
               "formattedValue": "3.00M",
               "percentage": 0.98,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇷🇴"
             },
             {
               "name": "אשטרום קבוצה",
@@ -503,7 +503,7 @@
               "value": 0.002,
               "formattedValue": "2.02M",
               "percentage": 0.66,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇨🇾"
             },
             {
               "name": "רבוע נדלן",
@@ -517,7 +517,7 @@
               "value": 0.002,
               "formattedValue": "1.99M",
               "percentage": 0.65,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "פורמולה",
@@ -612,7 +612,7 @@
               "value": 0.0016,
               "formattedValue": "1.61M",
               "percentage": 0.53,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "פריורטק",
@@ -791,7 +791,7 @@
               "value": 0.001,
               "formattedValue": "970.82K",
               "percentage": 0.32,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇫🇮"
             },
             {
               "name": "קסטרו",
@@ -863,7 +863,7 @@
               "value": 0.0007,
               "formattedValue": "726.84K",
               "percentage": 0.24,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇿🇦"
             },
             {
               "name": "Stratasys Ltd",
@@ -1590,7 +1590,7 @@
               "value": 0.0001,
               "formattedValue": "86.74K",
               "percentage": 0.03,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇳🇱"
             },
             {
               "name": "כרמל קורפ בע\"מ",
@@ -1829,7 +1829,7 @@
               "value": 0.0,
               "formattedValue": "11.69K",
               "percentage": 0.0,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇷🇴"
             },
             {
               "name": "גאון אחזקות",
@@ -3601,13 +3601,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.336765,
-      "formattedValue": "336.76M",
+      "value": 0.333768,
+      "formattedValue": "333.77M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.282626,
-          "formattedValue": "282.63M"
+          "value": 0.27963,
+          "formattedValue": "279.63M"
         },
         {
           "name": "Options",
@@ -3648,8 +3648,8 @@
     },
     {
       "name": "Global",
-      "value": 0.119073,
-      "formattedValue": "119.07M",
+      "value": 0.11534,
+      "formattedValue": "115.34M",
       "children": [
         {
           "name": "Other Assets",
@@ -3660,11 +3660,6 @@
           "name": "Non-Tradable Bonds",
           "value": 0.056801,
           "formattedValue": "56.80M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.003733,
-          "formattedValue": "3.73M"
         }
       ]
     },
@@ -3701,14 +3696,26 @@
       ]
     },
     {
-      "name": "Eurozone",
-      "value": 0.003683,
-      "formattedValue": "3.68M",
+      "name": "Germany",
+      "value": 0.003596,
+      "formattedValue": "3.60M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.003683,
-          "formattedValue": "3.68M"
+          "value": 0.003596,
+          "formattedValue": "3.60M"
+        }
+      ]
+    },
+    {
+      "name": "Romania",
+      "value": 0.003008,
+      "formattedValue": "3.01M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.003008,
+          "formattedValue": "3.01M"
         }
       ]
     },
@@ -3726,6 +3733,42 @@
           "name": "Other Assets",
           "value": 4.5e-05,
           "formattedValue": "45.40K"
+        }
+      ]
+    },
+    {
+      "name": "Cyprus",
+      "value": 0.002024,
+      "formattedValue": "2.02M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.002024,
+          "formattedValue": "2.02M"
+        }
+      ]
+    },
+    {
+      "name": "Finland",
+      "value": 0.000971,
+      "formattedValue": "970.82K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000971,
+          "formattedValue": "970.82K"
+        }
+      ]
+    },
+    {
+      "name": "South Africa",
+      "value": 0.000727,
+      "formattedValue": "726.84K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000727,
+          "formattedValue": "726.84K"
         }
       ]
     },
@@ -3752,18 +3795,30 @@
           "formattedValue": "88.26K"
         }
       ]
+    },
+    {
+      "name": "Netherlands",
+      "value": 8.7e-05,
+      "formattedValue": "86.74K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 8.7e-05,
+          "formattedValue": "86.74K"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.43883,
-      "formattedValue": "438.83M",
+      "value": 0.431204,
+      "formattedValue": "431.20M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.274447,
-          "formattedValue": "274.45M"
+          "value": 0.266822,
+          "formattedValue": "266.82M"
         },
         {
           "name": "Other Assets",
@@ -3841,6 +3896,18 @@
           "name": "Warrants",
           "value": 0.0,
           "formattedValue": "0.17K"
+        }
+      ]
+    },
+    {
+      "name": "BRL",
+      "value": 0.007625,
+      "formattedValue": "7.63M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.007625,
+          "formattedValue": "7.63M"
         }
       ]
     },

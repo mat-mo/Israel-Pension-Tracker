@@ -203,7 +203,7 @@
               "value": 0.0001,
               "formattedValue": "56.65K",
               "percentage": 7.0,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "ISHARES USD CORPORATE BOND",
@@ -301,14 +301,14 @@
               "value": 0.0,
               "formattedValue": "7.58K",
               "percentage": -36.13,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "LECPTREU",
               "value": 0.0,
               "formattedValue": "0.29K",
               "percentage": -1.41,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -388,18 +388,25 @@
     },
     {
       "name": "Global",
-      "value": 0.002878,
-      "formattedValue": "2.88M",
+      "value": 0.002814,
+      "formattedValue": "2.81M",
       "children": [
         {
           "name": "Stocks",
           "value": 0.002814,
           "formattedValue": "2.81M"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.000541,
+      "formattedValue": "541.13K",
+      "children": [
         {
           "name": "Bonds",
-          "value": 5.7e-05,
-          "formattedValue": "56.65K"
+          "value": 0.000533,
+          "formattedValue": "533.19K"
         },
         {
           "name": "Derivatives",
@@ -407,25 +414,13 @@
           "formattedValue": "7.94K"
         }
       ]
-    },
-    {
-      "name": "Eurozone",
-      "value": 0.000477,
-      "formattedValue": "476.54K",
-      "children": [
-        {
-          "name": "Bonds",
-          "value": 0.000477,
-          "formattedValue": "476.54K"
-        }
-      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.014655,
-      "formattedValue": "14.66M",
+      "value": 0.014647,
+      "formattedValue": "14.65M",
       "children": [
         {
           "name": "Bonds",
@@ -439,8 +434,8 @@
         },
         {
           "name": "Derivatives",
-          "value": 0.000358,
-          "formattedValue": "358.09K"
+          "value": 0.00035,
+          "formattedValue": "350.16K"
         },
         {
           "name": "Cash & Equivalents",
@@ -483,8 +478,8 @@
     },
     {
       "name": "EUR",
-      "value": 0.000609,
-      "formattedValue": "608.89K",
+      "value": 0.000617,
+      "formattedValue": "616.83K",
       "children": [
         {
           "name": "Bonds",
@@ -495,6 +490,11 @@
           "name": "Cash & Equivalents",
           "value": 7.6e-05,
           "formattedValue": "75.70K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 8e-06,
+          "formattedValue": "7.94K"
         }
       ]
     }

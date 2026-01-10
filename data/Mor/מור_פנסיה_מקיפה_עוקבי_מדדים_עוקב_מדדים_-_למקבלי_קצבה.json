@@ -148,7 +148,7 @@
               "value": 0.0001,
               "formattedValue": "53.72K",
               "percentage": 11.1,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "SP500.IBI",
@@ -233,8 +233,8 @@
     },
     {
       "name": "Israel",
-      "value": 0.001957,
-      "formattedValue": "1.96M",
+      "value": 0.001903,
+      "formattedValue": "1.90M",
       "children": [
         {
           "name": "Cash & Equivalents",
@@ -247,14 +247,14 @@
           "formattedValue": "474.36K"
         },
         {
-          "name": "Stocks",
-          "value": 0.000263,
-          "formattedValue": "263.15K"
-        },
-        {
           "name": "Other Assets",
           "value": 0.000261,
           "formattedValue": "260.97K"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.000209,
+          "formattedValue": "209.43K"
         }
       ]
     },
@@ -269,13 +269,25 @@
           "formattedValue": "220.82K"
         }
       ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 5.4e-05,
+      "formattedValue": "53.72K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 5.4e-05,
+          "formattedValue": "53.72K"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.004472,
-      "formattedValue": "4.47M",
+      "value": 0.004419,
+      "formattedValue": "4.42M",
       "children": [
         {
           "name": "Other Assets",
@@ -294,8 +306,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.000263,
-          "formattedValue": "263.15K"
+          "value": 0.000209,
+          "formattedValue": "209.43K"
         }
       ]
     },
@@ -308,6 +320,18 @@
           "name": "Stocks",
           "value": 0.000221,
           "formattedValue": "220.82K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 5.4e-05,
+      "formattedValue": "53.72K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 5.4e-05,
+          "formattedValue": "53.72K"
         }
       ]
     }

@@ -94,7 +94,7 @@
               "value": 0.0021,
               "formattedValue": "2.08M",
               "percentage": 13.01,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "תכלית סל תלבונד מאגר",
@@ -339,13 +339,13 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.029821,
-      "formattedValue": "29.82M",
+      "value": 0.027741,
+      "formattedValue": "27.74M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.015984,
-          "formattedValue": "15.98M"
+          "value": 0.013904,
+          "formattedValue": "13.90M"
         },
         {
           "name": "Mutual Funds",
@@ -387,18 +387,30 @@
           "formattedValue": "4.03M"
         }
       ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.00208,
+      "formattedValue": "2.08M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.00208,
+          "formattedValue": "2.08M"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.029819,
-      "formattedValue": "29.82M",
+      "value": 0.027739,
+      "formattedValue": "27.74M",
       "children": [
         {
           "name": "Bonds",
-          "value": 0.015984,
-          "formattedValue": "15.98M"
+          "value": 0.013904,
+          "formattedValue": "13.90M"
         },
         {
           "name": "Mutual Funds",
@@ -431,6 +443,18 @@
           "name": "Cash & Equivalents",
           "value": 2e-06,
           "formattedValue": "1.93K"
+        }
+      ]
+    },
+    {
+      "name": "EUR",
+      "value": 0.00208,
+      "formattedValue": "2.08M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.00208,
+          "formattedValue": "2.08M"
         }
       ]
     }

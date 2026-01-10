@@ -162,7 +162,7 @@
               "value": -0.0,
               "formattedValue": "-1.13K",
               "percentage": 100.0,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             }
           ]
         ]
@@ -184,18 +184,13 @@
     },
     {
       "name": "Global",
-      "value": 0.000747,
-      "formattedValue": "747.32K",
+      "value": 0.000746,
+      "formattedValue": "746.19K",
       "children": [
         {
           "name": "Stocks",
           "value": 0.000746,
           "formattedValue": "746.19K"
-        },
-        {
-          "name": "Futures",
-          "value": 1e-06,
-          "formattedValue": "1.13K"
         }
       ]
     },
@@ -213,6 +208,18 @@
           "name": "Bonds",
           "value": 0.000128,
           "formattedValue": "128.20K"
+        }
+      ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 1e-06,
+      "formattedValue": "1.13K",
+      "children": [
+        {
+          "name": "Futures",
+          "value": 1e-06,
+          "formattedValue": "1.13K"
         }
       ]
     }

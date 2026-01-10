@@ -598,7 +598,7 @@
               "value": 0.0007,
               "formattedValue": "729.44K",
               "percentage": 13.56,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "S&P 500י.IBI",
@@ -715,7 +715,7 @@
               "value": 0.0,
               "formattedValue": "8.47K",
               "percentage": 4.12,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "NIFTY 50 IFSC",
@@ -1340,7 +1340,7 @@
               "value": 0.0001,
               "formattedValue": "50.45K",
               "percentage": 0.34,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇨🇾"
             },
             {
               "name": "מחלבות גד",
@@ -1606,8 +1606,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.042581,
-      "formattedValue": "42.58M",
+      "value": 0.041851,
+      "formattedValue": "41.85M",
       "children": [
         {
           "name": "Bonds",
@@ -1623,11 +1623,6 @@
           "name": "Cash & Equivalents",
           "value": 0.009032,
           "formattedValue": "9.03M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.000729,
-          "formattedValue": "729.44K"
         },
         {
           "name": "Warrants",
@@ -1674,6 +1669,18 @@
       ]
     },
     {
+      "name": "Eurozone",
+      "value": 0.000729,
+      "formattedValue": "729.44K",
+      "children": [
+        {
+          "name": "Mutual Funds",
+          "value": 0.000729,
+          "formattedValue": "729.44K"
+        }
+      ]
+    },
+    {
       "name": "United Kingdom",
       "value": 0.000112,
       "formattedValue": "111.85K",
@@ -1686,7 +1693,7 @@
       ]
     },
     {
-      "name": "Global",
+      "name": "Cyprus",
       "value": 5e-05,
       "formattedValue": "50.45K",
       "children": [
@@ -1710,7 +1717,7 @@
       ]
     },
     {
-      "name": "Eurozone",
+      "name": "Germany",
       "value": 8e-06,
       "formattedValue": "8.47K",
       "children": [
@@ -1737,8 +1744,8 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.036932,
-      "formattedValue": "36.93M",
+      "value": 0.035848,
+      "formattedValue": "35.85M",
       "children": [
         {
           "name": "Bonds",
@@ -1747,18 +1754,13 @@
         },
         {
           "name": "Stocks",
-          "value": 0.015302,
-          "formattedValue": "15.30M"
+          "value": 0.014947,
+          "formattedValue": "14.95M"
         },
         {
           "name": "Cash & Equivalents",
           "value": 0.003502,
           "formattedValue": "3.50M"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.000729,
-          "formattedValue": "729.44K"
         },
         {
           "name": "Warrants",
@@ -1816,9 +1818,14 @@
     },
     {
       "name": "EUR",
-      "value": 0.000326,
-      "formattedValue": "326.16K",
+      "value": 0.001056,
+      "formattedValue": "1.06M",
       "children": [
+        {
+          "name": "Mutual Funds",
+          "value": 0.000729,
+          "formattedValue": "729.44K"
+        },
         {
           "name": "Cash & Equivalents",
           "value": 0.000267,
@@ -1833,6 +1840,18 @@
           "name": "Futures",
           "value": 8e-06,
           "formattedValue": "8.47K"
+        }
+      ]
+    },
+    {
+      "name": "BRL",
+      "value": 0.000355,
+      "formattedValue": "355.00K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000355,
+          "formattedValue": "355.00K"
         }
       ]
     },

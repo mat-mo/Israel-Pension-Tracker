@@ -815,7 +815,7 @@
               "value": 0.0021,
               "formattedValue": "2.07M",
               "percentage": 0.54,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "אמריקן אק אגח א",
@@ -2536,7 +2536,7 @@
               "value": 0.0002,
               "formattedValue": "228.87K",
               "percentage": 0.06,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇫🇮"
             },
             {
               "name": "פרטנר אגח ז",
@@ -3453,7 +3453,7 @@
               "value": 0.0045,
               "formattedValue": "4.53M",
               "percentage": 5.48,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇪🇸"
             },
             {
               "name": "ECP CALIFORNIA",
@@ -3502,7 +3502,7 @@
               "value": 0.0022,
               "formattedValue": "2.15M",
               "percentage": 2.6,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             }
           ],
           [
@@ -3539,7 +3539,7 @@
               "value": 0.0017,
               "formattedValue": "1.72M",
               "percentage": 2.08,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇧🇷"
             },
             {
               "name": "TWHF II RIVERHURST CO-INVEST-B",
@@ -3991,7 +3991,7 @@
               "value": 0.0002,
               "formattedValue": "201.38K",
               "percentage": 3.24,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "FT MINI DOW 12/25",
@@ -5039,7 +5039,7 @@
               "value": 0.0008,
               "formattedValue": "770.12K",
               "percentage": 0.19,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "טופ גאם",
@@ -5432,7 +5432,7 @@
               "value": 0.0002,
               "formattedValue": "175.83K",
               "percentage": 1.36,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "CANDID 4 SAFE",
@@ -5563,8 +5563,8 @@
     },
     {
       "name": "Global",
-      "value": 0.729363,
-      "formattedValue": "729.36M",
+      "value": 0.725259,
+      "formattedValue": "725.26M",
       "children": [
         {
           "name": "Other Assets",
@@ -5577,14 +5577,14 @@
           "formattedValue": "26.79M"
         },
         {
-          "name": "Investment Funds",
-          "value": 0.008589,
-          "formattedValue": "8.59M"
+          "name": "Bonds",
+          "value": 0.005393,
+          "formattedValue": "5.39M"
         },
         {
-          "name": "Bonds",
-          "value": 0.005622,
-          "formattedValue": "5.62M"
+          "name": "Investment Funds",
+          "value": 0.004713,
+          "formattedValue": "4.71M"
         },
         {
           "name": "Mutual Funds",
@@ -5668,15 +5668,34 @@
       ]
     },
     {
-      "name": "Eurozone",
-      "value": 0.007746,
-      "formattedValue": "7.75M",
+      "name": "Spain",
+      "value": 0.004531,
+      "formattedValue": "4.53M",
       "children": [
         {
           "name": "Investment Funds",
           "value": 0.004531,
           "formattedValue": "4.53M"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Cayman Islands",
+      "value": 0.003666,
+      "formattedValue": "3.67M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.003666,
+          "formattedValue": "3.67M"
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "value": 0.003215,
+      "formattedValue": "3.21M",
+      "children": [
         {
           "name": "Bonds",
           "value": 0.002067,
@@ -5696,18 +5715,6 @@
           "name": "Non-Tradable Stocks",
           "value": 0.000176,
           "formattedValue": "175.83K"
-        }
-      ]
-    },
-    {
-      "name": "Cayman Islands",
-      "value": 0.003666,
-      "formattedValue": "3.67M",
-      "children": [
-        {
-          "name": "Investment Funds",
-          "value": 0.003666,
-          "formattedValue": "3.67M"
         }
       ]
     },
@@ -5741,6 +5748,30 @@
       ]
     },
     {
+      "name": "Eurozone",
+      "value": 0.002153,
+      "formattedValue": "2.15M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.002153,
+          "formattedValue": "2.15M"
+        }
+      ]
+    },
+    {
+      "name": "Brazil",
+      "value": 0.001723,
+      "formattedValue": "1.72M",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 0.001723,
+          "formattedValue": "1.72M"
+        }
+      ]
+    },
+    {
       "name": "China",
       "value": 0.001256,
       "formattedValue": "1.26M",
@@ -5761,6 +5792,18 @@
           "name": "Futures",
           "value": 0.000262,
           "formattedValue": "261.73K"
+        }
+      ]
+    },
+    {
+      "name": "Finland",
+      "value": 0.000229,
+      "formattedValue": "228.87K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.000229,
+          "formattedValue": "228.87K"
         }
       ]
     },
@@ -5804,8 +5847,8 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 1.995231,
-      "formattedValue": "2.00B",
+      "value": 1.977971,
+      "formattedValue": "1.98B",
       "children": [
         {
           "name": "Other Assets",
@@ -5814,13 +5857,13 @@
         },
         {
           "name": "Bonds",
-          "value": 0.599922,
-          "formattedValue": "599.92M"
+          "value": 0.587345,
+          "formattedValue": "587.34M"
         },
         {
           "name": "Stocks",
-          "value": 0.391899,
-          "formattedValue": "391.90M"
+          "value": 0.387217,
+          "formattedValue": "387.22M"
         },
         {
           "name": "Cash & Equivalents",
@@ -5975,6 +6018,23 @@
           "name": "Futures",
           "value": 0.000201,
           "formattedValue": "201.38K"
+        }
+      ]
+    },
+    {
+      "name": "BRL",
+      "value": 0.017259,
+      "formattedValue": "17.26M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.012577,
+          "formattedValue": "12.58M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.004682,
+          "formattedValue": "4.68M"
         }
       ]
     },

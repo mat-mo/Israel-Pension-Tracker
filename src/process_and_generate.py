@@ -20,7 +20,6 @@ INPUT_DIRECTORY = BASE_PATH / "institution_reports"
 OUTPUT_BASE_DIRECTORY = BASE_PATH / "data"
 CONFIG_FILE = BASE_PATH / "config.json"
 MASTER_TRACK_FILE = BASE_PATH / "master_track_list.json"
-# NEW: Pointer to the JSON Database
 MAPPING_FILE = BASE_PATH / "master_country_currency_map.json"
 
 ITEMS_PER_PAGE = 10
@@ -84,7 +83,7 @@ def log(msg):
 
 def load_mappings():
     """
-    Reads master_country_currency_map.json and builds optimized lookup dictionaries.
+    Reads master_country_currency_map.json (LIST FORMAT) and builds optimized lookup dictionaries.
     """
     global COUNTRY_LOOKUP, EMOJI_TO_NAME, CURRENCY_LOOKUP
     
@@ -119,7 +118,7 @@ def load_mappings():
                     
             count += 1
             
-        log(f"Loaded mappings for {count} regions/countries.")
+        log(f"Mappings loaded successfully for {count} entries.")
         return True
     except Exception as e:
         log(f"[!!!] Error loading mappings: {e}")
@@ -188,8 +187,6 @@ def get_country_emoji(row, asset_class=""):
         name_lower = str(asset_name).strip().lower()
         
         # Scan for ANY known match string in the name
-        # We iterate our lookup keys. Optimization: Filter for longer keys to avoid noise.
-        # This solves "Taiwan", "Pacific", "SGIIF" automatically if they are in JSON.
         for match_str, emoji in COUNTRY_LOOKUP.items():
             # Skip very short keys like "IL", "US" to prevent "TRUST" matching "US"
             if len(match_str) > 3 and match_str in name_lower:
@@ -210,14 +207,14 @@ def get_country_emoji(row, asset_class=""):
 def detect_currency(row, country_emoji, asset_name):
     name_str = str(asset_name).lower() if asset_name else ""
     
-    # 1. Hedging Check (Overrides everything)
+    # 1. Hedging Check
     if any(k in name_str for k in HEDGED_KEYWORDS): return "ILS"
 
     # 2. Explicit Column Check
     val = get_column_value(row, CURRENCY_COLUMNS)
     if val:
         clean = str(val).strip().lower()
-        # Check against our loaded JSON keywords
+        # Check against loaded keywords
         for match_str, code in CURRENCY_LOOKUP.items():
             if match_str in clean: return code
         if "צמוד מדד" in clean: return "ILS" 
@@ -227,10 +224,7 @@ def detect_currency(row, country_emoji, asset_name):
         if len(match_str) > 3 and match_str in name_str: 
             return code
 
-    # 4. Country Inference (Map Flag -> Currency Code manually or via JSON logic)
-    # Ideally, we should reverse map the emoji to the currency code from JSON list.
-    # But doing it via the loaded dictionary is tricky since it's flattened.
-    # Simple hardcoded fallback for major currencies is safe here:
+    # 4. Country Inference
     if country_emoji == "🇺🇸": return "USD"
     if country_emoji == "🇬🇧": return "GBP"
     if country_emoji == "🇯🇵": return "JPY"
@@ -328,6 +322,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
+                # KEEPING THRESHOLD VERY LOW TO CATCH EVERYTHING
                 if abs(val_bn) < 1e-12: continue 
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
@@ -405,12 +400,19 @@ def calculate_currency_sunburst(data_store):
 def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     track_map = config['institutions'][inst_key]['tracks']
     manifest_entries = []
+    
+    # NEW: Accumulator for Institution AUM
+    inst_total_aum = 0.0
 
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
         
+        # NET Assets for Display and Main Pie
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
+        
+        # Add to Institution Total
+        inst_total_aum += total_assets
 
         asset_classes = []
         breakdown = {}
@@ -493,7 +495,7 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             
         manifest_entries.append({"id": t_id, "name": t_name, "file": safe_filename})
     
-    return sorted(manifest_entries, key=lambda x: x['name'])
+    return sorted(manifest_entries, key=lambda x: x['name']), inst_total_aum
 
 def main():
     log("Starting Pipeline...")
@@ -521,9 +523,18 @@ def main():
         
         if split_excel_to_csvs(excel_path, target_dir):
             all_data = process_institution_data(target_dir, inst_key, config, master_map)
-            tracks_list = generate_jsons(target_dir, all_data, inst_key, config)
+            tracks_list, total_aum = generate_jsons(target_dir, all_data, inst_key, config)
             inst_name = config['institutions'][inst_key].get("name", inst_key)
-            global_manifest.append({"id": inst_key, "name": inst_name, "directory": inst_key, "tracks": tracks_list})
+            
+            formatted_aum = format_currency(total_aum)
+            
+            global_manifest.append({
+                "id": inst_key, 
+                "name": inst_name, 
+                "directory": inst_key, 
+                "tracks": tracks_list,
+                "totalAUM": formatted_aum
+            })
 
     with open(CONFIG_FILE, 'w', encoding='utf-8') as f:
         json.dump(config, f, indent=2, ensure_ascii=False)

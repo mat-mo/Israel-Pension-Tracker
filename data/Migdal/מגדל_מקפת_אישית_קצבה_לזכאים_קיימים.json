@@ -1576,7 +1576,7 @@
               "value": 0.0,
               "formattedValue": "44.12K",
               "percentage": 9.54,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "הראל סל תא 90",
@@ -1590,7 +1590,7 @@
               "value": 0.0,
               "formattedValue": "24.35K",
               "percentage": 5.27,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "AMUNDI INDEX MSCI EM UCITS",
@@ -2436,7 +2436,7 @@
               "value": 0.0,
               "formattedValue": "1.68K",
               "percentage": 0.39,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇫🇷"
             },
             {
               "name": "ALIBABA GROUP HOLDING_SP ADR",
@@ -2487,7 +2487,7 @@
               "value": 0.0,
               "formattedValue": "1.55K",
               "percentage": 0.36,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "מקס סטוק",
@@ -2508,7 +2508,7 @@
               "value": 0.0,
               "formattedValue": "1.38K",
               "percentage": 0.33,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "ASTRAZENECA PLC",
@@ -3035,7 +3035,7 @@
               "value": 0.0,
               "formattedValue": "0.44K",
               "percentage": 0.1,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "טרמינל איקס",
@@ -5866,8 +5866,8 @@
   "geoSunburst": [
     {
       "name": "Global",
-      "value": 0.066134,
-      "formattedValue": "66.13M",
+      "value": 0.066066,
+      "formattedValue": "66.07M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
@@ -5881,8 +5881,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.000107,
-          "formattedValue": "107.19K"
+          "value": 3.9e-05,
+          "formattedValue": "38.72K"
         },
         {
           "name": "Mutual Funds",
@@ -5997,13 +5997,13 @@
     },
     {
       "name": "Eurozone",
-      "value": 4.7e-05,
-      "formattedValue": "47.12K",
+      "value": 0.000111,
+      "formattedValue": "110.54K",
       "children": [
         {
           "name": "Stocks",
-          "value": 4.7e-05,
-          "formattedValue": "47.08K"
+          "value": 0.00011,
+          "formattedValue": "110.50K"
         },
         {
           "name": "Futures",
@@ -6093,6 +6093,18 @@
       ]
     },
     {
+      "name": "Germany",
+      "value": 3e-06,
+      "formattedValue": "3.37K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 3e-06,
+          "formattedValue": "3.37K"
+        }
+      ]
+    },
+    {
       "name": "United Kingdom",
       "value": 2e-06,
       "formattedValue": "1.99K",
@@ -6149,6 +6161,18 @@
       ]
     },
     {
+      "name": "France",
+      "value": 2e-06,
+      "formattedValue": "1.68K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 2e-06,
+          "formattedValue": "1.68K"
+        }
+      ]
+    },
+    {
       "name": "Australia",
       "value": 2e-06,
       "formattedValue": "2.40K",
@@ -6176,8 +6200,8 @@
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.082806,
-      "formattedValue": "82.81M",
+      "value": 0.082675,
+      "formattedValue": "82.68M",
       "children": [
         {
           "name": "Non-Tradable Bonds",
@@ -6191,8 +6215,8 @@
         },
         {
           "name": "Bonds",
-          "value": 0.012684,
-          "formattedValue": "12.68M"
+          "value": 0.012559,
+          "formattedValue": "12.56M"
         },
         {
           "name": "Cash & Equivalents",
@@ -6206,8 +6230,8 @@
         },
         {
           "name": "Stocks",
-          "value": 0.000427,
-          "formattedValue": "426.54K"
+          "value": 0.000421,
+          "formattedValue": "420.87K"
         },
         {
           "name": "Structured Products",
@@ -6300,6 +6324,23 @@
           "name": "Options",
           "value": 0.0,
           "formattedValue": "0.39K"
+        }
+      ]
+    },
+    {
+      "name": "BRL",
+      "value": 0.00013,
+      "formattedValue": "129.66K",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.000125,
+          "formattedValue": "125.00K"
+        },
+        {
+          "name": "Stocks",
+          "value": 5e-06,
+          "formattedValue": "4.66K"
         }
       ]
     },
@@ -6445,6 +6486,30 @@
           "name": "Cash & Equivalents",
           "value": 0.0,
           "formattedValue": "0.06K"
+        }
+      ]
+    },
+    {
+      "name": "DKK",
+      "value": 1e-06,
+      "formattedValue": "1.01K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 1e-06,
+          "formattedValue": "1.01K"
+        }
+      ]
+    },
+    {
+      "name": "HKD",
+      "value": 0.0,
+      "formattedValue": "0.01K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.0,
+          "formattedValue": "0.01K"
         }
       ]
     }

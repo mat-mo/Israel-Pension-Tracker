@@ -357,7 +357,7 @@
               "value": 0.0014,
               "formattedValue": "1.42M",
               "percentage": 0.69,
-              "countryEmoji": "🇪🇺"
+              "countryEmoji": "🇩🇪"
             },
             {
               "name": "שפיר הנדסה ותעשיה בעמ",
@@ -910,7 +910,7 @@
               "value": 0.0,
               "formattedValue": "0.26K",
               "percentage": 0.0,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇪🇺"
             },
             {
               "name": "INNOVID CORP",
@@ -2591,11 +2591,6 @@
           "name": "Non-Tradable Bonds",
           "value": 0.08779,
           "formattedValue": "87.79M"
-        },
-        {
-          "name": "Stocks",
-          "value": 0.0,
-          "formattedValue": "0.26K"
         }
       ]
     },
@@ -2632,7 +2627,7 @@
       ]
     },
     {
-      "name": "Eurozone",
+      "name": "Germany",
       "value": 0.001416,
       "formattedValue": "1.42M",
       "children": [
@@ -2666,18 +2661,30 @@
           "formattedValue": "615.05K"
         }
       ]
+    },
+    {
+      "name": "Eurozone",
+      "value": 0.0,
+      "formattedValue": "0.26K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.0,
+          "formattedValue": "0.26K"
+        }
+      ]
     }
   ],
   "currencySunburst": [
     {
       "name": "ILS",
-      "value": 0.753125,
-      "formattedValue": "753.12M",
+      "value": 0.751018,
+      "formattedValue": "751.02M",
       "children": [
         {
           "name": "Stocks",
-          "value": 0.365567,
-          "formattedValue": "365.57M"
+          "value": 0.36346,
+          "formattedValue": "363.46M"
         },
         {
           "name": "Bonds",
@@ -2754,6 +2761,18 @@
       ]
     },
     {
+      "name": "BRL",
+      "value": 0.00183,
+      "formattedValue": "1.83M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.00183,
+          "formattedValue": "1.83M"
+        }
+      ]
+    },
+    {
       "name": "EUR",
       "value": 0.001416,
       "formattedValue": "1.42M",
@@ -2791,6 +2810,18 @@
           "name": "Stocks",
           "value": 0.000615,
           "formattedValue": "615.05K"
+        }
+      ]
+    },
+    {
+      "name": "DKK",
+      "value": 0.000277,
+      "formattedValue": "276.79K",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.000277,
+          "formattedValue": "276.79K"
         }
       ]
     }
