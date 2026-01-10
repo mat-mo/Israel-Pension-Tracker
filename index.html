@@ -149,6 +149,14 @@
                 <div id="currencySunburstChart" class="h-[500px] w-full"></div> 
             </div>
         </div>
+
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border transition-colors duration-300 mt-6">
+            <div class="mb-4 border-b border-gray-100 dark:border-gray-700 pb-2">
+                <h2 class="font-bold text-lg text-gray-800 dark:text-white">5. Sector Allocation</h2>
+                <p class="text-xs text-gray-400 dark:text-gray-500">Economic Sectors / Industry Breakdown</p>
+            </div>
+            <div id="sectorSunburstChart" class="h-[600px] w-full"></div> 
+        </div>
         
         <footer class="mt-8 text-center text-xs text-gray-400 dark:text-gray-600 pb-4">
             <p>Source: Capital Market Authority. Amounts in Billions NIS.</p>
@@ -160,6 +168,7 @@
         let subChart = null;
         let geoSunburstChart = null;
         let currencySunburstChart = null;
+        let sectorSunburstChart = null; // NEW Variable
         
         let currentManifest = [];
         let currentInst = null;
@@ -228,7 +237,6 @@
             currentManifest.forEach((inst, index) => {
                 const opt = document.createElement('option');
                 opt.value = index;
-                // Use Name only (Clean Display)
                 opt.text = inst.name; 
                 instSelector.appendChild(opt);
             });
@@ -237,7 +245,6 @@
                 const instIndex = e.target.value;
                 currentInst = currentManifest[instIndex];
                 
-                // Update Institution AUM (Safeguard if field missing)
                 const aum = currentInst.totalAUM || '0';
                 document.getElementById('instAumDisplay').innerText = `₪${aum}`;
                 
@@ -288,7 +295,6 @@
                 })
                 .then(data => {
                     currentTrackData = data;
-                    // Update Track Assets Display
                     document.getElementById('totalAssetsDisplay').innerText = `₪${data.formattedTotalAssets}`;
                     renderCharts(data, true);
                     loading.style.display = 'none';
@@ -359,12 +365,14 @@
 
             renderGeoSunburst(data);
             renderCurrencySunburst(data);
+            renderSectorSunburst(data); // <--- Call New Function
             
             window.addEventListener('resize', () => {
                 mainChart.resize();
                 subChart.resize();
                 if(geoSunburstChart) geoSunburstChart.resize();
                 if(currencySunburstChart) currencySunburstChart.resize();
+                if(sectorSunburstChart) sectorSunburstChart.resize(); // <--- Resize New Chart
             });
         }
 
@@ -460,6 +468,56 @@
                 }
             };
             currencySunburstChart.setOption(option);
+        }
+
+        // --- NEW: Sector Sunburst Renderer ---
+        function renderSectorSunburst(data) {
+            if (!sectorSunburstChart) sectorSunburstChart = echarts.init(document.getElementById('sectorSunburstChart'));
+            
+            if (!data.sectorSunburst || data.sectorSunburst.length === 0) { 
+                sectorSunburstChart.clear();
+                sectorSunburstChart.setOption({ title: { text: 'No Data', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } });
+                return; 
+            }
+
+            const totalExposure = data.sectorSunburst.reduce((sum, item) => sum + (item.value || 0), 0);
+            const colors = getChartColors(); 
+
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: colors.tooltipBg,
+                    borderColor: colors.tooltipBorder,
+                    textStyle: { color: colors.tooltipText },
+                    formatter: (params) => {
+                        if (!params.data) return '';
+                        let path = params.treePathInfo.map(node => node.name).filter(n => n).join(' > ');
+                        let val = params.data.formattedValue || params.value;
+                        let share = params.percent;
+                        if (share === undefined && totalExposure > 0) {
+                            share = ((params.value / totalExposure) * 100).toFixed(2);
+                        }
+                        return `<b>${path}</b><br/>Exposure: ${val}<br/>Share: ${share}%`;
+                    }
+                },
+                series: {
+                    type: 'sunburst',
+                    data: data.sectorSunburst,
+                    radius: ['15%', '80%'],
+                    sort: null,
+                    emphasis: { focus: 'ancestor' },
+                    itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: colors.borderColor },
+                    label: { rotate: 'radial', color: colors.text, fontWeight: 'bold', minAngle: 5 },
+                     levels: [
+                        {}, 
+                        // Sector Level (Inner)
+                        { r0: '15%', r: '45%', label: { rotate: 'tangential', align: 'center' }, itemStyle: { borderWidth: 2 } },
+                        // Asset Class Level (Outer)
+                        { r0: '45%', r: '75%', label: { align: 'right', padding: 3 } }
+                    ]
+                }
+            };
+            sectorSunburstChart.setOption(option);
         }
 
         function updateSubChart(categoryName) {

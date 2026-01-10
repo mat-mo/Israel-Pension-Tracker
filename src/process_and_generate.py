@@ -43,6 +43,9 @@ COUNTRY_COLUMNS = [
 # Currency Columns
 CURRENCY_COLUMNS = ["מטבע פעילות", "מטבע", "סוג מטבע", "בסיס הצמדה", "Currency", "Linkage Base"]
 
+# NEW: Sector Columns
+SECTOR_COLUMNS = ["ענף מסחר", "ענף", "סקטור", "Sector", "Industry", "Trade Sector"]
+
 FILE_MAPPING = {
     "מזומנים": ("Cash & Equivalents", "Cash"),
     "פיקדונות": ("Cash & Equivalents", "Deposits"),
@@ -69,9 +72,9 @@ FILE_MAPPING = {
 }
 
 # --- Runtime Dictionaries (Populated from JSON) ---
-COUNTRY_LOOKUP = {}      # Maps match_string -> Emoji (e.g., "ארהב" -> "🇺🇸")
-EMOJI_TO_NAME = {}       # Maps Emoji -> Display Name (e.g., "🇺🇸" -> "USA")
-CURRENCY_LOOKUP = {}     # Maps match_string -> Currency Code (e.g., "dollar" -> "USD")
+COUNTRY_LOOKUP = {}      
+EMOJI_TO_NAME = {}       
+CURRENCY_LOOKUP = {}     
 HEDGED_KEYWORDS = ["מנוטרל", "גידור", "hedged", "currency hedged", "נטרול"]
 
 # ==========================================
@@ -82,42 +85,29 @@ def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
 
 def load_mappings():
-    """
-    Reads master_country_currency_map.json (LIST FORMAT) and builds optimized lookup dictionaries.
-    """
     global COUNTRY_LOOKUP, EMOJI_TO_NAME, CURRENCY_LOOKUP
-    
     if not MAPPING_FILE.exists():
         log(f"[!!!] CRITICAL: Mapping file not found at {MAPPING_FILE}")
         return False
-        
     try:
         with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
             data_list = json.load(f)
-            
+        if not isinstance(data_list, list): return False
+
         count = 0
         for entry in data_list:
             emoji = entry.get("emoji", "❓")
             name = entry.get("name", "Unknown")
             curr_code = entry.get("currency_code", "ILS")
             matches = entry.get("match_strings", [])
-            
-            # 1. Map Emoji to Display Name
             EMOJI_TO_NAME[emoji] = name
-            
-            # 2. Map all Match Strings to the Emoji & Currency
             for s in matches:
                 clean_s = str(s).strip()
                 COUNTRY_LOOKUP[clean_s] = emoji
-                COUNTRY_LOOKUP[clean_s.lower()] = emoji # Case insensitive support
-                
-                # Build Currency Lookup based on these keywords too
-                # (Only if string length > 2 to avoid bad matches like 'US')
+                COUNTRY_LOOKUP[clean_s.lower()] = emoji 
                 if len(clean_s) > 2:
                     CURRENCY_LOOKUP[clean_s.lower()] = curr_code
-                    
             count += 1
-            
         log(f"Mappings loaded successfully for {count} entries.")
         return True
     except Exception as e:
@@ -167,70 +157,65 @@ def get_column_value(row, possible_columns):
     return None
 
 def get_country_emoji(row, asset_class=""):
-    """Determines Country Emoji using the loaded JSON logic."""
-    
-    # 1. Check specific country columns (Exact Match)
     val = get_column_value(row, COUNTRY_COLUMNS)
     if val:
         clean_raw = str(val).strip()
-        # Direct lookup
         if clean_raw in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_raw]
-        # Clean quotes
         clean_no_quotes = clean_raw.replace('"', '').replace("'", "")
         if clean_no_quotes in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_no_quotes]
-        # Lowercase check
         if clean_raw.lower() in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_raw.lower()]
 
-    # 2. Check Asset Name for Keywords (Thematic/Regional/Country names)
     asset_name = get_column_value(row, NAME_COLUMNS)
     if asset_name:
         name_lower = str(asset_name).strip().lower()
-        
-        # Scan for ANY known match string in the name
         for match_str, emoji in COUNTRY_LOOKUP.items():
-            # Skip very short keys like "IL", "US" to prevent "TRUST" matching "US"
             if len(match_str) > 3 and match_str in name_lower:
                 return emoji
 
-    # 3. Fallback: General Israel/Abroad column
     val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל", "Israel/Abroad"])
     if val_general:
         if "ישראל" in str(val_general) or "Israel" in str(val_general):
              return "🇮🇱"
 
-    # 4. Smart Default for Cash/Loans
     if asset_class in ["Cash & Equivalents", "Loans"]: return "🇮🇱"
-    
-    # 5. Generic Fallback
     return "🌎"
 
 def detect_currency(row, country_emoji, asset_name):
     name_str = str(asset_name).lower() if asset_name else ""
-    
-    # 1. Hedging Check
     if any(k in name_str for k in HEDGED_KEYWORDS): return "ILS"
 
-    # 2. Explicit Column Check
     val = get_column_value(row, CURRENCY_COLUMNS)
     if val:
         clean = str(val).strip().lower()
-        # Check against loaded keywords
         for match_str, code in CURRENCY_LOOKUP.items():
             if match_str in clean: return code
         if "צמוד מדד" in clean: return "ILS" 
     
-    # 3. Name Inference (Scan name for "Dollar", "Euro", etc from JSON)
     for match_str, code in CURRENCY_LOOKUP.items():
         if len(match_str) > 3 and match_str in name_str: 
             return code
 
-    # 4. Country Inference
     if country_emoji == "🇺🇸": return "USD"
     if country_emoji == "🇬🇧": return "GBP"
     if country_emoji == "🇯🇵": return "JPY"
     if country_emoji in ["🇪🇺", "🇫🇷", "🇩🇪", "🇳🇱", "🇮🇹", "🇪🇸"]: return "EUR"
     
     return "ILS"
+
+def get_sector(row, asset_class=""):
+    """Extracts and normalizes sector data."""
+    val = get_column_value(row, SECTOR_COLUMNS)
+    if val:
+        clean = str(val).strip()
+        # Basic cleanup: if it says "nan" or empty, handle below
+        if len(clean) > 1 and clean.lower() != 'nan':
+            return clean
+            
+    # Smart Defaults based on Asset Class
+    if asset_class == "Bonds": return "Government / General"
+    if asset_class == "Cash & Equivalents": return "Liquidity"
+    
+    return "General / Unclassified"
 
 def clean_value(val):
     s = str(val).strip()
@@ -322,7 +307,6 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
-                # KEEPING THRESHOLD VERY LOW TO CATCH EVERYTHING
                 if abs(val_bn) < 1e-12: continue 
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
@@ -333,6 +317,7 @@ def process_institution_data(target_dir, inst_key, config, master_map):
 
                 emoji = get_country_emoji(row, cls) 
                 currency = detect_currency(row, emoji, name)
+                sector = get_sector(row, cls) # <--- Extract Sector
 
                 if track_id not in all_tracks_data: all_tracks_data[track_id] = {}
                 if cls not in all_tracks_data[track_id]: all_tracks_data[track_id][cls] = {}
@@ -342,7 +327,8 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                     "name": name, 
                     "value": val_bn,
                     "emoji": emoji,
-                    "currency": currency 
+                    "currency": currency,
+                    "sector": sector # <--- Store Sector
                 })
         except Exception: pass 
     return all_tracks_data
@@ -397,21 +383,64 @@ def calculate_currency_sunburst(data_store):
     sunburst_data.sort(key=lambda x: x["value"], reverse=True)
     return sunburst_data
 
+def calculate_sector_sunburst(data_store):
+    """
+    Groups data by Sector -> Asset Class.
+    Uses ABSOLUTE values for chart sizing (Exposure).
+    """
+    sector_groups = {} 
+    
+    for cls_name, subclasses in data_store.items():
+        for sub_items in subclasses.values():
+            for item in sub_items:
+                sec = item.get("sector", "General")
+                
+                if sec not in sector_groups: sector_groups[sec] = {}
+                if cls_name not in sector_groups[sec]: sector_groups[sec][cls_name] = 0.0
+                
+                # Sum Absolute Exposure
+                sector_groups[sec][cls_name] += abs(item["value"])
+
+    sunburst_data = []
+    for sec, assets_dict in sector_groups.items():
+        asset_children = []
+        children_sum = 0.0
+        
+        for cls_name, abs_val in assets_dict.items():
+            if abs_val > 1e-12:
+                asset_children.append({
+                    "name": cls_name,
+                    "value": round(abs_val, 6),
+                    "formattedValue": format_currency(abs_val)
+                })
+                children_sum += abs_val
+        
+        if not asset_children: continue
+        
+        asset_children.sort(key=lambda x: x["value"], reverse=True)
+        
+        sunburst_data.append({
+            "name": sec,
+            "value": round(children_sum, 6),
+            "formattedValue": format_currency(children_sum),
+            "children": asset_children
+        })
+    
+    sunburst_data.sort(key=lambda x: x["value"], reverse=True)
+    return sunburst_data
+
 def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     track_map = config['institutions'][inst_key]['tracks']
     manifest_entries = []
     
-    # NEW: Accumulator for Institution AUM
     inst_total_aum = 0.0
 
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
         
-        # NET Assets for Display and Main Pie
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
         
-        # Add to Institution Total
         inst_total_aum += total_assets
 
         asset_classes = []
@@ -476,6 +505,9 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         
         geo_sunburst_data = calculate_geo_sunburst(data_store)
         currency_sunburst_data = calculate_currency_sunburst(data_store)
+        
+        # --- NEW SECTOR DATA ---
+        sector_sunburst_data = calculate_sector_sunburst(data_store)
 
         safe_filename = get_safe_filename(t_name)
         
@@ -487,7 +519,8 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             "assetClasses": asset_classes, 
             "breakdown": breakdown,
             "geoSunburst": geo_sunburst_data,
-            "currencySunburst": currency_sunburst_data
+            "currencySunburst": currency_sunburst_data,
+            "sectorSunburst": sector_sunburst_data # <--- Added to JSON
         }
         
         with open(target_dir / safe_filename, 'w', encoding='utf-8') as f:

@@ -1198,5 +1198,58 @@
         }
       ]
     }
+  ],
+  "sectorSunburst": [
+    {
+      "name": "General / Unclassified",
+      "value": 0.009024,
+      "formattedValue": "9.02M",
+      "children": [
+        {
+          "name": "Derivatives",
+          "value": 0.003047,
+          "formattedValue": "3.05M"
+        },
+        {
+          "name": "Non-Tradable Bonds",
+          "value": 0.002563,
+          "formattedValue": "2.56M"
+        },
+        {
+          "name": "Stocks",
+          "value": 0.001752,
+          "formattedValue": "1.75M"
+        },
+        {
+          "name": "Other Assets",
+          "value": 0.001662,
+          "formattedValue": "1.66M"
+        }
+      ]
+    },
+    {
+      "name": "Government / General",
+      "value": 0.008552,
+      "formattedValue": "8.55M",
+      "children": [
+        {
+          "name": "Bonds",
+          "value": 0.008552,
+          "formattedValue": "8.55M"
+        }
+      ]
+    },
+    {
+      "name": "Liquidity",
+      "value": 0.000857,
+      "formattedValue": "856.97K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.000857,
+          "formattedValue": "856.97K"
+        }
+      ]
+    }
   ]
 }

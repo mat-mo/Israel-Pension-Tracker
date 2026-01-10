@@ -245,5 +245,41 @@
         }
       ]
     }
+  ],
+  "sectorSunburst": [
+    {
+      "name": "Liquidity",
+      "value": 0.153343,
+      "formattedValue": "153.34M",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 0.153343,
+          "formattedValue": "153.34M"
+        }
+      ]
+    },
+    {
+      "name": "General / Unclassified",
+      "value": 0.137817,
+      "formattedValue": "137.82M",
+      "children": [
+        {
+          "name": "Stocks",
+          "value": 0.129426,
+          "formattedValue": "129.43M"
+        },
+        {
+          "name": "Derivatives",
+          "value": 0.005316,
+          "formattedValue": "5.32M"
+        },
+        {
+          "name": "Futures",
+          "value": 0.003074,
+          "formattedValue": "3.07M"
+        }
+      ]
+    }
   ]
 }
