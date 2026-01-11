@@ -157,6 +157,7 @@ def get_column_value(row, possible_columns):
     return None
 
 def get_country_emoji(row, asset_class=""):
+    # 1. Check specific country columns (Exact Match)
     val = get_column_value(row, COUNTRY_COLUMNS)
     if val:
         clean_raw = str(val).strip()
@@ -165,19 +166,44 @@ def get_country_emoji(row, asset_class=""):
         if clean_no_quotes in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_no_quotes]
         if clean_raw.lower() in COUNTRY_LOOKUP: return COUNTRY_LOOKUP[clean_raw.lower()]
 
+    # 2. Check Asset Name
     asset_name = get_column_value(row, NAME_COLUMNS)
     if asset_name:
-        name_lower = str(asset_name).strip().lower()
+        name_clean = str(asset_name).strip()
+        name_lower = name_clean.lower()
+        
         for match_str, emoji in COUNTRY_LOOKUP.items():
-            if len(match_str) > 3 and match_str in name_lower:
+            # RULE 1: Length Safety
+            # - If len >= 3: Allow partial match (e.g. "USA" inside string)
+            # - If len == 2: Require word boundaries (e.g. " US " is ok, "TRUST" is not)
+            is_match = False
+            
+            if len(match_str) >= 3:
+                if match_str in name_lower: is_match = True
+            elif len(match_str) == 2:
+                # Regex check for " US ", "US)", "(US", "US," etc.
+                pattern = r'(?:^|[\s\(\)\[\],.-])' + re.escape(match_str) + r'(?:$|[\s\(\)\[\],.-])'
+                if re.search(pattern, name_lower): is_match = True
+
+            if is_match:
+                # RULE 2: Exclusion Logic (The "ex-" fix)
+                # Ensure we don't trigger on "ex china"
+                exclusion_patterns = [f"ex {match_str}", f"ex-{match_str}", f"ex.{match_str}"]
+                if any(ex in name_lower for ex in exclusion_patterns):
+                    continue # This country is explicitly excluded, keep searching
+                
                 return emoji
 
+    # 3. Fallback: General Israel/Abroad column
     val_general = get_column_value(row, ["ישראל/חו\"ל", "ישראל/חו''ל", "Israel/Abroad"])
     if val_general:
         if "ישראל" in str(val_general) or "Israel" in str(val_general):
              return "🇮🇱"
 
+    # 4. Smart Default for Cash/Loans
     if asset_class in ["Cash & Equivalents", "Loans"]: return "🇮🇱"
+    
+    # 5. Generic Fallback
     return "🌎"
 
 def detect_currency(row, country_emoji, asset_name):

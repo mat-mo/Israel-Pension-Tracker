@@ -4910,7 +4910,7 @@
               "value": 3.296e-06,
               "formattedValue": "3.30K",
               "percentage": 0.57,
-              "countryEmoji": "🇮🇱"
+              "countryEmoji": "🇯🇵"
             }
           ]
         ]
@@ -5122,7 +5122,7 @@
               "value": 9.713e-06,
               "formattedValue": "9.71K",
               "percentage": 3.68,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇮🇱"
             },
             {
               "name": "IGS-EMERG MKT CORP D",
@@ -5143,7 +5143,7 @@
               "value": 8.907e-06,
               "formattedValue": "8.91K",
               "percentage": 3.38,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇺🇸"
             },
             {
               "name": "Schroder ISF EURO High Yield",
@@ -5713,7 +5713,7 @@
               "value": 6.37e-06,
               "formattedValue": "6.37K",
               "percentage": 1.02,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇱🇺"
             },
             {
               "name": "EQUITIX MA 25 LP קרן השקעה",
@@ -6670,7 +6670,7 @@
               "value": 3.32e-07,
               "formattedValue": "0.33K",
               "percentage": 0.05,
-              "countryEmoji": "🌎"
+              "countryEmoji": "🇨🇴"
             },
             {
               "name": "Hamilton lane co inv",
@@ -6910,8 +6910,8 @@
   "geoSunburst": [
     {
       "name": "Israel",
-      "value": 0.006534277,
-      "formattedValue": "6.53M",
+      "value": 0.006540694,
+      "formattedValue": "6.54M",
       "children": [
         {
           "name": "Bonds",
@@ -6920,8 +6920,8 @@
         },
         {
           "name": "Cash & Equivalents",
-          "value": 0.000624363,
-          "formattedValue": "624.36K"
+          "value": 0.000621067,
+          "formattedValue": "621.07K"
         },
         {
           "name": "Loans",
@@ -6954,6 +6954,11 @@
           "formattedValue": "20.90K"
         },
         {
+          "name": "Mutual Funds",
+          "value": 9.713e-06,
+          "formattedValue": "9.71K"
+        },
+        {
           "name": "Non-Tradable Stocks",
           "value": 6.024e-06,
           "formattedValue": "6.02K"
@@ -6977,8 +6982,8 @@
     },
     {
       "name": "United States",
-      "value": 0.00045812,
-      "formattedValue": "458.12K",
+      "value": 0.000467027,
+      "formattedValue": "467.03K",
       "children": [
         {
           "name": "Investment Funds",
@@ -6992,8 +6997,8 @@
         },
         {
           "name": "Mutual Funds",
-          "value": 4.8794e-05,
-          "formattedValue": "48.79K"
+          "value": 5.7701e-05,
+          "formattedValue": "57.70K"
         },
         {
           "name": "Stocks",
@@ -7019,23 +7024,23 @@
     },
     {
       "name": "Global",
-      "value": 0.000367489,
-      "formattedValue": "367.49K",
+      "value": 0.000342167,
+      "formattedValue": "342.17K",
       "children": [
         {
           "name": "Investment Funds",
-          "value": 0.000152646,
-          "formattedValue": "152.65K"
-        },
-        {
-          "name": "Mutual Funds",
-          "value": 0.000105713,
-          "formattedValue": "105.71K"
+          "value": 0.000145944,
+          "formattedValue": "145.94K"
         },
         {
           "name": "Stocks",
           "value": 0.000100435,
           "formattedValue": "100.44K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 8.7093e-05,
+          "formattedValue": "87.09K"
         },
         {
           "name": "Bonds",
@@ -7153,6 +7158,18 @@
       ]
     },
     {
+      "name": "Luxembourg",
+      "value": 6.37e-06,
+      "formattedValue": "6.37K",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 6.37e-06,
+          "formattedValue": "6.37K"
+        }
+      ]
+    },
+    {
       "name": "China",
       "value": 6.199e-06,
       "formattedValue": "6.20K",
@@ -7180,6 +7197,38 @@
       ]
     },
     {
+      "name": "Japan",
+      "value": 3.376e-06,
+      "formattedValue": "3.38K",
+      "children": [
+        {
+          "name": "Cash & Equivalents",
+          "value": 3.296e-06,
+          "formattedValue": "3.30K"
+        },
+        {
+          "name": "Mutual Funds",
+          "value": 4.1e-08,
+          "formattedValue": "0.04K"
+        },
+        {
+          "name": "Stocks",
+          "value": 3.3e-08,
+          "formattedValue": "0.03K"
+        },
+        {
+          "name": "Futures",
+          "value": 4e-09,
+          "formattedValue": "0.00K"
+        },
+        {
+          "name": "Derivatives",
+          "value": 2e-09,
+          "formattedValue": "0.00K"
+        }
+      ]
+    },
+    {
       "name": "India",
       "value": 2.076e-06,
       "formattedValue": "2.08K",
@@ -7198,6 +7247,18 @@
           "name": "Stocks",
           "value": 1.68e-07,
           "formattedValue": "0.17K"
+        }
+      ]
+    },
+    {
+      "name": "Colombia",
+      "value": 3.32e-07,
+      "formattedValue": "0.33K",
+      "children": [
+        {
+          "name": "Investment Funds",
+          "value": 3.32e-07,
+          "formattedValue": "0.33K"
         }
       ]
     },
@@ -7222,33 +7283,6 @@
           "name": "Stocks",
           "value": 1.68e-07,
           "formattedValue": "0.17K"
-        }
-      ]
-    },
-    {
-      "name": "Japan",
-      "value": 8e-08,
-      "formattedValue": "0.08K",
-      "children": [
-        {
-          "name": "Mutual Funds",
-          "value": 4.1e-08,
-          "formattedValue": "0.04K"
-        },
-        {
-          "name": "Stocks",
-          "value": 3.3e-08,
-          "formattedValue": "0.03K"
-        },
-        {
-          "name": "Futures",
-          "value": 4e-09,
-          "formattedValue": "0.00K"
-        },
-        {
-          "name": "Derivatives",
-          "value": 2e-09,
-          "formattedValue": "0.00K"
         }
       ]
     },
