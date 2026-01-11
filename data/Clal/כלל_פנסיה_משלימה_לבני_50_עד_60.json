@@ -65,6 +65,12 @@
       "percentage": 0.66
     },
     {
+      "name": "Other Assets",
+      "value": 0.002110096,
+      "formattedValue": "-2.11M",
+      "percentage": -0.23
+    },
+    {
       "name": "Warrants",
       "value": 0.001064252,
       "formattedValue": "1.06M",
@@ -77,22 +83,16 @@
       "percentage": 0.1
     },
     {
-      "name": "Options",
-      "value": 0.000145125,
-      "formattedValue": "145.12K",
-      "percentage": 0.02
-    },
-    {
       "name": "Real Estate",
       "value": 0.000192269,
       "formattedValue": "192.27K",
       "percentage": 0.02
     },
     {
-      "name": "Other Assets",
-      "value": -0.002110096,
-      "formattedValue": "-2.11M",
-      "percentage": -0.23
+      "name": "Options",
+      "value": 0.000145125,
+      "formattedValue": "145.12K",
+      "percentage": 0.02
     }
   ],
   "breakdown": {
@@ -4707,7 +4707,7 @@
     "Other Assets": [
       {
         "subclass": "General",
-        "value": -0.002110096,
+        "value": 0.002110096,
         "formattedValue": "-2.11M",
         "percentageOfClass": 100.0,
         "itemCount": 21,

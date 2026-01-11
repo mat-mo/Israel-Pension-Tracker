@@ -17,6 +17,12 @@
       "percentage": 12.1
     },
     {
+      "name": "Other Assets",
+      "value": 1.5453e-05,
+      "formattedValue": "-15.45K",
+      "percentage": -2.68
+    },
+    {
       "name": "Cash & Equivalents",
       "value": 6e-06,
       "formattedValue": "6.00K",
@@ -47,22 +53,16 @@
       "percentage": 0.23
     },
     {
-      "name": "Warrants",
-      "value": 1.1e-08,
-      "formattedValue": "0.01K",
-      "percentage": 0.0
-    },
-    {
       "name": "Options",
-      "value": -1.25e-07,
+      "value": 1.25e-07,
       "formattedValue": "-0.13K",
       "percentage": -0.02
     },
     {
-      "name": "Other Assets",
-      "value": -1.5453e-05,
-      "formattedValue": "-15.45K",
-      "percentage": -2.68
+      "name": "Warrants",
+      "value": 1.1e-08,
+      "formattedValue": "0.01K",
+      "percentage": 0.0
     }
   ],
   "breakdown": {
@@ -125,7 +125,7 @@
     "Other Assets": [
       {
         "subclass": "General",
-        "value": -1.5453e-05,
+        "value": 1.5453e-05,
         "formattedValue": "-15.45K",
         "percentageOfClass": 100.0,
         "itemCount": 5,
@@ -576,113 +576,8 @@
     ],
     "Options": [
       {
-        "subclass": "Tradable",
-        "value": 2e-08,
-        "formattedValue": "0.02K",
-        "percentageOfClass": -16.0,
-        "itemCount": 13,
-        "totalPages": 2,
-        "holdingsPages": [
-          [
-            {
-              "name": "NASDAQ 100 E-MINI Dec24c",
-              "value": -1.37e-07,
-              "formattedValue": "-0.14K",
-              "percentage": -685.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "S&P500 EMINI OPTN Oct25P",
-              "value": 1.19e-07,
-              "formattedValue": "0.12K",
-              "percentage": 595.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "NKY 12/12/25 C45000",
-              "value": -1.12e-07,
-              "formattedValue": "-0.11K",
-              "percentage": -560.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "NKY 12/12/25 C43000",
-              "value": 1e-07,
-              "formattedValue": "0.10K",
-              "percentage": 500.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "S&P500 EMINI OPTN Dec25P",
-              "value": 8.5e-08,
-              "formattedValue": "0.09K",
-              "percentage": 425.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "US 10yr Ultra Opt Dec25P",
-              "value": 7.4e-08,
-              "formattedValue": "0.07K",
-              "percentage": 370.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "NKY 10/10/25 C43000",
-              "value": 7.3e-08,
-              "formattedValue": "0.07K",
-              "percentage": 365.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "NASDAQ 100 E-MINI Dec24P",
-              "value": -6.4e-08,
-              "formattedValue": "-0.06K",
-              "percentage": -320.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "WFC US 10/17/25 C80",
-              "value": -5.1e-08,
-              "formattedValue": "-0.05K",
-              "percentage": -255.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "NKY 10/10/25 C44000",
-              "value": -4.4e-08,
-              "formattedValue": "-0.04K",
-              "percentage": -220.0,
-              "countryEmoji": "🌎"
-            }
-          ],
-          [
-            {
-              "name": "NASD100 Min EOM O NOV25P",
-              "value": -4e-08,
-              "formattedValue": "-0.04K",
-              "percentage": -200.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "S&P500 EMINI OPTN Nov25P",
-              "value": 3.9e-08,
-              "formattedValue": "0.04K",
-              "percentage": 195.0,
-              "countryEmoji": "🌎"
-            },
-            {
-              "name": "NKY 10/10/25 C45000",
-              "value": -2.2e-08,
-              "formattedValue": "-0.02K",
-              "percentage": -110.0,
-              "countryEmoji": "🌎"
-            }
-          ]
-        ]
-      },
-      {
         "subclass": "Non-Tradable",
-        "value": -1.45e-07,
+        "value": 1.45e-07,
         "formattedValue": "-0.15K",
         "percentageOfClass": 116.0,
         "itemCount": 42,
@@ -990,6 +885,111 @@
               "formattedValue": "0.00K",
               "percentage": -0.69,
               "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      },
+      {
+        "subclass": "Tradable",
+        "value": 2e-08,
+        "formattedValue": "0.02K",
+        "percentageOfClass": -16.0,
+        "itemCount": 13,
+        "totalPages": 2,
+        "holdingsPages": [
+          [
+            {
+              "name": "NASDAQ 100 E-MINI Dec24c",
+              "value": -1.37e-07,
+              "formattedValue": "-0.14K",
+              "percentage": -685.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "S&P500 EMINI OPTN Oct25P",
+              "value": 1.19e-07,
+              "formattedValue": "0.12K",
+              "percentage": 595.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "NKY 12/12/25 C45000",
+              "value": -1.12e-07,
+              "formattedValue": "-0.11K",
+              "percentage": -560.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "NKY 12/12/25 C43000",
+              "value": 1e-07,
+              "formattedValue": "0.10K",
+              "percentage": 500.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "S&P500 EMINI OPTN Dec25P",
+              "value": 8.5e-08,
+              "formattedValue": "0.09K",
+              "percentage": 425.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "US 10yr Ultra Opt Dec25P",
+              "value": 7.4e-08,
+              "formattedValue": "0.07K",
+              "percentage": 370.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "NKY 10/10/25 C43000",
+              "value": 7.3e-08,
+              "formattedValue": "0.07K",
+              "percentage": 365.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "NASDAQ 100 E-MINI Dec24P",
+              "value": -6.4e-08,
+              "formattedValue": "-0.06K",
+              "percentage": -320.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "WFC US 10/17/25 C80",
+              "value": -5.1e-08,
+              "formattedValue": "-0.05K",
+              "percentage": -255.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "NKY 10/10/25 C44000",
+              "value": -4.4e-08,
+              "formattedValue": "-0.04K",
+              "percentage": -220.0,
+              "countryEmoji": "🌎"
+            }
+          ],
+          [
+            {
+              "name": "NASD100 Min EOM O NOV25P",
+              "value": -4e-08,
+              "formattedValue": "-0.04K",
+              "percentage": -200.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "S&P500 EMINI OPTN Nov25P",
+              "value": 3.9e-08,
+              "formattedValue": "0.04K",
+              "percentage": 195.0,
+              "countryEmoji": "🌎"
+            },
+            {
+              "name": "NKY 10/10/25 C45000",
+              "value": -2.2e-08,
+              "formattedValue": "-0.02K",
+              "percentage": -110.0,
+              "countryEmoji": "🌎"
             }
           ]
         ]

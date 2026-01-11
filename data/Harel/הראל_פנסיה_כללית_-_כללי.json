@@ -47,15 +47,15 @@
       "percentage": 2.06
     },
     {
-      "name": "Structured Products",
-      "value": 0.008077321,
-      "formattedValue": "8.08M",
-      "percentage": 0.81
-    },
-    {
       "name": "Derivatives",
       "value": 0.00809548,
       "formattedValue": "8.10M",
+      "percentage": 0.81
+    },
+    {
+      "name": "Structured Products",
+      "value": 0.008077321,
+      "formattedValue": "8.08M",
       "percentage": 0.81
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "name": "Options",
-      "value": -2.4885e-05,
+      "value": 2.4885e-05,
       "formattedValue": "-24.89K",
       "percentage": -0.0
     }
@@ -2881,7 +2881,7 @@
     "Options": [
       {
         "subclass": "Tradable",
-        "value": -2.4885e-05,
+        "value": 2.4885e-05,
         "formattedValue": "-24.89K",
         "percentageOfClass": 100.0,
         "itemCount": 13,

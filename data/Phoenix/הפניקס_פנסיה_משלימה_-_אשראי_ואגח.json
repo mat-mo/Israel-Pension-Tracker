@@ -41,15 +41,15 @@
       "percentage": 0.13
     },
     {
-      "name": "Other Assets",
-      "value": 2.618e-06,
-      "formattedValue": "2.62K",
-      "percentage": 0.03
-    },
-    {
       "name": "Stocks",
       "value": 2.935e-06,
       "formattedValue": "2.94K",
+      "percentage": 0.03
+    },
+    {
+      "name": "Other Assets",
+      "value": 2.618e-06,
+      "formattedValue": "2.62K",
       "percentage": 0.03
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "name": "Options",
-      "value": -1.1e-07,
+      "value": 1.1e-07,
       "formattedValue": "-0.11K",
       "percentage": -0.0
     }
@@ -5012,8 +5012,27 @@
     ],
     "Options": [
       {
+        "subclass": "Tradable",
+        "value": 6e-08,
+        "formattedValue": "-0.06K",
+        "percentageOfClass": 54.73,
+        "itemCount": 1,
+        "totalPages": 1,
+        "holdingsPages": [
+          [
+            {
+              "name": "UXYX5C 117.5",
+              "value": -6e-08,
+              "formattedValue": "-0.06K",
+              "percentage": 100.0,
+              "countryEmoji": "🇺🇸"
+            }
+          ]
+        ]
+      },
+      {
         "subclass": "Non-Tradable",
-        "value": -5e-08,
+        "value": 5e-08,
         "formattedValue": "-0.05K",
         "percentageOfClass": 45.27,
         "itemCount": 2,
@@ -5033,25 +5052,6 @@
               "formattedValue": "-0.02K",
               "percentage": 39.36,
               "countryEmoji": "🇮🇱"
-            }
-          ]
-        ]
-      },
-      {
-        "subclass": "Tradable",
-        "value": -6e-08,
-        "formattedValue": "-0.06K",
-        "percentageOfClass": 54.73,
-        "itemCount": 1,
-        "totalPages": 1,
-        "holdingsPages": [
-          [
-            {
-              "name": "UXYX5C 117.5",
-              "value": -6e-08,
-              "formattedValue": "-0.06K",
-              "percentage": 100.0,
-              "countryEmoji": "🇺🇸"
             }
           ]
         ]

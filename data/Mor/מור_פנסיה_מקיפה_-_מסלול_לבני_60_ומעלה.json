@@ -59,15 +59,15 @@
       "percentage": 0.28
     },
     {
-      "name": "Warrants",
-      "value": 0.001034188,
-      "formattedValue": "1.03M",
-      "percentage": 0.13
-    },
-    {
       "name": "Futures",
       "value": 0.001097516,
       "formattedValue": "1.10M",
+      "percentage": 0.13
+    },
+    {
+      "name": "Warrants",
+      "value": 0.001034188,
+      "formattedValue": "1.03M",
       "percentage": 0.13
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "name": "Derivatives",
-      "value": -0.000375551,
+      "value": 0.000375551,
       "formattedValue": "-375.55K",
       "percentage": -0.05
     }
@@ -5008,7 +5008,7 @@
     "Derivatives": [
       {
         "subclass": "General",
-        "value": -0.000375551,
+        "value": 0.000375551,
         "formattedValue": "-375.55K",
         "percentageOfClass": 100.0,
         "itemCount": 1,

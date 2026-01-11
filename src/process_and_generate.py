@@ -92,9 +92,7 @@ def load_mappings():
     try:
         with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
             data_list = json.load(f)
-        if not isinstance(data_list, list): 
-            log("[!!!] JSON Error: Expected a List of objects.")
-            return False
+        if not isinstance(data_list, list): return False
 
         count = 0
         for entry in data_list:
@@ -102,7 +100,6 @@ def load_mappings():
             name = entry.get("name", "Unknown")
             curr_code = entry.get("currency_code", "ILS")
             matches = entry.get("match_strings", [])
-            
             EMOJI_TO_NAME[emoji] = name
             for s in matches:
                 clean_s = str(s).strip()
@@ -111,7 +108,7 @@ def load_mappings():
                 if len(clean_s) > 2:
                     CURRENCY_LOOKUP[clean_s.lower()] = curr_code
             count += 1
-        log(f"Mappings loaded successfully for {count} regions.")
+        log(f"Mappings loaded successfully for {count} entries.")
         return True
     except Exception as e:
         log(f"[!!!] Error loading mappings: {e}")
@@ -304,7 +301,6 @@ def process_institution_data(target_dir, inst_key, config, master_map):
                 
                 val = clean_value(row[val_col])
                 val_bn = val / 1_000_000.0
-                # HIGH PRECISION FIX: Keeps small ETFs alive
                 if abs(val_bn) < 1e-12: continue 
                 
                 name = get_column_value(row, NAME_COLUMNS) or "Unknown Asset"
@@ -419,13 +415,23 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         asset_classes = []
         breakdown = {}
         
+        # Calculate TOTAL NET ASSETS for Main Pie percentages
+        total_net_value_all = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
+
         for c_name, subs in data_store.items():
+            # Calculate NET sum for this asset class
             c_net = sum(sum(i['value'] for i in s_list) for s_list in subs.values())
-            c_pct = (c_net / total_assets) * 100
+            
+            # --- FIX: Main Pie uses ABSOLUTE value for Slice Size to show magnitude of negative classes ---
+            # But we keep Signed Value for Text Label
+            c_abs = abs(c_net)
+            
+            # Percentage based on NET TOTAL (Standard accounting)
+            c_pct = (c_net / total_net_value_all) * 100 if total_net_value_all != 0 else 0
             
             asset_classes.append({
                 "name": c_name, 
-                "value": round(c_net, 9), 
+                "value": round(c_abs, 9), # <--- Forces visibility even if net is negative
                 "formattedValue": format_currency(c_net), 
                 "percentage": round(c_pct, 2)
             })
@@ -462,9 +468,10 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 total_pages = math.ceil(total_items / ITEMS_PER_PAGE)
                 paginated = [all_holdings[i:i + ITEMS_PER_PAGE] for i in range(0, total_items, ITEMS_PER_PAGE)]
                 
+                # --- FIX: Breakdown Pie uses ABSOLUTE value for Slice Size ---
                 c_breakdown.append({
                     "subclass": s_name, 
-                    "value": round(s_net, 9), 
+                    "value": round(abs(s_net), 9), # <--- Forces visibility
                     "formattedValue": format_currency(s_net),
                     "percentageOfClass": round(s_pct_class, 2),
                     "itemCount": total_items, 
@@ -474,7 +481,8 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
             c_breakdown.sort(key=lambda x: x['value'], reverse=True)
             breakdown[c_name] = c_breakdown
             
-        asset_classes.sort(key=lambda x: x['percentage'], reverse=True)
+        asset_classes.sort(key=lambda x: x['value'], reverse=True) # Sort by magnitude
+        
         geo_sunburst_data = calculate_geo_sunburst(data_store)
         currency_sunburst_data = calculate_currency_sunburst(data_store)
         sector_sunburst_data = calculate_sector_sunburst(data_store)
