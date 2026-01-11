@@ -178,53 +178,53 @@
         let currentPage = 0;
 
         // FIXED COLORS MAP (Main Chart)
-        // High contrast keys for main asset classes
+        // A curated 15-color palette for maximum distinction in all modes.
         const ASSET_COLORS = {
-            "Stocks": "#3b82f6", // Blue-500
-            "Non-Tradable Stocks": "#4f46e5", // Indigo-600
-            "Bonds": "#10b981", // Emerald-500
+            "Stocks": "#2563eb", // Blue-600
+            "Non-Tradable Stocks": "#4338ca", // Indigo-700
+            "Bonds": "#059669", // Emerald-600
             "Non-Tradable Bonds": "#0d9488", // Teal-600
-            "Mutual Funds": "#d946ef", // Fuchsia-500
-            "Investment Funds": "#8b5cf6", // Violet-500
-            "Structured Products": "#d97706", // Amber-600
-            "Derivatives": "#ef4444", // Red-500
-            "Futures": "#dc2626", // Red-600
-            "Options": "#b91c1c", // Red-700
-            "Warrants": "#991b1b", // Red-800
-            "Cash & Equivalents": "#6b7280", // Gray-500
-            "Loans": "#eab308", // Yellow-500
-            "Real Estate": "#f97316", // Orange-500
-            "Other Assets": "#64748b" // Slate-500
+            "Cash & Equivalents": "#64748b", // Slate-500 (Blueish Gray)
+            "Mutual Funds": "#c026d3", // Fuchsia-600
+            "Investment Funds": "#7c3aed", // Violet-600
+            "Structured Products": "#0891b2", // Cyan-600
+            "Real Estate": "#ea580c", // Orange-600
+            "Loans": "#ca8a04", // Yellow-600 (Dark Gold)
+            "Derivatives": "#dc2626", // Red-600
+            "Futures": "#9333ea", // Purple-600
+            "Options": "#db2777", // Pink-600
+            "Warrants": "#be123c", // Rose-700
+            "Other Assets": "#65a30d" // Lime-600
         };
 
         // ACCESSIBLE MONOCHROMATIC PALETTES (Mid-Range 300-600)
-        // Strictly safe for both Dark (Slate-900) and Light (White) backgrounds.
+        // Generated based on the 15 base colors above.
         const CATEGORY_PALETTES = {
-            "Stocks": ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd'], // Blue
-            "Non-Tradable Stocks": ['#4338ca', '#4f46e5', '#6366f1', '#818cf8'], // Indigo
-            "Bonds": ['#059669', '#10b981', '#34d399', '#6ee7b7'], // Emerald
-            "Non-Tradable Bonds": ['#0f766e', '#0d9488', '#14b8a6', '#5eead4'], // Teal
-            "Cash & Equivalents": ['#4b5563', '#6b7280', '#9ca3af', '#cbd5e1'], // Gray
-            "Mutual Funds": ['#c026d3', '#d946ef', '#e879f9', '#f0abfc'], // Fuchsia
-            "Investment Funds": ['#7c3aed', '#8b5cf6', '#a78bfa', '#c4b5fd'], // Violet
-            "Structured Products": ['#b45309', '#d97706', '#f59e0b', '#fbbf24'], // Amber
-            "Real Estate": ['#ea580c', '#f97316', '#fdba74', '#fed7aa'], // Orange
-            "Loans": ['#ca8a04', '#eab308', '#fde047', '#fef08a'], // Yellow
-            "Derivatives": ['#dc2626', '#ef4444', '#fca5a5', '#fecaca'], // Red
-            "Futures": ['#b91c1c', '#dc2626', '#ef4444', '#f87171'], // Red (Darker)
-            "Options": ['#991b1b', '#b91c1c', '#dc2626', '#ef4444'], // Red (Even Darker)
-            "Warrants": ['#7f1d1d', '#991b1b', '#b91c1c', '#dc2626'], // Red (Darkest)
-            "Other Assets": ['#475569', '#64748b', '#94a3b8', '#cbd5e1'] // Slate
+            "Stocks": ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd'],
+            "Non-Tradable Stocks": ['#4338ca', '#4f46e5', '#6366f1', '#818cf8'],
+            "Bonds": ['#059669', '#10b981', '#34d399', '#6ee7b7'],
+            "Non-Tradable Bonds": ['#0d9488', '#14b8a6', '#2dd4bf', '#5eead4'],
+            "Cash & Equivalents": ['#475569', '#64748b', '#94a3b8', '#cbd5e1'],
+            "Mutual Funds": ['#c026d3', '#d946ef', '#e879f9', '#f0abfc'],
+            "Investment Funds": ['#7c3aed', '#8b5cf6', '#a78bfa', '#c4b5fd'],
+            "Structured Products": ['#0891b2', '#06b6d4', '#22d3ee', '#67e8f9'],
+            "Real Estate": ['#ea580c', '#f97316', '#fdba74', '#fed7aa'],
+            "Loans": ['#ca8a04', '#eab308', '#fde047', '#fef08a'],
+            "Derivatives": ['#dc2626', '#ef4444', '#fca5a5', '#fecaca'],
+            "Futures": ['#9333ea', '#a855f7', '#c084fc', '#d8b4fe'],
+            "Options": ['#db2777', '#ec4899', '#f472b6', '#fbcfe8'],
+            "Warrants": ['#be123c', '#e11d48', '#f43f5e', '#fb7185'],
+            "Other Assets": ['#65a30d', '#84cc16', '#a3e635', '#bef264']
         };
 
         // Fallback
         const DEFAULT_PALETTE = ['#2dd4bf', '#14b8a6', '#0d9488', '#0f766e']; 
 
-        // VIBRANT PALETTE (For Sunbursts)
+        // VIBRANT PALETTE (For Sunbursts) - A mix of the main distinctive colors
         const VIBRANT_PALETTE = [
-            '#3b82f6', '#10b981', '#f59e0b', '#ef4444', 
-            '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6', 
-            '#f97316', '#06b6d4', '#84cc16', '#d946ef'
+            '#2563eb', '#059669', '#ea580c', '#dc2626', 
+            '#7c3aed', '#db2777', '#ca8a04', '#0891b2', 
+            '#65a30d', '#4338ca', '#be123c', '#0d9488'
         ];
 
         function formatShare(value, total) {
