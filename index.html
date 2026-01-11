@@ -130,6 +130,30 @@
         let mainChart = null, subChart = null, geoSunburstChart = null, currencySunburstChart = null, sectorSunburstChart = null;
         let currentManifest = [], currentInst = null, currentTrackData = null, currentSubclassData = null, currentPage = 0;
 
+        // FIXED COLORS MAP
+        const ASSET_COLORS = {
+            "Stocks": "#3b82f6", // Blue-500
+            "Bonds": "#10b981", // Emerald-500
+            "Cash & Equivalents": "#6b7280", // Gray-500
+            "Investment Funds": "#8b5cf6", // Violet-500
+            "Real Estate": "#f97316", // Orange-500
+            "Loans": "#eab308", // Yellow-500
+            "Derivatives": "#ef4444", // Red-500
+            "Other Assets": "#14b8a6" // Teal-500
+        };
+
+        // MONOCHROMATIC PALETTES FOR BREAKDOWN (From Dark to Light)
+        const CATEGORY_PALETTES = {
+            "Stocks": ['#1e3a8a', '#1e40af', '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd'], // Blues
+            "Bonds": ['#064e3b', '#065f46', '#059669', '#10b981', '#34d399', '#6ee7b7'], // Emeralds
+            "Cash & Equivalents": ['#1f2937', '#374151', '#4b5563', '#6b7280', '#9ca3af', '#d1d5db'], // Grays
+            "Investment Funds": ['#4c1d95', '#5b21b6', '#7c3aed', '#8b5cf6', '#a78bfa', '#c4b5fd'], // Violets
+            "Real Estate": ['#7c2d12', '#9a3412', '#c2410c', '#ea580c', '#f97316', '#fdba74'], // Oranges
+            "Loans": ['#713f12', '#854d0e', '#a16207', '#ca8a04', '#eab308', '#fde047'], // Yellows
+            "Derivatives": ['#7f1d1d', '#991b1b', '#b91c1c', '#dc2626', '#ef4444', '#fca5a5'], // Reds
+            "Other Assets": ['#134e4a', '#115e59', '#0f766e', '#0d9488', '#14b8a6', '#5eead4'] // Teals
+        };
+
         function formatShare(value, total) {
             if (!total || total === 0) return '-';
             let raw = (value / total) * 100;
@@ -215,11 +239,17 @@
             if (!subChart) subChart = echarts.init(document.getElementById('subChart'));
             const colors = getChartColors();
             const option = {
-                color: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1', '#14b8a6'],
+                // Remove 'color' array, use itemStyle logic instead
                 tooltip: { confine: true, trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/>Share: ${params.percent}%`; } },
                 series: [{
                     name: 'Asset Class', type: 'pie', radius: isMobile ? ['25%', '50%'] : ['35%', '65%'], avoidLabelOverlap: true,
-                    itemStyle: { borderRadius: 5, borderColor: colors.borderColor, borderWidth: 2 },
+                    itemStyle: { 
+                        borderRadius: 5, borderColor: colors.borderColor, borderWidth: 2,
+                        // DYNAMIC COLOR ASSIGNMENT
+                        color: function(params) {
+                            return ASSET_COLORS[params.name] || '#9ca3af'; // Default to gray if unknown
+                        }
+                    },
                     label: { show: true, position: 'outside', formatter: (params) => { if (!params.data) return ''; const val = params.data.formattedValue || params.value + 'B'; return `${params.name}\n${val}`; }, color: colors.text, fontWeight: 'bold' },
                     labelLine: { show: true, length: 15, length2: 10 },
                     data: data.assetClasses.map(item => ({ value: item.value, name: item.name, formattedValue: item.formattedValue }))
@@ -272,6 +302,12 @@
             const isMobile = window.innerWidth < 768;
             const breakdown = currentTrackData.breakdown[categoryName];
             const colors = getChartColors();
+            
+            // --- FIX: PICK THE RIGHT MONOCHROMATIC PALETTE ---
+            let palette = CATEGORY_PALETTES[categoryName];
+            // If unknown category, fallback to Teal palette or default eCharts colors
+            if (!palette) palette = ['#2dd4bf', '#14b8a6', '#0d9488'];
+
             let totalPortfolioValue = currentTrackData.totalAssetsBN;
             if (!totalPortfolioValue || totalPortfolioValue === 0) {
                 if (currentTrackData.assetClasses) {
@@ -282,7 +318,8 @@
             if (!breakdown || breakdown.length === 0) { subChart.clear(); subChart.setOption({ title: { text: 'No breakdown', left: 'center', top: 'center', textStyle: { color: '#9ca3af' } } }); renderTable([]); return; }
             const pieData = breakdown.map(b => ({ value: b.value, name: b.subclass, formattedValue: b.formattedValue }));
             const option = {
-                color: ['#60a5fa', '#34d399', '#fbbf24', '#f87171', '#a78bfa'],
+                // USE THE DYNAMIC PALETTE
+                color: palette,
                 tooltip: { trigger: 'item', backgroundColor: colors.tooltipBg, borderColor: colors.tooltipBorder, textStyle: { color: colors.tooltipText }, formatter: (params) => { if (!params.data) return ''; const localShare = params.percent; let globalShareDisplay = formatShare(params.value, totalPortfolioValue); return `<b>${params.name}</b><br/>Value: ${params.data.formattedValue}<br/><hr style="border-color: ${colors.borderColor}; margin: 5px 0; opacity: 0.3;">Share of ${categoryName}: <b>${localShare}%</b><br/>Share of Portfolio: <b>${globalShareDisplay}%</b>`; } },
                 series: [{
                     name: 'Subclass', type: 'pie', radius: isMobile ? ['25%', '50%'] : ['35%', '65%'], itemStyle: { borderRadius: 4, borderColor: colors.borderColor, borderWidth: 2 },
