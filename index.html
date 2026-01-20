@@ -760,10 +760,11 @@
         // Build the search index in the background
         async function buildSearchIndex() {
             const searchInput = document.getElementById('globalSearch');
-            const totalTracks = currentManifest.reduce((sum, inst) => sum + inst.tracks.length, 0);
+            const BATCH_SIZE = 20; // Load 20 files in parallel
             let loadedTracks = 0;
 
-            // Build track list and fetch all track data
+            // First, build the full track list
+            const trackTasks = [];
             for (const inst of currentManifest) {
                 for (const track of inst.tracks) {
                     const trackRef = searchIndex.tracks.length;
@@ -773,41 +774,37 @@
                         instName: inst.name,
                         instDir: inst.directory,
                         file: track.file,
-                        aum: null // Will be populated when data loads
+                        aum: null
                     });
-
-                    // Fetch track data in batches using requestIdleCallback
-                    await new Promise(resolve => {
-                        const fetchTrackData = async () => {
-                            try {
-                                const response = await fetch(`data/${inst.directory}/${track.file}`);
-                                if (response.ok) {
-                                    const data = await response.json();
-                                    searchIndex.tracks[trackRef].aum = data.formattedTotalAssets;
-                                    indexTrackData(data, trackRef);
-                                }
-                            } catch (e) {
-                                console.warn(`Failed to load ${track.file}:`, e);
-                            }
-
-                            loadedTracks++;
-                            searchIndex.progress = Math.round((loadedTracks / totalTracks) * 100);
-                            searchInput.placeholder = `Loading search index... ${searchIndex.progress}%`;
-                            resolve();
-                        };
-
-                        if (window.requestIdleCallback) {
-                            requestIdleCallback(fetchTrackData, { timeout: 100 });
-                        } else {
-                            setTimeout(fetchTrackData, 0);
-                        }
-                    });
-
-                    // Yield to UI every 5 tracks
-                    if (loadedTracks % 5 === 0) {
-                        await new Promise(r => setTimeout(r, 0));
-                    }
+                    trackTasks.push({ trackRef, inst, track });
                 }
+            }
+
+            const totalTracks = trackTasks.length;
+
+            // Process in parallel batches
+            for (let i = 0; i < trackTasks.length; i += BATCH_SIZE) {
+                const batch = trackTasks.slice(i, i + BATCH_SIZE);
+
+                await Promise.all(batch.map(async ({ trackRef, inst, track }) => {
+                    try {
+                        const response = await fetch(`data/${inst.directory}/${track.file}`);
+                        if (response.ok) {
+                            const data = await response.json();
+                            searchIndex.tracks[trackRef].aum = data.formattedTotalAssets;
+                            indexTrackData(data, trackRef);
+                        }
+                    } catch (e) {
+                        console.warn(`Failed to load ${track.file}:`, e);
+                    }
+
+                    loadedTracks++;
+                    searchIndex.progress = Math.round((loadedTracks / totalTracks) * 100);
+                    searchInput.placeholder = `Loading search index... ${searchIndex.progress}%`;
+                }));
+
+                // Small yield to keep UI responsive
+                await new Promise(r => setTimeout(r, 0));
             }
 
             searchIndex.ready = true;
