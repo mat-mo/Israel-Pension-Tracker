@@ -56,6 +56,15 @@
         .dark .search-section-header { background: #1f2937; color: #9ca3af; border-bottom-color: #374151; }
         .search-footer { padding: 8px 14px; background: #f8fafc; font-size: 11px; color: #94a3b8; border-top: 1px solid #e2e8f0; }
         .dark .search-footer { background: #1f2937; color: #6b7280; border-top-color: #374151; }
+        .holding-funds-list { display: none; margin-top: 8px; padding-top: 8px; border-top: 1px dashed #e2e8f0; }
+        .dark .holding-funds-list { border-top-color: #374151; }
+        .holding-funds-list.expanded { display: block; }
+        .holding-fund-item { padding: 6px 8px; margin: 2px 0; border-radius: 4px; cursor: pointer; background: #f8fafc; }
+        .holding-fund-item:hover { background: #e2e8f0; }
+        .dark .holding-fund-item { background: #1f2937; }
+        .dark .holding-fund-item:hover { background: #4b5563; }
+        .expand-indicator { transition: transform 0.2s; display: inline-block; }
+        .expand-indicator.expanded { transform: rotate(90deg); }
 
         /* Highlight animation for table rows */
         @keyframes highlightFade { 0% { background-color: #fef08a; } 100% { background-color: transparent; } }
@@ -1082,22 +1091,71 @@
 
                 for (const holding of results.holdings) {
                     const div = createResultElement(holding, query, resultIndex++);
+
+                    // Sort occurrences by value (largest first)
+                    const sortedOccurrences = [...holding.occurrences].sort((a, b) => b.value - a.value);
+
+                    // Build the funds list HTML
+                    const fundsListHtml = sortedOccurrences.map((occ, idx) => {
+                        const track = searchIndex.tracks[occ.trackRef];
+                        return `
+                            <div class="holding-fund-item" data-holding-idx="${idx}">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1 min-w-0">
+                                        <div class="text-sm text-gray-800 dark:text-gray-200 truncate">${track.name}</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">${track.instName} · ${occ.assetClass}</div>
+                                    </div>
+                                    <div class="text-sm font-mono text-gray-600 dark:text-gray-400 ml-2">${formatSearchValue(occ.value)}</div>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+
                     div.innerHTML = `
-                        <div class="flex items-center justify-between">
+                        <div class="holding-header flex items-center justify-between">
                             <div class="flex-1 min-w-0">
                                 <div class="font-medium text-gray-900 dark:text-white truncate">
+                                    <span class="expand-indicator mr-1">▶</span>
                                     ${holding.countryEmoji ? holding.countryEmoji + ' ' : ''}${highlightMatch(holding.name, query)}
                                 </div>
-                                <div class="text-xs text-gray-500 dark:text-gray-400">
-                                    Found in ${holding.fundCount} fund${holding.fundCount > 1 ? 's' : ''}
+                                <div class="text-xs text-gray-500 dark:text-gray-400 ml-4">
+                                    Click to see ${holding.fundCount} fund${holding.fundCount > 1 ? 's' : ''}
                                 </div>
                             </div>
                             <div class="text-right ml-3">
                                 <div class="text-sm font-mono text-gray-700 dark:text-gray-300">${formatSearchValue(holding.totalValue)}</div>
                             </div>
                         </div>
+                        <div class="holding-funds-list">
+                            ${fundsListHtml}
+                        </div>
                     `;
-                    div.addEventListener('click', () => navigateToHolding(holding));
+
+                    // Toggle expansion on header click
+                    const holdingHeader = div.querySelector('.holding-header');
+                    const fundsList = div.querySelector('.holding-funds-list');
+                    const expandIndicator = div.querySelector('.expand-indicator');
+
+                    holdingHeader.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        fundsList.classList.toggle('expanded');
+                        expandIndicator.classList.toggle('expanded');
+                    });
+
+                    // Handle clicks on individual funds
+                    const fundItems = div.querySelectorAll('.holding-fund-item');
+                    fundItems.forEach((item, idx) => {
+                        item.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            const occ = sortedOccurrences[idx];
+                            const track = searchIndex.tracks[occ.trackRef];
+                            navigateToTrack(track.instDir, track.file);
+                            setTimeout(() => {
+                                highlightHoldingInView(holding.name, occ.assetClass, occ.subclass);
+                            }, 500);
+                        });
+                    });
+
                     dropdown.appendChild(div);
                 }
             }
