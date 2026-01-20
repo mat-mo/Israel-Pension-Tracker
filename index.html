@@ -37,6 +37,30 @@
         #loading { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.8); z-index: 50; justify-content: center; align-items: center; }
         .dark #loading { background: rgba(15, 23, 42, 0.8); }
         tbody tr { transition: background-color 0.2s; }
+
+        /* Search dropdown scrollbar */
+        #searchDropdown::-webkit-scrollbar { width: 8px; }
+        #searchDropdown::-webkit-scrollbar-track { background: transparent; }
+        #searchDropdown::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .dark #searchDropdown::-webkit-scrollbar-thumb { background: #475569; }
+
+        /* Search result styles */
+        .search-result { padding: 10px 14px; cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background-color 0.15s; }
+        .dark .search-result { border-bottom-color: #374151; }
+        .search-result:hover, .search-result.selected { background-color: #f1f5f9; }
+        .dark .search-result:hover, .dark .search-result.selected { background-color: #374151; }
+        .search-result:last-child { border-bottom: none; }
+        .search-highlight { background-color: #fef08a; color: #854d0e; padding: 0 2px; border-radius: 2px; }
+        .dark .search-highlight { background-color: #854d0e; color: #fef9c3; }
+        .search-section-header { padding: 8px 14px; background: #f8fafc; font-size: 11px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1; }
+        .dark .search-section-header { background: #1f2937; color: #9ca3af; border-bottom-color: #374151; }
+        .search-footer { padding: 8px 14px; background: #f8fafc; font-size: 11px; color: #94a3b8; border-top: 1px solid #e2e8f0; }
+        .dark .search-footer { background: #1f2937; color: #6b7280; border-top-color: #374151; }
+
+        /* Highlight animation for table rows */
+        @keyframes highlightFade { 0% { background-color: #fef08a; } 100% { background-color: transparent; } }
+        .dark @keyframes highlightFade { 0% { background-color: #854d0e; } 100% { background-color: transparent; } }
+        .highlight-row { animation: highlightFade 2s ease-out; }
     </style>
 </head>
 <body class="p-4 md:p-8 bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-dark-text transition-colors duration-300">
@@ -50,7 +74,25 @@
                 <h1 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pension Holdings Tracker</h1>
                 <p class="text-gray-500 dark:text-dark-textMuted text-sm">Transparency dashboard for Israeli institutional assets</p>
             </div>
-            
+
+            <!-- Global Search -->
+            <div class="relative flex-1 max-w-md" id="searchContainer">
+                <div class="relative">
+                    <input type="text" id="globalSearch"
+                        class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600
+                               text-gray-900 dark:text-white text-sm rounded-lg p-2 pl-10 pr-8 shadow-sm
+                               focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        placeholder="Loading search index..." autocomplete="off" dir="auto" disabled>
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <button id="searchClear" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 hidden text-lg font-bold">&times;</button>
+                </div>
+                <div id="searchDropdown" class="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-gray-800
+                     border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl z-50 max-h-[70vh] overflow-y-auto hidden">
+                </div>
+            </div>
+
             <div class="flex flex-row items-start gap-4">
                 
                 <div class="flex flex-col gap-3">
@@ -680,6 +722,700 @@
                 paginationControls.classList.add('hidden');
             }
         }
+
+        // ===== GLOBAL SEARCH FEATURE =====
+
+        // Search Index Structure
+        const searchIndex = {
+            holdings: new Map(),  // normalizedName -> {displayName, countryEmoji, occurrences: [{trackRef, assetClass, subclass, value}]}
+            tracks: [],           // [{id, name, instName, instDir, file, aum}]
+            countries: new Map(), // name -> [{trackRef, value}]
+            currencies: new Map(), // code -> [{trackRef, value}]
+            sectors: new Map(),    // name -> [{trackRef, value}]
+            ready: false,
+            progress: 0
+        };
+
+        // Minimum holding percentage to include in index (0.05% = 0.0005)
+        const MIN_HOLDING_PERCENTAGE = 0.05;
+
+        // Normalize text for search (handles Hebrew + English)
+        function normalizeSearchText(text) {
+            if (!text) return '';
+            return text.toString().toLowerCase()
+                .replace(/[\u0591-\u05C7]/g, '') // Remove Hebrew diacritics
+                .replace(/['"״׳]/g, '')          // Remove quotes
+                .trim();
+        }
+
+        // Build the search index in the background
+        async function buildSearchIndex() {
+            const searchInput = document.getElementById('globalSearch');
+            const totalTracks = currentManifest.reduce((sum, inst) => sum + inst.tracks.length, 0);
+            let loadedTracks = 0;
+
+            // Build track list and fetch all track data
+            for (const inst of currentManifest) {
+                for (const track of inst.tracks) {
+                    const trackRef = searchIndex.tracks.length;
+                    searchIndex.tracks.push({
+                        id: track.id,
+                        name: track.name,
+                        instName: inst.name,
+                        instDir: inst.directory,
+                        file: track.file,
+                        aum: null // Will be populated when data loads
+                    });
+
+                    // Fetch track data in batches using requestIdleCallback
+                    await new Promise(resolve => {
+                        const fetchTrackData = async () => {
+                            try {
+                                const response = await fetch(`data/${inst.directory}/${track.file}`);
+                                if (response.ok) {
+                                    const data = await response.json();
+                                    searchIndex.tracks[trackRef].aum = data.formattedTotalAssets;
+                                    indexTrackData(data, trackRef);
+                                }
+                            } catch (e) {
+                                console.warn(`Failed to load ${track.file}:`, e);
+                            }
+
+                            loadedTracks++;
+                            searchIndex.progress = Math.round((loadedTracks / totalTracks) * 100);
+                            searchInput.placeholder = `Loading search index... ${searchIndex.progress}%`;
+                            resolve();
+                        };
+
+                        if (window.requestIdleCallback) {
+                            requestIdleCallback(fetchTrackData, { timeout: 100 });
+                        } else {
+                            setTimeout(fetchTrackData, 0);
+                        }
+                    });
+
+                    // Yield to UI every 5 tracks
+                    if (loadedTracks % 5 === 0) {
+                        await new Promise(r => setTimeout(r, 0));
+                    }
+                }
+            }
+
+            searchIndex.ready = true;
+            searchInput.disabled = false;
+            searchInput.placeholder = 'Search holdings, funds... (⌘K)';
+            console.log('Search index complete:', {
+                holdings: searchIndex.holdings.size,
+                tracks: searchIndex.tracks.length,
+                countries: searchIndex.countries.size,
+                currencies: searchIndex.currencies.size,
+                sectors: searchIndex.sectors.size
+            });
+        }
+
+        // Index data from a single track
+        function indexTrackData(data, trackRef) {
+            // Index holdings from breakdown
+            if (data.breakdown) {
+                for (const [assetClass, subclasses] of Object.entries(data.breakdown)) {
+                    for (const subclass of subclasses) {
+                        if (subclass.holdingsPages) {
+                            for (const page of subclass.holdingsPages) {
+                                for (const holding of page) {
+                                    // Filter: only include holdings >= MIN_HOLDING_PERCENTAGE
+                                    if (Math.abs(holding.percentage) >= MIN_HOLDING_PERCENTAGE) {
+                                        const normalized = normalizeSearchText(holding.name);
+                                        if (!normalized) continue;
+
+                                        if (!searchIndex.holdings.has(normalized)) {
+                                            searchIndex.holdings.set(normalized, {
+                                                displayName: holding.name,
+                                                countryEmoji: holding.countryEmoji || '',
+                                                occurrences: []
+                                            });
+                                        }
+
+                                        const entry = searchIndex.holdings.get(normalized);
+                                        // Update countryEmoji if not set
+                                        if (!entry.countryEmoji && holding.countryEmoji) {
+                                            entry.countryEmoji = holding.countryEmoji;
+                                        }
+
+                                        entry.occurrences.push({
+                                            trackRef,
+                                            assetClass,
+                                            subclass: subclass.subclass,
+                                            value: holding.value
+                                        });
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Index countries from geoSunburst
+            if (data.geoSunburst) {
+                for (const country of data.geoSunburst) {
+                    if (country.name) {
+                        const normalized = normalizeSearchText(country.name);
+                        if (!searchIndex.countries.has(normalized)) {
+                            searchIndex.countries.set(normalized, { displayName: country.name, occurrences: [] });
+                        }
+                        searchIndex.countries.get(normalized).occurrences.push({
+                            trackRef,
+                            value: country.value
+                        });
+                    }
+                }
+            }
+
+            // Index currencies from currencySunburst
+            if (data.currencySunburst) {
+                for (const currency of data.currencySunburst) {
+                    if (currency.name) {
+                        const normalized = normalizeSearchText(currency.name);
+                        if (!searchIndex.currencies.has(normalized)) {
+                            searchIndex.currencies.set(normalized, { displayName: currency.name, occurrences: [] });
+                        }
+                        searchIndex.currencies.get(normalized).occurrences.push({
+                            trackRef,
+                            value: currency.value
+                        });
+                    }
+                }
+            }
+
+            // Index sectors from sectorSunburst
+            if (data.sectorSunburst) {
+                for (const sector of data.sectorSunburst) {
+                    if (sector.name) {
+                        const normalized = normalizeSearchText(sector.name);
+                        if (!searchIndex.sectors.has(normalized)) {
+                            searchIndex.sectors.set(normalized, { displayName: sector.name, occurrences: [] });
+                        }
+                        searchIndex.sectors.get(normalized).occurrences.push({
+                            trackRef,
+                            value: sector.value
+                        });
+                    }
+                }
+            }
+        }
+
+        // Search the index
+        function search(query) {
+            if (!searchIndex.ready || !query || query.length < 2) return { holdings: [], tracks: [], countries: [], currencies: [], sectors: [] };
+
+            const normalizedQuery = normalizeSearchText(query);
+            const results = { holdings: [], tracks: [], countries: [], currencies: [], sectors: [] };
+
+            // Search holdings
+            for (const [normalized, data] of searchIndex.holdings) {
+                const score = getMatchScore(normalized, normalizedQuery);
+                if (score > 0) {
+                    const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
+                    results.holdings.push({
+                        type: 'holding',
+                        name: data.displayName,
+                        countryEmoji: data.countryEmoji,
+                        occurrences: data.occurrences,
+                        fundCount: data.occurrences.length,
+                        totalValue,
+                        score
+                    });
+                }
+            }
+
+            // Search tracks (funds)
+            for (let i = 0; i < searchIndex.tracks.length; i++) {
+                const track = searchIndex.tracks[i];
+                const normalizedName = normalizeSearchText(track.name);
+                const normalizedInst = normalizeSearchText(track.instName);
+                const scoreByName = getMatchScore(normalizedName, normalizedQuery);
+                const scoreByInst = getMatchScore(normalizedInst, normalizedQuery);
+                const score = Math.max(scoreByName, scoreByInst);
+
+                if (score > 0) {
+                    results.tracks.push({
+                        type: 'track',
+                        name: track.name,
+                        instName: track.instName,
+                        instDir: track.instDir,
+                        file: track.file,
+                        aum: track.aum,
+                        trackRef: i,
+                        score
+                    });
+                }
+            }
+
+            // Search countries
+            for (const [normalized, data] of searchIndex.countries) {
+                const score = getMatchScore(normalized, normalizedQuery);
+                if (score > 0) {
+                    const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
+                    results.countries.push({
+                        type: 'country',
+                        name: data.displayName,
+                        occurrences: data.occurrences,
+                        fundCount: data.occurrences.length,
+                        totalValue,
+                        score
+                    });
+                }
+            }
+
+            // Search currencies
+            for (const [normalized, data] of searchIndex.currencies) {
+                const score = getMatchScore(normalized, normalizedQuery);
+                if (score > 0) {
+                    const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
+                    results.currencies.push({
+                        type: 'currency',
+                        name: data.displayName,
+                        occurrences: data.occurrences,
+                        fundCount: data.occurrences.length,
+                        totalValue,
+                        score
+                    });
+                }
+            }
+
+            // Search sectors
+            for (const [normalized, data] of searchIndex.sectors) {
+                const score = getMatchScore(normalized, normalizedQuery);
+                if (score > 0) {
+                    const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
+                    results.sectors.push({
+                        type: 'sector',
+                        name: data.displayName,
+                        occurrences: data.occurrences,
+                        fundCount: data.occurrences.length,
+                        totalValue,
+                        score
+                    });
+                }
+            }
+
+            // Sort by score (highest first), then by total value
+            const sortFn = (a, b) => b.score - a.score || b.totalValue - a.totalValue;
+            results.holdings.sort(sortFn);
+            results.tracks.sort((a, b) => b.score - a.score);
+            results.countries.sort(sortFn);
+            results.currencies.sort(sortFn);
+            results.sectors.sort(sortFn);
+
+            // Limit results
+            results.holdings = results.holdings.slice(0, 50);
+            results.tracks = results.tracks.slice(0, 20);
+            results.countries = results.countries.slice(0, 10);
+            results.currencies = results.currencies.slice(0, 10);
+            results.sectors = results.sectors.slice(0, 10);
+
+            return results;
+        }
+
+        // Get match score: 3 for exact, 2 for prefix, 1 for contains
+        function getMatchScore(text, query) {
+            if (text === query) return 3;
+            if (text.startsWith(query)) return 2;
+            if (text.includes(query)) return 1;
+            return 0;
+        }
+
+        // Highlight matching text in results
+        function highlightMatch(text, query) {
+            if (!query || query.length < 2) return escapeHtml(text);
+            const normalizedText = normalizeSearchText(text);
+            const normalizedQuery = normalizeSearchText(query);
+            const index = normalizedText.indexOf(normalizedQuery);
+
+            if (index === -1) return escapeHtml(text);
+
+            // Find the corresponding position in the original text
+            const before = text.substring(0, index);
+            const match = text.substring(index, index + query.length);
+            const after = text.substring(index + query.length);
+
+            return `${escapeHtml(before)}<span class="search-highlight">${escapeHtml(match)}</span>${escapeHtml(after)}`;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Format value for display
+        function formatSearchValue(value) {
+            if (!value && value !== 0) return '';
+            const absValue = Math.abs(value);
+            if (absValue >= 1) return `₪${value.toFixed(2)}B`;
+            if (absValue >= 0.001) return `₪${(value * 1000).toFixed(0)}M`;
+            return `₪${(value * 1000000).toFixed(0)}K`;
+        }
+
+        // Render search results
+        function renderSearchResults(results, query) {
+            const dropdown = document.getElementById('searchDropdown');
+            dropdown.innerHTML = '';
+
+            const hasResults = results.holdings.length > 0 || results.tracks.length > 0 ||
+                               results.countries.length > 0 || results.currencies.length > 0 || results.sectors.length > 0;
+
+            if (!hasResults) {
+                dropdown.innerHTML = '<div class="search-result text-gray-500 dark:text-gray-400 text-center">No results found</div>';
+                dropdown.classList.remove('hidden');
+                return;
+            }
+
+            let resultIndex = 0;
+
+            // Holdings section
+            if (results.holdings.length > 0) {
+                const header = document.createElement('div');
+                header.className = 'search-section-header';
+                header.textContent = `Holdings (${results.holdings.length})`;
+                dropdown.appendChild(header);
+
+                for (const holding of results.holdings) {
+                    const div = createResultElement(holding, query, resultIndex++);
+                    div.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1 min-w-0">
+                                <div class="font-medium text-gray-900 dark:text-white truncate">
+                                    ${holding.countryEmoji ? holding.countryEmoji + ' ' : ''}${highlightMatch(holding.name, query)}
+                                </div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">
+                                    Found in ${holding.fundCount} fund${holding.fundCount > 1 ? 's' : ''}
+                                </div>
+                            </div>
+                            <div class="text-right ml-3">
+                                <div class="text-sm font-mono text-gray-700 dark:text-gray-300">${formatSearchValue(holding.totalValue)}</div>
+                            </div>
+                        </div>
+                    `;
+                    div.addEventListener('click', () => navigateToHolding(holding));
+                    dropdown.appendChild(div);
+                }
+            }
+
+            // Tracks/Funds section
+            if (results.tracks.length > 0) {
+                const header = document.createElement('div');
+                header.className = 'search-section-header';
+                header.textContent = `Funds (${results.tracks.length})`;
+                dropdown.appendChild(header);
+
+                for (const track of results.tracks) {
+                    const div = createResultElement(track, query, resultIndex++);
+                    div.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1 min-w-0">
+                                <div class="font-medium text-gray-900 dark:text-white truncate">${highlightMatch(track.name, query)}</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">${highlightMatch(track.instName, query)}</div>
+                            </div>
+                            ${track.aum ? `<div class="text-sm font-mono text-gray-700 dark:text-gray-300 ml-3">₪${track.aum}</div>` : ''}
+                        </div>
+                    `;
+                    div.addEventListener('click', () => navigateToTrack(track.instDir, track.file));
+                    dropdown.appendChild(div);
+                }
+            }
+
+            // Countries section
+            if (results.countries.length > 0) {
+                const header = document.createElement('div');
+                header.className = 'search-section-header';
+                header.textContent = `Countries (${results.countries.length})`;
+                dropdown.appendChild(header);
+
+                for (const country of results.countries) {
+                    const div = createResultElement(country, query, resultIndex++);
+                    div.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1 min-w-0">
+                                <div class="font-medium text-gray-900 dark:text-white truncate">${highlightMatch(country.name, query)}</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">In ${country.fundCount} fund${country.fundCount > 1 ? 's' : ''}</div>
+                            </div>
+                            <div class="text-sm font-mono text-gray-700 dark:text-gray-300 ml-3">${formatSearchValue(country.totalValue)}</div>
+                        </div>
+                    `;
+                    div.addEventListener('click', () => {
+                        closeSearchDropdown();
+                        // Could navigate to a specific view showing this country's exposure
+                    });
+                    dropdown.appendChild(div);
+                }
+            }
+
+            // Currencies section
+            if (results.currencies.length > 0) {
+                const header = document.createElement('div');
+                header.className = 'search-section-header';
+                header.textContent = `Currencies (${results.currencies.length})`;
+                dropdown.appendChild(header);
+
+                for (const currency of results.currencies) {
+                    const div = createResultElement(currency, query, resultIndex++);
+                    div.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1 min-w-0">
+                                <div class="font-medium text-gray-900 dark:text-white truncate">${highlightMatch(currency.name, query)}</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">In ${currency.fundCount} fund${currency.fundCount > 1 ? 's' : ''}</div>
+                            </div>
+                            <div class="text-sm font-mono text-gray-700 dark:text-gray-300 ml-3">${formatSearchValue(currency.totalValue)}</div>
+                        </div>
+                    `;
+                    div.addEventListener('click', () => {
+                        closeSearchDropdown();
+                        // Could navigate to a specific view showing this currency's exposure
+                    });
+                    dropdown.appendChild(div);
+                }
+            }
+
+            // Sectors section
+            if (results.sectors.length > 0) {
+                const header = document.createElement('div');
+                header.className = 'search-section-header';
+                header.textContent = `Sectors (${results.sectors.length})`;
+                dropdown.appendChild(header);
+
+                for (const sector of results.sectors) {
+                    const div = createResultElement(sector, query, resultIndex++);
+                    div.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1 min-w-0">
+                                <div class="font-medium text-gray-900 dark:text-white truncate">${highlightMatch(sector.name, query)}</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">In ${sector.fundCount} fund${sector.fundCount > 1 ? 's' : ''}</div>
+                            </div>
+                            <div class="text-sm font-mono text-gray-700 dark:text-gray-300 ml-3">${formatSearchValue(sector.totalValue)}</div>
+                        </div>
+                    `;
+                    div.addEventListener('click', () => {
+                        closeSearchDropdown();
+                        // Could navigate to a specific view showing this sector's allocation
+                    });
+                    dropdown.appendChild(div);
+                }
+            }
+
+            // Footer note
+            const footer = document.createElement('div');
+            footer.className = 'search-footer';
+            footer.textContent = `Holdings smaller than ${MIN_HOLDING_PERCENTAGE}% are not shown`;
+            dropdown.appendChild(footer);
+
+            dropdown.classList.remove('hidden');
+        }
+
+        function createResultElement(item, query, index) {
+            const div = document.createElement('div');
+            div.className = 'search-result';
+            div.dataset.index = index;
+            return div;
+        }
+
+        // Navigation functions
+        function navigateToTrack(instDir, file) {
+            closeSearchDropdown();
+
+            // Find institution index
+            const instIndex = currentManifest.findIndex(inst => inst.directory === instDir);
+            if (instIndex === -1) return;
+
+            const inst = currentManifest[instIndex];
+            const trackIndex = inst.tracks.findIndex(t => t.file === file);
+            if (trackIndex === -1) return;
+
+            // Update institution selector
+            const instSelector = document.getElementById('instSelector');
+            instSelector.value = instIndex;
+            currentInst = inst;
+
+            const aum = currentInst.totalAUM || '0';
+            document.getElementById('instAumDisplay').innerText = `₪${aum}`;
+
+            // Populate and select track
+            populateTracks(inst);
+            const trackSelector = document.getElementById('trackSelector');
+            trackSelector.value = trackIndex;
+            fetchTrack(instDir, file);
+        }
+
+        function navigateToHolding(holding) {
+            closeSearchDropdown();
+
+            // Find the occurrence with the largest value
+            const largestOccurrence = holding.occurrences.reduce((max, o) =>
+                o.value > max.value ? o : max
+            , holding.occurrences[0]);
+
+            const track = searchIndex.tracks[largestOccurrence.trackRef];
+
+            // Navigate to the track first
+            navigateToTrack(track.instDir, track.file);
+
+            // After track loads, highlight the holding
+            setTimeout(() => {
+                highlightHoldingInView(holding.name, largestOccurrence.assetClass, largestOccurrence.subclass);
+            }, 500);
+        }
+
+        function highlightHoldingInView(holdingName, assetClass, subclass) {
+            // Wait for data to load
+            if (!currentTrackData) {
+                setTimeout(() => highlightHoldingInView(holdingName, assetClass, subclass), 200);
+                return;
+            }
+
+            // Click the asset class in main chart
+            if (mainChart) {
+                mainChart.dispatchAction({
+                    type: 'pieSelect',
+                    name: assetClass
+                });
+                updateSubChart(assetClass);
+            }
+
+            // Wait for subChart to update, then click the subclass
+            setTimeout(() => {
+                const breakdown = currentTrackData.breakdown[assetClass];
+                if (breakdown) {
+                    const subclassData = breakdown.find(b => b.subclass === subclass);
+                    if (subclassData) {
+                        loadSubclassTable(subclassData);
+
+                        // Find and highlight the row in the table
+                        setTimeout(() => {
+                            highlightTableRow(holdingName);
+                        }, 200);
+                    }
+                }
+            }, 200);
+        }
+
+        function highlightTableRow(holdingName) {
+            const tbody = document.getElementById('holdingsBody');
+            const rows = tbody.querySelectorAll('tr');
+            const normalizedSearch = normalizeSearchText(holdingName);
+
+            for (const row of rows) {
+                const nameCell = row.querySelector('th');
+                if (nameCell) {
+                    const rowName = normalizeSearchText(nameCell.textContent);
+                    if (rowName.includes(normalizedSearch) || normalizedSearch.includes(rowName)) {
+                        row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        row.classList.add('highlight-row');
+                        setTimeout(() => row.classList.remove('highlight-row'), 2000);
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Search UI event handlers
+        let searchDebounceTimer = null;
+        let selectedResultIndex = -1;
+
+        function setupSearchEventHandlers() {
+            const searchInput = document.getElementById('globalSearch');
+            const searchClear = document.getElementById('searchClear');
+            const searchDropdown = document.getElementById('searchDropdown');
+
+            // Input handler with debounce
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value;
+                searchClear.classList.toggle('hidden', !query);
+
+                clearTimeout(searchDebounceTimer);
+
+                // Faster response for paste events
+                const delay = e.inputType === 'insertFromPaste' ? 0 : 150;
+
+                searchDebounceTimer = setTimeout(() => {
+                    if (query.length >= 2) {
+                        const results = search(query);
+                        renderSearchResults(results, query);
+                        selectedResultIndex = -1;
+                    } else {
+                        searchDropdown.classList.add('hidden');
+                    }
+                }, delay);
+            });
+
+            // Clear button
+            searchClear.addEventListener('click', () => {
+                searchInput.value = '';
+                searchClear.classList.add('hidden');
+                searchDropdown.classList.add('hidden');
+                searchInput.focus();
+            });
+
+            // Keyboard navigation
+            searchInput.addEventListener('keydown', (e) => {
+                const results = searchDropdown.querySelectorAll('.search-result');
+
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    selectedResultIndex = Math.min(selectedResultIndex + 1, results.length - 1);
+                    updateSelectedResult(results);
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    selectedResultIndex = Math.max(selectedResultIndex - 1, -1);
+                    updateSelectedResult(results);
+                } else if (e.key === 'Enter' && selectedResultIndex >= 0) {
+                    e.preventDefault();
+                    results[selectedResultIndex]?.click();
+                } else if (e.key === 'Escape') {
+                    closeSearchDropdown();
+                    searchInput.blur();
+                }
+            });
+
+            // Global keyboard shortcut (Cmd/Ctrl + K)
+            document.addEventListener('keydown', (e) => {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    searchInput.focus();
+                    searchInput.select();
+                }
+            });
+
+            // Click outside to close
+            document.addEventListener('click', (e) => {
+                const searchContainer = document.getElementById('searchContainer');
+                if (!searchContainer.contains(e.target)) {
+                    closeSearchDropdown();
+                }
+            });
+        }
+
+        function updateSelectedResult(results) {
+            results.forEach((el, i) => {
+                el.classList.toggle('selected', i === selectedResultIndex);
+                if (i === selectedResultIndex) {
+                    el.scrollIntoView({ block: 'nearest' });
+                }
+            });
+        }
+
+        function closeSearchDropdown() {
+            document.getElementById('searchDropdown').classList.add('hidden');
+            selectedResultIndex = -1;
+        }
+
+        // Initialize search after manifest loads
+        const originalInitApp = initApp;
+        initApp = function() {
+            originalInitApp();
+            setupSearchEventHandlers();
+            // Start building search index after a short delay to let UI settle
+            setTimeout(() => buildSearchIndex(), 500);
+        };
     </script>
 </body>
 </html>
