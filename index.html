@@ -285,8 +285,8 @@
                             <thead class="text-xs text-gray-500 dark:text-gray-400 uppercase bg-gray-50 dark:bg-gray-800 border-b dark:border-gray-700 sticky top-0 z-10">
                                 <tr>
                                     <th class="px-6 py-3">Asset Name</th>
-                                    <th class="px-6 py-3 text-right">Track A %</th>
-                                    <th class="px-6 py-3 text-right">Track B %</th>
+                                    <th id="compHeaderA" class="px-6 py-3 text-right">Track A %</th>
+                                    <th id="compHeaderB" class="px-6 py-3 text-right">Track B %</th>
                                     <th class="px-6 py-3 text-right">Diff</th>
                                 </tr>
                             </thead>
@@ -1569,7 +1569,7 @@
             renderCompChart('compAssetChart', 'assetClasses', dataA, dataB, 'Asset Allocation', nameA, nameB);
             renderCompChart('compGeoChart', 'geoSunburst', dataA, dataB, 'Geographic Exposure', nameA, nameB);
             renderCompChart('compCurrChart', 'currencySunburst', dataA, dataB, 'Currency Exposure', nameA, nameB);
-            renderCompHoldings(dataA, dataB);
+            renderCompHoldings(dataA, dataB, nameA, nameB);
         }
 
         function renderCompChart(elemId, dataKey, dataA, dataB, title, nameA, nameB) {
@@ -1623,7 +1623,11 @@
             window.addEventListener('resize', () => myChart.resize());
         }
 
-        function renderCompHoldings(dataA, dataB) {
+        function renderCompHoldings(dataA, dataB, nameA, nameB) {
+            // Update table headers
+            document.getElementById('compHeaderA').innerText = `${nameA} %`;
+            document.getElementById('compHeaderB').innerText = `${nameB} %`;
+
             // Aggregate all holdings into a Map
             const holdingsMap = new Map();
 
