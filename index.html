@@ -224,7 +224,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Side A -->
                 <div class="bg-white dark:bg-dark-card p-4 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border">
-                    <h3 class="font-bold text-gray-700 dark:text-gray-200 mb-2">Fund A</h3>
+                    <h3 class="font-bold text-gray-700 dark:text-gray-200 mb-2">Track A</h3>
                     <div class="space-y-2">
                         <select id="compInstA" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2 transition-colors focus:ring-blue-500 focus:border-blue-500">
                             <option disabled selected>Select Institution</option>
@@ -238,7 +238,7 @@
 
                 <!-- Side B -->
                 <div class="bg-white dark:bg-dark-card p-4 rounded-xl shadow-sm border border-gray-100 dark:border-dark-border">
-                    <h3 class="font-bold text-gray-700 dark:text-gray-200 mb-2">Fund B</h3>
+                    <h3 class="font-bold text-gray-700 dark:text-gray-200 mb-2">Track B</h3>
                     <div class="space-y-2">
                         <select id="compInstB" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white text-sm rounded-lg p-2 transition-colors focus:ring-blue-500 focus:border-blue-500">
                             <option disabled selected>Select Institution</option>
@@ -252,7 +252,7 @@
             </div>
 
             <div class="flex justify-center">
-                <button id="btnCompareAction" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow transition-all disabled:opacity-50 disabled:cursor-not-allowed transform active:scale-95" disabled>Compare Funds</button>
+                <button id="btnCompareAction" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow transition-all disabled:opacity-50 disabled:cursor-not-allowed transform active:scale-95" disabled>Compare Tracks</button>
             </div>
 
             <!-- Comparison Results -->
@@ -285,8 +285,8 @@
                             <thead class="text-xs text-gray-500 dark:text-gray-400 uppercase bg-gray-50 dark:bg-gray-800 border-b dark:border-gray-700 sticky top-0 z-10">
                                 <tr>
                                     <th class="px-6 py-3">Asset Name</th>
-                                    <th class="px-6 py-3 text-right">Fund A %</th>
-                                    <th class="px-6 py-3 text-right">Fund B %</th>
+                                    <th class="px-6 py-3 text-right">Track A %</th>
+                                    <th class="px-6 py-3 text-right">Track B %</th>
                                     <th class="px-6 py-3 text-right">Diff</th>
                                 </tr>
                             </thead>
@@ -1548,25 +1548,25 @@
                 fetch(`data/${dirB}/${metaB.file}`).then(r => r.json())
             ]).then(([dataA, dataB]) => {
                 document.getElementById('comparisonResults').classList.remove('hidden');
-                renderComparison(dataA, dataB);
-                btn.innerText = 'Compare Funds';
+                renderComparison(dataA, dataB, metaA.name, metaB.name);
+                btn.innerText = 'Compare Tracks';
                 btn.disabled = false;
             }).catch(err => {
                 console.error(err);
                 alert('Error loading comparison data');
-                btn.innerText = 'Compare Funds';
+                btn.innerText = 'Compare Tracks';
                 btn.disabled = false;
             });
         }
 
-        function renderComparison(dataA, dataB) {
-            renderCompChart('compAssetChart', 'assetClasses', dataA, dataB, 'Asset Allocation');
-            renderCompChart('compGeoChart', 'geoSunburst', dataA, dataB, 'Geographic Exposure');
-            renderCompChart('compCurrChart', 'currencySunburst', dataA, dataB, 'Currency Exposure');
+        function renderComparison(dataA, dataB, nameA, nameB) {
+            renderCompChart('compAssetChart', 'assetClasses', dataA, dataB, 'Asset Allocation', nameA, nameB);
+            renderCompChart('compGeoChart', 'geoSunburst', dataA, dataB, 'Geographic Exposure', nameA, nameB);
+            renderCompChart('compCurrChart', 'currencySunburst', dataA, dataB, 'Currency Exposure', nameA, nameB);
             renderCompHoldings(dataA, dataB);
         }
 
-        function renderCompChart(elemId, dataKey, dataA, dataB, title) {
+        function renderCompChart(elemId, dataKey, dataA, dataB, title, nameA, nameB) {
             const dom = document.getElementById(elemId);
             const myChart = echarts.init(dom);
             const colors = getChartColors();
@@ -1593,7 +1593,7 @@
                     textStyle: { color: colors.tooltipText }
                 },
                 legend: { 
-                    data: ['Fund A', 'Fund B'],
+                    data: [nameA, nameB],
                     textStyle: { color: colors.text },
                     bottom: 0
                 },
@@ -1608,8 +1608,8 @@
                     axisLabel: { color: colors.text, width: 140, overflow: 'break', interval: 0 }
                 },
                 series: [
-                    { name: 'Fund A', type: 'bar', data: seriesA, itemStyle: { color: '#2563eb' }, barMaxWidth: 40 },
-                    { name: 'Fund B', type: 'bar', data: seriesB, itemStyle: { color: '#059669' }, barMaxWidth: 40 }
+                    { name: nameA, type: 'bar', data: seriesA, itemStyle: { color: '#2563eb' }, barMaxWidth: 40 },
+                    { name: nameB, type: 'bar', data: seriesB, itemStyle: { color: '#059669' }, barMaxWidth: 40 }
                 ]
             };
             myChart.setOption(option, true);
