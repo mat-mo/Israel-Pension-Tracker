@@ -736,11 +736,11 @@
 
         // Search Index Structure
         const searchIndex = {
-            holdings: new Map(),  // normalizedName -> {displayName, countryEmoji, occurrences: [{trackRef, assetClass, subclass, value}]}
-            tracks: [],           // [{id, name, instName, instDir, file, aum}]
-            countries: new Map(), // name -> [{trackRef, value}]
-            currencies: new Map(), // code -> [{trackRef, value}]
-            sectors: new Map(),    // name -> [{trackRef, value}]
+            holdings: {},  // normalizedName -> {displayName, countryEmoji, occurrences: [{trackRef, assetClass, subclass, value}]}
+            tracks: [],    // [{id, name, instName, instDir, file, aum}]
+            countries: {}, // name -> [{trackRef, value}]
+            currencies: {}, // code -> [{trackRef, value}]
+            sectors: {},    // name -> [{trackRef, value}]
             ready: false,
             progress: 0
         };
@@ -757,157 +757,35 @@
                 .trim();
         }
 
-        // Build the search index in the background
-        async function buildSearchIndex() {
+        // Load the pre-built search index
+        function loadSearchIndex() {
             const searchInput = document.getElementById('globalSearch');
-            const BATCH_SIZE = 20; // Load 20 files in parallel
-            let loadedTracks = 0;
+            searchInput.placeholder = 'Loading search index...';
 
-            // First, build the full track list
-            const trackTasks = [];
-            for (const inst of currentManifest) {
-                for (const track of inst.tracks) {
-                    const trackRef = searchIndex.tracks.length;
-                    searchIndex.tracks.push({
-                        id: track.id,
-                        name: track.name,
-                        instName: inst.name,
-                        instDir: inst.directory,
-                        file: track.file,
-                        aum: null
+            fetch('data/search_index.json')
+                .then(res => {
+                    if (!res.ok) throw new Error("Failed to load search index");
+                    return res.json();
+                })
+                .then(data => {
+                    searchIndex.holdings = data.holdings;
+                    searchIndex.tracks = data.tracks;
+                    searchIndex.countries = data.countries;
+                    searchIndex.currencies = data.currencies;
+                    searchIndex.sectors = data.sectors;
+                    searchIndex.ready = true;
+                    
+                    searchInput.disabled = false;
+                    searchInput.placeholder = 'Search holdings, funds... (⌘K)';
+                    console.log('Search index loaded:', {
+                        holdings: Object.keys(searchIndex.holdings).length,
+                        tracks: searchIndex.tracks.length
                     });
-                    trackTasks.push({ trackRef, inst, track });
-                }
-            }
-
-            const totalTracks = trackTasks.length;
-
-            // Process in parallel batches
-            for (let i = 0; i < trackTasks.length; i += BATCH_SIZE) {
-                const batch = trackTasks.slice(i, i + BATCH_SIZE);
-
-                await Promise.all(batch.map(async ({ trackRef, inst, track }) => {
-                    try {
-                        const response = await fetch(`data/${inst.directory}/${track.file}`);
-                        if (response.ok) {
-                            const data = await response.json();
-                            searchIndex.tracks[trackRef].aum = data.formattedTotalAssets;
-                            indexTrackData(data, trackRef);
-                        }
-                    } catch (e) {
-                        console.warn(`Failed to load ${track.file}:`, e);
-                    }
-
-                    loadedTracks++;
-                    searchIndex.progress = Math.round((loadedTracks / totalTracks) * 100);
-                    searchInput.placeholder = `Loading search index... ${searchIndex.progress}%`;
-                }));
-
-                // Small yield to keep UI responsive
-                await new Promise(r => setTimeout(r, 0));
-            }
-
-            searchIndex.ready = true;
-            searchInput.disabled = false;
-            searchInput.placeholder = 'Search holdings, funds... (⌘K)';
-            console.log('Search index complete:', {
-                holdings: searchIndex.holdings.size,
-                tracks: searchIndex.tracks.length,
-                countries: searchIndex.countries.size,
-                currencies: searchIndex.currencies.size,
-                sectors: searchIndex.sectors.size
-            });
-        }
-
-        // Index data from a single track
-        function indexTrackData(data, trackRef) {
-            // Index holdings from breakdown
-            if (data.breakdown) {
-                for (const [assetClass, subclasses] of Object.entries(data.breakdown)) {
-                    for (const subclass of subclasses) {
-                        if (subclass.holdingsPages) {
-                            for (const page of subclass.holdingsPages) {
-                                for (const holding of page) {
-                                    // Filter: only include holdings >= MIN_HOLDING_PERCENTAGE
-                                    if (Math.abs(holding.percentage) >= MIN_HOLDING_PERCENTAGE) {
-                                        const normalized = normalizeSearchText(holding.name);
-                                        if (!normalized) continue;
-
-                                        if (!searchIndex.holdings.has(normalized)) {
-                                            searchIndex.holdings.set(normalized, {
-                                                displayName: holding.name,
-                                                countryEmoji: holding.countryEmoji || '',
-                                                occurrences: []
-                                            });
-                                        }
-
-                                        const entry = searchIndex.holdings.get(normalized);
-                                        // Update countryEmoji if not set
-                                        if (!entry.countryEmoji && holding.countryEmoji) {
-                                            entry.countryEmoji = holding.countryEmoji;
-                                        }
-
-                                        entry.occurrences.push({
-                                            trackRef,
-                                            assetClass,
-                                            subclass: subclass.subclass,
-                                            value: holding.value
-                                        });
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            // Index countries from geoSunburst
-            if (data.geoSunburst) {
-                for (const country of data.geoSunburst) {
-                    if (country.name) {
-                        const normalized = normalizeSearchText(country.name);
-                        if (!searchIndex.countries.has(normalized)) {
-                            searchIndex.countries.set(normalized, { displayName: country.name, occurrences: [] });
-                        }
-                        searchIndex.countries.get(normalized).occurrences.push({
-                            trackRef,
-                            value: country.value
-                        });
-                    }
-                }
-            }
-
-            // Index currencies from currencySunburst
-            if (data.currencySunburst) {
-                for (const currency of data.currencySunburst) {
-                    if (currency.name) {
-                        const normalized = normalizeSearchText(currency.name);
-                        if (!searchIndex.currencies.has(normalized)) {
-                            searchIndex.currencies.set(normalized, { displayName: currency.name, occurrences: [] });
-                        }
-                        searchIndex.currencies.get(normalized).occurrences.push({
-                            trackRef,
-                            value: currency.value
-                        });
-                    }
-                }
-            }
-
-            // Index sectors from sectorSunburst
-            if (data.sectorSunburst) {
-                for (const sector of data.sectorSunburst) {
-                    if (sector.name) {
-                        const normalized = normalizeSearchText(sector.name);
-                        if (!searchIndex.sectors.has(normalized)) {
-                            searchIndex.sectors.set(normalized, { displayName: sector.name, occurrences: [] });
-                        }
-                        searchIndex.sectors.get(normalized).occurrences.push({
-                            trackRef,
-                            value: sector.value
-                        });
-                    }
-                }
-            }
+                })
+                .catch(err => {
+                    console.error("Search Index Error:", err);
+                    searchInput.placeholder = 'Search unavailable';
+                });
         }
 
         // Search the index
@@ -918,7 +796,7 @@
             const results = { holdings: [], tracks: [], countries: [], currencies: [], sectors: [] };
 
             // Search holdings
-            for (const [normalized, data] of searchIndex.holdings) {
+            for (const [normalized, data] of Object.entries(searchIndex.holdings)) {
                 const score = getMatchScore(normalized, normalizedQuery);
                 if (score > 0) {
                     const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
@@ -958,7 +836,7 @@
             }
 
             // Search countries
-            for (const [normalized, data] of searchIndex.countries) {
+            for (const [normalized, data] of Object.entries(searchIndex.countries)) {
                 const score = getMatchScore(normalized, normalizedQuery);
                 if (score > 0) {
                     const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
@@ -974,7 +852,7 @@
             }
 
             // Search currencies
-            for (const [normalized, data] of searchIndex.currencies) {
+            for (const [normalized, data] of Object.entries(searchIndex.currencies)) {
                 const score = getMatchScore(normalized, normalizedQuery);
                 if (score > 0) {
                     const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
@@ -990,7 +868,7 @@
             }
 
             // Search sectors
-            for (const [normalized, data] of searchIndex.sectors) {
+            for (const [normalized, data] of Object.entries(searchIndex.sectors)) {
                 const score = getMatchScore(normalized, normalizedQuery);
                 if (score > 0) {
                     const totalValue = data.occurrences.reduce((sum, o) => sum + o.value, 0);
@@ -1469,7 +1347,7 @@
             originalInitApp();
             setupSearchEventHandlers();
             // Start building search index after a short delay to let UI settle
-            setTimeout(() => buildSearchIndex(), 500);
+            setTimeout(() => loadSearchIndex(), 500);
         };
     </script>
 </body>

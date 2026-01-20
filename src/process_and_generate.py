@@ -77,12 +77,30 @@ EMOJI_TO_NAME = {}
 CURRENCY_LOOKUP = {}     
 HEDGED_KEYWORDS = ["מנוטרל", "גידור", "hedged", "currency hedged", "נטרול"]
 
+# --- Search Index ---
+GLOBAL_SEARCH_INDEX = {
+    "holdings": {},   # normalized -> {displayName, countryEmoji, occurrences: []}
+    "tracks": [],     # List of track objects
+    "countries": {},  # normalized -> {displayName, occurrences: []}
+    "currencies": {}, # normalized -> {displayName, occurrences: []}
+    "sectors": {}     # normalized -> {displayName, occurrences: []}
+}
+MIN_HOLDING_PERCENTAGE = 0.5
+
 # ==========================================
 # 2. HELPER FUNCTIONS
 # ==========================================
 
 def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
+
+def normalize_search_text(text):
+    if not text: return ""
+    # Lowercase and remove Hebrew diacritics + specific chars
+    text = str(text).lower()
+    text = re.sub(r'[\u0591-\u05C7]', '', text) # Hebrew diacritics
+    text = re.sub(r'[\'"״׳]', '', text)         # Quotes
+    return text.strip()
 
 def load_mappings():
     global COUNTRY_LOOKUP, EMOJI_TO_NAME, CURRENCY_LOOKUP
@@ -431,12 +449,24 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
     track_map = config['institutions'][inst_key]['tracks']
     manifest_entries = []
     inst_total_aum = 0.0
+    inst_name = config['institutions'][inst_key].get("name", inst_key)
 
     for t_id, data_store in all_tracks_data.items():
         t_name = track_map.get(t_id, f"Track {t_id}")
         total_assets = sum(sum(i['value'] for i in s) for c in data_store.values() for s in c.values())
         if total_assets == 0: continue
         inst_total_aum += total_assets
+
+        # Add to Search Index: Tracks
+        track_ref = len(GLOBAL_SEARCH_INDEX["tracks"])
+        GLOBAL_SEARCH_INDEX["tracks"].append({
+            "id": t_id,
+            "name": t_name,
+            "instName": inst_name,
+            "instDir": inst_key,
+            "file": get_safe_filename(t_name),
+            "aum": format_currency(total_assets)
+        })
 
         asset_classes = []
         breakdown = {}
@@ -482,6 +512,28 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
                 all_holdings = []
                 for h in sorted_h:
                     h_pct = (h['value'] / s_net * 100) if s_net else 0
+                    
+                    # Search Index: Holdings
+                    if abs(h_pct) >= MIN_HOLDING_PERCENTAGE:
+                        norm = normalize_search_text(h['name'])
+                        if norm:
+                            if norm not in GLOBAL_SEARCH_INDEX["holdings"]:
+                                GLOBAL_SEARCH_INDEX["holdings"][norm] = {
+                                    "displayName": h['name'],
+                                    "countryEmoji": h['emoji'],
+                                    "occurrences": []
+                                }
+                            # Update emoji if missing
+                            if not GLOBAL_SEARCH_INDEX["holdings"][norm]["countryEmoji"] and h['emoji']:
+                                GLOBAL_SEARCH_INDEX["holdings"][norm]["countryEmoji"] = h['emoji']
+                                
+                            GLOBAL_SEARCH_INDEX["holdings"][norm]["occurrences"].append({
+                                "trackRef": track_ref,
+                                "assetClass": c_name,
+                                "subclass": s_name,
+                                "value": round(h['value'], 9)
+                            })
+
                     all_holdings.append({
                         "name": h['name'], 
                         "value": round(h['value'], 9), 
@@ -510,8 +562,40 @@ def generate_jsons(target_dir, all_tracks_data, inst_key, config):
         asset_classes.sort(key=lambda x: x['value'], reverse=True) # Sort by magnitude
         
         geo_sunburst_data = calculate_geo_sunburst(data_store)
+        # Search Index: Countries
+        for item in geo_sunburst_data:
+            if item["name"]:
+                norm = normalize_search_text(item["name"])
+                if norm not in GLOBAL_SEARCH_INDEX["countries"]:
+                    GLOBAL_SEARCH_INDEX["countries"][norm] = { "displayName": item["name"], "occurrences": [] }
+                GLOBAL_SEARCH_INDEX["countries"][norm]["occurrences"].append({
+                    "trackRef": track_ref,
+                    "value": item["value"]
+                })
+
         currency_sunburst_data = calculate_currency_sunburst(data_store)
+        # Search Index: Currencies
+        for item in currency_sunburst_data:
+            if item["name"]:
+                norm = normalize_search_text(item["name"])
+                if norm not in GLOBAL_SEARCH_INDEX["currencies"]:
+                    GLOBAL_SEARCH_INDEX["currencies"][norm] = { "displayName": item["name"], "occurrences": [] }
+                GLOBAL_SEARCH_INDEX["currencies"][norm]["occurrences"].append({
+                    "trackRef": track_ref,
+                    "value": item["value"]
+                })
+
         sector_sunburst_data = calculate_sector_sunburst(data_store)
+        # Search Index: Sectors
+        for item in sector_sunburst_data:
+            if item["name"]:
+                norm = normalize_search_text(item["name"])
+                if norm not in GLOBAL_SEARCH_INDEX["sectors"]:
+                    GLOBAL_SEARCH_INDEX["sectors"][norm] = { "displayName": item["name"], "occurrences": [] }
+                GLOBAL_SEARCH_INDEX["sectors"][norm]["occurrences"].append({
+                    "trackRef": track_ref,
+                    "value": item["value"]
+                })
 
         safe_filename = get_safe_filename(t_name)
         
@@ -561,6 +645,11 @@ def main():
         json.dump(config, f, indent=2, ensure_ascii=False)
     with open(OUTPUT_BASE_DIRECTORY / "manifest.json", 'w', encoding='utf-8') as f:
         json.dump(global_manifest, f, indent=2, ensure_ascii=False)
+    
+    log("Saving Search Index...")
+    with open(OUTPUT_BASE_DIRECTORY / "search_index.json", 'w', encoding='utf-8') as f:
+        json.dump(GLOBAL_SEARCH_INDEX, f, ensure_ascii=False)
+
     log(f"--- Pipeline Complete. ---")
 
 if __name__ == "__main__":
