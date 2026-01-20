@@ -1485,6 +1485,12 @@
                 });
                 
                 sel.addEventListener('change', (e) => handleCompInstChange(id.slice(-1), e.target.value));
+
+                // Auto-select the first institution and populate tracks
+                if (currentManifest.length > 0) {
+                    sel.value = 0;
+                    handleCompInstChange(id.slice(-1), 0);
+                }
             });
 
             document.getElementById('btnCompareAction').addEventListener('click', executeComparison);
