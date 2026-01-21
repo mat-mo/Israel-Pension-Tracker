@@ -1443,25 +1443,29 @@
             const dashView = document.getElementById('dashboardView');
             const compView = document.getElementById('compareView');
 
-            // Reset styles
-            const activeClass = ['bg-white', 'dark:bg-dark-card', 'shadow-sm', 'text-gray-900', 'dark:text-white'];
-            const inactiveClass = ['text-gray-500', 'dark:text-gray-400', 'hover:bg-gray-50', 'dark:hover:bg-gray-800'];
+            // Define class lists
+            const activeClasses = ['bg-gray-100', 'dark:bg-gray-700', 'text-gray-900', 'dark:text-white', 'shadow-sm'];
+            const inactiveClasses = ['text-gray-500', 'dark:text-gray-400', 'hover:text-gray-900', 'dark:hover:text-white', 'hover:bg-gray-50', 'dark:hover:bg-gray-800'];
 
             if (view === 'dashboard') {
-                dashBtn.classList.remove(...inactiveClass);
-                dashBtn.classList.add(...activeClass);
+                // Dashboard Active
+                dashBtn.classList.add(...activeClasses);
+                dashBtn.classList.remove(...inactiveClasses);
                 
-                compBtn.classList.remove(...activeClass);
-                compBtn.classList.add(...inactiveClass);
+                // Compare Inactive
+                compBtn.classList.add(...inactiveClasses);
+                compBtn.classList.remove(...activeClasses);
 
                 dashView.classList.remove('hidden');
                 compView.classList.add('hidden');
             } else {
-                compBtn.classList.remove(...inactiveClass);
-                compBtn.classList.add(...activeClass);
+                // Compare Active
+                compBtn.classList.add(...activeClasses);
+                compBtn.classList.remove(...inactiveClasses);
 
-                dashBtn.classList.remove(...activeClass);
-                dashBtn.classList.add(...inactiveClass);
+                // Dashboard Inactive
+                dashBtn.classList.add(...inactiveClasses);
+                dashBtn.classList.remove(...activeClasses);
 
                 dashView.classList.add('hidden');
                 compView.classList.remove('hidden');
